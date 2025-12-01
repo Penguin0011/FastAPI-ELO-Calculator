@@ -1,0 +1,110 @@
+{
+  "Time": [
+    "2025-03-14 04:45:22",
+    "2025-03-14 05:00:00",
+    "2025-03-14 05:26:54",
+    "2025-03-14 05:26:58",
+    "2025-03-14 06:00:00",
+    "2025-03-14 06:00:11",
+    "2025-03-14 06:06:52",
+    "2025-03-14 06:06:53",
+    "2025-03-14 06:07:57",
+    "2025-03-14 06:15:08"
+  ],
+  "Category": [
+    "Other",
+    "Flag",
+    "Other",
+    "Flag",
+    "Flag",
+    "Other",
+    "Flag",
+    "Other",
+    "Flag",
+    "Other"
+  ],
+  "Message": [
+    "RISK OF RAIN FOR F1 SECOND PRACTICE SESSION IS 0%",
+    "GREEN LIGHT - PIT EXIT OPEN",
+    "TRACK SURFACE SLIPPERY IN TRACK SECTOR 9",
+    "CLEAR IN TRACK SECTOR 9",
+    "CHEQUERED FLAG",
+    "FIRST CAR TO TAKE THE FLAG - CAR 7 (DOO)",
+    "DOUBLE YELLOW IN TRACK SECTOR 5",
+    "DRS DISABLED IN ZONE 4",
+    "DOUBLE YELLOW IN TRACK SECTOR 12",
+    "RISK OF RAIN FOR F2 QUALIFYING SESSION IS 0%"
+  ],
+  "Status": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "Flag": [
+    null,
+    "GREEN",
+    null,
+    "CLEAR",
+    "CHEQUERED",
+    null,
+    "DOUBLE YELLOW",
+    null,
+    "DOUBLE YELLOW",
+    null
+  ],
+  "Scope": [
+    null,
+    "Track",
+    null,
+    "Sector",
+    "Track",
+    null,
+    "Sector",
+    null,
+    "Sector",
+    null
+  ],
+  "Sector": [
+    null,
+    null,
+    null,
+    9,
+    null,
+    null,
+    5,
+    null,
+    12,
+    null
+  ],
+  "RacingNumber": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "Lap": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ]
+}

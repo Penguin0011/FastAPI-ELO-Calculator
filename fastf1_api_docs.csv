@@ -1,0 +1,31 @@
+page_url,page_title,heading_tag,heading,summary
+https://docs.fastf1.dev/,FastF1¶,h2,Introduction¶,"FastF1 gives you access to F1 lap timing, car telemetry and position,
+tyre data, weather data, the event schedule and session results."
+https://docs.fastf1.dev/,FastF1¶,h2,Installation¶,It is recommended to install FastF1 usingpip:
+https://docs.fastf1.dev/,FastF1¶,h2,Supporting the Project¶,"If you want to support the continuous development of FastF1, you can sponsor me
+on GitHub or buy me a coffee."
+https://docs.fastf1.dev/,FastF1¶,h2,Available Data¶,"The following is a short overview over the available data with some references
+to functions and objects used to work with this data."
+https://docs.fastf1.dev/,FastF1¶,h2,Contents¶,
+https://docs.fastf1.dev/,FastF1¶,h2,"Questions, Contacting the Maintainer and Code of Conduct¶","For questions that may be of interest to the whole community, please use the
+GithubDiscussionssection to ask for help. This includes general support questions."
+https://docs.fastf1.dev/,FastF1¶,h2,Indices and tables¶,
+https://docs.fastf1.dev/,FastF1¶,h2,Notice¶,"FastF1 and this website are unofficial and are not associated in any way with
+the Formula 1 companies. F1, FORMULA ONE, FORMULA 1, FIA FORMULA ONE WORLD
+CHAMPIONSHIP, GRAND PRIX and related marks are trade marks of Formula One
+Licensing B.V."
+https://docs.fastf1.dev/,FastF1¶,h3,Third-party packages¶,"These packages are not directly related to the FastF1 project. Questions and
+suggestions regarding these packages need to be directed at their respective
+maintainers."
+https://docs.fastf1.dev/,FastF1¶,h3,Compatibility and Availability¶,"Timing data, session information, car telemetry and position data are available
+from 2018 onwards. (This data is usually available within 30-120 minutes after
+the end of a session.)
+It is also possible to obtain this data by recording the data live stream,
+using the live timing recorder that is built into FastF1. Usually this is not
+necessary but there have been server issues in the past which caused the
+data to be not available for download. Recording of the data live stream is
+therefore mostly a solution for redundancy."
+https://docs.fastf1.dev/,FastF1¶,h1,FastF1¶,For the passionate F1 nerds.
+https://docs.fastf1.dev/api.html,F1 API -fastf1.api¶,h2,Functions¶,A collection of functions to interface with the F1 web api.
+https://docs.fastf1.dev/api.html,F1 API -fastf1.api¶,h2,Exceptions¶,
+https://docs.fastf1.dev/api.html,F1 API -fastf1.api¶,h1,F1 API -fastf1.api¶,

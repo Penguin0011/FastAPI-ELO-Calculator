@@ -1,0 +1,22 @@
+name,signature,doc,module
+car_data,"(path, response=None, livedata=None)",.. warning::,fastf1._api
+create_df_fast,"(*, arrays: list[numpy.ndarray], columns: list, fallback: bool = True) -> pandas.core.frame.DataFrame",Implements fast creation of DataFrames.,fastf1.internals.pandas_extensions
+driver_info,"(path, response=None, livedata=None)",.. warning::,fastf1._api
+fetch_page,"(path, name)",.. warning::,fastf1._api
+get_logger,(name: str),Return a logger with the given name that is a child of FastF1's,fastf1.logger
+lap_count,"(path, response=None, livedata=None)",.. warning::,fastf1._api
+make_path,"(wname, wdate, sname, sdate)",Create the api path base string to append on livetiming.formula1.com for api,fastf1._api
+parse,"(text: str, zipped: bool = False) -> Union[str, dict]",.. warning::,fastf1._api
+position_data,"(path, response=None, livedata=None)",.. warning::,fastf1._api
+race_control_messages,"(path, response=None, livedata=None)",.. warning::,fastf1._api
+recursive_dict_get,"(d: dict, *keys: str, default_none: bool = False)",Recursive dict get. Can take an arbitrary number of keys and returns an,fastf1.utils
+season_schedule,"(path, response=None)",,fastf1._api
+session_info,"(path, response=None, livedata=None)",.. warning::,fastf1._api
+session_status_data,"(path, response=None, livedata=None)",.. warning::,fastf1._api
+soft_exceptions,"(descr_name: str, msg: str, logger: logging.Logger)",Wrapper method for wrapping any function into catch-all error handling,fastf1.logger
+timing_app_data,"(path, response=None, livedata=None)",.. warning::,fastf1._api
+timing_data,"(path: str, response: Optional[str] = None, livedata=None) -> (<class 'pandas.core.frame.DataFrame'>, <class 'pandas.core.frame.DataFrame'>)",.. warning::,fastf1._api
+to_datetime,"(x: Union[str, datetime.datetime]) -> Optional[datetime.datetime]",Fast datetime object creation from a date string.,fastf1.utils
+to_timedelta,"(x: Union[str, datetime.timedelta]) -> Optional[datetime.timedelta]",Fast timedelta object creation from a time string,fastf1.utils
+track_status_data,"(path, response=None, livedata=None)",.. warning::,fastf1._api
+weather_data,"(path, response=None, livedata=None)",.. warning::,fastf1._api
