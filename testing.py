@@ -32,4 +32,4 @@ for driver in ('NOR', 'PIA', 'VER', 'ANT'):
 ax.set_xlabel("Lap Number")
 ax.set_ylabel("Lap Time")
 plotting.add_sorted_driver_legend(ax, race)
-plt.show()
+plt.savefig("graph.png")
