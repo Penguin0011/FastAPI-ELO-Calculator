@@ -1,0 +1,46 @@
+F1 Driver All-Time Peak ELO Ratings (Dataset History)
+=====================================================
+1. Max Verstappen: 1646
+2. Lewis Hamilton: 1639
+3. Lando Norris: 1621
+4. Carlos Sainz: 1618
+5. Daniel Ricciardo: 1592
+6. Sergio Perez: 1589
+7. Sebastian Vettel: 1588
+8. Oscar Piastri: 1585
+9. Alexander Albon: 1578
+10. Valtteri Bottas: 1576
+11. Pierre Gasly: 1552
+12. Nico Hulkenberg: 1551
+13. Kimi Räikkönen: 1550
+14. Charles Leclerc: 1549
+15. Esteban Ocon: 1543
+16. George Russell: 1540
+17. Fernando Alonso: 1537
+18. Daniil Kvyat: 1532
+19. Nicholas Latifi: 1529
+20. Kevin Magnussen: 1529
+21. Franco Colapinto: 1528
+22. Lance Stroll: 1526
+23. Mick Schumacher: 1522
+24. Isack Hadjar: 1521
+25. Liam Lawson: 1519
+26. Oliver Bearman: 1519
+27. Gabriel Bortoleto: 1516
+28. Marcus Ericsson: 1514
+29. Nyck De Vries: 1509
+30. Stoffel Vandoorne: 1507
+31. Andrea Kimi Antonelli: 1506
+32. Logan Sargeant: 1505
+33. Kimi Antonelli: 1505
+34. Guanyu Zhou: 1503
+35. Yuki Tsunoda: 1502
+36. Jack Aitken: 1500
+37. Pietro Fittipaldi: 1498
+38. Jack Doohan: 1498
+39. Antonio Giovinazzi: 1497
+40. Robert Kubica: 1497
+41. Brendon Hartley: 1496
+42. Romain Grosjean: 1495
+43. Nikita Mazepin: 1494
+44. Sergey Sirotkin: 1490

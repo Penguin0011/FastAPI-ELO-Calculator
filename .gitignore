@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.env
+venv/
+env/
+
+# FastF1 Cache (Large Files!)
+fastf1_cache/
+
+# Generated Data & Plots
+f1_data_processed.csv
+plots/
+*.png
+
+# Reports (Optional, keeping them tracked might be desired, but keeping them out is safer per user request for "text file output" usually implies artifact generation, but git tracking is up to them. I'll include them for now as they are small.)
+# all_time_peak_elo.txt
+# 2025_current_grid_elo.txt

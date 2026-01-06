@@ -1,0 +1,9 @@
+fastf1
+numpy
+pandas
+matplotlib
+scipy
+annotated-types
+pydantic
+seaborn
+scikit-learn
