@@ -5,6 +5,9 @@ import os
 import logging
 from typing import List, Dict, Optional, Tuple
 from feature_engineering import calculate_pace_metrics, get_speed_trap_data, determine_mechanical_dnf, calculate_braking_aggression
+import time
+import requests
+import random
 
 # Setup logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -25,6 +28,8 @@ def get_race_results(year: int) -> pd.DataFrame:
     Returns a DataFrame with columns: [round, race_name, date, driver, constructor, position, status, points]
     """
     try:
+        # Add delay before fetching schedule to respect rate limits
+        time.sleep(1.0) 
         schedule = fastf1.get_event_schedule(year)
     except Exception as e:
         logger.error(f"Failed to load schedule for {year}: {e}")
@@ -43,10 +48,41 @@ def get_race_results(year: int) -> pd.DataFrame:
             if row['EventDate'] > pd.Timestamp.now():
                 continue
                 
-            session = fastf1.get_session(year, row['RoundNumber'], 'R')
-            # Load only laps (telemetry=False saves huge time/bandwidth)
-            # We only need lap times and SpeedST which are in Laps object
-            session.load(laps=True, telemetry=False, weather=False, messages=False)
+            if row['EventDate'] > pd.Timestamp.now():
+                continue
+
+            # Retry logic for session loading
+            max_retries = 5
+            base_delay = 2.0
+            session = None
+            
+            for attempt in range(max_retries):
+                try:
+                    # Small delay between races
+                    time.sleep(1.5)
+                    
+                    session = fastf1.get_session(year, row['RoundNumber'], 'R')
+                    # Load only laps (telemetry=False saves huge time/bandwidth)
+                    # We only need lap times and SpeedST which are in Laps object
+                    session.load(laps=True, telemetry=False, weather=False, messages=False)
+                    break # Success
+                except Exception as e:
+                    if "429" in str(e) or "rate limit" in str(e).lower():
+                        sleep_time = base_delay * (2 ** attempt) + random.uniform(0, 1)
+                        logger.warning(f"Rate limit hit for {year} R{row['RoundNumber']}. Retrying in {sleep_time:.1f}s...")
+                        time.sleep(sleep_time)
+                    else:
+                        logger.error(f"Error loading session {year} R{row['RoundNumber']}: {e}")
+                        # For other errors, maybe skip?
+                        # If it's a network error unrelated to 429, we might want to retry too.
+                        # But for now, let's just log and continue/break if critical.
+                        # If session failed to load, we can't proceed.
+                        if attempt == max_retries - 1:
+                            logger.error(f"Failed to load session after {max_retries} attempts.")
+                        break
+
+            if session is None or not hasattr(session, 'results'):
+                continue
             
             results = session.results
             if results.empty:
@@ -111,7 +147,7 @@ def get_race_results(year: int) -> pd.DataFrame:
                     # We might want to safeguard or allow simplified mode.
                     # Given the "most accurate ever" request, we do it.
                     
-                    pace_metrics = calculate_pace_metrics(session.laps, drv, teammate)
+                    pace_metrics = calculate_pace_metrics(session, drv, teammate)
                     max_speed = get_speed_trap_data(session, drv)
                     
                     # Append result
@@ -214,7 +250,11 @@ def get_all_seasons_data(start_year: int, end_year: int) -> pd.DataFrame:
     for year in range(start_year, end_year + 1):
         if year > current_year:
             break
+        
+        # Add significant delay between seasons
         logger.info(f"Processing season {year}...")
+        time.sleep(2.0)
+        
         df = get_race_results(year)
         if not df.empty:
             all_seasons.append(df)

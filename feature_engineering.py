@@ -2,35 +2,48 @@ import numpy as np
 import pandas as pd
 import fastf1
 
-def calculate_pace_metrics(session, driver_code):
+def calculate_pace_metrics(session, driver_code, teammate=None):
     """
-    Calculates pace relative to the field.
+    Calculates pace relative to the field and teammate.
+    Returns a dictionary of metrics.
     """
     try:
         laps = session.laps.pick_driver(driver_code).pick_quicklaps()
         if laps.empty:
-            return 0.0
+            return {'pace_delta': 0.0, 'teammate_delta': 0.0, 'consistency': 0.0}
         
         # Session median
         all_laps = session.laps.pick_quicklaps()
         if all_laps.empty:
-            return 0.0
+            return {'pace_delta': 0.0, 'teammate_delta': 0.0, 'consistency': 0.0}
             
         session_median = all_laps['LapTime'].median()
         driver_median = laps['LapTime'].median()
         
-        # Delta % (Negative is faster)
-        if pd.isna(session_median) or pd.isna(driver_median):
-            return 0.0
-            
-        delta = (driver_median - session_median) / session_median
-        return -delta * 100 # Positive score for being faster? Or just raw delta.
-        # Let's return raw delta (Negative = Faster)
-        # Actually ELO model didn't use this explicitly yet, but data_loader calls it.
-        return delta
+        # Consistency: Std Dev of lap times (lower is better)
+        consistency = laps['LapTime'].std().total_seconds() if len(laps) > 1 else 0.0
         
-    except:
-        return 0.0
+        pace_delta = 0.0
+        if not pd.isna(session_median) and not pd.isna(driver_median):
+            pace_delta = (driver_median - session_median) / session_median
+            
+        # Teammate Delta
+        teammate_delta = 0.0
+        if teammate:
+            tm_laps = session.laps.pick_driver(teammate).pick_quicklaps()
+            if not tm_laps.empty:
+                tm_median = tm_laps['LapTime'].median()
+                if not pd.isna(tm_median) and not pd.isna(driver_median):
+                     teammate_delta = (driver_median - tm_median) / tm_median
+
+        return {
+            'pace_delta': pace_delta,
+            'teammate_delta': teammate_delta,
+            'consistency': consistency
+        }
+        
+    except Exception as e:
+        return {'pace_delta': 0.0, 'teammate_delta': 0.0, 'consistency': 0.0}
 
 def get_speed_trap_data(session, driver_code):
     """
