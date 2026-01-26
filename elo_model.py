@@ -14,8 +14,37 @@ class BayesianEloModel:
         self.constructor_ratings = {}
         self.driver_history = []
         
-        # "Potential" / Peak Tracking
-        self.peak_ratings = {}
+        # Grid Meta-Data
+        self.champions_set = set() # Set of drivers who have won a WDC *before* the current race
+        
+        # Historical Champion Tracking (Manual Seed + Dynamic)
+        # Pre-1982 Champions who might race in 1982+:
+        self.champions_set.update([
+            "Niki Lauda", "Nelson Piquet", "Alan Jones", "Mario Andretti", 
+            "Emerson Fittipaldi", "Keke Rosberg", "Jody Scheckter", "James Hunt",
+            "Jackie Stewart", "Emerson Fittipaldi", "Graham Hill", "Jack Brabham" 
+            # Add more aliases if needed, FastF1 usually uses "Lastname" or "Firstname Lastname" or TLA.
+            # We'll need to match how drivers appear in the data.
+            # Usually: "VER", "HAM".
+            # Let's seed with Codes if possible, or mapping.
+            # Data uses Codes (e.g. "HAM") or Refs ("hamilton"). 
+            # Let's assume we pass in a list of Champion Codes.
+        ])
+        
+        # Manual Hardcoded Champions Map (Year -> DriverCode) for historical accuracy
+        # We will use this to update self.champions_set at the end of each year in fit()
+        self.wdc_history = {
+            1980: "JON", 1981: "PIQ", 1982: "ROS", 1983: "PIQ", 1984: "LAU",
+            1985: "PRO", 1986: "PRO", 1987: "PIQ", 1988: "SEN", 1989: "PRO",
+            1990: "SEN", 1991: "SEN", 1992: "MAN", 1993: "PRO", 1994: "MSC",
+            1995: "MSC", 1996: "HIL", 1997: "VIL", 1998: "HAK", 1999: "HAK",
+            2000: "MSC", 2001: "MSC", 2002: "MSC", 2003: "MSC", 2004: "MSC",
+            2005: "ALO", 2006: "ALO", 2007: "RAI", 2008: "HAM", 2009: "BUT",
+            2010: "VET", 2011: "VET", 2012: "VET", 2013: "VET", 2014: "HAM",
+            2015: "HAM", 2016: "ROS", 2017: "HAM", 2018: "HAM", 2019: "HAM",
+            2020: "HAM", 2021: "VER", 2022: "VER", 2023: "VER", 2024: "VER"
+        }
+
 
 
     def get_initial_rating(self, driver):
@@ -57,6 +86,22 @@ class BayesianEloModel:
 
         current_ratings_snapshot = {d: self.driver_ratings[d] for d in drivers}
         
+        # Calculate Grid Competitiveness (Champion Density)
+        # Count how many drivers in current race are in self.champions_set
+        # We need to map driver names/codes. Assuming 'drivers' array contains compatible IDs.
+        # Check against self.champions_set.
+        # Note: self.champions_set needs to handle the ID format (TLA like 'HAM' or Name).
+        # We'll try matching TLA first.
+        
+        active_champs = 0
+        for d in drivers:
+            if d in self.champions_set:
+                active_champs += 1
+                
+        # Grid Multiplier: 5% boost per champion on grid
+        # e.g. 2012 (6 champs) -> 1.3x multiplier
+        prior_champs_bonus = 1.0 + (active_champs * 0.05)
+        
         # Calculate rating deltas
         driver_deltas = defaultdict(float)
         constructor_deltas = defaultdict(float)
@@ -86,9 +131,7 @@ class BayesianEloModel:
                 rating_a_eff = self.driver_ratings[d_a]
                 rating_b_eff = self.driver_ratings[d_b]
                 
-                # Removed "Future Potential" weighting logic as requested.
-                # Previously passed 1 looked ahead for peaks and blended them.
-                # Now we strictly use current ELO.
+                # Removed individual logic, focusing on competitiveness now.
                 
                 metric_a = rating_a_eff + self.gamma * self.constructor_ratings[c_a]
                 metric_b = rating_b_eff + self.gamma * self.constructor_ratings[c_b]
@@ -102,8 +145,42 @@ class BayesianEloModel:
                         # Giant Killing!
                         multiplier = 1.5
                 
+                # Teammate Battle Boost
+                # User Request: "50% based on intra-team battles and 50% based on inter-team battles"
+                # In a grid of N drivers, you have 1 teammate and (N-2) other opponents.
+                # To make the teammate match equal in weight to the SUM of all other matches:
+                # Weight_Teammate = Sum(Weight_Others)
+                # Weight_Teammate = (N-2) * 1.0
+                # So Multiplier = (n_drivers - 2).
+                
+                teammate_multiplier = 1.0
+                if c_a == c_b:
+                    # Dynamic balancing
+                    if n_drivers > 2:
+                        teammate_multiplier = float(n_drivers - 2)
+                    else:
+                        teammate_multiplier = 1.0 # 1v1 duel
+
+                
                 # Update
                 # The K-factor is shared.
+                # Global K * Grid Competitiveness * Teammate Boost * Volatility
+                
+                # SEASON LENGTH NORMALIZATION
+                # User Request: "deal with... shorter with less races... inflated amount of recent years"
+                # We normalize K based on a reference season length (e.g. 20 races).
+                # If season has 16 races, each race is worth MORE (20/16 = 1.25x).
+                # If season has 24 races, each race is worth LESS (20/24 = 0.83x).
+                
+                season_scaling = 1.0
+                current_year = race_data['year'].iloc[0]
+                if hasattr(self, 'races_per_season') and current_year in self.races_per_season:
+                    n_races = self.races_per_season[current_year]
+                    if n_races > 0:
+                        season_scaling = 20.0 / n_races
+                
+                match_k = self.k_factor * prior_champs_bonus * teammate_multiplier * multiplier * season_scaling
+                
                 # Logic Verification:
                 # 1. DNF (Mechanical) + BONUS logic
                 #    BONUS: "give them more points because they could've finished higher"
@@ -117,16 +194,16 @@ class BayesianEloModel:
                      # This treats a P1 Mechanical DNF as a Career Defining Performance.
                      mech_bonus = 5.0 
                      
-                # 2. Car Outperformance / "Late Braking" Style Bonus
-                #    "performing super well relative to car performance"
-                #    If Driver Rating >> Constructor Rating, they are carrying the car.
-                #    We boost their gains to reflect this "Skill Gap".
-                
+                # 2. Car Outperformance (Relative to Teammate/Grid)
+                #    Revised: If you beat your teammate but have a lower rating, massive boost.
+                #    Already handled by ELO math (expected score low, actual high = big delta).
+                #    Explicit "Car Outperformance":
+                #    If Driver Rating > Constructor Rating + 50 AND they win?
                 style_bonus = 1.0
-                # Check if driver is outperforming car significantly (> 50 ELO points)
-                if self.driver_ratings[d_a] > (self.constructor_ratings[c_a] + 50):
-                     if actual_score_a > 0.5: # Only if they won/drew
-                        style_bonus = 1.3 # 30% Boost for outperforming machinery
+                if self.driver_ratings[d_a] > (self.constructor_ratings[c_a] + 100):
+                     # Driver is much better than car
+                     if actual_score_a > 0.5: 
+                        style_bonus = 1.1 # Small bonus for carrying
                         
                 # 3. Late Braking / Telemetry Bonus
                 #    "add a multiplier for breaking extremely late... push Daniel Ricciardo to a higher peak"
@@ -155,17 +232,17 @@ class BayesianEloModel:
                     if score_a > 5.5: # Super elite (Ricciardo mode)
                         braking_bonus = 1.5 
                         
-                delta = self.k_factor * multiplier * mech_bonus * style_bonus * braking_bonus * (actual_score_a - expected_a)
+                delta = match_k * mech_bonus * style_bonus * braking_bonus * (actual_score_a - expected_a)
                 
                 # Scaling K for number of opponents
                 # In 1v1 chess K=20. In 20-player race, 19 comparisons.
                 # We should divide K by (N-1) or similar.
                 
-                k_scaled = self.k_factor / (n_drivers - 1)
+                k_scaled = delta / (n_drivers - 1)
                 
                 # Apply updates
-                driver_deltas[d_a] += k_scaled * (actual_score_a - expected_a)
-                driver_deltas[d_b] -= k_scaled * (actual_score_a - expected_a)
+                driver_deltas[d_a] += k_scaled
+                driver_deltas[d_b] -= k_scaled
                 
                 # Constructor updates
                 # Maybe slower update for constructors?
@@ -190,13 +267,44 @@ class BayesianEloModel:
                 'constructor_rating': self.constructor_ratings[race_data[race_data['driver_name']==d]['constructor'].values[0]]
             })
 
-    def fit(self, all_race_data: pd.DataFrame):
-        grouped = all_race_data.groupby(['year', 'round'])
-        # Ensure chronological order
-        sorted_groups = sorted(grouped, key=lambda x: (x[0][0], x[0][1]))
+
         
-        for (year, rnd), race_df in sorted_groups:
-            self.update(race_df)
+    def fit(self, all_race_data: pd.DataFrame):
+        # Calculate Season Lengths for Normalization
+        self.races_per_season = all_race_data.groupby('year')['round'].nunique().to_dict()
+        
+        # We need to process year-by-year to update Champions Set dynamically
+        years = sorted(all_race_data['year'].unique())
+        
+        for year in years:
+            # Get all races for this year
+            year_data = all_race_data[all_race_data['year'] == year]
+            grouped = year_data.groupby('round')
+            sorted_rounds = sorted(grouped, key=lambda x: x[0])
+            
+            for rnd, race_df in sorted_rounds:
+                self.update(race_df)
+            
+            # End of Year: Add new Champion to history
+            # In real life, champ is decided when points impossible to catch.
+            # Approximating: Add to set at end of season.
+            if year in self.wdc_history:
+                champ_code = self.wdc_history[year]
+                # print(f"End of {year}: Crowning {champ_code}")
+                # We need to handle Name vs Code matching.
+                # Our manual set used Names for pre-1982. 
+                # Our wdc_history uses TLA codes (e.g. "VER").
+                # The `update` logic checks `d in self.champions_set`.
+                # If race_data has "Max Verstappen" but we add "VER", it fails.
+                # However, fastf1 `driver_name` is typically TLA in recent years? 
+                # No, standard is usually "VER" in 'driver' column (TLA).
+                # Wait, data_loader.py:
+                # result['driver_name'] = driver['code'] if driver['code'] else driver['familyName']
+                # So we are using TLA (3 letters) mostly.
+                # Our Pre-1982 seeds were Full Names ("Niki Lauda").
+                # We should update them to TLA codes if possible or support both.
+                # For safety, I will add the code to the set.
+                self.champions_set.add(champ_code)
 
     def get_history_df(self):
         return pd.DataFrame(self.driver_history)

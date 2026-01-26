@@ -153,6 +153,18 @@ def main():
             
     print("Saved all_time_peak_elo.txt")
     
+    # Save All-Time Average
+    print("Generating All-Time Average report...")
+    averages = history_df.groupby('driver')['rating'].mean().sort_values(ascending=False)
+    
+    with open('all_time_average_elo.txt', 'w') as f:
+        f.write("F1 Driver All-Time Average ELO Ratings (Dataset History)\n")
+        f.write("========================================================\n")
+        for rank, (drv, rating) in enumerate(averages.items(), 1):
+            f.write(f"{rank}. {drv}: {rating:.0f}\n")
+            
+    print("Saved all_time_average_elo.txt")
+    
     # Filter for drivers CURRENTLY ON THE GRID (2025)
     # Sort
     sorted_ratings = sorted(final_ratings.items(), key=lambda x: x[1], reverse=True)

@@ -1,24 +1,24 @@
 F1 Driver ELO Ratings - End of 2025 (Active Grid)
 ===============================================
-1. Max Verstappen: 1754
-2. Lando Norris: 1625
-3. George Russell: 1617
-4. Charles Leclerc: 1612
-5. Carlos Sainz: 1595
-6. Alexander Albon: 1589
-7. Fernando Alonso: 1582
-8. Oscar Piastri: 1571
-9. Lewis Hamilton: 1560
-10. Nico Hulkenberg: 1555
-11. Oliver Bearman: 1526
-12. Pierre Gasly: 1525
-13. Isack Hadjar: 1512
-14. Esteban Ocon: 1507
-15. Gabriel Bortoleto: 1507
-16. Andrea Kimi Antonelli: 1505
-17. Liam Lawson: 1490
-18. Franco Colapinto: 1489
-19. Jack Doohan: 1480
-20. Lance Stroll: 1470
-21. Kimi Antonelli: 1461
-22. Yuki Tsunoda: 1431
+1. Max Verstappen: 2005
+2. Charles Leclerc: 2005
+3. George Russell: 1946
+4. Lewis Hamilton: 1854
+5. Lando Norris: 1747
+6. Kimi Antonelli: 1687
+7. Carlos Sainz: 1684
+8. Oscar Piastri: 1679
+9. Fernando Alonso: 1662
+10. Alexander Albon: 1650
+11. Yuki Tsunoda: 1543
+12. Andrea Kimi Antonelli: 1522
+13. Lance Stroll: 1520
+14. Isack Hadjar: 1515
+15. Pierre Gasly: 1505
+16. Oliver Bearman: 1492
+17. Nico Hulkenberg: 1482
+18. Esteban Ocon: 1467
+19. Gabriel Bortoleto: 1467
+20. Liam Lawson: 1465
+21. Jack Doohan: 1456
+22. Franco Colapinto: 1448
