@@ -17,9 +17,7 @@ class BayesianEloModel:
         # "Potential" / Peak Tracking
         self.peak_ratings = {}
 
-    def set_peaks(self, peaks: Dict[str, float]):
-        self.peak_ratings = peaks
-        
+
     def get_initial_rating(self, driver):
         return self.initial_ratings.get(driver, 1500.0)
         
@@ -85,28 +83,12 @@ class BayesianEloModel:
                 # We want to infer Driver Skill.
                 # Total Strength = Driver + Car
                 
-                # FEATURE: FUTURE POTENTIAL WEIGHTING
-                # If we know the driver's FUTURE PEAK, we blend it into their current strength for the calculation.
-                # This means beating a "Future Legend" counts more.
-                # self.peak_ratings is populated in Pass 2.
-                
                 rating_a_eff = self.driver_ratings[d_a]
                 rating_b_eff = self.driver_ratings[d_b]
                 
-                if hasattr(self, 'peak_ratings') and self.peak_ratings:
-                    # Blend current rating with peak rating
-                    # This primarily boosts the "Opponent Strength" perception.
-                    # We use a weight (e.g. 0.5)
-                    w = 0.85 # 85% Future Potential Influence (High weight for "Legend" recognition)
-                    
-                    if d_a in self.peak_ratings:
-                        # Only use peak if it's higher (Potential)
-                        peak_a = max(self.peak_ratings[d_a], rating_a_eff)
-                        rating_a_eff = (1 - w) * rating_a_eff + w * peak_a
-                        
-                    if d_b in self.peak_ratings:
-                        peak_b = max(self.peak_ratings[d_b], rating_b_eff)
-                        rating_b_eff = (1 - w) * rating_b_eff + w * peak_b
+                # Removed "Future Potential" weighting logic as requested.
+                # Previously passed 1 looked ahead for peaks and blended them.
+                # Now we strictly use current ELO.
                 
                 metric_a = rating_a_eff + self.gamma * self.constructor_ratings[c_a]
                 metric_b = rating_b_eff + self.gamma * self.constructor_ratings[c_b]

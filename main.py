@@ -8,37 +8,90 @@ from plotter import plot_individual_driver_history
 from optimizer import optimize_hyperparameters
 
 # Parameters
-START_YEAR = 2018 # Start reasonable to get good history without waiting forever. 2018 is good start of liberty era/modern data.
-# User implied "all the years that are available in the fastf1 api only". Fastf1 goes back to 2018 reliably for telemetry?
-# FastF1 lap data is good from 2018+. Basic results exist for much longer.
-# PROMPT: "utilizing only the fastf1 api for data... features: lap pace deltas... from all the years that are available"
-# If I try 1950, features will fail.
-# I will try to load from 2018 onwards for FULL features.
-# If I use basic results, I can go back further.
-# But the user specifically asked for "telemetry-derived features ... into the per-race CSV".
-# This implies I should only use years where this is possible.
-# FastF1 supports partial data back to late 90s, but telemetry/laps are patchy. 2018 is safe. 
-# I will default to 2018.
+START_YEAR = 1982 # Start from 1982 as requested
+# User implied "all the years that are available in the fastf1 api only".
+# FastF1/Ergast goes back to 1950s for results, 1996 for Laps, 2018 for Telemetry.
 
 END_YEAR = 2025
 
 def main():
     print("Starting F1 ELO Calculator...")
     
-    # Check if data exists locally to save time (simple CSV cache)
+    # Check if data exists locally
     data_path = 'f1_data_processed.csv'
+    existing_data = pd.DataFrame()
+    
     if os.path.exists(data_path):
         print(f"Loading cached data from {data_path}...")
-        data = pd.read_csv(data_path)
+        try:
+            existing_data = pd.read_csv(data_path)
+            print(f"Loaded {len(existing_data)} existing rows.")
+        except Exception as e:
+            print(f"Error loading cache: {e}. Starting fresh.")
+            
+    # Determine years to fetch
+    years_to_fetch = []
+    if not existing_data.empty and 'year' in existing_data.columns:
+        existing_years = existing_data['year'].unique()
+        print(f"Existing years: {sorted(existing_years)}")
+        for y in range(START_YEAR, END_YEAR + 1):
+            if y not in existing_years:
+                years_to_fetch.append(y)
     else:
-        print("Fetching data from FastF1 (this may take a while)...")
-        data = get_all_seasons_data(START_YEAR, END_YEAR)
-        if not data.empty:
+        years_to_fetch = list(range(START_YEAR, END_YEAR + 1))
+        
+    if years_to_fetch:
+        print(f"Fetching missing years: {years_to_fetch}")
+        # We need to update get_all_seasons_data to accept a list of years or we manually loop here.
+        # Let's manually loop here to be safe and use append.
+        
+        # Import setup_fastf1 and get_race_results directly if possible, or modify data_loader.
+        # For simplicity, let's assume we can loop here or modify data_loader to take a list.
+        # But get_all_seasons_data takes start/end.
+        # Let's modify data_loader loop to range(start, end).
+        # Better: Just call get_race_results(year) loop here? 
+        # But setup_fastf1 needs to be called.
+        
+        from data_loader import get_race_results, setup_fastf1
+        import time
+        
+        setup_fastf1()
+        new_data_frames = []
+        
+        for year in years_to_fetch:
+            print(f"Fetching {year}...")
+            time.sleep(2.0) # Rate limit protection
+            try:
+                df = get_race_results(year)
+                if not df.empty:
+                    new_data_frames.append(df)
+                    # Incremental save just in case
+                    if not existing_data.empty:
+                        combined_autosave = pd.concat([existing_data] + new_data_frames, ignore_index=True)
+                        combined_autosave.to_csv(data_path, index=False)
+                    else:
+                        temp_concat = pd.concat(new_data_frames, ignore_index=True)
+                        temp_concat.to_csv(data_path, index=False)
+                        
+            except Exception as e:
+                print(f"Error processing {year}: {e}")
+                
+        if new_data_frames:
+            new_data = pd.concat(new_data_frames, ignore_index=True)
+            if not existing_data.empty:
+                data = pd.concat([existing_data, new_data], ignore_index=True)
+            else:
+                data = new_data
+            
+            # Final Save
             data.to_csv(data_path, index=False)
-    
-    if data.empty:
-        print("No data found!")
-        return
+            print("Data fetching complete and saved.")
+        else:
+            data = existing_data
+            
+    else:
+        print("All years present. Using existing data.")
+        data = existing_data
 
     print(f"Loaded {len(data)} results.")
     
@@ -50,57 +103,12 @@ def main():
     k = 24.0
     gamma = 1.0 
     
-    k = 24.0
-    gamma = 1.0 
-    
-    k = 24.0
-    gamma = 1.0 
-    
-    # 2017 Seeding Logic
-    # Standings from fetch_2017.py
-    standings_2017 = [
-        "HAM", "VET", "BOT", "RAI", "RIC", "VER", "PER", "OCO", "SAI", "MAS", 
-        "HUL", "STR", "GRO", "MAG", "ALO", "VAN", "PAL", "KVY", "WEH", "GIO", 
-        "ERI", "BUT", "DIR", "GAS", "HAR"
-    ]
-    
-    # Distribution: 
-    # Median ~ 1500. Range ~ 100.
-    # Curve: Flat at top, drops faster at bottom (Square function).
-    # ELO = Base + Range * (1 - ((Rank-1)/(N-1))^2 ) ? No, that drops fast then flat?
-    # We want "gap being more the farther back you go". 
-    # This means gradient increases. Convex.
-    # ELO = Max - Range * ((Rank-1)/(N-1))^Exp
-    
-    N = len(standings_2017)
-    MaxELO = 1550
-    Range = 100
-    Exp = 2.0 # Quadratic drop
-    
+    # No manual seeding for 2017 anymore. We start from 1982.
     initial_ratings = {}
-    print("Calculating 2017 Seeding...")
-    for rank, drv in enumerate(standings_2017, 1):
-        # Norm rank 0 to 1
-        x = (rank - 1) / (N - 1)
-        drop = Range * (x ** Exp)
-        elo = MaxELO - drop
-        initial_ratings[drv] = elo
-        # print(f"{rank}. {drv}: {elo:.1f}")
         
-    # PASS 1: Calculate "Potential" (Peaks)
-    print("--- PASS 1: Analyzing Career Potential ---")
-    model_p1 = BayesianEloModel(k_factor=k, gamma=gamma, initial_ratings=initial_ratings)
-    model_p1.fit(data)
-    
-    # Extract peaks
-    history_p1 = model_p1.get_history_df()
-    peaks = history_p1.groupby('driver')['rating'].max().to_dict()
-    print("Potential analysis complete. Identified peaks for future weighting.")
-    
-    # PASS 2: Train with Future Knowledge
-    print(f"--- PASS 2: Training with Potential Weighting (K={k}) ---")
+    # Calculate ELO Ratings
+    print(f"--- Training ELO Model (K={k}) ---")
     model = BayesianEloModel(k_factor=k, gamma=gamma, initial_ratings=initial_ratings)
-    model.set_peaks(peaks) # Inject future knowledge
     model.fit(data)
     
     # Save 2025 ratings

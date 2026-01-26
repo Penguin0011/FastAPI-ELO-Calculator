@@ -63,8 +63,20 @@ def get_race_results(year: int) -> pd.DataFrame:
                     
                     session = fastf1.get_session(year, row['RoundNumber'], 'R')
                     # Load only laps (telemetry=False saves huge time/bandwidth)
-                    # We only need lap times and SpeedST which are in Laps object
-                    session.load(laps=True, telemetry=False, weather=False, messages=False)
+                    # We only need lap times and SpeedST which are in Laps object.
+                    # For older sessions (pre-1996), Laps calculation might fail.
+                    try:
+                        session.load(laps=True, telemetry=False, weather=False, messages=False)
+                    except Exception as load_err:
+                        logger.warning(f"Failed to load laps for {year} R{row['RoundNumber']}: {load_err}. Attempting to fallback to results-only.")
+                        try:
+                            # Fallback: Load minimal data (Results only)
+                            session.load(laps=False, telemetry=False, weather=False, messages=False)
+                        except Exception as fallback_err:
+                            logger.error(f"Fallback load also failed for {year} R{row['RoundNumber']}: {fallback_err}")
+                            continue # Skip this race if we can't get even results
+                        pass
+
                     break # Success
                 except Exception as e:
                     if "429" in str(e) or "rate limit" in str(e).lower():
