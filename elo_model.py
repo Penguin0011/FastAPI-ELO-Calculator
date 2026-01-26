@@ -195,15 +195,20 @@ class BayesianEloModel:
                      mech_bonus = 5.0 
                      
                 # 2. Car Outperformance (Relative to Teammate/Grid)
-                #    Revised: If you beat your teammate but have a lower rating, massive boost.
-                #    Already handled by ELO math (expected score low, actual high = big delta).
-                #    Explicit "Car Outperformance":
-                #    If Driver Rating > Constructor Rating + 50 AND they win?
+                #    Revised: Continuous "Carry" Bonus.
+                #    If Driver > Car, they get a multiplier on positive results.
+                #    Formula: Bonus = 1.0 + (Diff * 0.001) for Diff > 0.
+                #    Example: Driver 1600, Car 1400. Diff=200. Bonus = 1.2x.
+                #    This scales gracefully.
+                
                 style_bonus = 1.0
-                if self.driver_ratings[d_a] > (self.constructor_ratings[c_a] + 100):
-                     # Driver is much better than car
-                     if actual_score_a > 0.5: 
-                        style_bonus = 1.1 # Small bonus for carrying
+                rating_diff = self.driver_ratings[d_a] - self.constructor_ratings[c_a]
+                
+                if rating_diff > 0 and actual_score_a > 0.5:
+                     # Only reward if they outperform AND get a result (Win/Draw)
+                     # Cap at reasonable max (e.g. 1.5x for +500 gap)
+                     raw_bonus = rating_diff * 0.001
+                     style_bonus = 1.0 + min(0.5, raw_bonus)
                         
                 # 3. Late Braking / Telemetry Bonus
                 #    "add a multiplier for breaking extremely late... push Daniel Ricciardo to a higher peak"

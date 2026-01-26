@@ -95,6 +95,25 @@ def main():
 
     print(f"Loaded {len(data)} results.")
     
+    # ---------------------------------------------------------
+    # DATA CLEANING / NORMALIZATION
+    # ---------------------------------------------------------
+    def normalize_driver_names(df):
+        # Map known aliases to canonical names
+        # Format: "Alias": "Canonical Name"
+        aliases = {
+            "Andrea Kimi Antonelli": "Kimi Antonelli",
+            #"Max Emilian Verstappen": "Max Verstappen", # Example if needed
+        }
+        
+        # Apply replacement
+        df['driver_name'] = df['driver_name'].replace(aliases)
+        return df
+        
+    data = normalize_driver_names(data)
+    print("Normalized driver names (Merged Aliases).")
+    # ---------------------------------------------------------
+    
     # Optimization?
     # For now, use reasonable defaults to ensure completion.
     # K=24 is much more aggressive (High Volatility requested)
