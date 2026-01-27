@@ -164,7 +164,7 @@ def main():
     # history_df has 'rating' column
     peaks = history_df.groupby('driver')['rating'].max().sort_values(ascending=False)
     
-    with open('all_time_peak_elo.txt', 'w') as f:
+    with open('all_time_peak_elo.txt', 'w', encoding='utf-8') as f:
         f.write("F1 Driver All-Time Peak ELO Ratings (Dataset History)\n")
         f.write("=====================================================\n")
         for rank, (drv, rating) in enumerate(peaks.items(), 1):
@@ -176,7 +176,7 @@ def main():
     print("Generating All-Time Average report...")
     averages = history_df.groupby('driver')['rating'].mean().sort_values(ascending=False)
     
-    with open('all_time_average_elo.txt', 'w') as f:
+    with open('all_time_average_elo.txt', 'w', encoding='utf-8') as f:
         f.write("F1 Driver All-Time Average ELO Ratings (Dataset History)\n")
         f.write("========================================================\n")
         for rank, (drv, rating) in enumerate(averages.items(), 1):
@@ -188,7 +188,7 @@ def main():
     # Sort
     sorted_ratings = sorted(final_ratings.items(), key=lambda x: x[1], reverse=True)
     
-    with open('2025_current_grid_elo.txt', 'w') as f:
+    with open('2025_current_grid_elo.txt', 'w', encoding='utf-8') as f:
         f.write("F1 Driver ELO Ratings - End of 2025 (Active Grid)\n")
         f.write("===============================================\n")
         for rank, (drv, rating) in enumerate(sorted_ratings, 1):
