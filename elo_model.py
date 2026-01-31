@@ -17,32 +17,30 @@ class BayesianEloModel:
         # Grid Meta-Data
         self.champions_set = set() # Set of drivers who have won a WDC *before* the current race
         
-        # Historical Champion Tracking (Manual Seed + Dynamic)
-        # Pre-1982 Champions who might race in 1982+:
-        self.champions_set.update([
-            "Niki Lauda", "Nelson Piquet", "Alan Jones", "Mario Andretti", 
-            "Emerson Fittipaldi", "Keke Rosberg", "Jody Scheckter", "James Hunt",
-            "Jackie Stewart", "Emerson Fittipaldi", "Graham Hill", "Jack Brabham" 
-            # Add more aliases if needed, FastF1 usually uses "Lastname" or "Firstname Lastname" or TLA.
-            # We'll need to match how drivers appear in the data.
-            # Usually: "VER", "HAM".
-            # Let's seed with Codes if possible, or mapping.
-            # Data uses Codes (e.g. "HAM") or Refs ("hamilton"). 
-            # Let's assume we pass in a list of Champion Codes.
-        ])
+        # Historical Champion Tracking
+        # Updated to include full history from 1950-2025 using Full Names
+        # This aligns with the driver_name normalization which prefers accents/full names.
         
-        # Manual Hardcoded Champions Map (Year -> DriverCode) for historical accuracy
-        # We will use this to update self.champions_set at the end of each year in fit()
         self.wdc_history = {
-            1980: "JON", 1981: "PIQ", 1982: "ROS", 1983: "PIQ", 1984: "LAU",
-            1985: "PRO", 1986: "PRO", 1987: "PIQ", 1988: "SEN", 1989: "PRO",
-            1990: "SEN", 1991: "SEN", 1992: "MAN", 1993: "PRO", 1994: "MSC",
-            1995: "MSC", 1996: "HIL", 1997: "VIL", 1998: "HAK", 1999: "HAK",
-            2000: "MSC", 2001: "MSC", 2002: "MSC", 2003: "MSC", 2004: "MSC",
-            2005: "ALO", 2006: "ALO", 2007: "RAI", 2008: "HAM", 2009: "BUT",
-            2010: "VET", 2011: "VET", 2012: "VET", 2013: "VET", 2014: "HAM",
-            2015: "HAM", 2016: "ROS", 2017: "HAM", 2018: "HAM", 2019: "HAM",
-            2020: "HAM", 2021: "VER", 2022: "VER", 2023: "VER", 2024: "VER"
+            1950: "Giuseppe Farina", 1951: "Juan Manuel Fangio", 1952: "Alberto Ascari", 1953: "Alberto Ascari",
+            1954: "Juan Manuel Fangio", 1955: "Juan Manuel Fangio", 1956: "Juan Manuel Fangio", 1957: "Juan Manuel Fangio",
+            1958: "Mike Hawthorn", 1959: "Jack Brabham", 1960: "Jack Brabham", 1961: "Phil Hill",
+            1962: "Graham Hill", 1963: "Jim Clark", 1964: "John Surtees", 1965: "Jim Clark",
+            1966: "Jack Brabham", 1967: "Denny Hulme", 1968: "Graham Hill", 1969: "Jackie Stewart",
+            1970: "Jochen Rindt", 1971: "Jackie Stewart", 1972: "Emerson Fittipaldi", 1973: "Jackie Stewart",
+            1974: "Emerson Fittipaldi", 1975: "Niki Lauda", 1976: "James Hunt", 1977: "Niki Lauda",
+            1978: "Mario Andretti", 1979: "Jody Scheckter", 1980: "Alan Jones", 1981: "Nelson Piquet",
+            1982: "Keke Rosberg", 1983: "Nelson Piquet", 1984: "Niki Lauda", 1985: "Alain Prost",
+            1986: "Alain Prost", 1987: "Nelson Piquet", 1988: "Ayrton Senna", 1989: "Alain Prost",
+            1990: "Ayrton Senna", 1991: "Ayrton Senna", 1992: "Nigel Mansell", 1993: "Alain Prost",
+            1994: "Michael Schumacher", 1995: "Michael Schumacher", 1996: "Damon Hill", 1997: "Jacques Villeneuve",
+            1998: "Mika Häkkinen", 1999: "Mika Häkkinen", 2000: "Michael Schumacher", 2001: "Michael Schumacher",
+            2002: "Michael Schumacher", 2003: "Michael Schumacher", 2004: "Michael Schumacher", 2005: "Fernando Alonso",
+            2006: "Fernando Alonso", 2007: "Kimi Räikkönen", 2008: "Lewis Hamilton", 2009: "Jenson Button",
+            2010: "Sebastian Vettel", 2011: "Sebastian Vettel", 2012: "Sebastian Vettel", 2013: "Sebastian Vettel",
+            2014: "Lewis Hamilton", 2015: "Lewis Hamilton", 2016: "Nico Rosberg", 2017: "Lewis Hamilton",
+            2018: "Lewis Hamilton", 2019: "Lewis Hamilton", 2020: "Lewis Hamilton", 2021: "Max Verstappen",
+            2022: "Max Verstappen", 2023: "Max Verstappen", 2024: "Max Verstappen", 2025: "Lando Norris"
         }
 
 
@@ -254,9 +252,41 @@ class BayesianEloModel:
                 constructor_deltas[c_a] += k_scaled * (actual_score_a - expected_a) # * 0.5?
                 constructor_deltas[c_b] -= k_scaled * (actual_score_a - expected_a)
         
-        # Apply accumulated deltas
+        # TEAM SIZE CAP LOGIC
+        # Rule: If a constructor has > 2 drivers, only the highest finisher (lowest effective_position)
+        # is allowed to have a POSITIVE delta. Others are capped at max(delta, 0) -> No, min(delta, 0) -> No gain.
+        
+        # 1. Group by constructor to find team sizes and best finisher
+        team_performances = defaultdict(list)
+        for i, d in enumerate(drivers):
+            constr = constructors[i]
+            pos = positions[i] # effective_position
+            team_performances[constr].append( (d, pos) )
+            
+        capped_drivers = set()
+        for constr, members in team_performances.items():
+            if len(members) > 2:
+                # Large team!
+                # Identify best finisher
+                # Sort by position (ascending)
+                members.sort(key=lambda x: x[1])
+                best_driver = members[0][0]
+                
+                # All others are capped
+                for m_driver, m_pos in members:
+                    if m_driver != best_driver:
+                        capped_drivers.add(m_driver)
+                        
+        # Apply accumulated deltas with clamping
         for d in drivers:
-            self.driver_ratings[d] += driver_deltas[d]
+            delta = driver_deltas[d]
+            
+            # Apply Cap
+            if d in capped_drivers and delta > 0:
+                delta = 0.0 # Clamp to 0 if positive
+                
+            self.driver_ratings[d] += delta
+            
         for c in constructors:
             self.constructor_ratings[c] += constructor_deltas[c]
             

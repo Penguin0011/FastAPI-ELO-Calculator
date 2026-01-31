@@ -51,6 +51,12 @@ def get_race_results(year: int) -> pd.DataFrame:
             if row['EventDate'] > pd.Timestamp.now():
                 continue
 
+            # 1. INDY 500 FILTER
+            # Exclude Indianapolis 500 based on EventName
+            if "Indianapolis 500" in row['EventName']:
+                logger.info(f"Skipping {row['EventName']} (Indy 500 exclusion rule)")
+                continue
+
             # Retry logic for session loading
             max_retries = 5
             base_delay = 2.0
@@ -169,15 +175,16 @@ def get_race_results(year: int) -> pd.DataFrame:
                         'race_name': row['EventName'],
                         'date': row['EventDate'],
                         'driver_code': drv_result['Abbreviation'],
+                        'driver_id': str(driver_obj['DriverId']) if 'DriverId' in driver_obj else drv_result['Abbreviation'], # Robust fallback
                         'driver_name': driver_obj['FullName'], # Use driver_obj for full name stability
                         'constructor': team,
-                        'position': position,
+                        'position': float(position) if pd.notna(position) and str(position).replace('.', '', 1).isdigit() else 20.0, # Improved safety
                         'classified_position': classified_pos,
-                        'grid': grid,
+                        'grid': float(grid) if pd.notna(grid) else 0.0,
                         'status': status,
-                        'points': drv_result['Points'],
+                        'points': float(drv_result['Points']),
                         'is_mechanical_dnf': is_mechanical_dnf,
-                        'effective_position': effective_position,
+                        'effective_position': float(effective_position) if pd.notna(effective_position) else 20.0,
                         'pace_delta': pace_metrics.get('pace_delta', 0.0), # vs session median (approx)
                         'pace_teammate_delta': pace_metrics.get('teammate_delta', 0.0),
                         'consistency': pace_metrics.get('consistency', 0.0),
@@ -189,7 +196,24 @@ def get_race_results(year: int) -> pd.DataFrame:
         except Exception as e:
             logger.error(f"Error loading {year} round {row['RoundNumber']}: {e}")
             
-    return pd.DataFrame(all_results)
+    df = pd.DataFrame(all_results)
+    
+    # 2. SHARED DRIVE DEDUPLICATION (Per Race)
+    # Rule: If a driver appears multiple times in the same race (Shared Drive), keep ONLY the best result (lowest position).
+    if not df.empty:
+        # Sort by position so the first occurrence is the best one (assuming numeric pos)
+        # We need to ensure position is numeric for sorting, which we did in previous step.
+        df.sort_values(by=['year', 'round', 'position'], inplace=True)
+        
+        # Drop duplicates based on Driver ID within each Race
+        # keep='first' retains the lowest position due to sort
+        initial_len = len(df)
+        df.drop_duplicates(subset=['year', 'round', 'driver_id'], keep='first', inplace=True)
+        dropped_count = initial_len - len(df)
+        if dropped_count > 0:
+            logger.info(f"Deduplicated {dropped_count} shared drive entries in {year}.")
+
+    return df
 
 def get_position_at_dnf(session, driver_code, status):
     """

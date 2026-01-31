@@ -8,7 +8,7 @@ from plotter import plot_individual_driver_history
 from optimizer import optimize_hyperparameters
 
 # Parameters
-START_YEAR = 1982 # Start from 1982 as requested
+START_YEAR = 1950 # Start from 1950 as requested
 # User implied "all the years that are available in the fastf1 api only".
 # FastF1/Ergast goes back to 1950s for results, 1996 for Laps, 2018 for Telemetry.
 
@@ -18,7 +18,7 @@ def main():
     print("Starting F1 ELO Calculator...")
     
     # Check if data exists locally
-    data_path = 'f1_data_processed.csv'
+    data_path = 'f1_data_full.csv'
     existing_data = pd.DataFrame()
     
     if os.path.exists(data_path):
@@ -99,19 +99,70 @@ def main():
     # DATA CLEANING / NORMALIZATION
     # ---------------------------------------------------------
     def normalize_driver_names(df):
-        # Map known aliases to canonical names
-        # Format: "Alias": "Canonical Name"
+        print("Normalizing driver names...")
+        
+        # 1. Driver ID Consolidation (The "Scour" Method)
+        # This resolves duplicates like "Sergio Perez" vs "Sergio Pérez" by grouping by unique DriverID.
+        if 'driver_id' in df.columns:
+             def best_name(names):
+                 # Filter nulls and convert to list
+                 names = [n for n in names if pd.notna(n)]
+                 if not names: return "Unknown"
+                 unique_names = list(set(names))
+                 if len(unique_names) == 1:
+                     return unique_names[0]
+                 
+                 # Score names: Higher score = more non-ascii chars (accents), then length
+                 def score(n):
+                     non_ascii = sum(1 for c in n if ord(c) > 127)
+                     return (non_ascii, len(n), n)
+                 
+                 best = max(unique_names, key=score)
+                 
+                 # Optional: Log changes implies we are merging
+                 # if len(unique_names) > 1:
+                 #    print(f"Merging {unique_names} -> {best}")
+                 
+                 return best
+
+             # Calculate best name for each ID
+             print("Scouring data for duplicates based on Driver ID...")
+             id_to_name = df.groupby('driver_id')['driver_name'].agg(best_name)
+             
+             # Apply the merge
+             df['driver_name'] = df['driver_id'].map(id_to_name).fillna(df['driver_name'])
+             print("Merged duplicates based on Driver ID.")
+        
+        # 2. Canonical Alias Map (Manual Overrides for specific preferences or legacy data issues)
         aliases = {
             "Andrea Kimi Antonelli": "Kimi Antonelli",
-            #"Max Emilian Verstappen": "Max Verstappen", # Example if needed
+            "Nyck De Vries": "Nyck de Vries",
+            "Jerome d'Ambrosio": "Jérôme d'Ambrosio",
+            "Sebastien Buemi": "Sébastien Buemi",
+            "Sebastien Bourdais": "Sébastien Bourdais",
+            "Lucas Di Grassi": "Lucas di Grassi",
+            "Paul Di Resta": "Paul di Resta",
         }
         
-        # Apply replacement
         df['driver_name'] = df['driver_name'].replace(aliases)
         return df
         
     data = normalize_driver_names(data)
     print("Normalized driver names (Merged Aliases).")
+    
+    # 3. Data Type Enforcement
+    # Ensure effective_position is strictly numeric
+    if 'effective_position' in data.columns:
+        data['effective_position'] = pd.to_numeric(data['effective_position'], errors='coerce').fillna(20.0)
+    
+    # Ensure is_mechanical_dnf is boolean
+    if 'is_mechanical_dnf' in data.columns:
+        data['is_mechanical_dnf'] = data['is_mechanical_dnf'].astype(bool)
+
+    # 4. Remove rows with critical missing info
+    data = data.dropna(subset=['driver_name', 'constructor'])
+    
+    print(f"Data ready for training. Shape: {data.shape}")
     # ---------------------------------------------------------
     
     # Optimization?

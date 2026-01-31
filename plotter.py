@@ -55,31 +55,22 @@ def plot_individual_driver_history(history_df: pd.DataFrame, output_dir: str):
         # Configure X-Axis
         # We can't show every label if there are 100+ races.
         # Show ~20 ticks max.
-        n_races = len(drv_data)
-        if n_races > 20:
-            step = n_races // 20
+        # Ticks: Select widely spaced indices
+        # Ensure uniqueness to avoid label count mismatch
+        unique_indices = drv_data['race_index'].unique()
+        
+        if len(unique_indices) > 20:
+             step = len(unique_indices) // 20
+             selected_indices = unique_indices[::step]
         else:
-            step = 1
-            
-        tick_indices = drv_data['race_index'].iloc[::step]
+             selected_indices = unique_indices
+             
+        # Filter races DF to get labels corresponding EXACTLY to these indices
+        # We must preserve order
+        tick_data = races[races['race_index'].isin(selected_indices)].sort_values('race_index')
         
-        # We need to map back to labels from the MAIN 'races' df to ensure global consistency?
-        # Or just local labels.
-        # Ideally, X-axis represents time.
-        # If a driver didn't race in a round, the line skips?
-        # Matplotlib plot(x,y) connects points.
-        
-        # Let's use the actual indices from the global 'races' DF so gaps show up as gaps (or straight lines across missing years).
-        # drv_data['race_index'] is correct global index.
-        
-        # Ticks: show ticks for the points we have, or global timeline?
-        # Let's show global timeline ticks for context (e.g. Years).
-        
-        # Find indices where year changes?
-        # Or just spacing.
-        
-        # Let's use the driver's own timeline for ticks to identify their specific races.
-        tick_labels = races.loc[races['race_index'].isin(tick_indices), 'label']
+        tick_indices = tick_data['race_index'].values
+        tick_labels = tick_data['label'].values
         
         ax.set_xticks(tick_indices)
         ax.set_xticklabels(tick_labels, rotation=45, ha='right', fontsize=9)
