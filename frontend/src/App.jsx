@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
+import { ReactLenis } from '@studio-freight/react-lenis'
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import AllTimePeak from './pages/AllTimePeak'
@@ -7,7 +8,7 @@ import DriverDetail from './pages/DriverDetail'
 
 function App() {
     return (
-        <>
+        <ReactLenis root>
             <Navbar />
             <Routes>
                 <Route path="/" element={<Home />} />
@@ -15,7 +16,7 @@ function App() {
                 <Route path="/2025" element={<CurrentGrid2025 />} />
                 <Route path="/driver/:name" element={<DriverDetail />} />
             </Routes>
-        </>
+        </ReactLenis>
     )
 }
 

@@ -802,3 +802,55 @@ h3 {
     justify-content: center;
   }
 }
+
+/* ===== About Section ===== */
+.about-section {
+  padding: var(--spacing-2xl) 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-xl);
+  align-items: center;
+}
+
+.about-item h3 {
+  font-size: 2rem;
+  margin-bottom: var(--spacing-sm);
+  color: var(--accent-primary);
+}
+
+.about-item p {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+.spinning-badge {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.spinning-badge-text {
+  font-size: 12px;
+  font-weight: 700;
+  fill: var(--accent-gold);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.text-gradient {
+  /* Ensure gradient text is prominent */
+  background: linear-gradient(135deg, #fff 0%, var(--accent-secondary) 50%, var(--accent-gold) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
