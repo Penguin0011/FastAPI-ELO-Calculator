@@ -1,0 +1,65 @@
+// Generated Map for drivers.js
+export const driverImages = {
+    "Alain Prost": "/drivers/Alain_Prost.webp",
+    "Alberto Ascari": "/drivers/Alberto_Ascari.jpg",
+    "Alexander Albon": "/drivers/Alexander_Albon.jpg",
+    "Ayrton Senna": "/drivers/Ayrton_Senna.webp",
+    "Bruce McLaren": "/drivers/Bruce_McLaren.jpg",
+    "Carlos Sainz": "/drivers/Carlos_Sainz.jpg",
+    "Charles Leclerc": "/drivers/Charles_Leclerc.jpg",
+    "Damon Hill": "/drivers/Damon_Hill.jpg",
+    "Daniel Ricciardo": "/drivers/Daniel_Ricciardo.jpg",
+    // "David Coulthard": "/drivers/default.png", // MISSING
+    "Eddie Irvine": "/drivers/Eddie_Irvine.jpg",
+    "Emerson Fittipaldi": "/drivers/Emerson_Fittipaldi.webp",
+    "Esteban Ocon": "/drivers/Esteban_Ocon.jpg",
+    "Felipe Massa": "/drivers/Felipe_Massa.jpg",
+    "Fernando Alonso": "/drivers/Fernando_Alonso.jpg",
+    "Franco Colapinto": "/drivers/Franco_Colapinto.jpg",
+    "Gabriel Bortoleto": "/drivers/Gabriel_Bortoleto.jpg",
+    "George Russell": "/drivers/George_Russell.jpg",
+    "Gerhard Berger": "/drivers/Gerhard_Berger.jpg",
+    // "Heinz-Harald Frentzen": "/drivers/default.png", // MISSING
+    "Isack Hadjar": "/drivers/Isack_Hadjar.jpg",
+    "Jack Doohan": "/drivers/Jack_Doohan.jpg",
+    // "Jacques Villeneuve": "/drivers/default.png", // MISSING
+    // "Jean Alesi": "/drivers/default.png", // MISSING
+    "Jenson Button": "/drivers/Jenson_Button.jpg",
+    "Jim Clark": "/drivers/Jim_Clark.webp",
+    // "José Froilán González": "/drivers/default.png", // MISSING
+    "Juan Fangio": "/drivers/Juan_Fangio.webp",
+    // "Juan Pablo Montoya": "/drivers/default.png", // MISSING
+    // "Kimi Antonelli": "/drivers/default.png", // MISSING
+    // "Kimi Räikkönen": "/drivers/default.png", // MISSING
+    "Lance Stroll": "/drivers/Lance_Stroll.jpg",
+    "Lando Norris": "/drivers/Lando_Norris.jpg",
+    "Lewis Hamilton": "/drivers/Lewis_Hamilton.jpg",
+    "Liam Lawson": "/drivers/Liam_Lawson.jpg",
+    // "Louis Chiron": "/drivers/default.png", // MISSING
+    "Louis Rosier": "/drivers/Louis_Rosier.jpg",
+    "Luigi Musso": "/drivers/Luigi_Musso.jpg",
+    "Mark Webber": "/drivers/Mark_Webber.jpg",
+    "Max Verstappen": "/drivers/Max_Verstappen.jpg",
+    "Michael Schumacher": "/drivers/Michael_Schumacher.webp",
+    // "Mika Häkkinen": "/drivers/default.png", // MISSING
+    "Mike Hawthorn": "/drivers/Mike_Hawthorn.jpg",
+    "Nico Hülkenberg": "/drivers/Nico_Hulkenberg.jpg",
+    // "Nico Rosberg": "/drivers/default.png", // MISSING
+    // "Nigel Mansell": "/drivers/default.png", // MISSING
+    // "Oliver Bearman": "/drivers/default.png", // MISSING
+    "Oscar Piastri": "/drivers/Oscar_Piastri.jpg",
+    // "Pierre Gasly": "/drivers/default.png", // MISSING
+    // "Riccardo Patrese": "/drivers/default.png", // MISSING
+    // "Romain Grosjean": "/drivers/default.png", // MISSING
+    // "Ronnie Peterson": "/drivers/default.png", // MISSING
+    "Rubens Barrichello": "/drivers/Rubens_Barrichello.jpg",
+    "Sebastian Vettel": "/drivers/Sebastian_Vettel.webp",
+    "Sergio Pérez": "/drivers/Sergio_Perez.jpg",
+    // "Stefan Johansson": "/drivers/default.png", // MISSING
+    // "Stirling Moss": "/drivers/default.png", // MISSING
+    // "Stoffel Vandoorne": "/drivers/default.png", // MISSING
+    // "Toulo de Graffenried": "/drivers/default.png", // MISSING
+    // "Valtteri Bottas": "/drivers/default.png", // MISSING
+    "Yuki Tsunoda": "/drivers/Yuki_Tsunoda.jpg",
+    // "Yves Cabantous": "/drivers/default.png", // MISSING
+};
