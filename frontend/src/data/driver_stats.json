@@ -1,0 +1,5586 @@
+{
+  "Nino Farina": {
+    "wins": 4,
+    "losses": 28,
+    "total_races": 32,
+    "avg_elo": 1381,
+    "peak_elo": 1685,
+    "current_elo": 1254
+  },
+  "Luigi Fagioli": {
+    "wins": 0,
+    "losses": 6,
+    "total_races": 6,
+    "avg_elo": 1408,
+    "peak_elo": 1500,
+    "current_elo": 1389
+  },
+  "Reg Parnell": {
+    "wins": 0,
+    "losses": 7,
+    "total_races": 7,
+    "avg_elo": 1493,
+    "peak_elo": 1559,
+    "current_elo": 1328
+  },
+  "Yves Cabantous": {
+    "wins": 0,
+    "losses": 13,
+    "total_races": 13,
+    "avg_elo": 1301,
+    "peak_elo": 1802,
+    "current_elo": 1208
+  },
+  "Louis Rosier": {
+    "wins": 0,
+    "losses": 37,
+    "total_races": 37,
+    "avg_elo": 1298,
+    "peak_elo": 1798,
+    "current_elo": 1111
+  },
+  "Bob Gerard": {
+    "wins": 0,
+    "losses": 7,
+    "total_races": 7,
+    "avg_elo": 1633,
+    "peak_elo": 1699,
+    "current_elo": 1598
+  },
+  "Cuth Harrison": {
+    "wins": 0,
+    "losses": 3,
+    "total_races": 3,
+    "avg_elo": 1465,
+    "peak_elo": 1500,
+    "current_elo": 1460
+  },
+  "Philippe Étancelin": {
+    "wins": 0,
+    "losses": 11,
+    "total_races": 11,
+    "avg_elo": 1258,
+    "peak_elo": 1500,
+    "current_elo": 1179
+  },
+  "David Hampshire": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1467,
+    "peak_elo": 1647,
+    "current_elo": 1288
+  },
+  "Johnny Claes": {
+    "wins": 0,
+    "losses": 22,
+    "total_races": 22,
+    "avg_elo": 1267,
+    "peak_elo": 1528,
+    "current_elo": 1143
+  },
+  "Juan Fangio": {
+    "wins": 22,
+    "losses": 25,
+    "total_races": 47,
+    "avg_elo": 1697,
+    "peak_elo": 1995,
+    "current_elo": 1776
+  },
+  "Joe Kelly": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1521,
+    "peak_elo": 1527,
+    "current_elo": 1516
+  },
+  "Prince Bira": {
+    "wins": 0,
+    "losses": 18,
+    "total_races": 18,
+    "avg_elo": 1365,
+    "peak_elo": 1715,
+    "current_elo": 1176
+  },
+  "David Murray": {
+    "wins": 0,
+    "losses": 4,
+    "total_races": 4,
+    "avg_elo": 1434,
+    "peak_elo": 1482,
+    "current_elo": 1308
+  },
+  "Geoff Crossley": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1455,
+    "peak_elo": 1468,
+    "current_elo": 1468
+  },
+  "Toulo de Graffenried": {
+    "wins": 0,
+    "losses": 20,
+    "total_races": 20,
+    "avg_elo": 1403,
+    "peak_elo": 1969,
+    "current_elo": 1182
+  },
+  "Louis Chiron": {
+    "wins": 0,
+    "losses": 16,
+    "total_races": 16,
+    "avg_elo": 1266,
+    "peak_elo": 1794,
+    "current_elo": 992
+  },
+  "Eugène Martin": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1322,
+    "peak_elo": 1322,
+    "current_elo": 1322
+  },
+  "Leslie Johnson": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1389,
+    "peak_elo": 1389,
+    "current_elo": 1389
+  },
+  "Alberto Ascari": {
+    "wins": 13,
+    "losses": 17,
+    "total_races": 30,
+    "avg_elo": 1582,
+    "peak_elo": 1996,
+    "current_elo": 998
+  },
+  "Raymond Sommer": {
+    "wins": 0,
+    "losses": 5,
+    "total_races": 5,
+    "avg_elo": 1366,
+    "peak_elo": 1568,
+    "current_elo": 1184
+  },
+  "Luigi Villoresi": {
+    "wins": 0,
+    "losses": 27,
+    "total_races": 27,
+    "avg_elo": 1266,
+    "peak_elo": 1552,
+    "current_elo": 1093
+  },
+  "José Froilán González": {
+    "wins": 2,
+    "losses": 20,
+    "total_races": 22,
+    "avg_elo": 1406,
+    "peak_elo": 1802,
+    "current_elo": 1039
+  },
+  "Robert Manzon": {
+    "wins": 0,
+    "losses": 28,
+    "total_races": 28,
+    "avg_elo": 1278,
+    "peak_elo": 1566,
+    "current_elo": 1037
+  },
+  "Maurice Trintignant": {
+    "wins": 2,
+    "losses": 76,
+    "total_races": 78,
+    "avg_elo": 1251,
+    "peak_elo": 1593,
+    "current_elo": 955
+  },
+  "Franco Rol": {
+    "wins": 0,
+    "losses": 5,
+    "total_races": 5,
+    "avg_elo": 1304,
+    "peak_elo": 1357,
+    "current_elo": 1217
+  },
+  "Harry Schell": {
+    "wins": 0,
+    "losses": 54,
+    "total_races": 54,
+    "avg_elo": 1099,
+    "peak_elo": 1459,
+    "current_elo": 1001
+  },
+  "Peter Whitehead": {
+    "wins": 0,
+    "losses": 10,
+    "total_races": 10,
+    "avg_elo": 1331,
+    "peak_elo": 1526,
+    "current_elo": 1213
+  },
+  "Alfredo Pián": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1210,
+    "peak_elo": 1210,
+    "current_elo": 1210
+  },
+  "Felice Bonetto": {
+    "wins": 0,
+    "losses": 13,
+    "total_races": 13,
+    "avg_elo": 1437,
+    "peak_elo": 1639,
+    "current_elo": 1296
+  },
+  "Nello Pagani": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1489,
+    "peak_elo": 1489,
+    "current_elo": 1489
+  },
+  "Toni Branca": {
+    "wins": 0,
+    "losses": 3,
+    "total_races": 3,
+    "avg_elo": 1320,
+    "peak_elo": 1352,
+    "current_elo": 1352
+  },
+  "Pierre Levegh": {
+    "wins": 0,
+    "losses": 6,
+    "total_races": 6,
+    "avg_elo": 1362,
+    "peak_elo": 1500,
+    "current_elo": 1288
+  },
+  "Eugène Chaboud": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1452,
+    "peak_elo": 1452,
+    "current_elo": 1452
+  },
+  "Guy Mairesse": {
+    "wins": 0,
+    "losses": 3,
+    "total_races": 3,
+    "avg_elo": 1375,
+    "peak_elo": 1379,
+    "current_elo": 1373
+  },
+  "Clemente Biondetti": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1385,
+    "peak_elo": 1385,
+    "current_elo": 1385
+  },
+  "Henri Louveau": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1130,
+    "peak_elo": 1130,
+    "current_elo": 1130
+  },
+  "Franco Comotti": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1433,
+    "peak_elo": 1497,
+    "current_elo": 1369
+  },
+  "Consalvo Sanesi": {
+    "wins": 0,
+    "losses": 5,
+    "total_races": 5,
+    "avg_elo": 1262,
+    "peak_elo": 1285,
+    "current_elo": 1259
+  },
+  "Paul Pietsch": {
+    "wins": 0,
+    "losses": 3,
+    "total_races": 3,
+    "avg_elo": 1085,
+    "peak_elo": 1085,
+    "current_elo": 1085
+  },
+  "Piero Taruffi": {
+    "wins": 1,
+    "losses": 15,
+    "total_races": 16,
+    "avg_elo": 1334,
+    "peak_elo": 1672,
+    "current_elo": 1019
+  },
+  "Stirling Moss": {
+    "wins": 15,
+    "losses": 51,
+    "total_races": 66,
+    "avg_elo": 1370,
+    "peak_elo": 1803,
+    "current_elo": 1295
+  },
+  "Rudi Fischer": {
+    "wins": 0,
+    "losses": 6,
+    "total_races": 6,
+    "avg_elo": 1297,
+    "peak_elo": 1500,
+    "current_elo": 1063
+  },
+  "George Abecassis": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1398,
+    "peak_elo": 1442,
+    "current_elo": 1353
+  },
+  "Peter Hirt": {
+    "wins": 0,
+    "losses": 4,
+    "total_races": 4,
+    "avg_elo": 1277,
+    "peak_elo": 1456,
+    "current_elo": 1095
+  },
+  "André Pilette": {
+    "wins": 0,
+    "losses": 9,
+    "total_races": 9,
+    "avg_elo": 1418,
+    "peak_elo": 1603,
+    "current_elo": 1259
+  },
+  "Aldo Gordini": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1625,
+    "peak_elo": 1625,
+    "current_elo": 1625
+  },
+  "André Simon": {
+    "wins": 0,
+    "losses": 9,
+    "total_races": 9,
+    "avg_elo": 1303,
+    "peak_elo": 1481,
+    "current_elo": 1227
+  },
+  "Onofre Marimón": {
+    "wins": 0,
+    "losses": 12,
+    "total_races": 12,
+    "avg_elo": 1327,
+    "peak_elo": 1598,
+    "current_elo": 1155
+  },
+  "Peter Walker": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1311,
+    "peak_elo": 1493,
+    "current_elo": 1129
+  },
+  "Brian Shawe Taylor": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1570,
+    "peak_elo": 1570,
+    "current_elo": 1570
+  },
+  "Duncan Hamilton": {
+    "wins": 0,
+    "losses": 5,
+    "total_races": 5,
+    "avg_elo": 1328,
+    "peak_elo": 1475,
+    "current_elo": 1276
+  },
+  "Philip Fotheringham-Parker": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1541,
+    "peak_elo": 1541,
+    "current_elo": 1541
+  },
+  "John James": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1407,
+    "peak_elo": 1407,
+    "current_elo": 1407
+  },
+  "Jacques Swaters": {
+    "wins": 0,
+    "losses": 7,
+    "total_races": 7,
+    "avg_elo": 1171,
+    "peak_elo": 1468,
+    "current_elo": 1062
+  },
+  "Chico Landi": {
+    "wins": 0,
+    "losses": 3,
+    "total_races": 3,
+    "avg_elo": 1221,
+    "peak_elo": 1221,
+    "current_elo": 1221
+  },
+  "Ken Richardson": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1431,
+    "peak_elo": 1431,
+    "current_elo": 1431
+  },
+  "Paco Godia": {
+    "wins": 0,
+    "losses": 13,
+    "total_races": 13,
+    "avg_elo": 1038,
+    "peak_elo": 1565,
+    "current_elo": 814
+  },
+  "Georges Grignard": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1260,
+    "peak_elo": 1260,
+    "current_elo": 1260
+  },
+  "Juan Jover": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1352,
+    "peak_elo": 1352,
+    "current_elo": 1352
+  },
+  "Jean Behra": {
+    "wins": 0,
+    "losses": 50,
+    "total_races": 50,
+    "avg_elo": 1262,
+    "peak_elo": 1740,
+    "current_elo": 1193
+  },
+  "Ken Wharton": {
+    "wins": 0,
+    "losses": 15,
+    "total_races": 15,
+    "avg_elo": 1381,
+    "peak_elo": 1709,
+    "current_elo": 943
+  },
+  "Alan Brown": {
+    "wins": 0,
+    "losses": 8,
+    "total_races": 8,
+    "avg_elo": 1444,
+    "peak_elo": 1562,
+    "current_elo": 1469
+  },
+  "Eric Brandon": {
+    "wins": 0,
+    "losses": 4,
+    "total_races": 4,
+    "avg_elo": 1439,
+    "peak_elo": 1485,
+    "current_elo": 1424
+  },
+  "Lance Macklin": {
+    "wins": 0,
+    "losses": 12,
+    "total_races": 12,
+    "avg_elo": 1384,
+    "peak_elo": 1501,
+    "current_elo": 1284
+  },
+  "Peter Collins": {
+    "wins": 3,
+    "losses": 28,
+    "total_races": 31,
+    "avg_elo": 1235,
+    "peak_elo": 1547,
+    "current_elo": 1064
+  },
+  "Hans von Stuck": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1482,
+    "peak_elo": 1488,
+    "current_elo": 1488
+  },
+  "Toni Ulmen": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1476,
+    "peak_elo": 1476,
+    "current_elo": 1476
+  },
+  "Max de Terra": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1310,
+    "peak_elo": 1371,
+    "current_elo": 1249
+  },
+  "Mike Hawthorn": {
+    "wins": 3,
+    "losses": 40,
+    "total_races": 43,
+    "avg_elo": 1354,
+    "peak_elo": 1749,
+    "current_elo": 1470
+  },
+  "Paul Frère": {
+    "wins": 0,
+    "losses": 10,
+    "total_races": 10,
+    "avg_elo": 1427,
+    "peak_elo": 1653,
+    "current_elo": 1377
+  },
+  "Charles de Tornaco": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1410,
+    "peak_elo": 1500,
+    "current_elo": 1320
+  },
+  "Roger Laurent": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1411,
+    "peak_elo": 1491,
+    "current_elo": 1330
+  },
+  "Arthur Legat": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1482,
+    "peak_elo": 1488,
+    "current_elo": 1477
+  },
+  "Robert O'Brien": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1380,
+    "peak_elo": 1380,
+    "current_elo": 1380
+  },
+  "Tony Gaze": {
+    "wins": 0,
+    "losses": 3,
+    "total_races": 3,
+    "avg_elo": 1290,
+    "peak_elo": 1413,
+    "current_elo": 1229
+  },
+  "Robin Montgomerie-Charrington": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1471,
+    "peak_elo": 1471,
+    "current_elo": 1471
+  },
+  "Piero Carini": {
+    "wins": 0,
+    "losses": 3,
+    "total_races": 3,
+    "avg_elo": 1041,
+    "peak_elo": 1184,
+    "current_elo": 921
+  },
+  "Dennis Poore": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1630,
+    "peak_elo": 1646,
+    "current_elo": 1646
+  },
+  "Eric Thompson": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1500,
+    "peak_elo": 1500,
+    "current_elo": 1500
+  },
+  "Roy Salvadori": {
+    "wins": 0,
+    "losses": 49,
+    "total_races": 49,
+    "avg_elo": 1181,
+    "peak_elo": 1688,
+    "current_elo": 970
+  },
+  "Ken Downing": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1468,
+    "peak_elo": 1470,
+    "current_elo": 1466
+  },
+  "Graham Whitehead": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1494,
+    "peak_elo": 1494,
+    "current_elo": 1494
+  },
+  "Kenneth McAlpine": {
+    "wins": 0,
+    "losses": 7,
+    "total_races": 7,
+    "avg_elo": 1331,
+    "peak_elo": 1479,
+    "current_elo": 1479
+  },
+  "Gino Bianco": {
+    "wins": 0,
+    "losses": 4,
+    "total_races": 4,
+    "avg_elo": 1332,
+    "peak_elo": 1420,
+    "current_elo": 1270
+  },
+  "Tony Crook": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1385,
+    "peak_elo": 1470,
+    "current_elo": 1300
+  },
+  "Fritz Riess": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1696,
+    "peak_elo": 1696,
+    "current_elo": 1696
+  },
+  "Helmut Niedermayr": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1549,
+    "peak_elo": 1549,
+    "current_elo": 1549
+  },
+  "Hans Klenk": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1500,
+    "peak_elo": 1500,
+    "current_elo": 1500
+  },
+  "Ernst Klodwig": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1575,
+    "peak_elo": 1603,
+    "current_elo": 1547
+  },
+  "Willi Heeks": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1397,
+    "peak_elo": 1470,
+    "current_elo": 1324
+  },
+  "Adolf Brudes": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1470,
+    "peak_elo": 1470,
+    "current_elo": 1470
+  },
+  "Marcel Balsa": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1500,
+    "peak_elo": 1500,
+    "current_elo": 1500
+  },
+  "Günther Bechem": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1458,
+    "peak_elo": 1458,
+    "current_elo": 1458
+  },
+  "Eitel Cantoni": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1503,
+    "peak_elo": 1557,
+    "current_elo": 1450
+  },
+  "Rudolf Krause": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1435,
+    "peak_elo": 1481,
+    "current_elo": 1481
+  },
+  "Rudolf Schoeller": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1217,
+    "peak_elo": 1217,
+    "current_elo": 1217
+  },
+  "Bill Aston": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1481,
+    "peak_elo": 1481,
+    "current_elo": 1481
+  },
+  "Theo Helfrich": {
+    "wins": 0,
+    "losses": 3,
+    "total_races": 3,
+    "avg_elo": 1283,
+    "peak_elo": 1296,
+    "current_elo": 1296
+  },
+  "Josef Peters": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1207,
+    "peak_elo": 1207,
+    "current_elo": 1207
+  },
+  "Dries van der Lof": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1391,
+    "peak_elo": 1391,
+    "current_elo": 1391
+  },
+  "Jan Flinterman": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1505,
+    "peak_elo": 1505,
+    "current_elo": 1505
+  },
+  "Élie Bayol": {
+    "wins": 0,
+    "losses": 6,
+    "total_races": 6,
+    "avg_elo": 1362,
+    "peak_elo": 1444,
+    "current_elo": 1335
+  },
+  "Oscar Gálvez": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1500,
+    "peak_elo": 1500,
+    "current_elo": 1500
+  },
+  "John Barber": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1567,
+    "peak_elo": 1567,
+    "current_elo": 1567
+  },
+  "Carlos Menditeguy": {
+    "wins": 0,
+    "losses": 10,
+    "total_races": 10,
+    "avg_elo": 1093,
+    "peak_elo": 1403,
+    "current_elo": 1061
+  },
+  "Pablo Birger": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1473,
+    "peak_elo": 1473,
+    "current_elo": 1473
+  },
+  "Adolfo Cruz": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1418,
+    "peak_elo": 1418,
+    "current_elo": 1418
+  },
+  "Roberto Mieres": {
+    "wins": 0,
+    "losses": 16,
+    "total_races": 16,
+    "avg_elo": 1267,
+    "peak_elo": 1462,
+    "current_elo": 1356
+  },
+  "Fred Wacker": {
+    "wins": 0,
+    "losses": 3,
+    "total_races": 3,
+    "avg_elo": 1503,
+    "peak_elo": 1588,
+    "current_elo": 1588
+  },
+  "Georges Berger": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1442,
+    "peak_elo": 1481,
+    "current_elo": 1404
+  },
+  "Jimmy Stewart": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1483,
+    "peak_elo": 1483,
+    "current_elo": 1483
+  },
+  "Tony Rolt": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1500,
+    "peak_elo": 1500,
+    "current_elo": 1500
+  },
+  "Jack Fairman": {
+    "wins": 0,
+    "losses": 12,
+    "total_races": 12,
+    "avg_elo": 1352,
+    "peak_elo": 1578,
+    "current_elo": 980
+  },
+  "Ian Stewart": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1346,
+    "peak_elo": 1346,
+    "current_elo": 1346
+  },
+  "Hans Herrmann": {
+    "wins": 0,
+    "losses": 16,
+    "total_races": 16,
+    "avg_elo": 1219,
+    "peak_elo": 1631,
+    "current_elo": 997
+  },
+  "Rodney Nuckey": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1481,
+    "peak_elo": 1481,
+    "current_elo": 1481
+  },
+  "Wolfgang Seidel": {
+    "wins": 0,
+    "losses": 10,
+    "total_races": 10,
+    "avg_elo": 1076,
+    "peak_elo": 1472,
+    "current_elo": 776
+  },
+  "Edgar Barth": {
+    "wins": 0,
+    "losses": 6,
+    "total_races": 6,
+    "avg_elo": 1380,
+    "peak_elo": 1531,
+    "current_elo": 1133
+  },
+  "Oswald Karch": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1401,
+    "peak_elo": 1401,
+    "current_elo": 1401
+  },
+  "Theo Fitzau": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1474,
+    "peak_elo": 1474,
+    "current_elo": 1474
+  },
+  "Kurt Adolff": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1245,
+    "peak_elo": 1245,
+    "current_elo": 1245
+  },
+  "Hermann Lang": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1535,
+    "peak_elo": 1537,
+    "current_elo": 1532
+  },
+  "Albert Scherrer": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1549,
+    "peak_elo": 1549,
+    "current_elo": 1549
+  },
+  "Umberto Maglioli": {
+    "wins": 0,
+    "losses": 5,
+    "total_races": 5,
+    "avg_elo": 1187,
+    "peak_elo": 1467,
+    "current_elo": 815
+  },
+  "John Fitch": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1335,
+    "peak_elo": 1389,
+    "current_elo": 1280
+  },
+  "Roger Loyer": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1360,
+    "peak_elo": 1360,
+    "current_elo": 1360
+  },
+  "Jorge Daponte": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1196,
+    "peak_elo": 1210,
+    "current_elo": 1182
+  },
+  "Luigi Musso": {
+    "wins": 0,
+    "losses": 22,
+    "total_races": 22,
+    "avg_elo": 1354,
+    "peak_elo": 1771,
+    "current_elo": 1098
+  },
+  "Sergio Mantovani": {
+    "wins": 0,
+    "losses": 6,
+    "total_races": 6,
+    "avg_elo": 1308,
+    "peak_elo": 1460,
+    "current_elo": 1105
+  },
+  "Karl Kling": {
+    "wins": 0,
+    "losses": 10,
+    "total_races": 10,
+    "avg_elo": 1354,
+    "peak_elo": 1500,
+    "current_elo": 1180
+  },
+  "Jacques Pollet": {
+    "wins": 0,
+    "losses": 5,
+    "total_races": 5,
+    "avg_elo": 1439,
+    "peak_elo": 1535,
+    "current_elo": 1535
+  },
+  "Don Beauman": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1636,
+    "peak_elo": 1636,
+    "current_elo": 1636
+  },
+  "Leslie Marr": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1459,
+    "peak_elo": 1500,
+    "current_elo": 1419
+  },
+  "Leslie Thorne": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1500,
+    "peak_elo": 1500,
+    "current_elo": 1500
+  },
+  "Horace Gould": {
+    "wins": 0,
+    "losses": 16,
+    "total_races": 16,
+    "avg_elo": 888,
+    "peak_elo": 1477,
+    "current_elo": 580
+  },
+  "Bill Whitehouse": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1429,
+    "peak_elo": 1429,
+    "current_elo": 1429
+  },
+  "John Riseley-Prichard": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1356,
+    "peak_elo": 1356,
+    "current_elo": 1356
+  },
+  "Clemar Bucci": {
+    "wins": 0,
+    "losses": 4,
+    "total_races": 4,
+    "avg_elo": 1353,
+    "peak_elo": 1396,
+    "current_elo": 1310
+  },
+  "Jesús Iglesias": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1565,
+    "peak_elo": 1565,
+    "current_elo": 1565
+  },
+  "Alberto Uria": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1365,
+    "peak_elo": 1365,
+    "current_elo": 1365
+  },
+  "Eugenio Castellotti": {
+    "wins": 0,
+    "losses": 12,
+    "total_races": 12,
+    "avg_elo": 1390,
+    "peak_elo": 1605,
+    "current_elo": 1190
+  },
+  "Cesare Perdisa": {
+    "wins": 0,
+    "losses": 3,
+    "total_races": 3,
+    "avg_elo": 1427,
+    "peak_elo": 1498,
+    "current_elo": 1369
+  },
+  "Hernando da Silva Ramos": {
+    "wins": 0,
+    "losses": 7,
+    "total_races": 7,
+    "avg_elo": 1438,
+    "peak_elo": 1539,
+    "current_elo": 1205
+  },
+  "Mike Sparken": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1537,
+    "peak_elo": 1537,
+    "current_elo": 1537
+  },
+  "Jack Brabham": {
+    "wins": 14,
+    "losses": 114,
+    "total_races": 128,
+    "avg_elo": 1259,
+    "peak_elo": 1642,
+    "current_elo": 1450
+  },
+  "Jean Lucas": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1402,
+    "peak_elo": 1402,
+    "current_elo": 1402
+  },
+  "Luigi Piotti": {
+    "wins": 0,
+    "losses": 6,
+    "total_races": 6,
+    "avg_elo": 1079,
+    "peak_elo": 1461,
+    "current_elo": 542
+  },
+  "Olivier Gendebien": {
+    "wins": 0,
+    "losses": 13,
+    "total_races": 13,
+    "avg_elo": 1237,
+    "peak_elo": 1594,
+    "current_elo": 1103
+  },
+  "Tony Brooks": {
+    "wins": 5,
+    "losses": 33,
+    "total_races": 38,
+    "avg_elo": 1262,
+    "peak_elo": 1560,
+    "current_elo": 1196
+  },
+  "Piero Scotti": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1509,
+    "peak_elo": 1509,
+    "current_elo": 1509
+  },
+  "Alfonso de Portago": {
+    "wins": 0,
+    "losses": 3,
+    "total_races": 3,
+    "avg_elo": 1229,
+    "peak_elo": 1229,
+    "current_elo": 1229
+  },
+  "Colin Chapman": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1342,
+    "peak_elo": 1342,
+    "current_elo": 1342
+  },
+  "Desmond Titterington": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1500,
+    "peak_elo": 1500,
+    "current_elo": 1500
+  },
+  "Bruce Halford": {
+    "wins": 0,
+    "losses": 8,
+    "total_races": 8,
+    "avg_elo": 822,
+    "peak_elo": 906,
+    "current_elo": 790
+  },
+  "Archie Scott Brown": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1379,
+    "peak_elo": 1379,
+    "current_elo": 1379
+  },
+  "Paul Emery": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1467,
+    "peak_elo": 1467,
+    "current_elo": 1467
+  },
+  "Ron Flockhart": {
+    "wins": 0,
+    "losses": 12,
+    "total_races": 12,
+    "avg_elo": 1211,
+    "peak_elo": 1561,
+    "current_elo": 943
+  },
+  "Ottorino Volonterio": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1043,
+    "peak_elo": 1043,
+    "current_elo": 1043
+  },
+  "Giorgio Scarlatti": {
+    "wins": 0,
+    "losses": 10,
+    "total_races": 10,
+    "avg_elo": 1093,
+    "peak_elo": 1227,
+    "current_elo": 1082
+  },
+  "Gerino Gerini": {
+    "wins": 0,
+    "losses": 5,
+    "total_races": 5,
+    "avg_elo": 1235,
+    "peak_elo": 1329,
+    "current_elo": 1120
+  },
+  "Les Leston": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1365,
+    "peak_elo": 1387,
+    "current_elo": 1342
+  },
+  "Wolfgang von Trips": {
+    "wins": 2,
+    "losses": 24,
+    "total_races": 26,
+    "avg_elo": 1280,
+    "peak_elo": 1553,
+    "current_elo": 1243
+  },
+  "Jo Bonnier": {
+    "wins": 1,
+    "losses": 104,
+    "total_races": 105,
+    "avg_elo": 1178,
+    "peak_elo": 1672,
+    "current_elo": 1182
+  },
+  "Alessandro de Tomaso": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1613,
+    "peak_elo": 1632,
+    "current_elo": 1595
+  },
+  "Masten Gregory": {
+    "wins": 0,
+    "losses": 40,
+    "total_races": 40,
+    "avg_elo": 1057,
+    "peak_elo": 1491,
+    "current_elo": 951
+  },
+  "Stuart Lewis-Evans": {
+    "wins": 0,
+    "losses": 13,
+    "total_races": 13,
+    "avg_elo": 1337,
+    "peak_elo": 1552,
+    "current_elo": 1331
+  },
+  "Ivor Bueb": {
+    "wins": 0,
+    "losses": 5,
+    "total_races": 5,
+    "avg_elo": 1539,
+    "peak_elo": 1612,
+    "current_elo": 1500
+  },
+  "Herbert MacKay-Fraser": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1491,
+    "peak_elo": 1491,
+    "current_elo": 1491
+  },
+  "Brian Naylor": {
+    "wins": 0,
+    "losses": 7,
+    "total_races": 7,
+    "avg_elo": 1172,
+    "peak_elo": 1551,
+    "current_elo": 1048
+  },
+  "Carel Godin de Beaufort": {
+    "wins": 0,
+    "losses": 28,
+    "total_races": 28,
+    "avg_elo": 1299,
+    "peak_elo": 1433,
+    "current_elo": 1370
+  },
+  "Tony Marsh": {
+    "wins": 0,
+    "losses": 8,
+    "total_races": 8,
+    "avg_elo": 1126,
+    "peak_elo": 1482,
+    "current_elo": 900
+  },
+  "Paul England": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1201,
+    "peak_elo": 1201,
+    "current_elo": 1201
+  },
+  "Dick Gibson": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1120,
+    "peak_elo": 1135,
+    "current_elo": 1104
+  },
+  "Cliff Allison": {
+    "wins": 0,
+    "losses": 16,
+    "total_races": 16,
+    "avg_elo": 1343,
+    "peak_elo": 1558,
+    "current_elo": 1224
+  },
+  "Graham Hill": {
+    "wins": 14,
+    "losses": 163,
+    "total_races": 177,
+    "avg_elo": 1383,
+    "peak_elo": 1624,
+    "current_elo": 1551
+  },
+  "Maria de Filippis": {
+    "wins": 0,
+    "losses": 3,
+    "total_races": 3,
+    "avg_elo": 1343,
+    "peak_elo": 1421,
+    "current_elo": 1421
+  },
+  "Phil Hill": {
+    "wins": 3,
+    "losses": 48,
+    "total_races": 51,
+    "avg_elo": 1346,
+    "peak_elo": 1696,
+    "current_elo": 1296
+  },
+  "Troy Ruttman": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1278,
+    "peak_elo": 1362,
+    "current_elo": 1194
+  },
+  "Carroll Shelby": {
+    "wins": 0,
+    "losses": 8,
+    "total_races": 8,
+    "avg_elo": 1225,
+    "peak_elo": 1311,
+    "current_elo": 1311
+  },
+  "Ian Burgess": {
+    "wins": 0,
+    "losses": 23,
+    "total_races": 23,
+    "avg_elo": 1151,
+    "peak_elo": 1337,
+    "current_elo": 1164
+  },
+  "Alan Stacey": {
+    "wins": 0,
+    "losses": 7,
+    "total_races": 7,
+    "avg_elo": 1407,
+    "peak_elo": 1548,
+    "current_elo": 1334
+  },
+  "Bruce McLaren": {
+    "wins": 4,
+    "losses": 99,
+    "total_races": 103,
+    "avg_elo": 1476,
+    "peak_elo": 1917,
+    "current_elo": 1454
+  },
+  "Christian Goethals": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1231,
+    "peak_elo": 1231,
+    "current_elo": 1231
+  },
+  "Giulio Cabianca": {
+    "wins": 0,
+    "losses": 3,
+    "total_races": 3,
+    "avg_elo": 1487,
+    "peak_elo": 1516,
+    "current_elo": 1516
+  },
+  "Robert La Caze": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1440,
+    "peak_elo": 1440,
+    "current_elo": 1440
+  },
+  "André Guelfi": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1376,
+    "peak_elo": 1376,
+    "current_elo": 1376
+  },
+  "François Picard": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1308,
+    "peak_elo": 1308,
+    "current_elo": 1308
+  },
+  "Tom Bridger": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1244,
+    "peak_elo": 1244,
+    "current_elo": 1244
+  },
+  "Innes Ireland": {
+    "wins": 1,
+    "losses": 53,
+    "total_races": 54,
+    "avg_elo": 1266,
+    "peak_elo": 1632,
+    "current_elo": 1377
+  },
+  "Fritz d'Orey": {
+    "wins": 0,
+    "losses": 3,
+    "total_races": 3,
+    "avg_elo": 1369,
+    "peak_elo": 1378,
+    "current_elo": 1354
+  },
+  "Dan Gurney": {
+    "wins": 4,
+    "losses": 83,
+    "total_races": 87,
+    "avg_elo": 1385,
+    "peak_elo": 1613,
+    "current_elo": 1355
+  },
+  "Colin Davis": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1382,
+    "peak_elo": 1417,
+    "current_elo": 1417
+  },
+  "Azdrubal Fontes": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1273,
+    "peak_elo": 1273,
+    "current_elo": 1273
+  },
+  "Chris Bristow": {
+    "wins": 0,
+    "losses": 4,
+    "total_races": 4,
+    "avg_elo": 1296,
+    "peak_elo": 1515,
+    "current_elo": 1169
+  },
+  "Henry Taylor": {
+    "wins": 0,
+    "losses": 8,
+    "total_races": 8,
+    "avg_elo": 1142,
+    "peak_elo": 1303,
+    "current_elo": 867
+  },
+  "Peter Ashdown": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1246,
+    "peak_elo": 1246,
+    "current_elo": 1246
+  },
+  "David Piper": {
+    "wins": 0,
+    "losses": 3,
+    "total_races": 3,
+    "avg_elo": 1279,
+    "peak_elo": 1372,
+    "current_elo": 1232
+  },
+  "Mike Taylor": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1077,
+    "peak_elo": 1097,
+    "current_elo": 1056
+  },
+  "Mário de Araújo Cabral": {
+    "wins": 0,
+    "losses": 4,
+    "total_races": 4,
+    "avg_elo": 1479,
+    "peak_elo": 1500,
+    "current_elo": 1448
+  },
+  "Harry Blanchard": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1523,
+    "peak_elo": 1523,
+    "current_elo": 1523
+  },
+  "Rodger Ward": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1435,
+    "peak_elo": 1478,
+    "current_elo": 1392
+  },
+  "George Constantine": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1463,
+    "peak_elo": 1463,
+    "current_elo": 1463
+  },
+  "Bob Said": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1456,
+    "peak_elo": 1456,
+    "current_elo": 1456
+  },
+  "Phil Cade": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1461,
+    "peak_elo": 1461,
+    "current_elo": 1461
+  },
+  "Alberto Rodriguez Larreta": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1500,
+    "peak_elo": 1500,
+    "current_elo": 1500
+  },
+  "Roberto Bonomi": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1430,
+    "peak_elo": 1430,
+    "current_elo": 1430
+  },
+  "Gino Munaron": {
+    "wins": 0,
+    "losses": 4,
+    "total_races": 4,
+    "avg_elo": 1565,
+    "peak_elo": 1603,
+    "current_elo": 1517
+  },
+  "Nasif Estéfano": {
+    "wins": 0,
+    "losses": 4,
+    "total_races": 4,
+    "avg_elo": 1431,
+    "peak_elo": 1500,
+    "current_elo": 1370
+  },
+  "Ettore Chimeri": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1451,
+    "peak_elo": 1451,
+    "current_elo": 1451
+  },
+  "Antonio Creus": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1387,
+    "peak_elo": 1387,
+    "current_elo": 1387
+  },
+  "Richie Ginther": {
+    "wins": 1,
+    "losses": 52,
+    "total_races": 53,
+    "avg_elo": 1306,
+    "peak_elo": 1588,
+    "current_elo": 1562
+  },
+  "John Surtees": {
+    "wins": 6,
+    "losses": 106,
+    "total_races": 112,
+    "avg_elo": 1320,
+    "peak_elo": 1491,
+    "current_elo": 1330
+  },
+  "Jim Clark": {
+    "wins": 25,
+    "losses": 47,
+    "total_races": 72,
+    "avg_elo": 1476,
+    "peak_elo": 1823,
+    "current_elo": 1488
+  },
+  "Lance Reventlow": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1464,
+    "peak_elo": 1485,
+    "current_elo": 1443
+  },
+  "Chuck Daigh": {
+    "wins": 0,
+    "losses": 4,
+    "total_races": 4,
+    "avg_elo": 1432,
+    "peak_elo": 1473,
+    "current_elo": 1415
+  },
+  "Lucien Bianchi": {
+    "wins": 0,
+    "losses": 17,
+    "total_races": 17,
+    "avg_elo": 1171,
+    "peak_elo": 1347,
+    "current_elo": 1311
+  },
+  "Willy Mairesse": {
+    "wins": 0,
+    "losses": 11,
+    "total_races": 11,
+    "avg_elo": 1264,
+    "peak_elo": 1428,
+    "current_elo": 1242
+  },
+  "Keith Greene": {
+    "wins": 0,
+    "losses": 4,
+    "total_races": 4,
+    "avg_elo": 1293,
+    "peak_elo": 1332,
+    "current_elo": 1246
+  },
+  "Piero Drogo": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1520,
+    "peak_elo": 1520,
+    "current_elo": 1520
+  },
+  "Fred Gamble": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1492,
+    "peak_elo": 1492,
+    "current_elo": 1492
+  },
+  "Alfonso Thiele": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1491,
+    "peak_elo": 1491,
+    "current_elo": 1491
+  },
+  "Vic Wilson": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1372,
+    "peak_elo": 1372,
+    "current_elo": 1372
+  },
+  "Arthur Owen": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1322,
+    "peak_elo": 1322,
+    "current_elo": 1322
+  },
+  "Jim Hall": {
+    "wins": 0,
+    "losses": 12,
+    "total_races": 12,
+    "avg_elo": 1218,
+    "peak_elo": 1454,
+    "current_elo": 1438
+  },
+  "Pete Lovely": {
+    "wins": 0,
+    "losses": 7,
+    "total_races": 7,
+    "avg_elo": 1455,
+    "peak_elo": 1546,
+    "current_elo": 1394
+  },
+  "Bob Drake": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1508,
+    "peak_elo": 1508,
+    "current_elo": 1508
+  },
+  "Michael May": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1065,
+    "peak_elo": 1325,
+    "current_elo": 805
+  },
+  "Trevor Taylor": {
+    "wins": 0,
+    "losses": 27,
+    "total_races": 27,
+    "avg_elo": 1137,
+    "peak_elo": 1450,
+    "current_elo": 1099
+  },
+  "Jackie Lewis": {
+    "wins": 0,
+    "losses": 8,
+    "total_races": 8,
+    "avg_elo": 1046,
+    "peak_elo": 1477,
+    "current_elo": 985
+  },
+  "Lorenzo Bandini": {
+    "wins": 1,
+    "losses": 43,
+    "total_races": 44,
+    "avg_elo": 1281,
+    "peak_elo": 1472,
+    "current_elo": 1133
+  },
+  "Giancarlo Baghetti": {
+    "wins": 1,
+    "losses": 25,
+    "total_races": 26,
+    "avg_elo": 1135,
+    "peak_elo": 1564,
+    "current_elo": 975
+  },
+  "Bernard Collomb": {
+    "wins": 0,
+    "losses": 4,
+    "total_races": 4,
+    "avg_elo": 1042,
+    "peak_elo": 1202,
+    "current_elo": 965
+  },
+  "Juan Manuel Bordeu": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 940,
+    "peak_elo": 940,
+    "current_elo": 940
+  },
+  "Tony Maggs": {
+    "wins": 0,
+    "losses": 27,
+    "total_races": 27,
+    "avg_elo": 1487,
+    "peak_elo": 1744,
+    "current_elo": 1121
+  },
+  "Tim Parnell": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1200,
+    "peak_elo": 1447,
+    "current_elo": 1447
+  },
+  "Gerry Ashmore": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 887,
+    "peak_elo": 887,
+    "current_elo": 887
+  },
+  "Peter Monteverdi": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1447,
+    "peak_elo": 1447,
+    "current_elo": 1447
+  },
+  "Renato Pirocchi": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1408,
+    "peak_elo": 1408,
+    "current_elo": 1408
+  },
+  "Gaetano Starrabba": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1447,
+    "peak_elo": 1470,
+    "current_elo": 1424
+  },
+  "Ricardo Rodríguez": {
+    "wins": 0,
+    "losses": 5,
+    "total_races": 5,
+    "avg_elo": 1391,
+    "peak_elo": 1529,
+    "current_elo": 1293
+  },
+  "Nino Vaccarella": {
+    "wins": 0,
+    "losses": 4,
+    "total_races": 4,
+    "avg_elo": 1354,
+    "peak_elo": 1487,
+    "current_elo": 1324
+  },
+  "Roberto Bussinello": {
+    "wins": 0,
+    "losses": 3,
+    "total_races": 3,
+    "avg_elo": 1355,
+    "peak_elo": 1388,
+    "current_elo": 1333
+  },
+  "Roger Penske": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1457,
+    "peak_elo": 1500,
+    "current_elo": 1414
+  },
+  "Peter Ryan": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1443,
+    "peak_elo": 1443,
+    "current_elo": 1443
+  },
+  "Hap Sharp": {
+    "wins": 0,
+    "losses": 6,
+    "total_races": 6,
+    "avg_elo": 1403,
+    "peak_elo": 1459,
+    "current_elo": 1398
+  },
+  "Lloyd Ruby": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1316,
+    "peak_elo": 1316,
+    "current_elo": 1316
+  },
+  "Walt Hansgen": {
+    "wins": 0,
+    "losses": 4,
+    "total_races": 4,
+    "avg_elo": 1192,
+    "peak_elo": 1268,
+    "current_elo": 1268
+  },
+  "Ken Miles": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1093,
+    "peak_elo": 1093,
+    "current_elo": 1093
+  },
+  "Ben Pon": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1251,
+    "peak_elo": 1251,
+    "current_elo": 1251
+  },
+  "Jo Siffert": {
+    "wins": 2,
+    "losses": 95,
+    "total_races": 97,
+    "avg_elo": 1272,
+    "peak_elo": 1560,
+    "current_elo": 1560
+  },
+  "Heinz Schiller": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1381,
+    "peak_elo": 1398,
+    "current_elo": 1364
+  },
+  "Peter Arundell": {
+    "wins": 0,
+    "losses": 15,
+    "total_races": 15,
+    "avg_elo": 1376,
+    "peak_elo": 1510,
+    "current_elo": 1510
+  },
+  "Tony Settember": {
+    "wins": 0,
+    "losses": 9,
+    "total_races": 9,
+    "avg_elo": 1372,
+    "peak_elo": 1493,
+    "current_elo": 1218
+  },
+  "Jay Chamberlain": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1176,
+    "peak_elo": 1176,
+    "current_elo": 1176
+  },
+  "John Campbell-Jones": {
+    "wins": 0,
+    "losses": 3,
+    "total_races": 3,
+    "avg_elo": 1265,
+    "peak_elo": 1397,
+    "current_elo": 1189
+  },
+  "Heini Walter": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1329,
+    "peak_elo": 1329,
+    "current_elo": 1329
+  },
+  "Kurt Kuhnke": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1449,
+    "peak_elo": 1449,
+    "current_elo": 1449
+  },
+  "Rob Schroeder": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1350,
+    "peak_elo": 1350,
+    "current_elo": 1350
+  },
+  "Timmy Mayer": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1398,
+    "peak_elo": 1398,
+    "current_elo": 1398
+  },
+  "Neville Lederle": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1437,
+    "peak_elo": 1500,
+    "current_elo": 1374
+  },
+  "John Love": {
+    "wins": 0,
+    "losses": 9,
+    "total_races": 9,
+    "avg_elo": 1392,
+    "peak_elo": 1500,
+    "current_elo": 1398
+  },
+  "Bruce Johnstone": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1371,
+    "peak_elo": 1371,
+    "current_elo": 1371
+  },
+  "Ernie Pieterse": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1440,
+    "peak_elo": 1464,
+    "current_elo": 1416
+  },
+  "Doug Serrurier": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1488,
+    "peak_elo": 1492,
+    "current_elo": 1484
+  },
+  "Mike Harris": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1485,
+    "peak_elo": 1485,
+    "current_elo": 1485
+  },
+  "Gary Hocking": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1257,
+    "peak_elo": 1257,
+    "current_elo": 1257
+  },
+  "Syd van der Vyver": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1204,
+    "peak_elo": 1204,
+    "current_elo": 1204
+  },
+  "Sam Tingle": {
+    "wins": 0,
+    "losses": 6,
+    "total_races": 6,
+    "avg_elo": 1182,
+    "peak_elo": 1277,
+    "current_elo": 1277
+  },
+  "Chris Amon": {
+    "wins": 0,
+    "losses": 102,
+    "total_races": 102,
+    "avg_elo": 1419,
+    "peak_elo": 1568,
+    "current_elo": 1430
+  },
+  "Ludovico Scarfiotti": {
+    "wins": 1,
+    "losses": 12,
+    "total_races": 13,
+    "avg_elo": 1261,
+    "peak_elo": 1363,
+    "current_elo": 1280
+  },
+  "Gerhard Mitter": {
+    "wins": 0,
+    "losses": 5,
+    "total_races": 5,
+    "avg_elo": 1423,
+    "peak_elo": 1434,
+    "current_elo": 1419
+  },
+  "Mike Hailwood": {
+    "wins": 0,
+    "losses": 51,
+    "total_races": 51,
+    "avg_elo": 1336,
+    "peak_elo": 1513,
+    "current_elo": 1353
+  },
+  "Bob Anderson": {
+    "wins": 0,
+    "losses": 25,
+    "total_races": 25,
+    "avg_elo": 1354,
+    "peak_elo": 1508,
+    "current_elo": 1385
+  },
+  "Ian Raby": {
+    "wins": 0,
+    "losses": 3,
+    "total_races": 3,
+    "avg_elo": 1382,
+    "peak_elo": 1476,
+    "current_elo": 1316
+  },
+  "Mike Spence": {
+    "wins": 0,
+    "losses": 35,
+    "total_races": 35,
+    "avg_elo": 1495,
+    "peak_elo": 1652,
+    "current_elo": 1462
+  },
+  "Günther Seiffert": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1249,
+    "peak_elo": 1249,
+    "current_elo": 1249
+  },
+  "Carlo Abate": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1424,
+    "peak_elo": 1424,
+    "current_elo": 1424
+  },
+  "Peter Broeker": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1527,
+    "peak_elo": 1527,
+    "current_elo": 1527
+  },
+  "Pedro Rodríguez": {
+    "wins": 2,
+    "losses": 52,
+    "total_races": 54,
+    "avg_elo": 1435,
+    "peak_elo": 1553,
+    "current_elo": 1378
+  },
+  "Ernie de Vos": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1427,
+    "peak_elo": 1427,
+    "current_elo": 1427
+  },
+  "Moisés Solana": {
+    "wins": 0,
+    "losses": 8,
+    "total_races": 8,
+    "avg_elo": 1273,
+    "peak_elo": 1462,
+    "current_elo": 1148
+  },
+  "Frank Dochnal": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1388,
+    "peak_elo": 1388,
+    "current_elo": 1388
+  },
+  "Thomas Monarch": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1346,
+    "peak_elo": 1346,
+    "current_elo": 1346
+  },
+  "Trevor Blokdyk": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1498,
+    "peak_elo": 1498,
+    "current_elo": 1498
+  },
+  "Brausch Niemann": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1477,
+    "peak_elo": 1477,
+    "current_elo": 1477
+  },
+  "Peter de Klerk": {
+    "wins": 0,
+    "losses": 4,
+    "total_races": 4,
+    "avg_elo": 1396,
+    "peak_elo": 1445,
+    "current_elo": 1358
+  },
+  "David Prophet": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1358,
+    "peak_elo": 1366,
+    "current_elo": 1350
+  },
+  "Paddy Driver": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1440,
+    "peak_elo": 1443,
+    "current_elo": 1437
+  },
+  "Peter Revson": {
+    "wins": 2,
+    "losses": 28,
+    "total_races": 30,
+    "avg_elo": 1387,
+    "peak_elo": 1500,
+    "current_elo": 1429
+  },
+  "John Taylor": {
+    "wins": 0,
+    "losses": 5,
+    "total_races": 5,
+    "avg_elo": 1453,
+    "peak_elo": 1467,
+    "current_elo": 1431
+  },
+  "Frank Gardner": {
+    "wins": 0,
+    "losses": 8,
+    "total_races": 8,
+    "avg_elo": 1397,
+    "peak_elo": 1461,
+    "current_elo": 1394
+  },
+  "Richard Attwood": {
+    "wins": 0,
+    "losses": 17,
+    "total_races": 17,
+    "avg_elo": 1260,
+    "peak_elo": 1368,
+    "current_elo": 1234
+  },
+  "Ronnie Bucknum": {
+    "wins": 0,
+    "losses": 11,
+    "total_races": 11,
+    "avg_elo": 1358,
+    "peak_elo": 1481,
+    "current_elo": 1305
+  },
+  "Jochen Rindt": {
+    "wins": 6,
+    "losses": 55,
+    "total_races": 61,
+    "avg_elo": 1411,
+    "peak_elo": 1692,
+    "current_elo": 1428
+  },
+  "Jackie Stewart": {
+    "wins": 27,
+    "losses": 73,
+    "total_races": 100,
+    "avg_elo": 1459,
+    "peak_elo": 1689,
+    "current_elo": 1603
+  },
+  "Paul Hawkins": {
+    "wins": 0,
+    "losses": 3,
+    "total_races": 3,
+    "avg_elo": 1469,
+    "peak_elo": 1521,
+    "current_elo": 1387
+  },
+  "Ray Reed": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1465,
+    "peak_elo": 1465,
+    "current_elo": 1465
+  },
+  "David Clapham": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1473,
+    "peak_elo": 1473,
+    "current_elo": 1473
+  },
+  "Alex Blignaut": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1376,
+    "peak_elo": 1376,
+    "current_elo": 1376
+  },
+  "Denny Hulme": {
+    "wins": 8,
+    "losses": 104,
+    "total_races": 112,
+    "avg_elo": 1412,
+    "peak_elo": 1642,
+    "current_elo": 1375
+  },
+  "John Rhodes": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1440,
+    "peak_elo": 1440,
+    "current_elo": 1440
+  },
+  "Giacomo Russo": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1455,
+    "peak_elo": 1461,
+    "current_elo": 1461
+  },
+  "Giorgio Bassi": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1213,
+    "peak_elo": 1213,
+    "current_elo": 1213
+  },
+  "Bob Bondurant": {
+    "wins": 0,
+    "losses": 7,
+    "total_races": 7,
+    "avg_elo": 1388,
+    "peak_elo": 1439,
+    "current_elo": 1396
+  },
+  "Guy Ligier": {
+    "wins": 0,
+    "losses": 13,
+    "total_races": 13,
+    "avg_elo": 1268,
+    "peak_elo": 1500,
+    "current_elo": 1098
+  },
+  "Mike Parkes": {
+    "wins": 0,
+    "losses": 6,
+    "total_races": 6,
+    "avg_elo": 1328,
+    "peak_elo": 1526,
+    "current_elo": 1187
+  },
+  "Chris Irwin": {
+    "wins": 0,
+    "losses": 10,
+    "total_races": 10,
+    "avg_elo": 1444,
+    "peak_elo": 1576,
+    "current_elo": 1362
+  },
+  "Chris Lawrence": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1484,
+    "peak_elo": 1491,
+    "current_elo": 1477
+  },
+  "Dave Charlton": {
+    "wins": 0,
+    "losses": 11,
+    "total_races": 11,
+    "avg_elo": 1257,
+    "peak_elo": 1454,
+    "current_elo": 1169
+  },
+  "Luki Botha": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1405,
+    "peak_elo": 1405,
+    "current_elo": 1405
+  },
+  "Piers Courage": {
+    "wins": 0,
+    "losses": 29,
+    "total_races": 29,
+    "avg_elo": 1374,
+    "peak_elo": 1507,
+    "current_elo": 1327
+  },
+  "Johnny Servoz-Gavin": {
+    "wins": 0,
+    "losses": 11,
+    "total_races": 11,
+    "avg_elo": 1420,
+    "peak_elo": 1475,
+    "current_elo": 1384
+  },
+  "David Hobbs": {
+    "wins": 0,
+    "losses": 7,
+    "total_races": 7,
+    "avg_elo": 1527,
+    "peak_elo": 1555,
+    "current_elo": 1489
+  },
+  "Alan Rees": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1466,
+    "peak_elo": 1473,
+    "current_elo": 1473
+  },
+  "Silvio Moser": {
+    "wins": 0,
+    "losses": 12,
+    "total_races": 12,
+    "avg_elo": 1347,
+    "peak_elo": 1546,
+    "current_elo": 1187
+  },
+  "Jackie Oliver": {
+    "wins": 0,
+    "losses": 51,
+    "total_races": 51,
+    "avg_elo": 1317,
+    "peak_elo": 1535,
+    "current_elo": 1460
+  },
+  "Jacky Ickx": {
+    "wins": 8,
+    "losses": 103,
+    "total_races": 111,
+    "avg_elo": 1467,
+    "peak_elo": 1601,
+    "current_elo": 1480
+  },
+  "Brian Hart": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1515,
+    "peak_elo": 1515,
+    "current_elo": 1515
+  },
+  "Hubert Hahne": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1470,
+    "peak_elo": 1473,
+    "current_elo": 1473
+  },
+  "Kurt Ahrens": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1408,
+    "peak_elo": 1448,
+    "current_elo": 1369
+  },
+  "Jo Schlesser": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1416,
+    "peak_elo": 1442,
+    "current_elo": 1391
+  },
+  "Mike Fisher": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1450,
+    "peak_elo": 1494,
+    "current_elo": 1407
+  },
+  "Eppie Wietzes": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1358,
+    "peak_elo": 1390,
+    "current_elo": 1326
+  },
+  "Al Pease": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1477,
+    "peak_elo": 1481,
+    "current_elo": 1473
+  },
+  "Jean-Pierre Beltoise": {
+    "wins": 1,
+    "losses": 84,
+    "total_races": 85,
+    "avg_elo": 1435,
+    "peak_elo": 1578,
+    "current_elo": 1261
+  },
+  "Jonathan Williams": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1507,
+    "peak_elo": 1507,
+    "current_elo": 1507
+  },
+  "Jackie Pretorius": {
+    "wins": 0,
+    "losses": 3,
+    "total_races": 3,
+    "avg_elo": 1418,
+    "peak_elo": 1501,
+    "current_elo": 1366
+  },
+  "Basil van Rooyen": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1460,
+    "peak_elo": 1505,
+    "current_elo": 1415
+  },
+  "Andrea de Adamich": {
+    "wins": 0,
+    "losses": 31,
+    "total_races": 31,
+    "avg_elo": 1368,
+    "peak_elo": 1473,
+    "current_elo": 1339
+  },
+  "Brian Redman": {
+    "wins": 0,
+    "losses": 12,
+    "total_races": 12,
+    "avg_elo": 1353,
+    "peak_elo": 1418,
+    "current_elo": 1295
+  },
+  "Vic Elford": {
+    "wins": 0,
+    "losses": 13,
+    "total_races": 13,
+    "avg_elo": 1400,
+    "peak_elo": 1517,
+    "current_elo": 1377
+  },
+  "Robin Widdows": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1504,
+    "peak_elo": 1504,
+    "current_elo": 1504
+  },
+  "Derek Bell": {
+    "wins": 0,
+    "losses": 8,
+    "total_races": 8,
+    "avg_elo": 1302,
+    "peak_elo": 1407,
+    "current_elo": 1289
+  },
+  "Henri Pescarolo": {
+    "wins": 0,
+    "losses": 56,
+    "total_races": 56,
+    "avg_elo": 1376,
+    "peak_elo": 1594,
+    "current_elo": 1295
+  },
+  "Bill Brack": {
+    "wins": 0,
+    "losses": 3,
+    "total_races": 3,
+    "avg_elo": 1367,
+    "peak_elo": 1421,
+    "current_elo": 1316
+  },
+  "Bobby Unser": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1415,
+    "peak_elo": 1415,
+    "current_elo": 1415
+  },
+  "Mario Andretti": {
+    "wins": 12,
+    "losses": 111,
+    "total_races": 123,
+    "avg_elo": 1422,
+    "peak_elo": 1607,
+    "current_elo": 1439
+  },
+  "John Miles": {
+    "wins": 0,
+    "losses": 13,
+    "total_races": 13,
+    "avg_elo": 1315,
+    "peak_elo": 1428,
+    "current_elo": 1233
+  },
+  "John Cordts": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1462,
+    "peak_elo": 1462,
+    "current_elo": 1462
+  },
+  "George Eaton": {
+    "wins": 0,
+    "losses": 11,
+    "total_races": 11,
+    "avg_elo": 1327,
+    "peak_elo": 1456,
+    "current_elo": 1219
+  },
+  "Rolf Stommelen": {
+    "wins": 0,
+    "losses": 54,
+    "total_races": 54,
+    "avg_elo": 1354,
+    "peak_elo": 1484,
+    "current_elo": 1395
+  },
+  "Ronnie Peterson": {
+    "wins": 10,
+    "losses": 113,
+    "total_races": 123,
+    "avg_elo": 1498,
+    "peak_elo": 1753,
+    "current_elo": 1459
+  },
+  "Ignazio Giunti": {
+    "wins": 0,
+    "losses": 4,
+    "total_races": 4,
+    "avg_elo": 1485,
+    "peak_elo": 1529,
+    "current_elo": 1414
+  },
+  "Clay Regazzoni": {
+    "wins": 5,
+    "losses": 121,
+    "total_races": 126,
+    "avg_elo": 1405,
+    "peak_elo": 1599,
+    "current_elo": 1577
+  },
+  "François Cevert": {
+    "wins": 1,
+    "losses": 46,
+    "total_races": 47,
+    "avg_elo": 1364,
+    "peak_elo": 1522,
+    "current_elo": 1365
+  },
+  "Peter Gethin": {
+    "wins": 1,
+    "losses": 29,
+    "total_races": 30,
+    "avg_elo": 1392,
+    "peak_elo": 1537,
+    "current_elo": 1338
+  },
+  "Emerson Fittipaldi": {
+    "wins": 14,
+    "losses": 127,
+    "total_races": 141,
+    "avg_elo": 1510,
+    "peak_elo": 1751,
+    "current_elo": 1398
+  },
+  "Tim Schenken": {
+    "wins": 0,
+    "losses": 34,
+    "total_races": 34,
+    "avg_elo": 1375,
+    "peak_elo": 1579,
+    "current_elo": 1256
+  },
+  "Reine Wisell": {
+    "wins": 0,
+    "losses": 23,
+    "total_races": 23,
+    "avg_elo": 1384,
+    "peak_elo": 1573,
+    "current_elo": 1285
+  },
+  "Gus Hutchison": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1415,
+    "peak_elo": 1415,
+    "current_elo": 1415
+  },
+  "Howden Ganley": {
+    "wins": 0,
+    "losses": 36,
+    "total_races": 36,
+    "avg_elo": 1396,
+    "peak_elo": 1497,
+    "current_elo": 1440
+  },
+  "Alex Soler-Roig": {
+    "wins": 0,
+    "losses": 6,
+    "total_races": 6,
+    "avg_elo": 1220,
+    "peak_elo": 1316,
+    "current_elo": 1075
+  },
+  "Gijs van Lennep": {
+    "wins": 0,
+    "losses": 8,
+    "total_races": 8,
+    "avg_elo": 1484,
+    "peak_elo": 1507,
+    "current_elo": 1498
+  },
+  "Skip Barber": {
+    "wins": 0,
+    "losses": 5,
+    "total_races": 5,
+    "avg_elo": 1302,
+    "peak_elo": 1443,
+    "current_elo": 1176
+  },
+  "David Walker": {
+    "wins": 0,
+    "losses": 11,
+    "total_races": 11,
+    "avg_elo": 1405,
+    "peak_elo": 1461,
+    "current_elo": 1358
+  },
+  "François Mazet": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1549,
+    "peak_elo": 1549,
+    "current_elo": 1549
+  },
+  "Max Jean": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1497,
+    "peak_elo": 1497,
+    "current_elo": 1497
+  },
+  "Nanni Galli": {
+    "wins": 0,
+    "losses": 16,
+    "total_races": 16,
+    "avg_elo": 1315,
+    "peak_elo": 1487,
+    "current_elo": 1258
+  },
+  "Mike Beuttler": {
+    "wins": 0,
+    "losses": 28,
+    "total_races": 28,
+    "avg_elo": 1239,
+    "peak_elo": 1392,
+    "current_elo": 1188
+  },
+  "Helmut Marko": {
+    "wins": 0,
+    "losses": 9,
+    "total_races": 9,
+    "avg_elo": 1340,
+    "peak_elo": 1416,
+    "current_elo": 1301
+  },
+  "Niki Lauda": {
+    "wins": 25,
+    "losses": 144,
+    "total_races": 169,
+    "avg_elo": 1434,
+    "peak_elo": 1668,
+    "current_elo": 1619
+  },
+  "Jean-Pierre Jarier": {
+    "wins": 0,
+    "losses": 134,
+    "total_races": 134,
+    "avg_elo": 1465,
+    "peak_elo": 1632,
+    "current_elo": 1459
+  },
+  "Mark Donohue": {
+    "wins": 0,
+    "losses": 15,
+    "total_races": 15,
+    "avg_elo": 1502,
+    "peak_elo": 1562,
+    "current_elo": 1403
+  },
+  "John Cannon": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1316,
+    "peak_elo": 1316,
+    "current_elo": 1316
+  },
+  "Chris Craft": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1424,
+    "peak_elo": 1424,
+    "current_elo": 1424
+  },
+  "Sam Posey": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1410,
+    "peak_elo": 1442,
+    "current_elo": 1442
+  },
+  "Carlos Reutemann": {
+    "wins": 12,
+    "losses": 129,
+    "total_races": 141,
+    "avg_elo": 1470,
+    "peak_elo": 1656,
+    "current_elo": 1564
+  },
+  "Carlos Pace": {
+    "wins": 1,
+    "losses": 71,
+    "total_races": 72,
+    "avg_elo": 1385,
+    "peak_elo": 1577,
+    "current_elo": 1553
+  },
+  "Wilson Fittipaldi": {
+    "wins": 0,
+    "losses": 35,
+    "total_races": 35,
+    "avg_elo": 1425,
+    "peak_elo": 1562,
+    "current_elo": 1362
+  },
+  "Patrick Depailler": {
+    "wins": 2,
+    "losses": 93,
+    "total_races": 95,
+    "avg_elo": 1488,
+    "peak_elo": 1621,
+    "current_elo": 1411
+  },
+  "Arturo Merzario": {
+    "wins": 0,
+    "losses": 58,
+    "total_races": 58,
+    "avg_elo": 1373,
+    "peak_elo": 1520,
+    "current_elo": 1305
+  },
+  "François Migault": {
+    "wins": 0,
+    "losses": 14,
+    "total_races": 14,
+    "avg_elo": 1338,
+    "peak_elo": 1471,
+    "current_elo": 1311
+  },
+  "Jody Scheckter": {
+    "wins": 9,
+    "losses": 98,
+    "total_races": 107,
+    "avg_elo": 1541,
+    "peak_elo": 1657,
+    "current_elo": 1572
+  },
+  "Luiz Bueno": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1517,
+    "peak_elo": 1517,
+    "current_elo": 1517
+  },
+  "George Follmer": {
+    "wins": 0,
+    "losses": 12,
+    "total_races": 12,
+    "avg_elo": 1507,
+    "peak_elo": 1558,
+    "current_elo": 1456
+  },
+  "Eddie Keizan": {
+    "wins": 0,
+    "losses": 3,
+    "total_races": 3,
+    "avg_elo": 1436,
+    "peak_elo": 1484,
+    "current_elo": 1398
+  },
+  "James Hunt": {
+    "wins": 10,
+    "losses": 83,
+    "total_races": 93,
+    "avg_elo": 1496,
+    "peak_elo": 1643,
+    "current_elo": 1394
+  },
+  "David Purley": {
+    "wins": 0,
+    "losses": 8,
+    "total_races": 8,
+    "avg_elo": 1402,
+    "peak_elo": 1436,
+    "current_elo": 1423
+  },
+  "Rikky von Opel": {
+    "wins": 0,
+    "losses": 11,
+    "total_races": 11,
+    "avg_elo": 1441,
+    "peak_elo": 1490,
+    "current_elo": 1433
+  },
+  "John Watson": {
+    "wins": 5,
+    "losses": 142,
+    "total_races": 147,
+    "avg_elo": 1492,
+    "peak_elo": 1657,
+    "current_elo": 1518
+  },
+  "Jochen Mass": {
+    "wins": 1,
+    "losses": 103,
+    "total_races": 104,
+    "avg_elo": 1450,
+    "peak_elo": 1577,
+    "current_elo": 1562
+  },
+  "Roger Williamson": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1421,
+    "peak_elo": 1439,
+    "current_elo": 1404
+  },
+  "Graham McRae": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1458,
+    "peak_elo": 1458,
+    "current_elo": 1458
+  },
+  "Guy Edwards": {
+    "wins": 0,
+    "losses": 12,
+    "total_races": 12,
+    "avg_elo": 1469,
+    "peak_elo": 1526,
+    "current_elo": 1439
+  },
+  "Richard Robarts": {
+    "wins": 0,
+    "losses": 3,
+    "total_races": 3,
+    "avg_elo": 1448,
+    "peak_elo": 1450,
+    "current_elo": 1445
+  },
+  "Hans-Joachim Stuck": {
+    "wins": 0,
+    "losses": 71,
+    "total_races": 71,
+    "avg_elo": 1426,
+    "peak_elo": 1521,
+    "current_elo": 1359
+  },
+  "Vittorio Brambilla": {
+    "wins": 1,
+    "losses": 71,
+    "total_races": 72,
+    "avg_elo": 1463,
+    "peak_elo": 1556,
+    "current_elo": 1453
+  },
+  "Ian Scheckter": {
+    "wins": 0,
+    "losses": 18,
+    "total_races": 18,
+    "avg_elo": 1393,
+    "peak_elo": 1558,
+    "current_elo": 1310
+  },
+  "Tom Belsø": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1458,
+    "peak_elo": 1462,
+    "current_elo": 1462
+  },
+  "Vern Schuppan": {
+    "wins": 0,
+    "losses": 9,
+    "total_races": 9,
+    "avg_elo": 1466,
+    "peak_elo": 1498,
+    "current_elo": 1416
+  },
+  "Teddy Pilette": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1500,
+    "peak_elo": 1500,
+    "current_elo": 1500
+  },
+  "Tom Pryce": {
+    "wins": 0,
+    "losses": 42,
+    "total_races": 42,
+    "avg_elo": 1475,
+    "peak_elo": 1547,
+    "current_elo": 1481
+  },
+  "Gérard Larrousse": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1444,
+    "peak_elo": 1444,
+    "current_elo": 1444
+  },
+  "Leo Kinnunen": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1404,
+    "peak_elo": 1404,
+    "current_elo": 1404
+  },
+  "Bertil Roos": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1451,
+    "peak_elo": 1451,
+    "current_elo": 1451
+  },
+  "Ian Ashley": {
+    "wins": 0,
+    "losses": 6,
+    "total_races": 6,
+    "avg_elo": 1451,
+    "peak_elo": 1495,
+    "current_elo": 1403
+  },
+  "Jacques Laffite": {
+    "wins": 6,
+    "losses": 166,
+    "total_races": 172,
+    "avg_elo": 1512,
+    "peak_elo": 1657,
+    "current_elo": 1515
+  },
+  "Dieter Quester": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1500,
+    "peak_elo": 1500,
+    "current_elo": 1500
+  },
+  "Helmuth Koinigg": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1482,
+    "peak_elo": 1500,
+    "current_elo": 1464
+  },
+  "Mike Wilds": {
+    "wins": 0,
+    "losses": 3,
+    "total_races": 3,
+    "avg_elo": 1484,
+    "peak_elo": 1500,
+    "current_elo": 1466
+  },
+  "José Dolhem": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1500,
+    "peak_elo": 1500,
+    "current_elo": 1500
+  },
+  "Guy Tunmer": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1500,
+    "peak_elo": 1500,
+    "current_elo": 1500
+  },
+  "Bob Evans": {
+    "wins": 0,
+    "losses": 10,
+    "total_races": 10,
+    "avg_elo": 1474,
+    "peak_elo": 1494,
+    "current_elo": 1463
+  },
+  "Lella Lombardi": {
+    "wins": 0,
+    "losses": 13,
+    "total_races": 13,
+    "avg_elo": 1478,
+    "peak_elo": 1515,
+    "current_elo": 1485
+  },
+  "Tony Brise": {
+    "wins": 0,
+    "losses": 10,
+    "total_races": 10,
+    "avg_elo": 1485,
+    "peak_elo": 1529,
+    "current_elo": 1433
+  },
+  "Roelof Wunderink": {
+    "wins": 0,
+    "losses": 3,
+    "total_races": 3,
+    "avg_elo": 1484,
+    "peak_elo": 1500,
+    "current_elo": 1476
+  },
+  "Alan Jones": {
+    "wins": 9,
+    "losses": 103,
+    "total_races": 112,
+    "avg_elo": 1541,
+    "peak_elo": 1681,
+    "current_elo": 1470
+  },
+  "Torsten Palm": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1538,
+    "peak_elo": 1538,
+    "current_elo": 1538
+  },
+  "Damien Magee": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1515,
+    "peak_elo": 1515,
+    "current_elo": 1515
+  },
+  "Hiroshi Fushida": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1479,
+    "peak_elo": 1479,
+    "current_elo": 1479
+  },
+  "Jean-Pierre Jabouille": {
+    "wins": 2,
+    "losses": 43,
+    "total_races": 45,
+    "avg_elo": 1413,
+    "peak_elo": 1501,
+    "current_elo": 1393
+  },
+  "Brian Henton": {
+    "wins": 0,
+    "losses": 20,
+    "total_races": 20,
+    "avg_elo": 1533,
+    "peak_elo": 1572,
+    "current_elo": 1502
+  },
+  "John Nicholson": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1493,
+    "peak_elo": 1493,
+    "current_elo": 1493
+  },
+  "Dave Morgan": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1468,
+    "peak_elo": 1468,
+    "current_elo": 1468
+  },
+  "Jim Crawford": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1513,
+    "peak_elo": 1527,
+    "current_elo": 1527
+  },
+  "Harald Ertl": {
+    "wins": 0,
+    "losses": 20,
+    "total_races": 20,
+    "avg_elo": 1443,
+    "peak_elo": 1523,
+    "current_elo": 1429
+  },
+  "Brett Lunger": {
+    "wins": 0,
+    "losses": 34,
+    "total_races": 34,
+    "avg_elo": 1445,
+    "peak_elo": 1520,
+    "current_elo": 1386
+  },
+  "Jo Vonlanthen": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1471,
+    "peak_elo": 1471,
+    "current_elo": 1471
+  },
+  "Renzo Zorzi": {
+    "wins": 0,
+    "losses": 7,
+    "total_races": 7,
+    "avg_elo": 1487,
+    "peak_elo": 1523,
+    "current_elo": 1438
+  },
+  "Michel Leclère": {
+    "wins": 0,
+    "losses": 7,
+    "total_races": 7,
+    "avg_elo": 1481,
+    "peak_elo": 1497,
+    "current_elo": 1461
+  },
+  "Ingo Hoffmann": {
+    "wins": 0,
+    "losses": 3,
+    "total_races": 3,
+    "avg_elo": 1491,
+    "peak_elo": 1512,
+    "current_elo": 1476
+  },
+  "Gunnar Nilsson": {
+    "wins": 1,
+    "losses": 31,
+    "total_races": 32,
+    "avg_elo": 1441,
+    "peak_elo": 1493,
+    "current_elo": 1417
+  },
+  "Larry Perkins": {
+    "wins": 0,
+    "losses": 11,
+    "total_races": 11,
+    "avg_elo": 1450,
+    "peak_elo": 1503,
+    "current_elo": 1397
+  },
+  "Loris Kessel": {
+    "wins": 0,
+    "losses": 3,
+    "total_races": 3,
+    "avg_elo": 1488,
+    "peak_elo": 1508,
+    "current_elo": 1468
+  },
+  "Patrick Nève": {
+    "wins": 0,
+    "losses": 10,
+    "total_races": 10,
+    "avg_elo": 1492,
+    "peak_elo": 1532,
+    "current_elo": 1498
+  },
+  "Alessandro Pesenti-Rossi": {
+    "wins": 0,
+    "losses": 3,
+    "total_races": 3,
+    "avg_elo": 1515,
+    "peak_elo": 1534,
+    "current_elo": 1512
+  },
+  "Hans Binder": {
+    "wins": 0,
+    "losses": 13,
+    "total_races": 13,
+    "avg_elo": 1492,
+    "peak_elo": 1521,
+    "current_elo": 1466
+  },
+  "Boy Lunger": {
+    "wins": 0,
+    "losses": 3,
+    "total_races": 3,
+    "avg_elo": 1453,
+    "peak_elo": 1512,
+    "current_elo": 1413
+  },
+  "Conny Andersson": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1431,
+    "peak_elo": 1431,
+    "current_elo": 1431
+  },
+  "Otto Stuppacher": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1439,
+    "peak_elo": 1439,
+    "current_elo": 1439
+  },
+  "Alex Ribeiro": {
+    "wins": 0,
+    "losses": 10,
+    "total_races": 10,
+    "avg_elo": 1498,
+    "peak_elo": 1519,
+    "current_elo": 1516
+  },
+  "Warwick Brown": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1511,
+    "peak_elo": 1511,
+    "current_elo": 1511
+  },
+  "Noritake Takahara": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1473,
+    "peak_elo": 1487,
+    "current_elo": 1460
+  },
+  "Masahiro Hasemi": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1503,
+    "peak_elo": 1503,
+    "current_elo": 1503
+  },
+  "Kazuyoshi Hoshino": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1475,
+    "peak_elo": 1484,
+    "current_elo": 1484
+  },
+  "Emilio de Villota": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1487,
+    "peak_elo": 1497,
+    "current_elo": 1478
+  },
+  "Rupert Keegan": {
+    "wins": 0,
+    "losses": 27,
+    "total_races": 27,
+    "avg_elo": 1435,
+    "peak_elo": 1521,
+    "current_elo": 1351
+  },
+  "Riccardo Patrese": {
+    "wins": 6,
+    "losses": 246,
+    "total_races": 252,
+    "avg_elo": 1570,
+    "peak_elo": 1848,
+    "current_elo": 1698
+  },
+  "Gilles Villeneuve": {
+    "wins": 5,
+    "losses": 58,
+    "total_races": 63,
+    "avg_elo": 1517,
+    "peak_elo": 1659,
+    "current_elo": 1499
+  },
+  "Patrick Tambay": {
+    "wins": 2,
+    "losses": 110,
+    "total_races": 112,
+    "avg_elo": 1525,
+    "peak_elo": 1653,
+    "current_elo": 1521
+  },
+  "Hector Rebaque": {
+    "wins": 0,
+    "losses": 39,
+    "total_races": 39,
+    "avg_elo": 1418,
+    "peak_elo": 1508,
+    "current_elo": 1431
+  },
+  "Bruno Giacomelli": {
+    "wins": 0,
+    "losses": 67,
+    "total_races": 67,
+    "avg_elo": 1418,
+    "peak_elo": 1500,
+    "current_elo": 1377
+  },
+  "Danny Ongais": {
+    "wins": 0,
+    "losses": 4,
+    "total_races": 4,
+    "avg_elo": 1495,
+    "peak_elo": 1506,
+    "current_elo": 1506
+  },
+  "Kunimitsu Takahashi": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1500,
+    "peak_elo": 1500,
+    "current_elo": 1500
+  },
+  "Didier Pironi": {
+    "wins": 3,
+    "losses": 64,
+    "total_races": 67,
+    "avg_elo": 1527,
+    "peak_elo": 1696,
+    "current_elo": 1625
+  },
+  "Lamberto Leoni": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1457,
+    "peak_elo": 1470,
+    "current_elo": 1443
+  },
+  "Keke Rosberg": {
+    "wins": 5,
+    "losses": 105,
+    "total_races": 110,
+    "avg_elo": 1527,
+    "peak_elo": 1657,
+    "current_elo": 1568
+  },
+  "Eddie Cheever": {
+    "wins": 0,
+    "losses": 132,
+    "total_races": 132,
+    "avg_elo": 1485,
+    "peak_elo": 1591,
+    "current_elo": 1475
+  },
+  "René Arnoux": {
+    "wins": 7,
+    "losses": 139,
+    "total_races": 146,
+    "avg_elo": 1507,
+    "peak_elo": 1627,
+    "current_elo": 1471
+  },
+  "Derek Daly": {
+    "wins": 0,
+    "losses": 46,
+    "total_races": 46,
+    "avg_elo": 1495,
+    "peak_elo": 1581,
+    "current_elo": 1435
+  },
+  "Nelson Piquet": {
+    "wins": 23,
+    "losses": 177,
+    "total_races": 200,
+    "avg_elo": 1578,
+    "peak_elo": 1688,
+    "current_elo": 1582
+  },
+  "Bobby Rahal": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1484,
+    "peak_elo": 1494,
+    "current_elo": 1474
+  },
+  "Michael Bleekemolen": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1506,
+    "peak_elo": 1506,
+    "current_elo": 1506
+  },
+  "Elio de Angelis": {
+    "wins": 2,
+    "losses": 102,
+    "total_races": 104,
+    "avg_elo": 1475,
+    "peak_elo": 1592,
+    "current_elo": 1469
+  },
+  "Jan Lammers": {
+    "wins": 0,
+    "losses": 21,
+    "total_races": 21,
+    "avg_elo": 1488,
+    "peak_elo": 1535,
+    "current_elo": 1474
+  },
+  "Patrick Gaillard": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1499,
+    "peak_elo": 1499,
+    "current_elo": 1499
+  },
+  "Geoff Lees": {
+    "wins": 0,
+    "losses": 5,
+    "total_races": 5,
+    "avg_elo": 1521,
+    "peak_elo": 1528,
+    "current_elo": 1520
+  },
+  "Alain Prost": {
+    "wins": 51,
+    "losses": 151,
+    "total_races": 202,
+    "avg_elo": 1710,
+    "peak_elo": 1949,
+    "current_elo": 1804
+  },
+  "Ricardo Zunino": {
+    "wins": 0,
+    "losses": 8,
+    "total_races": 8,
+    "avg_elo": 1456,
+    "peak_elo": 1514,
+    "current_elo": 1449
+  },
+  "Marc Surer": {
+    "wins": 0,
+    "losses": 81,
+    "total_races": 81,
+    "avg_elo": 1518,
+    "peak_elo": 1632,
+    "current_elo": 1508
+  },
+  "Tiff Needell": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1490,
+    "peak_elo": 1490,
+    "current_elo": 1490
+  },
+  "Nigel Mansell": {
+    "wins": 31,
+    "losses": 159,
+    "total_races": 190,
+    "avg_elo": 1582,
+    "peak_elo": 1970,
+    "current_elo": 1677
+  },
+  "Andrea de Cesaris": {
+    "wins": 0,
+    "losses": 209,
+    "total_races": 209,
+    "avg_elo": 1465,
+    "peak_elo": 1572,
+    "current_elo": 1446
+  },
+  "Mike Thackwell": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1440,
+    "peak_elo": 1452,
+    "current_elo": 1427
+  },
+  "Chico Serra": {
+    "wins": 0,
+    "losses": 19,
+    "total_races": 19,
+    "avg_elo": 1496,
+    "peak_elo": 1524,
+    "current_elo": 1517
+  },
+  "Beppe Gabbiani": {
+    "wins": 0,
+    "losses": 3,
+    "total_races": 3,
+    "avg_elo": 1497,
+    "peak_elo": 1509,
+    "current_elo": 1489
+  },
+  "Siegfried Stohr": {
+    "wins": 0,
+    "losses": 9,
+    "total_races": 9,
+    "avg_elo": 1441,
+    "peak_elo": 1475,
+    "current_elo": 1463
+  },
+  "Slim Borgudd": {
+    "wins": 0,
+    "losses": 10,
+    "total_races": 10,
+    "avg_elo": 1511,
+    "peak_elo": 1530,
+    "current_elo": 1478
+  },
+  "Eliseo Salazar": {
+    "wins": 0,
+    "losses": 24,
+    "total_races": 24,
+    "avg_elo": 1482,
+    "peak_elo": 1513,
+    "current_elo": 1477
+  },
+  "Michele Alboreto": {
+    "wins": 5,
+    "losses": 189,
+    "total_races": 194,
+    "avg_elo": 1518,
+    "peak_elo": 1679,
+    "current_elo": 1389
+  },
+  "Miguel Ángel Guerra": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1472,
+    "peak_elo": 1472,
+    "current_elo": 1472
+  },
+  "Piercarlo Ghinzani": {
+    "wins": 0,
+    "losses": 79,
+    "total_races": 79,
+    "avg_elo": 1422,
+    "peak_elo": 1528,
+    "current_elo": 1435
+  },
+  "Derek Warwick": {
+    "wins": 0,
+    "losses": 148,
+    "total_races": 148,
+    "avg_elo": 1508,
+    "peak_elo": 1610,
+    "current_elo": 1480
+  },
+  "Manfred Winkelhock": {
+    "wins": 0,
+    "losses": 49,
+    "total_races": 49,
+    "avg_elo": 1447,
+    "peak_elo": 1519,
+    "current_elo": 1443
+  },
+  "Raul Boesel": {
+    "wins": 0,
+    "losses": 23,
+    "total_races": 23,
+    "avg_elo": 1466,
+    "peak_elo": 1513,
+    "current_elo": 1480
+  },
+  "Mauro Baldi": {
+    "wins": 0,
+    "losses": 36,
+    "total_races": 36,
+    "avg_elo": 1466,
+    "peak_elo": 1522,
+    "current_elo": 1434
+  },
+  "Roberto Guerrero": {
+    "wins": 0,
+    "losses": 22,
+    "total_races": 22,
+    "avg_elo": 1451,
+    "peak_elo": 1500,
+    "current_elo": 1432
+  },
+  "Teo Fabi": {
+    "wins": 0,
+    "losses": 64,
+    "total_races": 64,
+    "avg_elo": 1498,
+    "peak_elo": 1570,
+    "current_elo": 1506
+  },
+  "Riccardo Paletti": {
+    "wins": 0,
+    "losses": 3,
+    "total_races": 3,
+    "avg_elo": 1466,
+    "peak_elo": 1488,
+    "current_elo": 1444
+  },
+  "Tommy Byrne": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1503,
+    "peak_elo": 1504,
+    "current_elo": 1502
+  },
+  "Danny Sullivan": {
+    "wins": 0,
+    "losses": 15,
+    "total_races": 15,
+    "avg_elo": 1529,
+    "peak_elo": 1584,
+    "current_elo": 1514
+  },
+  "Johnny Cecotto": {
+    "wins": 0,
+    "losses": 18,
+    "total_races": 18,
+    "avg_elo": 1493,
+    "peak_elo": 1568,
+    "current_elo": 1421
+  },
+  "Corrado Fabi": {
+    "wins": 0,
+    "losses": 13,
+    "total_races": 13,
+    "avg_elo": 1507,
+    "peak_elo": 1548,
+    "current_elo": 1534
+  },
+  "Thierry Boutsen": {
+    "wins": 3,
+    "losses": 160,
+    "total_races": 163,
+    "avg_elo": 1571,
+    "peak_elo": 1695,
+    "current_elo": 1496
+  },
+  "Stefan Johansson": {
+    "wins": 0,
+    "losses": 79,
+    "total_races": 79,
+    "avg_elo": 1584,
+    "peak_elo": 1751,
+    "current_elo": 1612
+  },
+  "Jonathan Palmer": {
+    "wins": 0,
+    "losses": 84,
+    "total_races": 84,
+    "avg_elo": 1536,
+    "peak_elo": 1636,
+    "current_elo": 1486
+  },
+  "Kenny Acheson": {
+    "wins": 0,
+    "losses": 3,
+    "total_races": 3,
+    "avg_elo": 1496,
+    "peak_elo": 1511,
+    "current_elo": 1473
+  },
+  "Martin Brundle": {
+    "wins": 0,
+    "losses": 155,
+    "total_races": 155,
+    "avg_elo": 1546,
+    "peak_elo": 1670,
+    "current_elo": 1574
+  },
+  "François Hesnault": {
+    "wins": 0,
+    "losses": 19,
+    "total_races": 19,
+    "avg_elo": 1421,
+    "peak_elo": 1476,
+    "current_elo": 1372
+  },
+  "Philippe Alliot": {
+    "wins": 0,
+    "losses": 110,
+    "total_races": 110,
+    "avg_elo": 1437,
+    "peak_elo": 1504,
+    "current_elo": 1472
+  },
+  "Stefan Bellof": {
+    "wins": 0,
+    "losses": 21,
+    "total_races": 21,
+    "avg_elo": 1496,
+    "peak_elo": 1552,
+    "current_elo": 1529
+  },
+  "Ayrton Senna": {
+    "wins": 41,
+    "losses": 120,
+    "total_races": 161,
+    "avg_elo": 1775,
+    "peak_elo": 2030,
+    "current_elo": 1703
+  },
+  "Jo Gartner": {
+    "wins": 0,
+    "losses": 8,
+    "total_races": 8,
+    "avg_elo": 1497,
+    "peak_elo": 1542,
+    "current_elo": 1542
+  },
+  "Huub Rothengatter": {
+    "wins": 0,
+    "losses": 26,
+    "total_races": 26,
+    "avg_elo": 1472,
+    "peak_elo": 1507,
+    "current_elo": 1394
+  },
+  "Gerhard Berger": {
+    "wins": 10,
+    "losses": 195,
+    "total_races": 205,
+    "avg_elo": 1710,
+    "peak_elo": 2003,
+    "current_elo": 1871
+  },
+  "Philippe Streiff": {
+    "wins": 0,
+    "losses": 54,
+    "total_races": 54,
+    "avg_elo": 1481,
+    "peak_elo": 1538,
+    "current_elo": 1463
+  },
+  "Pierluigi Martini": {
+    "wins": 0,
+    "losses": 120,
+    "total_races": 120,
+    "avg_elo": 1467,
+    "peak_elo": 1546,
+    "current_elo": 1470
+  },
+  "Christian Danner": {
+    "wins": 0,
+    "losses": 37,
+    "total_races": 37,
+    "avg_elo": 1473,
+    "peak_elo": 1508,
+    "current_elo": 1494
+  },
+  "Ivan Capelli": {
+    "wins": 0,
+    "losses": 95,
+    "total_races": 95,
+    "avg_elo": 1462,
+    "peak_elo": 1544,
+    "current_elo": 1476
+  },
+  "Johnny Dumfries": {
+    "wins": 0,
+    "losses": 15,
+    "total_races": 15,
+    "avg_elo": 1473,
+    "peak_elo": 1509,
+    "current_elo": 1509
+  },
+  "Alessandro Nannini": {
+    "wins": 1,
+    "losses": 76,
+    "total_races": 77,
+    "avg_elo": 1456,
+    "peak_elo": 1558,
+    "current_elo": 1558
+  },
+  "Allen Berg": {
+    "wins": 0,
+    "losses": 9,
+    "total_races": 9,
+    "avg_elo": 1472,
+    "peak_elo": 1511,
+    "current_elo": 1477
+  },
+  "Alex Caffi": {
+    "wins": 0,
+    "losses": 56,
+    "total_races": 56,
+    "avg_elo": 1487,
+    "peak_elo": 1564,
+    "current_elo": 1519
+  },
+  "Satoru Nakajima": {
+    "wins": 0,
+    "losses": 75,
+    "total_races": 75,
+    "avg_elo": 1465,
+    "peak_elo": 1551,
+    "current_elo": 1385
+  },
+  "Pascal Fabre": {
+    "wins": 0,
+    "losses": 11,
+    "total_races": 11,
+    "avg_elo": 1519,
+    "peak_elo": 1536,
+    "current_elo": 1509
+  },
+  "Adrián Campos": {
+    "wins": 0,
+    "losses": 18,
+    "total_races": 18,
+    "avg_elo": 1426,
+    "peak_elo": 1478,
+    "current_elo": 1391
+  },
+  "Gabriele Tarquini": {
+    "wins": 0,
+    "losses": 37,
+    "total_races": 37,
+    "avg_elo": 1476,
+    "peak_elo": 1518,
+    "current_elo": 1450
+  },
+  "Franco Forini": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1511,
+    "peak_elo": 1516,
+    "current_elo": 1516
+  },
+  "Nicola Larini": {
+    "wins": 0,
+    "losses": 50,
+    "total_races": 50,
+    "avg_elo": 1471,
+    "peak_elo": 1594,
+    "current_elo": 1594
+  },
+  "Yannick Dalmas": {
+    "wins": 0,
+    "losses": 24,
+    "total_races": 24,
+    "avg_elo": 1518,
+    "peak_elo": 1588,
+    "current_elo": 1475
+  },
+  "Roberto Moreno": {
+    "wins": 0,
+    "losses": 38,
+    "total_races": 38,
+    "avg_elo": 1491,
+    "peak_elo": 1540,
+    "current_elo": 1427
+  },
+  "Stefano Modena": {
+    "wins": 0,
+    "losses": 73,
+    "total_races": 73,
+    "avg_elo": 1501,
+    "peak_elo": 1600,
+    "current_elo": 1554
+  },
+  "Luis Pérez-Sala": {
+    "wins": 0,
+    "losses": 26,
+    "total_races": 26,
+    "avg_elo": 1490,
+    "peak_elo": 1527,
+    "current_elo": 1480
+  },
+  "Maurício Gugelmin": {
+    "wins": 0,
+    "losses": 75,
+    "total_races": 75,
+    "avg_elo": 1480,
+    "peak_elo": 1555,
+    "current_elo": 1444
+  },
+  "Oscar Larrauri": {
+    "wins": 0,
+    "losses": 8,
+    "total_races": 8,
+    "avg_elo": 1466,
+    "peak_elo": 1503,
+    "current_elo": 1435
+  },
+  "Julian Bailey": {
+    "wins": 0,
+    "losses": 7,
+    "total_races": 7,
+    "avg_elo": 1476,
+    "peak_elo": 1493,
+    "current_elo": 1481
+  },
+  "Bernd Schneider": {
+    "wins": 0,
+    "losses": 9,
+    "total_races": 9,
+    "avg_elo": 1497,
+    "peak_elo": 1523,
+    "current_elo": 1472
+  },
+  "Jean-Louis Schlesser": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1494,
+    "peak_elo": 1494,
+    "current_elo": 1494
+  },
+  "Aguri Suzuki": {
+    "wins": 0,
+    "losses": 64,
+    "total_races": 64,
+    "avg_elo": 1432,
+    "peak_elo": 1531,
+    "current_elo": 1487
+  },
+  "Johnny Herbert": {
+    "wins": 3,
+    "losses": 154,
+    "total_races": 157,
+    "avg_elo": 1539,
+    "peak_elo": 1705,
+    "current_elo": 1605
+  },
+  "Olivier Grouillard": {
+    "wins": 0,
+    "losses": 41,
+    "total_races": 41,
+    "avg_elo": 1485,
+    "peak_elo": 1542,
+    "current_elo": 1375
+  },
+  "Pierre-Henri Raphanel": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1473,
+    "peak_elo": 1473,
+    "current_elo": 1473
+  },
+  "Jean Alesi": {
+    "wins": 1,
+    "losses": 196,
+    "total_races": 197,
+    "avg_elo": 1694,
+    "peak_elo": 1933,
+    "current_elo": 1642
+  },
+  "Emanuele Pirro": {
+    "wins": 0,
+    "losses": 37,
+    "total_races": 37,
+    "avg_elo": 1430,
+    "peak_elo": 1525,
+    "current_elo": 1449
+  },
+  "Éric Bernard": {
+    "wins": 0,
+    "losses": 45,
+    "total_races": 45,
+    "avg_elo": 1485,
+    "peak_elo": 1591,
+    "current_elo": 1457
+  },
+  "Martin Donnelly": {
+    "wins": 0,
+    "losses": 15,
+    "total_races": 15,
+    "avg_elo": 1447,
+    "peak_elo": 1484,
+    "current_elo": 1404
+  },
+  "Bertrand Gachot": {
+    "wins": 0,
+    "losses": 44,
+    "total_races": 44,
+    "avg_elo": 1430,
+    "peak_elo": 1494,
+    "current_elo": 1452
+  },
+  "Volker Weidler": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1482,
+    "peak_elo": 1482,
+    "current_elo": 1482
+  },
+  "Jyrki Järvilehto": {
+    "wins": 0,
+    "losses": 62,
+    "total_races": 62,
+    "avg_elo": 1450,
+    "peak_elo": 1543,
+    "current_elo": 1439
+  },
+  "Paolo Barilla": {
+    "wins": 0,
+    "losses": 9,
+    "total_races": 9,
+    "avg_elo": 1467,
+    "peak_elo": 1500,
+    "current_elo": 1463
+  },
+  "Gregor Foitek": {
+    "wins": 0,
+    "losses": 7,
+    "total_races": 7,
+    "avg_elo": 1470,
+    "peak_elo": 1501,
+    "current_elo": 1476
+  },
+  "Gianni Morbidelli": {
+    "wins": 0,
+    "losses": 65,
+    "total_races": 65,
+    "avg_elo": 1453,
+    "peak_elo": 1530,
+    "current_elo": 1460
+  },
+  "David Brabham": {
+    "wins": 0,
+    "losses": 24,
+    "total_races": 24,
+    "avg_elo": 1470,
+    "peak_elo": 1511,
+    "current_elo": 1483
+  },
+  "Mika Häkkinen": {
+    "wins": 20,
+    "losses": 139,
+    "total_races": 159,
+    "avg_elo": 1707,
+    "peak_elo": 2000,
+    "current_elo": 1919
+  },
+  "Mark Blundell": {
+    "wins": 0,
+    "losses": 56,
+    "total_races": 56,
+    "avg_elo": 1547,
+    "peak_elo": 1715,
+    "current_elo": 1701
+  },
+  "Érik Comas": {
+    "wins": 0,
+    "losses": 60,
+    "total_races": 60,
+    "avg_elo": 1499,
+    "peak_elo": 1678,
+    "current_elo": 1458
+  },
+  "Eric van de Poele": {
+    "wins": 0,
+    "losses": 6,
+    "total_races": 6,
+    "avg_elo": 1495,
+    "peak_elo": 1510,
+    "current_elo": 1476
+  },
+  "Michael Schumacher": {
+    "wins": 88,
+    "losses": 209,
+    "total_races": 297,
+    "avg_elo": 1758,
+    "peak_elo": 2113,
+    "current_elo": 1611
+  },
+  "Alessandro Zanardi": {
+    "wins": 0,
+    "losses": 42,
+    "total_races": 42,
+    "avg_elo": 1413,
+    "peak_elo": 1526,
+    "current_elo": 1391
+  },
+  "Karl Wendlinger": {
+    "wins": 0,
+    "losses": 40,
+    "total_races": 40,
+    "avg_elo": 1469,
+    "peak_elo": 1535,
+    "current_elo": 1452
+  },
+  "Ukyo Katayama": {
+    "wins": 0,
+    "losses": 91,
+    "total_races": 91,
+    "avg_elo": 1443,
+    "peak_elo": 1541,
+    "current_elo": 1370
+  },
+  "Christian Fittipaldi": {
+    "wins": 0,
+    "losses": 40,
+    "total_races": 40,
+    "avg_elo": 1530,
+    "peak_elo": 1592,
+    "current_elo": 1548
+  },
+  "Andrea Chiesa": {
+    "wins": 0,
+    "losses": 3,
+    "total_races": 3,
+    "avg_elo": 1457,
+    "peak_elo": 1482,
+    "current_elo": 1431
+  },
+  "Paul Belmondo": {
+    "wins": 0,
+    "losses": 7,
+    "total_races": 7,
+    "avg_elo": 1475,
+    "peak_elo": 1499,
+    "current_elo": 1467
+  },
+  "Damon Hill": {
+    "wins": 21,
+    "losses": 90,
+    "total_races": 111,
+    "avg_elo": 1673,
+    "peak_elo": 1930,
+    "current_elo": 1505
+  },
+  "Perry McCarthy": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1486,
+    "peak_elo": 1486,
+    "current_elo": 1486
+  },
+  "Emanuele Naspetti": {
+    "wins": 0,
+    "losses": 6,
+    "total_races": 6,
+    "avg_elo": 1472,
+    "peak_elo": 1492,
+    "current_elo": 1447
+  },
+  "Rubens Barrichello": {
+    "wins": 11,
+    "losses": 304,
+    "total_races": 315,
+    "avg_elo": 1661,
+    "peak_elo": 1976,
+    "current_elo": 1612
+  },
+  "Fabrizio Barbazza": {
+    "wins": 0,
+    "losses": 8,
+    "total_races": 8,
+    "avg_elo": 1467,
+    "peak_elo": 1509,
+    "current_elo": 1424
+  },
+  "Luca Badoer": {
+    "wins": 0,
+    "losses": 47,
+    "total_races": 47,
+    "avg_elo": 1477,
+    "peak_elo": 1546,
+    "current_elo": 1475
+  },
+  "Michael Andretti": {
+    "wins": 0,
+    "losses": 13,
+    "total_races": 13,
+    "avg_elo": 1569,
+    "peak_elo": 1680,
+    "current_elo": 1680
+  },
+  "Pedro Lamy": {
+    "wins": 0,
+    "losses": 27,
+    "total_races": 27,
+    "avg_elo": 1470,
+    "peak_elo": 1522,
+    "current_elo": 1442
+  },
+  "Marco Apicella": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1471,
+    "peak_elo": 1471,
+    "current_elo": 1471
+  },
+  "Eddie Irvine": {
+    "wins": 4,
+    "losses": 138,
+    "total_races": 142,
+    "avg_elo": 1573,
+    "peak_elo": 1818,
+    "current_elo": 1531
+  },
+  "Toshio Suzuki": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1493,
+    "peak_elo": 1506,
+    "current_elo": 1479
+  },
+  "Jean-Marc Gounon": {
+    "wins": 0,
+    "losses": 9,
+    "total_races": 9,
+    "avg_elo": 1488,
+    "peak_elo": 1507,
+    "current_elo": 1488
+  },
+  "Olivier Panis": {
+    "wins": 1,
+    "losses": 152,
+    "total_races": 153,
+    "avg_elo": 1525,
+    "peak_elo": 1624,
+    "current_elo": 1467
+  },
+  "Jos Verstappen": {
+    "wins": 0,
+    "losses": 107,
+    "total_races": 107,
+    "avg_elo": 1437,
+    "peak_elo": 1560,
+    "current_elo": 1449
+  },
+  "Heinz-Harald Frentzen": {
+    "wins": 3,
+    "losses": 150,
+    "total_races": 153,
+    "avg_elo": 1650,
+    "peak_elo": 1862,
+    "current_elo": 1476
+  },
+  "Olivier Beretta": {
+    "wins": 0,
+    "losses": 10,
+    "total_races": 10,
+    "avg_elo": 1438,
+    "peak_elo": 1462,
+    "current_elo": 1423
+  },
+  "Roland Ratzenberger": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1500,
+    "peak_elo": 1517,
+    "current_elo": 1483
+  },
+  "David Coulthard": {
+    "wins": 12,
+    "losses": 224,
+    "total_races": 236,
+    "avg_elo": 1702,
+    "peak_elo": 2036,
+    "current_elo": 1423
+  },
+  "Andrea Montermini": {
+    "wins": 0,
+    "losses": 18,
+    "total_races": 18,
+    "avg_elo": 1409,
+    "peak_elo": 1496,
+    "current_elo": 1348
+  },
+  "Philippe Adams": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1469,
+    "peak_elo": 1476,
+    "current_elo": 1462
+  },
+  "Domenico Schiattarella": {
+    "wins": 0,
+    "losses": 7,
+    "total_races": 7,
+    "avg_elo": 1481,
+    "peak_elo": 1507,
+    "current_elo": 1448
+  },
+  "Hideki Noda": {
+    "wins": 0,
+    "losses": 3,
+    "total_races": 3,
+    "avg_elo": 1439,
+    "peak_elo": 1466,
+    "current_elo": 1415
+  },
+  "Mika Salo": {
+    "wins": 0,
+    "losses": 106,
+    "total_races": 106,
+    "avg_elo": 1536,
+    "peak_elo": 1660,
+    "current_elo": 1597
+  },
+  "Franck Lagorce": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1471,
+    "peak_elo": 1476,
+    "current_elo": 1466
+  },
+  "Taki Inoue": {
+    "wins": 0,
+    "losses": 13,
+    "total_races": 13,
+    "avg_elo": 1378,
+    "peak_elo": 1471,
+    "current_elo": 1374
+  },
+  "Jean-Denis Délétraz": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1511,
+    "peak_elo": 1511,
+    "current_elo": 1511
+  },
+  "Pedro Diniz": {
+    "wins": 0,
+    "losses": 94,
+    "total_races": 94,
+    "avg_elo": 1485,
+    "peak_elo": 1636,
+    "current_elo": 1472
+  },
+  "Jean-Christophe Boullion": {
+    "wins": 0,
+    "losses": 8,
+    "total_races": 8,
+    "avg_elo": 1485,
+    "peak_elo": 1518,
+    "current_elo": 1495
+  },
+  "Massimiliano Papis": {
+    "wins": 0,
+    "losses": 5,
+    "total_races": 5,
+    "avg_elo": 1444,
+    "peak_elo": 1501,
+    "current_elo": 1441
+  },
+  "Giovanni Lavaggi": {
+    "wins": 0,
+    "losses": 7,
+    "total_races": 7,
+    "avg_elo": 1453,
+    "peak_elo": 1474,
+    "current_elo": 1456
+  },
+  "Jacques Villeneuve": {
+    "wins": 11,
+    "losses": 148,
+    "total_races": 159,
+    "avg_elo": 1605,
+    "peak_elo": 1935,
+    "current_elo": 1441
+  },
+  "Ricardo Rosset": {
+    "wins": 0,
+    "losses": 27,
+    "total_races": 27,
+    "avg_elo": 1468,
+    "peak_elo": 1513,
+    "current_elo": 1390
+  },
+  "Giancarlo Fisichella": {
+    "wins": 3,
+    "losses": 222,
+    "total_races": 225,
+    "avg_elo": 1536,
+    "peak_elo": 1738,
+    "current_elo": 1514
+  },
+  "Tarso Marques": {
+    "wins": 0,
+    "losses": 25,
+    "total_races": 25,
+    "avg_elo": 1416,
+    "peak_elo": 1466,
+    "current_elo": 1445
+  },
+  "Shinji Nakano": {
+    "wins": 0,
+    "losses": 33,
+    "total_races": 33,
+    "avg_elo": 1451,
+    "peak_elo": 1502,
+    "current_elo": 1468
+  },
+  "Jarno Trulli": {
+    "wins": 1,
+    "losses": 249,
+    "total_races": 250,
+    "avg_elo": 1562,
+    "peak_elo": 1714,
+    "current_elo": 1433
+  },
+  "Jan Magnussen": {
+    "wins": 0,
+    "losses": 24,
+    "total_races": 24,
+    "avg_elo": 1444,
+    "peak_elo": 1488,
+    "current_elo": 1440
+  },
+  "Ralf Schumacher": {
+    "wins": 6,
+    "losses": 168,
+    "total_races": 174,
+    "avg_elo": 1553,
+    "peak_elo": 1697,
+    "current_elo": 1532
+  },
+  "Alexander Wurz": {
+    "wins": 0,
+    "losses": 69,
+    "total_races": 69,
+    "avg_elo": 1589,
+    "peak_elo": 1725,
+    "current_elo": 1526
+  },
+  "Norberto Fontana": {
+    "wins": 0,
+    "losses": 4,
+    "total_races": 4,
+    "avg_elo": 1509,
+    "peak_elo": 1531,
+    "current_elo": 1516
+  },
+  "Esteban Tuero": {
+    "wins": 0,
+    "losses": 16,
+    "total_races": 16,
+    "avg_elo": 1417,
+    "peak_elo": 1506,
+    "current_elo": 1354
+  },
+  "Toranosuke Takagi": {
+    "wins": 0,
+    "losses": 32,
+    "total_races": 32,
+    "avg_elo": 1447,
+    "peak_elo": 1510,
+    "current_elo": 1377
+  },
+  "Pedro de la Rosa": {
+    "wins": 0,
+    "losses": 106,
+    "total_races": 106,
+    "avg_elo": 1478,
+    "peak_elo": 1644,
+    "current_elo": 1460
+  },
+  "Ricardo Zonta": {
+    "wins": 0,
+    "losses": 37,
+    "total_races": 37,
+    "avg_elo": 1522,
+    "peak_elo": 1600,
+    "current_elo": 1443
+  },
+  "Marc Gené": {
+    "wins": 0,
+    "losses": 36,
+    "total_races": 36,
+    "avg_elo": 1483,
+    "peak_elo": 1525,
+    "current_elo": 1461
+  },
+  "Stéphane Sarrazin": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1472,
+    "peak_elo": 1472,
+    "current_elo": 1472
+  },
+  "Nick Heidfeld": {
+    "wins": 0,
+    "losses": 183,
+    "total_races": 183,
+    "avg_elo": 1552,
+    "peak_elo": 1629,
+    "current_elo": 1509
+  },
+  "Jenson Button": {
+    "wins": 15,
+    "losses": 285,
+    "total_races": 300,
+    "avg_elo": 1747,
+    "peak_elo": 2014,
+    "current_elo": 1717
+  },
+  "Gastón Mazzacane": {
+    "wins": 0,
+    "losses": 21,
+    "total_races": 21,
+    "avg_elo": 1469,
+    "peak_elo": 1517,
+    "current_elo": 1417
+  },
+  "Luciano Burti": {
+    "wins": 0,
+    "losses": 15,
+    "total_races": 15,
+    "avg_elo": 1536,
+    "peak_elo": 1573,
+    "current_elo": 1480
+  },
+  "Kimi Räikkönen": {
+    "wins": 18,
+    "losses": 325,
+    "total_races": 343,
+    "avg_elo": 1879,
+    "peak_elo": 2206,
+    "current_elo": 1685
+  },
+  "Fernando Alonso": {
+    "wins": 31,
+    "losses": 388,
+    "total_races": 419,
+    "avg_elo": 1782,
+    "peak_elo": 2251,
+    "current_elo": 1711
+  },
+  "Juan Pablo Montoya": {
+    "wins": 5,
+    "losses": 84,
+    "total_races": 89,
+    "avg_elo": 1635,
+    "peak_elo": 1843,
+    "current_elo": 1752
+  },
+  "Enrique Bernoldi": {
+    "wins": 0,
+    "losses": 28,
+    "total_races": 28,
+    "avg_elo": 1400,
+    "peak_elo": 1464,
+    "current_elo": 1462
+  },
+  "Tomáš Enge": {
+    "wins": 0,
+    "losses": 3,
+    "total_races": 3,
+    "avg_elo": 1526,
+    "peak_elo": 1541,
+    "current_elo": 1508
+  },
+  "Alex Yoong": {
+    "wins": 0,
+    "losses": 15,
+    "total_races": 15,
+    "avg_elo": 1410,
+    "peak_elo": 1477,
+    "current_elo": 1388
+  },
+  "Mark Webber": {
+    "wins": 9,
+    "losses": 202,
+    "total_races": 211,
+    "avg_elo": 1570,
+    "peak_elo": 1766,
+    "current_elo": 1675
+  },
+  "Takuma Sato": {
+    "wins": 0,
+    "losses": 85,
+    "total_races": 85,
+    "avg_elo": 1501,
+    "peak_elo": 1571,
+    "current_elo": 1491
+  },
+  "Felipe Massa": {
+    "wins": 11,
+    "losses": 251,
+    "total_races": 262,
+    "avg_elo": 1760,
+    "peak_elo": 2047,
+    "current_elo": 1683
+  },
+  "Allan McNish": {
+    "wins": 0,
+    "losses": 17,
+    "total_races": 17,
+    "avg_elo": 1488,
+    "peak_elo": 1516,
+    "current_elo": 1441
+  },
+  "Anthony Davidson": {
+    "wins": 0,
+    "losses": 24,
+    "total_races": 24,
+    "avg_elo": 1432,
+    "peak_elo": 1483,
+    "current_elo": 1404
+  },
+  "Antônio Pizzonia": {
+    "wins": 0,
+    "losses": 15,
+    "total_races": 15,
+    "avg_elo": 1441,
+    "peak_elo": 1516,
+    "current_elo": 1412
+  },
+  "Justin Wilson": {
+    "wins": 0,
+    "losses": 16,
+    "total_races": 16,
+    "avg_elo": 1438,
+    "peak_elo": 1475,
+    "current_elo": 1428
+  },
+  "Cristiano da Matta": {
+    "wins": 0,
+    "losses": 28,
+    "total_races": 28,
+    "avg_elo": 1524,
+    "peak_elo": 1563,
+    "current_elo": 1479
+  },
+  "Ralph Firman": {
+    "wins": 0,
+    "losses": 14,
+    "total_races": 14,
+    "avg_elo": 1480,
+    "peak_elo": 1507,
+    "current_elo": 1476
+  },
+  "Nicolas Kiesa": {
+    "wins": 0,
+    "losses": 5,
+    "total_races": 5,
+    "avg_elo": 1487,
+    "peak_elo": 1512,
+    "current_elo": 1456
+  },
+  "Zsolt Baumgartner": {
+    "wins": 0,
+    "losses": 20,
+    "total_races": 20,
+    "avg_elo": 1453,
+    "peak_elo": 1509,
+    "current_elo": 1446
+  },
+  "Christian Klien": {
+    "wins": 0,
+    "losses": 45,
+    "total_races": 45,
+    "avg_elo": 1478,
+    "peak_elo": 1540,
+    "current_elo": 1482
+  },
+  "Giorgio Pantano": {
+    "wins": 0,
+    "losses": 14,
+    "total_races": 14,
+    "avg_elo": 1465,
+    "peak_elo": 1527,
+    "current_elo": 1403
+  },
+  "Gianmaria Bruni": {
+    "wins": 0,
+    "losses": 18,
+    "total_races": 18,
+    "avg_elo": 1454,
+    "peak_elo": 1513,
+    "current_elo": 1393
+  },
+  "Timo Glock": {
+    "wins": 0,
+    "losses": 95,
+    "total_races": 95,
+    "avg_elo": 1536,
+    "peak_elo": 1668,
+    "current_elo": 1471
+  },
+  "Narain Karthikeyan": {
+    "wins": 0,
+    "losses": 40,
+    "total_races": 40,
+    "avg_elo": 1399,
+    "peak_elo": 1542,
+    "current_elo": 1323
+  },
+  "Tiago Monteiro": {
+    "wins": 0,
+    "losses": 31,
+    "total_races": 31,
+    "avg_elo": 1489,
+    "peak_elo": 1579,
+    "current_elo": 1419
+  },
+  "Patrick Friesacher": {
+    "wins": 0,
+    "losses": 11,
+    "total_races": 11,
+    "avg_elo": 1428,
+    "peak_elo": 1508,
+    "current_elo": 1357
+  },
+  "Christijan Albers": {
+    "wins": 0,
+    "losses": 40,
+    "total_races": 40,
+    "avg_elo": 1507,
+    "peak_elo": 1558,
+    "current_elo": 1474
+  },
+  "Vitantonio Liuzzi": {
+    "wins": 0,
+    "losses": 80,
+    "total_races": 80,
+    "avg_elo": 1456,
+    "peak_elo": 1592,
+    "current_elo": 1341
+  },
+  "Robert Doornbos": {
+    "wins": 0,
+    "losses": 5,
+    "total_races": 5,
+    "avg_elo": 1466,
+    "peak_elo": 1494,
+    "current_elo": 1494
+  },
+  "Nico Rosberg": {
+    "wins": 22,
+    "losses": 181,
+    "total_races": 203,
+    "avg_elo": 1693,
+    "peak_elo": 2091,
+    "current_elo": 2027
+  },
+  "Scott Speed": {
+    "wins": 0,
+    "losses": 28,
+    "total_races": 28,
+    "avg_elo": 1483,
+    "peak_elo": 1525,
+    "current_elo": 1466
+  },
+  "Yuji Ide": {
+    "wins": 0,
+    "losses": 4,
+    "total_races": 4,
+    "avg_elo": 1450,
+    "peak_elo": 1474,
+    "current_elo": 1424
+  },
+  "Franck Montagny": {
+    "wins": 0,
+    "losses": 7,
+    "total_races": 7,
+    "avg_elo": 1447,
+    "peak_elo": 1480,
+    "current_elo": 1429
+  },
+  "Sakon Yamamoto": {
+    "wins": 0,
+    "losses": 21,
+    "total_races": 21,
+    "avg_elo": 1396,
+    "peak_elo": 1476,
+    "current_elo": 1366
+  },
+  "Robert Kubica": {
+    "wins": 1,
+    "losses": 98,
+    "total_races": 99,
+    "avg_elo": 1547,
+    "peak_elo": 1718,
+    "current_elo": 1420
+  },
+  "Lewis Hamilton": {
+    "wins": 103,
+    "losses": 274,
+    "total_races": 377,
+    "avg_elo": 1986,
+    "peak_elo": 2327,
+    "current_elo": 2014
+  },
+  "Heikki Kovalainen": {
+    "wins": 1,
+    "losses": 111,
+    "total_races": 112,
+    "avg_elo": 1594,
+    "peak_elo": 1699,
+    "current_elo": 1552
+  },
+  "Adrian Sutil": {
+    "wins": 0,
+    "losses": 125,
+    "total_races": 125,
+    "avg_elo": 1428,
+    "peak_elo": 1541,
+    "current_elo": 1394
+  },
+  "Sebastian Vettel": {
+    "wins": 53,
+    "losses": 244,
+    "total_races": 297,
+    "avg_elo": 1852,
+    "peak_elo": 2248,
+    "current_elo": 1662
+  },
+  "Markus Winkelhock": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1506,
+    "peak_elo": 1506,
+    "current_elo": 1506
+  },
+  "Kazuki Nakajima": {
+    "wins": 0,
+    "losses": 36,
+    "total_races": 36,
+    "avg_elo": 1476,
+    "peak_elo": 1538,
+    "current_elo": 1481
+  },
+  "Sébastien Bourdais": {
+    "wins": 0,
+    "losses": 27,
+    "total_races": 27,
+    "avg_elo": 1422,
+    "peak_elo": 1520,
+    "current_elo": 1346
+  },
+  "Nelson Piquet Jr.": {
+    "wins": 0,
+    "losses": 28,
+    "total_races": 28,
+    "avg_elo": 1501,
+    "peak_elo": 1579,
+    "current_elo": 1543
+  },
+  "Sébastien Buemi": {
+    "wins": 0,
+    "losses": 55,
+    "total_races": 55,
+    "avg_elo": 1448,
+    "peak_elo": 1517,
+    "current_elo": 1374
+  },
+  "Jaime Alguersuari": {
+    "wins": 0,
+    "losses": 46,
+    "total_races": 46,
+    "avg_elo": 1454,
+    "peak_elo": 1509,
+    "current_elo": 1502
+  },
+  "Romain Grosjean": {
+    "wins": 0,
+    "losses": 178,
+    "total_races": 178,
+    "avg_elo": 1530,
+    "peak_elo": 1817,
+    "current_elo": 1334
+  },
+  "Kamui Kobayashi": {
+    "wins": 0,
+    "losses": 75,
+    "total_races": 75,
+    "avg_elo": 1550,
+    "peak_elo": 1630,
+    "current_elo": 1448
+  },
+  "Nico Hülkenberg": {
+    "wins": 0,
+    "losses": 251,
+    "total_races": 251,
+    "avg_elo": 1528,
+    "peak_elo": 1733,
+    "current_elo": 1461
+  },
+  "Bruno Senna": {
+    "wins": 0,
+    "losses": 46,
+    "total_races": 46,
+    "avg_elo": 1471,
+    "peak_elo": 1547,
+    "current_elo": 1464
+  },
+  "Vitaly Petrov": {
+    "wins": 0,
+    "losses": 58,
+    "total_races": 58,
+    "avg_elo": 1501,
+    "peak_elo": 1559,
+    "current_elo": 1540
+  },
+  "Lucas di Grassi": {
+    "wins": 0,
+    "losses": 19,
+    "total_races": 19,
+    "avg_elo": 1490,
+    "peak_elo": 1530,
+    "current_elo": 1462
+  },
+  "Karun Chandhok": {
+    "wins": 0,
+    "losses": 11,
+    "total_races": 11,
+    "avg_elo": 1513,
+    "peak_elo": 1541,
+    "current_elo": 1521
+  },
+  "Paul di Resta": {
+    "wins": 0,
+    "losses": 59,
+    "total_races": 59,
+    "avg_elo": 1486,
+    "peak_elo": 1548,
+    "current_elo": 1492
+  },
+  "Jérôme d'Ambrosio": {
+    "wins": 0,
+    "losses": 20,
+    "total_races": 20,
+    "avg_elo": 1480,
+    "peak_elo": 1533,
+    "current_elo": 1455
+  },
+  "Pastor Maldonado": {
+    "wins": 1,
+    "losses": 92,
+    "total_races": 93,
+    "avg_elo": 1505,
+    "peak_elo": 1621,
+    "current_elo": 1529
+  },
+  "Sergio Pérez": {
+    "wins": 6,
+    "losses": 274,
+    "total_races": 280,
+    "avg_elo": 1669,
+    "peak_elo": 1800,
+    "current_elo": 1680
+  },
+  "Daniel Ricciardo": {
+    "wins": 8,
+    "losses": 246,
+    "total_races": 254,
+    "avg_elo": 1567,
+    "peak_elo": 1869,
+    "current_elo": 1471
+  },
+  "Jean-Éric Vergne": {
+    "wins": 0,
+    "losses": 55,
+    "total_races": 55,
+    "avg_elo": 1426,
+    "peak_elo": 1533,
+    "current_elo": 1469
+  },
+  "Charles Pic": {
+    "wins": 0,
+    "losses": 39,
+    "total_races": 39,
+    "avg_elo": 1447,
+    "peak_elo": 1493,
+    "current_elo": 1387
+  },
+  "Esteban Gutiérrez": {
+    "wins": 0,
+    "losses": 56,
+    "total_races": 56,
+    "avg_elo": 1460,
+    "peak_elo": 1543,
+    "current_elo": 1497
+  },
+  "Valtteri Bottas": {
+    "wins": 10,
+    "losses": 234,
+    "total_races": 244,
+    "avg_elo": 1835,
+    "peak_elo": 2161,
+    "current_elo": 1614
+  },
+  "Jules Bianchi": {
+    "wins": 0,
+    "losses": 34,
+    "total_races": 34,
+    "avg_elo": 1465,
+    "peak_elo": 1531,
+    "current_elo": 1413
+  },
+  "Max Chilton": {
+    "wins": 0,
+    "losses": 35,
+    "total_races": 35,
+    "avg_elo": 1394,
+    "peak_elo": 1478,
+    "current_elo": 1332
+  },
+  "Giedo van der Garde": {
+    "wins": 0,
+    "losses": 19,
+    "total_races": 19,
+    "avg_elo": 1409,
+    "peak_elo": 1476,
+    "current_elo": 1406
+  },
+  "Kevin Magnussen": {
+    "wins": 0,
+    "losses": 183,
+    "total_races": 183,
+    "avg_elo": 1435,
+    "peak_elo": 1648,
+    "current_elo": 1305
+  },
+  "Daniil Kvyat": {
+    "wins": 0,
+    "losses": 109,
+    "total_races": 109,
+    "avg_elo": 1476,
+    "peak_elo": 1657,
+    "current_elo": 1496
+  },
+  "Marcus Ericsson": {
+    "wins": 0,
+    "losses": 97,
+    "total_races": 97,
+    "avg_elo": 1421,
+    "peak_elo": 1515,
+    "current_elo": 1353
+  },
+  "André Lotterer": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1465,
+    "peak_elo": 1465,
+    "current_elo": 1465
+  },
+  "Felipe Nasr": {
+    "wins": 0,
+    "losses": 40,
+    "total_races": 40,
+    "avg_elo": 1450,
+    "peak_elo": 1564,
+    "current_elo": 1372
+  },
+  "Carlos Sainz": {
+    "wins": 4,
+    "losses": 228,
+    "total_races": 232,
+    "avg_elo": 1688,
+    "peak_elo": 2022,
+    "current_elo": 1743
+  },
+  "Max Verstappen": {
+    "wins": 71,
+    "losses": 162,
+    "total_races": 233,
+    "avg_elo": 1807,
+    "peak_elo": 2114,
+    "current_elo": 2090
+  },
+  "Roberto Merhi": {
+    "wins": 0,
+    "losses": 13,
+    "total_races": 13,
+    "avg_elo": 1493,
+    "peak_elo": 1522,
+    "current_elo": 1482
+  },
+  "Will Stevens": {
+    "wins": 0,
+    "losses": 18,
+    "total_races": 18,
+    "avg_elo": 1459,
+    "peak_elo": 1517,
+    "current_elo": 1424
+  },
+  "Alexander Rossi": {
+    "wins": 0,
+    "losses": 5,
+    "total_races": 5,
+    "avg_elo": 1517,
+    "peak_elo": 1531,
+    "current_elo": 1500
+  },
+  "Jolyon Palmer": {
+    "wins": 0,
+    "losses": 37,
+    "total_races": 37,
+    "avg_elo": 1481,
+    "peak_elo": 1531,
+    "current_elo": 1531
+  },
+  "Pascal Wehrlein": {
+    "wins": 0,
+    "losses": 39,
+    "total_races": 39,
+    "avg_elo": 1465,
+    "peak_elo": 1547,
+    "current_elo": 1410
+  },
+  "Rio Haryanto": {
+    "wins": 0,
+    "losses": 12,
+    "total_races": 12,
+    "avg_elo": 1427,
+    "peak_elo": 1480,
+    "current_elo": 1396
+  },
+  "Stoffel Vandoorne": {
+    "wins": 0,
+    "losses": 42,
+    "total_races": 42,
+    "avg_elo": 1678,
+    "peak_elo": 1764,
+    "current_elo": 1693
+  },
+  "Esteban Ocon": {
+    "wins": 1,
+    "losses": 179,
+    "total_races": 180,
+    "avg_elo": 1558,
+    "peak_elo": 1671,
+    "current_elo": 1451
+  },
+  "Antonio Giovinazzi": {
+    "wins": 0,
+    "losses": 62,
+    "total_races": 62,
+    "avg_elo": 1638,
+    "peak_elo": 1733,
+    "current_elo": 1707
+  },
+  "Lance Stroll": {
+    "wins": 0,
+    "losses": 191,
+    "total_races": 191,
+    "avg_elo": 1592,
+    "peak_elo": 1748,
+    "current_elo": 1560
+  },
+  "Pierre Gasly": {
+    "wins": 1,
+    "losses": 177,
+    "total_races": 178,
+    "avg_elo": 1512,
+    "peak_elo": 1584,
+    "current_elo": 1489
+  },
+  "Brendon Hartley": {
+    "wins": 0,
+    "losses": 25,
+    "total_races": 25,
+    "avg_elo": 1423,
+    "peak_elo": 1482,
+    "current_elo": 1420
+  },
+  "Charles Leclerc": {
+    "wins": 8,
+    "losses": 165,
+    "total_races": 173,
+    "avg_elo": 1902,
+    "peak_elo": 2180,
+    "current_elo": 2164
+  },
+  "Sergey Sirotkin": {
+    "wins": 0,
+    "losses": 21,
+    "total_races": 21,
+    "avg_elo": 1481,
+    "peak_elo": 1512,
+    "current_elo": 1472
+  },
+  "Lando Norris": {
+    "wins": 11,
+    "losses": 141,
+    "total_races": 152,
+    "avg_elo": 1653,
+    "peak_elo": 1796,
+    "current_elo": 1753
+  },
+  "Alexander Albon": {
+    "wins": 0,
+    "losses": 129,
+    "total_races": 129,
+    "avg_elo": 1571,
+    "peak_elo": 1752,
+    "current_elo": 1693
+  },
+  "George Russell": {
+    "wins": 5,
+    "losses": 147,
+    "total_races": 152,
+    "avg_elo": 1851,
+    "peak_elo": 2179,
+    "current_elo": 2040
+  },
+  "Nicholas Latifi": {
+    "wins": 0,
+    "losses": 61,
+    "total_races": 61,
+    "avg_elo": 1421,
+    "peak_elo": 1526,
+    "current_elo": 1360
+  },
+  "Jack Aitken": {
+    "wins": 0,
+    "losses": 1,
+    "total_races": 1,
+    "avg_elo": 1508,
+    "peak_elo": 1508,
+    "current_elo": 1508
+  },
+  "Pietro Fittipaldi": {
+    "wins": 0,
+    "losses": 2,
+    "total_races": 2,
+    "avg_elo": 1441,
+    "peak_elo": 1456,
+    "current_elo": 1426
+  },
+  "Yuki Tsunoda": {
+    "wins": 0,
+    "losses": 114,
+    "total_races": 114,
+    "avg_elo": 1460,
+    "peak_elo": 1573,
+    "current_elo": 1568
+  },
+  "Mick Schumacher": {
+    "wins": 0,
+    "losses": 44,
+    "total_races": 44,
+    "avg_elo": 1446,
+    "peak_elo": 1509,
+    "current_elo": 1408
+  },
+  "Nikita Mazepin": {
+    "wins": 0,
+    "losses": 22,
+    "total_races": 22,
+    "avg_elo": 1392,
+    "peak_elo": 1474,
+    "current_elo": 1359
+  },
+  "Guanyu Zhou": {
+    "wins": 0,
+    "losses": 68,
+    "total_races": 68,
+    "avg_elo": 1631,
+    "peak_elo": 1729,
+    "current_elo": 1614
+  },
+  "Nyck de Vries": {
+    "wins": 0,
+    "losses": 11,
+    "total_races": 11,
+    "avg_elo": 1441,
+    "peak_elo": 1512,
+    "current_elo": 1397
+  },
+  "Logan Sargeant": {
+    "wins": 0,
+    "losses": 36,
+    "total_races": 36,
+    "avg_elo": 1400,
+    "peak_elo": 1508,
+    "current_elo": 1341
+  },
+  "Oscar Piastri": {
+    "wins": 9,
+    "losses": 61,
+    "total_races": 70,
+    "avg_elo": 1606,
+    "peak_elo": 1737,
+    "current_elo": 1684
+  },
+  "Liam Lawson": {
+    "wins": 0,
+    "losses": 35,
+    "total_races": 35,
+    "avg_elo": 1472,
+    "peak_elo": 1537,
+    "current_elo": 1463
+  },
+  "Oliver Bearman": {
+    "wins": 0,
+    "losses": 27,
+    "total_races": 27,
+    "avg_elo": 1482,
+    "peak_elo": 1530,
+    "current_elo": 1475
+  },
+  "Franco Colapinto": {
+    "wins": 0,
+    "losses": 27,
+    "total_races": 27,
+    "avg_elo": 1476,
+    "peak_elo": 1535,
+    "current_elo": 1428
+  },
+  "Jack Doohan": {
+    "wins": 0,
+    "losses": 7,
+    "total_races": 7,
+    "avg_elo": 1465,
+    "peak_elo": 1486,
+    "current_elo": 1444
+  },
+  "Kimi Antonelli": {
+    "wins": 0,
+    "losses": 24,
+    "total_races": 24,
+    "avg_elo": 1642,
+    "peak_elo": 1810,
+    "current_elo": 1792
+  },
+  "Gabriel Bortoleto": {
+    "wins": 0,
+    "losses": 24,
+    "total_races": 24,
+    "avg_elo": 1461,
+    "peak_elo": 1495,
+    "current_elo": 1446
+  },
+  "Isack Hadjar": {
+    "wins": 0,
+    "losses": 24,
+    "total_races": 24,
+    "avg_elo": 1527,
+    "peak_elo": 1574,
+    "current_elo": 1507
+  }
+}

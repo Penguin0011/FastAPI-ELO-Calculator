@@ -30,6 +30,18 @@ function Navbar() {
                     >
                         2025 Grid
                     </Link>
+                    <Link
+                        to="/compare"
+                        className={`navbar-link ${isActive('/compare') ? 'active' : ''}`}
+                    >
+                        Compare
+                    </Link>
+                    <Link
+                        to="/timeline"
+                        className={`navbar-link ${isActive('/timeline') ? 'active' : ''}`}
+                    >
+                        Timeline
+                    </Link>
                 </div>
             </div>
         </nav>

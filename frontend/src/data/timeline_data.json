@@ -1,0 +1,10830 @@
+{
+  "1950": [
+    {
+      "name": "Toulo de Graffenried",
+      "elo": 1969
+    },
+    {
+      "name": "Yves Cabantous",
+      "elo": 1802
+    },
+    {
+      "name": "Louis Rosier",
+      "elo": 1673
+    },
+    {
+      "name": "Bob Gerard",
+      "elo": 1627
+    },
+    {
+      "name": "Nino Farina",
+      "elo": 1587
+    },
+    {
+      "name": "Felice Bonetto",
+      "elo": 1550
+    },
+    {
+      "name": "Joe Kelly",
+      "elo": 1527
+    },
+    {
+      "name": "Peter Whitehead",
+      "elo": 1526
+    },
+    {
+      "name": "Franco Comotti",
+      "elo": 1497
+    },
+    {
+      "name": "Reg Parnell",
+      "elo": 1496
+    },
+    {
+      "name": "Luigi Villoresi",
+      "elo": 1495
+    },
+    {
+      "name": "Nello Pagani",
+      "elo": 1489
+    },
+    {
+      "name": "David Murray",
+      "elo": 1482
+    },
+    {
+      "name": "Alberto Ascari",
+      "elo": 1480
+    },
+    {
+      "name": "Geoff Crossley",
+      "elo": 1468
+    },
+    {
+      "name": "Cuth Harrison",
+      "elo": 1460
+    },
+    {
+      "name": "Harry Schell",
+      "elo": 1453
+    },
+    {
+      "name": "Eugène Chaboud",
+      "elo": 1452
+    },
+    {
+      "name": "Maurice Trintignant",
+      "elo": 1449
+    },
+    {
+      "name": "Robert Manzon",
+      "elo": 1441
+    },
+    {
+      "name": "Juan Fangio",
+      "elo": 1423
+    },
+    {
+      "name": "Luigi Fagioli",
+      "elo": 1389
+    },
+    {
+      "name": "Leslie Johnson",
+      "elo": 1389
+    },
+    {
+      "name": "Clemente Biondetti",
+      "elo": 1385
+    },
+    {
+      "name": "Guy Mairesse",
+      "elo": 1379
+    },
+    {
+      "name": "Louis Chiron",
+      "elo": 1378
+    },
+    {
+      "name": "Eugène Martin",
+      "elo": 1322
+    },
+    {
+      "name": "Toni Branca",
+      "elo": 1318
+    },
+    {
+      "name": "Franco Rol",
+      "elo": 1315
+    },
+    {
+      "name": "Philippe Étancelin",
+      "elo": 1296
+    },
+    {
+      "name": "Pierre Levegh",
+      "elo": 1294
+    },
+    {
+      "name": "David Hampshire",
+      "elo": 1288
+    },
+    {
+      "name": "Consalvo Sanesi",
+      "elo": 1285
+    },
+    {
+      "name": "Johnny Claes",
+      "elo": 1219
+    },
+    {
+      "name": "Alfredo Pián",
+      "elo": 1210
+    },
+    {
+      "name": "José Froilán González",
+      "elo": 1200
+    },
+    {
+      "name": "Raymond Sommer",
+      "elo": 1184
+    },
+    {
+      "name": "Henri Louveau",
+      "elo": 1130
+    },
+    {
+      "name": "Paul Pietsch",
+      "elo": 1085
+    },
+    {
+      "name": "Prince Bira",
+      "elo": 1022
+    }
+  ],
+  "1951": [
+    {
+      "name": "Juan Fangio",
+      "elo": 1775
+    },
+    {
+      "name": "Louis Rosier",
+      "elo": 1671
+    },
+    {
+      "name": "Alberto Ascari",
+      "elo": 1659
+    },
+    {
+      "name": "Aldo Gordini",
+      "elo": 1625
+    },
+    {
+      "name": "José Froilán González",
+      "elo": 1604
+    },
+    {
+      "name": "Bob Gerard",
+      "elo": 1587
+    },
+    {
+      "name": "Brian Shawe Taylor",
+      "elo": 1570
+    },
+    {
+      "name": "Paco Godia",
+      "elo": 1565
+    },
+    {
+      "name": "Stirling Moss",
+      "elo": 1542
+    },
+    {
+      "name": "Philip Fotheringham-Parker",
+      "elo": 1541
+    },
+    {
+      "name": "Reg Parnell",
+      "elo": 1538
+    },
+    {
+      "name": "Joe Kelly",
+      "elo": 1516
+    },
+    {
+      "name": "André Pilette",
+      "elo": 1500
+    },
+    {
+      "name": "Peter Walker",
+      "elo": 1493
+    },
+    {
+      "name": "Felice Bonetto",
+      "elo": 1472
+    },
+    {
+      "name": "Robert Manzon",
+      "elo": 1465
+    },
+    {
+      "name": "David Murray",
+      "elo": 1464
+    },
+    {
+      "name": "Onofre Marimón",
+      "elo": 1461
+    },
+    {
+      "name": "Harry Schell",
+      "elo": 1459
+    },
+    {
+      "name": "Peter Hirt",
+      "elo": 1456
+    },
+    {
+      "name": "Luigi Villoresi",
+      "elo": 1452
+    },
+    {
+      "name": "Eugène Chaboud",
+      "elo": 1452
+    },
+    {
+      "name": "André Simon",
+      "elo": 1446
+    },
+    {
+      "name": "George Abecassis",
+      "elo": 1442
+    },
+    {
+      "name": "Ken Richardson",
+      "elo": 1431
+    },
+    {
+      "name": "John James",
+      "elo": 1407
+    },
+    {
+      "name": "Guy Mairesse",
+      "elo": 1373
+    },
+    {
+      "name": "Franco Rol",
+      "elo": 1357
+    },
+    {
+      "name": "Juan Jover",
+      "elo": 1352
+    },
+    {
+      "name": "Toni Branca",
+      "elo": 1352
+    },
+    {
+      "name": "Maurice Trintignant",
+      "elo": 1346
+    },
+    {
+      "name": "Toulo de Graffenried",
+      "elo": 1323
+    },
+    {
+      "name": "Rudi Fischer",
+      "elo": 1321
+    },
+    {
+      "name": "Piero Taruffi",
+      "elo": 1318
+    },
+    {
+      "name": "Nino Farina",
+      "elo": 1311
+    },
+    {
+      "name": "Pierre Levegh",
+      "elo": 1288
+    },
+    {
+      "name": "Peter Whitehead",
+      "elo": 1269
+    },
+    {
+      "name": "Georges Grignard",
+      "elo": 1260
+    },
+    {
+      "name": "Consalvo Sanesi",
+      "elo": 1259
+    },
+    {
+      "name": "Duncan Hamilton",
+      "elo": 1231
+    },
+    {
+      "name": "Jacques Swaters",
+      "elo": 1231
+    },
+    {
+      "name": "Chico Landi",
+      "elo": 1221
+    },
+    {
+      "name": "Henri Louveau",
+      "elo": 1130
+    },
+    {
+      "name": "Johnny Claes",
+      "elo": 1095
+    },
+    {
+      "name": "Yves Cabantous",
+      "elo": 1088
+    },
+    {
+      "name": "Paul Pietsch",
+      "elo": 1085
+    },
+    {
+      "name": "Philippe Étancelin",
+      "elo": 1054
+    },
+    {
+      "name": "Prince Bira",
+      "elo": 1022
+    },
+    {
+      "name": "Louis Chiron",
+      "elo": 944
+    }
+  ],
+  "1952": [
+    {
+      "name": "Alberto Ascari",
+      "elo": 1959
+    },
+    {
+      "name": "José Froilán González",
+      "elo": 1767
+    },
+    {
+      "name": "Ken Wharton",
+      "elo": 1709
+    },
+    {
+      "name": "Fritz Riess",
+      "elo": 1696
+    },
+    {
+      "name": "Dennis Poore",
+      "elo": 1646
+    },
+    {
+      "name": "Ernst Klodwig",
+      "elo": 1603
+    },
+    {
+      "name": "Helmut Niedermayr",
+      "elo": 1549
+    },
+    {
+      "name": "Reg Parnell",
+      "elo": 1538
+    },
+    {
+      "name": "Jan Flinterman",
+      "elo": 1505
+    },
+    {
+      "name": "Hans Klenk",
+      "elo": 1500
+    },
+    {
+      "name": "Roy Salvadori",
+      "elo": 1500
+    },
+    {
+      "name": "Marcel Balsa",
+      "elo": 1500
+    },
+    {
+      "name": "Eric Thompson",
+      "elo": 1500
+    },
+    {
+      "name": "Graham Whitehead",
+      "elo": 1494
+    },
+    {
+      "name": "Stirling Moss",
+      "elo": 1492
+    },
+    {
+      "name": "Arthur Legat",
+      "elo": 1488
+    },
+    {
+      "name": "Bill Aston",
+      "elo": 1481
+    },
+    {
+      "name": "Hans von Stuck",
+      "elo": 1477
+    },
+    {
+      "name": "Toni Ulmen",
+      "elo": 1476
+    },
+    {
+      "name": "Robin Montgomerie-Charrington",
+      "elo": 1471
+    },
+    {
+      "name": "Tony Crook",
+      "elo": 1470
+    },
+    {
+      "name": "Willi Heeks",
+      "elo": 1470
+    },
+    {
+      "name": "Adolf Brudes",
+      "elo": 1470
+    },
+    {
+      "name": "Lance Macklin",
+      "elo": 1467
+    },
+    {
+      "name": "Ken Downing",
+      "elo": 1466
+    },
+    {
+      "name": "Robert Manzon",
+      "elo": 1460
+    },
+    {
+      "name": "Günther Bechem",
+      "elo": 1458
+    },
+    {
+      "name": "Eitel Cantoni",
+      "elo": 1450
+    },
+    {
+      "name": "Felice Bonetto",
+      "elo": 1449
+    },
+    {
+      "name": "Élie Bayol",
+      "elo": 1444
+    },
+    {
+      "name": "Alan Brown",
+      "elo": 1428
+    },
+    {
+      "name": "Mike Hawthorn",
+      "elo": 1428
+    },
+    {
+      "name": "Duncan Hamilton",
+      "elo": 1424
+    },
+    {
+      "name": "Eric Brandon",
+      "elo": 1424
+    },
+    {
+      "name": "Harry Schell",
+      "elo": 1420
+    },
+    {
+      "name": "Luigi Villoresi",
+      "elo": 1414
+    },
+    {
+      "name": "Paul Frère",
+      "elo": 1411
+    },
+    {
+      "name": "Peter Collins",
+      "elo": 1403
+    },
+    {
+      "name": "Prince Bira",
+      "elo": 1394
+    },
+    {
+      "name": "Dries van der Lof",
+      "elo": 1391
+    },
+    {
+      "name": "Rudolf Krause",
+      "elo": 1390
+    },
+    {
+      "name": "André Simon",
+      "elo": 1381
+    },
+    {
+      "name": "Robert O'Brien",
+      "elo": 1380
+    },
+    {
+      "name": "Max de Terra",
+      "elo": 1371
+    },
+    {
+      "name": "Franco Comotti",
+      "elo": 1369
+    },
+    {
+      "name": "George Abecassis",
+      "elo": 1353
+    },
+    {
+      "name": "Roger Laurent",
+      "elo": 1330
+    },
+    {
+      "name": "Toulo de Graffenried",
+      "elo": 1329
+    },
+    {
+      "name": "Charles de Tornaco",
+      "elo": 1320
+    },
+    {
+      "name": "Kenneth McAlpine",
+      "elo": 1320
+    },
+    {
+      "name": "Piero Taruffi",
+      "elo": 1313
+    },
+    {
+      "name": "David Murray",
+      "elo": 1308
+    },
+    {
+      "name": "Johnny Claes",
+      "elo": 1304
+    },
+    {
+      "name": "Jean Behra",
+      "elo": 1300
+    },
+    {
+      "name": "Theo Helfrich",
+      "elo": 1277
+    },
+    {
+      "name": "Nino Farina",
+      "elo": 1273
+    },
+    {
+      "name": "Gino Bianco",
+      "elo": 1270
+    },
+    {
+      "name": "Peter Whitehead",
+      "elo": 1268
+    },
+    {
+      "name": "Tony Gaze",
+      "elo": 1229
+    },
+    {
+      "name": "Chico Landi",
+      "elo": 1221
+    },
+    {
+      "name": "Franco Rol",
+      "elo": 1217
+    },
+    {
+      "name": "Rudolf Schoeller",
+      "elo": 1217
+    },
+    {
+      "name": "Josef Peters",
+      "elo": 1207
+    },
+    {
+      "name": "Maurice Trintignant",
+      "elo": 1199
+    },
+    {
+      "name": "Philippe Étancelin",
+      "elo": 1179
+    },
+    {
+      "name": "Louis Rosier",
+      "elo": 1131
+    },
+    {
+      "name": "Peter Hirt",
+      "elo": 1114
+    },
+    {
+      "name": "Yves Cabantous",
+      "elo": 1088
+    },
+    {
+      "name": "Paul Pietsch",
+      "elo": 1085
+    },
+    {
+      "name": "Rudi Fischer",
+      "elo": 1063
+    },
+    {
+      "name": "Piero Carini",
+      "elo": 1018
+    }
+  ],
+  "1953": [
+    {
+      "name": "Juan Fangio",
+      "elo": 1766
+    },
+    {
+      "name": "Bob Gerard",
+      "elo": 1658
+    },
+    {
+      "name": "Hans Herrmann",
+      "elo": 1631
+    },
+    {
+      "name": "John Barber",
+      "elo": 1567
+    },
+    {
+      "name": "Stirling Moss",
+      "elo": 1558
+    },
+    {
+      "name": "Albert Scherrer",
+      "elo": 1549
+    },
+    {
+      "name": "Ernst Klodwig",
+      "elo": 1547
+    },
+    {
+      "name": "Maurice Trintignant",
+      "elo": 1541
+    },
+    {
+      "name": "Alberto Ascari",
+      "elo": 1539
+    },
+    {
+      "name": "Hermann Lang",
+      "elo": 1537
+    },
+    {
+      "name": "Jack Fairman",
+      "elo": 1510
+    },
+    {
+      "name": "Ken Wharton",
+      "elo": 1500
+    },
+    {
+      "name": "Oscar Gálvez",
+      "elo": 1500
+    },
+    {
+      "name": "Tony Rolt",
+      "elo": 1500
+    },
+    {
+      "name": "Peter Collins",
+      "elo": 1499
+    },
+    {
+      "name": "André Pilette",
+      "elo": 1497
+    },
+    {
+      "name": "Edgar Barth",
+      "elo": 1492
+    },
+    {
+      "name": "Hans von Stuck",
+      "elo": 1488
+    },
+    {
+      "name": "Jean Behra",
+      "elo": 1486
+    },
+    {
+      "name": "Jimmy Stewart",
+      "elo": 1483
+    },
+    {
+      "name": "Rudolf Krause",
+      "elo": 1481
+    },
+    {
+      "name": "Rodney Nuckey",
+      "elo": 1481
+    },
+    {
+      "name": "Georges Berger",
+      "elo": 1481
+    },
+    {
+      "name": "Arthur Legat",
+      "elo": 1477
+    },
+    {
+      "name": "Theo Fitzau",
+      "elo": 1474
+    },
+    {
+      "name": "Pablo Birger",
+      "elo": 1473
+    },
+    {
+      "name": "Wolfgang Seidel",
+      "elo": 1472
+    },
+    {
+      "name": "Alan Brown",
+      "elo": 1469
+    },
+    {
+      "name": "Umberto Maglioli",
+      "elo": 1467
+    },
+    {
+      "name": "Mike Hawthorn",
+      "elo": 1462
+    },
+    {
+      "name": "José Froilán González",
+      "elo": 1461
+    },
+    {
+      "name": "Robert Manzon",
+      "elo": 1455
+    },
+    {
+      "name": "Fred Wacker",
+      "elo": 1454
+    },
+    {
+      "name": "Adolfo Cruz",
+      "elo": 1418
+    },
+    {
+      "name": "Nino Farina",
+      "elo": 1416
+    },
+    {
+      "name": "Prince Bira",
+      "elo": 1409
+    },
+    {
+      "name": "Carlos Menditeguy",
+      "elo": 1403
+    },
+    {
+      "name": "Oswald Karch",
+      "elo": 1401
+    },
+    {
+      "name": "John Fitch",
+      "elo": 1389
+    },
+    {
+      "name": "Paul Frère",
+      "elo": 1377
+    },
+    {
+      "name": "Ian Stewart",
+      "elo": 1346
+    },
+    {
+      "name": "Willi Heeks",
+      "elo": 1324
+    },
+    {
+      "name": "Kenneth McAlpine",
+      "elo": 1304
+    },
+    {
+      "name": "Tony Crook",
+      "elo": 1300
+    },
+    {
+      "name": "Felice Bonetto",
+      "elo": 1296
+    },
+    {
+      "name": "Theo Helfrich",
+      "elo": 1277
+    },
+    {
+      "name": "Duncan Hamilton",
+      "elo": 1276
+    },
+    {
+      "name": "Harry Schell",
+      "elo": 1276
+    },
+    {
+      "name": "Lance Macklin",
+      "elo": 1272
+    },
+    {
+      "name": "Élie Bayol",
+      "elo": 1269
+    },
+    {
+      "name": "Peter Whitehead",
+      "elo": 1268
+    },
+    {
+      "name": "Johnny Claes",
+      "elo": 1260
+    },
+    {
+      "name": "Roberto Mieres",
+      "elo": 1260
+    },
+    {
+      "name": "Max de Terra",
+      "elo": 1249
+    },
+    {
+      "name": "Kurt Adolff",
+      "elo": 1245
+    },
+    {
+      "name": "Roy Salvadori",
+      "elo": 1242
+    },
+    {
+      "name": "Chico Landi",
+      "elo": 1221
+    },
+    {
+      "name": "Yves Cabantous",
+      "elo": 1208
+    },
+    {
+      "name": "Onofre Marimón",
+      "elo": 1201
+    },
+    {
+      "name": "Louis Chiron",
+      "elo": 1195
+    },
+    {
+      "name": "Toulo de Graffenried",
+      "elo": 1182
+    },
+    {
+      "name": "Luigi Villoresi",
+      "elo": 1105
+    },
+    {
+      "name": "Peter Hirt",
+      "elo": 1095
+    },
+    {
+      "name": "Jacques Swaters",
+      "elo": 1081
+    },
+    {
+      "name": "Louis Rosier",
+      "elo": 959
+    },
+    {
+      "name": "Piero Carini",
+      "elo": 921
+    }
+  ],
+  "1954": [
+    {
+      "name": "Juan Fangio",
+      "elo": 1994
+    },
+    {
+      "name": "Bob Gerard",
+      "elo": 1674
+    },
+    {
+      "name": "Don Beauman",
+      "elo": 1636
+    },
+    {
+      "name": "Fred Wacker",
+      "elo": 1588
+    },
+    {
+      "name": "Nino Farina",
+      "elo": 1546
+    },
+    {
+      "name": "Hermann Lang",
+      "elo": 1532
+    },
+    {
+      "name": "Luigi Musso",
+      "elo": 1503
+    },
+    {
+      "name": "Leslie Thorne",
+      "elo": 1500
+    },
+    {
+      "name": "Leslie Marr",
+      "elo": 1500
+    },
+    {
+      "name": "Horace Gould",
+      "elo": 1477
+    },
+    {
+      "name": "Peter Collins",
+      "elo": 1447
+    },
+    {
+      "name": "Paco Godia",
+      "elo": 1445
+    },
+    {
+      "name": "Hans Herrmann",
+      "elo": 1440
+    },
+    {
+      "name": "Bill Whitehouse",
+      "elo": 1429
+    },
+    {
+      "name": "Mike Hawthorn",
+      "elo": 1421
+    },
+    {
+      "name": "André Pilette",
+      "elo": 1419
+    },
+    {
+      "name": "Umberto Maglioli",
+      "elo": 1417
+    },
+    {
+      "name": "Élie Bayol",
+      "elo": 1410
+    },
+    {
+      "name": "Maurice Trintignant",
+      "elo": 1404
+    },
+    {
+      "name": "Georges Berger",
+      "elo": 1404
+    },
+    {
+      "name": "Jacques Pollet",
+      "elo": 1401
+    },
+    {
+      "name": "Karl Kling",
+      "elo": 1380
+    },
+    {
+      "name": "Paul Frère",
+      "elo": 1377
+    },
+    {
+      "name": "Roger Loyer",
+      "elo": 1360
+    },
+    {
+      "name": "John Riseley-Prichard",
+      "elo": 1356
+    },
+    {
+      "name": "Jean Behra",
+      "elo": 1349
+    },
+    {
+      "name": "Reg Parnell",
+      "elo": 1328
+    },
+    {
+      "name": "Piero Taruffi",
+      "elo": 1313
+    },
+    {
+      "name": "Clemar Bucci",
+      "elo": 1310
+    },
+    {
+      "name": "José Froilán González",
+      "elo": 1297
+    },
+    {
+      "name": "Theo Helfrich",
+      "elo": 1296
+    },
+    {
+      "name": "Lance Macklin",
+      "elo": 1284
+    },
+    {
+      "name": "Louis Rosier",
+      "elo": 1280
+    },
+    {
+      "name": "Peter Whitehead",
+      "elo": 1213
+    },
+    {
+      "name": "Jorge Daponte",
+      "elo": 1182
+    },
+    {
+      "name": "Toulo de Graffenried",
+      "elo": 1182
+    },
+    {
+      "name": "Prince Bira",
+      "elo": 1176
+    },
+    {
+      "name": "Onofre Marimón",
+      "elo": 1155
+    },
+    {
+      "name": "Roy Salvadori",
+      "elo": 1120
+    },
+    {
+      "name": "Roberto Mieres",
+      "elo": 1112
+    },
+    {
+      "name": "Sergio Mantovani",
+      "elo": 1105
+    },
+    {
+      "name": "Carlos Menditeguy",
+      "elo": 1104
+    },
+    {
+      "name": "Jacques Swaters",
+      "elo": 1062
+    },
+    {
+      "name": "Alberto Ascari",
+      "elo": 1007
+    },
+    {
+      "name": "Robert Manzon",
+      "elo": 977
+    },
+    {
+      "name": "Luigi Villoresi",
+      "elo": 974
+    },
+    {
+      "name": "Ken Wharton",
+      "elo": 971
+    },
+    {
+      "name": "Harry Schell",
+      "elo": 946
+    },
+    {
+      "name": "Stirling Moss",
+      "elo": 876
+    }
+  ],
+  "1955": [
+    {
+      "name": "Juan Fangio",
+      "elo": 1787
+    },
+    {
+      "name": "Eugenio Castellotti",
+      "elo": 1605
+    },
+    {
+      "name": "Jesús Iglesias",
+      "elo": 1565
+    },
+    {
+      "name": "Jean Behra",
+      "elo": 1549
+    },
+    {
+      "name": "Mike Sparken",
+      "elo": 1537
+    },
+    {
+      "name": "Jacques Pollet",
+      "elo": 1535
+    },
+    {
+      "name": "Cesare Perdisa",
+      "elo": 1498
+    },
+    {
+      "name": "Jack Brabham",
+      "elo": 1490
+    },
+    {
+      "name": "Kenneth McAlpine",
+      "elo": 1479
+    },
+    {
+      "name": "Luigi Piotti",
+      "elo": 1461
+    },
+    {
+      "name": "Hernando da Silva Ramos",
+      "elo": 1448
+    },
+    {
+      "name": "Leslie Marr",
+      "elo": 1419
+    },
+    {
+      "name": "Umberto Maglioli",
+      "elo": 1417
+    },
+    {
+      "name": "Jean Lucas",
+      "elo": 1402
+    },
+    {
+      "name": "Paul Frère",
+      "elo": 1377
+    },
+    {
+      "name": "Maurice Trintignant",
+      "elo": 1369
+    },
+    {
+      "name": "Alberto Uria",
+      "elo": 1365
+    },
+    {
+      "name": "Mike Hawthorn",
+      "elo": 1357
+    },
+    {
+      "name": "Roberto Mieres",
+      "elo": 1356
+    },
+    {
+      "name": "Élie Bayol",
+      "elo": 1335
+    },
+    {
+      "name": "Jack Fairman",
+      "elo": 1314
+    },
+    {
+      "name": "Luigi Musso",
+      "elo": 1310
+    },
+    {
+      "name": "Lance Macklin",
+      "elo": 1284
+    },
+    {
+      "name": "John Fitch",
+      "elo": 1280
+    },
+    {
+      "name": "Louis Rosier",
+      "elo": 1274
+    },
+    {
+      "name": "Nino Farina",
+      "elo": 1254
+    },
+    {
+      "name": "Karl Kling",
+      "elo": 1180
+    },
+    {
+      "name": "Stirling Moss",
+      "elo": 1161
+    },
+    {
+      "name": "Louis Chiron",
+      "elo": 1160
+    },
+    {
+      "name": "Johnny Claes",
+      "elo": 1143
+    },
+    {
+      "name": "Peter Walker",
+      "elo": 1129
+    },
+    {
+      "name": "Roy Salvadori",
+      "elo": 1120
+    },
+    {
+      "name": "Piero Taruffi",
+      "elo": 1117
+    },
+    {
+      "name": "Carlos Menditeguy",
+      "elo": 1104
+    },
+    {
+      "name": "André Simon",
+      "elo": 1082
+    },
+    {
+      "name": "Horace Gould",
+      "elo": 1061
+    },
+    {
+      "name": "Harry Schell",
+      "elo": 1019
+    },
+    {
+      "name": "Alberto Ascari",
+      "elo": 998
+    },
+    {
+      "name": "Peter Collins",
+      "elo": 954
+    },
+    {
+      "name": "Ken Wharton",
+      "elo": 943
+    },
+    {
+      "name": "Luigi Villoresi",
+      "elo": 940
+    },
+    {
+      "name": "Robert Manzon",
+      "elo": 933
+    }
+  ],
+  "1956": [
+    {
+      "name": "Stirling Moss",
+      "elo": 1787
+    },
+    {
+      "name": "Bob Gerard",
+      "elo": 1699
+    },
+    {
+      "name": "Juan Fangio",
+      "elo": 1597
+    },
+    {
+      "name": "Jack Fairman",
+      "elo": 1563
+    },
+    {
+      "name": "Ron Flockhart",
+      "elo": 1545
+    },
+    {
+      "name": "Luigi Musso",
+      "elo": 1538
+    },
+    {
+      "name": "Piero Scotti",
+      "elo": 1509
+    },
+    {
+      "name": "Tony Brooks",
+      "elo": 1505
+    },
+    {
+      "name": "Desmond Titterington",
+      "elo": 1500
+    },
+    {
+      "name": "Paul Emery",
+      "elo": 1467
+    },
+    {
+      "name": "Mike Hawthorn",
+      "elo": 1387
+    },
+    {
+      "name": "Les Leston",
+      "elo": 1387
+    },
+    {
+      "name": "Archie Scott Brown",
+      "elo": 1379
+    },
+    {
+      "name": "Paul Frère",
+      "elo": 1377
+    },
+    {
+      "name": "Cesare Perdisa",
+      "elo": 1369
+    },
+    {
+      "name": "Luigi Piotti",
+      "elo": 1367
+    },
+    {
+      "name": "Colin Chapman",
+      "elo": 1342
+    },
+    {
+      "name": "Olivier Gendebien",
+      "elo": 1330
+    },
+    {
+      "name": "Gerino Gerini",
+      "elo": 1329
+    },
+    {
+      "name": "Peter Collins",
+      "elo": 1276
+    },
+    {
+      "name": "André Pilette",
+      "elo": 1273
+    },
+    {
+      "name": "Alfonso de Portago",
+      "elo": 1229
+    },
+    {
+      "name": "André Simon",
+      "elo": 1227
+    },
+    {
+      "name": "Hernando da Silva Ramos",
+      "elo": 1205
+    },
+    {
+      "name": "Jean Behra",
+      "elo": 1195
+    },
+    {
+      "name": "Eugenio Castellotti",
+      "elo": 1190
+    },
+    {
+      "name": "Maurice Trintignant",
+      "elo": 1187
+    },
+    {
+      "name": "Toulo de Graffenried",
+      "elo": 1182
+    },
+    {
+      "name": "Wolfgang von Trips",
+      "elo": 1140
+    },
+    {
+      "name": "Louis Rosier",
+      "elo": 1111
+    },
+    {
+      "name": "Giorgio Scarlatti",
+      "elo": 1107
+    },
+    {
+      "name": "Carlos Menditeguy",
+      "elo": 1104
+    },
+    {
+      "name": "Luigi Villoresi",
+      "elo": 1093
+    },
+    {
+      "name": "José Froilán González",
+      "elo": 1083
+    },
+    {
+      "name": "Paco Godia",
+      "elo": 1076
+    },
+    {
+      "name": "Harry Schell",
+      "elo": 1068
+    },
+    {
+      "name": "Ottorino Volonterio",
+      "elo": 1043
+    },
+    {
+      "name": "Robert Manzon",
+      "elo": 1037
+    },
+    {
+      "name": "Piero Taruffi",
+      "elo": 1019
+    },
+    {
+      "name": "Louis Chiron",
+      "elo": 992
+    },
+    {
+      "name": "Horace Gould",
+      "elo": 890
+    },
+    {
+      "name": "Umberto Maglioli",
+      "elo": 820
+    },
+    {
+      "name": "Bruce Halford",
+      "elo": 796
+    },
+    {
+      "name": "Roy Salvadori",
+      "elo": 763
+    },
+    {
+      "name": "Jack Brabham",
+      "elo": 762
+    }
+  ],
+  "1957": [
+    {
+      "name": "Juan Fangio",
+      "elo": 1743
+    },
+    {
+      "name": "Stirling Moss",
+      "elo": 1653
+    },
+    {
+      "name": "Alessandro de Tomaso",
+      "elo": 1632
+    },
+    {
+      "name": "Ivor Bueb",
+      "elo": 1612
+    },
+    {
+      "name": "Bob Gerard",
+      "elo": 1598
+    },
+    {
+      "name": "Jack Fairman",
+      "elo": 1557
+    },
+    {
+      "name": "Brian Naylor",
+      "elo": 1551
+    },
+    {
+      "name": "Edgar Barth",
+      "elo": 1496
+    },
+    {
+      "name": "Herbert MacKay-Fraser",
+      "elo": 1491
+    },
+    {
+      "name": "Tony Marsh",
+      "elo": 1482
+    },
+    {
+      "name": "Ron Flockhart",
+      "elo": 1438
+    },
+    {
+      "name": "Carel Godin de Beaufort",
+      "elo": 1433
+    },
+    {
+      "name": "Tony Brooks",
+      "elo": 1373
+    },
+    {
+      "name": "Les Leston",
+      "elo": 1342
+    },
+    {
+      "name": "Wolfgang von Trips",
+      "elo": 1326
+    },
+    {
+      "name": "Masten Gregory",
+      "elo": 1318
+    },
+    {
+      "name": "Mike Hawthorn",
+      "elo": 1289
+    },
+    {
+      "name": "Luigi Musso",
+      "elo": 1267
+    },
+    {
+      "name": "Stuart Lewis-Evans",
+      "elo": 1257
+    },
+    {
+      "name": "Paul England",
+      "elo": 1201
+    },
+    {
+      "name": "Eugenio Castellotti",
+      "elo": 1190
+    },
+    {
+      "name": "Maurice Trintignant",
+      "elo": 1155
+    },
+    {
+      "name": "Dick Gibson",
+      "elo": 1135
+    },
+    {
+      "name": "Giorgio Scarlatti",
+      "elo": 1107
+    },
+    {
+      "name": "Peter Collins",
+      "elo": 1033
+    },
+    {
+      "name": "Carlos Menditeguy",
+      "elo": 1018
+    },
+    {
+      "name": "Hans Herrmann",
+      "elo": 1015
+    },
+    {
+      "name": "Jack Brabham",
+      "elo": 948
+    },
+    {
+      "name": "Paco Godia",
+      "elo": 887
+    },
+    {
+      "name": "Roy Salvadori",
+      "elo": 856
+    },
+    {
+      "name": "Jean Behra",
+      "elo": 833
+    },
+    {
+      "name": "Umberto Maglioli",
+      "elo": 815
+    },
+    {
+      "name": "Bruce Halford",
+      "elo": 796
+    },
+    {
+      "name": "Harry Schell",
+      "elo": 745
+    },
+    {
+      "name": "Jo Bonnier",
+      "elo": 676
+    },
+    {
+      "name": "Horace Gould",
+      "elo": 622
+    },
+    {
+      "name": "Luigi Piotti",
+      "elo": 542
+    }
+  ],
+  "1958": [
+    {
+      "name": "Juan Fangio",
+      "elo": 1776
+    },
+    {
+      "name": "Roy Salvadori",
+      "elo": 1688
+    },
+    {
+      "name": "Ivor Bueb",
+      "elo": 1561
+    },
+    {
+      "name": "Edgar Barth",
+      "elo": 1531
+    },
+    {
+      "name": "Giulio Cabianca",
+      "elo": 1482
+    },
+    {
+      "name": "Bruce McLaren",
+      "elo": 1474
+    },
+    {
+      "name": "Mike Hawthorn",
+      "elo": 1470
+    },
+    {
+      "name": "Jack Fairman",
+      "elo": 1464
+    },
+    {
+      "name": "Alan Stacey",
+      "elo": 1457
+    },
+    {
+      "name": "Robert La Caze",
+      "elo": 1440
+    },
+    {
+      "name": "Stirling Moss",
+      "elo": 1436
+    },
+    {
+      "name": "Cliff Allison",
+      "elo": 1432
+    },
+    {
+      "name": "Phil Hill",
+      "elo": 1425
+    },
+    {
+      "name": "Maria de Filippis",
+      "elo": 1421
+    },
+    {
+      "name": "André Guelfi",
+      "elo": 1376
+    },
+    {
+      "name": "Carel Godin de Beaufort",
+      "elo": 1366
+    },
+    {
+      "name": "Tony Marsh",
+      "elo": 1352
+    },
+    {
+      "name": "Stuart Lewis-Evans",
+      "elo": 1331
+    },
+    {
+      "name": "Tony Brooks",
+      "elo": 1329
+    },
+    {
+      "name": "Graham Hill",
+      "elo": 1314
+    },
+    {
+      "name": "François Picard",
+      "elo": 1308
+    },
+    {
+      "name": "Ian Burgess",
+      "elo": 1292
+    },
+    {
+      "name": "Tom Bridger",
+      "elo": 1244
+    },
+    {
+      "name": "Christian Goethals",
+      "elo": 1231
+    },
+    {
+      "name": "Olivier Gendebien",
+      "elo": 1215
+    },
+    {
+      "name": "Troy Ruttman",
+      "elo": 1194
+    },
+    {
+      "name": "Wolfgang von Trips",
+      "elo": 1177
+    },
+    {
+      "name": "Ron Flockhart",
+      "elo": 1176
+    },
+    {
+      "name": "Masten Gregory",
+      "elo": 1157
+    },
+    {
+      "name": "Carroll Shelby",
+      "elo": 1154
+    },
+    {
+      "name": "Brian Naylor",
+      "elo": 1128
+    },
+    {
+      "name": "Gerino Gerini",
+      "elo": 1120
+    },
+    {
+      "name": "Wolfgang Seidel",
+      "elo": 1109
+    },
+    {
+      "name": "Dick Gibson",
+      "elo": 1104
+    },
+    {
+      "name": "Luigi Musso",
+      "elo": 1098
+    },
+    {
+      "name": "Hans Herrmann",
+      "elo": 1081
+    },
+    {
+      "name": "Peter Collins",
+      "elo": 1064
+    },
+    {
+      "name": "Jack Brabham",
+      "elo": 1058
+    },
+    {
+      "name": "Maurice Trintignant",
+      "elo": 1029
+    },
+    {
+      "name": "Jo Bonnier",
+      "elo": 989
+    },
+    {
+      "name": "Giorgio Scarlatti",
+      "elo": 949
+    },
+    {
+      "name": "Jean Behra",
+      "elo": 930
+    },
+    {
+      "name": "Carlos Menditeguy",
+      "elo": 919
+    },
+    {
+      "name": "Harry Schell",
+      "elo": 910
+    },
+    {
+      "name": "Paco Godia",
+      "elo": 814
+    },
+    {
+      "name": "Horace Gould",
+      "elo": 580
+    }
+  ],
+  "1959": [
+    {
+      "name": "Alessandro de Tomaso",
+      "elo": 1595
+    },
+    {
+      "name": "Harry Blanchard",
+      "elo": 1523
+    },
+    {
+      "name": "Chris Bristow",
+      "elo": 1515
+    },
+    {
+      "name": "Innes Ireland",
+      "elo": 1509
+    },
+    {
+      "name": "Ivor Bueb",
+      "elo": 1500
+    },
+    {
+      "name": "Mário de Araújo Cabral",
+      "elo": 1500
+    },
+    {
+      "name": "Rodger Ward",
+      "elo": 1478
+    },
+    {
+      "name": "George Constantine",
+      "elo": 1463
+    },
+    {
+      "name": "Giulio Cabianca",
+      "elo": 1461
+    },
+    {
+      "name": "Phil Cade",
+      "elo": 1461
+    },
+    {
+      "name": "Alan Stacey",
+      "elo": 1456
+    },
+    {
+      "name": "Bob Said",
+      "elo": 1456
+    },
+    {
+      "name": "Roy Salvadori",
+      "elo": 1442
+    },
+    {
+      "name": "Colin Davis",
+      "elo": 1417
+    },
+    {
+      "name": "David Piper",
+      "elo": 1372
+    },
+    {
+      "name": "Fritz d'Orey",
+      "elo": 1354
+    },
+    {
+      "name": "Carel Godin de Beaufort",
+      "elo": 1351
+    },
+    {
+      "name": "Dan Gurney",
+      "elo": 1346
+    },
+    {
+      "name": "Ian Burgess",
+      "elo": 1336
+    },
+    {
+      "name": "Graham Hill",
+      "elo": 1311
+    },
+    {
+      "name": "Carroll Shelby",
+      "elo": 1311
+    },
+    {
+      "name": "Henry Taylor",
+      "elo": 1303
+    },
+    {
+      "name": "Bruce McLaren",
+      "elo": 1300
+    },
+    {
+      "name": "Azdrubal Fontes",
+      "elo": 1273
+    },
+    {
+      "name": "Tony Brooks",
+      "elo": 1268
+    },
+    {
+      "name": "Peter Ashdown",
+      "elo": 1246
+    },
+    {
+      "name": "Olivier Gendebien",
+      "elo": 1215
+    },
+    {
+      "name": "Maurice Trintignant",
+      "elo": 1206
+    },
+    {
+      "name": "Jean Behra",
+      "elo": 1193
+    },
+    {
+      "name": "Stirling Moss",
+      "elo": 1187
+    },
+    {
+      "name": "Phil Hill",
+      "elo": 1166
+    },
+    {
+      "name": "Wolfgang von Trips",
+      "elo": 1162
+    },
+    {
+      "name": "Jack Fairman",
+      "elo": 1150
+    },
+    {
+      "name": "Giorgio Scarlatti",
+      "elo": 1136
+    },
+    {
+      "name": "Jack Brabham",
+      "elo": 1127
+    },
+    {
+      "name": "Brian Naylor",
+      "elo": 1108
+    },
+    {
+      "name": "Cliff Allison",
+      "elo": 1101
+    },
+    {
+      "name": "Mike Taylor",
+      "elo": 1097
+    },
+    {
+      "name": "Harry Schell",
+      "elo": 1001
+    },
+    {
+      "name": "Masten Gregory",
+      "elo": 984
+    },
+    {
+      "name": "Ron Flockhart",
+      "elo": 955
+    },
+    {
+      "name": "Hans Herrmann",
+      "elo": 936
+    },
+    {
+      "name": "Jo Bonnier",
+      "elo": 899
+    },
+    {
+      "name": "Bruce Halford",
+      "elo": 790
+    }
+  ],
+  "1960": [
+    {
+      "name": "Jack Brabham",
+      "elo": 1607
+    },
+    {
+      "name": "Piero Drogo",
+      "elo": 1520
+    },
+    {
+      "name": "Gino Munaron",
+      "elo": 1517
+    },
+    {
+      "name": "Giulio Cabianca",
+      "elo": 1516
+    },
+    {
+      "name": "Bob Drake",
+      "elo": 1508
+    },
+    {
+      "name": "Alberto Rodriguez Larreta",
+      "elo": 1500
+    },
+    {
+      "name": "Nasif Estéfano",
+      "elo": 1500
+    },
+    {
+      "name": "Edgar Barth",
+      "elo": 1494
+    },
+    {
+      "name": "Mário de Araújo Cabral",
+      "elo": 1494
+    },
+    {
+      "name": "Fred Gamble",
+      "elo": 1492
+    },
+    {
+      "name": "Alfonso Thiele",
+      "elo": 1491
+    },
+    {
+      "name": "Pete Lovely",
+      "elo": 1478
+    },
+    {
+      "name": "Bruce McLaren",
+      "elo": 1476
+    },
+    {
+      "name": "Stirling Moss",
+      "elo": 1464
+    },
+    {
+      "name": "Ettore Chimeri",
+      "elo": 1451
+    },
+    {
+      "name": "Lance Reventlow",
+      "elo": 1443
+    },
+    {
+      "name": "Roberto Bonomi",
+      "elo": 1430
+    },
+    {
+      "name": "Jim Hall",
+      "elo": 1429
+    },
+    {
+      "name": "Chuck Daigh",
+      "elo": 1415
+    },
+    {
+      "name": "Innes Ireland",
+      "elo": 1393
+    },
+    {
+      "name": "Antonio Creus",
+      "elo": 1387
+    },
+    {
+      "name": "Richie Ginther",
+      "elo": 1375
+    },
+    {
+      "name": "Phil Hill",
+      "elo": 1374
+    },
+    {
+      "name": "Vic Wilson",
+      "elo": 1372
+    },
+    {
+      "name": "Wolfgang von Trips",
+      "elo": 1365
+    },
+    {
+      "name": "Carel Godin de Beaufort",
+      "elo": 1343
+    },
+    {
+      "name": "Alan Stacey",
+      "elo": 1334
+    },
+    {
+      "name": "Keith Greene",
+      "elo": 1328
+    },
+    {
+      "name": "Arthur Owen",
+      "elo": 1322
+    },
+    {
+      "name": "Jim Clark",
+      "elo": 1311
+    },
+    {
+      "name": "Willy Mairesse",
+      "elo": 1294
+    },
+    {
+      "name": "Masten Gregory",
+      "elo": 1251
+    },
+    {
+      "name": "Ian Burgess",
+      "elo": 1232
+    },
+    {
+      "name": "David Piper",
+      "elo": 1232
+    },
+    {
+      "name": "Roy Salvadori",
+      "elo": 1232
+    },
+    {
+      "name": "Cliff Allison",
+      "elo": 1224
+    },
+    {
+      "name": "Maurice Trintignant",
+      "elo": 1220
+    },
+    {
+      "name": "John Surtees",
+      "elo": 1184
+    },
+    {
+      "name": "Chris Bristow",
+      "elo": 1169
+    },
+    {
+      "name": "Jo Bonnier",
+      "elo": 1157
+    },
+    {
+      "name": "Henry Taylor",
+      "elo": 1152
+    },
+    {
+      "name": "Olivier Gendebien",
+      "elo": 1127
+    },
+    {
+      "name": "Graham Hill",
+      "elo": 1111
+    },
+    {
+      "name": "Wolfgang Seidel",
+      "elo": 1109
+    },
+    {
+      "name": "Dan Gurney",
+      "elo": 1102
+    },
+    {
+      "name": "Giorgio Scarlatti",
+      "elo": 1097
+    },
+    {
+      "name": "Brian Naylor",
+      "elo": 1087
+    },
+    {
+      "name": "Carlos Menditeguy",
+      "elo": 1061
+    },
+    {
+      "name": "Mike Taylor",
+      "elo": 1056
+    },
+    {
+      "name": "Hans Herrmann",
+      "elo": 1053
+    },
+    {
+      "name": "Lucien Bianchi",
+      "elo": 1040
+    },
+    {
+      "name": "José Froilán González",
+      "elo": 1039
+    },
+    {
+      "name": "Harry Schell",
+      "elo": 1001
+    },
+    {
+      "name": "Jack Fairman",
+      "elo": 980
+    },
+    {
+      "name": "Tony Brooks",
+      "elo": 946
+    },
+    {
+      "name": "Ron Flockhart",
+      "elo": 943
+    },
+    {
+      "name": "Bruce Halford",
+      "elo": 790
+    },
+    {
+      "name": "Horace Gould",
+      "elo": 580
+    }
+  ],
+  "1961": [
+    {
+      "name": "Bruce McLaren",
+      "elo": 1647
+    },
+    {
+      "name": "Phil Hill",
+      "elo": 1556
+    },
+    {
+      "name": "Dan Gurney",
+      "elo": 1515
+    },
+    {
+      "name": "Roger Penske",
+      "elo": 1500
+    },
+    {
+      "name": "Tony Maggs",
+      "elo": 1491
+    },
+    {
+      "name": "Nino Vaccarella",
+      "elo": 1487
+    },
+    {
+      "name": "Innes Ireland",
+      "elo": 1482
+    },
+    {
+      "name": "Gaetano Starrabba",
+      "elo": 1470
+    },
+    {
+      "name": "Hap Sharp",
+      "elo": 1459
+    },
+    {
+      "name": "Lorenzo Bandini",
+      "elo": 1454
+    },
+    {
+      "name": "Tim Parnell",
+      "elo": 1447
+    },
+    {
+      "name": "Peter Monteverdi",
+      "elo": 1447
+    },
+    {
+      "name": "Peter Ryan",
+      "elo": 1443
+    },
+    {
+      "name": "Renato Pirocchi",
+      "elo": 1408
+    },
+    {
+      "name": "Trevor Taylor",
+      "elo": 1403
+    },
+    {
+      "name": "Ricardo Rodríguez",
+      "elo": 1391
+    },
+    {
+      "name": "Roberto Bussinello",
+      "elo": 1388
+    },
+    {
+      "name": "Maurice Trintignant",
+      "elo": 1372
+    },
+    {
+      "name": "Jim Hall",
+      "elo": 1340
+    },
+    {
+      "name": "Keith Greene",
+      "elo": 1332
+    },
+    {
+      "name": "Lloyd Ruby",
+      "elo": 1316
+    },
+    {
+      "name": "Stirling Moss",
+      "elo": 1295
+    },
+    {
+      "name": "Giancarlo Baghetti",
+      "elo": 1286
+    },
+    {
+      "name": "Richie Ginther",
+      "elo": 1276
+    },
+    {
+      "name": "Wolfgang von Trips",
+      "elo": 1243
+    },
+    {
+      "name": "Cliff Allison",
+      "elo": 1224
+    },
+    {
+      "name": "Walt Hansgen",
+      "elo": 1208
+    },
+    {
+      "name": "Roy Salvadori",
+      "elo": 1200
+    },
+    {
+      "name": "Tony Brooks",
+      "elo": 1196
+    },
+    {
+      "name": "Edgar Barth",
+      "elo": 1133
+    },
+    {
+      "name": "Jo Bonnier",
+      "elo": 1133
+    },
+    {
+      "name": "Willy Mairesse",
+      "elo": 1128
+    },
+    {
+      "name": "Carel Godin de Beaufort",
+      "elo": 1109
+    },
+    {
+      "name": "Olivier Gendebien",
+      "elo": 1103
+    },
+    {
+      "name": "Tony Marsh",
+      "elo": 1095
+    },
+    {
+      "name": "Ken Miles",
+      "elo": 1093
+    },
+    {
+      "name": "Giorgio Scarlatti",
+      "elo": 1082
+    },
+    {
+      "name": "Brian Naylor",
+      "elo": 1048
+    },
+    {
+      "name": "Jack Brabham",
+      "elo": 1043
+    },
+    {
+      "name": "Lucien Bianchi",
+      "elo": 1040
+    },
+    {
+      "name": "Bernard Collomb",
+      "elo": 1037
+    },
+    {
+      "name": "Ian Burgess",
+      "elo": 1010
+    },
+    {
+      "name": "Graham Hill",
+      "elo": 997
+    },
+    {
+      "name": "Hans Herrmann",
+      "elo": 997
+    },
+    {
+      "name": "Jack Fairman",
+      "elo": 980
+    },
+    {
+      "name": "Jackie Lewis",
+      "elo": 955
+    },
+    {
+      "name": "Juan Manuel Bordeu",
+      "elo": 940
+    },
+    {
+      "name": "Gerry Ashmore",
+      "elo": 887
+    },
+    {
+      "name": "Henry Taylor",
+      "elo": 867
+    },
+    {
+      "name": "Masten Gregory",
+      "elo": 865
+    },
+    {
+      "name": "Jim Clark",
+      "elo": 862
+    },
+    {
+      "name": "John Surtees",
+      "elo": 830
+    },
+    {
+      "name": "Michael May",
+      "elo": 805
+    },
+    {
+      "name": "Wolfgang Seidel",
+      "elo": 708
+    }
+  ],
+  "1962": [
+    {
+      "name": "Bruce McLaren",
+      "elo": 1899
+    },
+    {
+      "name": "Tony Maggs",
+      "elo": 1628
+    },
+    {
+      "name": "John Love",
+      "elo": 1500
+    },
+    {
+      "name": "Neville Lederle",
+      "elo": 1500
+    },
+    {
+      "name": "Doug Serrurier",
+      "elo": 1492
+    },
+    {
+      "name": "Mike Harris",
+      "elo": 1485
+    },
+    {
+      "name": "Tony Settember",
+      "elo": 1466
+    },
+    {
+      "name": "Ernie Pieterse",
+      "elo": 1464
+    },
+    {
+      "name": "Kurt Kuhnke",
+      "elo": 1449
+    },
+    {
+      "name": "Peter Arundell",
+      "elo": 1448
+    },
+    {
+      "name": "Graham Hill",
+      "elo": 1447
+    },
+    {
+      "name": "Hap Sharp",
+      "elo": 1440
+    },
+    {
+      "name": "Dan Gurney",
+      "elo": 1417
+    },
+    {
+      "name": "Roger Penske",
+      "elo": 1414
+    },
+    {
+      "name": "Willy Mairesse",
+      "elo": 1405
+    },
+    {
+      "name": "Timmy Mayer",
+      "elo": 1398
+    },
+    {
+      "name": "John Campbell-Jones",
+      "elo": 1397
+    },
+    {
+      "name": "Innes Ireland",
+      "elo": 1379
+    },
+    {
+      "name": "Bruce Johnstone",
+      "elo": 1371
+    },
+    {
+      "name": "Heinz Schiller",
+      "elo": 1364
+    },
+    {
+      "name": "Jim Clark",
+      "elo": 1359
+    },
+    {
+      "name": "Rob Schroeder",
+      "elo": 1350
+    },
+    {
+      "name": "Roberto Bussinello",
+      "elo": 1343
+    },
+    {
+      "name": "Phil Hill",
+      "elo": 1333
+    },
+    {
+      "name": "Heini Walter",
+      "elo": 1329
+    },
+    {
+      "name": "Nino Vaccarella",
+      "elo": 1329
+    },
+    {
+      "name": "Lorenzo Bandini",
+      "elo": 1295
+    },
+    {
+      "name": "Ricardo Rodríguez",
+      "elo": 1293
+    },
+    {
+      "name": "Gary Hocking",
+      "elo": 1257
+    },
+    {
+      "name": "Carel Godin de Beaufort",
+      "elo": 1253
+    },
+    {
+      "name": "Ben Pon",
+      "elo": 1251
+    },
+    {
+      "name": "Jo Bonnier",
+      "elo": 1248
+    },
+    {
+      "name": "Keith Greene",
+      "elo": 1246
+    },
+    {
+      "name": "Syd van der Vyver",
+      "elo": 1204
+    },
+    {
+      "name": "Jay Chamberlain",
+      "elo": 1176
+    },
+    {
+      "name": "Giancarlo Baghetti",
+      "elo": 1167
+    },
+    {
+      "name": "Sam Tingle",
+      "elo": 1146
+    },
+    {
+      "name": "Jack Brabham",
+      "elo": 1141
+    },
+    {
+      "name": "Richie Ginther",
+      "elo": 1101
+    },
+    {
+      "name": "John Surtees",
+      "elo": 1091
+    },
+    {
+      "name": "Masten Gregory",
+      "elo": 1086
+    },
+    {
+      "name": "Lucien Bianchi",
+      "elo": 1047
+    },
+    {
+      "name": "Jim Hall",
+      "elo": 1008
+    },
+    {
+      "name": "Ian Burgess",
+      "elo": 1004
+    },
+    {
+      "name": "Jo Siffert",
+      "elo": 996
+    },
+    {
+      "name": "Jackie Lewis",
+      "elo": 985
+    },
+    {
+      "name": "Roy Salvadori",
+      "elo": 970
+    },
+    {
+      "name": "Bernard Collomb",
+      "elo": 965
+    },
+    {
+      "name": "Tony Marsh",
+      "elo": 900
+    },
+    {
+      "name": "Trevor Taylor",
+      "elo": 886
+    },
+    {
+      "name": "Maurice Trintignant",
+      "elo": 866
+    },
+    {
+      "name": "Wolfgang Seidel",
+      "elo": 776
+    }
+  ],
+  "1963": [
+    {
+      "name": "Jim Clark",
+      "elo": 1823
+    },
+    {
+      "name": "Bruce McLaren",
+      "elo": 1677
+    },
+    {
+      "name": "Jo Bonnier",
+      "elo": 1652
+    },
+    {
+      "name": "Peter Broeker",
+      "elo": 1527
+    },
+    {
+      "name": "Trevor Blokdyk",
+      "elo": 1498
+    },
+    {
+      "name": "Doug Serrurier",
+      "elo": 1484
+    },
+    {
+      "name": "Brausch Niemann",
+      "elo": 1477
+    },
+    {
+      "name": "Ian Raby",
+      "elo": 1476
+    },
+    {
+      "name": "Mário de Araújo Cabral",
+      "elo": 1474
+    },
+    {
+      "name": "Pedro Rodríguez",
+      "elo": 1469
+    },
+    {
+      "name": "Mike Hailwood",
+      "elo": 1468
+    },
+    {
+      "name": "Mike Spence",
+      "elo": 1459
+    },
+    {
+      "name": "Tony Maggs",
+      "elo": 1455
+    },
+    {
+      "name": "John Love",
+      "elo": 1452
+    },
+    {
+      "name": "Peter de Klerk",
+      "elo": 1445
+    },
+    {
+      "name": "Paddy Driver",
+      "elo": 1443
+    },
+    {
+      "name": "Jim Hall",
+      "elo": 1438
+    },
+    {
+      "name": "Hap Sharp",
+      "elo": 1433
+    },
+    {
+      "name": "Gerhard Mitter",
+      "elo": 1433
+    },
+    {
+      "name": "Ernie de Vos",
+      "elo": 1427
+    },
+    {
+      "name": "Carlo Abate",
+      "elo": 1424
+    },
+    {
+      "name": "Gaetano Starrabba",
+      "elo": 1424
+    },
+    {
+      "name": "Bob Anderson",
+      "elo": 1420
+    },
+    {
+      "name": "Ernie Pieterse",
+      "elo": 1416
+    },
+    {
+      "name": "Rodger Ward",
+      "elo": 1392
+    },
+    {
+      "name": "Carel Godin de Beaufort",
+      "elo": 1388
+    },
+    {
+      "name": "Frank Dochnal",
+      "elo": 1388
+    },
+    {
+      "name": "Neville Lederle",
+      "elo": 1374
+    },
+    {
+      "name": "Nasif Estéfano",
+      "elo": 1370
+    },
+    {
+      "name": "David Prophet",
+      "elo": 1366
+    },
+    {
+      "name": "Dan Gurney",
+      "elo": 1359
+    },
+    {
+      "name": "Moisés Solana",
+      "elo": 1354
+    },
+    {
+      "name": "Thomas Monarch",
+      "elo": 1346
+    },
+    {
+      "name": "Jack Brabham",
+      "elo": 1329
+    },
+    {
+      "name": "Richie Ginther",
+      "elo": 1320
+    },
+    {
+      "name": "Graham Hill",
+      "elo": 1305
+    },
+    {
+      "name": "Lorenzo Bandini",
+      "elo": 1282
+    },
+    {
+      "name": "Günther Seiffert",
+      "elo": 1249
+    },
+    {
+      "name": "Willy Mairesse",
+      "elo": 1242
+    },
+    {
+      "name": "Phil Hill",
+      "elo": 1232
+    },
+    {
+      "name": "Ludovico Scarfiotti",
+      "elo": 1222
+    },
+    {
+      "name": "Tony Settember",
+      "elo": 1218
+    },
+    {
+      "name": "Chris Amon",
+      "elo": 1199
+    },
+    {
+      "name": "Peter Arundell",
+      "elo": 1195
+    },
+    {
+      "name": "John Campbell-Jones",
+      "elo": 1189
+    },
+    {
+      "name": "Trevor Taylor",
+      "elo": 1177
+    },
+    {
+      "name": "John Surtees",
+      "elo": 1173
+    },
+    {
+      "name": "Ian Burgess",
+      "elo": 1164
+    },
+    {
+      "name": "Walt Hansgen",
+      "elo": 1147
+    },
+    {
+      "name": "Sam Tingle",
+      "elo": 1134
+    },
+    {
+      "name": "Lucien Bianchi",
+      "elo": 1127
+    },
+    {
+      "name": "Jo Siffert",
+      "elo": 1100
+    },
+    {
+      "name": "Giancarlo Baghetti",
+      "elo": 1085
+    },
+    {
+      "name": "Innes Ireland",
+      "elo": 1069
+    },
+    {
+      "name": "Masten Gregory",
+      "elo": 981
+    },
+    {
+      "name": "Bernard Collomb",
+      "elo": 965
+    },
+    {
+      "name": "Maurice Trintignant",
+      "elo": 955
+    }
+  ],
+  "1964": [
+    {
+      "name": "Mike Spence",
+      "elo": 1652
+    },
+    {
+      "name": "Jochen Rindt",
+      "elo": 1502
+    },
+    {
+      "name": "Dan Gurney",
+      "elo": 1499
+    },
+    {
+      "name": "Frank Gardner",
+      "elo": 1461
+    },
+    {
+      "name": "Mário de Araújo Cabral",
+      "elo": 1448
+    },
+    {
+      "name": "Peter Arundell",
+      "elo": 1446
+    },
+    {
+      "name": "Bruce McLaren",
+      "elo": 1446
+    },
+    {
+      "name": "John Taylor",
+      "elo": 1444
+    },
+    {
+      "name": "Ronnie Bucknum",
+      "elo": 1435
+    },
+    {
+      "name": "Gerhard Mitter",
+      "elo": 1433
+    },
+    {
+      "name": "Bob Anderson",
+      "elo": 1424
+    },
+    {
+      "name": "Jim Clark",
+      "elo": 1417
+    },
+    {
+      "name": "John Surtees",
+      "elo": 1399
+    },
+    {
+      "name": "Hap Sharp",
+      "elo": 1398
+    },
+    {
+      "name": "Peter Revson",
+      "elo": 1385
+    },
+    {
+      "name": "Carel Godin de Beaufort",
+      "elo": 1370
+    },
+    {
+      "name": "Pedro Rodríguez",
+      "elo": 1362
+    },
+    {
+      "name": "Ian Raby",
+      "elo": 1355
+    },
+    {
+      "name": "Jo Siffert",
+      "elo": 1329
+    },
+    {
+      "name": "Moisés Solana",
+      "elo": 1327
+    },
+    {
+      "name": "Phil Hill",
+      "elo": 1296
+    },
+    {
+      "name": "Richie Ginther",
+      "elo": 1295
+    },
+    {
+      "name": "Walt Hansgen",
+      "elo": 1268
+    },
+    {
+      "name": "André Pilette",
+      "elo": 1259
+    },
+    {
+      "name": "Chris Amon",
+      "elo": 1247
+    },
+    {
+      "name": "Lorenzo Bandini",
+      "elo": 1246
+    },
+    {
+      "name": "Jack Brabham",
+      "elo": 1224
+    },
+    {
+      "name": "Mike Hailwood",
+      "elo": 1223
+    },
+    {
+      "name": "Jo Bonnier",
+      "elo": 1214
+    },
+    {
+      "name": "Richard Attwood",
+      "elo": 1196
+    },
+    {
+      "name": "Ludovico Scarfiotti",
+      "elo": 1180
+    },
+    {
+      "name": "Innes Ireland",
+      "elo": 1173
+    },
+    {
+      "name": "Graham Hill",
+      "elo": 1143
+    },
+    {
+      "name": "Edgar Barth",
+      "elo": 1133
+    },
+    {
+      "name": "Trevor Taylor",
+      "elo": 1110
+    },
+    {
+      "name": "Tony Maggs",
+      "elo": 1087
+    },
+    {
+      "name": "Giancarlo Baghetti",
+      "elo": 1008
+    },
+    {
+      "name": "Maurice Trintignant",
+      "elo": 955
+    }
+  ],
+  "1965": [
+    {
+      "name": "Dan Gurney",
+      "elo": 1613
+    },
+    {
+      "name": "Jochen Rindt",
+      "elo": 1613
+    },
+    {
+      "name": "Mike Spence",
+      "elo": 1559
+    },
+    {
+      "name": "Jim Clark",
+      "elo": 1496
+    },
+    {
+      "name": "Bruce McLaren",
+      "elo": 1492
+    },
+    {
+      "name": "Richie Ginther",
+      "elo": 1475
+    },
+    {
+      "name": "David Clapham",
+      "elo": 1473
+    },
+    {
+      "name": "Ray Reed",
+      "elo": 1465
+    },
+    {
+      "name": "Graham Hill",
+      "elo": 1464
+    },
+    {
+      "name": "Moisés Solana",
+      "elo": 1462
+    },
+    {
+      "name": "Giacomo Russo",
+      "elo": 1448
+    },
+    {
+      "name": "John Rhodes",
+      "elo": 1440
+    },
+    {
+      "name": "Gerhard Mitter",
+      "elo": 1419
+    },
+    {
+      "name": "Jo Siffert",
+      "elo": 1418
+    },
+    {
+      "name": "Peter de Klerk",
+      "elo": 1417
+    },
+    {
+      "name": "Bob Bondurant",
+      "elo": 1416
+    },
+    {
+      "name": "Lorenzo Bandini",
+      "elo": 1415
+    },
+    {
+      "name": "John Love",
+      "elo": 1410
+    },
+    {
+      "name": "Pedro Rodríguez",
+      "elo": 1405
+    },
+    {
+      "name": "Frank Gardner",
+      "elo": 1394
+    },
+    {
+      "name": "Paul Hawkins",
+      "elo": 1387
+    },
+    {
+      "name": "Alex Blignaut",
+      "elo": 1376
+    },
+    {
+      "name": "David Prophet",
+      "elo": 1350
+    },
+    {
+      "name": "Jackie Stewart",
+      "elo": 1342
+    },
+    {
+      "name": "Roberto Bussinello",
+      "elo": 1333
+    },
+    {
+      "name": "Nino Vaccarella",
+      "elo": 1324
+    },
+    {
+      "name": "Ian Raby",
+      "elo": 1316
+    },
+    {
+      "name": "Ronnie Bucknum",
+      "elo": 1297
+    },
+    {
+      "name": "Richard Attwood",
+      "elo": 1295
+    },
+    {
+      "name": "Bob Anderson",
+      "elo": 1258
+    },
+    {
+      "name": "John Surtees",
+      "elo": 1255
+    },
+    {
+      "name": "Jo Bonnier",
+      "elo": 1246
+    },
+    {
+      "name": "Chris Amon",
+      "elo": 1220
+    },
+    {
+      "name": "Giorgio Bassi",
+      "elo": 1213
+    },
+    {
+      "name": "Denny Hulme",
+      "elo": 1202
+    },
+    {
+      "name": "Mike Hailwood",
+      "elo": 1184
+    },
+    {
+      "name": "Jack Brabham",
+      "elo": 1168
+    },
+    {
+      "name": "Sam Tingle",
+      "elo": 1160
+    },
+    {
+      "name": "Innes Ireland",
+      "elo": 1150
+    },
+    {
+      "name": "Ludovico Scarfiotti",
+      "elo": 1140
+    },
+    {
+      "name": "Tony Maggs",
+      "elo": 1121
+    },
+    {
+      "name": "Lucien Bianchi",
+      "elo": 1113
+    },
+    {
+      "name": "Giancarlo Baghetti",
+      "elo": 975
+    },
+    {
+      "name": "Masten Gregory",
+      "elo": 951
+    }
+  ],
+  "1966": [
+    {
+      "name": "Richie Ginther",
+      "elo": 1562
+    },
+    {
+      "name": "Peter Arundell",
+      "elo": 1510
+    },
+    {
+      "name": "Chris Irwin",
+      "elo": 1509
+    },
+    {
+      "name": "Mike Spence",
+      "elo": 1483
+    },
+    {
+      "name": "Dan Gurney",
+      "elo": 1483
+    },
+    {
+      "name": "Chris Lawrence",
+      "elo": 1477
+    },
+    {
+      "name": "John Surtees",
+      "elo": 1467
+    },
+    {
+      "name": "Giacomo Russo",
+      "elo": 1461
+    },
+    {
+      "name": "Bruce McLaren",
+      "elo": 1459
+    },
+    {
+      "name": "John Taylor",
+      "elo": 1431
+    },
+    {
+      "name": "Jim Clark",
+      "elo": 1398
+    },
+    {
+      "name": "Bob Bondurant",
+      "elo": 1396
+    },
+    {
+      "name": "Innes Ireland",
+      "elo": 1377
+    },
+    {
+      "name": "Jack Brabham",
+      "elo": 1369
+    },
+    {
+      "name": "Ludovico Scarfiotti",
+      "elo": 1363
+    },
+    {
+      "name": "Pedro Rodríguez",
+      "elo": 1330
+    },
+    {
+      "name": "Jackie Stewart",
+      "elo": 1313
+    },
+    {
+      "name": "Ronnie Bucknum",
+      "elo": 1305
+    },
+    {
+      "name": "Mike Parkes",
+      "elo": 1288
+    },
+    {
+      "name": "Bob Anderson",
+      "elo": 1264
+    },
+    {
+      "name": "Jochen Rindt",
+      "elo": 1253
+    },
+    {
+      "name": "Guy Ligier",
+      "elo": 1240
+    },
+    {
+      "name": "Denny Hulme",
+      "elo": 1239
+    },
+    {
+      "name": "Jo Siffert",
+      "elo": 1237
+    },
+    {
+      "name": "Chris Amon",
+      "elo": 1220
+    },
+    {
+      "name": "Graham Hill",
+      "elo": 1206
+    },
+    {
+      "name": "Lorenzo Bandini",
+      "elo": 1164
+    },
+    {
+      "name": "Jo Bonnier",
+      "elo": 1153
+    },
+    {
+      "name": "Moisés Solana",
+      "elo": 1148
+    },
+    {
+      "name": "Trevor Taylor",
+      "elo": 1099
+    },
+    {
+      "name": "Giancarlo Baghetti",
+      "elo": 975
+    }
+  ],
+  "1967": [
+    {
+      "name": "Jackie Oliver",
+      "elo": 1535
+    },
+    {
+      "name": "David Hobbs",
+      "elo": 1532
+    },
+    {
+      "name": "Jean-Pierre Beltoise",
+      "elo": 1516
+    },
+    {
+      "name": "Brian Hart",
+      "elo": 1515
+    },
+    {
+      "name": "Mike Spence",
+      "elo": 1509
+    },
+    {
+      "name": "Jonathan Williams",
+      "elo": 1507
+    },
+    {
+      "name": "Silvio Moser",
+      "elo": 1488
+    },
+    {
+      "name": "John Surtees",
+      "elo": 1483
+    },
+    {
+      "name": "Al Pease",
+      "elo": 1481
+    },
+    {
+      "name": "Alan Rees",
+      "elo": 1473
+    },
+    {
+      "name": "Hubert Hahne",
+      "elo": 1467
+    },
+    {
+      "name": "Johnny Servoz-Gavin",
+      "elo": 1466
+    },
+    {
+      "name": "Jim Clark",
+      "elo": 1462
+    },
+    {
+      "name": "John Love",
+      "elo": 1455
+    },
+    {
+      "name": "Dave Charlton",
+      "elo": 1454
+    },
+    {
+      "name": "Jack Brabham",
+      "elo": 1454
+    },
+    {
+      "name": "Kurt Ahrens",
+      "elo": 1448
+    },
+    {
+      "name": "Jo Schlesser",
+      "elo": 1442
+    },
+    {
+      "name": "Pedro Rodríguez",
+      "elo": 1429
+    },
+    {
+      "name": "Dan Gurney",
+      "elo": 1425
+    },
+    {
+      "name": "Jackie Stewart",
+      "elo": 1415
+    },
+    {
+      "name": "Mike Fisher",
+      "elo": 1407
+    },
+    {
+      "name": "Luki Botha",
+      "elo": 1405
+    },
+    {
+      "name": "Eppie Wietzes",
+      "elo": 1390
+    },
+    {
+      "name": "Bob Anderson",
+      "elo": 1385
+    },
+    {
+      "name": "Denny Hulme",
+      "elo": 1383
+    },
+    {
+      "name": "Chris Amon",
+      "elo": 1366
+    },
+    {
+      "name": "Chris Irwin",
+      "elo": 1362
+    },
+    {
+      "name": "Bruce McLaren",
+      "elo": 1358
+    },
+    {
+      "name": "Piers Courage",
+      "elo": 1347
+    },
+    {
+      "name": "Jacky Ickx",
+      "elo": 1333
+    },
+    {
+      "name": "Ludovico Scarfiotti",
+      "elo": 1312
+    },
+    {
+      "name": "Graham Hill",
+      "elo": 1284
+    },
+    {
+      "name": "Richard Attwood",
+      "elo": 1270
+    },
+    {
+      "name": "Jo Siffert",
+      "elo": 1264
+    },
+    {
+      "name": "Jo Bonnier",
+      "elo": 1191
+    },
+    {
+      "name": "Jochen Rindt",
+      "elo": 1187
+    },
+    {
+      "name": "Mike Parkes",
+      "elo": 1187
+    },
+    {
+      "name": "Sam Tingle",
+      "elo": 1177
+    },
+    {
+      "name": "Moisés Solana",
+      "elo": 1175
+    },
+    {
+      "name": "Lorenzo Bandini",
+      "elo": 1133
+    },
+    {
+      "name": "Guy Ligier",
+      "elo": 1098
+    },
+    {
+      "name": "Giancarlo Baghetti",
+      "elo": 975
+    }
+  ],
+  "1968": [
+    {
+      "name": "Graham Hill",
+      "elo": 1565
+    },
+    {
+      "name": "David Hobbs",
+      "elo": 1543
+    },
+    {
+      "name": "Henri Pescarolo",
+      "elo": 1517
+    },
+    {
+      "name": "Jackie Stewart",
+      "elo": 1512
+    },
+    {
+      "name": "Basil van Rooyen",
+      "elo": 1505
+    },
+    {
+      "name": "Robin Widdows",
+      "elo": 1504
+    },
+    {
+      "name": "Jean-Pierre Beltoise",
+      "elo": 1504
+    },
+    {
+      "name": "Jackie Pretorius",
+      "elo": 1501
+    },
+    {
+      "name": "Silvio Moser",
+      "elo": 1495
+    },
+    {
+      "name": "Jim Clark",
+      "elo": 1488
+    },
+    {
+      "name": "Hubert Hahne",
+      "elo": 1473
+    },
+    {
+      "name": "Mike Spence",
+      "elo": 1462
+    },
+    {
+      "name": "Pedro Rodríguez",
+      "elo": 1461
+    },
+    {
+      "name": "Bruce McLaren",
+      "elo": 1440
+    },
+    {
+      "name": "Chris Amon",
+      "elo": 1439
+    },
+    {
+      "name": "Mario Andretti",
+      "elo": 1434
+    },
+    {
+      "name": "John Love",
+      "elo": 1431
+    },
+    {
+      "name": "Piers Courage",
+      "elo": 1422
+    },
+    {
+      "name": "Bobby Unser",
+      "elo": 1415
+    },
+    {
+      "name": "Denny Hulme",
+      "elo": 1414
+    },
+    {
+      "name": "Vic Elford",
+      "elo": 1405
+    },
+    {
+      "name": "Dan Gurney",
+      "elo": 1400
+    },
+    {
+      "name": "Johnny Servoz-Gavin",
+      "elo": 1394
+    },
+    {
+      "name": "Jo Schlesser",
+      "elo": 1391
+    },
+    {
+      "name": "Andrea de Adamich",
+      "elo": 1385
+    },
+    {
+      "name": "Jacky Ickx",
+      "elo": 1381
+    },
+    {
+      "name": "John Surtees",
+      "elo": 1376
+    },
+    {
+      "name": "Kurt Ahrens",
+      "elo": 1369
+    },
+    {
+      "name": "Derek Bell",
+      "elo": 1368
+    },
+    {
+      "name": "Bill Brack",
+      "elo": 1364
+    },
+    {
+      "name": "Jo Siffert",
+      "elo": 1348
+    },
+    {
+      "name": "Jack Brabham",
+      "elo": 1343
+    },
+    {
+      "name": "Jochen Rindt",
+      "elo": 1322
+    },
+    {
+      "name": "Jo Bonnier",
+      "elo": 1321
+    },
+    {
+      "name": "Brian Redman",
+      "elo": 1317
+    },
+    {
+      "name": "Lucien Bianchi",
+      "elo": 1311
+    },
+    {
+      "name": "Jackie Oliver",
+      "elo": 1303
+    },
+    {
+      "name": "Dave Charlton",
+      "elo": 1301
+    },
+    {
+      "name": "Ludovico Scarfiotti",
+      "elo": 1280
+    },
+    {
+      "name": "Richard Attwood",
+      "elo": 1234
+    },
+    {
+      "name": "Sam Tingle",
+      "elo": 1197
+    },
+    {
+      "name": "Moisés Solana",
+      "elo": 1148
+    }
+  ],
+  "1969": [
+    {
+      "name": "Jochen Rindt",
+      "elo": 1622
+    },
+    {
+      "name": "Pete Lovely",
+      "elo": 1546
+    },
+    {
+      "name": "Jackie Stewart",
+      "elo": 1522
+    },
+    {
+      "name": "Jean-Pierre Beltoise",
+      "elo": 1506
+    },
+    {
+      "name": "Graham Hill",
+      "elo": 1487
+    },
+    {
+      "name": "Denny Hulme",
+      "elo": 1484
+    },
+    {
+      "name": "Al Pease",
+      "elo": 1473
+    },
+    {
+      "name": "Pedro Rodríguez",
+      "elo": 1469
+    },
+    {
+      "name": "John Cordts",
+      "elo": 1462
+    },
+    {
+      "name": "Bruce McLaren",
+      "elo": 1453
+    },
+    {
+      "name": "Jacky Ickx",
+      "elo": 1438
+    },
+    {
+      "name": "Johnny Servoz-Gavin",
+      "elo": 1434
+    },
+    {
+      "name": "Bill Brack",
+      "elo": 1421
+    },
+    {
+      "name": "Basil van Rooyen",
+      "elo": 1415
+    },
+    {
+      "name": "Chris Amon",
+      "elo": 1414
+    },
+    {
+      "name": "John Surtees",
+      "elo": 1402
+    },
+    {
+      "name": "Peter de Klerk",
+      "elo": 1364
+    },
+    {
+      "name": "Piers Courage",
+      "elo": 1359
+    },
+    {
+      "name": "George Eaton",
+      "elo": 1355
+    },
+    {
+      "name": "Jackie Oliver",
+      "elo": 1346
+    },
+    {
+      "name": "Vic Elford",
+      "elo": 1341
+    },
+    {
+      "name": "Jo Siffert",
+      "elo": 1333
+    },
+    {
+      "name": "John Love",
+      "elo": 1293
+    },
+    {
+      "name": "Derek Bell",
+      "elo": 1285
+    },
+    {
+      "name": "Sam Tingle",
+      "elo": 1277
+    },
+    {
+      "name": "Jo Bonnier",
+      "elo": 1244
+    },
+    {
+      "name": "Richard Attwood",
+      "elo": 1234
+    },
+    {
+      "name": "Jack Brabham",
+      "elo": 1223
+    },
+    {
+      "name": "John Miles",
+      "elo": 1216
+    },
+    {
+      "name": "Mario Andretti",
+      "elo": 1201
+    },
+    {
+      "name": "Silvio Moser",
+      "elo": 1194
+    }
+  ],
+  "1970": [
+    {
+      "name": "Jacky Ickx",
+      "elo": 1591
+    },
+    {
+      "name": "Denny Hulme",
+      "elo": 1577
+    },
+    {
+      "name": "Henri Pescarolo",
+      "elo": 1542
+    },
+    {
+      "name": "Jean-Pierre Beltoise",
+      "elo": 1535
+    },
+    {
+      "name": "Reine Wisell",
+      "elo": 1522
+    },
+    {
+      "name": "Chris Amon",
+      "elo": 1503
+    },
+    {
+      "name": "Clay Regazzoni",
+      "elo": 1489
+    },
+    {
+      "name": "Pedro Rodríguez",
+      "elo": 1487
+    },
+    {
+      "name": "Tim Schenken",
+      "elo": 1479
+    },
+    {
+      "name": "Bruce McLaren",
+      "elo": 1454
+    },
+    {
+      "name": "Pete Lovely",
+      "elo": 1452
+    },
+    {
+      "name": "Jack Brabham",
+      "elo": 1450
+    },
+    {
+      "name": "Peter Gethin",
+      "elo": 1440
+    },
+    {
+      "name": "Jochen Rindt",
+      "elo": 1428
+    },
+    {
+      "name": "Gus Hutchison",
+      "elo": 1415
+    },
+    {
+      "name": "Ignazio Giunti",
+      "elo": 1414
+    },
+    {
+      "name": "Emerson Fittipaldi",
+      "elo": 1401
+    },
+    {
+      "name": "Graham Hill",
+      "elo": 1397
+    },
+    {
+      "name": "Rolf Stommelen",
+      "elo": 1395
+    },
+    {
+      "name": "Jackie Stewart",
+      "elo": 1392
+    },
+    {
+      "name": "Johnny Servoz-Gavin",
+      "elo": 1384
+    },
+    {
+      "name": "Andrea de Adamich",
+      "elo": 1372
+    },
+    {
+      "name": "Peter de Klerk",
+      "elo": 1358
+    },
+    {
+      "name": "John Surtees",
+      "elo": 1356
+    },
+    {
+      "name": "Dan Gurney",
+      "elo": 1355
+    },
+    {
+      "name": "Piers Courage",
+      "elo": 1327
+    },
+    {
+      "name": "Derek Bell",
+      "elo": 1319
+    },
+    {
+      "name": "Dave Charlton",
+      "elo": 1301
+    },
+    {
+      "name": "John Love",
+      "elo": 1293
+    },
+    {
+      "name": "Jackie Oliver",
+      "elo": 1250
+    },
+    {
+      "name": "George Eaton",
+      "elo": 1238
+    },
+    {
+      "name": "John Miles",
+      "elo": 1233
+    },
+    {
+      "name": "Jo Bonnier",
+      "elo": 1228
+    },
+    {
+      "name": "Silvio Moser",
+      "elo": 1191
+    },
+    {
+      "name": "François Cevert",
+      "elo": 1183
+    },
+    {
+      "name": "Mario Andretti",
+      "elo": 1176
+    },
+    {
+      "name": "Ronnie Peterson",
+      "elo": 1174
+    },
+    {
+      "name": "Jo Siffert",
+      "elo": 1041
+    }
+  ],
+  "1971": [
+    {
+      "name": "Ronnie Peterson",
+      "elo": 1737
+    },
+    {
+      "name": "Jean-Pierre Beltoise",
+      "elo": 1564
+    },
+    {
+      "name": "Emerson Fittipaldi",
+      "elo": 1561
+    },
+    {
+      "name": "Jo Siffert",
+      "elo": 1560
+    },
+    {
+      "name": "David Hobbs",
+      "elo": 1555
+    },
+    {
+      "name": "François Mazet",
+      "elo": 1549
+    },
+    {
+      "name": "Graham Hill",
+      "elo": 1532
+    },
+    {
+      "name": "Mark Donohue",
+      "elo": 1529
+    },
+    {
+      "name": "Chris Amon",
+      "elo": 1512
+    },
+    {
+      "name": "Jean-Pierre Jarier",
+      "elo": 1500
+    },
+    {
+      "name": "Max Jean",
+      "elo": 1497
+    },
+    {
+      "name": "David Walker",
+      "elo": 1461
+    },
+    {
+      "name": "Gijs van Lennep",
+      "elo": 1458
+    },
+    {
+      "name": "Tim Schenken",
+      "elo": 1432
+    },
+    {
+      "name": "Reine Wisell",
+      "elo": 1429
+    },
+    {
+      "name": "Chris Craft",
+      "elo": 1424
+    },
+    {
+      "name": "Mike Hailwood",
+      "elo": 1417
+    },
+    {
+      "name": "François Cevert",
+      "elo": 1413
+    },
+    {
+      "name": "Jackie Stewart",
+      "elo": 1395
+    },
+    {
+      "name": "Pete Lovely",
+      "elo": 1394
+    },
+    {
+      "name": "Brian Redman",
+      "elo": 1394
+    },
+    {
+      "name": "Henri Pescarolo",
+      "elo": 1393
+    },
+    {
+      "name": "Peter Gethin",
+      "elo": 1391
+    },
+    {
+      "name": "Jackie Pretorius",
+      "elo": 1387
+    },
+    {
+      "name": "Andrea de Adamich",
+      "elo": 1383
+    },
+    {
+      "name": "Clay Regazzoni",
+      "elo": 1382
+    },
+    {
+      "name": "Jacky Ickx",
+      "elo": 1380
+    },
+    {
+      "name": "Niki Lauda",
+      "elo": 1379
+    },
+    {
+      "name": "Sam Posey",
+      "elo": 1379
+    },
+    {
+      "name": "Jackie Oliver",
+      "elo": 1378
+    },
+    {
+      "name": "Pedro Rodríguez",
+      "elo": 1378
+    },
+    {
+      "name": "Vic Elford",
+      "elo": 1377
+    },
+    {
+      "name": "John Surtees",
+      "elo": 1367
+    },
+    {
+      "name": "Skip Barber",
+      "elo": 1357
+    },
+    {
+      "name": "Mike Beuttler",
+      "elo": 1334
+    },
+    {
+      "name": "John Cannon",
+      "elo": 1316
+    },
+    {
+      "name": "Denny Hulme",
+      "elo": 1304
+    },
+    {
+      "name": "Mario Andretti",
+      "elo": 1299
+    },
+    {
+      "name": "John Love",
+      "elo": 1293
+    },
+    {
+      "name": "Peter Revson",
+      "elo": 1291
+    },
+    {
+      "name": "Nanni Galli",
+      "elo": 1285
+    },
+    {
+      "name": "Helmut Marko",
+      "elo": 1282
+    },
+    {
+      "name": "Dave Charlton",
+      "elo": 1275
+    },
+    {
+      "name": "Rolf Stommelen",
+      "elo": 1265
+    },
+    {
+      "name": "Derek Bell",
+      "elo": 1261
+    },
+    {
+      "name": "Alex Soler-Roig",
+      "elo": 1222
+    },
+    {
+      "name": "George Eaton",
+      "elo": 1219
+    },
+    {
+      "name": "Silvio Moser",
+      "elo": 1187
+    },
+    {
+      "name": "Jo Bonnier",
+      "elo": 1182
+    },
+    {
+      "name": "Howden Ganley",
+      "elo": 1131
+    }
+  ],
+  "1972": [
+    {
+      "name": "Graham Hill",
+      "elo": 1624
+    },
+    {
+      "name": "Emerson Fittipaldi",
+      "elo": 1570
+    },
+    {
+      "name": "Chris Amon",
+      "elo": 1562
+    },
+    {
+      "name": "Jackie Stewart",
+      "elo": 1532
+    },
+    {
+      "name": "Ronnie Peterson",
+      "elo": 1489
+    },
+    {
+      "name": "Jody Scheckter",
+      "elo": 1477
+    },
+    {
+      "name": "François Migault",
+      "elo": 1471
+    },
+    {
+      "name": "Howden Ganley",
+      "elo": 1464
+    },
+    {
+      "name": "Mike Hailwood",
+      "elo": 1461
+    },
+    {
+      "name": "Peter Gethin",
+      "elo": 1454
+    },
+    {
+      "name": "Denny Hulme",
+      "elo": 1446
+    },
+    {
+      "name": "Sam Posey",
+      "elo": 1442
+    },
+    {
+      "name": "Wilson Fittipaldi",
+      "elo": 1439
+    },
+    {
+      "name": "Arturo Merzario",
+      "elo": 1434
+    },
+    {
+      "name": "Carlos Reutemann",
+      "elo": 1422
+    },
+    {
+      "name": "Jacky Ickx",
+      "elo": 1419
+    },
+    {
+      "name": "John Love",
+      "elo": 1398
+    },
+    {
+      "name": "Patrick Depailler",
+      "elo": 1389
+    },
+    {
+      "name": "François Cevert",
+      "elo": 1380
+    },
+    {
+      "name": "Mario Andretti",
+      "elo": 1372
+    },
+    {
+      "name": "Jackie Oliver",
+      "elo": 1360
+    },
+    {
+      "name": "David Walker",
+      "elo": 1358
+    },
+    {
+      "name": "Jean-Pierre Beltoise",
+      "elo": 1337
+    },
+    {
+      "name": "Brian Redman",
+      "elo": 1335
+    },
+    {
+      "name": "Reine Wisell",
+      "elo": 1334
+    },
+    {
+      "name": "John Surtees",
+      "elo": 1330
+    },
+    {
+      "name": "Peter Revson",
+      "elo": 1327
+    },
+    {
+      "name": "Bill Brack",
+      "elo": 1316
+    },
+    {
+      "name": "Helmut Marko",
+      "elo": 1301
+    },
+    {
+      "name": "Clay Regazzoni",
+      "elo": 1300
+    },
+    {
+      "name": "Andrea de Adamich",
+      "elo": 1261
+    },
+    {
+      "name": "Nanni Galli",
+      "elo": 1251
+    },
+    {
+      "name": "Derek Bell",
+      "elo": 1249
+    },
+    {
+      "name": "Rolf Stommelen",
+      "elo": 1241
+    },
+    {
+      "name": "Tim Schenken",
+      "elo": 1236
+    },
+    {
+      "name": "Henri Pescarolo",
+      "elo": 1226
+    },
+    {
+      "name": "Niki Lauda",
+      "elo": 1201
+    },
+    {
+      "name": "Dave Charlton",
+      "elo": 1198
+    },
+    {
+      "name": "Carlos Pace",
+      "elo": 1180
+    },
+    {
+      "name": "Skip Barber",
+      "elo": 1176
+    },
+    {
+      "name": "Mike Beuttler",
+      "elo": 1148
+    },
+    {
+      "name": "Alex Soler-Roig",
+      "elo": 1075
+    }
+  ],
+  "1973": [
+    {
+      "name": "Ronnie Peterson",
+      "elo": 1621
+    },
+    {
+      "name": "Jackie Stewart",
+      "elo": 1603
+    },
+    {
+      "name": "Emerson Fittipaldi",
+      "elo": 1577
+    },
+    {
+      "name": "Carlos Reutemann",
+      "elo": 1532
+    },
+    {
+      "name": "Luiz Bueno",
+      "elo": 1517
+    },
+    {
+      "name": "Graham Hill",
+      "elo": 1514
+    },
+    {
+      "name": "James Hunt",
+      "elo": 1506
+    },
+    {
+      "name": "Peter Revson",
+      "elo": 1494
+    },
+    {
+      "name": "Jacky Ickx",
+      "elo": 1493
+    },
+    {
+      "name": "Chris Amon",
+      "elo": 1486
+    },
+    {
+      "name": "Eddie Keizan",
+      "elo": 1484
+    },
+    {
+      "name": "Gijs van Lennep",
+      "elo": 1466
+    },
+    {
+      "name": "Howden Ganley",
+      "elo": 1460
+    },
+    {
+      "name": "Graham McRae",
+      "elo": 1458
+    },
+    {
+      "name": "George Follmer",
+      "elo": 1456
+    },
+    {
+      "name": "Denny Hulme",
+      "elo": 1453
+    },
+    {
+      "name": "David Purley",
+      "elo": 1431
+    },
+    {
+      "name": "Jochen Mass",
+      "elo": 1427
+    },
+    {
+      "name": "Rikky von Opel",
+      "elo": 1424
+    },
+    {
+      "name": "Jackie Oliver",
+      "elo": 1416
+    },
+    {
+      "name": "Roger Williamson",
+      "elo": 1404
+    },
+    {
+      "name": "John Watson",
+      "elo": 1403
+    },
+    {
+      "name": "Arturo Merzario",
+      "elo": 1392
+    },
+    {
+      "name": "Jean-Pierre Beltoise",
+      "elo": 1386
+    },
+    {
+      "name": "Jackie Pretorius",
+      "elo": 1366
+    },
+    {
+      "name": "François Cevert",
+      "elo": 1365
+    },
+    {
+      "name": "Peter Gethin",
+      "elo": 1359
+    },
+    {
+      "name": "Wilson Fittipaldi",
+      "elo": 1354
+    },
+    {
+      "name": "Andrea de Adamich",
+      "elo": 1339
+    },
+    {
+      "name": "Clay Regazzoni",
+      "elo": 1329
+    },
+    {
+      "name": "Jean-Pierre Jarier",
+      "elo": 1307
+    },
+    {
+      "name": "Mike Hailwood",
+      "elo": 1304
+    },
+    {
+      "name": "Brian Redman",
+      "elo": 1293
+    },
+    {
+      "name": "Jody Scheckter",
+      "elo": 1290
+    },
+    {
+      "name": "Reine Wisell",
+      "elo": 1280
+    },
+    {
+      "name": "Carlos Pace",
+      "elo": 1260
+    },
+    {
+      "name": "Nanni Galli",
+      "elo": 1258
+    },
+    {
+      "name": "Tim Schenken",
+      "elo": 1244
+    },
+    {
+      "name": "Henri Pescarolo",
+      "elo": 1224
+    },
+    {
+      "name": "Rolf Stommelen",
+      "elo": 1219
+    },
+    {
+      "name": "Niki Lauda",
+      "elo": 1198
+    },
+    {
+      "name": "Dave Charlton",
+      "elo": 1189
+    },
+    {
+      "name": "Mike Beuttler",
+      "elo": 1188
+    }
+  ],
+  "1974": [
+    {
+      "name": "Ronnie Peterson",
+      "elo": 1654
+    },
+    {
+      "name": "Ian Scheckter",
+      "elo": 1558
+    },
+    {
+      "name": "Graham Hill",
+      "elo": 1550
+    },
+    {
+      "name": "Emerson Fittipaldi",
+      "elo": 1547
+    },
+    {
+      "name": "Mark Donohue",
+      "elo": 1512
+    },
+    {
+      "name": "José Dolhem",
+      "elo": 1500
+    },
+    {
+      "name": "Dieter Quester",
+      "elo": 1500
+    },
+    {
+      "name": "Mike Wilds",
+      "elo": 1500
+    },
+    {
+      "name": "Teddy Pilette",
+      "elo": 1500
+    },
+    {
+      "name": "Carlos Reutemann",
+      "elo": 1496
+    },
+    {
+      "name": "Ian Ashley",
+      "elo": 1492
+    },
+    {
+      "name": "David Hobbs",
+      "elo": 1489
+    },
+    {
+      "name": "Vittorio Brambilla",
+      "elo": 1485
+    },
+    {
+      "name": "Vern Schuppan",
+      "elo": 1480
+    },
+    {
+      "name": "Jacky Ickx",
+      "elo": 1480
+    },
+    {
+      "name": "Gijs van Lennep",
+      "elo": 1479
+    },
+    {
+      "name": "Guy Edwards",
+      "elo": 1466
+    },
+    {
+      "name": "Helmuth Koinigg",
+      "elo": 1464
+    },
+    {
+      "name": "Tom Belsø",
+      "elo": 1462
+    },
+    {
+      "name": "James Hunt",
+      "elo": 1457
+    },
+    {
+      "name": "Carlos Pace",
+      "elo": 1456
+    },
+    {
+      "name": "Chris Amon",
+      "elo": 1451
+    },
+    {
+      "name": "Bertil Roos",
+      "elo": 1451
+    },
+    {
+      "name": "Hans-Joachim Stuck",
+      "elo": 1447
+    },
+    {
+      "name": "Richard Robarts",
+      "elo": 1445
+    },
+    {
+      "name": "Gérard Larrousse",
+      "elo": 1444
+    },
+    {
+      "name": "Tom Pryce",
+      "elo": 1441
+    },
+    {
+      "name": "Howden Ganley",
+      "elo": 1440
+    },
+    {
+      "name": "Paddy Driver",
+      "elo": 1437
+    },
+    {
+      "name": "Rikky von Opel",
+      "elo": 1433
+    },
+    {
+      "name": "Patrick Depailler",
+      "elo": 1433
+    },
+    {
+      "name": "Peter Revson",
+      "elo": 1429
+    },
+    {
+      "name": "Jacques Laffite",
+      "elo": 1427
+    },
+    {
+      "name": "Eddie Keizan",
+      "elo": 1427
+    },
+    {
+      "name": "Jean-Pierre Jarier",
+      "elo": 1425
+    },
+    {
+      "name": "Clay Regazzoni",
+      "elo": 1421
+    },
+    {
+      "name": "Jody Scheckter",
+      "elo": 1417
+    },
+    {
+      "name": "Arturo Merzario",
+      "elo": 1408
+    },
+    {
+      "name": "Leo Kinnunen",
+      "elo": 1404
+    },
+    {
+      "name": "Denny Hulme",
+      "elo": 1375
+    },
+    {
+      "name": "John Watson",
+      "elo": 1374
+    },
+    {
+      "name": "Mario Andretti",
+      "elo": 1372
+    },
+    {
+      "name": "Mike Hailwood",
+      "elo": 1353
+    },
+    {
+      "name": "Peter Gethin",
+      "elo": 1338
+    },
+    {
+      "name": "Eppie Wietzes",
+      "elo": 1326
+    },
+    {
+      "name": "Rolf Stommelen",
+      "elo": 1304
+    },
+    {
+      "name": "Henri Pescarolo",
+      "elo": 1295
+    },
+    {
+      "name": "Jochen Mass",
+      "elo": 1295
+    },
+    {
+      "name": "Brian Redman",
+      "elo": 1295
+    },
+    {
+      "name": "François Migault",
+      "elo": 1291
+    },
+    {
+      "name": "Derek Bell",
+      "elo": 1289
+    },
+    {
+      "name": "Reine Wisell",
+      "elo": 1285
+    },
+    {
+      "name": "Jean-Pierre Beltoise",
+      "elo": 1261
+    },
+    {
+      "name": "Tim Schenken",
+      "elo": 1256
+    },
+    {
+      "name": "Niki Lauda",
+      "elo": 1239
+    },
+    {
+      "name": "Dave Charlton",
+      "elo": 1169
+    }
+  ],
+  "1975": [
+    {
+      "name": "James Hunt",
+      "elo": 1595
+    },
+    {
+      "name": "Ronnie Peterson",
+      "elo": 1559
+    },
+    {
+      "name": "Carlos Reutemann",
+      "elo": 1555
+    },
+    {
+      "name": "Graham Hill",
+      "elo": 1551
+    },
+    {
+      "name": "Torsten Palm",
+      "elo": 1538
+    },
+    {
+      "name": "Jody Scheckter",
+      "elo": 1528
+    },
+    {
+      "name": "Jim Crawford",
+      "elo": 1527
+    },
+    {
+      "name": "Renzo Zorzi",
+      "elo": 1516
+    },
+    {
+      "name": "Damien Magee",
+      "elo": 1515
+    },
+    {
+      "name": "Guy Tunmer",
+      "elo": 1500
+    },
+    {
+      "name": "Brian Henton",
+      "elo": 1498
+    },
+    {
+      "name": "Gijs van Lennep",
+      "elo": 1498
+    },
+    {
+      "name": "Emerson Fittipaldi",
+      "elo": 1495
+    },
+    {
+      "name": "Jacky Ickx",
+      "elo": 1493
+    },
+    {
+      "name": "John Nicholson",
+      "elo": 1493
+    },
+    {
+      "name": "Michel Leclère",
+      "elo": 1482
+    },
+    {
+      "name": "Tom Pryce",
+      "elo": 1481
+    },
+    {
+      "name": "Chris Amon",
+      "elo": 1480
+    },
+    {
+      "name": "Hiroshi Fushida",
+      "elo": 1479
+    },
+    {
+      "name": "Lella Lombardi",
+      "elo": 1477
+    },
+    {
+      "name": "Vittorio Brambilla",
+      "elo": 1477
+    },
+    {
+      "name": "Harald Ertl",
+      "elo": 1477
+    },
+    {
+      "name": "Roelof Wunderink",
+      "elo": 1476
+    },
+    {
+      "name": "Ian Scheckter",
+      "elo": 1475
+    },
+    {
+      "name": "Jo Vonlanthen",
+      "elo": 1471
+    },
+    {
+      "name": "Dave Morgan",
+      "elo": 1468
+    },
+    {
+      "name": "Mike Wilds",
+      "elo": 1466
+    },
+    {
+      "name": "Jacques Laffite",
+      "elo": 1464
+    },
+    {
+      "name": "Niki Lauda",
+      "elo": 1461
+    },
+    {
+      "name": "John Watson",
+      "elo": 1460
+    },
+    {
+      "name": "Jean-Pierre Jabouille",
+      "elo": 1460
+    },
+    {
+      "name": "Alan Jones",
+      "elo": 1457
+    },
+    {
+      "name": "Brett Lunger",
+      "elo": 1456
+    },
+    {
+      "name": "Patrick Depailler",
+      "elo": 1456
+    },
+    {
+      "name": "Ian Ashley",
+      "elo": 1454
+    },
+    {
+      "name": "Vern Schuppan",
+      "elo": 1452
+    },
+    {
+      "name": "Bob Evans",
+      "elo": 1441
+    },
+    {
+      "name": "Tony Brise",
+      "elo": 1433
+    },
+    {
+      "name": "Hans-Joachim Stuck",
+      "elo": 1411
+    },
+    {
+      "name": "Mark Donohue",
+      "elo": 1403
+    },
+    {
+      "name": "Eddie Keizan",
+      "elo": 1398
+    },
+    {
+      "name": "Carlos Pace",
+      "elo": 1381
+    },
+    {
+      "name": "Mario Andretti",
+      "elo": 1377
+    },
+    {
+      "name": "Jochen Mass",
+      "elo": 1376
+    },
+    {
+      "name": "Jean-Pierre Jarier",
+      "elo": 1372
+    },
+    {
+      "name": "Rolf Stommelen",
+      "elo": 1362
+    },
+    {
+      "name": "Wilson Fittipaldi",
+      "elo": 1362
+    },
+    {
+      "name": "Arturo Merzario",
+      "elo": 1336
+    },
+    {
+      "name": "Clay Regazzoni",
+      "elo": 1324
+    },
+    {
+      "name": "François Migault",
+      "elo": 1311
+    },
+    {
+      "name": "Dave Charlton",
+      "elo": 1169
+    }
+  ],
+  "1976": [
+    {
+      "name": "James Hunt",
+      "elo": 1626
+    },
+    {
+      "name": "Jody Scheckter",
+      "elo": 1609
+    },
+    {
+      "name": "Patrick Depailler",
+      "elo": 1551
+    },
+    {
+      "name": "Alan Jones",
+      "elo": 1535
+    },
+    {
+      "name": "Carlos Pace",
+      "elo": 1531
+    },
+    {
+      "name": "Renzo Zorzi",
+      "elo": 1523
+    },
+    {
+      "name": "Jacky Ickx",
+      "elo": 1515
+    },
+    {
+      "name": "Alex Ribeiro",
+      "elo": 1514
+    },
+    {
+      "name": "Hans Binder",
+      "elo": 1513
+    },
+    {
+      "name": "Ingo Hoffmann",
+      "elo": 1512
+    },
+    {
+      "name": "Alessandro Pesenti-Rossi",
+      "elo": 1512
+    },
+    {
+      "name": "Boy Lunger",
+      "elo": 1512
+    },
+    {
+      "name": "Warwick Brown",
+      "elo": 1511
+    },
+    {
+      "name": "Masahiro Hasemi",
+      "elo": 1503
+    },
+    {
+      "name": "John Watson",
+      "elo": 1494
+    },
+    {
+      "name": "Mario Andretti",
+      "elo": 1487
+    },
+    {
+      "name": "Noritake Takahara",
+      "elo": 1487
+    },
+    {
+      "name": "Lella Lombardi",
+      "elo": 1485
+    },
+    {
+      "name": "Jacques Laffite",
+      "elo": 1482
+    },
+    {
+      "name": "Tom Pryce",
+      "elo": 1470
+    },
+    {
+      "name": "Loris Kessel",
+      "elo": 1468
+    },
+    {
+      "name": "Kazuyoshi Hoshino",
+      "elo": 1466
+    },
+    {
+      "name": "Bob Evans",
+      "elo": 1463
+    },
+    {
+      "name": "Patrick Nève",
+      "elo": 1462
+    },
+    {
+      "name": "Michel Leclère",
+      "elo": 1461
+    },
+    {
+      "name": "Clay Regazzoni",
+      "elo": 1451
+    },
+    {
+      "name": "Brett Lunger",
+      "elo": 1443
+    },
+    {
+      "name": "Jean-Pierre Jarier",
+      "elo": 1442
+    },
+    {
+      "name": "Ian Ashley",
+      "elo": 1440
+    },
+    {
+      "name": "Guy Edwards",
+      "elo": 1439
+    },
+    {
+      "name": "Otto Stuppacher",
+      "elo": 1439
+    },
+    {
+      "name": "Emerson Fittipaldi",
+      "elo": 1434
+    },
+    {
+      "name": "Conny Andersson",
+      "elo": 1431
+    },
+    {
+      "name": "Chris Amon",
+      "elo": 1430
+    },
+    {
+      "name": "Ian Scheckter",
+      "elo": 1430
+    },
+    {
+      "name": "Vittorio Brambilla",
+      "elo": 1425
+    },
+    {
+      "name": "Gunnar Nilsson",
+      "elo": 1423
+    },
+    {
+      "name": "Rolf Stommelen",
+      "elo": 1423
+    },
+    {
+      "name": "Harald Ertl",
+      "elo": 1417
+    },
+    {
+      "name": "Larry Perkins",
+      "elo": 1412
+    },
+    {
+      "name": "Jochen Mass",
+      "elo": 1402
+    },
+    {
+      "name": "Niki Lauda",
+      "elo": 1397
+    },
+    {
+      "name": "Ronnie Peterson",
+      "elo": 1390
+    },
+    {
+      "name": "Hans-Joachim Stuck",
+      "elo": 1357
+    },
+    {
+      "name": "Arturo Merzario",
+      "elo": 1353
+    },
+    {
+      "name": "Carlos Reutemann",
+      "elo": 1312
+    },
+    {
+      "name": "Henri Pescarolo",
+      "elo": 1295
+    }
+  ],
+  "1977": [
+    {
+      "name": "Jody Scheckter",
+      "elo": 1633
+    },
+    {
+      "name": "Carlos Pace",
+      "elo": 1553
+    },
+    {
+      "name": "Alan Jones",
+      "elo": 1550
+    },
+    {
+      "name": "Patrick Depailler",
+      "elo": 1538
+    },
+    {
+      "name": "Brian Henton",
+      "elo": 1529
+    },
+    {
+      "name": "James Hunt",
+      "elo": 1522
+    },
+    {
+      "name": "Rupert Keegan",
+      "elo": 1521
+    },
+    {
+      "name": "Jacques Laffite",
+      "elo": 1520
+    },
+    {
+      "name": "Jacky Ickx",
+      "elo": 1517
+    },
+    {
+      "name": "Alex Ribeiro",
+      "elo": 1516
+    },
+    {
+      "name": "Jochen Mass",
+      "elo": 1513
+    },
+    {
+      "name": "Niki Lauda",
+      "elo": 1513
+    },
+    {
+      "name": "Patrick Tambay",
+      "elo": 1502
+    },
+    {
+      "name": "Bruno Giacomelli",
+      "elo": 1500
+    },
+    {
+      "name": "Kunimitsu Takahashi",
+      "elo": 1500
+    },
+    {
+      "name": "Vittorio Brambilla",
+      "elo": 1499
+    },
+    {
+      "name": "Patrick Nève",
+      "elo": 1498
+    },
+    {
+      "name": "Danny Ongais",
+      "elo": 1494
+    },
+    {
+      "name": "Hans-Joachim Stuck",
+      "elo": 1491
+    },
+    {
+      "name": "Mario Andretti",
+      "elo": 1488
+    },
+    {
+      "name": "Kazuyoshi Hoshino",
+      "elo": 1484
+    },
+    {
+      "name": "Tom Pryce",
+      "elo": 1481
+    },
+    {
+      "name": "Emilio de Villota",
+      "elo": 1478
+    },
+    {
+      "name": "Hector Rebaque",
+      "elo": 1477
+    },
+    {
+      "name": "Ingo Hoffmann",
+      "elo": 1476
+    },
+    {
+      "name": "Emerson Fittipaldi",
+      "elo": 1469
+    },
+    {
+      "name": "Hans Binder",
+      "elo": 1466
+    },
+    {
+      "name": "Clay Regazzoni",
+      "elo": 1466
+    },
+    {
+      "name": "Riccardo Patrese",
+      "elo": 1461
+    },
+    {
+      "name": "Jackie Oliver",
+      "elo": 1460
+    },
+    {
+      "name": "Noritake Takahara",
+      "elo": 1460
+    },
+    {
+      "name": "Jean-Pierre Jabouille",
+      "elo": 1439
+    },
+    {
+      "name": "Renzo Zorzi",
+      "elo": 1438
+    },
+    {
+      "name": "Gilles Villeneuve",
+      "elo": 1436
+    },
+    {
+      "name": "Jean-Pierre Jarier",
+      "elo": 1427
+    },
+    {
+      "name": "David Purley",
+      "elo": 1423
+    },
+    {
+      "name": "Harald Ertl",
+      "elo": 1419
+    },
+    {
+      "name": "Gunnar Nilsson",
+      "elo": 1417
+    },
+    {
+      "name": "Brett Lunger",
+      "elo": 1417
+    },
+    {
+      "name": "Vern Schuppan",
+      "elo": 1416
+    },
+    {
+      "name": "Ronnie Peterson",
+      "elo": 1414
+    },
+    {
+      "name": "Boy Lunger",
+      "elo": 1413
+    },
+    {
+      "name": "Ian Ashley",
+      "elo": 1403
+    },
+    {
+      "name": "Larry Perkins",
+      "elo": 1397
+    },
+    {
+      "name": "John Watson",
+      "elo": 1370
+    },
+    {
+      "name": "Carlos Reutemann",
+      "elo": 1358
+    },
+    {
+      "name": "Ian Scheckter",
+      "elo": 1310
+    },
+    {
+      "name": "Arturo Merzario",
+      "elo": 1295
+    }
+  ],
+  "1978": [
+    {
+      "name": "Jody Scheckter",
+      "elo": 1652
+    },
+    {
+      "name": "Patrick Tambay",
+      "elo": 1637
+    },
+    {
+      "name": "Alan Jones",
+      "elo": 1576
+    },
+    {
+      "name": "Jacques Laffite",
+      "elo": 1569
+    },
+    {
+      "name": "Patrick Depailler",
+      "elo": 1542
+    },
+    {
+      "name": "Mario Andretti",
+      "elo": 1537
+    },
+    {
+      "name": "Derek Daly",
+      "elo": 1534
+    },
+    {
+      "name": "Vittorio Brambilla",
+      "elo": 1533
+    },
+    {
+      "name": "Jacky Ickx",
+      "elo": 1511
+    },
+    {
+      "name": "René Arnoux",
+      "elo": 1507
+    },
+    {
+      "name": "Michael Bleekemolen",
+      "elo": 1506
+    },
+    {
+      "name": "Danny Ongais",
+      "elo": 1506
+    },
+    {
+      "name": "Clay Regazzoni",
+      "elo": 1506
+    },
+    {
+      "name": "Jochen Mass",
+      "elo": 1505
+    },
+    {
+      "name": "Riccardo Patrese",
+      "elo": 1494
+    },
+    {
+      "name": "Emerson Fittipaldi",
+      "elo": 1493
+    },
+    {
+      "name": "Eddie Cheever",
+      "elo": 1484
+    },
+    {
+      "name": "Didier Pironi",
+      "elo": 1475
+    },
+    {
+      "name": "Bobby Rahal",
+      "elo": 1474
+    },
+    {
+      "name": "Jean-Pierre Jarier",
+      "elo": 1471
+    },
+    {
+      "name": "Ronnie Peterson",
+      "elo": 1459
+    },
+    {
+      "name": "Keke Rosberg",
+      "elo": 1444
+    },
+    {
+      "name": "Lamberto Leoni",
+      "elo": 1443
+    },
+    {
+      "name": "Gilles Villeneuve",
+      "elo": 1437
+    },
+    {
+      "name": "Niki Lauda",
+      "elo": 1437
+    },
+    {
+      "name": "Jean-Pierre Jabouille",
+      "elo": 1435
+    },
+    {
+      "name": "Bruno Giacomelli",
+      "elo": 1435
+    },
+    {
+      "name": "John Watson",
+      "elo": 1431
+    },
+    {
+      "name": "Harald Ertl",
+      "elo": 1429
+    },
+    {
+      "name": "Carlos Reutemann",
+      "elo": 1425
+    },
+    {
+      "name": "Nelson Piquet",
+      "elo": 1403
+    },
+    {
+      "name": "James Hunt",
+      "elo": 1399
+    },
+    {
+      "name": "Rolf Stommelen",
+      "elo": 1395
+    },
+    {
+      "name": "Brett Lunger",
+      "elo": 1386
+    },
+    {
+      "name": "Rupert Keegan",
+      "elo": 1377
+    },
+    {
+      "name": "Hans-Joachim Stuck",
+      "elo": 1377
+    },
+    {
+      "name": "Hector Rebaque",
+      "elo": 1347
+    },
+    {
+      "name": "Arturo Merzario",
+      "elo": 1319
+    }
+  ],
+  "1979": [
+    {
+      "name": "Jody Scheckter",
+      "elo": 1649
+    },
+    {
+      "name": "Patrick Depailler",
+      "elo": 1620
+    },
+    {
+      "name": "John Watson",
+      "elo": 1602
+    },
+    {
+      "name": "Jean-Pierre Jarier",
+      "elo": 1599
+    },
+    {
+      "name": "Alan Jones",
+      "elo": 1597
+    },
+    {
+      "name": "Clay Regazzoni",
+      "elo": 1588
+    },
+    {
+      "name": "Jacques Laffite",
+      "elo": 1575
+    },
+    {
+      "name": "Jan Lammers",
+      "elo": 1535
+    },
+    {
+      "name": "Derek Daly",
+      "elo": 1534
+    },
+    {
+      "name": "Geoff Lees",
+      "elo": 1528
+    },
+    {
+      "name": "Jochen Mass",
+      "elo": 1511
+    },
+    {
+      "name": "Gilles Villeneuve",
+      "elo": 1506
+    },
+    {
+      "name": "Patrick Gaillard",
+      "elo": 1499
+    },
+    {
+      "name": "Patrick Tambay",
+      "elo": 1497
+    },
+    {
+      "name": "René Arnoux",
+      "elo": 1485
+    },
+    {
+      "name": "Jacky Ickx",
+      "elo": 1480
+    },
+    {
+      "name": "Riccardo Patrese",
+      "elo": 1474
+    },
+    {
+      "name": "Hector Rebaque",
+      "elo": 1465
+    },
+    {
+      "name": "Keke Rosberg",
+      "elo": 1451
+    },
+    {
+      "name": "Elio de Angelis",
+      "elo": 1449
+    },
+    {
+      "name": "Nelson Piquet",
+      "elo": 1436
+    },
+    {
+      "name": "Emerson Fittipaldi",
+      "elo": 1428
+    },
+    {
+      "name": "Carlos Reutemann",
+      "elo": 1410
+    },
+    {
+      "name": "Didier Pironi",
+      "elo": 1407
+    },
+    {
+      "name": "James Hunt",
+      "elo": 1394
+    },
+    {
+      "name": "Jean-Pierre Jabouille",
+      "elo": 1391
+    },
+    {
+      "name": "Hans-Joachim Stuck",
+      "elo": 1359
+    },
+    {
+      "name": "Niki Lauda",
+      "elo": 1354
+    },
+    {
+      "name": "Bruno Giacomelli",
+      "elo": 1340
+    },
+    {
+      "name": "Mario Andretti",
+      "elo": 1305
+    },
+    {
+      "name": "Arturo Merzario",
+      "elo": 1305
+    }
+  ],
+  "1980": [
+    {
+      "name": "Alan Jones",
+      "elo": 1665
+    },
+    {
+      "name": "Jean-Pierre Jarier",
+      "elo": 1629
+    },
+    {
+      "name": "Nelson Piquet",
+      "elo": 1603
+    },
+    {
+      "name": "Gilles Villeneuve",
+      "elo": 1579
+    },
+    {
+      "name": "Clay Regazzoni",
+      "elo": 1577
+    },
+    {
+      "name": "Jody Scheckter",
+      "elo": 1572
+    },
+    {
+      "name": "Didier Pironi",
+      "elo": 1559
+    },
+    {
+      "name": "Carlos Reutemann",
+      "elo": 1552
+    },
+    {
+      "name": "John Watson",
+      "elo": 1551
+    },
+    {
+      "name": "Jacques Laffite",
+      "elo": 1537
+    },
+    {
+      "name": "Alain Prost",
+      "elo": 1535
+    },
+    {
+      "name": "René Arnoux",
+      "elo": 1530
+    },
+    {
+      "name": "Geoff Lees",
+      "elo": 1522
+    },
+    {
+      "name": "Jan Lammers",
+      "elo": 1515
+    },
+    {
+      "name": "Jochen Mass",
+      "elo": 1509
+    },
+    {
+      "name": "Marc Surer",
+      "elo": 1505
+    },
+    {
+      "name": "Keke Rosberg",
+      "elo": 1498
+    },
+    {
+      "name": "Tiff Needell",
+      "elo": 1490
+    },
+    {
+      "name": "Elio de Angelis",
+      "elo": 1472
+    },
+    {
+      "name": "Riccardo Patrese",
+      "elo": 1467
+    },
+    {
+      "name": "Andrea de Cesaris",
+      "elo": 1465
+    },
+    {
+      "name": "Derek Daly",
+      "elo": 1462
+    },
+    {
+      "name": "Vittorio Brambilla",
+      "elo": 1453
+    },
+    {
+      "name": "Mike Thackwell",
+      "elo": 1452
+    },
+    {
+      "name": "Nigel Mansell",
+      "elo": 1445
+    },
+    {
+      "name": "Eddie Cheever",
+      "elo": 1443
+    },
+    {
+      "name": "Hector Rebaque",
+      "elo": 1434
+    },
+    {
+      "name": "Bruno Giacomelli",
+      "elo": 1430
+    },
+    {
+      "name": "Patrick Depailler",
+      "elo": 1411
+    },
+    {
+      "name": "Emerson Fittipaldi",
+      "elo": 1398
+    },
+    {
+      "name": "Ricardo Zunino",
+      "elo": 1396
+    },
+    {
+      "name": "Mario Andretti",
+      "elo": 1390
+    },
+    {
+      "name": "Jean-Pierre Jabouille",
+      "elo": 1382
+    },
+    {
+      "name": "Rupert Keegan",
+      "elo": 1332
+    }
+  ],
+  "1981": [
+    {
+      "name": "Nelson Piquet",
+      "elo": 1666
+    },
+    {
+      "name": "John Watson",
+      "elo": 1633
+    },
+    {
+      "name": "Alan Jones",
+      "elo": 1626
+    },
+    {
+      "name": "Jacques Laffite",
+      "elo": 1610
+    },
+    {
+      "name": "Didier Pironi",
+      "elo": 1596
+    },
+    {
+      "name": "Alain Prost",
+      "elo": 1595
+    },
+    {
+      "name": "Jean-Pierre Jarier",
+      "elo": 1591
+    },
+    {
+      "name": "Carlos Reutemann",
+      "elo": 1576
+    },
+    {
+      "name": "Brian Henton",
+      "elo": 1535
+    },
+    {
+      "name": "Gilles Villeneuve",
+      "elo": 1527
+    },
+    {
+      "name": "Marc Surer",
+      "elo": 1522
+    },
+    {
+      "name": "Piercarlo Ghinzani",
+      "elo": 1520
+    },
+    {
+      "name": "Slim Borgudd",
+      "elo": 1511
+    },
+    {
+      "name": "Elio de Angelis",
+      "elo": 1506
+    },
+    {
+      "name": "Michele Alboreto",
+      "elo": 1506
+    },
+    {
+      "name": "Derek Warwick",
+      "elo": 1499
+    },
+    {
+      "name": "Beppe Gabbiani",
+      "elo": 1489
+    },
+    {
+      "name": "Chico Serra",
+      "elo": 1486
+    },
+    {
+      "name": "Eliseo Salazar",
+      "elo": 1482
+    },
+    {
+      "name": "Jan Lammers",
+      "elo": 1479
+    },
+    {
+      "name": "Miguel Ángel Guerra",
+      "elo": 1472
+    },
+    {
+      "name": "Riccardo Patrese",
+      "elo": 1470
+    },
+    {
+      "name": "Derek Daly",
+      "elo": 1466
+    },
+    {
+      "name": "Bruno Giacomelli",
+      "elo": 1465
+    },
+    {
+      "name": "Siegfried Stohr",
+      "elo": 1463
+    },
+    {
+      "name": "Keke Rosberg",
+      "elo": 1461
+    },
+    {
+      "name": "Ricardo Zunino",
+      "elo": 1449
+    },
+    {
+      "name": "René Arnoux",
+      "elo": 1442
+    },
+    {
+      "name": "Eddie Cheever",
+      "elo": 1435
+    },
+    {
+      "name": "Mario Andretti",
+      "elo": 1433
+    },
+    {
+      "name": "Hector Rebaque",
+      "elo": 1431
+    },
+    {
+      "name": "Andrea de Cesaris",
+      "elo": 1427
+    },
+    {
+      "name": "Patrick Tambay",
+      "elo": 1416
+    },
+    {
+      "name": "Jean-Pierre Jabouille",
+      "elo": 1393
+    },
+    {
+      "name": "Nigel Mansell",
+      "elo": 1388
+    }
+  ],
+  "1982": [
+    {
+      "name": "Nelson Piquet",
+      "elo": 1646
+    },
+    {
+      "name": "Keke Rosberg",
+      "elo": 1626
+    },
+    {
+      "name": "Didier Pironi",
+      "elo": 1625
+    },
+    {
+      "name": "Michele Alboreto",
+      "elo": 1612
+    },
+    {
+      "name": "Alain Prost",
+      "elo": 1576
+    },
+    {
+      "name": "Carlos Reutemann",
+      "elo": 1564
+    },
+    {
+      "name": "Jochen Mass",
+      "elo": 1562
+    },
+    {
+      "name": "Eddie Cheever",
+      "elo": 1561
+    },
+    {
+      "name": "Marc Surer",
+      "elo": 1549
+    },
+    {
+      "name": "John Watson",
+      "elo": 1542
+    },
+    {
+      "name": "Jean-Pierre Jarier",
+      "elo": 1541
+    },
+    {
+      "name": "Niki Lauda",
+      "elo": 1524
+    },
+    {
+      "name": "Geoff Lees",
+      "elo": 1520
+    },
+    {
+      "name": "Mauro Baldi",
+      "elo": 1509
+    },
+    {
+      "name": "Chico Serra",
+      "elo": 1504
+    },
+    {
+      "name": "Brian Henton",
+      "elo": 1502
+    },
+    {
+      "name": "Tommy Byrne",
+      "elo": 1502
+    },
+    {
+      "name": "Gilles Villeneuve",
+      "elo": 1499
+    },
+    {
+      "name": "René Arnoux",
+      "elo": 1486
+    },
+    {
+      "name": "Patrick Tambay",
+      "elo": 1485
+    },
+    {
+      "name": "Elio de Angelis",
+      "elo": 1485
+    },
+    {
+      "name": "Eliseo Salazar",
+      "elo": 1485
+    },
+    {
+      "name": "Slim Borgudd",
+      "elo": 1478
+    },
+    {
+      "name": "Jan Lammers",
+      "elo": 1478
+    },
+    {
+      "name": "Roberto Guerrero",
+      "elo": 1465
+    },
+    {
+      "name": "Derek Warwick",
+      "elo": 1462
+    },
+    {
+      "name": "Manfred Winkelhock",
+      "elo": 1462
+    },
+    {
+      "name": "Jacques Laffite",
+      "elo": 1459
+    },
+    {
+      "name": "Teo Fabi",
+      "elo": 1451
+    },
+    {
+      "name": "Andrea de Cesaris",
+      "elo": 1450
+    },
+    {
+      "name": "Riccardo Paletti",
+      "elo": 1444
+    },
+    {
+      "name": "Mario Andretti",
+      "elo": 1439
+    },
+    {
+      "name": "Riccardo Patrese",
+      "elo": 1436
+    },
+    {
+      "name": "Derek Daly",
+      "elo": 1435
+    },
+    {
+      "name": "Raul Boesel",
+      "elo": 1419
+    },
+    {
+      "name": "Nigel Mansell",
+      "elo": 1409
+    },
+    {
+      "name": "Bruno Giacomelli",
+      "elo": 1396
+    },
+    {
+      "name": "Rupert Keegan",
+      "elo": 1351
+    }
+  ],
+  "1983": [
+    {
+      "name": "Nelson Piquet",
+      "elo": 1637
+    },
+    {
+      "name": "Alain Prost",
+      "elo": 1622
+    },
+    {
+      "name": "Keke Rosberg",
+      "elo": 1608
+    },
+    {
+      "name": "Alan Jones",
+      "elo": 1595
+    },
+    {
+      "name": "Eddie Cheever",
+      "elo": 1556
+    },
+    {
+      "name": "Marc Surer",
+      "elo": 1556
+    },
+    {
+      "name": "Riccardo Patrese",
+      "elo": 1551
+    },
+    {
+      "name": "René Arnoux",
+      "elo": 1550
+    },
+    {
+      "name": "Corrado Fabi",
+      "elo": 1548
+    },
+    {
+      "name": "Derek Warwick",
+      "elo": 1543
+    },
+    {
+      "name": "Michele Alboreto",
+      "elo": 1538
+    },
+    {
+      "name": "Johnny Cecotto",
+      "elo": 1529
+    },
+    {
+      "name": "Thierry Boutsen",
+      "elo": 1526
+    },
+    {
+      "name": "Jonathan Palmer",
+      "elo": 1525
+    },
+    {
+      "name": "Chico Serra",
+      "elo": 1517
+    },
+    {
+      "name": "John Watson",
+      "elo": 1515
+    },
+    {
+      "name": "Danny Sullivan",
+      "elo": 1514
+    },
+    {
+      "name": "Niki Lauda",
+      "elo": 1507
+    },
+    {
+      "name": "Kenny Acheson",
+      "elo": 1505
+    },
+    {
+      "name": "Patrick Tambay",
+      "elo": 1500
+    },
+    {
+      "name": "Nigel Mansell",
+      "elo": 1494
+    },
+    {
+      "name": "Stefan Johansson",
+      "elo": 1488
+    },
+    {
+      "name": "Raul Boesel",
+      "elo": 1480
+    },
+    {
+      "name": "Andrea de Cesaris",
+      "elo": 1479
+    },
+    {
+      "name": "Eliseo Salazar",
+      "elo": 1477
+    },
+    {
+      "name": "Jean-Pierre Jarier",
+      "elo": 1459
+    },
+    {
+      "name": "Piercarlo Ghinzani",
+      "elo": 1458
+    },
+    {
+      "name": "Jacques Laffite",
+      "elo": 1450
+    },
+    {
+      "name": "Manfred Winkelhock",
+      "elo": 1445
+    },
+    {
+      "name": "Roberto Guerrero",
+      "elo": 1432
+    },
+    {
+      "name": "Mauro Baldi",
+      "elo": 1414
+    },
+    {
+      "name": "Bruno Giacomelli",
+      "elo": 1377
+    },
+    {
+      "name": "Elio de Angelis",
+      "elo": 1342
+    }
+  ],
+  "1984": [
+    {
+      "name": "Alain Prost",
+      "elo": 1653
+    },
+    {
+      "name": "Niki Lauda",
+      "elo": 1646
+    },
+    {
+      "name": "Michele Alboreto",
+      "elo": 1606
+    },
+    {
+      "name": "Thierry Boutsen",
+      "elo": 1606
+    },
+    {
+      "name": "Nelson Piquet",
+      "elo": 1589
+    },
+    {
+      "name": "Patrick Tambay",
+      "elo": 1582
+    },
+    {
+      "name": "Riccardo Patrese",
+      "elo": 1574
+    },
+    {
+      "name": "Martin Brundle",
+      "elo": 1564
+    },
+    {
+      "name": "René Arnoux",
+      "elo": 1543
+    },
+    {
+      "name": "Jo Gartner",
+      "elo": 1542
+    },
+    {
+      "name": "Jonathan Palmer",
+      "elo": 1538
+    },
+    {
+      "name": "Teo Fabi",
+      "elo": 1535
+    },
+    {
+      "name": "Corrado Fabi",
+      "elo": 1534
+    },
+    {
+      "name": "Derek Warwick",
+      "elo": 1530
+    },
+    {
+      "name": "Andrea de Cesaris",
+      "elo": 1526
+    },
+    {
+      "name": "Ayrton Senna",
+      "elo": 1514
+    },
+    {
+      "name": "Jacques Laffite",
+      "elo": 1512
+    },
+    {
+      "name": "Gerhard Berger",
+      "elo": 1506
+    },
+    {
+      "name": "Keke Rosberg",
+      "elo": 1502
+    },
+    {
+      "name": "Huub Rothengatter",
+      "elo": 1495
+    },
+    {
+      "name": "Eddie Cheever",
+      "elo": 1481
+    },
+    {
+      "name": "Stefan Bellof",
+      "elo": 1478
+    },
+    {
+      "name": "Stefan Johansson",
+      "elo": 1467
+    },
+    {
+      "name": "Philippe Streiff",
+      "elo": 1463
+    },
+    {
+      "name": "Elio de Angelis",
+      "elo": 1463
+    },
+    {
+      "name": "Mauro Baldi",
+      "elo": 1460
+    },
+    {
+      "name": "Philippe Alliot",
+      "elo": 1435
+    },
+    {
+      "name": "Nigel Mansell",
+      "elo": 1427
+    },
+    {
+      "name": "Mike Thackwell",
+      "elo": 1427
+    },
+    {
+      "name": "Marc Surer",
+      "elo": 1422
+    },
+    {
+      "name": "Johnny Cecotto",
+      "elo": 1421
+    },
+    {
+      "name": "Piercarlo Ghinzani",
+      "elo": 1416
+    },
+    {
+      "name": "François Hesnault",
+      "elo": 1412
+    },
+    {
+      "name": "Manfred Winkelhock",
+      "elo": 1400
+    }
+  ],
+  "1985": [
+    {
+      "name": "Alain Prost",
+      "elo": 1730
+    },
+    {
+      "name": "Stefan Johansson",
+      "elo": 1638
+    },
+    {
+      "name": "Niki Lauda",
+      "elo": 1619
+    },
+    {
+      "name": "Thierry Boutsen",
+      "elo": 1597
+    },
+    {
+      "name": "Gerhard Berger",
+      "elo": 1593
+    },
+    {
+      "name": "Ayrton Senna",
+      "elo": 1572
+    },
+    {
+      "name": "Derek Warwick",
+      "elo": 1570
+    },
+    {
+      "name": "Patrick Tambay",
+      "elo": 1556
+    },
+    {
+      "name": "Ivan Capelli",
+      "elo": 1544
+    },
+    {
+      "name": "Nigel Mansell",
+      "elo": 1541
+    },
+    {
+      "name": "Riccardo Patrese",
+      "elo": 1541
+    },
+    {
+      "name": "René Arnoux",
+      "elo": 1540
+    },
+    {
+      "name": "Michele Alboreto",
+      "elo": 1530
+    },
+    {
+      "name": "Stefan Bellof",
+      "elo": 1529
+    },
+    {
+      "name": "Alan Jones",
+      "elo": 1526
+    },
+    {
+      "name": "Jacques Laffite",
+      "elo": 1519
+    },
+    {
+      "name": "John Watson",
+      "elo": 1518
+    },
+    {
+      "name": "Philippe Streiff",
+      "elo": 1517
+    },
+    {
+      "name": "Nelson Piquet",
+      "elo": 1515
+    },
+    {
+      "name": "Martin Brundle",
+      "elo": 1513
+    },
+    {
+      "name": "Keke Rosberg",
+      "elo": 1508
+    },
+    {
+      "name": "Huub Rothengatter",
+      "elo": 1502
+    },
+    {
+      "name": "Christian Danner",
+      "elo": 1495
+    },
+    {
+      "name": "Teo Fabi",
+      "elo": 1490
+    },
+    {
+      "name": "Marc Surer",
+      "elo": 1490
+    },
+    {
+      "name": "Pierluigi Martini",
+      "elo": 1476
+    },
+    {
+      "name": "Elio de Angelis",
+      "elo": 1475
+    },
+    {
+      "name": "Kenny Acheson",
+      "elo": 1473
+    },
+    {
+      "name": "Andrea de Cesaris",
+      "elo": 1470
+    },
+    {
+      "name": "Jonathan Palmer",
+      "elo": 1466
+    },
+    {
+      "name": "Manfred Winkelhock",
+      "elo": 1443
+    },
+    {
+      "name": "Mauro Baldi",
+      "elo": 1434
+    },
+    {
+      "name": "Eddie Cheever",
+      "elo": 1408
+    },
+    {
+      "name": "Philippe Alliot",
+      "elo": 1385
+    },
+    {
+      "name": "François Hesnault",
+      "elo": 1372
+    },
+    {
+      "name": "Piercarlo Ghinzani",
+      "elo": 1365
+    }
+  ],
+  "1986": [
+    {
+      "name": "Alain Prost",
+      "elo": 1771
+    },
+    {
+      "name": "Stefan Johansson",
+      "elo": 1655
+    },
+    {
+      "name": "Nelson Piquet",
+      "elo": 1621
+    },
+    {
+      "name": "Nigel Mansell",
+      "elo": 1575
+    },
+    {
+      "name": "Ayrton Senna",
+      "elo": 1574
+    },
+    {
+      "name": "Gerhard Berger",
+      "elo": 1573
+    },
+    {
+      "name": "Keke Rosberg",
+      "elo": 1568
+    },
+    {
+      "name": "Martin Brundle",
+      "elo": 1565
+    },
+    {
+      "name": "Riccardo Patrese",
+      "elo": 1564
+    },
+    {
+      "name": "Jonathan Palmer",
+      "elo": 1552
+    },
+    {
+      "name": "René Arnoux",
+      "elo": 1551
+    },
+    {
+      "name": "Michele Alboreto",
+      "elo": 1539
+    },
+    {
+      "name": "Thierry Boutsen",
+      "elo": 1531
+    },
+    {
+      "name": "Ivan Capelli",
+      "elo": 1525
+    },
+    {
+      "name": "Patrick Tambay",
+      "elo": 1521
+    },
+    {
+      "name": "Alex Caffi",
+      "elo": 1520
+    },
+    {
+      "name": "Jacques Laffite",
+      "elo": 1515
+    },
+    {
+      "name": "Teo Fabi",
+      "elo": 1510
+    },
+    {
+      "name": "Johnny Dumfries",
+      "elo": 1509
+    },
+    {
+      "name": "Marc Surer",
+      "elo": 1508
+    },
+    {
+      "name": "Derek Warwick",
+      "elo": 1490
+    },
+    {
+      "name": "Christian Danner",
+      "elo": 1482
+    },
+    {
+      "name": "Allen Berg",
+      "elo": 1477
+    },
+    {
+      "name": "Andrea de Cesaris",
+      "elo": 1471
+    },
+    {
+      "name": "Alan Jones",
+      "elo": 1470
+    },
+    {
+      "name": "Elio de Angelis",
+      "elo": 1469
+    },
+    {
+      "name": "Philippe Streiff",
+      "elo": 1467
+    },
+    {
+      "name": "Philippe Alliot",
+      "elo": 1436
+    },
+    {
+      "name": "Eddie Cheever",
+      "elo": 1434
+    },
+    {
+      "name": "Alessandro Nannini",
+      "elo": 1411
+    },
+    {
+      "name": "Huub Rothengatter",
+      "elo": 1394
+    },
+    {
+      "name": "Piercarlo Ghinzani",
+      "elo": 1346
+    }
+  ],
+  "1987": [
+    {
+      "name": "Alain Prost",
+      "elo": 1767
+    },
+    {
+      "name": "Stefan Johansson",
+      "elo": 1725
+    },
+    {
+      "name": "Ayrton Senna",
+      "elo": 1725
+    },
+    {
+      "name": "Nelson Piquet",
+      "elo": 1638
+    },
+    {
+      "name": "Gerhard Berger",
+      "elo": 1637
+    },
+    {
+      "name": "Riccardo Patrese",
+      "elo": 1592
+    },
+    {
+      "name": "Jonathan Palmer",
+      "elo": 1590
+    },
+    {
+      "name": "Thierry Boutsen",
+      "elo": 1579
+    },
+    {
+      "name": "Nigel Mansell",
+      "elo": 1578
+    },
+    {
+      "name": "Yannick Dalmas",
+      "elo": 1533
+    },
+    {
+      "name": "Michele Alboreto",
+      "elo": 1528
+    },
+    {
+      "name": "Eddie Cheever",
+      "elo": 1525
+    },
+    {
+      "name": "Martin Brundle",
+      "elo": 1523
+    },
+    {
+      "name": "Franco Forini",
+      "elo": 1516
+    },
+    {
+      "name": "Roberto Moreno",
+      "elo": 1511
+    },
+    {
+      "name": "Pascal Fabre",
+      "elo": 1509
+    },
+    {
+      "name": "Teo Fabi",
+      "elo": 1506
+    },
+    {
+      "name": "Nicola Larini",
+      "elo": 1486
+    },
+    {
+      "name": "Ivan Capelli",
+      "elo": 1484
+    },
+    {
+      "name": "Gabriele Tarquini",
+      "elo": 1480
+    },
+    {
+      "name": "Stefano Modena",
+      "elo": 1474
+    },
+    {
+      "name": "Philippe Streiff",
+      "elo": 1466
+    },
+    {
+      "name": "Christian Danner",
+      "elo": 1461
+    },
+    {
+      "name": "Andrea de Cesaris",
+      "elo": 1453
+    },
+    {
+      "name": "Philippe Alliot",
+      "elo": 1452
+    },
+    {
+      "name": "Alex Caffi",
+      "elo": 1446
+    },
+    {
+      "name": "Satoru Nakajima",
+      "elo": 1425
+    },
+    {
+      "name": "René Arnoux",
+      "elo": 1424
+    },
+    {
+      "name": "Piercarlo Ghinzani",
+      "elo": 1421
+    },
+    {
+      "name": "Adrián Campos",
+      "elo": 1421
+    },
+    {
+      "name": "Derek Warwick",
+      "elo": 1404
+    },
+    {
+      "name": "Alessandro Nannini",
+      "elo": 1383
+    }
+  ],
+  "1988": [
+    {
+      "name": "Alain Prost",
+      "elo": 1868
+    },
+    {
+      "name": "Ayrton Senna",
+      "elo": 1862
+    },
+    {
+      "name": "Gerhard Berger",
+      "elo": 1649
+    },
+    {
+      "name": "Riccardo Patrese",
+      "elo": 1611
+    },
+    {
+      "name": "Thierry Boutsen",
+      "elo": 1596
+    },
+    {
+      "name": "Nelson Piquet",
+      "elo": 1575
+    },
+    {
+      "name": "Stefan Johansson",
+      "elo": 1566
+    },
+    {
+      "name": "Martin Brundle",
+      "elo": 1554
+    },
+    {
+      "name": "Nigel Mansell",
+      "elo": 1533
+    },
+    {
+      "name": "Jonathan Palmer",
+      "elo": 1532
+    },
+    {
+      "name": "Michele Alboreto",
+      "elo": 1524
+    },
+    {
+      "name": "Yannick Dalmas",
+      "elo": 1522
+    },
+    {
+      "name": "Bernd Schneider",
+      "elo": 1506
+    },
+    {
+      "name": "Ivan Capelli",
+      "elo": 1504
+    },
+    {
+      "name": "Pierluigi Martini",
+      "elo": 1502
+    },
+    {
+      "name": "Stefano Modena",
+      "elo": 1498
+    },
+    {
+      "name": "Jean-Louis Schlesser",
+      "elo": 1494
+    },
+    {
+      "name": "Gabriele Tarquini",
+      "elo": 1493
+    },
+    {
+      "name": "Maurício Gugelmin",
+      "elo": 1490
+    },
+    {
+      "name": "Derek Warwick",
+      "elo": 1489
+    },
+    {
+      "name": "Julian Bailey",
+      "elo": 1481
+    },
+    {
+      "name": "Aguri Suzuki",
+      "elo": 1479
+    },
+    {
+      "name": "René Arnoux",
+      "elo": 1470
+    },
+    {
+      "name": "Satoru Nakajima",
+      "elo": 1468
+    },
+    {
+      "name": "Luis Pérez-Sala",
+      "elo": 1465
+    },
+    {
+      "name": "Philippe Alliot",
+      "elo": 1463
+    },
+    {
+      "name": "Philippe Streiff",
+      "elo": 1463
+    },
+    {
+      "name": "Alex Caffi",
+      "elo": 1458
+    },
+    {
+      "name": "Alessandro Nannini",
+      "elo": 1454
+    },
+    {
+      "name": "Andrea de Cesaris",
+      "elo": 1454
+    },
+    {
+      "name": "Eddie Cheever",
+      "elo": 1442
+    },
+    {
+      "name": "Nicola Larini",
+      "elo": 1441
+    },
+    {
+      "name": "Oscar Larrauri",
+      "elo": 1435
+    },
+    {
+      "name": "Piercarlo Ghinzani",
+      "elo": 1401
+    },
+    {
+      "name": "Adrián Campos",
+      "elo": 1391
+    }
+  ],
+  "1989": [
+    {
+      "name": "Ayrton Senna",
+      "elo": 1934
+    },
+    {
+      "name": "Alain Prost",
+      "elo": 1843
+    },
+    {
+      "name": "Riccardo Patrese",
+      "elo": 1656
+    },
+    {
+      "name": "Thierry Boutsen",
+      "elo": 1643
+    },
+    {
+      "name": "Nigel Mansell",
+      "elo": 1642
+    },
+    {
+      "name": "Stefan Johansson",
+      "elo": 1606
+    },
+    {
+      "name": "Jean Alesi",
+      "elo": 1595
+    },
+    {
+      "name": "Martin Brundle",
+      "elo": 1572
+    },
+    {
+      "name": "Nelson Piquet",
+      "elo": 1570
+    },
+    {
+      "name": "Gerhard Berger",
+      "elo": 1550
+    },
+    {
+      "name": "Maurício Gugelmin",
+      "elo": 1543
+    },
+    {
+      "name": "Alessandro Nannini",
+      "elo": 1536
+    },
+    {
+      "name": "Éric Bernard",
+      "elo": 1527
+    },
+    {
+      "name": "Olivier Grouillard",
+      "elo": 1510
+    },
+    {
+      "name": "Satoru Nakajima",
+      "elo": 1507
+    },
+    {
+      "name": "Derek Warwick",
+      "elo": 1506
+    },
+    {
+      "name": "Jyrki Järvilehto",
+      "elo": 1500
+    },
+    {
+      "name": "Gabriele Tarquini",
+      "elo": 1497
+    },
+    {
+      "name": "Roberto Moreno",
+      "elo": 1496
+    },
+    {
+      "name": "Pierluigi Martini",
+      "elo": 1496
+    },
+    {
+      "name": "Christian Danner",
+      "elo": 1494
+    },
+    {
+      "name": "Alex Caffi",
+      "elo": 1492
+    },
+    {
+      "name": "Bernd Schneider",
+      "elo": 1488
+    },
+    {
+      "name": "Jonathan Palmer",
+      "elo": 1486
+    },
+    {
+      "name": "Yannick Dalmas",
+      "elo": 1485
+    },
+    {
+      "name": "Martin Donnelly",
+      "elo": 1484
+    },
+    {
+      "name": "Volker Weidler",
+      "elo": 1482
+    },
+    {
+      "name": "Luis Pérez-Sala",
+      "elo": 1480
+    },
+    {
+      "name": "Eddie Cheever",
+      "elo": 1475
+    },
+    {
+      "name": "Pierre-Henri Raphanel",
+      "elo": 1473
+    },
+    {
+      "name": "René Arnoux",
+      "elo": 1471
+    },
+    {
+      "name": "Stefano Modena",
+      "elo": 1464
+    },
+    {
+      "name": "Paolo Barilla",
+      "elo": 1463
+    },
+    {
+      "name": "Bertrand Gachot",
+      "elo": 1463
+    },
+    {
+      "name": "Philippe Alliot",
+      "elo": 1462
+    },
+    {
+      "name": "Johnny Herbert",
+      "elo": 1460
+    },
+    {
+      "name": "Emanuele Pirro",
+      "elo": 1445
+    },
+    {
+      "name": "Michele Alboreto",
+      "elo": 1443
+    },
+    {
+      "name": "Piercarlo Ghinzani",
+      "elo": 1435
+    },
+    {
+      "name": "Andrea de Cesaris",
+      "elo": 1430
+    },
+    {
+      "name": "Ivan Capelli",
+      "elo": 1380
+    },
+    {
+      "name": "Nicola Larini",
+      "elo": 1379
+    }
+  ],
+  "1990": [
+    {
+      "name": "Gerhard Berger",
+      "elo": 1859
+    },
+    {
+      "name": "Ayrton Senna",
+      "elo": 1824
+    },
+    {
+      "name": "Nigel Mansell",
+      "elo": 1804
+    },
+    {
+      "name": "Alain Prost",
+      "elo": 1774
+    },
+    {
+      "name": "Riccardo Patrese",
+      "elo": 1682
+    },
+    {
+      "name": "Thierry Boutsen",
+      "elo": 1681
+    },
+    {
+      "name": "Nelson Piquet",
+      "elo": 1632
+    },
+    {
+      "name": "Alessandro Nannini",
+      "elo": 1558
+    },
+    {
+      "name": "Jean Alesi",
+      "elo": 1555
+    },
+    {
+      "name": "Alex Caffi",
+      "elo": 1538
+    },
+    {
+      "name": "Nicola Larini",
+      "elo": 1529
+    },
+    {
+      "name": "Derek Warwick",
+      "elo": 1519
+    },
+    {
+      "name": "Satoru Nakajima",
+      "elo": 1506
+    },
+    {
+      "name": "Aguri Suzuki",
+      "elo": 1491
+    },
+    {
+      "name": "Yannick Dalmas",
+      "elo": 1490
+    },
+    {
+      "name": "Olivier Grouillard",
+      "elo": 1486
+    },
+    {
+      "name": "Pierluigi Martini",
+      "elo": 1485
+    },
+    {
+      "name": "Jyrki Järvilehto",
+      "elo": 1477
+    },
+    {
+      "name": "Gregor Foitek",
+      "elo": 1476
+    },
+    {
+      "name": "Roberto Moreno",
+      "elo": 1473
+    },
+    {
+      "name": "Johnny Herbert",
+      "elo": 1472
+    },
+    {
+      "name": "Bernd Schneider",
+      "elo": 1472
+    },
+    {
+      "name": "Éric Bernard",
+      "elo": 1468
+    },
+    {
+      "name": "Ivan Capelli",
+      "elo": 1467
+    },
+    {
+      "name": "Paolo Barilla",
+      "elo": 1463
+    },
+    {
+      "name": "Gabriele Tarquini",
+      "elo": 1462
+    },
+    {
+      "name": "Stefano Modena",
+      "elo": 1460
+    },
+    {
+      "name": "Maurício Gugelmin",
+      "elo": 1455
+    },
+    {
+      "name": "David Brabham",
+      "elo": 1454
+    },
+    {
+      "name": "Gianni Morbidelli",
+      "elo": 1453
+    },
+    {
+      "name": "Michele Alboreto",
+      "elo": 1431
+    },
+    {
+      "name": "Martin Donnelly",
+      "elo": 1404
+    },
+    {
+      "name": "Emanuele Pirro",
+      "elo": 1387
+    },
+    {
+      "name": "Andrea de Cesaris",
+      "elo": 1365
+    },
+    {
+      "name": "Philippe Alliot",
+      "elo": 1358
+    }
+  ],
+  "1991": [
+    {
+      "name": "Ayrton Senna",
+      "elo": 2005
+    },
+    {
+      "name": "Gerhard Berger",
+      "elo": 1864
+    },
+    {
+      "name": "Nigel Mansell",
+      "elo": 1805
+    },
+    {
+      "name": "Riccardo Patrese",
+      "elo": 1776
+    },
+    {
+      "name": "Alain Prost",
+      "elo": 1723
+    },
+    {
+      "name": "Jean Alesi",
+      "elo": 1623
+    },
+    {
+      "name": "Stefan Johansson",
+      "elo": 1612
+    },
+    {
+      "name": "Nelson Piquet",
+      "elo": 1582
+    },
+    {
+      "name": "Stefano Modena",
+      "elo": 1581
+    },
+    {
+      "name": "Érik Comas",
+      "elo": 1561
+    },
+    {
+      "name": "Martin Brundle",
+      "elo": 1543
+    },
+    {
+      "name": "Alex Caffi",
+      "elo": 1519
+    },
+    {
+      "name": "Alessandro Zanardi",
+      "elo": 1513
+    },
+    {
+      "name": "Mark Blundell",
+      "elo": 1510
+    },
+    {
+      "name": "Eric van de Poele",
+      "elo": 1510
+    },
+    {
+      "name": "Andrea de Cesaris",
+      "elo": 1507
+    },
+    {
+      "name": "Nicola Larini",
+      "elo": 1503
+    },
+    {
+      "name": "Roberto Moreno",
+      "elo": 1496
+    },
+    {
+      "name": "Maurício Gugelmin",
+      "elo": 1495
+    },
+    {
+      "name": "Johnny Herbert",
+      "elo": 1495
+    },
+    {
+      "name": "Thierry Boutsen",
+      "elo": 1493
+    },
+    {
+      "name": "Gianni Morbidelli",
+      "elo": 1486
+    },
+    {
+      "name": "Olivier Grouillard",
+      "elo": 1484
+    },
+    {
+      "name": "Julian Bailey",
+      "elo": 1481
+    },
+    {
+      "name": "Pierluigi Martini",
+      "elo": 1480
+    },
+    {
+      "name": "Michael Schumacher",
+      "elo": 1470
+    },
+    {
+      "name": "Gabriele Tarquini",
+      "elo": 1462
+    },
+    {
+      "name": "Mika Häkkinen",
+      "elo": 1455
+    },
+    {
+      "name": "Emanuele Pirro",
+      "elo": 1449
+    },
+    {
+      "name": "Éric Bernard",
+      "elo": 1442
+    },
+    {
+      "name": "Karl Wendlinger",
+      "elo": 1440
+    },
+    {
+      "name": "Michele Alboreto",
+      "elo": 1437
+    },
+    {
+      "name": "Bertrand Gachot",
+      "elo": 1434
+    },
+    {
+      "name": "Ivan Capelli",
+      "elo": 1418
+    },
+    {
+      "name": "Aguri Suzuki",
+      "elo": 1410
+    },
+    {
+      "name": "Jyrki Järvilehto",
+      "elo": 1387
+    },
+    {
+      "name": "Satoru Nakajima",
+      "elo": 1385
+    }
+  ],
+  "1992": [
+    {
+      "name": "Gerhard Berger",
+      "elo": 2003
+    },
+    {
+      "name": "Ayrton Senna",
+      "elo": 1905
+    },
+    {
+      "name": "Riccardo Patrese",
+      "elo": 1848
+    },
+    {
+      "name": "Nigel Mansell",
+      "elo": 1827
+    },
+    {
+      "name": "Martin Brundle",
+      "elo": 1585
+    },
+    {
+      "name": "Jean Alesi",
+      "elo": 1578
+    },
+    {
+      "name": "Andrea de Cesaris",
+      "elo": 1568
+    },
+    {
+      "name": "Stefano Modena",
+      "elo": 1554
+    },
+    {
+      "name": "Mika Häkkinen",
+      "elo": 1547
+    },
+    {
+      "name": "Thierry Boutsen",
+      "elo": 1544
+    },
+    {
+      "name": "Michael Schumacher",
+      "elo": 1536
+    },
+    {
+      "name": "Christian Fittipaldi",
+      "elo": 1525
+    },
+    {
+      "name": "Damon Hill",
+      "elo": 1519
+    },
+    {
+      "name": "Érik Comas",
+      "elo": 1508
+    },
+    {
+      "name": "Ivan Capelli",
+      "elo": 1507
+    },
+    {
+      "name": "Jyrki Järvilehto",
+      "elo": 1504
+    },
+    {
+      "name": "Nicola Larini",
+      "elo": 1491
+    },
+    {
+      "name": "Roberto Moreno",
+      "elo": 1491
+    },
+    {
+      "name": "Ukyo Katayama",
+      "elo": 1491
+    },
+    {
+      "name": "Paul Belmondo",
+      "elo": 1487
+    },
+    {
+      "name": "Perry McCarthy",
+      "elo": 1486
+    },
+    {
+      "name": "Alessandro Zanardi",
+      "elo": 1482
+    },
+    {
+      "name": "Eric van de Poele",
+      "elo": 1476
+    },
+    {
+      "name": "Emanuele Naspetti",
+      "elo": 1474
+    },
+    {
+      "name": "Jan Lammers",
+      "elo": 1474
+    },
+    {
+      "name": "Michele Alboreto",
+      "elo": 1468
+    },
+    {
+      "name": "Gianni Morbidelli",
+      "elo": 1465
+    },
+    {
+      "name": "Gabriele Tarquini",
+      "elo": 1450
+    },
+    {
+      "name": "Karl Wendlinger",
+      "elo": 1449
+    },
+    {
+      "name": "Aguri Suzuki",
+      "elo": 1445
+    },
+    {
+      "name": "Maurício Gugelmin",
+      "elo": 1444
+    },
+    {
+      "name": "Andrea Chiesa",
+      "elo": 1431
+    },
+    {
+      "name": "Bertrand Gachot",
+      "elo": 1408
+    },
+    {
+      "name": "Johnny Herbert",
+      "elo": 1392
+    },
+    {
+      "name": "Olivier Grouillard",
+      "elo": 1375
+    },
+    {
+      "name": "Pierluigi Martini",
+      "elo": 1372
+    }
+  ],
+  "1993": [
+    {
+      "name": "Ayrton Senna",
+      "elo": 1837
+    },
+    {
+      "name": "Alain Prost",
+      "elo": 1804
+    },
+    {
+      "name": "Jean Alesi",
+      "elo": 1769
+    },
+    {
+      "name": "Gerhard Berger",
+      "elo": 1751
+    },
+    {
+      "name": "Damon Hill",
+      "elo": 1709
+    },
+    {
+      "name": "Riccardo Patrese",
+      "elo": 1698
+    },
+    {
+      "name": "Michael Andretti",
+      "elo": 1680
+    },
+    {
+      "name": "Michael Schumacher",
+      "elo": 1644
+    },
+    {
+      "name": "Mika Häkkinen",
+      "elo": 1600
+    },
+    {
+      "name": "Martin Brundle",
+      "elo": 1598
+    },
+    {
+      "name": "Rubens Barrichello",
+      "elo": 1571
+    },
+    {
+      "name": "Mark Blundell",
+      "elo": 1534
+    },
+    {
+      "name": "Christian Fittipaldi",
+      "elo": 1508
+    },
+    {
+      "name": "Karl Wendlinger",
+      "elo": 1507
+    },
+    {
+      "name": "Thierry Boutsen",
+      "elo": 1496
+    },
+    {
+      "name": "Luca Badoer",
+      "elo": 1492
+    },
+    {
+      "name": "Philippe Alliot",
+      "elo": 1490
+    },
+    {
+      "name": "Andrea de Cesaris",
+      "elo": 1486
+    },
+    {
+      "name": "Jean-Marc Gounon",
+      "elo": 1480
+    },
+    {
+      "name": "Derek Warwick",
+      "elo": 1480
+    },
+    {
+      "name": "Toshio Suzuki",
+      "elo": 1479
+    },
+    {
+      "name": "Eddie Irvine",
+      "elo": 1478
+    },
+    {
+      "name": "Ivan Capelli",
+      "elo": 1476
+    },
+    {
+      "name": "Johnny Herbert",
+      "elo": 1475
+    },
+    {
+      "name": "Marco Apicella",
+      "elo": 1471
+    },
+    {
+      "name": "Pedro Lamy",
+      "elo": 1466
+    },
+    {
+      "name": "Michele Alboreto",
+      "elo": 1460
+    },
+    {
+      "name": "Ukyo Katayama",
+      "elo": 1452
+    },
+    {
+      "name": "Jyrki Järvilehto",
+      "elo": 1449
+    },
+    {
+      "name": "Pierluigi Martini",
+      "elo": 1448
+    },
+    {
+      "name": "Emanuele Naspetti",
+      "elo": 1447
+    },
+    {
+      "name": "Fabrizio Barbazza",
+      "elo": 1424
+    },
+    {
+      "name": "Aguri Suzuki",
+      "elo": 1419
+    },
+    {
+      "name": "Érik Comas",
+      "elo": 1404
+    },
+    {
+      "name": "Alessandro Zanardi",
+      "elo": 1379
+    }
+  ],
+  "1994": [
+    {
+      "name": "Damon Hill",
+      "elo": 1857
+    },
+    {
+      "name": "Gerhard Berger",
+      "elo": 1800
+    },
+    {
+      "name": "Nigel Mansell",
+      "elo": 1800
+    },
+    {
+      "name": "Jean Alesi",
+      "elo": 1740
+    },
+    {
+      "name": "Michael Schumacher",
+      "elo": 1719
+    },
+    {
+      "name": "Ayrton Senna",
+      "elo": 1703
+    },
+    {
+      "name": "Mika Häkkinen",
+      "elo": 1692
+    },
+    {
+      "name": "Martin Brundle",
+      "elo": 1603
+    },
+    {
+      "name": "Heinz-Harald Frentzen",
+      "elo": 1556
+    },
+    {
+      "name": "David Coulthard",
+      "elo": 1556
+    },
+    {
+      "name": "Nicola Larini",
+      "elo": 1552
+    },
+    {
+      "name": "Christian Fittipaldi",
+      "elo": 1548
+    },
+    {
+      "name": "Olivier Panis",
+      "elo": 1539
+    },
+    {
+      "name": "Mark Blundell",
+      "elo": 1532
+    },
+    {
+      "name": "Rubens Barrichello",
+      "elo": 1529
+    },
+    {
+      "name": "Jos Verstappen",
+      "elo": 1526
+    },
+    {
+      "name": "Mika Salo",
+      "elo": 1520
+    },
+    {
+      "name": "Jean-Denis Délétraz",
+      "elo": 1511
+    },
+    {
+      "name": "Pierluigi Martini",
+      "elo": 1503
+    },
+    {
+      "name": "Karl Wendlinger",
+      "elo": 1498
+    },
+    {
+      "name": "Eddie Irvine",
+      "elo": 1495
+    },
+    {
+      "name": "Johnny Herbert",
+      "elo": 1491
+    },
+    {
+      "name": "Jean-Marc Gounon",
+      "elo": 1488
+    },
+    {
+      "name": "David Brabham",
+      "elo": 1483
+    },
+    {
+      "name": "Roland Ratzenberger",
+      "elo": 1483
+    },
+    {
+      "name": "Domenico Schiattarella",
+      "elo": 1483
+    },
+    {
+      "name": "Yannick Dalmas",
+      "elo": 1475
+    },
+    {
+      "name": "Philippe Alliot",
+      "elo": 1472
+    },
+    {
+      "name": "Taki Inoue",
+      "elo": 1471
+    },
+    {
+      "name": "Andrea Montermini",
+      "elo": 1469
+    },
+    {
+      "name": "Paul Belmondo",
+      "elo": 1467
+    },
+    {
+      "name": "Franck Lagorce",
+      "elo": 1466
+    },
+    {
+      "name": "Philippe Adams",
+      "elo": 1462
+    },
+    {
+      "name": "Érik Comas",
+      "elo": 1458
+    },
+    {
+      "name": "Éric Bernard",
+      "elo": 1457
+    },
+    {
+      "name": "Pedro Lamy",
+      "elo": 1450
+    },
+    {
+      "name": "Andrea de Cesaris",
+      "elo": 1446
+    },
+    {
+      "name": "Jyrki Järvilehto",
+      "elo": 1439
+    },
+    {
+      "name": "Ukyo Katayama",
+      "elo": 1429
+    },
+    {
+      "name": "Olivier Beretta",
+      "elo": 1423
+    },
+    {
+      "name": "Hideki Noda",
+      "elo": 1415
+    },
+    {
+      "name": "Aguri Suzuki",
+      "elo": 1408
+    },
+    {
+      "name": "Bertrand Gachot",
+      "elo": 1407
+    },
+    {
+      "name": "Gianni Morbidelli",
+      "elo": 1393
+    },
+    {
+      "name": "Michele Alboreto",
+      "elo": 1389
+    },
+    {
+      "name": "Alessandro Zanardi",
+      "elo": 1374
+    }
+  ],
+  "1995": [
+    {
+      "name": "Gerhard Berger",
+      "elo": 1816
+    },
+    {
+      "name": "Damon Hill",
+      "elo": 1814
+    },
+    {
+      "name": "Jean Alesi",
+      "elo": 1784
+    },
+    {
+      "name": "Mark Blundell",
+      "elo": 1701
+    },
+    {
+      "name": "Johnny Herbert",
+      "elo": 1679
+    },
+    {
+      "name": "Nigel Mansell",
+      "elo": 1677
+    },
+    {
+      "name": "Michael Schumacher",
+      "elo": 1670
+    },
+    {
+      "name": "Heinz-Harald Frentzen",
+      "elo": 1666
+    },
+    {
+      "name": "David Coulthard",
+      "elo": 1647
+    },
+    {
+      "name": "Mika Häkkinen",
+      "elo": 1639
+    },
+    {
+      "name": "Rubens Barrichello",
+      "elo": 1591
+    },
+    {
+      "name": "Mika Salo",
+      "elo": 1555
+    },
+    {
+      "name": "Olivier Panis",
+      "elo": 1555
+    },
+    {
+      "name": "Gianni Morbidelli",
+      "elo": 1528
+    },
+    {
+      "name": "Jos Verstappen",
+      "elo": 1500
+    },
+    {
+      "name": "Martin Brundle",
+      "elo": 1499
+    },
+    {
+      "name": "Jean-Christophe Boullion",
+      "elo": 1495
+    },
+    {
+      "name": "Luca Badoer",
+      "elo": 1493
+    },
+    {
+      "name": "Pedro Diniz",
+      "elo": 1490
+    },
+    {
+      "name": "Aguri Suzuki",
+      "elo": 1487
+    },
+    {
+      "name": "Pierluigi Martini",
+      "elo": 1470
+    },
+    {
+      "name": "Karl Wendlinger",
+      "elo": 1452
+    },
+    {
+      "name": "Bertrand Gachot",
+      "elo": 1452
+    },
+    {
+      "name": "Giovanni Lavaggi",
+      "elo": 1451
+    },
+    {
+      "name": "Domenico Schiattarella",
+      "elo": 1448
+    },
+    {
+      "name": "Massimiliano Papis",
+      "elo": 1441
+    },
+    {
+      "name": "Pedro Lamy",
+      "elo": 1434
+    },
+    {
+      "name": "Eddie Irvine",
+      "elo": 1430
+    },
+    {
+      "name": "Roberto Moreno",
+      "elo": 1427
+    },
+    {
+      "name": "Ukyo Katayama",
+      "elo": 1406
+    },
+    {
+      "name": "Andrea Montermini",
+      "elo": 1379
+    },
+    {
+      "name": "Taki Inoue",
+      "elo": 1374
+    }
+  ],
+  "1996": [
+    {
+      "name": "Jean Alesi",
+      "elo": 1850
+    },
+    {
+      "name": "Gerhard Berger",
+      "elo": 1766
+    },
+    {
+      "name": "Jacques Villeneuve",
+      "elo": 1766
+    },
+    {
+      "name": "Damon Hill",
+      "elo": 1747
+    },
+    {
+      "name": "Michael Schumacher",
+      "elo": 1743
+    },
+    {
+      "name": "Mika Häkkinen",
+      "elo": 1720
+    },
+    {
+      "name": "Heinz-Harald Frentzen",
+      "elo": 1679
+    },
+    {
+      "name": "David Coulthard",
+      "elo": 1619
+    },
+    {
+      "name": "Johnny Herbert",
+      "elo": 1584
+    },
+    {
+      "name": "Martin Brundle",
+      "elo": 1574
+    },
+    {
+      "name": "Olivier Panis",
+      "elo": 1556
+    },
+    {
+      "name": "Rubens Barrichello",
+      "elo": 1517
+    },
+    {
+      "name": "Eddie Irvine",
+      "elo": 1510
+    },
+    {
+      "name": "Luca Badoer",
+      "elo": 1507
+    },
+    {
+      "name": "Mika Salo",
+      "elo": 1473
+    },
+    {
+      "name": "Ricardo Rosset",
+      "elo": 1460
+    },
+    {
+      "name": "Giancarlo Fisichella",
+      "elo": 1456
+    },
+    {
+      "name": "Giovanni Lavaggi",
+      "elo": 1456
+    },
+    {
+      "name": "Tarso Marques",
+      "elo": 1447
+    },
+    {
+      "name": "Pedro Diniz",
+      "elo": 1443
+    },
+    {
+      "name": "Pedro Lamy",
+      "elo": 1442
+    },
+    {
+      "name": "Ukyo Katayama",
+      "elo": 1419
+    },
+    {
+      "name": "Jos Verstappen",
+      "elo": 1417
+    },
+    {
+      "name": "Andrea Montermini",
+      "elo": 1348
+    }
+  ],
+  "1997": [
+    {
+      "name": "Gerhard Berger",
+      "elo": 1871
+    },
+    {
+      "name": "Jean Alesi",
+      "elo": 1839
+    },
+    {
+      "name": "Jacques Villeneuve",
+      "elo": 1813
+    },
+    {
+      "name": "Heinz-Harald Frentzen",
+      "elo": 1755
+    },
+    {
+      "name": "Mika Häkkinen",
+      "elo": 1705
+    },
+    {
+      "name": "Michael Schumacher",
+      "elo": 1687
+    },
+    {
+      "name": "David Coulthard",
+      "elo": 1684
+    },
+    {
+      "name": "Johnny Herbert",
+      "elo": 1632
+    },
+    {
+      "name": "Olivier Panis",
+      "elo": 1603
+    },
+    {
+      "name": "Eddie Irvine",
+      "elo": 1600
+    },
+    {
+      "name": "Nicola Larini",
+      "elo": 1594
+    },
+    {
+      "name": "Damon Hill",
+      "elo": 1593
+    },
+    {
+      "name": "Giancarlo Fisichella",
+      "elo": 1550
+    },
+    {
+      "name": "Jarno Trulli",
+      "elo": 1540
+    },
+    {
+      "name": "Alexander Wurz",
+      "elo": 1532
+    },
+    {
+      "name": "Norberto Fontana",
+      "elo": 1516
+    },
+    {
+      "name": "Rubens Barrichello",
+      "elo": 1487
+    },
+    {
+      "name": "Pedro Diniz",
+      "elo": 1468
+    },
+    {
+      "name": "Gianni Morbidelli",
+      "elo": 1460
+    },
+    {
+      "name": "Mika Salo",
+      "elo": 1454
+    },
+    {
+      "name": "Jan Magnussen",
+      "elo": 1422
+    },
+    {
+      "name": "Tarso Marques",
+      "elo": 1414
+    },
+    {
+      "name": "Ralf Schumacher",
+      "elo": 1409
+    },
+    {
+      "name": "Shinji Nakano",
+      "elo": 1402
+    },
+    {
+      "name": "Jos Verstappen",
+      "elo": 1391
+    },
+    {
+      "name": "Ukyo Katayama",
+      "elo": 1370
+    }
+  ],
+  "1998": [
+    {
+      "name": "Heinz-Harald Frentzen",
+      "elo": 1846
+    },
+    {
+      "name": "Mika Häkkinen",
+      "elo": 1843
+    },
+    {
+      "name": "Jean Alesi",
+      "elo": 1828
+    },
+    {
+      "name": "Jacques Villeneuve",
+      "elo": 1783
+    },
+    {
+      "name": "Michael Schumacher",
+      "elo": 1780
+    },
+    {
+      "name": "David Coulthard",
+      "elo": 1699
+    },
+    {
+      "name": "Giancarlo Fisichella",
+      "elo": 1689
+    },
+    {
+      "name": "Eddie Irvine",
+      "elo": 1649
+    },
+    {
+      "name": "Johnny Herbert",
+      "elo": 1581
+    },
+    {
+      "name": "Damon Hill",
+      "elo": 1569
+    },
+    {
+      "name": "Alexander Wurz",
+      "elo": 1540
+    },
+    {
+      "name": "Olivier Panis",
+      "elo": 1532
+    },
+    {
+      "name": "Jarno Trulli",
+      "elo": 1502
+    },
+    {
+      "name": "Shinji Nakano",
+      "elo": 1468
+    },
+    {
+      "name": "Toranosuke Takagi",
+      "elo": 1465
+    },
+    {
+      "name": "Rubens Barrichello",
+      "elo": 1447
+    },
+    {
+      "name": "Ralf Schumacher",
+      "elo": 1446
+    },
+    {
+      "name": "Jan Magnussen",
+      "elo": 1440
+    },
+    {
+      "name": "Mika Salo",
+      "elo": 1434
+    },
+    {
+      "name": "Ricardo Rosset",
+      "elo": 1390
+    },
+    {
+      "name": "Pedro Diniz",
+      "elo": 1381
+    },
+    {
+      "name": "Jos Verstappen",
+      "elo": 1361
+    },
+    {
+      "name": "Esteban Tuero",
+      "elo": 1354
+    }
+  ],
+  "1999": [
+    {
+      "name": "Mika Häkkinen",
+      "elo": 1877
+    },
+    {
+      "name": "Heinz-Harald Frentzen",
+      "elo": 1849
+    },
+    {
+      "name": "Eddie Irvine",
+      "elo": 1793
+    },
+    {
+      "name": "Michael Schumacher",
+      "elo": 1760
+    },
+    {
+      "name": "David Coulthard",
+      "elo": 1737
+    },
+    {
+      "name": "Jean Alesi",
+      "elo": 1708
+    },
+    {
+      "name": "Alexander Wurz",
+      "elo": 1626
+    },
+    {
+      "name": "Mika Salo",
+      "elo": 1601
+    },
+    {
+      "name": "Giancarlo Fisichella",
+      "elo": 1574
+    },
+    {
+      "name": "Jacques Villeneuve",
+      "elo": 1564
+    },
+    {
+      "name": "Ralf Schumacher",
+      "elo": 1550
+    },
+    {
+      "name": "Johnny Herbert",
+      "elo": 1538
+    },
+    {
+      "name": "Ricardo Zonta",
+      "elo": 1519
+    },
+    {
+      "name": "Rubens Barrichello",
+      "elo": 1513
+    },
+    {
+      "name": "Pedro de la Rosa",
+      "elo": 1510
+    },
+    {
+      "name": "Olivier Panis",
+      "elo": 1508
+    },
+    {
+      "name": "Damon Hill",
+      "elo": 1505
+    },
+    {
+      "name": "Pedro Diniz",
+      "elo": 1488
+    },
+    {
+      "name": "Marc Gené",
+      "elo": 1487
+    },
+    {
+      "name": "Jarno Trulli",
+      "elo": 1486
+    },
+    {
+      "name": "Stéphane Sarrazin",
+      "elo": 1472
+    },
+    {
+      "name": "Luca Badoer",
+      "elo": 1457
+    },
+    {
+      "name": "Alessandro Zanardi",
+      "elo": 1391
+    },
+    {
+      "name": "Toranosuke Takagi",
+      "elo": 1377
+    }
+  ],
+  "2000": [
+    {
+      "name": "Mika Häkkinen",
+      "elo": 1918
+    },
+    {
+      "name": "David Coulthard",
+      "elo": 1883
+    },
+    {
+      "name": "Michael Schumacher",
+      "elo": 1789
+    },
+    {
+      "name": "Eddie Irvine",
+      "elo": 1680
+    },
+    {
+      "name": "Alexander Wurz",
+      "elo": 1652
+    },
+    {
+      "name": "Jarno Trulli",
+      "elo": 1647
+    },
+    {
+      "name": "Jacques Villeneuve",
+      "elo": 1639
+    },
+    {
+      "name": "Heinz-Harald Frentzen",
+      "elo": 1637
+    },
+    {
+      "name": "Mika Salo",
+      "elo": 1627
+    },
+    {
+      "name": "Rubens Barrichello",
+      "elo": 1625
+    },
+    {
+      "name": "Johnny Herbert",
+      "elo": 1605
+    },
+    {
+      "name": "Ralf Schumacher",
+      "elo": 1556
+    },
+    {
+      "name": "Giancarlo Fisichella",
+      "elo": 1554
+    },
+    {
+      "name": "Nick Heidfeld",
+      "elo": 1549
+    },
+    {
+      "name": "Jean Alesi",
+      "elo": 1534
+    },
+    {
+      "name": "Luciano Burti",
+      "elo": 1497
+    },
+    {
+      "name": "Ricardo Zonta",
+      "elo": 1486
+    },
+    {
+      "name": "Jenson Button",
+      "elo": 1474
+    },
+    {
+      "name": "Pedro Diniz",
+      "elo": 1472
+    },
+    {
+      "name": "Marc Gené",
+      "elo": 1463
+    },
+    {
+      "name": "Gastón Mazzacane",
+      "elo": 1461
+    },
+    {
+      "name": "Jos Verstappen",
+      "elo": 1412
+    },
+    {
+      "name": "Pedro de la Rosa",
+      "elo": 1383
+    }
+  ],
+  "2001": [
+    {
+      "name": "David Coulthard",
+      "elo": 1950
+    },
+    {
+      "name": "Mika Häkkinen",
+      "elo": 1919
+    },
+    {
+      "name": "Michael Schumacher",
+      "elo": 1856
+    },
+    {
+      "name": "Rubens Barrichello",
+      "elo": 1681
+    },
+    {
+      "name": "Heinz-Harald Frentzen",
+      "elo": 1647
+    },
+    {
+      "name": "Jean Alesi",
+      "elo": 1642
+    },
+    {
+      "name": "Jarno Trulli",
+      "elo": 1630
+    },
+    {
+      "name": "Jacques Villeneuve",
+      "elo": 1612
+    },
+    {
+      "name": "Giancarlo Fisichella",
+      "elo": 1560
+    },
+    {
+      "name": "Nick Heidfeld",
+      "elo": 1555
+    },
+    {
+      "name": "Ralf Schumacher",
+      "elo": 1545
+    },
+    {
+      "name": "Juan Pablo Montoya",
+      "elo": 1544
+    },
+    {
+      "name": "Ricardo Zonta",
+      "elo": 1522
+    },
+    {
+      "name": "Tomáš Enge",
+      "elo": 1508
+    },
+    {
+      "name": "Olivier Panis",
+      "elo": 1507
+    },
+    {
+      "name": "Pedro de la Rosa",
+      "elo": 1493
+    },
+    {
+      "name": "Kimi Räikkönen",
+      "elo": 1488
+    },
+    {
+      "name": "Luciano Burti",
+      "elo": 1480
+    },
+    {
+      "name": "Jenson Button",
+      "elo": 1472
+    },
+    {
+      "name": "Eddie Irvine",
+      "elo": 1467
+    },
+    {
+      "name": "Alex Yoong",
+      "elo": 1453
+    },
+    {
+      "name": "Tarso Marques",
+      "elo": 1445
+    },
+    {
+      "name": "Jos Verstappen",
+      "elo": 1421
+    },
+    {
+      "name": "Enrique Bernoldi",
+      "elo": 1418
+    },
+    {
+      "name": "Gastón Mazzacane",
+      "elo": 1417
+    },
+    {
+      "name": "Fernando Alonso",
+      "elo": 1416
+    }
+  ],
+  "2002": [
+    {
+      "name": "Michael Schumacher",
+      "elo": 1897
+    },
+    {
+      "name": "David Coulthard",
+      "elo": 1813
+    },
+    {
+      "name": "Rubens Barrichello",
+      "elo": 1796
+    },
+    {
+      "name": "Kimi Räikkönen",
+      "elo": 1741
+    },
+    {
+      "name": "Juan Pablo Montoya",
+      "elo": 1635
+    },
+    {
+      "name": "Nick Heidfeld",
+      "elo": 1622
+    },
+    {
+      "name": "Mika Salo",
+      "elo": 1597
+    },
+    {
+      "name": "Jarno Trulli",
+      "elo": 1590
+    },
+    {
+      "name": "Jacques Villeneuve",
+      "elo": 1567
+    },
+    {
+      "name": "Giancarlo Fisichella",
+      "elo": 1546
+    },
+    {
+      "name": "Jenson Button",
+      "elo": 1533
+    },
+    {
+      "name": "Takuma Sato",
+      "elo": 1532
+    },
+    {
+      "name": "Eddie Irvine",
+      "elo": 1531
+    },
+    {
+      "name": "Ralf Schumacher",
+      "elo": 1517
+    },
+    {
+      "name": "Olivier Panis",
+      "elo": 1510
+    },
+    {
+      "name": "Heinz-Harald Frentzen",
+      "elo": 1491
+    },
+    {
+      "name": "Anthony Davidson",
+      "elo": 1483
+    },
+    {
+      "name": "Mark Webber",
+      "elo": 1465
+    },
+    {
+      "name": "Enrique Bernoldi",
+      "elo": 1462
+    },
+    {
+      "name": "Felipe Massa",
+      "elo": 1452
+    },
+    {
+      "name": "Allan McNish",
+      "elo": 1441
+    },
+    {
+      "name": "Pedro de la Rosa",
+      "elo": 1395
+    },
+    {
+      "name": "Alex Yoong",
+      "elo": 1388
+    }
+  ],
+  "2003": [
+    {
+      "name": "Kimi Räikkönen",
+      "elo": 1941
+    },
+    {
+      "name": "Michael Schumacher",
+      "elo": 1915
+    },
+    {
+      "name": "Rubens Barrichello",
+      "elo": 1810
+    },
+    {
+      "name": "David Coulthard",
+      "elo": 1765
+    },
+    {
+      "name": "Juan Pablo Montoya",
+      "elo": 1639
+    },
+    {
+      "name": "Nick Heidfeld",
+      "elo": 1601
+    },
+    {
+      "name": "Ralf Schumacher",
+      "elo": 1577
+    },
+    {
+      "name": "Jenson Button",
+      "elo": 1570
+    },
+    {
+      "name": "Cristiano da Matta",
+      "elo": 1546
+    },
+    {
+      "name": "Jarno Trulli",
+      "elo": 1544
+    },
+    {
+      "name": "Mark Webber",
+      "elo": 1532
+    },
+    {
+      "name": "Takuma Sato",
+      "elo": 1528
+    },
+    {
+      "name": "Jacques Villeneuve",
+      "elo": 1516
+    },
+    {
+      "name": "Fernando Alonso",
+      "elo": 1503
+    },
+    {
+      "name": "Zsolt Baumgartner",
+      "elo": 1495
+    },
+    {
+      "name": "Giancarlo Fisichella",
+      "elo": 1481
+    },
+    {
+      "name": "Heinz-Harald Frentzen",
+      "elo": 1476
+    },
+    {
+      "name": "Ralph Firman",
+      "elo": 1476
+    },
+    {
+      "name": "Marc Gené",
+      "elo": 1466
+    },
+    {
+      "name": "Nicolas Kiesa",
+      "elo": 1456
+    },
+    {
+      "name": "Olivier Panis",
+      "elo": 1456
+    },
+    {
+      "name": "Jos Verstappen",
+      "elo": 1449
+    },
+    {
+      "name": "Justin Wilson",
+      "elo": 1428
+    },
+    {
+      "name": "Antônio Pizzonia",
+      "elo": 1387
+    }
+  ],
+  "2004": [
+    {
+      "name": "Michael Schumacher",
+      "elo": 1969
+    },
+    {
+      "name": "Rubens Barrichello",
+      "elo": 1929
+    },
+    {
+      "name": "Kimi Räikkönen",
+      "elo": 1915
+    },
+    {
+      "name": "David Coulthard",
+      "elo": 1811
+    },
+    {
+      "name": "Juan Pablo Montoya",
+      "elo": 1695
+    },
+    {
+      "name": "Jenson Button",
+      "elo": 1643
+    },
+    {
+      "name": "Fernando Alonso",
+      "elo": 1596
+    },
+    {
+      "name": "Ralf Schumacher",
+      "elo": 1581
+    },
+    {
+      "name": "Jarno Trulli",
+      "elo": 1564
+    },
+    {
+      "name": "Nick Heidfeld",
+      "elo": 1557
+    },
+    {
+      "name": "Giancarlo Fisichella",
+      "elo": 1539
+    },
+    {
+      "name": "Takuma Sato",
+      "elo": 1519
+    },
+    {
+      "name": "Timo Glock",
+      "elo": 1510
+    },
+    {
+      "name": "Mark Webber",
+      "elo": 1492
+    },
+    {
+      "name": "Jacques Villeneuve",
+      "elo": 1487
+    },
+    {
+      "name": "Cristiano da Matta",
+      "elo": 1479
+    },
+    {
+      "name": "Olivier Panis",
+      "elo": 1467
+    },
+    {
+      "name": "Ricardo Zonta",
+      "elo": 1464
+    },
+    {
+      "name": "Marc Gené",
+      "elo": 1461
+    },
+    {
+      "name": "Christian Klien",
+      "elo": 1460
+    },
+    {
+      "name": "Felipe Massa",
+      "elo": 1451
+    },
+    {
+      "name": "Zsolt Baumgartner",
+      "elo": 1446
+    },
+    {
+      "name": "Antônio Pizzonia",
+      "elo": 1412
+    },
+    {
+      "name": "Giorgio Pantano",
+      "elo": 1403
+    },
+    {
+      "name": "Gianmaria Bruni",
+      "elo": 1393
+    }
+  ],
+  "2005": [
+    {
+      "name": "Michael Schumacher",
+      "elo": 2104
+    },
+    {
+      "name": "Rubens Barrichello",
+      "elo": 1876
+    },
+    {
+      "name": "Kimi Räikkönen",
+      "elo": 1848
+    },
+    {
+      "name": "Juan Pablo Montoya",
+      "elo": 1787
+    },
+    {
+      "name": "Jenson Button",
+      "elo": 1726
+    },
+    {
+      "name": "Alexander Wurz",
+      "elo": 1725
+    },
+    {
+      "name": "David Coulthard",
+      "elo": 1668
+    },
+    {
+      "name": "Ralf Schumacher",
+      "elo": 1656
+    },
+    {
+      "name": "Fernando Alonso",
+      "elo": 1652
+    },
+    {
+      "name": "Jarno Trulli",
+      "elo": 1587
+    },
+    {
+      "name": "Vitantonio Liuzzi",
+      "elo": 1570
+    },
+    {
+      "name": "Christijan Albers",
+      "elo": 1557
+    },
+    {
+      "name": "Giancarlo Fisichella",
+      "elo": 1555
+    },
+    {
+      "name": "Nick Heidfeld",
+      "elo": 1531
+    },
+    {
+      "name": "Mark Webber",
+      "elo": 1513
+    },
+    {
+      "name": "Felipe Massa",
+      "elo": 1502
+    },
+    {
+      "name": "Tiago Monteiro",
+      "elo": 1488
+    },
+    {
+      "name": "Narain Karthikeyan",
+      "elo": 1460
+    },
+    {
+      "name": "Anthony Davidson",
+      "elo": 1457
+    },
+    {
+      "name": "Christian Klien",
+      "elo": 1448
+    },
+    {
+      "name": "Robert Doornbos",
+      "elo": 1446
+    },
+    {
+      "name": "Ricardo Zonta",
+      "elo": 1443
+    },
+    {
+      "name": "Takuma Sato",
+      "elo": 1438
+    },
+    {
+      "name": "Pedro de la Rosa",
+      "elo": 1434
+    },
+    {
+      "name": "Jacques Villeneuve",
+      "elo": 1374
+    },
+    {
+      "name": "Patrick Friesacher",
+      "elo": 1357
+    }
+  ],
+  "2006": [
+    {
+      "name": "Michael Schumacher",
+      "elo": 1921
+    },
+    {
+      "name": "Jenson Button",
+      "elo": 1908
+    },
+    {
+      "name": "Felipe Massa",
+      "elo": 1879
+    },
+    {
+      "name": "Kimi Räikkönen",
+      "elo": 1800
+    },
+    {
+      "name": "Juan Pablo Montoya",
+      "elo": 1752
+    },
+    {
+      "name": "Fernando Alonso",
+      "elo": 1748
+    },
+    {
+      "name": "Rubens Barrichello",
+      "elo": 1699
+    },
+    {
+      "name": "Pedro de la Rosa",
+      "elo": 1634
+    },
+    {
+      "name": "Jarno Trulli",
+      "elo": 1611
+    },
+    {
+      "name": "Giancarlo Fisichella",
+      "elo": 1581
+    },
+    {
+      "name": "Ralf Schumacher",
+      "elo": 1574
+    },
+    {
+      "name": "Christian Klien",
+      "elo": 1540
+    },
+    {
+      "name": "David Coulthard",
+      "elo": 1527
+    },
+    {
+      "name": "Takuma Sato",
+      "elo": 1525
+    },
+    {
+      "name": "Vitantonio Liuzzi",
+      "elo": 1512
+    },
+    {
+      "name": "Scott Speed",
+      "elo": 1507
+    },
+    {
+      "name": "Christijan Albers",
+      "elo": 1504
+    },
+    {
+      "name": "Nick Heidfeld",
+      "elo": 1503
+    },
+    {
+      "name": "Robert Kubica",
+      "elo": 1502
+    },
+    {
+      "name": "Robert Doornbos",
+      "elo": 1494
+    },
+    {
+      "name": "Mark Webber",
+      "elo": 1479
+    },
+    {
+      "name": "Jacques Villeneuve",
+      "elo": 1441
+    },
+    {
+      "name": "Franck Montagny",
+      "elo": 1429
+    },
+    {
+      "name": "Nico Rosberg",
+      "elo": 1429
+    },
+    {
+      "name": "Yuji Ide",
+      "elo": 1424
+    },
+    {
+      "name": "Tiago Monteiro",
+      "elo": 1419
+    },
+    {
+      "name": "Sakon Yamamoto",
+      "elo": 1418
+    }
+  ],
+  "2007": [
+    {
+      "name": "Kimi Räikkönen",
+      "elo": 2016
+    },
+    {
+      "name": "Felipe Massa",
+      "elo": 1846
+    },
+    {
+      "name": "Rubens Barrichello",
+      "elo": 1794
+    },
+    {
+      "name": "Fernando Alonso",
+      "elo": 1774
+    },
+    {
+      "name": "Jenson Button",
+      "elo": 1738
+    },
+    {
+      "name": "Lewis Hamilton",
+      "elo": 1663
+    },
+    {
+      "name": "Heikki Kovalainen",
+      "elo": 1630
+    },
+    {
+      "name": "Jarno Trulli",
+      "elo": 1626
+    },
+    {
+      "name": "Nico Rosberg",
+      "elo": 1609
+    },
+    {
+      "name": "Nick Heidfeld",
+      "elo": 1555
+    },
+    {
+      "name": "Ralf Schumacher",
+      "elo": 1532
+    },
+    {
+      "name": "Alexander Wurz",
+      "elo": 1526
+    },
+    {
+      "name": "Takuma Sato",
+      "elo": 1516
+    },
+    {
+      "name": "David Coulthard",
+      "elo": 1512
+    },
+    {
+      "name": "Vitantonio Liuzzi",
+      "elo": 1510
+    },
+    {
+      "name": "Markus Winkelhock",
+      "elo": 1506
+    },
+    {
+      "name": "Robert Kubica",
+      "elo": 1506
+    },
+    {
+      "name": "Kazuki Nakajima",
+      "elo": 1495
+    },
+    {
+      "name": "Christijan Albers",
+      "elo": 1474
+    },
+    {
+      "name": "Mark Webber",
+      "elo": 1469
+    },
+    {
+      "name": "Scott Speed",
+      "elo": 1466
+    },
+    {
+      "name": "Sebastian Vettel",
+      "elo": 1453
+    },
+    {
+      "name": "Giancarlo Fisichella",
+      "elo": 1452
+    },
+    {
+      "name": "Adrian Sutil",
+      "elo": 1449
+    },
+    {
+      "name": "Anthony Davidson",
+      "elo": 1399
+    },
+    {
+      "name": "Sakon Yamamoto",
+      "elo": 1373
+    }
+  ],
+  "2008": [
+    {
+      "name": "Felipe Massa",
+      "elo": 2033
+    },
+    {
+      "name": "Kimi Räikkönen",
+      "elo": 1913
+    },
+    {
+      "name": "Lewis Hamilton",
+      "elo": 1785
+    },
+    {
+      "name": "Fernando Alonso",
+      "elo": 1769
+    },
+    {
+      "name": "Jenson Button",
+      "elo": 1762
+    },
+    {
+      "name": "Rubens Barrichello",
+      "elo": 1715
+    },
+    {
+      "name": "Timo Glock",
+      "elo": 1615
+    },
+    {
+      "name": "Heikki Kovalainen",
+      "elo": 1605
+    },
+    {
+      "name": "Nico Rosberg",
+      "elo": 1580
+    },
+    {
+      "name": "Nick Heidfeld",
+      "elo": 1572
+    },
+    {
+      "name": "Sebastian Vettel",
+      "elo": 1568
+    },
+    {
+      "name": "Robert Kubica",
+      "elo": 1565
+    },
+    {
+      "name": "Jarno Trulli",
+      "elo": 1551
+    },
+    {
+      "name": "Mark Webber",
+      "elo": 1521
+    },
+    {
+      "name": "Nelson Piquet Jr.",
+      "elo": 1509
+    },
+    {
+      "name": "Takuma Sato",
+      "elo": 1491
+    },
+    {
+      "name": "Kazuki Nakajima",
+      "elo": 1491
+    },
+    {
+      "name": "David Coulthard",
+      "elo": 1423
+    },
+    {
+      "name": "Giancarlo Fisichella",
+      "elo": 1409
+    },
+    {
+      "name": "Anthony Davidson",
+      "elo": 1404
+    },
+    {
+      "name": "Sébastien Bourdais",
+      "elo": 1375
+    },
+    {
+      "name": "Adrian Sutil",
+      "elo": 1355
+    }
+  ],
+  "2009": [
+    {
+      "name": "Felipe Massa",
+      "elo": 1984
+    },
+    {
+      "name": "Kimi Räikkönen",
+      "elo": 1981
+    },
+    {
+      "name": "Jenson Button",
+      "elo": 1821
+    },
+    {
+      "name": "Rubens Barrichello",
+      "elo": 1763
+    },
+    {
+      "name": "Lewis Hamilton",
+      "elo": 1715
+    },
+    {
+      "name": "Fernando Alonso",
+      "elo": 1677
+    },
+    {
+      "name": "Heikki Kovalainen",
+      "elo": 1672
+    },
+    {
+      "name": "Sebastian Vettel",
+      "elo": 1632
+    },
+    {
+      "name": "Timo Glock",
+      "elo": 1611
+    },
+    {
+      "name": "Nico Rosberg",
+      "elo": 1586
+    },
+    {
+      "name": "Mark Webber",
+      "elo": 1557
+    },
+    {
+      "name": "Nick Heidfeld",
+      "elo": 1553
+    },
+    {
+      "name": "Kamui Kobayashi",
+      "elo": 1551
+    },
+    {
+      "name": "Nelson Piquet Jr.",
+      "elo": 1543
+    },
+    {
+      "name": "Robert Kubica",
+      "elo": 1541
+    },
+    {
+      "name": "Jarno Trulli",
+      "elo": 1532
+    },
+    {
+      "name": "Giancarlo Fisichella",
+      "elo": 1514
+    },
+    {
+      "name": "Kazuki Nakajima",
+      "elo": 1481
+    },
+    {
+      "name": "Luca Badoer",
+      "elo": 1475
+    },
+    {
+      "name": "Romain Grosjean",
+      "elo": 1471
+    },
+    {
+      "name": "Sébastien Buemi",
+      "elo": 1461
+    },
+    {
+      "name": "Vitantonio Liuzzi",
+      "elo": 1444
+    },
+    {
+      "name": "Jaime Alguersuari",
+      "elo": 1413
+    },
+    {
+      "name": "Sébastien Bourdais",
+      "elo": 1346
+    },
+    {
+      "name": "Adrian Sutil",
+      "elo": 1334
+    }
+  ],
+  "2010": [
+    {
+      "name": "Fernando Alonso",
+      "elo": 2033
+    },
+    {
+      "name": "Lewis Hamilton",
+      "elo": 1888
+    },
+    {
+      "name": "Jenson Button",
+      "elo": 1818
+    },
+    {
+      "name": "Felipe Massa",
+      "elo": 1805
+    },
+    {
+      "name": "Sebastian Vettel",
+      "elo": 1722
+    },
+    {
+      "name": "Robert Kubica",
+      "elo": 1693
+    },
+    {
+      "name": "Rubens Barrichello",
+      "elo": 1684
+    },
+    {
+      "name": "Heikki Kovalainen",
+      "elo": 1653
+    },
+    {
+      "name": "Nico Rosberg",
+      "elo": 1629
+    },
+    {
+      "name": "Mark Webber",
+      "elo": 1591
+    },
+    {
+      "name": "Nico Hülkenberg",
+      "elo": 1590
+    },
+    {
+      "name": "Kamui Kobayashi",
+      "elo": 1587
+    },
+    {
+      "name": "Michael Schumacher",
+      "elo": 1561
+    },
+    {
+      "name": "Nick Heidfeld",
+      "elo": 1552
+    },
+    {
+      "name": "Pedro de la Rosa",
+      "elo": 1547
+    },
+    {
+      "name": "Karun Chandhok",
+      "elo": 1541
+    },
+    {
+      "name": "Timo Glock",
+      "elo": 1528
+    },
+    {
+      "name": "Jaime Alguersuari",
+      "elo": 1485
+    },
+    {
+      "name": "Christian Klien",
+      "elo": 1482
+    },
+    {
+      "name": "Vitaly Petrov",
+      "elo": 1479
+    },
+    {
+      "name": "Lucas di Grassi",
+      "elo": 1462
+    },
+    {
+      "name": "Adrian Sutil",
+      "elo": 1449
+    },
+    {
+      "name": "Bruno Senna",
+      "elo": 1447
+    },
+    {
+      "name": "Jarno Trulli",
+      "elo": 1443
+    },
+    {
+      "name": "Sébastien Buemi",
+      "elo": 1433
+    },
+    {
+      "name": "Sakon Yamamoto",
+      "elo": 1366
+    },
+    {
+      "name": "Vitantonio Liuzzi",
+      "elo": 1348
+    }
+  ],
+  "2011": [
+    {
+      "name": "Fernando Alonso",
+      "elo": 2141
+    },
+    {
+      "name": "Jenson Button",
+      "elo": 1988
+    },
+    {
+      "name": "Lewis Hamilton",
+      "elo": 1862
+    },
+    {
+      "name": "Felipe Massa",
+      "elo": 1843
+    },
+    {
+      "name": "Sebastian Vettel",
+      "elo": 1770
+    },
+    {
+      "name": "Mark Webber",
+      "elo": 1686
+    },
+    {
+      "name": "Nico Rosberg",
+      "elo": 1658
+    },
+    {
+      "name": "Rubens Barrichello",
+      "elo": 1612
+    },
+    {
+      "name": "Heikki Kovalainen",
+      "elo": 1593
+    },
+    {
+      "name": "Michael Schumacher",
+      "elo": 1560
+    },
+    {
+      "name": "Kamui Kobayashi",
+      "elo": 1554
+    },
+    {
+      "name": "Pedro de la Rosa",
+      "elo": 1537
+    },
+    {
+      "name": "Vitaly Petrov",
+      "elo": 1527
+    },
+    {
+      "name": "Adrian Sutil",
+      "elo": 1523
+    },
+    {
+      "name": "Karun Chandhok",
+      "elo": 1521
+    },
+    {
+      "name": "Sergio Pérez",
+      "elo": 1521
+    },
+    {
+      "name": "Nick Heidfeld",
+      "elo": 1509
+    },
+    {
+      "name": "Jaime Alguersuari",
+      "elo": 1502
+    },
+    {
+      "name": "Pastor Maldonado",
+      "elo": 1501
+    },
+    {
+      "name": "Timo Glock",
+      "elo": 1457
+    },
+    {
+      "name": "Paul di Resta",
+      "elo": 1456
+    },
+    {
+      "name": "Jérôme d'Ambrosio",
+      "elo": 1448
+    },
+    {
+      "name": "Bruno Senna",
+      "elo": 1441
+    },
+    {
+      "name": "Daniel Ricciardo",
+      "elo": 1437
+    },
+    {
+      "name": "Jarno Trulli",
+      "elo": 1433
+    },
+    {
+      "name": "Narain Karthikeyan",
+      "elo": 1387
+    },
+    {
+      "name": "Sébastien Buemi",
+      "elo": 1374
+    },
+    {
+      "name": "Vitantonio Liuzzi",
+      "elo": 1341
+    }
+  ],
+  "2012": [
+    {
+      "name": "Fernando Alonso",
+      "elo": 2154
+    },
+    {
+      "name": "Jenson Button",
+      "elo": 1996
+    },
+    {
+      "name": "Felipe Massa",
+      "elo": 1961
+    },
+    {
+      "name": "Kimi Räikkönen",
+      "elo": 1933
+    },
+    {
+      "name": "Lewis Hamilton",
+      "elo": 1929
+    },
+    {
+      "name": "Sebastian Vettel",
+      "elo": 1841
+    },
+    {
+      "name": "Mark Webber",
+      "elo": 1687
+    },
+    {
+      "name": "Michael Schumacher",
+      "elo": 1611
+    },
+    {
+      "name": "Nico Rosberg",
+      "elo": 1568
+    },
+    {
+      "name": "Nico Hülkenberg",
+      "elo": 1564
+    },
+    {
+      "name": "Kamui Kobayashi",
+      "elo": 1561
+    },
+    {
+      "name": "Romain Grosjean",
+      "elo": 1556
+    },
+    {
+      "name": "Vitaly Petrov",
+      "elo": 1540
+    },
+    {
+      "name": "Heikki Kovalainen",
+      "elo": 1518
+    },
+    {
+      "name": "Pastor Maldonado",
+      "elo": 1505
+    },
+    {
+      "name": "Daniel Ricciardo",
+      "elo": 1504
+    },
+    {
+      "name": "Sergio Pérez",
+      "elo": 1501
+    },
+    {
+      "name": "Timo Glock",
+      "elo": 1471
+    },
+    {
+      "name": "Bruno Senna",
+      "elo": 1464
+    },
+    {
+      "name": "Paul di Resta",
+      "elo": 1464
+    },
+    {
+      "name": "Pedro de la Rosa",
+      "elo": 1460
+    },
+    {
+      "name": "Jérôme d'Ambrosio",
+      "elo": 1455
+    },
+    {
+      "name": "Charles Pic",
+      "elo": 1430
+    },
+    {
+      "name": "Jean-Éric Vergne",
+      "elo": 1413
+    },
+    {
+      "name": "Narain Karthikeyan",
+      "elo": 1323
+    }
+  ],
+  "2013": [
+    {
+      "name": "Fernando Alonso",
+      "elo": 2213
+    },
+    {
+      "name": "Sebastian Vettel",
+      "elo": 2020
+    },
+    {
+      "name": "Felipe Massa",
+      "elo": 1983
+    },
+    {
+      "name": "Jenson Button",
+      "elo": 1848
+    },
+    {
+      "name": "Nico Rosberg",
+      "elo": 1817
+    },
+    {
+      "name": "Sergio Pérez",
+      "elo": 1789
+    },
+    {
+      "name": "Lewis Hamilton",
+      "elo": 1763
+    },
+    {
+      "name": "Kimi Räikkönen",
+      "elo": 1760
+    },
+    {
+      "name": "Romain Grosjean",
+      "elo": 1751
+    },
+    {
+      "name": "Mark Webber",
+      "elo": 1675
+    },
+    {
+      "name": "Nico Hülkenberg",
+      "elo": 1586
+    },
+    {
+      "name": "Heikki Kovalainen",
+      "elo": 1552
+    },
+    {
+      "name": "Paul di Resta",
+      "elo": 1510
+    },
+    {
+      "name": "Pastor Maldonado",
+      "elo": 1500
+    },
+    {
+      "name": "Daniel Ricciardo",
+      "elo": 1472
+    },
+    {
+      "name": "Esteban Gutiérrez",
+      "elo": 1461
+    },
+    {
+      "name": "Jules Bianchi",
+      "elo": 1459
+    },
+    {
+      "name": "Adrian Sutil",
+      "elo": 1428
+    },
+    {
+      "name": "Valtteri Bottas",
+      "elo": 1422
+    },
+    {
+      "name": "Giedo van der Garde",
+      "elo": 1406
+    },
+    {
+      "name": "Charles Pic",
+      "elo": 1387
+    },
+    {
+      "name": "Jean-Éric Vergne",
+      "elo": 1376
+    },
+    {
+      "name": "Max Chilton",
+      "elo": 1368
+    }
+  ],
+  "2014": [
+    {
+      "name": "Fernando Alonso",
+      "elo": 2052
+    },
+    {
+      "name": "Kimi Räikkönen",
+      "elo": 1996
+    },
+    {
+      "name": "Lewis Hamilton",
+      "elo": 1950
+    },
+    {
+      "name": "Daniel Ricciardo",
+      "elo": 1825
+    },
+    {
+      "name": "Jenson Button",
+      "elo": 1815
+    },
+    {
+      "name": "Nico Rosberg",
+      "elo": 1805
+    },
+    {
+      "name": "Sebastian Vettel",
+      "elo": 1769
+    },
+    {
+      "name": "Valtteri Bottas",
+      "elo": 1764
+    },
+    {
+      "name": "Sergio Pérez",
+      "elo": 1709
+    },
+    {
+      "name": "Felipe Massa",
+      "elo": 1679
+    },
+    {
+      "name": "Nico Hülkenberg",
+      "elo": 1638
+    },
+    {
+      "name": "Kevin Magnussen",
+      "elo": 1636
+    },
+    {
+      "name": "Romain Grosjean",
+      "elo": 1606
+    },
+    {
+      "name": "Pastor Maldonado",
+      "elo": 1568
+    },
+    {
+      "name": "Marcus Ericsson",
+      "elo": 1476
+    },
+    {
+      "name": "Jean-Éric Vergne",
+      "elo": 1469
+    },
+    {
+      "name": "André Lotterer",
+      "elo": 1465
+    },
+    {
+      "name": "Kamui Kobayashi",
+      "elo": 1448
+    },
+    {
+      "name": "Jules Bianchi",
+      "elo": 1413
+    },
+    {
+      "name": "Adrian Sutil",
+      "elo": 1394
+    },
+    {
+      "name": "Esteban Gutiérrez",
+      "elo": 1389
+    },
+    {
+      "name": "Daniil Kvyat",
+      "elo": 1378
+    },
+    {
+      "name": "Max Chilton",
+      "elo": 1332
+    }
+  ],
+  "2015": [
+    {
+      "name": "Sebastian Vettel",
+      "elo": 2050
+    },
+    {
+      "name": "Nico Rosberg",
+      "elo": 1979
+    },
+    {
+      "name": "Lewis Hamilton",
+      "elo": 1954
+    },
+    {
+      "name": "Kimi Räikkönen",
+      "elo": 1938
+    },
+    {
+      "name": "Jenson Button",
+      "elo": 1925
+    },
+    {
+      "name": "Fernando Alonso",
+      "elo": 1753
+    },
+    {
+      "name": "Valtteri Bottas",
+      "elo": 1732
+    },
+    {
+      "name": "Felipe Massa",
+      "elo": 1716
+    },
+    {
+      "name": "Sergio Pérez",
+      "elo": 1710
+    },
+    {
+      "name": "Nico Hülkenberg",
+      "elo": 1646
+    },
+    {
+      "name": "Daniil Kvyat",
+      "elo": 1638
+    },
+    {
+      "name": "Romain Grosjean",
+      "elo": 1634
+    },
+    {
+      "name": "Daniel Ricciardo",
+      "elo": 1618
+    },
+    {
+      "name": "Kevin Magnussen",
+      "elo": 1612
+    },
+    {
+      "name": "Pastor Maldonado",
+      "elo": 1529
+    },
+    {
+      "name": "Max Verstappen",
+      "elo": 1502
+    },
+    {
+      "name": "Alexander Rossi",
+      "elo": 1500
+    },
+    {
+      "name": "Roberto Merhi",
+      "elo": 1482
+    },
+    {
+      "name": "Felipe Nasr",
+      "elo": 1454
+    },
+    {
+      "name": "Marcus Ericsson",
+      "elo": 1453
+    },
+    {
+      "name": "Will Stevens",
+      "elo": 1424
+    },
+    {
+      "name": "Carlos Sainz",
+      "elo": 1420
+    }
+  ],
+  "2016": [
+    {
+      "name": "Sebastian Vettel",
+      "elo": 2139
+    },
+    {
+      "name": "Lewis Hamilton",
+      "elo": 2093
+    },
+    {
+      "name": "Nico Rosberg",
+      "elo": 2027
+    },
+    {
+      "name": "Kimi Räikkönen",
+      "elo": 1961
+    },
+    {
+      "name": "Fernando Alonso",
+      "elo": 1893
+    },
+    {
+      "name": "Jenson Button",
+      "elo": 1747
+    },
+    {
+      "name": "Valtteri Bottas",
+      "elo": 1739
+    },
+    {
+      "name": "Sergio Pérez",
+      "elo": 1729
+    },
+    {
+      "name": "Felipe Massa",
+      "elo": 1719
+    },
+    {
+      "name": "Daniel Ricciardo",
+      "elo": 1667
+    },
+    {
+      "name": "Nico Hülkenberg",
+      "elo": 1657
+    },
+    {
+      "name": "Max Verstappen",
+      "elo": 1624
+    },
+    {
+      "name": "Stoffel Vandoorne",
+      "elo": 1565
+    },
+    {
+      "name": "Carlos Sainz",
+      "elo": 1538
+    },
+    {
+      "name": "Esteban Ocon",
+      "elo": 1507
+    },
+    {
+      "name": "Esteban Gutiérrez",
+      "elo": 1497
+    },
+    {
+      "name": "Jolyon Palmer",
+      "elo": 1493
+    },
+    {
+      "name": "Romain Grosjean",
+      "elo": 1491
+    },
+    {
+      "name": "Kevin Magnussen",
+      "elo": 1488
+    },
+    {
+      "name": "Pascal Wehrlein",
+      "elo": 1441
+    },
+    {
+      "name": "Marcus Ericsson",
+      "elo": 1429
+    },
+    {
+      "name": "Daniil Kvyat",
+      "elo": 1411
+    },
+    {
+      "name": "Rio Haryanto",
+      "elo": 1396
+    },
+    {
+      "name": "Felipe Nasr",
+      "elo": 1372
+    }
+  ],
+  "2017": [
+    {
+      "name": "Sebastian Vettel",
+      "elo": 2188
+    },
+    {
+      "name": "Kimi Räikkönen",
+      "elo": 2055
+    },
+    {
+      "name": "Valtteri Bottas",
+      "elo": 2013
+    },
+    {
+      "name": "Lewis Hamilton",
+      "elo": 1999
+    },
+    {
+      "name": "Fernando Alonso",
+      "elo": 1766
+    },
+    {
+      "name": "Jenson Button",
+      "elo": 1717
+    },
+    {
+      "name": "Max Verstappen",
+      "elo": 1694
+    },
+    {
+      "name": "Stoffel Vandoorne",
+      "elo": 1691
+    },
+    {
+      "name": "Felipe Massa",
+      "elo": 1683
+    },
+    {
+      "name": "Sergio Pérez",
+      "elo": 1666
+    },
+    {
+      "name": "Esteban Ocon",
+      "elo": 1621
+    },
+    {
+      "name": "Lance Stroll",
+      "elo": 1582
+    },
+    {
+      "name": "Daniel Ricciardo",
+      "elo": 1569
+    },
+    {
+      "name": "Nico Hülkenberg",
+      "elo": 1531
+    },
+    {
+      "name": "Jolyon Palmer",
+      "elo": 1531
+    },
+    {
+      "name": "Pierre Gasly",
+      "elo": 1507
+    },
+    {
+      "name": "Paul di Resta",
+      "elo": 1492
+    },
+    {
+      "name": "Romain Grosjean",
+      "elo": 1487
+    },
+    {
+      "name": "Antonio Giovinazzi",
+      "elo": 1475
+    },
+    {
+      "name": "Carlos Sainz",
+      "elo": 1461
+    },
+    {
+      "name": "Kevin Magnussen",
+      "elo": 1457
+    },
+    {
+      "name": "Brendon Hartley",
+      "elo": 1456
+    },
+    {
+      "name": "Daniil Kvyat",
+      "elo": 1439
+    },
+    {
+      "name": "Pascal Wehrlein",
+      "elo": 1410
+    },
+    {
+      "name": "Marcus Ericsson",
+      "elo": 1347
+    }
+  ],
+  "2018": [
+    {
+      "name": "Sebastian Vettel",
+      "elo": 2212
+    },
+    {
+      "name": "Lewis Hamilton",
+      "elo": 2212
+    },
+    {
+      "name": "Kimi Räikkönen",
+      "elo": 2155
+    },
+    {
+      "name": "Valtteri Bottas",
+      "elo": 1932
+    },
+    {
+      "name": "Max Verstappen",
+      "elo": 1821
+    },
+    {
+      "name": "Fernando Alonso",
+      "elo": 1704
+    },
+    {
+      "name": "Sergio Pérez",
+      "elo": 1702
+    },
+    {
+      "name": "Stoffel Vandoorne",
+      "elo": 1693
+    },
+    {
+      "name": "Esteban Ocon",
+      "elo": 1572
+    },
+    {
+      "name": "Daniel Ricciardo",
+      "elo": 1561
+    },
+    {
+      "name": "Carlos Sainz",
+      "elo": 1523
+    },
+    {
+      "name": "Lance Stroll",
+      "elo": 1503
+    },
+    {
+      "name": "Romain Grosjean",
+      "elo": 1476
+    },
+    {
+      "name": "Sergey Sirotkin",
+      "elo": 1472
+    },
+    {
+      "name": "Nico Hülkenberg",
+      "elo": 1458
+    },
+    {
+      "name": "Pierre Gasly",
+      "elo": 1455
+    },
+    {
+      "name": "Charles Leclerc",
+      "elo": 1442
+    },
+    {
+      "name": "Kevin Magnussen",
+      "elo": 1427
+    },
+    {
+      "name": "Brendon Hartley",
+      "elo": 1420
+    },
+    {
+      "name": "Marcus Ericsson",
+      "elo": 1353
+    }
+  ],
+  "2019": [
+    {
+      "name": "Lewis Hamilton",
+      "elo": 2174
+    },
+    {
+      "name": "Valtteri Bottas",
+      "elo": 2040
+    },
+    {
+      "name": "Charles Leclerc",
+      "elo": 1926
+    },
+    {
+      "name": "Sebastian Vettel",
+      "elo": 1918
+    },
+    {
+      "name": "Kimi Räikkönen",
+      "elo": 1855
+    },
+    {
+      "name": "Max Verstappen",
+      "elo": 1738
+    },
+    {
+      "name": "Sergio Pérez",
+      "elo": 1694
+    },
+    {
+      "name": "Antonio Giovinazzi",
+      "elo": 1665
+    },
+    {
+      "name": "George Russell",
+      "elo": 1596
+    },
+    {
+      "name": "Carlos Sainz",
+      "elo": 1593
+    },
+    {
+      "name": "Alexander Albon",
+      "elo": 1571
+    },
+    {
+      "name": "Lando Norris",
+      "elo": 1545
+    },
+    {
+      "name": "Daniel Ricciardo",
+      "elo": 1537
+    },
+    {
+      "name": "Pierre Gasly",
+      "elo": 1493
+    },
+    {
+      "name": "Lance Stroll",
+      "elo": 1490
+    },
+    {
+      "name": "Daniil Kvyat",
+      "elo": 1469
+    },
+    {
+      "name": "Nico Hülkenberg",
+      "elo": 1454
+    },
+    {
+      "name": "Kevin Magnussen",
+      "elo": 1428
+    },
+    {
+      "name": "Robert Kubica",
+      "elo": 1420
+    },
+    {
+      "name": "Romain Grosjean",
+      "elo": 1379
+    }
+  ],
+  "2020": [
+    {
+      "name": "Lewis Hamilton",
+      "elo": 2234
+    },
+    {
+      "name": "Valtteri Bottas",
+      "elo": 2111
+    },
+    {
+      "name": "Charles Leclerc",
+      "elo": 1946
+    },
+    {
+      "name": "Sebastian Vettel",
+      "elo": 1884
+    },
+    {
+      "name": "Kimi Räikkönen",
+      "elo": 1777
+    },
+    {
+      "name": "Max Verstappen",
+      "elo": 1722
+    },
+    {
+      "name": "Sergio Pérez",
+      "elo": 1666
+    },
+    {
+      "name": "Antonio Giovinazzi",
+      "elo": 1663
+    },
+    {
+      "name": "Daniel Ricciardo",
+      "elo": 1631
+    },
+    {
+      "name": "Alexander Albon",
+      "elo": 1622
+    },
+    {
+      "name": "Carlos Sainz",
+      "elo": 1602
+    },
+    {
+      "name": "Lando Norris",
+      "elo": 1576
+    },
+    {
+      "name": "George Russell",
+      "elo": 1560
+    },
+    {
+      "name": "Lance Stroll",
+      "elo": 1557
+    },
+    {
+      "name": "Pierre Gasly",
+      "elo": 1530
+    },
+    {
+      "name": "Esteban Ocon",
+      "elo": 1522
+    },
+    {
+      "name": "Jack Aitken",
+      "elo": 1508
+    },
+    {
+      "name": "Daniil Kvyat",
+      "elo": 1496
+    },
+    {
+      "name": "Nicholas Latifi",
+      "elo": 1440
+    },
+    {
+      "name": "Nico Hülkenberg",
+      "elo": 1436
+    },
+    {
+      "name": "Pietro Fittipaldi",
+      "elo": 1426
+    },
+    {
+      "name": "Kevin Magnussen",
+      "elo": 1391
+    },
+    {
+      "name": "Romain Grosjean",
+      "elo": 1334
+    }
+  ],
+  "2021": [
+    {
+      "name": "Lewis Hamilton",
+      "elo": 2325
+    },
+    {
+      "name": "Valtteri Bottas",
+      "elo": 2092
+    },
+    {
+      "name": "Charles Leclerc",
+      "elo": 1903
+    },
+    {
+      "name": "Max Verstappen",
+      "elo": 1888
+    },
+    {
+      "name": "Carlos Sainz",
+      "elo": 1861
+    },
+    {
+      "name": "Antonio Giovinazzi",
+      "elo": 1707
+    },
+    {
+      "name": "Lance Stroll",
+      "elo": 1693
+    },
+    {
+      "name": "Sebastian Vettel",
+      "elo": 1686
+    },
+    {
+      "name": "Kimi Räikkönen",
+      "elo": 1685
+    },
+    {
+      "name": "Fernando Alonso",
+      "elo": 1655
+    },
+    {
+      "name": "Lando Norris",
+      "elo": 1645
+    },
+    {
+      "name": "Sergio Pérez",
+      "elo": 1639
+    },
+    {
+      "name": "Esteban Ocon",
+      "elo": 1590
+    },
+    {
+      "name": "Daniel Ricciardo",
+      "elo": 1573
+    },
+    {
+      "name": "Pierre Gasly",
+      "elo": 1555
+    },
+    {
+      "name": "George Russell",
+      "elo": 1500
+    },
+    {
+      "name": "Yuki Tsunoda",
+      "elo": 1436
+    },
+    {
+      "name": "Mick Schumacher",
+      "elo": 1428
+    },
+    {
+      "name": "Robert Kubica",
+      "elo": 1420
+    },
+    {
+      "name": "Nicholas Latifi",
+      "elo": 1409
+    },
+    {
+      "name": "Nikita Mazepin",
+      "elo": 1359
+    }
+  ],
+  "2022": [
+    {
+      "name": "Lewis Hamilton",
+      "elo": 2080
+    },
+    {
+      "name": "George Russell",
+      "elo": 1992
+    },
+    {
+      "name": "Charles Leclerc",
+      "elo": 1981
+    },
+    {
+      "name": "Max Verstappen",
+      "elo": 1943
+    },
+    {
+      "name": "Carlos Sainz",
+      "elo": 1910
+    },
+    {
+      "name": "Valtteri Bottas",
+      "elo": 1756
+    },
+    {
+      "name": "Sergio Pérez",
+      "elo": 1725
+    },
+    {
+      "name": "Guanyu Zhou",
+      "elo": 1696
+    },
+    {
+      "name": "Lando Norris",
+      "elo": 1684
+    },
+    {
+      "name": "Lance Stroll",
+      "elo": 1668
+    },
+    {
+      "name": "Sebastian Vettel",
+      "elo": 1662
+    },
+    {
+      "name": "Esteban Ocon",
+      "elo": 1625
+    },
+    {
+      "name": "Fernando Alonso",
+      "elo": 1621
+    },
+    {
+      "name": "Alexander Albon",
+      "elo": 1533
+    },
+    {
+      "name": "Nyck de Vries",
+      "elo": 1512
+    },
+    {
+      "name": "Daniel Ricciardo",
+      "elo": 1493
+    },
+    {
+      "name": "Pierre Gasly",
+      "elo": 1475
+    },
+    {
+      "name": "Nico Hülkenberg",
+      "elo": 1464
+    },
+    {
+      "name": "Mick Schumacher",
+      "elo": 1408
+    },
+    {
+      "name": "Yuki Tsunoda",
+      "elo": 1393
+    },
+    {
+      "name": "Nicholas Latifi",
+      "elo": 1360
+    },
+    {
+      "name": "Kevin Magnussen",
+      "elo": 1345
+    }
+  ],
+  "2023": [
+    {
+      "name": "Max Verstappen",
+      "elo": 2078
+    },
+    {
+      "name": "Lewis Hamilton",
+      "elo": 2076
+    },
+    {
+      "name": "George Russell",
+      "elo": 2041
+    },
+    {
+      "name": "Charles Leclerc",
+      "elo": 2007
+    },
+    {
+      "name": "Carlos Sainz",
+      "elo": 1933
+    },
+    {
+      "name": "Fernando Alonso",
+      "elo": 1728
+    },
+    {
+      "name": "Guanyu Zhou",
+      "elo": 1701
+    },
+    {
+      "name": "Sergio Pérez",
+      "elo": 1700
+    },
+    {
+      "name": "Valtteri Bottas",
+      "elo": 1689
+    },
+    {
+      "name": "Lando Norris",
+      "elo": 1689
+    },
+    {
+      "name": "Lance Stroll",
+      "elo": 1624
+    },
+    {
+      "name": "Alexander Albon",
+      "elo": 1570
+    },
+    {
+      "name": "Esteban Ocon",
+      "elo": 1561
+    },
+    {
+      "name": "Oscar Piastri",
+      "elo": 1540
+    },
+    {
+      "name": "Pierre Gasly",
+      "elo": 1533
+    },
+    {
+      "name": "Liam Lawson",
+      "elo": 1514
+    },
+    {
+      "name": "Daniel Ricciardo",
+      "elo": 1464
+    },
+    {
+      "name": "Yuki Tsunoda",
+      "elo": 1454
+    },
+    {
+      "name": "Nico Hülkenberg",
+      "elo": 1400
+    },
+    {
+      "name": "Nyck de Vries",
+      "elo": 1397
+    },
+    {
+      "name": "Logan Sargeant",
+      "elo": 1386
+    },
+    {
+      "name": "Kevin Magnussen",
+      "elo": 1309
+    }
+  ],
+  "2024": [
+    {
+      "name": "George Russell",
+      "elo": 2161
+    },
+    {
+      "name": "Max Verstappen",
+      "elo": 2097
+    },
+    {
+      "name": "Lewis Hamilton",
+      "elo": 2089
+    },
+    {
+      "name": "Charles Leclerc",
+      "elo": 2087
+    },
+    {
+      "name": "Carlos Sainz",
+      "elo": 2022
+    },
+    {
+      "name": "Fernando Alonso",
+      "elo": 1743
+    },
+    {
+      "name": "Lando Norris",
+      "elo": 1733
+    },
+    {
+      "name": "Sergio Pérez",
+      "elo": 1680
+    },
+    {
+      "name": "Oscar Piastri",
+      "elo": 1633
+    },
+    {
+      "name": "Valtteri Bottas",
+      "elo": 1614
+    },
+    {
+      "name": "Guanyu Zhou",
+      "elo": 1614
+    },
+    {
+      "name": "Lance Stroll",
+      "elo": 1555
+    },
+    {
+      "name": "Pierre Gasly",
+      "elo": 1531
+    },
+    {
+      "name": "Oliver Bearman",
+      "elo": 1525
+    },
+    {
+      "name": "Esteban Ocon",
+      "elo": 1501
+    },
+    {
+      "name": "Franco Colapinto",
+      "elo": 1494
+    },
+    {
+      "name": "Alexander Albon",
+      "elo": 1492
+    },
+    {
+      "name": "Jack Doohan",
+      "elo": 1486
+    },
+    {
+      "name": "Yuki Tsunoda",
+      "elo": 1475
+    },
+    {
+      "name": "Daniel Ricciardo",
+      "elo": 1471
+    },
+    {
+      "name": "Liam Lawson",
+      "elo": 1464
+    },
+    {
+      "name": "Nico Hülkenberg",
+      "elo": 1387
+    },
+    {
+      "name": "Logan Sargeant",
+      "elo": 1341
+    },
+    {
+      "name": "Kevin Magnussen",
+      "elo": 1305
+    }
+  ],
+  "2025": [
+    {
+      "name": "Charles Leclerc",
+      "elo": 2164
+    },
+    {
+      "name": "Max Verstappen",
+      "elo": 2090
+    },
+    {
+      "name": "George Russell",
+      "elo": 2040
+    },
+    {
+      "name": "Lewis Hamilton",
+      "elo": 2014
+    },
+    {
+      "name": "Kimi Antonelli",
+      "elo": 1792
+    },
+    {
+      "name": "Lando Norris",
+      "elo": 1753
+    },
+    {
+      "name": "Carlos Sainz",
+      "elo": 1743
+    },
+    {
+      "name": "Fernando Alonso",
+      "elo": 1711
+    },
+    {
+      "name": "Alexander Albon",
+      "elo": 1693
+    },
+    {
+      "name": "Oscar Piastri",
+      "elo": 1684
+    },
+    {
+      "name": "Yuki Tsunoda",
+      "elo": 1568
+    },
+    {
+      "name": "Lance Stroll",
+      "elo": 1560
+    },
+    {
+      "name": "Isack Hadjar",
+      "elo": 1507
+    },
+    {
+      "name": "Pierre Gasly",
+      "elo": 1489
+    },
+    {
+      "name": "Oliver Bearman",
+      "elo": 1475
+    },
+    {
+      "name": "Liam Lawson",
+      "elo": 1463
+    },
+    {
+      "name": "Nico Hülkenberg",
+      "elo": 1461
+    },
+    {
+      "name": "Esteban Ocon",
+      "elo": 1451
+    },
+    {
+      "name": "Gabriel Bortoleto",
+      "elo": 1446
+    },
+    {
+      "name": "Jack Doohan",
+      "elo": 1444
+    },
+    {
+      "name": "Franco Colapinto",
+      "elo": 1428
+    }
+  ]
+}

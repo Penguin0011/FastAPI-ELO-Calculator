@@ -246,7 +246,110 @@ def main():
             f.write(f"{rank}. {drv}: {rating:.0f}\n")
             
     print("Saved 2025_current_grid_elo.txt")
+    
+    # ---------------------------------------------------------
+    # JSON DATA EXPORT FOR FRONTEND
+    # ---------------------------------------------------------
+    import json
+    
+    print("Generating frontend data files...")
+    
+    # 1. DRIVER STATS JSON
+    # Structure: { "Driver Name": { wins, losses, total_races, avg_elo, peak_elo, current_elo } }
+    driver_stats = {}
+    
+    # Calculate wins (P1 finishes) and total races per driver
+    for drv in data['driver_name'].unique():
+        drv_data = data[data['driver_name'] == drv]
+        wins = int((drv_data['position'] == 1).sum())
+        total_races = len(drv_data)
+        losses = total_races - wins
+        
+        # Get ELO stats from history
+        drv_hist = history_df[history_df['driver'] == drv]
+        avg_elo = round(drv_hist['rating'].mean(), 0) if not drv_hist.empty else 1500
+        peak_elo = round(drv_hist['rating'].max(), 0) if not drv_hist.empty else 1500
+        current_elo = round(drv_hist.iloc[-1]['rating'], 0) if not drv_hist.empty else 1500
+        
+        driver_stats[drv] = {
+            "wins": wins,
+            "losses": losses,
+            "total_races": total_races,
+            "avg_elo": int(avg_elo),
+            "peak_elo": int(peak_elo),
+            "current_elo": int(current_elo)
+        }
+    
+    # Save driver_stats.json
+    stats_path = 'frontend/src/data/driver_stats.json'
+    with open(stats_path, 'w', encoding='utf-8') as f:
+        json.dump(driver_stats, f, indent=2, ensure_ascii=False)
+    print(f"Saved {stats_path}")
+    
+    # 2. TIMELINE DATA JSON
+    # Structure: { "year": [ { "name": "...", "elo": ... }, ... ] }
+    # Get end-of-year ratings for each driver per year
+    timeline_data = {}
+    
+    for year in sorted(history_df['year'].unique()):
+        year_history = history_df[history_df['year'] == year]
+        # Get last rating for each driver in that year
+        end_of_year = year_history.groupby('driver').last().reset_index()
+        # Sort by rating descending
+        end_of_year = end_of_year.sort_values('rating', ascending=False)
+        
+        year_rankings = []
+        for _, row in end_of_year.iterrows():
+            year_rankings.append({
+                "name": row['driver'],
+                "elo": int(round(row['rating'], 0))
+            })
+        
+        timeline_data[str(int(year))] = year_rankings
+    
+    # Save timeline_data.json
+    timeline_path = 'frontend/src/data/timeline_data.json'
+    with open(timeline_path, 'w', encoding='utf-8') as f:
+        json.dump(timeline_data, f, indent=2, ensure_ascii=False)
+    print(f"Saved {timeline_path}")
+    
+    # 3. ELO HISTORY JSON (for dynamic charting/comparisons)
+    # Structure: { "Driver Name": [ { "year": 2007, "race_index": 1, "rating": 1523 }, ... ] }
+    # race_index is a global sequential index across all races
+    print("Generating ELO history for frontend charting...")
+    
+    elo_history = {}
+    
+    # Create a global race index mapping
+    # Sort all unique (year, round) combinations chronologically
+    race_keys = history_df[['year', 'round']].drop_duplicates().sort_values(['year', 'round'])
+    race_index_map = {(int(row['year']), int(row['round'])): idx for idx, (_, row) in enumerate(race_keys.iterrows())}
+    
+    for drv in history_df['driver'].unique():
+        drv_hist = history_df[history_df['driver'] == drv].sort_values(['year', 'round'])
+        
+        driver_data = []
+        for _, row in drv_hist.iterrows():
+            race_idx = race_index_map.get((int(row['year']), int(row['round'])), 0)
+            driver_data.append({
+                "year": int(row['year']),
+                "round": int(row['round']),
+                "race_name": str(row['race_name']) if 'race_name' in row and pd.notna(row['race_name']) else f"Round {int(row['round'])}",
+                "race_index": race_idx,
+                "rating": int(round(row['rating'], 0))
+            })
+        
+        elo_history[drv] = driver_data
+
+    
+    # Save elo_history.json
+    elo_history_path = 'frontend/src/data/elo_history.json'
+    with open(elo_history_path, 'w', encoding='utf-8') as f:
+        json.dump(elo_history, f, indent=2, ensure_ascii=False)
+    print(f"Saved {elo_history_path}")
+    
     print("Done!")
+
 
 if __name__ == "__main__":
     main()

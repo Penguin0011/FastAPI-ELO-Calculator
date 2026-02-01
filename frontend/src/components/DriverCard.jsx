@@ -2,8 +2,10 @@ import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { getDriverImage } from '../data/drivers'
 
-function DriverCard({ driver, index }) {
-    const rankClass = driver.rank === 1 ? 'top-1' : driver.rank === 2 ? 'top-2' : driver.rank === 3 ? 'top-3' : ''
+function DriverCard({ driver, index, subtitle }) {
+    // Use driver.rank if available, otherwise use index + 1
+    const rank = driver.rank || (index + 1)
+    const rankClass = rank === 1 ? 'top-1' : rank === 2 ? 'top-2' : rank === 3 ? 'top-3' : ''
 
     return (
         <motion.div
@@ -18,7 +20,7 @@ function DriverCard({ driver, index }) {
         >
             <Link to={`/driver/${encodeURIComponent(driver.name)}`}>
                 <div className="driver-card glass-card">
-                    <span className={`driver-card-rank ${rankClass}`}>#{driver.rank}</span>
+                    <span className={`driver-card-rank ${rankClass}`}>#{rank}</span>
                     <img
                         src={getDriverImage(driver.name)}
                         alt={driver.name}
@@ -28,7 +30,10 @@ function DriverCard({ driver, index }) {
                         }}
                     />
                     <h3 className="driver-card-name">{driver.name}</h3>
-                    <div className="driver-card-elo text-elo">{driver.elo}</div>
+                    <div className="driver-card-elo text-elo">
+                        {driver.elo}
+                        {subtitle && <span style={{ fontSize: '0.7em', opacity: 0.7, marginLeft: '4px' }}>{subtitle}</span>}
+                    </div>
                 </div>
             </Link>
         </motion.div>
@@ -36,3 +41,4 @@ function DriverCard({ driver, index }) {
 }
 
 export default DriverCard
+

@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { allTimePeakElo, currentGrid2025, getDriverImage } from '../data/drivers'
+import driverStats from '../data/driver_stats.json'
 
 // Helper to get plot path from driver name
 const getDriverPlotPath = (name) => {
@@ -28,8 +29,11 @@ function DriverDetail() {
     const allTimeDriver = allTimePeakElo.find(d => d.name === decodedName)
     const currentGridDriver = currentGrid2025.find(d => d.name === decodedName)
 
+    // Get stats from JSON (new data source)
+    const stats = driverStats[decodedName] || null
+
     // Use whichever data we have, prefer current grid if available
-    const driver = currentGridDriver || allTimeDriver
+    const driver = currentGridDriver || allTimeDriver || (stats ? { name: decodedName, elo: stats.peak_elo } : null)
 
     if (!driver) {
         return (
@@ -178,6 +182,30 @@ function DriverDetail() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.6 }}
                 >
+                    {/* Career Statistics from driver_stats.json */}
+                    {stats && (
+                        <div className="nav-card" style={{ cursor: 'default' }}>
+                            <h3 className="nav-card-title" style={{ color: 'var(--accent-green)' }}>
+                                Career Statistics
+                            </h3>
+                            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px', marginTop: '8px' }}>
+                                <p className="nav-card-description">
+                                    Wins: <strong style={{ fontSize: '1.3rem', color: 'var(--text-primary)' }}>{stats.wins}</strong>
+                                </p>
+                                <p className="nav-card-description">
+                                    Races: <strong style={{ fontSize: '1.3rem', color: 'var(--text-primary)' }}>{stats.total_races}</strong>
+                                </p>
+                                <p className="nav-card-description">
+                                    Win Rate: <strong style={{ fontSize: '1.3rem', color: 'var(--text-primary)' }}>
+                                        {((stats.wins / stats.total_races) * 100).toFixed(1)}%
+                                    </strong>
+                                </p>
+                                <p className="nav-card-description">
+                                    Avg ELO: <strong style={{ fontSize: '1.3rem', color: 'var(--text-primary)' }}>{stats.avg_elo}</strong>
+                                </p>
+                            </div>
+                        </div>
+                    )}
                     {allTimeDriver && (
                         <div className="nav-card" style={{ cursor: 'default' }}>
                             <h3 className="nav-card-title" style={{ color: 'var(--accent-gold)' }}>
