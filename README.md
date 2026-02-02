@@ -1,6 +1,59 @@
 # The Bayesian F1 Engine
 
-We’ll explore why standard ranking systems fail in the chaotic environment of Formula 1 and how a **Bayesian Inference** approach solves the "Man vs. Machine" paradox. By the end of this read, you will understand:
+A FastAPI-based ELO calculator that pulls data from fastf1.dev and calculates driver ELO ratings using Bayesian inference to separate driver skill from car performance.
+
+## Repository Info
+- Repo: theaakashb/FastAPI-ELO-Calculator
+- Contributors: theaakashb & SHTG1itch
+
+## Quick Start
+
+### Getting Started
+1. Create and activate a virtual environment
+   - macOS/Linux:
+     ```
+     python -m venv .venv
+     source .venv/bin/activate
+     ```
+   - Windows (PowerShell):
+     ```
+     python -m venv .venv
+     .\.venv\Scripts\Activate.ps1
+     ```
+2. Install dependencies:
+   ```
+   pip install -r requirements.txt
+   ```
+3. Run the FastAPI app (example):
+   ```
+   uvicorn app.main:app --reload
+   ```
+   Adjust the module path to match your project layout.
+
+### Data Sources and Networking
+To allow FastF1 to retrieve data, ensure your firewall permits outbound HTTPS access to:
+- https://livetiming.formula1.com (primary for live timing/telemetry)
+
+Depending on your usage for schedules/results, you may also need:
+- https://ergast.com
+- https://api.jolpica-f1.com
+
+### Configuration
+- Set any environment variables required for FastF1 caching or API behavior.
+- Configure ELO calculation parameters (e.g., K-factor, weighting for quali vs race, DNFs, penalties) in your application settings.
+
+### Endpoints (examples)
+- `GET /elo/{driver}`: Retrieve the current ELO for a driver
+- `POST /elo/recalculate`: Trigger recalculation for a session or season
+- `GET /sessions/{year}`: List sessions available for a given year
+
+Note: Actual endpoints depend on how your FastAPI app is structured.
+
+---
+
+## The Methodology: Why Bayesian?
+
+This project explores why standard ranking systems fail in the chaotic environment of Formula 1 and how a **Bayesian Inference** approach solves the "Man vs. Machine" paradox. By the end of this section, you will understand:
 *   Why "Points Exchange" models (like standard Elo) cannot handle F1's hardware asymmetry.
 *   What "Bayesian Inference" actually is (without the jargon).
 *   How we mathematically isolate **Driver Skill** from **Car Performance** using telemetry physics and probability theory.
@@ -135,3 +188,13 @@ This ensures that reliability issues do not disguise a driver's peak capability.
 
 ## Final Thoughts
 By combining **Bayesian Probability**, **Physics Telemetry**, and **Context-Aware Volatility**, this engine does what the Championship Standings cannot: it predicts who would win if everyone drove the same car.
+
+---
+
+## Development Notes
+- FastF1 benefits from a local cache to avoid repeated downloads; ensure the cache directory is writable.
+- When running behind a firewall, verify the allowed domains above are reachable.
+- This project uses the FastF1 library to retrieve Formula 1 timing and telemetry data, then computes ELO ratings for drivers based on configurable factors.
+
+## License
+Add your chosen license here.
