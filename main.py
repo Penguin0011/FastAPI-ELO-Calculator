@@ -348,6 +348,197 @@ def main():
         json.dump(elo_history, f, indent=2, ensure_ascii=False)
     print(f"Saved {elo_history_path}")
     
+    # ---------------------------------------------------------
+    # 4. DRIVER BEST CAR JSON (Most Successful Car Feature)
+    # ---------------------------------------------------------
+    print("Generating driver best car data...")
+    
+    # Comprehensive F1 car name mapping: (constructor, year) -> car model name
+    CAR_NAME_MAP = {
+        # Red Bull Racing (2005-2025) - both naming variants used in CSV
+        ("Red Bull", 2005): "RB1", ("Red Bull", 2006): "RB2", ("Red Bull", 2007): "RB3",
+        ("Red Bull", 2008): "RB4", ("Red Bull", 2009): "RB5", ("Red Bull", 2010): "RB6",
+        ("Red Bull", 2011): "RB7", ("Red Bull", 2012): "RB8", ("Red Bull", 2013): "RB9",
+        ("Red Bull", 2014): "RB10", ("Red Bull", 2015): "RB11", ("Red Bull", 2016): "RB12",
+        ("Red Bull", 2017): "RB13", ("Red Bull", 2018): "RB14", ("Red Bull", 2019): "RB15",
+        ("Red Bull", 2020): "RB16", ("Red Bull", 2021): "RB16B", ("Red Bull", 2022): "RB18",
+        ("Red Bull", 2023): "RB19", ("Red Bull", 2024): "RB20", ("Red Bull", 2025): "RB21",
+        ("Red Bull Racing", 2005): "RB1", ("Red Bull Racing", 2006): "RB2", ("Red Bull Racing", 2007): "RB3",
+        ("Red Bull Racing", 2008): "RB4", ("Red Bull Racing", 2009): "RB5", ("Red Bull Racing", 2010): "RB6",
+        ("Red Bull Racing", 2011): "RB7", ("Red Bull Racing", 2012): "RB8", ("Red Bull Racing", 2013): "RB9",
+        ("Red Bull Racing", 2014): "RB10", ("Red Bull Racing", 2015): "RB11", ("Red Bull Racing", 2016): "RB12",
+        ("Red Bull Racing", 2017): "RB13", ("Red Bull Racing", 2018): "RB14", ("Red Bull Racing", 2019): "RB15",
+        ("Red Bull Racing", 2020): "RB16", ("Red Bull Racing", 2021): "RB16B", ("Red Bull Racing", 2022): "RB18",
+        ("Red Bull Racing", 2023): "RB19", ("Red Bull Racing", 2024): "RB20", ("Red Bull Racing", 2025): "RB21",
+        
+        # Mercedes (2010-2025)
+        ("Mercedes", 2010): "W01", ("Mercedes", 2011): "W02", ("Mercedes", 2012): "W03",
+        ("Mercedes", 2013): "W04", ("Mercedes", 2014): "W05", ("Mercedes", 2015): "W06",
+        ("Mercedes", 2016): "W07", ("Mercedes", 2017): "W08", ("Mercedes", 2018): "W09",
+        ("Mercedes", 2019): "W10", ("Mercedes", 2020): "W11", ("Mercedes", 2021): "W12",
+        ("Mercedes", 2022): "W13", ("Mercedes", 2023): "W14", ("Mercedes", 2024): "W15",
+        ("Mercedes", 2025): "W16",
+        
+        # Ferrari (2010-2025)
+        ("Ferrari", 2010): "F10", ("Ferrari", 2011): "150° Italia", ("Ferrari", 2012): "F2012",
+        ("Ferrari", 2013): "F138", ("Ferrari", 2014): "F14 T", ("Ferrari", 2015): "SF15-T",
+        ("Ferrari", 2016): "SF16-H", ("Ferrari", 2017): "SF70H", ("Ferrari", 2018): "SF71H",
+        ("Ferrari", 2019): "SF90", ("Ferrari", 2020): "SF1000", ("Ferrari", 2021): "SF21",
+        ("Ferrari", 2022): "F1-75", ("Ferrari", 2023): "SF-23", ("Ferrari", 2024): "SF-24",
+        ("Ferrari", 2025): "SF-25",
+        
+        # McLaren (2010-2025)
+        ("McLaren", 2010): "MP4-25", ("McLaren", 2011): "MP4-26", ("McLaren", 2012): "MP4-27",
+        ("McLaren", 2013): "MP4-28", ("McLaren", 2014): "MP4-29", ("McLaren", 2015): "MP4-30",
+        ("McLaren", 2016): "MP4-31", ("McLaren", 2017): "MCL32", ("McLaren", 2018): "MCL33",
+        ("McLaren", 2019): "MCL34", ("McLaren", 2020): "MCL35", ("McLaren", 2021): "MCL35M",
+        ("McLaren", 2022): "MCL36", ("McLaren", 2023): "MCL60", ("McLaren", 2024): "MCL38",
+        ("McLaren", 2025): "MCL39",
+        
+        # Alpine / Renault (2002-2025)
+        ("Renault", 2002): "R22", ("Renault", 2003): "R23", ("Renault", 2004): "R24",
+        ("Renault", 2005): "R25", ("Renault", 2006): "R26", ("Renault", 2007): "R27",
+        ("Renault", 2008): "R28", ("Renault", 2009): "R29", ("Renault", 2010): "R30",
+        ("Renault", 2011): "R31", ("Renault", 2016): "R.S.16", ("Renault", 2017): "R.S.17",
+        ("Renault", 2018): "R.S.18", ("Renault", 2019): "R.S.19", ("Renault", 2020): "R.S.20",
+        ("Alpine", 2021): "A521", ("Alpine", 2022): "A522", ("Alpine", 2023): "A523",
+        ("Alpine", 2024): "A524", ("Alpine", 2025): "A525",
+        
+        # Aston Martin (2021-2025)
+        ("Aston Martin", 2021): "AMR21", ("Aston Martin", 2022): "AMR22",
+        ("Aston Martin", 2023): "AMR23", ("Aston Martin", 2024): "AMR24",
+        ("Aston Martin", 2025): "AMR25",
+        
+        # Williams (2009-2025)
+        ("Williams", 2009): "FW31", ("Williams", 2010): "FW32", ("Williams", 2011): "FW33",
+        ("Williams", 2012): "FW34", ("Williams", 2013): "FW35", ("Williams", 2014): "FW36",
+        ("Williams", 2015): "FW37", ("Williams", 2016): "FW38", ("Williams", 2017): "FW40",
+        ("Williams", 2018): "FW41", ("Williams", 2019): "FW42", ("Williams", 2020): "FW43",
+        ("Williams", 2021): "FW43B", ("Williams", 2022): "FW44", ("Williams", 2023): "FW45",
+        ("Williams", 2024): "FW46", ("Williams", 2025): "FW47",
+        
+        # Haas (2016-2025)
+        ("Haas F1 Team", 2016): "VF-16", ("Haas F1 Team", 2017): "VF-17",
+        ("Haas F1 Team", 2018): "VF-18", ("Haas F1 Team", 2019): "VF-19",
+        ("Haas F1 Team", 2020): "VF-20", ("Haas F1 Team", 2021): "VF-21",
+        ("Haas F1 Team", 2022): "VF-22", ("Haas F1 Team", 2023): "VF-23",
+        ("Haas F1 Team", 2024): "VF-24", ("Haas F1 Team", 2025): "VF-25",
+        
+        # Sauber / Alfa Romeo (2018-2025) - CSV uses both "Alfa Romeo" and "Alfa Romeo Racing"
+        ("Sauber", 2018): "C37", ("Alfa Romeo", 2019): "C38", ("Alfa Romeo", 2020): "C39",
+        ("Alfa Romeo", 2021): "C41", ("Alfa Romeo", 2022): "C42", ("Alfa Romeo", 2023): "C43",
+        ("Alfa Romeo Racing", 2019): "C38", ("Alfa Romeo Racing", 2020): "C39",
+        ("Alfa Romeo Racing", 2021): "C41", ("Alfa Romeo Racing", 2022): "C42", ("Alfa Romeo Racing", 2023): "C43",
+        ("Sauber", 2024): "C44", ("Sauber", 2025): "C45",
+        ("Kick Sauber", 2024): "C44", ("Kick Sauber", 2025): "C45",
+        
+        # Toro Rosso / AlphaTauri / RB (2006-2025)
+        ("Toro Rosso", 2006): "STR1", ("Toro Rosso", 2007): "STR2", ("Toro Rosso", 2008): "STR3",
+        ("Toro Rosso", 2009): "STR4", ("Toro Rosso", 2010): "STR5", ("Toro Rosso", 2011): "STR6",
+        ("Toro Rosso", 2012): "STR7", ("Toro Rosso", 2013): "STR8", ("Toro Rosso", 2014): "STR9",
+        ("Toro Rosso", 2015): "STR10", ("Toro Rosso", 2016): "STR11", ("Toro Rosso", 2017): "STR12",
+        ("Toro Rosso", 2018): "STR13", ("Toro Rosso", 2019): "STR14",
+        ("AlphaTauri", 2020): "AT01", ("AlphaTauri", 2021): "AT02",
+        ("AlphaTauri", 2022): "AT03", ("AlphaTauri", 2023): "AT04",
+        ("RB", 2024): "VCARB 01", ("RB", 2025): "VCARB 02",
+        
+        # Force India / Racing Point (2008-2020)
+        ("Force India", 2008): "VJM01", ("Force India", 2009): "VJM02",
+        ("Force India", 2010): "VJM03", ("Force India", 2011): "VJM04",
+        ("Force India", 2012): "VJM05", ("Force India", 2013): "VJM06",
+        ("Force India", 2014): "VJM07", ("Force India", 2015): "VJM08",
+        ("Force India", 2016): "VJM09", ("Force India", 2017): "VJM10",
+        ("Force India", 2018): "VJM11",
+        ("Racing Point", 2019): "RP19", ("Racing Point", 2020): "RP20",
+    }
+    
+    def get_car_name(constructor, year):
+        """Get specific car model name from constructor and year."""
+        return CAR_NAME_MAP.get((constructor, year), f"{constructor} {year}")
+    
+    # Calculate best car for each driver
+    driver_best_car = {}
+    
+    for drv in data['driver_name'].unique():
+        drv_data = data[data['driver_name'] == drv]
+        drv_hist = history_df[history_df['driver'] == drv].sort_values(['year', 'round'])
+        
+        if drv_hist.empty:
+            continue
+        
+        # Group by constructor to find best stint
+        constructor_stints = {}
+        
+        for constructor in drv_data['constructor'].unique():
+            stint_data = drv_data[drv_data['constructor'] == constructor]
+            stint_years = sorted(stint_data['year'].unique())
+            
+            if not stint_years:
+                continue
+            
+            year_start = int(stint_years[0])
+            year_end = int(stint_years[-1])
+            
+            # Calculate total stats for this constructor stint (used for scoring)
+            total_stint_wins = int((stint_data['position'] == 1).sum())
+            total_stint_races = len(stint_data)
+            
+            # Get ELO progression during this stint
+            stint_history = drv_hist[(drv_hist['year'] >= year_start) & (drv_hist['year'] <= year_end)]
+            
+            if stint_history.empty:
+                continue
+            
+            start_elo = stint_history.iloc[0]['rating']
+            end_elo = stint_history.iloc[-1]['rating']
+            elo_gained = end_elo - start_elo
+            peak_elo = stint_history['rating'].max()
+            
+            # Find the best single year with this constructor for car name
+            best_year = stint_data.groupby('year').apply(
+                lambda x: (x['position'] == 1).sum()
+            ).idxmax() if total_stint_wins > 0 else year_end
+            
+            car_name = get_car_name(constructor, int(best_year))
+            
+            # Calculate stats for the BEST YEAR only (the specific car)
+            best_year_data = stint_data[stint_data['year'] == best_year]
+            car_wins = int((best_year_data['position'] == 1).sum())
+            car_races = len(best_year_data)
+            car_win_rate = (car_wins / car_races * 100) if car_races > 0 else 0
+            
+            constructor_stints[constructor] = {
+                "constructor": constructor,
+                "car_name": car_name,
+                "best_year": int(best_year),
+                "year_start": year_start,
+                "year_end": year_end,
+                "wins": car_wins,  # Wins with this specific car/year
+                "total_races": car_races,  # Races in that specific year
+                "win_rate": round(car_win_rate, 1),  # Win rate for that specific car
+                "elo_gained": int(round(elo_gained)),
+                "peak_elo": int(round(peak_elo)),
+                # Score for ranking: prioritize ELO gained, then win rate, then wins
+                "_score": (elo_gained * 2) + (car_win_rate * 5) + (car_wins * 10)
+            }
+        
+        if not constructor_stints:
+            continue
+        
+        # Find the best constructor stint by score
+        best_stint = max(constructor_stints.values(), key=lambda x: x["_score"])
+        
+        # Remove internal score from output
+        del best_stint["_score"]
+        
+        driver_best_car[drv] = best_stint
+    
+    # Save driver_best_car.json
+    best_car_path = 'frontend/src/data/driver_best_car.json'
+    with open(best_car_path, 'w', encoding='utf-8') as f:
+        json.dump(driver_best_car, f, indent=2, ensure_ascii=False)
+    print(f"Saved {best_car_path}")
+    
     print("Done!")
 
 

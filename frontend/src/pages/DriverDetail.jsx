@@ -3,6 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { allTimePeakElo, currentGrid2025, getDriverImage } from '../data/drivers'
 import driverStats from '../data/driver_stats.json'
+import driverBestCar from '../data/driver_best_car.json'
 
 // Helper to get plot path from driver name
 const getDriverPlotPath = (name) => {
@@ -31,6 +32,9 @@ function DriverDetail() {
 
     // Get stats from JSON (new data source)
     const stats = driverStats[decodedName] || null
+
+    // Get best car data
+    const bestCar = driverBestCar[decodedName] || null
 
     // Use whichever data we have, prefer current grid if available
     const driver = currentGridDriver || allTimeDriver || (stats ? { name: decodedName, elo: stats.peak_elo } : null)
@@ -202,6 +206,38 @@ function DriverDetail() {
                                 </p>
                                 <p className="nav-card-description">
                                     Avg ELO: <strong style={{ fontSize: '1.3rem', color: 'var(--text-primary)' }}>{stats.avg_elo}</strong>
+                                </p>
+                            </div>
+                        </div>
+                    )}
+                    {/* Most Successful Car */}
+                    {bestCar && (
+                        <div className="nav-card" style={{ cursor: 'default' }}>
+                            <h3 className="nav-card-title" style={{ color: '#a855f7' }}>
+                                🏎️ Most Successful Car
+                            </h3>
+                            <p className="nav-card-description" style={{ marginTop: '8px' }}>
+                                <strong style={{ fontSize: '1.4rem', color: 'var(--text-primary)', display: 'block', marginBottom: '4px' }}>
+                                    {bestCar.car_name}
+                                </strong>
+                                <span style={{ fontSize: '0.85rem', opacity: 0.7 }}>
+                                    {bestCar.constructor} ({bestCar.year_start === bestCar.year_end ? bestCar.best_year : `${bestCar.year_start}-${bestCar.year_end}`})
+                                </span>
+                            </p>
+                            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '6px', marginTop: '10px' }}>
+                                <p className="nav-card-description">
+                                    Wins: <strong style={{ fontSize: '1.2rem', color: 'var(--text-primary)' }}>{bestCar.wins}</strong>
+                                </p>
+                                <p className="nav-card-description">
+                                    Win Rate: <strong style={{ fontSize: '1.2rem', color: 'var(--text-primary)' }}>{bestCar.win_rate}%</strong>
+                                </p>
+                                <p className="nav-card-description">
+                                    ELO Gained: <strong style={{ fontSize: '1.2rem', color: bestCar.elo_gained >= 0 ? '#22c55e' : '#ef4444' }}>
+                                        {bestCar.elo_gained >= 0 ? '+' : ''}{bestCar.elo_gained}
+                                    </strong>
+                                </p>
+                                <p className="nav-card-description">
+                                    Peak ELO: <strong style={{ fontSize: '1.2rem', color: 'var(--text-primary)' }}>{bestCar.peak_elo}</strong>
                                 </p>
                             </div>
                         </div>
