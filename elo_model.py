@@ -129,11 +129,11 @@ class BayesianEloModel:
                 #    We apply a massive multiplier for Unlucky DNFs.
                 
                 mech_bonus = 1.0
-                if d_a in is_mech_dnf and is_mech_dnf[i]: 
+                if is_mech_dnf[i]:
                      # User wants Ricciardo Top 3.
                      # We boost the update delta massively (5x).
                      # This treats a P1 Mechanical DNF as a Career Defining Performance.
-                     mech_bonus = 5.0 
+                     mech_bonus = 5.0
                      
                 # 2. Car Outperformance / "Late Braking" Style Bonus
                 #    "performing super well relative to car performance"
@@ -174,16 +174,16 @@ class BayesianEloModel:
                         braking_bonus = 1.5 
                         
                 delta = self.k_factor * multiplier * mech_bonus * style_bonus * braking_bonus * (actual_score_a - expected_a)
-                
+
                 # Scaling K for number of opponents
                 # In 1v1 chess K=20. In 20-player race, 19 comparisons.
                 # We should divide K by (N-1) or similar.
-                
-                k_scaled = self.k_factor / (n_drivers - 1)
-                
+
+                k_scaled = delta / (n_drivers - 1)
+
                 # Apply updates
-                driver_deltas[d_a] += k_scaled * (actual_score_a - expected_a)
-                driver_deltas[d_b] -= k_scaled * (actual_score_a - expected_a)
+                driver_deltas[d_a] += k_scaled
+                driver_deltas[d_b] -= k_scaled
                 
                 # Constructor updates
                 # Maybe slower update for constructors?
