@@ -1,0 +1,12 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_07_k_factor_dynamics/480p15/partial_movie_files/CombinedKFactor/1584795214_526057669_223132457.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_07_k_factor_dynamics/480p15/partial_movie_files/CombinedKFactor/4072820271_2759767708_2621270519.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_07_k_factor_dynamics/480p15/partial_movie_files/CombinedKFactor/4072820271_1418274609_623398586.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_07_k_factor_dynamics/480p15/partial_movie_files/CombinedKFactor/4072820271_587058434_3224548554.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_07_k_factor_dynamics/480p15/partial_movie_files/CombinedKFactor/4072820271_3010880763_3872077767.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_07_k_factor_dynamics/480p15/partial_movie_files/CombinedKFactor/4072820271_1432596116_1637199606.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_07_k_factor_dynamics/480p15/partial_movie_files/CombinedKFactor/4072820271_1156662516_3535471755.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_07_k_factor_dynamics/480p15/partial_movie_files/CombinedKFactor/4072820271_2233910589_471688943.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_07_k_factor_dynamics/480p15/partial_movie_files/CombinedKFactor/4072820271_3845571627_147086977.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_07_k_factor_dynamics/480p15/partial_movie_files/CombinedKFactor/4072820271_4277570474_877314636.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_07_k_factor_dynamics/480p15/partial_movie_files/CombinedKFactor/4072820271_3593939702_3231049364.mp4'

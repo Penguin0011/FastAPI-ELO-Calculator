@@ -1,0 +1,12 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_01_elo_history/480p15/partial_movie_files/ChessSymmetry/1584795214_3349910250_223132457.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_01_elo_history/480p15/partial_movie_files/ChessSymmetry/4072820271_107488017_4220436472.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_01_elo_history/480p15/partial_movie_files/ChessSymmetry/4072820271_2574473371_3229022884.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_01_elo_history/480p15/partial_movie_files/ChessSymmetry/4072820271_3478815473_1923953906.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_01_elo_history/480p15/partial_movie_files/ChessSymmetry/4072820271_2574473371_4102468171.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_01_elo_history/480p15/partial_movie_files/ChessSymmetry/4072820271_2911580993_1932416763.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_01_elo_history/480p15/partial_movie_files/ChessSymmetry/4072820271_2574473371_4158590279.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_01_elo_history/480p15/partial_movie_files/ChessSymmetry/4072820271_1432596116_3292115183.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_01_elo_history/480p15/partial_movie_files/ChessSymmetry/4072820271_1893993760_495025323.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_01_elo_history/480p15/partial_movie_files/ChessSymmetry/4072820271_4277570474_4247516683.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_01_elo_history/480p15/partial_movie_files/ChessSymmetry/4072820271_3627235013_2411646647.mp4'

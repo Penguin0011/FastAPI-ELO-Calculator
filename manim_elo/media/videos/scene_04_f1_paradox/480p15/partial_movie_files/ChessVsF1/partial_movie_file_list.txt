@@ -1,0 +1,9 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_04_f1_paradox/480p15/partial_movie_files/ChessVsF1/1584795214_3796022940_223132457.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_04_f1_paradox/480p15/partial_movie_files/ChessVsF1/4072820271_1031794003_3141614295.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_04_f1_paradox/480p15/partial_movie_files/ChessVsF1/4072820271_2850791285_2452362399.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_04_f1_paradox/480p15/partial_movie_files/ChessVsF1/4072820271_1189161161_774823107.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_04_f1_paradox/480p15/partial_movie_files/ChessVsF1/4072820271_1432596116_324642650.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_04_f1_paradox/480p15/partial_movie_files/ChessVsF1/4072820271_37057663_449391351.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_04_f1_paradox/480p15/partial_movie_files/ChessVsF1/4072820271_4277570474_3338034360.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_04_f1_paradox/480p15/partial_movie_files/ChessVsF1/4072820271_405800961_3047418373.mp4'

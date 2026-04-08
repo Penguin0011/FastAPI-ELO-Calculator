@@ -1,0 +1,10 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s03_elo_physics/480p15/partial_movie_files/Scene3_4_DifferenceOfNormals/3087832721_1717045271_223132457.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s03_elo_physics/480p15/partial_movie_files/Scene3_4_DifferenceOfNormals/3350879045_1198230993_3700621428.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s03_elo_physics/480p15/partial_movie_files/Scene3_4_DifferenceOfNormals/3350879045_889734474_1544373423.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s03_elo_physics/480p15/partial_movie_files/Scene3_4_DifferenceOfNormals/3350879045_1161805271_3799144437.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s03_elo_physics/480p15/partial_movie_files/Scene3_4_DifferenceOfNormals/3350879045_3166388513_2138339137.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s03_elo_physics/480p15/partial_movie_files/Scene3_4_DifferenceOfNormals/3350879045_1970098390_4273680432.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s03_elo_physics/480p15/partial_movie_files/Scene3_4_DifferenceOfNormals/3350879045_1317747554_1638740164.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s03_elo_physics/480p15/partial_movie_files/Scene3_4_DifferenceOfNormals/3350879045_2872842549_3258555871.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s03_elo_physics/480p15/partial_movie_files/Scene3_4_DifferenceOfNormals/3350879045_4279657876_3837625637.mp4'

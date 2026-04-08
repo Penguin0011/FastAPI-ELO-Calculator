@@ -1,0 +1,11 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s03_elo_physics/480p15/partial_movie_files/Scene3_3_NormalDistribution/3087832721_1230322884_223132457.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s03_elo_physics/480p15/partial_movie_files/Scene3_3_NormalDistribution/3350879045_2426099566_3541955422.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s03_elo_physics/480p15/partial_movie_files/Scene3_3_NormalDistribution/3350879045_748611795_2113273107.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s03_elo_physics/480p15/partial_movie_files/Scene3_3_NormalDistribution/3350879045_2785732339_2929445287.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s03_elo_physics/480p15/partial_movie_files/Scene3_3_NormalDistribution/3350879045_3303553856_1627086855.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s03_elo_physics/480p15/partial_movie_files/Scene3_3_NormalDistribution/3350879045_1675411198_930109369.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s03_elo_physics/480p15/partial_movie_files/Scene3_3_NormalDistribution/3350879045_2414591936_3966757302.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s03_elo_physics/480p15/partial_movie_files/Scene3_3_NormalDistribution/3350879045_3740052002_1264030385.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s03_elo_physics/480p15/partial_movie_files/Scene3_3_NormalDistribution/3350879045_2872842549_3627128154.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s03_elo_physics/480p15/partial_movie_files/Scene3_3_NormalDistribution/3350879045_1338162641_1457951183.mp4'

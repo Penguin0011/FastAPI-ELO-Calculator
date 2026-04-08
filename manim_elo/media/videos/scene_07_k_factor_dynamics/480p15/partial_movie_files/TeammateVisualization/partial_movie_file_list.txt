@@ -1,0 +1,8 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_07_k_factor_dynamics/480p15/partial_movie_files/TeammateVisualization/1584795214_4108357761_223132457.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_07_k_factor_dynamics/480p15/partial_movie_files/TeammateVisualization/4072820271_3088053393_1301070363.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_07_k_factor_dynamics/480p15/partial_movie_files/TeammateVisualization/4072820271_978885640_111619748.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_07_k_factor_dynamics/480p15/partial_movie_files/TeammateVisualization/4072820271_3713507516_1750322824.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_07_k_factor_dynamics/480p15/partial_movie_files/TeammateVisualization/4072820271_800679433_2058793721.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_07_k_factor_dynamics/480p15/partial_movie_files/TeammateVisualization/4072820271_4277570474_1499389880.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_07_k_factor_dynamics/480p15/partial_movie_files/TeammateVisualization/4072820271_2069120275_1444562524.mp4'

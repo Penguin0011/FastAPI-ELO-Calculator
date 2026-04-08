@@ -1,0 +1,8 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_05_bayesian_primer/480p15/partial_movie_files/FrequentistVsBayesian/1584795214_3635813249_223132457.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_05_bayesian_primer/480p15/partial_movie_files/FrequentistVsBayesian/4072820271_1077959635_2969755010.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_05_bayesian_primer/480p15/partial_movie_files/FrequentistVsBayesian/4072820271_2885628938_95728243.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_05_bayesian_primer/480p15/partial_movie_files/FrequentistVsBayesian/4072820271_1432596116_3929056904.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_05_bayesian_primer/480p15/partial_movie_files/FrequentistVsBayesian/4072820271_1158252410_3529556151.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_05_bayesian_primer/480p15/partial_movie_files/FrequentistVsBayesian/4072820271_4277570474_3648642950.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_05_bayesian_primer/480p15/partial_movie_files/FrequentistVsBayesian/4072820271_297051526_2384491827.mp4'

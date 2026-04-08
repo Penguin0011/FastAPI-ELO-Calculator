@@ -1,0 +1,9 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_10_full_system/480p15/partial_movie_files/WhatItAchieves/1584795214_2434029995_223132457.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_10_full_system/480p15/partial_movie_files/WhatItAchieves/4072820271_464504701_1032519824.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_10_full_system/480p15/partial_movie_files/WhatItAchieves/4072820271_2979688227_2401457985.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_10_full_system/480p15/partial_movie_files/WhatItAchieves/4072820271_473411619_3161334994.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_10_full_system/480p15/partial_movie_files/WhatItAchieves/4072820271_3355955783_1385881817.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_10_full_system/480p15/partial_movie_files/WhatItAchieves/4072820271_4109919941_877280624.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_10_full_system/480p15/partial_movie_files/WhatItAchieves/4072820271_4277570474_4219950147.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_10_full_system/480p15/partial_movie_files/WhatItAchieves/4072820271_1929755000_2323045511.mp4'

@@ -1,0 +1,7 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_09_dnf_handling/480p15/partial_movie_files/StolenWinExample/1584795214_974534501_223132457.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_09_dnf_handling/480p15/partial_movie_files/StolenWinExample/4072820271_2831619938_1672975374.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_09_dnf_handling/480p15/partial_movie_files/StolenWinExample/4072820271_388676119_1651252422.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_09_dnf_handling/480p15/partial_movie_files/StolenWinExample/4072820271_2466252893_984682212.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_09_dnf_handling/480p15/partial_movie_files/StolenWinExample/4072820271_4277570474_1428787467.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_09_dnf_handling/480p15/partial_movie_files/StolenWinExample/4072820271_979212407_1074868816.mp4'

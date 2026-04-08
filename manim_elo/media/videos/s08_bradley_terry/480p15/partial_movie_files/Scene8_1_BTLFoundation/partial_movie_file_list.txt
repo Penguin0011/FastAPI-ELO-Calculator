@@ -1,0 +1,9 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s08_bradley_terry/480p15/partial_movie_files/Scene8_1_BTLFoundation/uncached_00000.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s08_bradley_terry/480p15/partial_movie_files/Scene8_1_BTLFoundation/uncached_00001.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s08_bradley_terry/480p15/partial_movie_files/Scene8_1_BTLFoundation/uncached_00002.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s08_bradley_terry/480p15/partial_movie_files/Scene8_1_BTLFoundation/uncached_00003.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s08_bradley_terry/480p15/partial_movie_files/Scene8_1_BTLFoundation/uncached_00004.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s08_bradley_terry/480p15/partial_movie_files/Scene8_1_BTLFoundation/uncached_00005.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s08_bradley_terry/480p15/partial_movie_files/Scene8_1_BTLFoundation/uncached_00006.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s08_bradley_terry/480p15/partial_movie_files/Scene8_1_BTLFoundation/uncached_00007.mp4'

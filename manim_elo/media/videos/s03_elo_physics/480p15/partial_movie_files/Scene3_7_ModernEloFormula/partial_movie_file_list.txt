@@ -1,0 +1,9 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s03_elo_physics/480p15/partial_movie_files/Scene3_7_ModernEloFormula/3087832721_730958716_223132457.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s03_elo_physics/480p15/partial_movie_files/Scene3_7_ModernEloFormula/3350879045_1059038234_3882706240.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s03_elo_physics/480p15/partial_movie_files/Scene3_7_ModernEloFormula/3350879045_1334963653_1593670387.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s03_elo_physics/480p15/partial_movie_files/Scene3_7_ModernEloFormula/3350879045_4274506686_1381589766.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s03_elo_physics/480p15/partial_movie_files/Scene3_7_ModernEloFormula/3350879045_1262451326_3278220146.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s03_elo_physics/480p15/partial_movie_files/Scene3_7_ModernEloFormula/3350879045_2286931161_483469847.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s03_elo_physics/480p15/partial_movie_files/Scene3_7_ModernEloFormula/3350879045_2872842549_4090400962.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s03_elo_physics/480p15/partial_movie_files/Scene3_7_ModernEloFormula/3350879045_1788187108_883618883.mp4'
