@@ -1,0 +1,8 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s11_physics_telemetry/1080p60/partial_movie_files/Scene11_5_FrictionCircle/3833965276_366910178_223132457.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s11_physics_telemetry/1080p60/partial_movie_files/Scene11_5_FrictionCircle/104335764_490606644_2810980189.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s11_physics_telemetry/1080p60/partial_movie_files/Scene11_5_FrictionCircle/104335764_2541552233_2330096344.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s11_physics_telemetry/1080p60/partial_movie_files/Scene11_5_FrictionCircle/104335764_2347647672_3756565632.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s11_physics_telemetry/1080p60/partial_movie_files/Scene11_5_FrictionCircle/104335764_3508540556_2302154992.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s11_physics_telemetry/1080p60/partial_movie_files/Scene11_5_FrictionCircle/104335764_2924455773_1325344414.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s11_physics_telemetry/1080p60/partial_movie_files/Scene11_5_FrictionCircle/104335764_2813827463_3489828130.mp4'

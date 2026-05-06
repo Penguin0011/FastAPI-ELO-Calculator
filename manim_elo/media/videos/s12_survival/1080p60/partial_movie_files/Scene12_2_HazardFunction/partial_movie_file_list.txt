@@ -1,0 +1,9 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s12_survival/1080p60/partial_movie_files/Scene12_2_HazardFunction/3833965276_3370320231_223132457.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s12_survival/1080p60/partial_movie_files/Scene12_2_HazardFunction/104335764_2665520267_968501666.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s12_survival/1080p60/partial_movie_files/Scene12_2_HazardFunction/104335764_3576891056_3794616229.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s12_survival/1080p60/partial_movie_files/Scene12_2_HazardFunction/104335764_2415201134_1826971626.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s12_survival/1080p60/partial_movie_files/Scene12_2_HazardFunction/104335764_1722146013_519182302.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s12_survival/1080p60/partial_movie_files/Scene12_2_HazardFunction/104335764_3273943351_770281389.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s12_survival/1080p60/partial_movie_files/Scene12_2_HazardFunction/104335764_3725668193_333626833.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s12_survival/1080p60/partial_movie_files/Scene12_2_HazardFunction/104335764_225166180_3703547326.mp4'

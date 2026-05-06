@@ -1,5 +1,0 @@
-# This file is used internally by FFMPEG.
-file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_03_elo_math/480p15/partial_movie_files/EloMathIntro/1584795214_2269387254_223132457.mp4'
-file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_03_elo_math/480p15/partial_movie_files/EloMathIntro/4072820271_953762247_2863985762.mp4'
-file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_03_elo_math/480p15/partial_movie_files/EloMathIntro/4072820271_2872842549_2726248770.mp4'
-file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_03_elo_math/480p15/partial_movie_files/EloMathIntro/4072820271_1788445111_329055245.mp4'

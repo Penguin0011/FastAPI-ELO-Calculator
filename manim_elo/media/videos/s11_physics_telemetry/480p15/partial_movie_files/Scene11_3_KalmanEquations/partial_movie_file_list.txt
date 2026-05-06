@@ -1,8 +1,0 @@
-# This file is used internally by FFMPEG.
-file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s11_physics_telemetry/480p15/partial_movie_files/Scene11_3_KalmanEquations/uncached_00000.mp4'
-file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s11_physics_telemetry/480p15/partial_movie_files/Scene11_3_KalmanEquations/uncached_00001.mp4'
-file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s11_physics_telemetry/480p15/partial_movie_files/Scene11_3_KalmanEquations/uncached_00002.mp4'
-file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s11_physics_telemetry/480p15/partial_movie_files/Scene11_3_KalmanEquations/uncached_00003.mp4'
-file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s11_physics_telemetry/480p15/partial_movie_files/Scene11_3_KalmanEquations/uncached_00004.mp4'
-file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s11_physics_telemetry/480p15/partial_movie_files/Scene11_3_KalmanEquations/uncached_00005.mp4'
-file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s11_physics_telemetry/480p15/partial_movie_files/Scene11_3_KalmanEquations/uncached_00006.mp4'

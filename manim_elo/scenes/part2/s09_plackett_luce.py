@@ -2,10 +2,12 @@
 # 4 Scenes covering multi-competitor modeling
 
 from manim import *
-import numpy as np
+from manim.utils.color.core import interpolate_color as manim_interpolate_color
 import sys
-sys.path.append('..')
+import os
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '../..'))
 from utils.colors import *
+import numpy as np
 
 
 class Scene9_1_BeyondPairwise(Scene):
@@ -16,12 +18,12 @@ class Scene9_1_BeyondPairwise(Scene):
         
         header = Text("Beyond Pairwise Comparison", font_size=44, color=ELO_BLUE)
         header.to_edge(UP, buff=0.5)
-        self.play(Write(header), run_time=1)
+        self.play(Write(header), run_time=1.5)
         
         # Elo approach
         elo_box = VGroup(
             Text("Elo Approach", font_size=24, color=ELO_RED),
-            Text("Race → 190 pairwise results", font_size=18, color=TEXT_GRAY),
+            Text("Race -> 190 pairwise results", font_size=18, color=TEXT_GRAY),
             Text("Process each independently", font_size=18, color=TEXT_GRAY)
         )
         elo_box.arrange(DOWN, buff=0.15)
@@ -29,13 +31,13 @@ class Scene9_1_BeyondPairwise(Scene):
         
         elo_rect = SurroundingRectangle(elo_box, color=ELO_RED, buff=0.2)
         
-        self.play(FadeIn(elo_box), Create(elo_rect), run_time=1)
+        self.play(FadeIn(elo_box), Create(elo_rect), run_time=4)
         
         # vs
         vs = Text("vs", font_size=24, color=TEXT_GRAY)
         vs.move_to(UP * 0.5)
         
-        self.play(Write(vs), run_time=0.3)
+        self.play(Write(vs), run_time=1.2)
         
         # Plackett-Luce approach
         pl_box = VGroup(
@@ -48,7 +50,7 @@ class Scene9_1_BeyondPairwise(Scene):
         
         pl_rect = SurroundingRectangle(pl_box, color=ELO_GREEN, buff=0.2)
         
-        self.play(FadeIn(pl_box), Create(pl_rect), run_time=1)
+        self.play(FadeIn(pl_box), Create(pl_rect), run_time=4)
         
         # Visual: permutation representation
         perm_label = Text("Race result as permutation:", font_size=20, color=TEXT_LIGHT)
@@ -74,8 +76,8 @@ class Scene9_1_BeyondPairwise(Scene):
         dots = Text("...", font_size=24, color=TEXT_GRAY)
         dots.move_to(RIGHT * 4 + DOWN * 2)
         
-        self.play(Write(perm_label), run_time=0.5)
-        self.play(FadeIn(positions), FadeIn(dots), run_time=1)
+        self.play(Write(perm_label), run_time=2)
+        self.play(FadeIn(positions), FadeIn(dots), run_time=4)
         
         # Caption
         caption = Text(
@@ -85,10 +87,10 @@ class Scene9_1_BeyondPairwise(Scene):
         )
         caption.to_edge(DOWN, buff=0.4)
         
-        self.play(Write(caption), run_time=1)
+        self.play(Write(caption), run_time=4)
         
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.wait(3.5)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene9_2_SequentialSurvival(Scene):
@@ -99,7 +101,7 @@ class Scene9_2_SequentialSurvival(Scene):
         
         header = Text("Sequential Elimination", font_size=44, color=ELO_BLUE)
         header.to_edge(UP, buff=0.5)
-        self.play(Write(header), run_time=1)
+        self.play(Write(header), run_time=1.5)
         
         # Intuition
         intuition = Text(
@@ -109,7 +111,7 @@ class Scene9_2_SequentialSurvival(Scene):
         )
         intuition.move_to(UP * 1.5)
         
-        self.play(Write(intuition), run_time=1)
+        self.play(Write(intuition), run_time=4)
         
         # Step 1: P1
         step1 = VGroup(
@@ -120,7 +122,7 @@ class Scene9_2_SequentialSurvival(Scene):
         step1.arrange(RIGHT, buff=0.3)
         step1.move_to(UP * 0.5 + LEFT * 1)
         
-        self.play(FadeIn(step1), run_time=0.8)
+        self.play(FadeIn(step1), run_time=3.2)
         
         # Visual: 20 dots, one highlighted
         dots1 = VGroup()
@@ -129,7 +131,7 @@ class Scene9_2_SequentialSurvival(Scene):
             dot.move_to(RIGHT * 4 + UP * 0.5 + UP * (i % 5) * 0.3 + RIGHT * (i // 5) * 0.3)
             dots1.add(dot)
         
-        self.play(FadeIn(dots1), run_time=0.5)
+        self.play(FadeIn(dots1), run_time=2)
         
         # Step 2: P2
         step2 = VGroup(
@@ -140,7 +142,7 @@ class Scene9_2_SequentialSurvival(Scene):
         step2.arrange(RIGHT, buff=0.3)
         step2.move_to(DOWN * 0.3 + LEFT * 1)
         
-        self.play(FadeIn(step2), run_time=0.8)
+        self.play(FadeIn(step2), run_time=3.2)
         
         # Visual: remove one dot
         dots2 = dots1.copy()
@@ -148,22 +150,22 @@ class Scene9_2_SequentialSurvival(Scene):
         dots2[0].set_opacity(0.3)  # Removed
         dots2[1].set_color(ELO_GREEN)  # New winner
         
-        self.play(FadeIn(dots2), run_time=0.5)
+        self.play(FadeIn(dots2), run_time=2)
         
         # Continue cascade
         cascade = VGroup(
             Text("P3: Fastest among 18...", font_size=18, color=TEXT_GRAY),
             Text("P4: Fastest among 17...", font_size=18, color=TEXT_GRAY),
-            Text("⋮", font_size=24, color=TEXT_GRAY),
+            Text("...", font_size=24, color=TEXT_GRAY),
             Text("P20: Last one remaining", font_size=18, color=TEXT_GRAY)
         )
         cascade.arrange(DOWN, buff=0.2)
         cascade.move_to(DOWN * 2 + LEFT * 2)
         
-        self.play(FadeIn(cascade), run_time=1)
+        self.play(FadeIn(cascade), run_time=4)
         
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.wait(3.5)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene9_3_LikelihoodFormula(Scene):
@@ -174,7 +176,7 @@ class Scene9_3_LikelihoodFormula(Scene):
         
         header = Text("Plackett-Luce Likelihood", font_size=44, color=ELO_BLUE)
         header.to_edge(UP, buff=0.5)
-        self.play(Write(header), run_time=1)
+        self.play(Write(header), run_time=1.5)
         
         # Main formula
         formula = MathTex(
@@ -183,11 +185,11 @@ class Scene9_3_LikelihoodFormula(Scene):
         )
         formula.move_to(UP * 1)
         
-        self.play(Write(formula), run_time=2)
+        self.play(Write(formula), run_time=8)
         
         # Box it
         box = SurroundingRectangle(formula, color=ELO_GOLD, buff=0.2)
-        self.play(Create(box), run_time=0.5)
+        self.play(Create(box), run_time=2)
         
         # Break down components
         components = VGroup(
@@ -201,7 +203,7 @@ class Scene9_3_LikelihoodFormula(Scene):
         components.arrange_in_grid(rows=3, cols=2, buff=(0.5, 0.3))
         components.move_to(DOWN * 1.5)
         
-        self.play(FadeIn(components), run_time=1.5)
+        self.play(FadeIn(components), run_time=6)
         
         # Key observation
         observation = Text(
@@ -211,10 +213,10 @@ class Scene9_3_LikelihoodFormula(Scene):
         )
         observation.to_edge(DOWN, buff=0.5)
         
-        self.play(Write(observation), run_time=1.5)
+        self.play(Write(observation), run_time=6)
         
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.wait(3.5)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene9_4_InformationWeighting(Scene):
@@ -225,7 +227,7 @@ class Scene9_4_InformationWeighting(Scene):
         
         header = Text("Information Weighting", font_size=44, color=ELO_BLUE)
         header.to_edge(UP, buff=0.5)
-        self.play(Write(header), run_time=1)
+        self.play(Write(header), run_time=1.5)
         
         # Key insight
         insight = Text(
@@ -235,7 +237,7 @@ class Scene9_4_InformationWeighting(Scene):
         )
         insight.move_to(UP * 1.5)
         
-        self.play(Write(insight), run_time=1)
+        self.play(Write(insight), run_time=4)
         
         # Visual: bar chart of information content
         axes = Axes(
@@ -255,17 +257,17 @@ class Scene9_4_InformationWeighting(Scene):
         y_label.next_to(axes.y_axis, LEFT, buff=0.2)
         y_label.rotate(90 * DEGREES)
         
-        self.play(Create(axes), FadeIn(x_label), FadeIn(y_label), run_time=1)
+        self.play(Create(axes), FadeIn(x_label), FadeIn(y_label), run_time=4)
         
         # Bars with decreasing height
         bars = VGroup()
         heights = [9, 8, 7, 6, 5.5, 5, 4.5, 4, 3.5, 3, 2.8, 2.5, 2.3, 2.1, 1.9, 1.7, 1.5, 1.3, 1.1, 0.9]
-        
+
         for i, h in enumerate(heights):
             bar = Rectangle(
                 width=0.35,
                 height=h * 0.3,
-                fill_color=interpolate_color(ELO_GREEN, ELO_RED, i / 19),
+                fill_color=manim_interpolate_color(ManimColor(ELO_GREEN), ManimColor(ELO_RED), i / 19),
                 fill_opacity=0.8,
                 stroke_width=0
             )
@@ -273,30 +275,30 @@ class Scene9_4_InformationWeighting(Scene):
             bar.align_to(axes.c2p(0, 0), DOWN)
             bars.add(bar)
         
-        self.play(FadeIn(bars), run_time=1.5)
+        self.play(FadeIn(bars), run_time=6)
         
         # Annotations
         p1_label = Text("P1 vs P2: Big deal!", font_size=16, color=ELO_GREEN)
-        p1_label.move_to(axes.c2p(2, 8))
+        p1_label.move_to(axes.c2p(3, 9.5))
         
         p19_label = Text("P19 vs P20: Meh", font_size=16, color=ELO_RED)
         p19_label.move_to(axes.c2p(17, 3))
         
-        self.play(FadeIn(p1_label), FadeIn(p19_label), run_time=0.8)
+        self.play(FadeIn(p1_label), FadeIn(p19_label), run_time=3.2)
         
         # Reason
         reason = VGroup(
             Text("Why?", font_size=20, color=ELO_GOLD),
-            Text("P1: Beat 19 others → large denominator", font_size=16, color=TEXT_GRAY),
-            Text("P20: 'Beat' nobody → tiny denominator", font_size=16, color=TEXT_GRAY)
+            Text("P1: Beat 19 others -> large denominator", font_size=16, color=TEXT_GRAY),
+            Text("P20: 'Beat' nobody -> tiny denominator", font_size=16, color=TEXT_GRAY)
         )
         reason.arrange(DOWN, buff=0.15)
         reason.to_edge(DOWN, buff=0.3)
         
-        self.play(FadeIn(reason), run_time=1)
+        self.play(FadeIn(reason), run_time=4)
         
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.wait(3.5)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene9_4a_ExplainPLLikelihood(Scene):
@@ -307,7 +309,6 @@ class Scene9_4a_ExplainPLLikelihood(Scene):
 
         header = Text("Plackett-Luce: Step by Step", font_size=44, color=ELO_BLUE)
         header.to_edge(UP, buff=0.5)
-        self.play(Write(header), run_time=1)
 
         # The big formula
         formula = MathTex(
@@ -315,12 +316,12 @@ class Scene9_4a_ExplainPLLikelihood(Scene):
             font_size=40
         )
         formula.move_to(UP * 1.3)
-        self.play(Write(formula), run_time=1.5)
+        self.play(Write(formula), run_time=6)
 
         # Step 1: A race as sequential elimination
         step_title = Text("A Race as Sequential Picks", font_size=22, color=ELO_GOLD)
         step_title.next_to(formula, DOWN, buff=0.4)
-        self.play(FadeIn(step_title), run_time=0.3)
+        self.play(FadeIn(step_title), run_time=1.2)
 
         # 4-driver example with strength scores
         drivers = [
@@ -336,7 +337,7 @@ class Scene9_4a_ExplainPLLikelihood(Scene):
             scores_text.add(row)
         scores_text.arrange(RIGHT, buff=1)
         scores_text.move_to(DOWN * 0.3)
-        self.play(FadeIn(scores_text), run_time=0.5)
+        self.play(FadeIn(scores_text), run_time=2)
 
         # Calculate exp scores
         import math
@@ -384,13 +385,13 @@ class Scene9_4a_ExplainPLLikelihood(Scene):
         stages.move_to(DOWN * 2)
 
         for stage in stages:
-            self.play(FadeIn(stage), run_time=0.6)
-            self.wait(0.3)
+            self.play(FadeIn(stage), run_time=2.4)
+            self.wait(1.2)
 
         # Final multiply
         p_total = (exp_scores[0][1]/s1_total) * (exp_scores[1][1]/s2_total) * (exp_scores[2][1]/s3_total)
 
-        self.play(*[FadeOut(m) for m in [step_title, scores_text, stages, formula]], run_time=0.3)
+        self.play(*[FadeOut(m) for m in [step_title, scores_text, stages, formula]], run_time=1.2)
 
         final = VGroup(
             Text("Multiply all stages:", font_size=22, color=ELO_GOLD),
@@ -404,12 +405,12 @@ class Scene9_4a_ExplainPLLikelihood(Scene):
         final.arrange(DOWN, buff=0.2)
         final.move_to(ORIGIN)
 
-        self.play(FadeIn(final), run_time=1)
+        self.play(FadeIn(final), run_time=4)
         final_box = SurroundingRectangle(final[1], color=ELO_GREEN, buff=0.1)
-        self.play(Create(final_box), run_time=0.5)
+        self.play(Create(final_box), run_time=2)
 
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.wait(3.5)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene9_5a_ExplainInfoWeighting(Scene):
@@ -420,12 +421,11 @@ class Scene9_5a_ExplainInfoWeighting(Scene):
 
         header = Text("Why P1 Matters More Than P10", font_size=44, color=ELO_BLUE)
         header.to_edge(UP, buff=0.5)
-        self.play(Write(header), run_time=1)
 
         # Step 1: P1 is chosen from ALL drivers
-        step1 = Text("① P1 is selected from ALL 20 drivers", font_size=22, color=ELO_GOLD)
+        step1 = Text("(1) P1 is selected from ALL 20 drivers", font_size=22, color=ELO_GOLD)
         step1.next_to(header, DOWN, buff=0.3)
-        self.play(FadeIn(step1), run_time=0.3)
+        self.play(FadeIn(step1), run_time=1.2)
 
         p1_explain = VGroup(
             Text("Being the BEST of 20 is very informative", font_size=18, color=TEXT_GRAY),
@@ -433,13 +433,13 @@ class Scene9_5a_ExplainInfoWeighting(Scene):
         )
         p1_explain.arrange(DOWN, buff=0.15)
         p1_explain.move_to(UP * 0.3)
-        self.play(FadeIn(p1_explain), run_time=0.6)
-        self.wait(0.5)
+        self.play(FadeIn(p1_explain), run_time=2.4)
+        self.wait(2)
 
         # Step 2: P10 is picked from remaining 11
-        step2 = Text("② P10 is selected from remaining 11", font_size=22, color=ELO_GOLD)
+        step2 = Text("(2) P10 is selected from remaining 11", font_size=22, color=ELO_GOLD)
         step2.next_to(header, DOWN, buff=0.3)
-        self.play(FadeOut(step1), FadeIn(step2), run_time=0.3)
+        self.play(FadeOut(step1), FadeIn(step2), run_time=1.2)
 
         p10_explain = VGroup(
             Text("Being best of 11 is less selective", font_size=18, color=TEXT_GRAY),
@@ -447,14 +447,14 @@ class Scene9_5a_ExplainInfoWeighting(Scene):
         )
         p10_explain.arrange(DOWN, buff=0.15)
         p10_explain.next_to(p1_explain, DOWN, buff=0.3)
-        self.play(FadeIn(p10_explain), run_time=0.6)
-        self.wait(0.5)
+        self.play(FadeIn(p10_explain), run_time=2.4)
+        self.wait(2)
 
         # Step 3: Bar chart of information by position
-        self.play(*[FadeOut(m) for m in [step2, p1_explain, p10_explain]], run_time=0.3)
-        step3 = Text("③ Information Content by Position", font_size=22, color=ELO_GOLD)
+        self.play(*[FadeOut(m) for m in [step2, p1_explain, p10_explain]], run_time=1.2)
+        step3 = Text("(3) Information Content by Position", font_size=22, color=ELO_GOLD)
         step3.next_to(header, DOWN, buff=0.3)
-        self.play(FadeIn(step3), run_time=0.3)
+        self.play(FadeIn(step3), run_time=1.2)
 
         positions = list(range(1, 21))
         pool_sizes = list(range(20, 0, -1))
@@ -476,7 +476,7 @@ class Scene9_5a_ExplainInfoWeighting(Scene):
             bar.move_to(LEFT * 5 + RIGHT * i * 0.5 + DOWN * 1.5, aligned_edge=DOWN)
             bars.add(bar)
 
-        self.play(FadeIn(bars), run_time=1)
+        self.play(FadeIn(bars), run_time=4)
 
         # Labels for P1 and P20
         p1_label = Text("P1", font_size=10, color=TEXT_WHITE)
@@ -488,11 +488,11 @@ class Scene9_5a_ExplainInfoWeighting(Scene):
         p20_label = Text("P20", font_size=10, color=TEXT_WHITE)
         p20_label.next_to(bars[19], DOWN, buff=0.1)
 
-        self.play(FadeIn(p1_label), FadeIn(p5_label), FadeIn(p10_label), FadeIn(p20_label), run_time=0.5)
+        self.play(FadeIn(p1_label), FadeIn(p5_label), FadeIn(p10_label), FadeIn(p20_label), run_time=2)
 
-        y_label = Text("Information ↑", font_size=14, color=TEXT_GRAY)
+        y_label = Text("Information (more ->)", font_size=14, color=TEXT_GRAY)
         y_label.next_to(bars, LEFT, buff=0.3)
-        self.play(FadeIn(y_label), run_time=0.3)
+        self.play(FadeIn(y_label), run_time=1.2)
 
         # Takeaway
         takeaway = Text(
@@ -500,7 +500,7 @@ class Scene9_5a_ExplainInfoWeighting(Scene):
             font_size=18, color=ELO_GOLD
         )
         takeaway.to_edge(DOWN, buff=0.3)
-        self.play(Write(takeaway), run_time=1)
+        self.play(Write(takeaway), run_time=4)
 
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.wait(3.5)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)

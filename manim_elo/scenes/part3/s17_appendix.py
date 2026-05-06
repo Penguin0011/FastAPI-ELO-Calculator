@@ -3,7 +3,8 @@
 
 from manim import *
 import sys
-sys.path.append('..')
+import os
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '../..'))
 from utils.colors import *
 
 
@@ -15,7 +16,7 @@ class Scene17_1_EloExpectation(Scene):
         
         header = Text("Elo Expected Score", font_size=36, color=ELO_BLUE)
         header.to_edge(UP, buff=0.6)
-        self.play(Write(header), run_time=0.8)
+        self.play(Write(header), run_time=1.5)
         
         formula = MathTex(
             r"E_A = \frac{1}{1 + 10^{(R_B - R_A)/400}}",
@@ -25,11 +26,11 @@ class Scene17_1_EloExpectation(Scene):
         
         box = SurroundingRectangle(formula, color=ELO_GOLD, buff=0.3)
         
-        self.play(Write(formula), run_time=1.5)
-        self.play(Create(box), run_time=0.5)
+        self.play(Write(formula), run_time=6)
+        self.play(Create(box), run_time=2)
         
         self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene17_2_EloUpdate(Scene):
@@ -40,7 +41,7 @@ class Scene17_2_EloUpdate(Scene):
         
         header = Text("Elo Update Equation", font_size=36, color=ELO_BLUE)
         header.to_edge(UP, buff=0.6)
-        self.play(Write(header), run_time=0.8)
+        self.play(Write(header), run_time=1.5)
         
         formula = MathTex(
             r"R'_A = R_A + K(S_A - E_A)",
@@ -50,8 +51,8 @@ class Scene17_2_EloUpdate(Scene):
         
         box = SurroundingRectangle(formula, color=ELO_GOLD, buff=0.3)
         
-        self.play(Write(formula), run_time=1.5)
-        self.play(Create(box), run_time=0.5)
+        self.play(Write(formula), run_time=6)
+        self.play(Create(box), run_time=2)
         
         legend = VGroup(
             Text("K = adjustment factor (16-32)", font_size=18, color=TEXT_GRAY),
@@ -61,10 +62,10 @@ class Scene17_2_EloUpdate(Scene):
         legend.arrange(DOWN, buff=0.1)
         legend.move_to(DOWN * 2)
         
-        self.play(FadeIn(legend), run_time=0.8)
+        self.play(FadeIn(legend), run_time=3.2)
         
         self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene17_3_PlackettLuce(Scene):
@@ -75,7 +76,7 @@ class Scene17_3_PlackettLuce(Scene):
         
         header = Text("Plackett-Luce Likelihood", font_size=36, color=ELO_BLUE)
         header.to_edge(UP, buff=0.6)
-        self.play(Write(header), run_time=0.8)
+        self.play(Write(header), run_time=1.5)
         
         formula = MathTex(
             r"P(\pi) = \prod_{k=1}^{n} \frac{\exp(s_{\pi_k})}{\sum_{l=k}^{n} \exp(s_{\pi_l})}",
@@ -85,11 +86,11 @@ class Scene17_3_PlackettLuce(Scene):
         
         box = SurroundingRectangle(formula, color=ELO_GOLD, buff=0.3)
         
-        self.play(Write(formula), run_time=1.5)
-        self.play(Create(box), run_time=0.5)
+        self.play(Write(formula), run_time=6)
+        self.play(Create(box), run_time=2)
         
         self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene17_4_BradleyTerry(Scene):
@@ -100,7 +101,7 @@ class Scene17_4_BradleyTerry(Scene):
         
         header = Text("Bradley-Terry Model", font_size=36, color=ELO_BLUE)
         header.to_edge(UP, buff=0.6)
-        self.play(Write(header), run_time=0.8)
+        self.play(Write(header), run_time=1.5)
         
         formula = MathTex(
             r"P(i > j) = \frac{v_i}{v_i + v_j}",
@@ -110,11 +111,11 @@ class Scene17_4_BradleyTerry(Scene):
         
         box = SurroundingRectangle(formula, color=ELO_GOLD, buff=0.3)
         
-        self.play(Write(formula), run_time=1.5)
-        self.play(Create(box), run_time=0.5)
+        self.play(Write(formula), run_time=6)
+        self.play(Create(box), run_time=2)
         
         self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene17_5_HierarchicalModel(Scene):
@@ -125,7 +126,7 @@ class Scene17_5_HierarchicalModel(Scene):
         
         header = Text("Hierarchical Decomposition", font_size=36, color=ELO_BLUE)
         header.to_edge(UP, buff=0.6)
-        self.play(Write(header), run_time=0.8)
+        self.play(Write(header), run_time=1.5)
         
         formula = MathTex(
             r"\lambda_{ijr} = \alpha_i + \beta_j + \gamma_{ij} + \epsilon_{ijr}",
@@ -135,8 +136,8 @@ class Scene17_5_HierarchicalModel(Scene):
         
         box = SurroundingRectangle(formula, color=ELO_GOLD, buff=0.3)
         
-        self.play(Write(formula), run_time=1.5)
-        self.play(Create(box), run_time=0.5)
+        self.play(Write(formula), run_time=6)
+        self.play(Create(box), run_time=2)
         
         legend = VGroup(
             MathTex(r"\alpha", font_size=28, color=ELO_BLUE),
@@ -149,10 +150,10 @@ class Scene17_5_HierarchicalModel(Scene):
         legend.arrange_in_grid(rows=3, cols=2, buff=(0.3, 0.15))
         legend.move_to(DOWN * 2)
         
-        self.play(FadeIn(legend), run_time=0.8)
+        self.play(FadeIn(legend), run_time=3.2)
         
         self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene17_6_TrueSkill(Scene):
@@ -163,7 +164,7 @@ class Scene17_6_TrueSkill(Scene):
         
         header = Text("TrueSkill Rating", font_size=36, color=ELO_BLUE)
         header.to_edge(UP, buff=0.6)
-        self.play(Write(header), run_time=0.8)
+        self.play(Write(header), run_time=1.5)
         
         formula = MathTex(
             r"R = \mu - 3\sigma",
@@ -173,8 +174,8 @@ class Scene17_6_TrueSkill(Scene):
         
         box = SurroundingRectangle(formula, color=ELO_GOLD, buff=0.3)
         
-        self.play(Write(formula), run_time=1.5)
-        self.play(Create(box), run_time=0.5)
+        self.play(Write(formula), run_time=6)
+        self.play(Create(box), run_time=2)
         
         legend = VGroup(
             Text("μ = Mean skill estimate", font_size=18, color=TEXT_GRAY),
@@ -183,10 +184,10 @@ class Scene17_6_TrueSkill(Scene):
         legend.arrange(DOWN, buff=0.1)
         legend.move_to(DOWN * 2)
         
-        self.play(FadeIn(legend), run_time=0.8)
+        self.play(FadeIn(legend), run_time=3.2)
         
         self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene17_7_Bayes(Scene):
@@ -197,7 +198,7 @@ class Scene17_7_Bayes(Scene):
         
         header = Text("Bayes' Theorem", font_size=36, color=ELO_BLUE)
         header.to_edge(UP, buff=0.6)
-        self.play(Write(header), run_time=0.8)
+        self.play(Write(header), run_time=1.5)
         
         formula = MathTex(
             r"P(\theta|D) = \frac{P(D|\theta) P(\theta)}{P(D)}",
@@ -207,8 +208,8 @@ class Scene17_7_Bayes(Scene):
         
         box = SurroundingRectangle(formula, color=ELO_GOLD, buff=0.3)
         
-        self.play(Write(formula), run_time=1.5)
-        self.play(Create(box), run_time=0.5)
+        self.play(Write(formula), run_time=6)
+        self.play(Create(box), run_time=2)
         
         # Color labels
         labels = VGroup(
@@ -219,7 +220,7 @@ class Scene17_7_Bayes(Scene):
         labels.arrange(RIGHT, buff=1.5)
         labels.move_to(DOWN * 2)
         
-        self.play(FadeIn(labels), run_time=0.8)
+        self.play(FadeIn(labels), run_time=3.2)
         
         self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)

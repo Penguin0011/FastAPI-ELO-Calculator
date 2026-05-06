@@ -2,10 +2,11 @@
 # 5 Scenes covering censoring and hazard functions
 
 from manim import *
-import numpy as np
 import sys
-sys.path.append('..')
+import os
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '../..'))
 from utils.colors import *
+import numpy as np
 
 
 class Scene12_1_DNFAsCensoring(Scene):
@@ -16,36 +17,36 @@ class Scene12_1_DNFAsCensoring(Scene):
         
         header = Text("Survival Analysis for DNFs", font_size=44, color=ELO_BLUE)
         header.to_edge(UP, buff=0.5)
-        self.play(Write(header), run_time=1)
+        self.play(Write(header), run_time=1.5)
         
         # Standard Elo view
         standard = VGroup(
             Text("Standard Elo:", font_size=24, color=ELO_RED),
             Text("DNF = Lost to everyone", font_size=18, color=TEXT_GRAY),
-            Text("→ Massive rating drop", font_size=18, color=ELO_RED)
+            Text("-> Massive rating drop", font_size=18, color=ELO_RED)
         )
         standard.arrange(DOWN, buff=0.15)
         standard.move_to(LEFT * 3.5 + UP * 0.5)
         standard_box = SurroundingRectangle(standard, color=ELO_RED, buff=0.15)
         
-        self.play(FadeIn(standard), Create(standard_box), run_time=1)
+        self.play(FadeIn(standard), Create(standard_box), run_time=4)
         
         # vs
         vs = Text("vs", font_size=28, color=TEXT_GRAY)
         vs.move_to(UP * 0.5)
-        self.play(Write(vs), run_time=0.3)
+        self.play(Write(vs), run_time=1.2)
         
         # Survival view
         survival = VGroup(
             Text("Survival View:", font_size=24, color=ELO_GREEN),
             Text("DNF = Observation interrupted", font_size=18, color=TEXT_GRAY),
-            Text("→ Right-censored data", font_size=18, color=ELO_GREEN)
+            Text("-> Right-censored data", font_size=18, color=ELO_GREEN)
         )
         survival.arrange(DOWN, buff=0.15)
         survival.move_to(RIGHT * 3.5 + UP * 0.5)
         survival_box = SurroundingRectangle(survival, color=ELO_GREEN, buff=0.15)
         
-        self.play(FadeIn(survival), Create(survival_box), run_time=1)
+        self.play(FadeIn(survival), Create(survival_box), run_time=4)
         
         # Key insight
         insight = VGroup(
@@ -56,10 +57,10 @@ class Scene12_1_DNFAsCensoring(Scene):
         insight.arrange(DOWN, buff=0.1)
         insight.move_to(DOWN * 2)
         
-        self.play(FadeIn(insight), run_time=1)
+        self.play(FadeIn(insight), run_time=4)
         
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.wait(3.5)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene12_2_HazardFunction(Scene):
@@ -70,7 +71,7 @@ class Scene12_2_HazardFunction(Scene):
         
         header = Text("The Hazard Function", font_size=44, color=ELO_BLUE)
         header.to_edge(UP, buff=0.5)
-        self.play(Write(header), run_time=1)
+        self.play(Write(header), run_time=1.5)
         
         # Formula
         formula = MathTex(
@@ -79,7 +80,7 @@ class Scene12_2_HazardFunction(Scene):
         )
         formula.move_to(UP * 1.2)
         
-        self.play(Write(formula), run_time=1.5)
+        self.play(Write(formula), run_time=6)
         
         # Intuition
         intuition = Text(
@@ -89,18 +90,18 @@ class Scene12_2_HazardFunction(Scene):
         )
         intuition.move_to(UP * 0.4)
         
-        self.play(Write(intuition), run_time=1)
+        self.play(Write(intuition), run_time=4)
         
         # Bathtub curve
         axes = Axes(
             x_range=[0, 60, 10],
             y_range=[0, 0.1, 0.02],
             x_length=8,
-            y_length=3,
+            y_length=2.5,
             tips=False,
             axis_config={"include_numbers": True, "font_size": 12}
         )
-        axes.shift(DOWN * 1.5)
+        axes.shift(DOWN * 1.6)
         
         x_label = Text("Race Lap", font_size=14, color=TEXT_GRAY)
         x_label.next_to(axes.x_axis, DOWN, buff=0.2)
@@ -108,7 +109,7 @@ class Scene12_2_HazardFunction(Scene):
         y_label = Text("Hazard h(t)", font_size=14, color=TEXT_GRAY)
         y_label.next_to(axes.y_axis, LEFT, buff=0.2)
         
-        self.play(Create(axes), FadeIn(x_label), FadeIn(y_label), run_time=0.8)
+        self.play(Create(axes), FadeIn(x_label), FadeIn(y_label), run_time=3.2)
         
         # Bathtub shape
         t = np.linspace(0.1, 60, 100)
@@ -118,25 +119,30 @@ class Scene12_2_HazardFunction(Scene):
         curve = VMobject(color=ELO_BLUE)
         curve.set_points_smoothly([axes.c2p(ti, hi) for ti, hi in zip(t, hazard)])
         
-        self.play(Create(curve), run_time=1.5)
+        self.play(Create(curve), run_time=6)
         
-        # Labels for regions
+        # Labels for regions — BackgroundRectangle ensures readability over curve
         start_label = Text("Early failures", font_size=12, color=ELO_RED)
-        start_label.move_to(axes.c2p(5, 0.07))
-        
+        start_label.move_to(axes.c2p(5, 0.072))
+        start_bg = BackgroundRectangle(start_label, fill_opacity=0.80, buff=0.05)
+
         mid_label = Text("Stable period", font_size=12, color=ELO_GREEN)
-        mid_label.move_to(axes.c2p(30, 0.03))
-        
+        mid_label.move_to(axes.c2p(30, 0.032))
+        mid_bg = BackgroundRectangle(mid_label, fill_opacity=0.80, buff=0.05)
+
         end_label = Text("Wear-out", font_size=12, color=ELO_GOLD)
-        end_label.move_to(axes.c2p(55, 0.05))
-        
+        end_label.move_to(axes.c2p(55, 0.052))
+        end_bg = BackgroundRectangle(end_label, fill_opacity=0.80, buff=0.05)
+
         self.play(
-            FadeIn(start_label), FadeIn(mid_label), FadeIn(end_label),
-            run_time=0.8
+            FadeIn(start_bg), FadeIn(start_label),
+            FadeIn(mid_bg), FadeIn(mid_label),
+            FadeIn(end_bg), FadeIn(end_label),
+            run_time=3.2
         )
         
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.wait(3.5)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene12_3_CoxProportional(Scene):
@@ -147,7 +153,7 @@ class Scene12_3_CoxProportional(Scene):
         
         header = Text("Cox Proportional Hazards", font_size=44, color=ELO_BLUE)
         header.to_edge(UP, buff=0.5)
-        self.play(Write(header), run_time=1)
+        self.play(Write(header), run_time=1.5)
         
         # Formula
         formula = MathTex(
@@ -156,7 +162,7 @@ class Scene12_3_CoxProportional(Scene):
         )
         formula.move_to(UP * 1)
         
-        self.play(Write(formula), run_time=1.5)
+        self.play(Write(formula), run_time=6)
         
         # Breakdown
         breakdown = VGroup(
@@ -168,7 +174,7 @@ class Scene12_3_CoxProportional(Scene):
         breakdown.arrange_in_grid(rows=2, cols=2, buff=(0.5, 0.3))
         breakdown.move_to(ORIGIN)
         
-        self.play(FadeIn(breakdown), run_time=1)
+        self.play(FadeIn(breakdown), run_time=4)
         
         # Example covariates
         covariates = VGroup(
@@ -181,10 +187,10 @@ class Scene12_3_CoxProportional(Scene):
         covariates.arrange(DOWN, aligned_edge=LEFT, buff=0.15)
         covariates.move_to(DOWN * 2)
         
-        self.play(FadeIn(covariates), run_time=1)
+        self.play(FadeIn(covariates), run_time=4)
         
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.wait(3.5)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene12_4_KaplanMeier(Scene):
@@ -195,7 +201,7 @@ class Scene12_4_KaplanMeier(Scene):
         
         header = Text("Kaplan-Meier Survival Curves", font_size=44, color=ELO_BLUE)
         header.to_edge(UP, buff=0.5)
-        self.play(Write(header), run_time=1)
+        self.play(Write(header), run_time=1.5)
         
         # Create axes
         axes = Axes(
@@ -214,7 +220,7 @@ class Scene12_4_KaplanMeier(Scene):
         y_label = Text("P(Still Racing)", font_size=14, color=TEXT_GRAY)
         y_label.next_to(axes.y_axis, LEFT, buff=0.2)
         
-        self.play(Create(axes), FadeIn(x_label), FadeIn(y_label), run_time=0.8)
+        self.play(Create(axes), FadeIn(x_label), FadeIn(y_label), run_time=3.2)
         
         # Survival curve (step function)
         # At each DNF, probability steps down
@@ -245,7 +251,7 @@ class Scene12_4_KaplanMeier(Scene):
         )
         survival_curve.add(last_line)
         
-        self.play(Create(survival_curve), run_time=2)
+        self.play(Create(survival_curve), run_time=8)
         
         # Confidence bands
         upper_points = [(t, min(1, p + 0.05)) for t, p in zip(times, probs)]
@@ -257,7 +263,7 @@ class Scene12_4_KaplanMeier(Scene):
         lower_band = VMobject(color=ELO_BLUE, stroke_opacity=0.3)
         lower_band.set_points_smoothly([axes.c2p(t, p) for t, p in lower_points])
         
-        self.play(Create(upper_band), Create(lower_band), run_time=0.8)
+        self.play(Create(upper_band), Create(lower_band), run_time=3.2)
         
         # Caption
         caption = Text(
@@ -267,10 +273,10 @@ class Scene12_4_KaplanMeier(Scene):
         )
         caption.to_edge(DOWN, buff=0.4)
         
-        self.play(Write(caption), run_time=1)
+        self.play(Write(caption), run_time=4)
         
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.wait(3.5)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene12_5_IPCWWeighting(Scene):
@@ -281,7 +287,7 @@ class Scene12_5_IPCWWeighting(Scene):
         
         header = Text("IPCW: Inverse Probability Weighting", font_size=44, color=ELO_BLUE)
         header.to_edge(UP, buff=0.5)
-        self.play(Write(header), run_time=1)
+        self.play(Write(header), run_time=1.5)
         
         # Formula
         formula = MathTex(
@@ -297,29 +303,29 @@ class Scene12_5_IPCWWeighting(Scene):
         )
         formula_text.next_to(formula, DOWN, buff=0.2)
         
-        self.play(Write(formula), FadeIn(formula_text), run_time=1)
+        self.play(Write(formula), FadeIn(formula_text), run_time=4)
         
         # Example
         example = VGroup(
             Text("Example:", font_size=22, color=ELO_GOLD),
-            Text("Driver leads for 50 of 58 laps → then DNF", font_size=18, color=TEXT_GRAY)
+            Text("Driver leads for 50 of 58 laps -> then DNF", font_size=18, color=TEXT_GRAY)
         )
         example.arrange(DOWN, buff=0.1)
-        example.move_to(UP * 0)
-        
-        self.play(FadeIn(example), run_time=0.8)
-        
+        example.move_to(DOWN * 0.4)
+
+        self.play(FadeIn(example), run_time=3.2)
+
         # Visual: lap progress bar
         bar_bg = Rectangle(width=8, height=0.5, stroke_color=TEXT_GRAY, fill_opacity=0)
-        bar_bg.move_to(DOWN * 1)
-        
+        bar_bg.move_to(DOWN * 1.5)
+
         completed = Rectangle(
             width=8 * (50/58), height=0.5,
             fill_color=ELO_GREEN, fill_opacity=0.7,
             stroke_width=0
         )
         completed.align_to(bar_bg, LEFT)
-        completed.move_to(DOWN * 1)
+        completed.move_to(DOWN * 1.5)
         
         dnf_marker = Line(
             completed.get_right() + UP * 0.4,
@@ -333,22 +339,22 @@ class Scene12_5_IPCWWeighting(Scene):
             Create(bar_bg),
             FadeIn(completed),
             Create(dnf_marker), FadeIn(dnf_label),
-            run_time=1
+            run_time=4
         )
         
         # Contribution statement
         contribution = VGroup(
-            Text("50 laps of P1 → contributes evidence!", font_size=20, color=ELO_GREEN),
+            Text("50 laps of P1 -> contributes evidence!", font_size=20, color=ELO_GREEN),
             Text("Not 'lost to everyone'", font_size=18, color=TEXT_GRAY),
             Text("Weighted by survival probability", font_size=18, color=TEXT_GRAY)
         )
         contribution.arrange(DOWN, buff=0.15)
-        contribution.move_to(DOWN * 2.5)
+        contribution.move_to(DOWN * 2.8)
         
-        self.play(FadeIn(contribution), run_time=1)
+        self.play(FadeIn(contribution), run_time=4)
         
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.wait(3.5)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene12_2a_ExplainHazard(Scene):
@@ -359,7 +365,6 @@ class Scene12_2a_ExplainHazard(Scene):
 
         header = Text("Hazard Rate in Simple Terms", font_size=44, color=ELO_BLUE)
         header.to_edge(UP, buff=0.5)
-        self.play(Write(header), run_time=1)
 
         # Formula
         formula = MathTex(
@@ -367,7 +372,7 @@ class Scene12_2a_ExplainHazard(Scene):
             font_size=28
         )
         formula.move_to(UP * 1.3)
-        self.play(Write(formula), run_time=1.5)
+        self.play(Write(formula), run_time=6)
 
         # Translation
         translation = VGroup(
@@ -377,15 +382,15 @@ class Scene12_2a_ExplainHazard(Scene):
         )
         translation.arrange(DOWN, buff=0.1)
         translation.move_to(UP * 0.1)
-        self.play(FadeIn(translation), run_time=0.8)
-        self.wait(1)
+        self.play(FadeIn(translation), run_time=3.2)
+        self.wait(4)
 
         # Bathtub curve
-        self.play(FadeOut(translation), run_time=0.3)
+        self.play(FadeOut(translation), run_time=1.2)
 
         bath_title = Text("The 'Bathtub' Curve in F1", font_size=22, color=ELO_GOLD)
         bath_title.move_to(UP * 0.2)
-        self.play(FadeIn(bath_title), run_time=0.3)
+        self.play(FadeIn(bath_title), run_time=1.2)
 
         axes = Axes(
             x_range=[0, 58, 10], y_range=[0, 1, 0.25],
@@ -408,8 +413,8 @@ class Scene12_2a_ExplainHazard(Scene):
 
         curve = axes.plot(bathtub, x_range=[0, 58], color=ELO_RED)
 
-        self.play(Create(axes), FadeIn(x_label), FadeIn(y_label), run_time=0.5)
-        self.play(Create(curve), run_time=1.5)
+        self.play(Create(axes), FadeIn(x_label), FadeIn(y_label), run_time=2)
+        self.play(Create(curve), run_time=6)
 
         # Labels for the three regions
         lap1_label = Text("Lap 1 chaos", font_size=10, color=ELO_RED)
@@ -419,17 +424,17 @@ class Scene12_2a_ExplainHazard(Scene):
         end_label = Text("Tyre\ndegradation", font_size=10, color=ELO_RED)
         end_label.move_to(axes.c2p(52, 0.5))
 
-        self.play(FadeIn(lap1_label), FadeIn(mid_label), FadeIn(end_label), run_time=0.8)
+        self.play(FadeIn(lap1_label), FadeIn(mid_label), FadeIn(end_label), run_time=3.2)
 
         note = Text(
             "h(t) is NOT the same as P(DNF during the whole race)!",
             font_size=16, color=ELO_GOLD
         )
         note.to_edge(DOWN, buff=0.3)
-        self.play(Write(note), run_time=1)
+        self.play(Write(note), run_time=4)
 
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.wait(3.5)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene12_3a_ExplainCoxPH(Scene):
@@ -440,7 +445,6 @@ class Scene12_3a_ExplainCoxPH(Scene):
 
         header = Text("Cox Model: Personal Risk Factors", font_size=44, color=ELO_BLUE)
         header.to_edge(UP, buff=0.5)
-        self.play(Write(header), run_time=1)
 
         # Formula
         formula = MathTex(
@@ -450,7 +454,7 @@ class Scene12_3a_ExplainCoxPH(Scene):
         formula[2].set_color(ELO_BLUE)
         formula[4].set_color(ELO_RED)
         formula.move_to(UP * 1.3)
-        self.play(Write(formula), run_time=1.5)
+        self.play(Write(formula), run_time=6)
 
         # Part 1: baseline hazard
         parts = VGroup(
@@ -470,28 +474,28 @@ class Scene12_3a_ExplainCoxPH(Scene):
         parts.arrange(DOWN, buff=0.3, aligned_edge=LEFT)
         parts.move_to(LEFT * 2 + DOWN * 0.3)
 
-        self.play(FadeIn(parts), run_time=1)
-        self.wait(0.5)
+        self.play(FadeIn(parts), run_time=4)
+        self.wait(2)
 
         # Worked example
-        self.play(FadeOut(parts), run_time=0.3)
+        self.play(FadeOut(parts), run_time=1.2)
 
         ex_title = Text("Example: Engine Age", font_size=22, color=ELO_GOLD)
         ex_title.next_to(formula, DOWN, buff=0.4)
-        self.play(FadeIn(ex_title), run_time=0.3)
+        self.play(FadeIn(ex_title), run_time=1.2)
 
         ex = VGroup(
-            Text("Covariate: X₁ = engine age (in races)", font_size=18, color=TEXT_GRAY),
+            Text("Covariate: X1 = engine age (in races)", font_size=18, color=TEXT_GRAY),
             MathTex(r"\beta_1 = 0.5", font_size=24, color=TEXT_WHITE),
             MathTex(r"\exp(0.5) = 1.65", font_size=28, color=ELO_RED),
-            Text("→ 65% higher DNF risk with an older engine!", font_size=18, color=ELO_RED),
+            Text("-> 65% higher DNF risk with an older engine!", font_size=18, color=ELO_RED),
         )
         ex.arrange(DOWN, buff=0.2)
         ex.move_to(DOWN * 0.8)
 
         for line in ex:
-            self.play(FadeIn(line), run_time=0.5)
-            self.wait(0.2)
+            self.play(FadeIn(line), run_time=2)
+            self.wait(0.8)
 
         # Multiple covariates
         multi = VGroup(
@@ -501,10 +505,10 @@ class Scene12_3a_ExplainCoxPH(Scene):
         )
         multi.arrange(DOWN, buff=0.1)
         multi.to_edge(DOWN, buff=0.3)
-        self.play(FadeIn(multi), run_time=0.8)
+        self.play(FadeIn(multi), run_time=3.2)
 
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.wait(3.5)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene12_5a_ExplainIPCW(Scene):
@@ -515,7 +519,6 @@ class Scene12_5a_ExplainIPCW(Scene):
 
         header = Text("IPCW: Counting Partial Races", font_size=44, color=ELO_BLUE)
         header.to_edge(UP, buff=0.5)
-        self.play(Write(header), run_time=1)
 
         # Formula
         formula = MathTex(
@@ -523,7 +526,7 @@ class Scene12_5a_ExplainIPCW(Scene):
             font_size=44
         )
         formula.move_to(UP * 1.3)
-        self.play(Write(formula), run_time=1)
+        self.play(Write(formula), run_time=4)
 
         # What each part means
         parts = VGroup(
@@ -540,48 +543,48 @@ class Scene12_5a_ExplainIPCW(Scene):
             p.arrange(RIGHT, buff=0.2)
         parts.arrange(DOWN, buff=0.2, aligned_edge=LEFT)
         parts.move_to(DOWN * 0.2)
-        self.play(FadeIn(parts), run_time=0.8)
-        self.wait(0.5)
+        self.play(FadeIn(parts), run_time=3.2)
+        self.wait(2)
 
         # Intuition
-        self.play(FadeOut(parts), run_time=0.3)
+        self.play(FadeOut(parts), run_time=1.2)
 
         intuition = VGroup(
             Text("The Intuition:", font_size=22, color=ELO_GOLD),
-            Text("Low Ĝ(C_i) → unlikely to be censored", font_size=16, color=TEXT_GRAY),
-            Text("→ weight ≈ 1 (normal)", font_size=16, color=ELO_GREEN),
+            Text("Low G-hat(C_i) -> unlikely to be censored", font_size=16, color=TEXT_GRAY),
+            Text("-> weight ~ 1 (normal)", font_size=16, color=ELO_GREEN),
             Text("", font_size=6),
-            Text("High Ĝ(C_i) → commonly censored here", font_size=16, color=TEXT_GRAY),
-            Text("→ upweight to compensate for missing data", font_size=16, color=ELO_RED),
+            Text("High G-hat(C_i) -> commonly censored here", font_size=16, color=TEXT_GRAY),
+            Text("-> upweight to compensate for missing data", font_size=16, color=ELO_RED),
         )
         intuition.arrange(DOWN, buff=0.12)
         intuition.move_to(DOWN * 0.2)
-        self.play(FadeIn(intuition), run_time=1)
-        self.wait(0.5)
+        self.play(FadeIn(intuition), run_time=4)
+        self.wait(2)
 
-        # Worked example
-        self.play(FadeOut(intuition), run_time=0.3)
+        # Worked example — fade out formula too to avoid overlap
+        self.play(FadeOut(intuition), FadeOut(formula), run_time=1.2)
 
         ex = VGroup(
             Text("Example: DNF at lap 50 of 58", font_size=22, color=ELO_GOLD),
             MathTex(r"\hat{G}(50) = 0.30", font_size=28, color=ELO_BLUE),
             Text("(30% chance of censoring at lap 50)", font_size=14, color=TEXT_GRAY),
             MathTex(r"w = \frac{1}{0.30} = 3.33", font_size=32, color=ELO_GREEN),
-            Text("This driver's partial data counts as 3.3× a full race!", font_size=16, color=ELO_GREEN),
+            Text("This driver's partial data counts as 3.3x a full race!", font_size=16, color=ELO_GREEN),
         )
         ex.arrange(DOWN, buff=0.2)
-        ex.move_to(DOWN * 0.5)
+        ex.move_to(ORIGIN)
 
         for line in ex:
-            self.play(FadeIn(line), run_time=0.5)
-            self.wait(0.2)
+            self.play(FadeIn(line), run_time=2)
+            self.wait(0.8)
 
         takeaway = Text(
             "IPCW ensures partial race info isn't thrown away — it's weighted fairly",
             font_size=18, color=ELO_GOLD
         )
         takeaway.to_edge(DOWN, buff=0.3)
-        self.play(Write(takeaway), run_time=1)
+        self.play(Write(takeaway), run_time=4)
 
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.wait(3.5)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)

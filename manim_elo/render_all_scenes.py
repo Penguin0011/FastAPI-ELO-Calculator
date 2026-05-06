@@ -61,126 +61,127 @@ ALL_SCENES = [
     ]),
 
     # ===== PART 1 SCENES =====
+    ("part1/s00_goat_intro", [
+        "Scene0_1_BasketballDebate", "Scene0_2_SoccerDebate",
+        "Scene0_3_MoreDebates", "Scene0_4_TheQuestion",
+        "Scene0_5_VideoTitle",
+    ]),
     ("part1/s01_introduction", [
-        "Scene1_1_WelcomeHook", "Scene1_2_Chess960History",
-        "Scene1_3_TimelineOfElo", "Scene1_4_ProjectGoal",
+        "Scene1_1_TitleHook", "Scene1_2_LatentVariable",
+        "Scene1_3_EvolutionTimeline",
     ]),
     ("part1/s02_harkness", [
-        "Scene2_1_HarknessOpening", "Scene2_2_HarknessTable",
-        "Scene2_3_HarknessProblems", "Scene2_4_EloInsight",
+        "Scene2_1_NeedForRanking", "Scene2_2_LinearMechanics",
+        "Scene2_4_EliteNotProtected",
     ]),
     ("part1/s03_elo_physics", [
-        "Scene3_1_PhysicsOfUncertainty", "Scene3_2_NormalDistOrigin",
-        "Scene3_3_NormalDistribution",
-        "Scene3_3a_ExplainNormalPDF",        # NEW
-        "Scene3_4_DifferenceOfNormals", "Scene3_5_FromNormalToLogistic",
-        "Scene3_6_LogisticRevelation",
-        "Scene3_6a_ExplainLogisticVsNormal",  # NEW
-        "Scene3_7_ModernEloFormula",
-        "Scene3_7a_ExplainEloFormula",        # NEW
+        "Scene3_1_EloBackground", "Scene3_2_PerformanceRandom",
+        "Scene3_4_DifferenceOfNormals", "Scene3_5_LogisticTransition",
     ]),
     ("part1/s04_update_kfactor", [
-        "Scene4_1_LiveRating", "Scene4_2_UpdateEquation",
-        "Scene4_2a_ExplainUpdateEquation",    # NEW
-        "Scene4_3_SurpriseQuantified", "Scene4_4_WorkedExample1500v1700",
-        "Scene4_5_KFactorIntro",
-        "Scene4_5a_ExplainKFactor",           # NEW
+        "Scene4_1_FeedbackLoop", "Scene4_3_OutperformanceExample",
+        "Scene4_4_UnderperformanceExample", "Scene4_5_KFactorSpectrum",
+        "Scene4_2a_ExplainUpdateEquation",
     ]),
     ("part1/s05_facemash", [
-        "Scene5_1_DormRoomStory", "Scene5_2_FacemashCode",
-        "Scene5_3_FacemashError",
-        "Scene5_3a_ExplainFacemashError",     # NEW
-        "Scene5_4_GrandVision",
+        "Scene5_1_CulturalExplosion", "Scene5_2_EloForAesthetics",
+        "Scene5_3_HollywoodScandal", "Scene5_4_CatastrophicError",
+        "Scene5_5_CorrectFormula", "Scene5_3a_ExplainFacemashError",
     ]),
     ("part1/s06_f1_problem", [
-        "Scene6_1_WhyEloFails", "Scene6_2_PairwiseLimit",
-        "Scene6_3_SharedCars", "Scene6_4_RequirementStatement",
+        "Scene6_1_StructuralIncompatibility", "Scene6_2_PairwiseExplosion",
+        "Scene6_3_DNFAnomaly", "Scene6_4_CarVsDriver",
+        "Scene6_5_RussellExample", "Scene6_6_AdvancedSolutionsPreview",
     ]),
     ("part1/s07_bayesian_intro", [
-        "Scene7_1_BayesianWorldview", "Scene7_2_BayesColored",
-        "Scene7_2a_ExplainBayesTheorem",      # NEW
-        "Scene7_3_PriorPosterior", "Scene7_4_F1RookieExample",
-        "Scene7_5_DistributionVisualization", "Scene7_6_TrueSkillPreview",
-        "Scene7_6a_ExplainTrueSkill",         # NEW
+        "Scene7_1_PointVsDistribution", "Scene7_2_BayesTheorem",
+        "Scene7_3_RankingContext", "Scene7_4_GaussianGhost",
+        "Scene7_5_ScorpionAnalogy", "Scene7_6_TrueSkill",
+        "Scene7_2a_ExplainBayesTheorem", "Scene7_6a_ExplainTrueSkill",
     ]),
 
     # ===== PART 2 SCENES =====
     ("part2/s08_bradley_terry", [
-        "Scene8_1_PairwiseProbability", "Scene8_2_LogDomainTrick",
-        "Scene8_1a_ExplainBTL",               # NEW
-        "Scene8_2a_ExplainLogSigmoid",        # NEW
-        "Scene8_3_ConnectToElo", "Scene8_4_HodgeDecomposition",
-        "Scene8_4a_ExplainHodge",             # NEW
+        "Scene8_1_BTLFoundation", "Scene8_2_LogDomain",
+        "Scene8_3_Intransitivity", "Scene8_4_HodgeDecomposition",
+        "Scene8_1a_ExplainBTL", "Scene8_2a_ExplainLogSigmoid",
+        "Scene8_4a_ExplainHodge",
     ]),
     ("part2/s09_plackett_luce", [
-        "Scene9_1_RacingExtension", "Scene9_2_SequentialElimination",
-        "Scene9_3_F1LikelihoodDemo", "Scene9_4_PlackettLuceLikelihood",
-        "Scene9_4a_ExplainPLLikelihood",      # NEW
-        "Scene9_5_InformationWeighting",
-        "Scene9_5a_ExplainInfoWeighting",     # NEW
+        "Scene9_1_BeyondPairwise", "Scene9_2_SequentialSurvival",
+        "Scene9_3_LikelihoodFormula", "Scene9_4_InformationWeighting",
+        "Scene9_4a_ExplainPLLikelihood", "Scene9_5a_ExplainInfoWeighting",
     ]),
     ("part2/s10_hierarchical", [
-        "Scene10_1_PerformanceDecomposition",
-        "Scene10_1a_ExplainHierarchical",     # NEW
-        "Scene10_2_DAGVisualization",
-        "Scene10_3_GammaExplained", "Scene10_4_ConstructorDrift",
-        "Scene10_4a_ExplainAutoregressive",   # NEW
-        "Scene10_5_ShrinkageVisualization", "Scene10_6_ThurstoneMosteller",
-        "Scene10_6a_ExplainThurstone",        # NEW
+        "Scene10_1_LatentDecomposition", "Scene10_2_IdentifiabilityProblem",
+        "Scene10_3_DriverPriors", "Scene10_4_ConstructorEvolution",
+        "Scene10_5_RuleChangeInflation", "Scene10_6_ThurstoneMosteller",
+        "Scene10_1a_ExplainHierarchical", "Scene10_4a_ExplainAutoregressive",
+        "Scene10_6a_ExplainThurstone",
     ]),
     ("part2/s11_physics_telemetry", [
-        "Scene11_1_TelemetryIntro", "Scene11_2_SpeedTraceWalkthrough",
-        "Scene11_3_KalmanSmoothing",
-        "Scene11_3a_ExplainKalmanCycle",      # NEW
-        "Scene11_4_BrakingMetric", "Scene11_5_FrictionCircle",
-        "Scene11_5a_ExplainFrictionCircle",   # NEW
-        "Scene11_6_CornerApexVisualization",
+        "Scene11_1_TelemetryTruth", "Scene11_2_KalmanFilter",
+        "Scene11_3_KalmanEquations", "Scene11_4_BrakingAggression",
+        "Scene11_5_FrictionCircle", "Scene11_3a_ExplainKalmanCycle",
+        "Scene11_5a_ExplainFrictionCircle",
     ]),
     ("part2/s12_survival", [
-        "Scene12_1_DNFProblem", "Scene12_2_SurvivalCurve",
-        "Scene12_2a_ExplainHazard",           # NEW
-        "Scene12_3_CoxModel",
-        "Scene12_3a_ExplainCoxPH",            # NEW
-        "Scene12_4_RobberyProtocol", "Scene12_5_IPCWExplainer",
-        "Scene12_5a_ExplainIPCW",             # NEW
+        "Scene12_1_DNFAsCensoring", "Scene12_2_HazardFunction",
+        "Scene12_3_CoxProportional", "Scene12_4_KaplanMeier",
+        "Scene12_5_IPCWWeighting", "Scene12_2a_ExplainHazard",
+        "Scene12_3a_ExplainCoxPH", "Scene12_5a_ExplainIPCW",
     ]),
 
     # ===== PART 3 SCENES =====
     ("part3/s13_mcmc", [
-        "Scene13_1_MCMCMotivation", "Scene13_2_GibbsVisualization",
-        "Scene13_2a_ExplainGibbs",            # NEW
-        "Scene13_3_ConvergenceDiagnostics", "Scene13_4_GelmanRubin",
-        "Scene13_4a_ExplainGelmanRubin",      # NEW
+        "Scene13_1_IntractablePosterior", "Scene13_2_GibbsSampler",
+        "Scene13_3_TracePlots", "Scene13_4_GelmanRubin",
+        "Scene13_2a_ExplainGibbs", "Scene13_4a_ExplainGelmanRubin",
     ]),
     ("part3/s14_volatility", [
-        "Scene14_1_RaceEntropy", "Scene14_2_EntropyCalculation",
-        "Scene14_3_EntropyWeighting",
-        "Scene14_3a_ExplainEntropy",          # NEW
-        "Scene14_4_VolatilityUpdate",
-        "Scene14_4a_ExplainEntropyWeight",    # NEW
+        "Scene14_1_DynamicVariance", "Scene14_2_VolatilityParameter",
+        "Scene14_3_ShannonEntropy", "Scene14_4_EntropyWeighting",
+        "Scene14_3a_ExplainEntropy", "Scene14_4a_ExplainEntropyWeight",
     ]),
     ("part3/s15_historical", [
-        "Scene15_1_HistoryReel", "Scene15_2_CrossEraGraph",
-        "Scene15_3_TopDriversReveal",
+        "Scene15_1_RidgePlot", "Scene15_2_OverlapProbability",
+        "Scene15_3_HHITimeline", "Scene15_4_EraAdjusted", "Scene15_5_PeakComparison",
     ]),
     ("part3/s16_conclusion", [
-        "Scene16_1_RecapMontage", "Scene16_2_FutureIdeas",
-        "Scene16_3_CloseOut",
+        "Scene16_1_SystemFlowchart", "Scene16_2_KeyInsights",
+        "Scene16_3_ClosingStatement",
     ]),
     ("part3/s17_appendix", [
-        "Scene17_1_FullFormulaSheet", "Scene17_2_ParameterTable",
+        "Scene17_1_EloExpectation", "Scene17_2_EloUpdate",
+        "Scene17_3_PlackettLuce", "Scene17_4_BradleyTerry",
+        "Scene17_5_HierarchicalModel", "Scene17_6_TrueSkill",
+        "Scene17_7_Bayes",
     ]),
 ]
 
 
 def main():
     quality = "h" if "--hq" in sys.argv else "l"
+    parts_only = "--parts-only" in sys.argv
+    list_only = "--list" in sys.argv
+
+    scenes_to_render = ALL_SCENES
+    if parts_only:
+        scenes_to_render = [s for s in ALL_SCENES if s[0].startswith("part")]
+
     base_dir = os.path.dirname(os.path.abspath(__file__))
     media_dir = os.path.join(base_dir, "media")
 
-    total_scenes = sum(len(classes) for _, classes in ALL_SCENES)
+    total_scenes = sum(len(classes) for _, classes in scenes_to_render)
+
+    if list_only:
+        print(f"\nListing {len(scenes_to_render)} modules ({total_scenes} scenes):")
+        for module, classes in scenes_to_render:
+            print(f"  - {module} ({len(classes)} classes)")
+        return
+
     print(f"\n{'='*60}")
-    print(f"  RENDERING ALL {total_scenes} SCENES (quality={quality})")
+    print(f"  RENDERING {total_scenes} SCENES (quality={quality}, parts_only={parts_only})")
     print(f"  Output: {media_dir}/videos/")
     print(f"{'='*60}\n")
 
@@ -188,7 +189,7 @@ def main():
     failed = []
     start = time.time()
 
-    for module_path, classes in ALL_SCENES:
+    for module_path, classes in scenes_to_render:
         scene_file = os.path.join(base_dir, "scenes", module_path.replace("/", os.sep) + ".py")
         if not os.path.exists(scene_file):
             print(f"  [SKIP] File not found: {scene_file}")

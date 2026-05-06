@@ -1,0 +1,8 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s12_survival/1080p60/partial_movie_files/Scene12_5_IPCWWeighting/3833965276_911638418_223132457.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s12_survival/1080p60/partial_movie_files/Scene12_5_IPCWWeighting/104335764_3722377948_3237543550.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s12_survival/1080p60/partial_movie_files/Scene12_5_IPCWWeighting/104335764_1320096459_1256569954.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s12_survival/1080p60/partial_movie_files/Scene12_5_IPCWWeighting/104335764_2963831592_2131261319.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s12_survival/1080p60/partial_movie_files/Scene12_5_IPCWWeighting/104335764_3394142627_3538126478.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s12_survival/1080p60/partial_movie_files/Scene12_5_IPCWWeighting/104335764_3725668193_3770418632.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s12_survival/1080p60/partial_movie_files/Scene12_5_IPCWWeighting/104335764_3734775736_2281848896.mp4'

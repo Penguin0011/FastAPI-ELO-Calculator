@@ -2,10 +2,11 @@
 # 4 Scenes covering the theoretical foundations
 
 from manim import *
-import numpy as np
 import sys
-sys.path.append('..')
+import os
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '../..'))
 from utils.colors import *
+import numpy as np
 
 
 class Scene8_1_BTLFoundation(Scene):
@@ -16,17 +17,17 @@ class Scene8_1_BTLFoundation(Scene):
         
         header = Text("Bradley-Terry-Luce Model", font_size=44, color=ELO_BLUE)
         header.to_edge(UP, buff=0.5)
-        self.play(Write(header), run_time=1)
+        self.play(Write(header), run_time=1.5)
         
         subtitle = Text("The mathematical foundation of pairwise comparison", font_size=20, color=TEXT_GRAY)
         subtitle.next_to(header, DOWN, buff=0.2)
-        self.play(FadeIn(subtitle), run_time=0.5)
+        self.play(FadeIn(subtitle), run_time=1.0)
         
         # Core idea
         idea = Text("Each competitor has a latent 'strength' parameter", font_size=22, color=TEXT_LIGHT)
         idea.move_to(UP * 1)
         
-        self.play(Write(idea), run_time=1)
+        self.play(Write(idea), run_time=4)
         
         # Formula
         formula = MathTex(
@@ -37,42 +38,38 @@ class Scene8_1_BTLFoundation(Scene):
         formula.set_color_by_tex("v_i", ELO_BLUE)
         formula.set_color_by_tex("v_j", ELO_RED)
         
-        self.play(Write(formula), run_time=1.5)
+        self.play(Write(formula), run_time=6)
         
-        # Visual: two bars
-        bar_i = Rectangle(width=0.8, height=2, fill_color=ELO_BLUE, fill_opacity=0.7)
-        bar_i.move_to(LEFT * 2.5 + DOWN * 2)
-        label_i = MathTex(r"v_i", font_size=24, color=ELO_BLUE)
+        # Visual: two bars — positioned clearly below the formula
+        bar_i = Rectangle(width=0.8, height=1.5, fill_color=ELO_BLUE, fill_opacity=0.7)
+        bar_i.move_to(LEFT * 2.5 + DOWN * 1.5)
+        label_i = MathTex(r"v_i = 2.0", font_size=24, color=ELO_BLUE)
         label_i.next_to(bar_i, DOWN, buff=0.1)
-        name_i = Text("Player i", font_size=16, color=TEXT_GRAY)
-        name_i.next_to(label_i, DOWN, buff=0.1)
-        
-        bar_j = Rectangle(width=0.8, height=1.3, fill_color=ELO_RED, fill_opacity=0.7)
-        bar_j.move_to(RIGHT * 2.5 + DOWN * 2)
+
+        bar_j = Rectangle(width=0.8, height=1.0, fill_color=ELO_RED, fill_opacity=0.7)
+        bar_j.move_to(RIGHT * 2.5 + DOWN * 1.5)
         bar_j.align_to(bar_i, DOWN)
-        label_j = MathTex(r"v_j", font_size=24, color=ELO_RED)
+        label_j = MathTex(r"v_j = 1.3", font_size=24, color=ELO_RED)
         label_j.next_to(bar_j, DOWN, buff=0.1)
-        name_j = Text("Player j", font_size=16, color=TEXT_GRAY)
-        name_j.next_to(label_j, DOWN, buff=0.1)
-        
+
         self.play(
-            FadeIn(bar_i), FadeIn(label_i), FadeIn(name_i),
-            FadeIn(bar_j), FadeIn(label_j), FadeIn(name_j),
-            run_time=1
+            FadeIn(bar_i), FadeIn(label_i),
+            FadeIn(bar_j), FadeIn(label_j),
+            run_time=4
         )
-        
-        # Probability calculation
+
+        # Probability calculation — placed below the bars to avoid overlap
         prob_calc = MathTex(
             r"P(i > j) = \frac{2.0}{2.0 + 1.3} \approx 60\%",
-            font_size=28,
+            font_size=26,
             color=ELO_GREEN
         )
-        prob_calc.move_to(DOWN * 2 + RIGHT * 0)
+        prob_calc.to_edge(DOWN, buff=0.4)
+
+        self.play(Write(prob_calc), run_time=4)
         
-        self.play(Write(prob_calc), run_time=1)
-        
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.wait(8)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene8_2_LogDomain(Scene):
@@ -83,7 +80,7 @@ class Scene8_2_LogDomain(Scene):
         
         header = Text("Log-Domain Transformation", font_size=44, color=ELO_BLUE)
         header.to_edge(UP, buff=0.5)
-        self.play(Write(header), run_time=1)
+        self.play(Write(header), run_time=1.5)
         
         # Original form
         original = MathTex(
@@ -94,7 +91,7 @@ class Scene8_2_LogDomain(Scene):
         original_label = Text("BTL form", font_size=18, color=TEXT_GRAY)
         original_label.next_to(original, DOWN, buff=0.2)
         
-        self.play(Write(original), FadeIn(original_label), run_time=1)
+        self.play(Write(original), FadeIn(original_label), run_time=4)
         
         # Transformation
         arrow = Arrow(LEFT * 0.5, RIGHT * 0.5, color=ELO_GOLD)
@@ -102,7 +99,7 @@ class Scene8_2_LogDomain(Scene):
         trans_label = Text("Let s = log(v)", font_size=16, color=ELO_GOLD)
         trans_label.next_to(arrow, UP, buff=0.1)
         
-        self.play(Create(arrow), FadeIn(trans_label), run_time=0.5)
+        self.play(Create(arrow), FadeIn(trans_label), run_time=2)
         
         # Log form
         log_form = MathTex(
@@ -113,7 +110,7 @@ class Scene8_2_LogDomain(Scene):
         log_label = Text("Logistic form", font_size=18, color=TEXT_GRAY)
         log_label.next_to(log_form, DOWN, buff=0.2)
         
-        self.play(Write(log_form), FadeIn(log_label), run_time=1)
+        self.play(Write(log_form), FadeIn(log_label), run_time=4)
         
         # Sigmoid definition
         sigmoid = MathTex(
@@ -123,7 +120,7 @@ class Scene8_2_LogDomain(Scene):
         )
         sigmoid.move_to(DOWN * 0.3)
         
-        self.play(Write(sigmoid), run_time=1)
+        self.play(Write(sigmoid), run_time=4)
         
         # Connection to Elo
         connection = VGroup(
@@ -136,10 +133,10 @@ class Scene8_2_LogDomain(Scene):
         
         box = SurroundingRectangle(connection, color=ELO_GOLD, buff=0.2)
         
-        self.play(Write(connection), Create(box), run_time=1.5)
+        self.play(Write(connection), Create(box), run_time=6)
         
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.wait(8)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene8_3_Intransitivity(Scene):
@@ -150,40 +147,39 @@ class Scene8_3_Intransitivity(Scene):
         
         header = Text("The Intransitivity Problem", font_size=44, color=ELO_RED)
         header.to_edge(UP, buff=0.5)
-        self.play(Write(header), run_time=1)
+        self.play(Write(header), run_time=1.5)
         
-        # Standard assumption
+        # Standard assumption — shifted up to clear space for car diagram below
         assumption = Text(
             "Standard assumption: A > B and B > C implies A > C",
             font_size=22,
             color=TEXT_LIGHT
         )
-        assumption.move_to(UP * 1.5)
-        
-        self.play(Write(assumption), run_time=1)
-        
+        assumption.move_to(UP * 2.5)
+
+        self.play(Write(assumption), run_time=4)
+
         # But F1 is different...
         but = Text("But in F1...", font_size=24, color=ELO_GOLD)
-        but.move_to(UP * 0.7)
-        
-        self.play(Write(but), run_time=0.5)
-        
-        # Three cars in a cycle
-        # Positions on a triangle
+        but.move_to(UP * 1.8)
+
+        self.play(Write(but), run_time=2)
+
+        # Three cars in a cycle — shifted down to give room above
         positions = [
-            UP * 0.5,
-            DOWN * 1.5 + LEFT * 2,
-            DOWN * 1.5 + RIGHT * 2
+            UP * 0.8,
+            DOWN * 0.8 + LEFT * 2,
+            DOWN * 0.8 + RIGHT * 2
         ]
-        
+
         cars = [
             {"name": "Low Drag", "track": "Monza", "color": ELO_BLUE},
             {"name": "Balanced", "track": "Silverstone", "color": ELO_GOLD},
             {"name": "High DF", "track": "Monaco", "color": ELO_RED}
         ]
-        
+
         car_groups = VGroup()
-        for pos, car in zip(positions, cars):
+        for i, (pos, car) in enumerate(zip(positions, cars)):
             rect = Rectangle(
                 width=1.8, height=0.8,
                 fill_color=car["color"], fill_opacity=0.6,
@@ -193,49 +189,58 @@ class Scene8_3_Intransitivity(Scene):
             name = Text(car["name"], font_size=14, color=TEXT_WHITE)
             name.move_to(rect)
             track = Text(f'wins at {car["track"]}', font_size=12, color=TEXT_GRAY)
-            track.next_to(rect, DOWN, buff=0.1)
-            car_groups.add(VGroup(rect, name, track))
-        
-        self.play(FadeIn(car_groups), run_time=1)
-        
+            # Put "wins at Monza" (top car) to the right to avoid arrow overlap
+            if i == 0:
+                track.next_to(rect, RIGHT, buff=0.15)
+            else:
+                track.next_to(rect, DOWN, buff=0.1)
+            # Rounded background so label stands out over arrows
+            track_bg = RoundedRectangle(
+                width=track.width + 0.2, height=track.height + 0.16,
+                corner_radius=0.1, fill_color=BLACK, fill_opacity=0.7, stroke_width=0
+            )
+            track_bg.move_to(track)
+            car_groups.add(VGroup(rect, name, track_bg, track))
+
+        self.play(FadeIn(car_groups), run_time=4)
+
         # Arrows showing cycle
         arrows = VGroup()
         for i in range(3):
             start = positions[i]
             end = positions[(i + 1) % 3]
-            
-            # Offset to avoid overlap
+
             direction = end - start
             direction = direction / np.linalg.norm(direction)
-            
+
             arrow = Arrow(
-                start + direction * 0.6,
-                end - direction * 0.6,
+                start + direction * 0.65,
+                end - direction * 0.65,
                 color=ELO_GREEN,
                 buff=0.1
             )
             arrows.add(arrow)
-        
-        self.play(Create(arrows), run_time=1)
-        
+
+        self.play(Create(arrows), run_time=4)
+
         # Cycle label
         cycle = Text("Cyclic dominance!", font_size=24, color=ELO_RED)
-        cycle.move_to(DOWN * 3)
-        
-        self.play(Write(cycle), run_time=0.8)
-        
+        cycle.move_to(DOWN * 2.3)
+
+        self.play(Write(cycle), run_time=3.2)
+
         # RPS analogy
         rps = Text(
             "Like Rock-Paper-Scissors: no global ranking possible",
             font_size=20,
             color=TEXT_GRAY
         )
-        rps.to_edge(DOWN, buff=0.3)
+        rps.to_edge(DOWN, buff=0.5)
         
-        self.play(Write(rps), run_time=1)
+        self.play(Write(rps), run_time=4)
         
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.wait(8)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene8_4_HodgeDecomposition(Scene):
@@ -246,11 +251,11 @@ class Scene8_4_HodgeDecomposition(Scene):
         
         header = Text("Hodge Decomposition", font_size=44, color=ELO_BLUE)
         header.to_edge(UP, buff=0.5)
-        self.play(Write(header), run_time=1)
+        self.play(Write(header), run_time=1.5)
         
         subtitle = Text("Separating global skill from local interactions", font_size=20, color=TEXT_GRAY)
         subtitle.next_to(header, DOWN, buff=0.2)
-        self.play(FadeIn(subtitle), run_time=0.5)
+        self.play(FadeIn(subtitle), run_time=1.0)
         
         # Formula
         formula = MathTex(
@@ -263,7 +268,7 @@ class Scene8_4_HodgeDecomposition(Scene):
         formula[2].set_color(ELO_BLUE)       # Gradient
         formula[4].set_color(ELO_RED)        # Curl
         
-        self.play(Write(formula), run_time=1.5)
+        self.play(Write(formula), run_time=6)
         
         # Labels
         obs_label = Text("Observed edge", font_size=16, color=TEXT_GRAY)
@@ -275,7 +280,7 @@ class Scene8_4_HodgeDecomposition(Scene):
         curl_label = Text("Curl", font_size=16, color=ELO_RED)
         curl_label.next_to(formula[4], DOWN, buff=0.5)
         
-        self.play(FadeIn(obs_label), FadeIn(grad_label), FadeIn(curl_label), run_time=0.8)
+        self.play(FadeIn(obs_label), FadeIn(grad_label), FadeIn(curl_label), run_time=3.2)
         
         # Visual: Flow diagram
         # Gradient = smooth flow
@@ -296,32 +301,30 @@ class Scene8_4_HodgeDecomposition(Scene):
         grad_desc = Text("Global transitive skill", font_size=14, color=TEXT_GRAY)
         grad_desc.next_to(gradient_group, DOWN, buff=0.1)
         
-        self.play(Write(grad_title), Create(gradient_group), FadeIn(grad_desc), run_time=1)
+        self.play(Write(grad_title), Create(gradient_group), FadeIn(grad_desc), run_time=4)
         
-        # Curl = vortex
+        # Curl = vortex — single arc with tip, created at origin then shifted
         curl_group = VGroup()
         curl_title = Text("Curl Component", font_size=18, color=ELO_RED)
         curl_title.move_to(RIGHT * 3.5 + DOWN * 1.5)
-        
-        # Circular arrows
+
         center = RIGHT * 3.5 + DOWN * 2.3
-        for angle in [0, 120, 240]:
-            start_a = angle * DEGREES
-            end_a = (angle + 90) * DEGREES
-            arc = Arc(
-                radius=0.5,
-                start_angle=start_a,
-                angle=0.5 * PI,
-                color=ELO_RED
-            )
-            arc.move_to(center)
-            arc.add_tip(tip_length=0.15)
-            curl_group.add(arc)
-        
+        # 300° arc with arrowhead to clearly show rotation
+        rotation_arc = Arc(
+            radius=0.55,
+            start_angle=PI / 6,
+            angle=5 * PI / 3,
+            color=ELO_RED,
+            stroke_width=3
+        )
+        rotation_arc.add_tip(tip_length=0.18)
+        rotation_arc.shift(center)
+        curl_group.add(rotation_arc)
+
         curl_desc = Text("Specific matchup effects", font_size=14, color=TEXT_GRAY)
-        curl_desc.move_to(RIGHT * 3.5 + DOWN * 3.2)
-        
-        self.play(Write(curl_title), Create(curl_group), FadeIn(curl_desc), run_time=1)
+        curl_desc.move_to(RIGHT * 3.5 + DOWN * 3.1)
+
+        self.play(Write(curl_title), Create(curl_group), FadeIn(curl_desc), run_time=4)
         
         # Summary
         summary = Text(
@@ -331,10 +334,10 @@ class Scene8_4_HodgeDecomposition(Scene):
         )
         summary.to_edge(DOWN, buff=0.3)
         
-        self.play(Write(summary), run_time=1.5)
+        self.play(Write(summary), run_time=6)
         
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.wait(8)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene8_1a_ExplainBTL(Scene):
@@ -345,7 +348,6 @@ class Scene8_1a_ExplainBTL(Scene):
 
         header = Text("BTL: Strength Ratios as Probabilities", font_size=44, color=ELO_BLUE)
         header.to_edge(UP, buff=0.5)
-        self.play(Write(header), run_time=1)
 
         # Formula
         formula = MathTex(
@@ -353,12 +355,12 @@ class Scene8_1a_ExplainBTL(Scene):
             font_size=44
         )
         formula.move_to(UP * 1.5)
-        self.play(Write(formula), run_time=1.5)
+        self.play(Write(formula), run_time=6)
 
         # Step 1 — What is v?
-        step1 = Text("① What is v?", font_size=22, color=ELO_GOLD)
+        step1 = Text("(1) What is v?", font_size=22, color=ELO_GOLD)
         step1.move_to(LEFT * 4.5 + DOWN * 0.2)
-        self.play(FadeIn(step1), run_time=0.3)
+        self.play(FadeIn(step1), run_time=1.2)
 
         v_explain = VGroup(
             Text("v = hidden 'strength' number", font_size=18, color=TEXT_GRAY),
@@ -367,14 +369,14 @@ class Scene8_1a_ExplainBTL(Scene):
         )
         v_explain.arrange(DOWN, buff=0.1)
         v_explain.move_to(DOWN * 1)
-        self.play(FadeIn(v_explain), run_time=0.8)
-        self.wait(0.8)
+        self.play(FadeIn(v_explain), run_time=3.2)
+        self.wait(3.2)
 
         # Step 2 — Worked example
-        self.play(FadeOut(step1), FadeOut(v_explain), run_time=0.3)
-        step2 = Text("② Worked Example", font_size=22, color=ELO_GOLD)
+        self.play(FadeOut(step1), FadeOut(v_explain), run_time=1.2)
+        step2 = Text("(2) Worked Example", font_size=22, color=ELO_GOLD)
         step2.move_to(LEFT * 4.5 + DOWN * 0.2)
-        self.play(FadeIn(step2), run_time=0.3)
+        self.play(FadeIn(step2), run_time=1.2)
 
         ex = VGroup(
             Text("Hamilton: v = 80     Verstappen: v = 120", font_size=20, color=TEXT_GRAY),
@@ -385,14 +387,14 @@ class Scene8_1a_ExplainBTL(Scene):
         )
         ex.arrange(DOWN, buff=0.2)
         ex.move_to(DOWN * 1)
-        self.play(FadeIn(ex), run_time=1)
-        self.wait(0.5)
+        self.play(FadeIn(ex), run_time=4)
+        self.wait(2)
 
         # Step 3 — They sum to 100%
-        self.play(FadeOut(step2), FadeOut(ex), run_time=0.3)
-        step3 = Text("③ Key Property", font_size=22, color=ELO_GOLD)
+        self.play(FadeOut(step2), FadeOut(ex), run_time=1.2)
+        step3 = Text("(3) Key Property", font_size=22, color=ELO_GOLD)
         step3.move_to(LEFT * 4.5 + DOWN * 0.2)
-        self.play(FadeIn(step3), run_time=0.3)
+        self.play(FadeIn(step3), run_time=1.2)
 
         symmetry = VGroup(
             MathTex(r"P(i > j) + P(j > i) = 1", font_size=36, color=ELO_GREEN),
@@ -401,44 +403,45 @@ class Scene8_1a_ExplainBTL(Scene):
         symmetry.arrange(DOWN, buff=0.2)
         symmetry.move_to(DOWN * 0.5)
         symmetry_box = SurroundingRectangle(symmetry, color=ELO_GREEN, buff=0.15)
-        self.play(FadeIn(symmetry), Create(symmetry_box), run_time=1)
+        self.play(FadeIn(symmetry), Create(symmetry_box), run_time=4)
 
-        # Pie chart visual
+        # Pie chart visual — sectors created at origin then shifted (avoids bounding-box centering issue)
         pie_center = RIGHT * 4 + DOWN * 0.5
         circle = Circle(radius=1.2, color=TEXT_GRAY, stroke_width=2)
         circle.move_to(pie_center)
 
-        # 40% blue, 60% red
+        # 40% blue, 60% red — use shift so circular origin stays correct
         arc_blue = AnnularSector(
             inner_radius=0, outer_radius=1.2,
-            angle=0.4 * TAU, start_angle=PI/2,
-            color=ELO_BLUE, fill_opacity=0.6
+            angle=0.4 * TAU, start_angle=PI / 2,
+            color=ELO_BLUE, fill_opacity=0.7, stroke_width=0
         )
-        arc_blue.move_to(pie_center)
+        arc_blue.shift(pie_center)
 
         arc_red = AnnularSector(
             inner_radius=0, outer_radius=1.2,
-            angle=0.6 * TAU, start_angle=PI/2 + 0.4 * TAU,
-            color=ELO_RED, fill_opacity=0.6
+            angle=0.6 * TAU, start_angle=PI / 2 + 0.4 * TAU,
+            color=ELO_RED, fill_opacity=0.7, stroke_width=0
         )
-        arc_red.move_to(pie_center)
+        arc_red.shift(pie_center)
 
         pie_label_b = Text("40%", font_size=16, color=TEXT_WHITE)
         pie_label_b.move_to(pie_center + UP * 0.5 + LEFT * 0.3)
         pie_label_r = Text("60%", font_size=16, color=TEXT_WHITE)
-        pie_label_r.move_to(pie_center + DOWN * 0.3 + RIGHT * 0.1)
+        pie_label_r.move_to(pie_center + DOWN * 0.4 + RIGHT * 0.2)
 
-        self.play(FadeIn(arc_blue), FadeIn(arc_red), FadeIn(pie_label_b), FadeIn(pie_label_r), run_time=0.8)
+        self.play(FadeIn(circle), FadeIn(arc_blue), FadeIn(arc_red),
+                  FadeIn(pie_label_b), FadeIn(pie_label_r), run_time=3.2)
 
         takeaway = Text(
             "BTL: the probability is simply each player's share of the total strength pool",
             font_size=16, color=ELO_GOLD
         )
         takeaway.to_edge(DOWN, buff=0.4)
-        self.play(Write(takeaway), run_time=1)
+        self.play(Write(takeaway), run_time=4)
 
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.wait(8)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene8_2a_ExplainLogSigmoid(Scene):
@@ -449,12 +452,11 @@ class Scene8_2a_ExplainLogSigmoid(Scene):
 
         header = Text("From Ratios to the Sigmoid", font_size=44, color=ELO_BLUE)
         header.to_edge(UP, buff=0.5)
-        self.play(Write(header), run_time=1)
 
         # Step 1 — Start with BTL
         step1 = MathTex(r"\text{Start: } \frac{v_i}{v_i + v_j}", font_size=32, color=TEXT_WHITE)
         step1.move_to(UP * 1.2)
-        self.play(Write(step1), run_time=0.8)
+        self.play(Write(step1), run_time=3.2)
 
         # Step 2 — Divide top/bottom by v_j
         step2 = MathTex(
@@ -462,14 +464,14 @@ class Scene8_2a_ExplainLogSigmoid(Scene):
             font_size=28, color=TEXT_WHITE
         )
         step2.move_to(UP * 0.4)
-        self.play(Write(step2), run_time=0.8)
+        self.play(Write(step2), run_time=3.2)
 
         # Step 3 — Let r = v_i/v_j, take log
         step3 = VGroup(
             MathTex(r"\text{Let } s = \log(v), \quad s_i - s_j = \log(v_i/v_j)", font_size=24, color=ELO_GOLD),
         )
         step3.move_to(DOWN * 0.3)
-        self.play(Write(step3), run_time=0.8)
+        self.play(Write(step3), run_time=3.2)
 
         # Step 4 — Result is the sigmoid
         step4 = MathTex(
@@ -478,17 +480,17 @@ class Scene8_2a_ExplainLogSigmoid(Scene):
         )
         step4.move_to(DOWN * 1.2)
         result_box = SurroundingRectangle(step4, color=ELO_GREEN, buff=0.1)
-        self.play(Write(step4), Create(result_box), run_time=1.5)
+        self.play(Write(step4), Create(result_box), run_time=6)
 
-        self.wait(1)
+        self.wait(4)
 
         # Clear and show sigmoid plot
-        self.play(*[FadeOut(m) for m in [step1, step2, step3, step4, result_box]], run_time=0.3)
+        self.play(*[FadeOut(m) for m in [step1, step2, step3, step4, result_box]], run_time=1.2)
 
         # Step 5 — Plot
         plot_title = Text("The Sigmoid Curve", font_size=24, color=ELO_GOLD)
         plot_title.next_to(header, DOWN, buff=0.3)
-        self.play(FadeIn(plot_title), run_time=0.3)
+        self.play(FadeIn(plot_title), run_time=1.2)
 
         axes = Axes(
             x_range=[-6, 6, 2], y_range=[0, 1, 0.25],
@@ -507,13 +509,13 @@ class Scene8_2a_ExplainLogSigmoid(Scene):
 
         curve = axes.plot(sigmoid, x_range=[-6, 6], color=ELO_GREEN)
 
-        self.play(Create(axes), FadeIn(x_label), FadeIn(y_label), Create(curve), run_time=1.5)
+        self.play(Create(axes), FadeIn(x_label), FadeIn(y_label), Create(curve), run_time=6)
 
         # Mark key point: s_i = s_j -> 50%
         dot_50 = Dot(axes.c2p(0, 0.5), color=ELO_GOLD, radius=0.1)
-        dot_label = Text("Equal skill → 50%", font_size=14, color=ELO_GOLD)
+        dot_label = Text("Equal skill -> 50%", font_size=14, color=ELO_GOLD)
         dot_label.next_to(dot_50, UR, buff=0.1)
-        self.play(FadeIn(dot_50), FadeIn(dot_label), run_time=0.5)
+        self.play(FadeIn(dot_50), FadeIn(dot_label), run_time=2)
 
         # Step 6 — Connection to Elo
         connection = VGroup(
@@ -523,10 +525,10 @@ class Scene8_2a_ExplainLogSigmoid(Scene):
         )
         connection.arrange(DOWN, buff=0.1)
         connection.to_edge(DOWN, buff=0.3)
-        self.play(FadeIn(connection), run_time=1)
+        self.play(FadeIn(connection), run_time=4)
 
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.wait(8)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene8_4a_ExplainHodge(Scene):
@@ -537,7 +539,6 @@ class Scene8_4a_ExplainHodge(Scene):
 
         header = Text("Hodge: What Stays vs What Rotates", font_size=44, color=ELO_BLUE)
         header.to_edge(UP, buff=0.5)
-        self.play(Write(header), run_time=1)
 
         # Formula
         formula = MathTex(
@@ -548,7 +549,7 @@ class Scene8_4a_ExplainHodge(Scene):
         formula[2].set_color(ELO_BLUE)
         formula[4].set_color(ELO_RED)
         formula.move_to(UP * 1.5)
-        self.play(Write(formula), run_time=1.5)
+        self.play(Write(formula), run_time=6)
 
         # Gradient component
         grad = VGroup(
@@ -570,17 +571,17 @@ class Scene8_4a_ExplainHodge(Scene):
         curl.arrange(DOWN, buff=0.08)
         curl.move_to(RIGHT * 3.5 + DOWN * 0.5)
 
-        self.play(FadeIn(grad), FadeIn(curl), run_time=1)
-        self.wait(1)
+        self.play(FadeIn(grad), FadeIn(curl), run_time=4)
+        self.wait(4)
 
         # Rock-Paper-Scissors analogy
-        self.play(FadeOut(grad), FadeOut(curl), run_time=0.3)
+        self.play(FadeOut(grad), FadeOut(curl), run_time=1.2)
 
         rps_title = Text("Rock-Paper-Scissors = Pure Curl", font_size=24, color=ELO_GOLD)
-        rps_title.move_to(DOWN * 0.3)
-        self.play(FadeIn(rps_title), run_time=0.3)
+        rps_title.move_to(UP * 0.3)
+        self.play(FadeIn(rps_title), run_time=1.2)
 
-        # Triangle diagram
+        # Triangle diagram — shifted up to leave room for two text lines below
         a_pos = UP * 0.5 + LEFT * 0
         b_pos = DOWN * 1 + LEFT * 1.5
         c_pos = DOWN * 1 + RIGHT * 1.5
@@ -590,9 +591,10 @@ class Scene8_4a_ExplainHodge(Scene):
         dot_c = VGroup(Circle(radius=0.3, color=ELO_RED, fill_opacity=0.5), Text("C", font_size=18))
 
         dots_grp = VGroup(dot_a, dot_b, dot_c)
-        dot_a.move_to(a_pos + DOWN * 1.5)
-        dot_b.move_to(b_pos + DOWN * 1.5)
-        dot_c.move_to(c_pos + DOWN * 1.5)
+        # Shifted up to create room below for no_ranking label
+        dot_a.move_to(a_pos + DOWN * 0.2)
+        dot_b.move_to(b_pos + DOWN * 0.2)
+        dot_c.move_to(c_pos + DOWN * 0.2)
 
         arrow_ab = Arrow(dot_a.get_bottom(), dot_b.get_top(), color=ELO_BLUE, buff=0.3)
         arrow_bc = Arrow(dot_b.get_right(), dot_c.get_left(), color=ELO_GREEN, buff=0.3)
@@ -609,20 +611,20 @@ class Scene8_4a_ExplainHodge(Scene):
             FadeIn(dots_grp),
             Create(arrow_ab), Create(arrow_bc), Create(arrow_ca),
             FadeIn(label_ab), FadeIn(label_bc), FadeIn(label_ca),
-            run_time=1.5
+            run_time=6
         )
 
         no_ranking = Text("No global ranking exists! This is all curl.", font_size=16, color=ELO_RED)
-        no_ranking.next_to(dots_grp, DOWN, buff=0.8)
-        self.play(FadeIn(no_ranking), run_time=0.5)
+        no_ranking.move_to(DOWN * 2.0)
+        self.play(FadeIn(no_ranking), run_time=2)
 
-        # F1 connection
+        # F1 connection — positioned with explicit gap below no_ranking
         f1_note = Text(
             "F1: some tracks suit some cars — creating 'curl' that Hodge separates out",
-            font_size=16, color=ELO_GOLD
+            font_size=15, color=ELO_GOLD
         )
-        f1_note.to_edge(DOWN, buff=0.3)
-        self.play(Write(f1_note), run_time=1)
+        f1_note.to_edge(DOWN, buff=0.5)
+        self.play(Write(f1_note), run_time=4)
 
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.wait(8)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)

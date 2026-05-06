@@ -1,0 +1,8 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s07_bayesian_intro/1080p60/partial_movie_files/Scene7_2_BayesTheorem/3833965276_1498491743_223132457.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s07_bayesian_intro/1080p60/partial_movie_files/Scene7_2_BayesTheorem/104335764_3120040080_3330121033.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s07_bayesian_intro/1080p60/partial_movie_files/Scene7_2_BayesTheorem/104335764_600623106_2622533225.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s07_bayesian_intro/1080p60/partial_movie_files/Scene7_2_BayesTheorem/104335764_3980966467_3006285937.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s07_bayesian_intro/1080p60/partial_movie_files/Scene7_2_BayesTheorem/104335764_3513826415_121177895.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s07_bayesian_intro/1080p60/partial_movie_files/Scene7_2_BayesTheorem/104335764_3972074170_3658718780.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s07_bayesian_intro/1080p60/partial_movie_files/Scene7_2_BayesTheorem/104335764_4124457643_62261600.mp4'

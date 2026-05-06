@@ -1,0 +1,1 @@
+# Manim ELO visualization package

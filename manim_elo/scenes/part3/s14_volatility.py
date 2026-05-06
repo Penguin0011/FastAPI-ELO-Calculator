@@ -2,10 +2,11 @@
 # 4 Scenes covering dynamic variance
 
 from manim import *
-import numpy as np
 import sys
-sys.path.append('..')
+import os
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '../..'))
 from utils.colors import *
+import numpy as np
 
 
 class Scene14_1_DynamicVariance(Scene):
@@ -16,7 +17,7 @@ class Scene14_1_DynamicVariance(Scene):
         
         header = Text("Glicko-2: Dynamic Uncertainty", font_size=44, color=ELO_BLUE)
         header.to_edge(UP, buff=0.5)
-        self.play(Write(header), run_time=1)
+        self.play(Write(header), run_time=1.5)
         
         # Core concept
         concept = VGroup(
@@ -26,7 +27,7 @@ class Scene14_1_DynamicVariance(Scene):
         concept.arrange(DOWN, buff=0.1)
         concept.move_to(UP * 1.2)
         
-        self.play(FadeIn(concept), run_time=0.8)
+        self.play(FadeIn(concept), run_time=3.2)
         
         # Two behaviors
         behaviors = VGroup(
@@ -45,20 +46,20 @@ class Scene14_1_DynamicVariance(Scene):
         for b in behaviors:
             b.arrange(DOWN, buff=0.1)
         behaviors.arrange(RIGHT, buff=2)
-        behaviors.move_to(ORIGIN)
-        
-        self.play(FadeIn(behaviors), run_time=1)
-        
+        behaviors.move_to(UP * 0.4)
+
+        self.play(FadeIn(behaviors), run_time=4)
+
         # Timeline visual
         axes = Axes(
             x_range=[0, 12, 2],
             y_range=[0, 150, 50],
             x_length=8,
-            y_length=2.5,
+            y_length=2.2,
             tips=False,
             axis_config={"include_numbers": True, "font_size": 12}
         )
-        axes.shift(DOWN * 1.8)
+        axes.shift(DOWN * 2.1)
         
         x_label = Text("Months", font_size=14, color=TEXT_GRAY)
         x_label.next_to(axes.x_axis, DOWN, buff=0.2)
@@ -66,26 +67,29 @@ class Scene14_1_DynamicVariance(Scene):
         y_label = Text("RD", font_size=14, color=TEXT_GRAY)
         y_label.next_to(axes.y_axis, LEFT, buff=0.2)
         
-        self.play(Create(axes), FadeIn(x_label), FadeIn(y_label), run_time=0.8)
+        self.play(Create(axes), FadeIn(x_label), FadeIn(y_label), run_time=3.2)
         
         # RD trajectory
         rd_values = [50, 55, 60, 40, 45, 80, 85, 50, 45, 55, 60, 45]
         rd_trace = VMobject(color=ELO_PURPLE)
         rd_trace.set_points_smoothly([axes.c2p(i, rd) for i, rd in enumerate(rd_values)])
         
-        self.play(Create(rd_trace), run_time=1.5)
+        self.play(Create(rd_trace), run_time=6)
         
-        # Labels for activity
+        # Labels for activity — with BackgroundRectangle for readability over curve
         active_label = Text("Active", font_size=12, color=ELO_GREEN)
         active_label.move_to(axes.c2p(3, 30))
-        
+        active_bg = BackgroundRectangle(active_label, fill_opacity=0.80, buff=0.05)
+
         inactive_label = Text("Break", font_size=12, color=ELO_RED)
         inactive_label.move_to(axes.c2p(6, 100))
+        inactive_bg = BackgroundRectangle(inactive_label, fill_opacity=0.80, buff=0.05)
+
+        self.play(FadeIn(active_bg), FadeIn(active_label),
+                  FadeIn(inactive_bg), FadeIn(inactive_label), run_time=2)
         
-        self.play(FadeIn(active_label), FadeIn(inactive_label), run_time=0.5)
-        
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.wait(8)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene14_2_VolatilityParameter(Scene):
@@ -96,7 +100,7 @@ class Scene14_2_VolatilityParameter(Scene):
         
         header = Text("Volatility: The Third Parameter", font_size=44, color=ELO_PURPLE)
         header.to_edge(UP, buff=0.5)
-        self.play(Write(header), run_time=1)
+        self.play(Write(header), run_time=1.5)
         
         # Three parameters
         params = VGroup(
@@ -109,19 +113,19 @@ class Scene14_2_VolatilityParameter(Scene):
         params.arrange(RIGHT, buff=1.5)
         params.move_to(UP * 0.5)
         
-        self.play(FadeIn(params), run_time=1)
+        self.play(FadeIn(params), run_time=4)
         
         # Volatility explanation
         explanation = VGroup(
             Text("Volatility responds to SURPRISE:", font_size=22, color=ELO_GOLD),
-            Text("• Unexpected win/loss → σ rises", font_size=18, color=TEXT_GRAY),
-            Text("• Expected results → σ stable", font_size=18, color=TEXT_GRAY),
+            Text("• Unexpected win/loss -> sigma rises", font_size=18, color=TEXT_GRAY),
+            Text("• Expected results -> sigma stable", font_size=18, color=TEXT_GRAY),
             Text("• Acts like adaptive K-factor", font_size=18, color=ELO_GREEN)
         )
         explanation.arrange(DOWN, aligned_edge=LEFT, buff=0.15)
         explanation.move_to(DOWN * 1.5)
         
-        self.play(FadeIn(explanation), run_time=1)
+        self.play(FadeIn(explanation), run_time=4)
         
         # Caption
         caption = Text(
@@ -131,10 +135,10 @@ class Scene14_2_VolatilityParameter(Scene):
         )
         caption.to_edge(DOWN, buff=0.4)
         
-        self.play(Write(caption), run_time=1)
+        self.play(Write(caption), run_time=4)
         
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.wait(8)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene14_3_ShannonEntropy(Scene):
@@ -145,7 +149,7 @@ class Scene14_3_ShannonEntropy(Scene):
         
         header = Text("Shannon Entropy", font_size=44, color=ELO_BLUE)
         header.to_edge(UP, buff=0.5)
-        self.play(Write(header), run_time=1)
+        self.play(Write(header), run_time=1.5)
         
         # Formula
         formula = MathTex(
@@ -154,20 +158,20 @@ class Scene14_3_ShannonEntropy(Scene):
         )
         formula.move_to(UP * 1)
         
-        self.play(Write(formula), run_time=1)
+        self.play(Write(formula), run_time=4)
         
         # Intuition
         intuition = Text("Measures unpredictability of outcome", font_size=20, color=TEXT_LIGHT)
         intuition.move_to(UP * 0.2)
         
-        self.play(Write(intuition), run_time=0.8)
+        self.play(Write(intuition), run_time=3.2)
         
         # Two race scenarios
         low_entropy = VGroup(
             Text("Low Entropy Race", font_size=20, color=ELO_BLUE),
             Text("Dry conditions", font_size=16, color=TEXT_GRAY),
             Text("Dominant team", font_size=16, color=TEXT_GRAY),
-            Text("→ Predictable", font_size=16, color=ELO_BLUE)
+            Text("-> Predictable", font_size=16, color=ELO_BLUE)
         )
         low_entropy.arrange(DOWN, buff=0.1)
         low_entropy.move_to(LEFT * 3.5 + DOWN * 1.5)
@@ -176,12 +180,12 @@ class Scene14_3_ShannonEntropy(Scene):
             Text("High Entropy Race", font_size=20, color=ELO_RED),
             Text("Rain chaos", font_size=16, color=TEXT_GRAY),
             Text("Safety cars", font_size=16, color=TEXT_GRAY),
-            Text("→ Unpredictable!", font_size=16, color=ELO_RED)
+            Text("-> Unpredictable!", font_size=16, color=ELO_RED)
         )
         high_entropy.arrange(DOWN, buff=0.1)
         high_entropy.move_to(RIGHT * 3.5 + DOWN * 1.5)
         
-        self.play(FadeIn(low_entropy), FadeIn(high_entropy), run_time=1)
+        self.play(FadeIn(low_entropy), FadeIn(high_entropy), run_time=4)
         
         # Caption
         caption = Text(
@@ -191,10 +195,10 @@ class Scene14_3_ShannonEntropy(Scene):
         )
         caption.to_edge(DOWN, buff=0.4)
         
-        self.play(Write(caption), run_time=1)
+        self.play(Write(caption), run_time=4)
         
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.wait(8)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene14_4_EntropyWeighting(Scene):
@@ -205,7 +209,7 @@ class Scene14_4_EntropyWeighting(Scene):
         
         header = Text("Entropy-Weighted Learning", font_size=44, color=ELO_GREEN)
         header.to_edge(UP, buff=0.5)
-        self.play(Write(header), run_time=1)
+        self.play(Write(header), run_time=1.5)
         
         # Concept
         concept = Text(
@@ -215,7 +219,7 @@ class Scene14_4_EntropyWeighting(Scene):
         )
         concept.move_to(UP * 1.2)
         
-        self.play(Write(concept), run_time=0.8)
+        self.play(Write(concept), run_time=3.2)
         
         # Formula
         formula = MathTex(
@@ -224,28 +228,28 @@ class Scene14_4_EntropyWeighting(Scene):
         )
         formula.move_to(UP * 0.3)
         
-        self.play(Write(formula), run_time=1)
+        self.play(Write(formula), run_time=4)
         
         # Interpretation
         interpretation = VGroup(
-            Text("• Low entropy (H small) → e⁻ᴴ ≈ 1 → Full weight", font_size=18, color=ELO_GREEN),
-            Text("• High entropy (H large) → e⁻ᴴ → 0 → Reduced weight", font_size=18, color=ELO_RED)
+            Text("• Low entropy (H small) -> e^(-H) ~ 1 -> Full weight", font_size=18, color=ELO_GREEN),
+            Text("• High entropy (H large) -> e^(-H) -> 0 -> Reduced weight", font_size=18, color=ELO_RED)
         )
         interpretation.arrange(DOWN, buff=0.2)
         interpretation.move_to(DOWN * 0.8)
         
-        self.play(FadeIn(interpretation), run_time=1)
+        self.play(FadeIn(interpretation), run_time=4)
         
         # Example
         example = VGroup(
             Text("Example:", font_size=20, color=ELO_GOLD),
-            Text("Rain race with 5 retirements → H = 2.5 → w = 0.08", font_size=16, color=TEXT_GRAY),
-            Text("Dry race, expected order → H = 0.3 → w = 0.74", font_size=16, color=TEXT_GRAY)
+            Text("Rain race with 5 retirements -> H = 2.5 -> w = 0.08", font_size=16, color=TEXT_GRAY),
+            Text("Dry race, expected order -> H = 0.3 -> w = 0.74", font_size=16, color=TEXT_GRAY)
         )
         example.arrange(DOWN, buff=0.1)
         example.move_to(DOWN * 2.2)
         
-        self.play(FadeIn(example), run_time=1)
+        self.play(FadeIn(example), run_time=4)
         
         # Caption
         caption = Text(
@@ -255,10 +259,10 @@ class Scene14_4_EntropyWeighting(Scene):
         )
         caption.to_edge(DOWN, buff=0.3)
         
-        self.play(Write(caption), run_time=1)
+        self.play(Write(caption), run_time=4)
         
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.wait(8)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene14_3a_ExplainEntropy(Scene):
@@ -269,7 +273,6 @@ class Scene14_3a_ExplainEntropy(Scene):
 
         header = Text("Shannon Entropy: Measuring Chaos", font_size=44, color=ELO_BLUE)
         header.to_edge(UP, buff=0.5)
-        self.play(Write(header), run_time=1)
 
         # Formula
         formula = MathTex(
@@ -277,7 +280,7 @@ class Scene14_3a_ExplainEntropy(Scene):
             font_size=44
         )
         formula.move_to(UP * 1.3)
-        self.play(Write(formula), run_time=1.5)
+        self.play(Write(formula), run_time=6)
 
         # What p_i is
         pi_explain = VGroup(
@@ -286,15 +289,15 @@ class Scene14_3a_ExplainEntropy(Scene):
         )
         pi_explain.arrange(RIGHT, buff=0.2)
         pi_explain.move_to(UP * 0.4)
-        self.play(FadeIn(pi_explain), run_time=0.5)
-        self.wait(0.3)
+        self.play(FadeIn(pi_explain), run_time=2)
+        self.wait(1.2)
 
         # Example 1: Low entropy — dominant team
-        self.play(FadeOut(pi_explain), run_time=0.2)
+        self.play(FadeOut(pi_explain), run_time=0.8)
 
         examples_title = Text("Two Scenarios", font_size=22, color=ELO_GOLD)
         examples_title.move_to(UP * 0.5)
-        self.play(FadeIn(examples_title), run_time=0.3)
+        self.play(FadeIn(examples_title), run_time=1.2)
 
         # Low entropy bar chart
         low_probs = [0.45, 0.35, 0.10, 0.05, 0.03, 0.02]
@@ -341,8 +344,8 @@ class Scene14_3a_ExplainEntropy(Scene):
         high_title.arrange(DOWN, buff=0.06)
         high_title.move_to(RIGHT * 3.5 + DOWN * 0.2)
 
-        self.play(FadeIn(low_bars), FadeIn(low_title), run_time=0.8)
-        self.play(FadeIn(high_bars), FadeIn(high_title), run_time=0.8)
+        self.play(FadeIn(low_bars), FadeIn(low_title), run_time=3.2)
+        self.play(FadeIn(high_bars), FadeIn(high_title), run_time=3.2)
 
         # Key insight
         insight = VGroup(
@@ -351,10 +354,10 @@ class Scene14_3a_ExplainEntropy(Scene):
         )
         insight.arrange(DOWN, buff=0.1)
         insight.to_edge(DOWN, buff=0.3)
-        self.play(FadeIn(insight), run_time=0.8)
+        self.play(FadeIn(insight), run_time=3.2)
 
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.wait(8)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene14_4a_ExplainEntropyWeight(Scene):
@@ -365,7 +368,6 @@ class Scene14_4a_ExplainEntropyWeight(Scene):
 
         header = Text("Downweighting Chaos", font_size=44, color=ELO_BLUE)
         header.to_edge(UP, buff=0.5)
-        self.play(Write(header), run_time=1)
 
         # Formula
         formula = MathTex(
@@ -373,24 +375,24 @@ class Scene14_4a_ExplainEntropyWeight(Scene):
             font_size=48
         )
         formula.move_to(UP * 1.3)
-        self.play(Write(formula), run_time=1.5)
+        self.play(Write(formula), run_time=6)
 
         # Case 1: Low entropy
         cases = VGroup(
             VGroup(
-                Text("Predictable race (H ≈ 0):", font_size=20, color=ELO_GREEN),
+                Text("Predictable race (H ~ 0):", font_size=20, color=ELO_GREEN),
                 MathTex(r"w = e^{0} = 1.0", font_size=28, color=ELO_GREEN),
-                Text("→ Full weight: this race is informative!", font_size=14, color=TEXT_GRAY)
+                Text("-> Full weight: this race is informative!", font_size=14, color=TEXT_GRAY)
             ),
             VGroup(
-                Text("Moderate chaos (H ≈ 1.5):", font_size=20, color=ELO_GOLD),
+                Text("Moderate chaos (H ~ 1.5):", font_size=20, color=ELO_GOLD),
                 MathTex(r"w = e^{-1.5} = 0.22", font_size=28, color=ELO_GOLD),
-                Text("→ 22% weight: take with a grain of salt", font_size=14, color=TEXT_GRAY)
+                Text("-> 22% weight: take with a grain of salt", font_size=14, color=TEXT_GRAY)
             ),
             VGroup(
-                Text("Full chaos (H ≈ 2.5):", font_size=20, color=ELO_RED),
+                Text("Full chaos (H ~ 2.5):", font_size=20, color=ELO_RED),
                 MathTex(r"w = e^{-2.5} = 0.08", font_size=28, color=ELO_RED),
-                Text("→ 8% weight: mostly noise, ignore", font_size=14, color=TEXT_GRAY)
+                Text("-> 8% weight: mostly noise, ignore", font_size=14, color=TEXT_GRAY)
             ),
         )
 
@@ -400,17 +402,17 @@ class Scene14_4a_ExplainEntropyWeight(Scene):
         cases.move_to(DOWN * 0.3)
 
         for case in cases:
-            self.play(FadeIn(case), run_time=0.6)
-            self.wait(0.3)
+            self.play(FadeIn(case), run_time=2.4)
+            self.wait(1.2)
 
-        self.wait(0.5)
+        self.wait(2)
 
         # Visual: weight bar shrinking
-        self.play(FadeOut(cases), run_time=0.3)
+        self.play(FadeOut(cases), run_time=1.2)
 
         bar_title = Text("Weight vs Entropy", font_size=22, color=ELO_GOLD)
         bar_title.next_to(header, DOWN, buff=0.4)
-        self.play(FadeIn(bar_title), run_time=0.3)
+        self.play(FadeIn(bar_title), run_time=1.2)
 
         axes = Axes(
             x_range=[0, 3, 0.5], y_range=[0, 1, 0.25],
@@ -429,22 +431,22 @@ class Scene14_4a_ExplainEntropyWeight(Scene):
 
         curve = axes.plot(weight_fn, x_range=[0, 3], color=ELO_GREEN)
 
-        self.play(Create(axes), FadeIn(x_label), FadeIn(y_label), Create(curve), run_time=1)
+        self.play(Create(axes), FadeIn(x_label), FadeIn(y_label), Create(curve), run_time=4)
 
         # Mark key points
         for h, w_str, color in [(0, "1.00", ELO_GREEN), (1.5, "0.22", ELO_GOLD), (2.5, "0.08", ELO_RED)]:
             dot = Dot(axes.c2p(h, weight_fn(h)), color=color, radius=0.08)
             label = Text(w_str, font_size=12, color=color)
             label.next_to(dot, UR, buff=0.1)
-            self.play(FadeIn(dot), FadeIn(label), run_time=0.3)
+            self.play(FadeIn(dot), FadeIn(label), run_time=1.2)
 
         # F1 example
         f1_note = Text(
-            "F1: Spa 2021 (2 laps, red flag) → high H → tiny weight in Elo update",
+            "F1: Spa 2021 (2 laps, red flag) -> high H -> tiny weight in Elo update",
             font_size=16, color=ELO_GOLD
         )
         f1_note.to_edge(DOWN, buff=0.3)
-        self.play(Write(f1_note), run_time=1)
+        self.play(Write(f1_note), run_time=4)
 
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.wait(8)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)

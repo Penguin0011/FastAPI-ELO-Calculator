@@ -1,0 +1,10 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s06_f1_problem/1080p60/partial_movie_files/Scene6_2_PairwiseExplosion/3833965276_1118634722_223132457.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s06_f1_problem/1080p60/partial_movie_files/Scene6_2_PairwiseExplosion/104335764_160962674_2361719393.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s06_f1_problem/1080p60/partial_movie_files/Scene6_2_PairwiseExplosion/104335764_3218154956_2340253250.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s06_f1_problem/1080p60/partial_movie_files/Scene6_2_PairwiseExplosion/104335764_4257283319_311603425.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s06_f1_problem/1080p60/partial_movie_files/Scene6_2_PairwiseExplosion/104335764_3791887125_2146379653.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s06_f1_problem/1080p60/partial_movie_files/Scene6_2_PairwiseExplosion/104335764_248766220_1170238588.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s06_f1_problem/1080p60/partial_movie_files/Scene6_2_PairwiseExplosion/104335764_1151322492_1658690194.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s06_f1_problem/1080p60/partial_movie_files/Scene6_2_PairwiseExplosion/104335764_274760792_4133799818.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s06_f1_problem/1080p60/partial_movie_files/Scene6_2_PairwiseExplosion/104335764_15174033_4103002481.mp4'

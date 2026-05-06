@@ -45,3 +45,10 @@ LIGHT_GREY = "#BBBBBB"
 ELO_NEUTRAL = ELO_GRAY
 ELO_POSITIVE = ELO_GREEN
 ELO_NEGATIVE = ELO_RED
+
+# Set default font globally to avoid letter-spacing gaps on Windows
+try:
+    from manim import Text
+    Text.set_default(font="Arial")
+except Exception:
+    pass

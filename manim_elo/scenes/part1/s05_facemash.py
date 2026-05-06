@@ -2,10 +2,11 @@
 # 5 Scenes covering the Hollywood math error
 
 from manim import *
-import numpy as np
 import sys
-sys.path.append('..')
+import os
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '../..'))
 from utils.colors import *
+import numpy as np
 
 
 class Scene5_1_CulturalExplosion(Scene):
@@ -17,12 +18,12 @@ class Scene5_1_CulturalExplosion(Scene):
         # Movie theater atmosphere
         year = Text("2010", font_size=72, color=ELO_GOLD)
         year.move_to(UP * 2)
-        self.play(Write(year), run_time=1)
+        self.play(Write(year), run_time=4)
 
         # Movie title
         movie = Text("The Social Network", font_size=56, color=TEXT_WHITE)
         movie.next_to(year, DOWN, buff=0.5)
-        self.play(Write(movie), run_time=1.5)
+        self.play(Write(movie), run_time=6)
 
         # Tagline
         tagline = Text(
@@ -31,12 +32,12 @@ class Scene5_1_CulturalExplosion(Scene):
             color=TEXT_GRAY
         )
         tagline.next_to(movie, DOWN, buff=0.5)
-        self.play(FadeIn(tagline, shift=DOWN * 0.3), run_time=1)
+        self.play(FadeIn(tagline, shift=DOWN * 0.3), run_time=4)
 
         # Award recognition (no emoji)
         awards = Text("3 Academy Awards", font_size=24, color=ELO_GOLD)
         awards.move_to(DOWN * 1.5)
-        self.play(FadeIn(awards, shift=UP * 0.2), run_time=0.8)
+        self.play(FadeIn(awards, shift=UP * 0.2), run_time=3.2)
 
         # But...
         but_box = RoundedRectangle(
@@ -52,10 +53,10 @@ class Scene5_1_CulturalExplosion(Scene):
         )
         but_text.move_to(but_box)
 
-        self.wait(1)
-        self.play(FadeIn(but_box), Write(but_text, run_time=1.5))
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.wait(12)
+        self.play(FadeIn(but_box), Write(but_text, run_time=6))
+        self.wait(25)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene5_2_EloForAesthetics(Scene):
@@ -66,7 +67,7 @@ class Scene5_2_EloForAesthetics(Scene):
 
         header = Text("Facemash: Elo for Aesthetics", font_size=44, color=ELO_BLUE)
         header.to_edge(UP, buff=0.6)
-        self.play(Write(header), run_time=1)
+        self.play(Write(header), run_time=1.5)
 
         # Concept explanation (left)
         concept = VGroup(
@@ -75,7 +76,7 @@ class Scene5_2_EloForAesthetics(Scene):
         )
         concept.arrange(DOWN, buff=0.2)
         concept.move_to(UP * 1.5 + LEFT * 3)
-        self.play(FadeIn(concept, shift=DOWN * 0.2), run_time=1)
+        self.play(FadeIn(concept, shift=DOWN * 0.2), run_time=4)
 
         # Requirements
         reqs = VGroup(
@@ -86,7 +87,7 @@ class Scene5_2_EloForAesthetics(Scene):
         reqs.next_to(concept, DOWN, buff=0.3)
         self.play(
             LaggedStart(*[FadeIn(r, shift=RIGHT * 0.2) for r in reqs], lag_ratio=0.2),
-            run_time=0.9
+            run_time=3.6
         )
 
         # Facemash mapping (right)
@@ -103,44 +104,49 @@ class Scene5_2_EloForAesthetics(Scene):
         )
         mapping.arrange(DOWN, aligned_edge=LEFT, buff=0.15)
         mapping.move_to(mapping_box)
-        self.play(FadeIn(mapping_box), FadeIn(mapping, shift=LEFT * 0.2), run_time=1)
+        self.play(FadeIn(mapping_box), FadeIn(mapping, shift=LEFT * 0.2), run_time=4)
 
-        # Pairwise comparison visualization
+        # Pairwise comparison visualization — moved down to separate from upper section
         photo_a = Rectangle(
-            width=2, height=2.5,
+            width=2, height=2.0,
             fill_color=ELO_BLUE, fill_opacity=0.5,
             stroke_color=ELO_BLUE
         )
-        photo_a.move_to(LEFT * 2 + DOWN * 1.5)
+        photo_a.move_to(LEFT * 2 + DOWN * 2.0)
         label_a = Text("Photo A", font_size=18)
         label_a.next_to(photo_a, DOWN, buff=0.1)
 
         photo_b = Rectangle(
-            width=2, height=2.5,
+            width=2, height=2.0,
             fill_color=ELO_RED, fill_opacity=0.5,
             stroke_color=ELO_RED
         )
-        photo_b.move_to(RIGHT * 2 + DOWN * 1.5)
+        photo_b.move_to(RIGHT * 2 + DOWN * 2.0)
         label_b = Text("Photo B", font_size=18)
         label_b.next_to(photo_b, DOWN, buff=0.1)
 
         vs = Text("vs", font_size=32, color=TEXT_GRAY)
-        vs.move_to(DOWN * 1.5)
+        vs.move_to(DOWN * 2.0)
+        vs_bg = RoundedRectangle(
+            width=0.9, height=0.6, corner_radius=0.12,
+            fill_color=BLACK, fill_opacity=0.85, stroke_width=0
+        )
+        vs_bg.move_to(vs)
 
         self.play(
             FadeIn(photo_a), FadeIn(label_a),
             FadeIn(photo_b), FadeIn(label_b),
-            Write(vs),
-            run_time=1
+            FadeIn(vs_bg), Write(vs),
+            run_time=4
         )
 
         # Click animation (no emoji - use text)
         click = Text("User clicks", font_size=20, color=ELO_GREEN)
         click.next_to(photo_a, UP, buff=0.2)
-        self.play(FadeIn(click, scale=0.5), run_time=0.3)
+        self.play(FadeIn(click, scale=0.5), run_time=1.2)
         self.play(
             photo_a.animate.set_stroke(ELO_GREEN, width=4),
-            run_time=0.3
+            run_time=1.2
         )
 
         # Ratings update
@@ -150,10 +156,10 @@ class Scene5_2_EloForAesthetics(Scene):
         )
         result.arrange(DOWN, buff=0.1)
         result.next_to(vs, DOWN, buff=0.5)
-        self.play(FadeIn(result, shift=UP * 0.2), run_time=0.8)
+        self.play(FadeIn(result, shift=UP * 0.2), run_time=3.2)
 
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.wait(25)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene5_3_HollywoodScandal(Scene):
@@ -164,7 +170,7 @@ class Scene5_3_HollywoodScandal(Scene):
 
         header = Text("The Hollywood Math Error", font_size=48, color=ELO_RED)
         header.to_edge(UP, buff=0.6)
-        self.play(Write(header), run_time=1)
+        self.play(Write(header), run_time=1.5)
 
         # Scene description
         scene_desc = Text(
@@ -173,7 +179,7 @@ class Scene5_3_HollywoodScandal(Scene):
             color=TEXT_GRAY
         )
         scene_desc.move_to(UP * 1.8)
-        self.play(FadeIn(scene_desc, shift=DOWN * 0.3), run_time=1)
+        self.play(FadeIn(scene_desc, shift=DOWN * 0.3), run_time=4)
 
         # The WRONG formula (as shown in the movie)
         wrong_label = Text("What he wrote:", font_size=20, color=ELO_RED)
@@ -190,9 +196,9 @@ class Scene5_3_HollywoodScandal(Scene):
         wrong_x = Text("WRONG", font_size=28, color=ELO_RED, weight=BOLD)
         wrong_x.next_to(wrong_formula, RIGHT, buff=0.3)
 
-        self.play(Write(wrong_label), run_time=0.5)
-        self.play(Write(wrong_formula), run_time=1.5)
-        self.play(FadeIn(wrong_x, scale=0.5), run_time=0.3)
+        self.play(Write(wrong_label), run_time=2)
+        self.play(Write(wrong_formula), run_time=6)
+        self.play(FadeIn(wrong_x, scale=0.5), run_time=1.2)
 
         # The CORRECT formula
         correct_label = Text("What it should be:", font_size=20, color=ELO_GREEN)
@@ -209,29 +215,30 @@ class Scene5_3_HollywoodScandal(Scene):
         correct_check = Text("CORRECT", font_size=28, color=ELO_GREEN, weight=BOLD)
         correct_check.next_to(correct_formula, RIGHT, buff=0.3)
 
-        self.play(Write(correct_label), run_time=0.5)
-        self.play(Write(correct_formula), run_time=1.5)
-        self.play(FadeIn(correct_check, scale=0.5), run_time=0.3)
+        self.play(Write(correct_label), run_time=2)
+        self.play(Write(correct_formula), run_time=6)
+        self.play(FadeIn(correct_check, scale=0.5), run_time=1.2)
 
-        # Highlight the key difference
-        diff_box = RoundedRectangle(
-            width=6, height=1.4, corner_radius=0.15,
-            stroke_color=ELO_GOLD, stroke_width=3,
-            fill_color=DARKER_BG, fill_opacity=0.8
-        )
-        diff_box.move_to(DOWN * 2.5)
-
+        # Highlight the key difference — create text first so box auto-sizes to fit
         diff_text = VGroup(
             Text("MULTIPLICATION", font_size=24, color=ELO_RED),
             Text("vs", font_size=20, color=TEXT_GRAY),
             Text("EXPONENTIATION", font_size=24, color=ELO_GREEN)
         )
         diff_text.arrange(RIGHT, buff=0.3)
-        diff_text.move_to(diff_box)
+        diff_text.move_to(DOWN * 2.5)
 
-        self.play(FadeIn(diff_box), Write(diff_text), run_time=1)
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        diff_box = SurroundingRectangle(
+            diff_text,
+            corner_radius=0.15,
+            stroke_color=ELO_GOLD, stroke_width=3,
+            fill_color=DARKER_BG, fill_opacity=0.8,
+            buff=0.25
+        )
+
+        self.play(FadeIn(diff_box), Write(diff_text), run_time=4)
+        self.wait(25)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene5_4_CatastrophicError(Scene):
@@ -245,7 +252,7 @@ class Scene5_4_CatastrophicError(Scene):
 
         header = Text("Why This Breaks Everything", font_size=44, color=ELO_RED)
         header.to_edge(UP, buff=0.6)
-        self.play(Write(header), run_time=1)
+        self.play(Write(header), run_time=1.5)
 
         # Example setup
         example = Text(
@@ -253,7 +260,7 @@ class Scene5_4_CatastrophicError(Scene):
             font_size=22, color=TEXT_GRAY
         )
         example.move_to(UP * 1.8)
-        self.play(FadeIn(example, shift=DOWN * 0.2), run_time=0.8)
+        self.play(FadeIn(example, shift=DOWN * 0.2), run_time=3.2)
 
         # Hollywood calculation (left column)
         calc_label = Text("Hollywood formula:", font_size=20, color=ELO_RED)
@@ -269,9 +276,9 @@ class Scene5_4_CatastrophicError(Scene):
         )
         calc.move_to(ORIGIN + RIGHT * 1)
 
-        self.play(Write(calc_label), run_time=0.5)
+        self.play(Write(calc_label), run_time=2)
         for i, line in enumerate(calc):
-            self.play(Write(line), run_time=0.6)
+            self.play(Write(line), run_time=2.4)
             if i == len(calc) - 1:
                 line.set_color(ELO_RED)
 
@@ -280,11 +287,11 @@ class Scene5_4_CatastrophicError(Scene):
         result.move_to(DOWN * 2)
         result_box = SurroundingRectangle(result, color=ELO_RED, buff=0.2, stroke_width=3)
 
-        self.play(Write(result), Create(result_box), run_time=1)
+        self.play(Write(result), Create(result_box), run_time=4)
 
         # Dramatic flash (Indicate with scale)
-        self.play(Indicate(result, color=ELO_RED, scale_factor=1.15), run_time=0.5)
-        self.play(Indicate(result, color=WARNING, scale_factor=1.1), run_time=0.4)
+        self.play(Indicate(result, color=ELO_RED, scale_factor=1.15), run_time=2)
+        self.play(Indicate(result, color=WARNING, scale_factor=1.1), run_time=1.6)
 
         # System crash message (no emoji)
         crash_box = RoundedRectangle(
@@ -296,9 +303,9 @@ class Scene5_4_CatastrophicError(Scene):
         crash = Text("SYSTEM CRASH", font_size=32, color=ELO_RED, weight=BOLD)
         crash.move_to(crash_box)
 
-        self.play(FadeIn(crash_box), FadeIn(crash, scale=0.5), run_time=0.5)
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.play(FadeIn(crash_box), FadeIn(crash, scale=0.5), run_time=2)
+        self.wait(25)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene5_5_CorrectFormula(Scene):
@@ -313,7 +320,7 @@ class Scene5_5_CorrectFormula(Scene):
 
         header = Text("The Correct Approach", font_size=48, color=ELO_GREEN)
         header.to_edge(UP, buff=0.6)
-        self.play(Write(header), run_time=1)
+        self.play(Write(header), run_time=1.5)
 
         # Side by side titles
         wrong_title = Text("Multiplication (Wrong)", font_size=20, color=ELO_RED)
@@ -325,7 +332,7 @@ class Scene5_5_CorrectFormula(Scene):
         self.play(
             FadeIn(wrong_title, shift=RIGHT * 0.2),
             FadeIn(correct_title, shift=LEFT * 0.2),
-            run_time=0.8
+            run_time=3.2
         )
 
         # Results for same example (rating diff = -400, so R_B - R_A = 400 -> exponent = 400/400 = 1)
@@ -349,15 +356,15 @@ class Scene5_5_CorrectFormula(Scene):
         correct_result.move_to(RIGHT * 3 + DOWN * 0.5)
 
         divider = Line(ORIGIN + UP * 2, ORIGIN + DOWN * 2, color=TEXT_GRAY)
-        self.play(Create(divider), run_time=0.3)
+        self.play(Create(divider), run_time=1.2)
         self.play(
             FadeIn(wrong_result, shift=UP * 0.2),
             FadeIn(correct_result, shift=UP * 0.2),
-            run_time=1.5
+            run_time=6
         )
 
         # Indicate the correct result
-        self.play(Indicate(correct_result[-1], color=ELO_GREEN, scale_factor=1.1), run_time=0.6)
+        self.play(Indicate(correct_result[-1], color=ELO_GREEN, scale_factor=1.1), run_time=2.4)
 
         # Symmetry proof
         symmetry = VGroup(
@@ -368,7 +375,7 @@ class Scene5_5_CorrectFormula(Scene):
         symmetry.move_to(DOWN * 2.5)
 
         symmetry_box = SurroundingRectangle(symmetry, color=ELO_GOLD, buff=0.2, corner_radius=0.1)
-        self.play(Write(symmetry), Create(symmetry_box), run_time=1)
+        self.play(Write(symmetry), Create(symmetry_box), run_time=4)
 
         # Explanation
         explain = Text(
@@ -377,9 +384,9 @@ class Scene5_5_CorrectFormula(Scene):
             color=TEXT_LIGHT
         )
         explain.to_edge(DOWN, buff=0.3)
-        self.play(FadeIn(explain, shift=UP * 0.3), run_time=1)
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.play(FadeIn(explain, shift=UP * 0.3), run_time=4)
+        self.wait(25)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene5_3a_ExplainFacemashError(Scene):
@@ -390,12 +397,11 @@ class Scene5_3a_ExplainFacemashError(Scene):
 
         header = Text("Why Exponent != Multiply", font_size=44, color=ELO_RED)
         header.to_edge(UP, buff=0.5)
-        self.play(Write(header), run_time=1)
 
         # Step 1: Show both formulas
         step1 = Text("The Two Versions", font_size=22, color=ELO_GOLD)
         step1.next_to(header, DOWN, buff=0.3)
-        self.play(FadeIn(step1, shift=DOWN * 0.2), run_time=0.3)
+        self.play(FadeIn(step1, shift=DOWN * 0.2), run_time=1.2)
 
         wrong = VGroup(
             Text("MOVIE (Wrong):", font_size=20, color=ELO_RED),
@@ -418,9 +424,9 @@ class Scene5_3a_ExplainFacemashError(Scene):
             FadeIn(wrong, shift=RIGHT * 0.2),
             Write(vs),
             FadeIn(right, shift=LEFT * 0.2),
-            run_time=1
+            run_time=4
         )
-        self.wait(0.5)
+        self.wait(8)
 
         # Key difference
         diff_items = VGroup(
@@ -431,16 +437,16 @@ class Scene5_3a_ExplainFacemashError(Scene):
         diff_items.move_to(DOWN * 1)
         self.play(
             LaggedStart(*[FadeIn(d, shift=DOWN * 0.2) for d in diff_items], lag_ratio=0.3),
-            run_time=0.8
+            run_time=3.2
         )
-        self.wait(1)
+        self.wait(12)
 
         # Step 2: Plot both denominators
-        self.play(*[FadeOut(m) for m in [step1, wrong, right, vs, diff_items]], run_time=0.3)
+        self.play(*[FadeOut(m) for m in [step1, wrong, right, vs, diff_items]], run_time=1.2)
 
         step3 = Text("Plotting Both Denominators", font_size=22, color=ELO_GOLD)
         step3.next_to(header, DOWN, buff=0.3)
-        self.play(FadeIn(step3, shift=DOWN * 0.2), run_time=0.3)
+        self.play(FadeIn(step3, shift=DOWN * 0.2), run_time=1.2)
 
         axes = Axes(
             x_range=[-800, 800, 200], y_range=[-15, 15, 5],
@@ -451,10 +457,22 @@ class Scene5_3a_ExplainFacemashError(Scene):
 
         x_label = Text("Rating gap (R_B - R_A)", font_size=14, color=TEXT_GRAY)
         x_label.next_to(axes.x_axis, DOWN, buff=0.2)
+        x_label_bg = RoundedRectangle(
+            width=x_label.width + 0.2, height=x_label.height + 0.16,
+            corner_radius=0.12, fill_color=BLACK, fill_opacity=0.65, stroke_width=0
+        )
+        x_label_bg.move_to(x_label)
+
         y_label = Text("Denominator value", font_size=14, color=TEXT_GRAY)
         y_label.next_to(axes.y_axis, LEFT, buff=0.2)
+        y_label_bg = RoundedRectangle(
+            width=y_label.width + 0.2, height=y_label.height + 0.16,
+            corner_radius=0.12, fill_color=BLACK, fill_opacity=0.65, stroke_width=0
+        )
+        y_label_bg.move_to(y_label)
 
-        self.play(Create(axes), FadeIn(x_label), FadeIn(y_label), run_time=0.5)
+        self.play(Create(axes), FadeIn(x_label_bg), FadeIn(x_label),
+                  FadeIn(y_label_bg), FadeIn(y_label), run_time=2)
 
         def wrong_denom(x):
             return 1 + 10 * (x / 400)
@@ -467,55 +485,101 @@ class Scene5_3a_ExplainFacemashError(Scene):
 
         wrong_label = Text("Multiply (linear)", font_size=14, color=ELO_RED)
         wrong_label.move_to(axes.c2p(-500, wrong_denom(-500)) + UP * 0.4)
+        wrong_label_bg = RoundedRectangle(
+            width=wrong_label.width + 0.2, height=wrong_label.height + 0.16,
+            corner_radius=0.12, fill_color=BLACK, fill_opacity=0.7, stroke_width=0
+        )
+        wrong_label_bg.move_to(wrong_label)
         correct_label = Text("Exponent (exponential)", font_size=14, color=ELO_GREEN)
         correct_label.move_to(axes.c2p(200, 6))
+        correct_label_bg = RoundedRectangle(
+            width=correct_label.width + 0.2, height=correct_label.height + 0.16,
+            corner_radius=0.12, fill_color=BLACK, fill_opacity=0.7, stroke_width=0
+        )
+        correct_label_bg.move_to(correct_label)
 
-        self.play(Create(wrong_line), FadeIn(wrong_label), run_time=1)
-        self.play(Create(correct_line), FadeIn(correct_label), run_time=1)
+        self.play(Create(wrong_line), FadeIn(wrong_label_bg), FadeIn(wrong_label), run_time=4)
+        self.play(Create(correct_line), FadeIn(correct_label_bg), FadeIn(correct_label), run_time=4)
 
         # Zero line
         zero_line = DashedLine(axes.c2p(-800, 0), axes.c2p(800, 0), color=ELO_GOLD, stroke_width=2)
         zero_text = Text("Below here: NEGATIVE denominator!", font_size=14, color=ELO_GOLD)
         zero_text.move_to(axes.c2p(400, -2))
+        zero_text_bg = RoundedRectangle(
+            width=zero_text.width + 0.2, height=zero_text.height + 0.16,
+            corner_radius=0.12, fill_color=BLACK, fill_opacity=0.7, stroke_width=0
+        )
+        zero_text_bg.move_to(zero_text)
 
-        self.play(Create(zero_line), FadeIn(zero_text), run_time=0.8)
+        self.play(Create(zero_line), FadeIn(zero_text_bg), FadeIn(zero_text), run_time=3.2)
 
-        # Crossing point
+        # Crossing point — with rounded background box
         cross_dot = Dot(axes.c2p(-40, 0), color=ELO_RED, radius=0.1)
         cross_label = Text("Crosses zero at gap = -40!", font_size=14, color=ELO_RED)
         cross_label.next_to(cross_dot, DOWN, buff=0.2)
-        self.play(FadeIn(cross_dot), FadeIn(cross_label), run_time=0.8)
-        self.wait(1)
+        cross_label_bg = RoundedRectangle(
+            width=cross_label.width + 0.2, height=cross_label.height + 0.16,
+            corner_radius=0.12, fill_color=BLACK, fill_opacity=0.7, stroke_width=0
+        )
+        cross_label_bg.move_to(cross_label)
+        self.play(FadeIn(cross_dot), FadeIn(cross_label_bg), FadeIn(cross_label), run_time=3.2)
+        self.wait(12)
 
         # Step 3: Consequence
-        self.play(*[FadeOut(m) for m in [step3, axes, x_label, y_label,
-                    wrong_line, correct_line, wrong_label, correct_label,
-                    zero_line, zero_text, cross_dot, cross_label]], run_time=0.3)
+        self.play(*[FadeOut(m) for m in [step3, axes, x_label_bg, x_label, y_label_bg, y_label,
+                    wrong_line, correct_line,
+                    wrong_label_bg, wrong_label,
+                    correct_label_bg, correct_label,
+                    zero_line, zero_text_bg, zero_text,
+                    cross_dot, cross_label_bg, cross_label]], run_time=1.2)
 
         step4 = Text("The Consequence", font_size=22, color=ELO_GOLD)
         step4.next_to(header, DOWN, buff=0.3)
-        self.play(FadeIn(step4, shift=DOWN * 0.2), run_time=0.3)
+        self.play(FadeIn(step4, shift=DOWN * 0.2), run_time=1.2)
 
-        consequence = VGroup(
-            Text("Multiply version: when stronger player is favored by > 40 points...", font_size=18, color=TEXT_GRAY),
-            MathTex(r"E_A = \frac{1}{\text{negative}} = \text{NEGATIVE PROBABILITY}", font_size=28, color=ELO_RED),
-            Text("", font_size=6),
-            Text("Exponent version: denominator is ALWAYS > 1", font_size=18, color=TEXT_GRAY),
-            MathTex(r"E_A = \frac{1}{1 + \underbrace{10^{\text{anything}}}_{\text{always } > 0}} \in (0, 1)",
-                    font_size=28, color=ELO_GREEN),
+        # Two-column layout: left = Multiply (Wrong), right = Exponent (Correct)
+        mult_items = VGroup(
+            Text("Multiply (Wrong):", font_size=17, color=ELO_RED, weight=BOLD),
+            Text("Gap > 40 pts: denominator < 0", font_size=14, color=TEXT_GRAY),
+            MathTex(r"E_A = \frac{1}{\text{neg}} \Rightarrow \text{neg prob!}", font_size=22, color=ELO_RED),
+            Text("Invalid — CRASHES", font_size=14, color=ELO_RED),
         )
-        consequence.arrange(DOWN, buff=0.2)
-        consequence.move_to(DOWN * 0.5)
+        mult_items.arrange(DOWN, buff=0.18, aligned_edge=LEFT)
+        mult_items.move_to(LEFT * 3.2 + DOWN * 1.1)
+        mult_box = SurroundingRectangle(
+            mult_items, corner_radius=0.15,
+            stroke_color=ELO_RED, stroke_width=1.5,
+            fill_color=DARKER_BG, fill_opacity=0.7, buff=0.22
+        )
+
+        exp_items = VGroup(
+            Text("Exponent (Correct):", font_size=17, color=ELO_GREEN, weight=BOLD),
+            Text("Denominator always > 1", font_size=14, color=TEXT_GRAY),
+            MathTex(r"E_A = \frac{1}{1+10^x} \in (0,1)", font_size=22, color=ELO_GREEN),
+            Text("Always a valid probability!", font_size=14, color=ELO_GREEN),
+        )
+        exp_items.arrange(DOWN, buff=0.18, aligned_edge=LEFT)
+        exp_items.move_to(RIGHT * 3.2 + DOWN * 1.1)
+        exp_box = SurroundingRectangle(
+            exp_items, corner_radius=0.15,
+            stroke_color=ELO_GREEN, stroke_width=1.5,
+            fill_color=DARKER_BG, fill_opacity=0.7, buff=0.22
+        )
+
+        divider = Line(UP * 0.2, DOWN * 2.8, color=TEXT_GRAY, stroke_width=1)
+
+        self.play(Create(divider), run_time=0.8)
         self.play(
-            LaggedStart(*[FadeIn(c, shift=UP * 0.2) for c in consequence], lag_ratio=0.15),
-            run_time=1.5
+            FadeIn(mult_box), FadeIn(mult_items),
+            FadeIn(exp_box), FadeIn(exp_items),
+            run_time=4
         )
 
         takeaway = Text(
             "Exponentiation guarantees valid probabilities for ANY rating gap",
-            font_size=18, color=ELO_GOLD
+            font_size=17, color=ELO_GOLD
         )
         takeaway.to_edge(DOWN, buff=0.4)
-        self.play(FadeIn(takeaway, shift=UP * 0.3), run_time=1)
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.play(FadeIn(takeaway, shift=UP * 0.3), run_time=4)
+        self.wait(25)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)

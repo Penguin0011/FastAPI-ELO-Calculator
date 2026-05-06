@@ -1,6 +1,0 @@
-# This file is used internally by FFMPEG.
-file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_10_full_system/480p15/partial_movie_files/FinalFormula/1584795214_621757895_223132457.mp4'
-file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_10_full_system/480p15/partial_movie_files/FinalFormula/4072820271_822183602_414207975.mp4'
-file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_10_full_system/480p15/partial_movie_files/FinalFormula/4072820271_3635760899_513325293.mp4'
-file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_10_full_system/480p15/partial_movie_files/FinalFormula/4072820271_4277570474_2076551940.mp4'
-file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_10_full_system/480p15/partial_movie_files/FinalFormula/4072820271_440941043_3778491972.mp4'

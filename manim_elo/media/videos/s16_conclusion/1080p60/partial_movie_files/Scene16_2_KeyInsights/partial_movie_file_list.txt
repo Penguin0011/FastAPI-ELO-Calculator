@@ -1,0 +1,10 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s16_conclusion/1080p60/partial_movie_files/Scene16_2_KeyInsights/3833965276_2272118834_223132457.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s16_conclusion/1080p60/partial_movie_files/Scene16_2_KeyInsights/104335764_2555251979_2187529915.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s16_conclusion/1080p60/partial_movie_files/Scene16_2_KeyInsights/104335764_304492685_2362294607.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s16_conclusion/1080p60/partial_movie_files/Scene16_2_KeyInsights/104335764_2449098592_2051504158.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s16_conclusion/1080p60/partial_movie_files/Scene16_2_KeyInsights/104335764_1187480461_3427430671.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s16_conclusion/1080p60/partial_movie_files/Scene16_2_KeyInsights/104335764_1443612972_1585927183.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s16_conclusion/1080p60/partial_movie_files/Scene16_2_KeyInsights/104335764_2410642029_2423577180.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s16_conclusion/1080p60/partial_movie_files/Scene16_2_KeyInsights/104335764_3278807600_1593902878.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s16_conclusion/1080p60/partial_movie_files/Scene16_2_KeyInsights/104335764_775903110_3563966184.mp4'

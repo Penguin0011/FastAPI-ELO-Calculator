@@ -1,9 +1,11 @@
 # Section 4: The Update Mechanism & K-Factor
 from manim import *
-import numpy as np
+from manim.utils.color.core import interpolate_color as manim_interpolate_color
 import sys
-sys.path.append('..')
+import os
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '../..'))
 from utils.colors import *
+import numpy as np
 
 
 class Scene4_1_FeedbackLoop(Scene):
@@ -14,7 +16,7 @@ class Scene4_1_FeedbackLoop(Scene):
 
         header = Text("The Self-Correcting Loop", font_size=48, color=ELO_BLUE)
         header.to_edge(UP, buff=0.7)
-        self.play(Write(header), run_time=1)
+        self.play(Write(header), run_time=1.5)
 
         stages = [
             ("PREDICT", ELO_BLUE, 90),
@@ -44,21 +46,29 @@ class Scene4_1_FeedbackLoop(Scene):
         boxes.move_to(ORIGIN + DOWN * 0.2)
 
         for b in boxes:
-            self.play(FadeIn(b), run_time=0.4)
+            self.play(FadeIn(b), run_time=1.6)
 
-        # Curved arcs between stages
+        # Curved arrows between stages — one per step to show clockwise flow clearly
         for i in range(4):
-            next_i = (i + 1) % 4
-            a1 = stages[i][2] * DEGREES
-            a2 = stages[next_i][2] * DEGREES
+            ni = (i + 1) % 4
+            start_c = boxes[i][0].get_center()
+            end_c = boxes[ni][0].get_center()
 
-            start_angle = a1 - 25 * DEGREES
-            arc_angle = (a2 - a1 - 50 * DEGREES) if i < 3 else (-50 * DEGREES)
-            arc = Arc(radius=radius * 0.85, start_angle=start_angle,
-                      angle=arc_angle,
-                      color=TEXT_GRAY, stroke_width=2)
-            arc.move_to(boxes.get_center())
-            self.add(arc)
+            diff = end_c - start_c
+            mag = np.sqrt(diff[0] ** 2 + diff[1] ** 2 + diff[2] ** 2)
+            direction = diff / mag
+
+            # Offset start/end to box edges (half-width ≈ 1.05)
+            start_pt = start_c + direction * 1.05
+            end_pt = end_c - direction * 1.05
+
+            arrow = CurvedArrow(
+                start_pt, end_pt,
+                angle=PI / 3,
+                color=TEXT_LIGHT,
+                stroke_width=2.5
+            )
+            self.play(Create(arrow), run_time=1.0)
 
         # Caption
         caption = Text(
@@ -66,12 +76,12 @@ class Scene4_1_FeedbackLoop(Scene):
             font_size=20, color=TEXT_LIGHT
         )
         caption.to_edge(DOWN, buff=0.6)
-        self.play(FadeIn(caption, shift=UP * 0.3), run_time=1)
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=0.8)
+        self.play(FadeIn(caption, shift=UP * 0.3), run_time=4)
+        self.wait(3)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=3.2)
 
 
-class Scene4_2_UpdateEquation(Scene):
+class Scene4_2_UpdateEquation(MovingCameraScene):
     """Scene 4.2: The Update Equation."""
 
     def construct(self):
@@ -79,7 +89,7 @@ class Scene4_2_UpdateEquation(Scene):
 
         header = Text("The Update Equation", font_size=48, color=ELO_BLUE)
         header.to_edge(UP, buff=0.7)
-        self.play(Write(header), run_time=1)
+        self.play(Write(header), run_time=1.5)
 
         # Main formula - centered, large
         formula = MathTex(
@@ -93,8 +103,19 @@ class Scene4_2_UpdateEquation(Scene):
         formula[8].set_color(ELO_RED)     # E_A
         formula.move_to(UP * 1.2)
 
-        self.play(Write(formula, run_time=2))
-        self.wait(0.5)
+        self.play(Write(formula, run_time=8))
+        self.wait(1.2)
+
+        # Zoom in on the full formula before annotating
+        self.play(
+            self.camera.frame.animate.scale(0.65).move_to(formula.get_center()),
+            run_time=3.2
+        )
+        self.wait(2.8)
+        self.play(
+            self.camera.frame.animate.scale(1 / 0.65).move_to(ORIGIN),
+            run_time=2.8
+        )
 
         # Brace labels - use Brace for clean formula annotation
         labels_data = [
@@ -107,14 +128,14 @@ class Scene4_2_UpdateEquation(Scene):
         braces = VGroup()
         for target, text, color, direction in labels_data:
             brace = Brace(target, direction, color=color)
-            lbl = brace.get_text(text, font_size=16)
+            lbl = brace.get_text(text)
             lbl.set_color(color)
             braces.add(VGroup(brace, lbl))
 
         self.play(
             LaggedStart(*[GrowFromCenter(b[0]) for b in braces], lag_ratio=0.1),
             LaggedStart(*[FadeIn(b[1]) for b in braces], lag_ratio=0.1),
-            run_time=1.5
+            run_time=6
         )
 
         # Surprise factor highlight
@@ -123,9 +144,9 @@ class Scene4_2_UpdateEquation(Scene):
 
         surprise_box = SurroundingRectangle(surprise_eq, color=ELO_PURPLE, buff=0.2, corner_radius=0.1)
 
-        self.play(Write(surprise_eq), Create(surprise_box), run_time=1)
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=0.8)
+        self.play(Write(surprise_eq), Create(surprise_box), run_time=4)
+        self.wait(3)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=3.2)
 
 
 class Scene4_3_OutperformanceExample(Scene):
@@ -136,7 +157,7 @@ class Scene4_3_OutperformanceExample(Scene):
 
         header = Text("Outperformance  ->  Rating Rises", font_size=40, color=ELO_GREEN)
         header.to_edge(UP, buff=0.7)
-        self.play(Write(header), run_time=1)
+        self.play(Write(header), run_time=1.5)
 
         # Scenario (left)
         scenario = VGroup(
@@ -149,7 +170,7 @@ class Scene4_3_OutperformanceExample(Scene):
 
         self.play(
             LaggedStart(*[FadeIn(s, shift=RIGHT * 0.2) for s in scenario], lag_ratio=0.15),
-            run_time=1
+            run_time=4
         )
 
         # Calculation (right)
@@ -163,11 +184,11 @@ class Scene4_3_OutperformanceExample(Scene):
         calc.move_to(RIGHT * 2.5 + UP * 1)
 
         for step in calc:
-            self.play(Write(step), run_time=0.6)
+            self.play(Write(step), run_time=2.4)
 
         result_box = SurroundingRectangle(calc[-1], color=ELO_GREEN, buff=0.12)
-        self.play(Create(result_box), run_time=0.4)
-        self.play(Indicate(calc[-1], color=ELO_GREEN, scale_factor=1.1), run_time=0.5)
+        self.play(Create(result_box), run_time=1.6)
+        self.play(Indicate(calc[-1], color=ELO_GREEN, scale_factor=1.1), run_time=2)
 
         # Rating bar visualization
         bar_g = VGroup()
@@ -191,10 +212,10 @@ class Scene4_3_OutperformanceExample(Scene):
         rise_text = Text("+22 pts", font_size=18, color=ELO_GREEN)
         rise_text.next_to(rise_arrow, UP, buff=0.1)
 
-        self.play(FadeIn(bar_g[0]), run_time=0.4)
-        self.play(FadeIn(bar_g[1]), Create(rise_arrow), FadeIn(rise_text), run_time=0.9)
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=0.8)
+        self.play(FadeIn(bar_g[0]), run_time=1.6)
+        self.play(FadeIn(bar_g[1]), Create(rise_arrow), FadeIn(rise_text), run_time=3.6)
+        self.wait(3)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=3.2)
 
 
 class Scene4_4_UnderperformanceExample(Scene):
@@ -209,7 +230,7 @@ class Scene4_4_UnderperformanceExample(Scene):
 
         header = Text("Underperformance  ->  Rating Drops", font_size=40, color=ELO_RED)
         header.to_edge(UP, buff=0.7)
-        self.play(Write(header), run_time=1)
+        self.play(Write(header), run_time=1.5)
 
         # Scenario
         scenario = VGroup(
@@ -222,7 +243,7 @@ class Scene4_4_UnderperformanceExample(Scene):
 
         self.play(
             LaggedStart(*[FadeIn(s, shift=RIGHT * 0.2) for s in scenario], lag_ratio=0.15),
-            run_time=1
+            run_time=4
         )
 
         # Calculation - FIXED: 32 * 0.80 = 25.6
@@ -236,11 +257,11 @@ class Scene4_4_UnderperformanceExample(Scene):
         calc.move_to(RIGHT * 2.5 + UP * 1)
 
         for step in calc:
-            self.play(Write(step), run_time=0.6)
+            self.play(Write(step), run_time=2.4)
 
         result_box = SurroundingRectangle(calc[-1], color=ELO_RED, buff=0.12)
-        self.play(Create(result_box), run_time=0.4)
-        self.play(Indicate(calc[-1], color=ELO_RED, scale_factor=1.1), run_time=0.5)
+        self.play(Create(result_box), run_time=1.6)
+        self.play(Indicate(calc[-1], color=ELO_RED, scale_factor=1.1), run_time=2)
 
         # Rating bar (drops)
         bar_before = Rectangle(width=0.8, height=2.0, fill_color=ELO_BLUE, fill_opacity=0.8, stroke_width=0)
@@ -266,11 +287,11 @@ class Scene4_4_UnderperformanceExample(Scene):
         drop_text = Text("-25.6 pts", font_size=18, color=ELO_RED)
         drop_text.next_to(drop_arrow, UP, buff=0.1)
 
-        self.play(FadeIn(bar_before), FadeIn(label_b), FadeIn(title_b), run_time=0.4)
+        self.play(FadeIn(bar_before), FadeIn(label_b), FadeIn(title_b), run_time=1.6)
         self.play(FadeIn(bar_after), FadeIn(label_a), FadeIn(title_a),
-                  Create(drop_arrow), FadeIn(drop_text), run_time=0.9)
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=0.8)
+                  Create(drop_arrow), FadeIn(drop_text), run_time=3.6)
+        self.wait(3)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=3.2)
 
 
 class Scene4_5_KFactorSpectrum(Scene):
@@ -281,7 +302,7 @@ class Scene4_5_KFactorSpectrum(Scene):
 
         header = Text("The K-Factor Spectrum", font_size=48, color=ELO_GOLD)
         header.to_edge(UP, buff=0.7)
-        self.play(Write(header), run_time=1)
+        self.play(Write(header), run_time=1.5)
 
         # Gradient spectrum bar
         n_segs = 20
@@ -291,7 +312,7 @@ class Scene4_5_KFactorSpectrum(Scene):
             t = i / (n_segs - 1)
             seg = Rectangle(
                 width=bar_width / n_segs, height=0.9,
-                fill_color=interpolate_color(ELO_RED, ELO_BLUE, t),
+                fill_color=manim_interpolate_color(ManimColor(ELO_RED), ManimColor(ELO_BLUE), t),
                 fill_opacity=0.85, stroke_width=0
             )
             seg.move_to(LEFT * 5 + RIGHT * (bar_width / n_segs) * (i + 0.5) + UP * 0.8)
@@ -301,7 +322,7 @@ class Scene4_5_KFactorSpectrum(Scene):
                                 stroke_color=WHITE, stroke_width=1.5, fill_opacity=0)
         bar_outline.move_to(gradient.get_center())
 
-        self.play(FadeIn(gradient), Create(bar_outline), run_time=0.9)
+        self.play(FadeIn(gradient), Create(bar_outline), run_time=3.6)
 
         # Labels
         high_k = VGroup(
@@ -324,7 +345,7 @@ class Scene4_5_KFactorSpectrum(Scene):
         low_k.next_to(gradient, RIGHT, buff=0.4)
         low_k.shift(DOWN * 0.5)
 
-        self.play(FadeIn(high_k, shift=RIGHT * 0.2), FadeIn(low_k, shift=LEFT * 0.2), run_time=0.9)
+        self.play(FadeIn(high_k, shift=RIGHT * 0.2), FadeIn(low_k, shift=LEFT * 0.2), run_time=3.6)
 
         # Comparison examples
         demo = VGroup(
@@ -343,9 +364,9 @@ class Scene4_5_KFactorSpectrum(Scene):
         demo.arrange(DOWN, buff=0.25, aligned_edge=LEFT)
         demo.move_to(DOWN * 2.3)
 
-        self.play(FadeIn(demo, shift=UP * 0.3), run_time=1)
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=0.8)
+        self.play(FadeIn(demo, shift=UP * 0.3), run_time=4)
+        self.wait(3)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=3.2)
 
 
 class Scene4_2a_ExplainUpdateEquation(Scene):
@@ -356,7 +377,6 @@ class Scene4_2a_ExplainUpdateEquation(Scene):
 
         header = Text("Update Equation - Piece by Piece", font_size=44, color=ELO_BLUE)
         header.to_edge(UP, buff=0.5)
-        self.play(Write(header), run_time=1)
 
         formula = MathTex(
             r"R'_A", r"=", r"R_A", r"+", r"K", r"(", r"S_A", r"-", r"E_A", r")",
@@ -368,7 +388,7 @@ class Scene4_2a_ExplainUpdateEquation(Scene):
         formula[6].set_color(ELO_GREEN)
         formula[8].set_color(ELO_RED)
         formula.move_to(UP * 1.5)
-        self.play(Write(formula), run_time=2)
+        self.play(Write(formula), run_time=8)
 
         parts = [
             (formula[2], r"R_A = \text{Old Rating}", "Your current rating before the game", ELO_BLUE),
@@ -390,12 +410,12 @@ class Scene4_2a_ExplainUpdateEquation(Scene):
             anims = [Create(box), FadeIn(grp, shift=DOWN * 0.2)]
             if prev_grp:
                 anims.append(FadeOut(prev_grp))
-            self.play(*anims, run_time=0.8)
-            self.wait(0.5)
-            self.play(FadeOut(box), run_time=0.2)
+            self.play(*anims, run_time=3.2)
+            self.wait(2)
+            self.play(FadeOut(box), run_time=0.8)
             prev_grp = grp
 
-        self.play(FadeOut(prev_grp), run_time=0.3)
+        self.play(FadeOut(prev_grp), run_time=1.2)
 
         # Surprise factor cases
         surprise_title = Text("The Surprise Factor  (S_A - E_A)", font_size=24, color=ELO_GOLD)
@@ -409,13 +429,13 @@ class Scene4_2a_ExplainUpdateEquation(Scene):
         cases.arrange(DOWN, aligned_edge=LEFT, buff=0.18)
         cases.next_to(surprise_title, DOWN, buff=0.3)
 
-        self.play(FadeIn(surprise_title, shift=DOWN * 0.2), run_time=0.6)
-        self.play(LaggedStart(*[FadeIn(c, shift=RIGHT * 0.2) for c in cases], lag_ratio=0.2), run_time=1)
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=0.8)
+        self.play(FadeIn(surprise_title, shift=DOWN * 0.2), run_time=2.4)
+        self.play(LaggedStart(*[FadeIn(c, shift=RIGHT * 0.2) for c in cases], lag_ratio=0.2), run_time=4)
+        self.wait(3)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=3.2)
 
 
-class Scene4_5a_ExplainKFactor(Scene):
+class Scene4_5a_ExplainKFactor(MovingCameraScene):
     """Scene 4.5a: K-Factor - Speed vs Stability tradeoff."""
 
     def construct(self):
@@ -423,7 +443,6 @@ class Scene4_5a_ExplainKFactor(Scene):
 
         header = Text("K-Factor: Speed vs Stability", font_size=44, color=ELO_BLUE)
         header.to_edge(UP, buff=0.5)
-        self.play(Write(header), run_time=1)
 
         # Rating trajectories
         axes = Axes(
@@ -439,7 +458,7 @@ class Scene4_5a_ExplainKFactor(Scene):
         y_label.next_to(axes.y_axis, LEFT, buff=0.15)
         y_label.rotate(90 * DEGREES)
 
-        self.play(Create(axes), FadeIn(x_label), FadeIn(y_label), run_time=0.7)
+        self.play(Create(axes), FadeIn(x_label), FadeIn(y_label), run_time=2.8)
 
         # High K (volatile)
         high_k_r = [1500, 1540, 1498, 1545, 1490, 1542, 1485, 1537, 1493, 1542]
@@ -455,8 +474,20 @@ class Scene4_5a_ExplainKFactor(Scene):
         low_k_lbl = Text("K = 10  (stable)", font_size=16, color=ELO_BLUE)
         low_k_lbl.move_to(axes.c2p(9, 1522))
 
-        self.play(Create(high_k_path), FadeIn(high_k_lbl), run_time=1.5)
-        self.play(Create(low_k_path), FadeIn(low_k_lbl), run_time=1.5)
+        self.play(Create(high_k_path), FadeIn(high_k_lbl), run_time=6)
+        self.play(Create(low_k_path), FadeIn(low_k_lbl), run_time=6)
+        self.wait(1.6)
+
+        # Zoom into the right side to compare the two endpoints
+        self.play(
+            self.camera.frame.animate.scale(0.60).move_to(axes.c2p(8.5, 1535)),
+            run_time=3.6
+        )
+        self.wait(4)
+        self.play(
+            self.camera.frame.animate.scale(1 / 0.60).move_to(ORIGIN),
+            run_time=2.8
+        )
 
         # K-Factor guide table
         table_title = Text("F1 K-Factor Guide", font_size=22, color=ELO_GOLD)
@@ -481,6 +512,6 @@ class Scene4_5a_ExplainKFactor(Scene):
         table_group = VGroup(table_title, rows)
         table_group.to_edge(DOWN, buff=0.3)
 
-        self.play(FadeIn(table_group), run_time=0.8)
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=0.8)
+        self.play(FadeIn(table_group), run_time=3.2)
+        self.wait(3)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=3.2)

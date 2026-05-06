@@ -2,10 +2,11 @@
 # 6 Scenes covering latent variable decomposition
 
 from manim import *
-import numpy as np
 import sys
-sys.path.append('..')
+import os
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '../..'))
 from utils.colors import *
+import numpy as np
 
 
 class Scene10_1_LatentDecomposition(Scene):
@@ -16,7 +17,7 @@ class Scene10_1_LatentDecomposition(Scene):
         
         header = Text("Hierarchical Decomposition", font_size=44, color=ELO_BLUE)
         header.to_edge(UP, buff=0.5)
-        self.play(Write(header), run_time=1)
+        self.play(Write(header), run_time=1.5)
         
         # The formula
         formula = MathTex(
@@ -32,7 +33,7 @@ class Scene10_1_LatentDecomposition(Scene):
         formula[6].set_color(ELO_GREEN)    # Track
         formula[8].set_color(ELO_PURPLE)   # Noise
         
-        self.play(Write(formula), run_time=2)
+        self.play(Write(formula), run_time=8)
         
         # Legend
         legend = VGroup(
@@ -47,7 +48,7 @@ class Scene10_1_LatentDecomposition(Scene):
         legend.arrange(DOWN, aligned_edge=LEFT, buff=0.2)
         legend.move_to(DOWN * 1.5)
         
-        self.play(FadeIn(legend), run_time=1)
+        self.play(FadeIn(legend), run_time=4)
         
         # Visual: Stacked bar
         stack = VGroup()
@@ -69,14 +70,14 @@ class Scene10_1_LatentDecomposition(Scene):
             current_y += h
         
         equals = Text("=", font_size=32)
-        equals.move_to(RIGHT * 1 + DOWN * 1.5)
-        
+        equals.move_to(LEFT * 0.5 + DOWN * 1.5)
+
         result_bar = Rectangle(
             width=2.5, height=3.6,
             fill_color=TEXT_GRAY, fill_opacity=0.5,
             stroke_color=WHITE
         )
-        result_bar.move_to(LEFT * 2 + DOWN * 1.2)
+        result_bar.move_to(LEFT * 4.5 + DOWN * 1.2)
         result_label = Text("Observed\nPerformance", font_size=14, color=TEXT_WHITE)
         result_label.move_to(result_bar)
         
@@ -84,11 +85,11 @@ class Scene10_1_LatentDecomposition(Scene):
             FadeIn(result_bar), FadeIn(result_label),
             Write(equals),
             FadeIn(stack),
-            run_time=1.5
+            run_time=6
         )
         
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.wait(8)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene10_2_IdentifiabilityProblem(Scene):
@@ -99,7 +100,7 @@ class Scene10_2_IdentifiabilityProblem(Scene):
         
         header = Text("The Identifiability Problem", font_size=44, color=ELO_RED)
         header.to_edge(UP, buff=0.5)
-        self.play(Write(header), run_time=1)
+        self.play(Write(header), run_time=1.5)
         
         # Problem statement
         problem = Text(
@@ -109,7 +110,7 @@ class Scene10_2_IdentifiabilityProblem(Scene):
         )
         problem.move_to(UP * 1.5)
         
-        self.play(Write(problem), run_time=1)
+        self.play(Write(problem), run_time=4)
         
         # Example: One driver per team
         case1 = VGroup(
@@ -121,7 +122,7 @@ class Scene10_2_IdentifiabilityProblem(Scene):
         case1.move_to(LEFT * 3.5 + DOWN * 0.3)
         case1_box = SurroundingRectangle(case1, color=ELO_RED, buff=0.15)
         
-        self.play(FadeIn(case1), Create(case1_box), run_time=1)
+        self.play(FadeIn(case1), Create(case1_box), run_time=4)
         
         # Example: Two drivers per team
         case2 = VGroup(
@@ -133,7 +134,7 @@ class Scene10_2_IdentifiabilityProblem(Scene):
         case2.move_to(RIGHT * 3.5 + DOWN * 0.3)
         case2_box = SurroundingRectangle(case2, color=ELO_GREEN, buff=0.15)
         
-        self.play(FadeIn(case2), Create(case2_box), run_time=1)
+        self.play(FadeIn(case2), Create(case2_box), run_time=4)
         
         # Solution hint
         solution = VGroup(
@@ -143,10 +144,10 @@ class Scene10_2_IdentifiabilityProblem(Scene):
         solution.arrange(DOWN, buff=0.1)
         solution.move_to(DOWN * 2.5)
         
-        self.play(FadeIn(solution), run_time=1)
+        self.play(FadeIn(solution), run_time=4)
         
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.wait(8)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene10_3_DriverPriors(Scene):
@@ -157,7 +158,7 @@ class Scene10_3_DriverPriors(Scene):
         
         header = Text("Prior from Feeder Series", font_size=44, color=ELO_BLUE)
         header.to_edge(UP, buff=0.5)
-        self.play(Write(header), run_time=1)
+        self.play(Write(header), run_time=1.5)
         
         # Hierarchy visualization
         f3 = Rectangle(width=2, height=0.7, fill_color="#666666", fill_opacity=0.5)
@@ -186,7 +187,7 @@ class Scene10_3_DriverPriors(Scene):
         hierarchy = VGroup(f3_group, f2_group, f1_group, arrows)
         hierarchy.move_to(LEFT * 3.5 + DOWN * 0.5)
         
-        self.play(FadeIn(hierarchy), run_time=1)
+        self.play(FadeIn(hierarchy), run_time=4)
         
         # Prior formula
         formula = MathTex(
@@ -195,18 +196,18 @@ class Scene10_3_DriverPriors(Scene):
         )
         formula.move_to(RIGHT * 2 + UP * 0.5)
         
-        self.play(Write(formula), run_time=1)
+        self.play(Write(formula), run_time=4)
         
         # Examples
         examples = VGroup(
-            Text("F2 Champion → High F1 prior", font_size=18, color=ELO_GREEN),
-            Text("Mid-pack F2 → Average prior", font_size=18, color=TEXT_GRAY),
-            Text("Pay driver (no F2) → Lower prior", font_size=18, color=ELO_RED)
+            Text("F2 Champion -> High F1 prior", font_size=18, color=ELO_GREEN),
+            Text("Mid-pack F2 -> Average prior", font_size=18, color=TEXT_GRAY),
+            Text("Pay driver (no F2) -> Lower prior", font_size=18, color=ELO_RED)
         )
         examples.arrange(DOWN, aligned_edge=LEFT, buff=0.2)
         examples.move_to(RIGHT * 2 + DOWN * 1.5)
         
-        self.play(FadeIn(examples), run_time=1)
+        self.play(FadeIn(examples), run_time=4)
         
         # Caption
         caption = Text(
@@ -216,10 +217,10 @@ class Scene10_3_DriverPriors(Scene):
         )
         caption.to_edge(DOWN, buff=0.4)
         
-        self.play(Write(caption), run_time=1)
+        self.play(Write(caption), run_time=4)
         
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.wait(8)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene10_4_ConstructorEvolution(Scene):
@@ -230,7 +231,7 @@ class Scene10_4_ConstructorEvolution(Scene):
         
         header = Text("Constructor Strength Evolution", font_size=44, color=ELO_GOLD)
         header.to_edge(UP, buff=0.5)
-        self.play(Write(header), run_time=1)
+        self.play(Write(header), run_time=1.5)
         
         # Formula
         formula = MathTex(
@@ -239,17 +240,17 @@ class Scene10_4_ConstructorEvolution(Scene):
         )
         formula.move_to(UP * 1)
         
-        self.play(Write(formula), run_time=1.5)
+        self.play(Write(formula), run_time=6)
         
         # Interpretation
         interp = Text(
-            "Next season's strength ≈ This season's + Random drift",
+            "Next season's strength ~ This season's + Random drift",
             font_size=22,
             color=TEXT_LIGHT
         )
         interp.move_to(UP * 0.3)
         
-        self.play(Write(interp), run_time=1)
+        self.play(Write(interp), run_time=4)
         
         # Time series visualization
         axes = Axes(
@@ -260,16 +261,16 @@ class Scene10_4_ConstructorEvolution(Scene):
             tips=False,
             axis_config={"include_numbers": True, "font_size": 12}
         )
-        axes.shift(DOWN * 1.5)
-        
+        axes.shift(DOWN * 1.0)
+
         x_label = Text("Season", font_size=14, color=TEXT_GRAY)
         x_label.next_to(axes.x_axis, DOWN, buff=0.2)
-        
+
         y_label = Text("Constructor β", font_size=14, color=TEXT_GRAY)
         y_label.next_to(axes.y_axis, LEFT, buff=0.2)
-        
-        self.play(Create(axes), FadeIn(x_label), FadeIn(y_label), run_time=0.8)
-        
+
+        self.play(Create(axes), FadeIn(x_label), FadeIn(y_label), run_time=3.2)
+
         # Constructor trajectories
         # Mercedes
         merc_points = [(2018, 90), (2019, 88), (2020, 95), (2021, 85), (2022, 50), (2023, 65)]
@@ -277,32 +278,34 @@ class Scene10_4_ConstructorEvolution(Scene):
         merc_line.set_points_smoothly([axes.c2p(x, y) for x, y in merc_points])
         merc_label = Text("Mercedes", font_size=12, color="#00D2BE")
         merc_label.next_to(axes.c2p(2023, 65), RIGHT, buff=0.1)
-        
+        merc_label_bg = BackgroundRectangle(merc_label, fill_opacity=0.80, buff=0.05)
+
         # Red Bull
         rb_points = [(2018, 70), (2019, 68), (2020, 72), (2021, 90), (2022, 98), (2023, 95)]
         rb_line = VMobject(color="#0600EF")
         rb_line.set_points_smoothly([axes.c2p(x, y) for x, y in rb_points])
         rb_label = Text("Red Bull", font_size=12, color="#0600EF")
         rb_label.next_to(axes.c2p(2023, 95), RIGHT, buff=0.1)
-        
+        rb_label_bg = BackgroundRectangle(rb_label, fill_opacity=0.80, buff=0.05)
+
         self.play(
-            Create(merc_line), FadeIn(merc_label),
-            Create(rb_line), FadeIn(rb_label),
-            run_time=2
+            Create(merc_line), FadeIn(merc_label_bg), FadeIn(merc_label),
+            Create(rb_line), FadeIn(rb_label_bg), FadeIn(rb_label),
+            run_time=8
         )
-        
+
         # Strong autocorrelation note
         note = Text(
             "Strong autocorrelation: Good team likely stays good",
             font_size=18,
             color=ELO_GOLD
         )
-        note.to_edge(DOWN, buff=0.3)
+        note.to_edge(DOWN, buff=0.5)
         
-        self.play(Write(note), run_time=1)
+        self.play(Write(note), run_time=4)
         
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.wait(8)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene10_5_RuleChangeInflation(Scene):
@@ -313,13 +316,13 @@ class Scene10_5_RuleChangeInflation(Scene):
         
         header = Text("Regulation Changes", font_size=44, color=ELO_BLUE)
         header.to_edge(UP, buff=0.5)
-        self.play(Write(header), run_time=1)
+        self.play(Write(header), run_time=1.5)
         
         # Timeline with rule changes
         timeline = Line(LEFT * 5, RIGHT * 5, color=TEXT_GRAY)
         timeline.move_to(UP * 0.5)
         
-        self.play(Create(timeline), run_time=0.5)
+        self.play(Create(timeline), run_time=2)
         
         # Years
         years = ["2013", "2014", "2021", "2022"]
@@ -329,7 +332,7 @@ class Scene10_5_RuleChangeInflation(Scene):
             dot = Dot(timeline.get_center() + RIGHT * pos, color=TEXT_GRAY)
             label = Text(year, font_size=14)
             label.next_to(dot, DOWN, buff=0.1)
-            self.play(FadeIn(dot), FadeIn(label), run_time=0.2)
+            self.play(FadeIn(dot), FadeIn(label), run_time=0.8)
         
         # Highlight major changes
         change_2014 = VGroup(
@@ -346,7 +349,7 @@ class Scene10_5_RuleChangeInflation(Scene):
         change_2022.arrange(DOWN, buff=0.05)
         change_2022.move_to(timeline.get_center() + RIGHT * 3 + UP * 0.8)
         
-        self.play(FadeIn(change_2014), FadeIn(change_2022), run_time=0.8)
+        self.play(FadeIn(change_2014), FadeIn(change_2022), run_time=3.2)
         
         # Variance inflation
         inflation_formula = MathTex(
@@ -357,26 +360,26 @@ class Scene10_5_RuleChangeInflation(Scene):
         inflation_formula.move_to(DOWN * 1)
         
         inflation_text = Text(
-            "Prior variance 'inflates' → Model relies more on new data",
+            "Prior variance 'inflates' -> Model relies more on new data",
             font_size=20,
             color=TEXT_LIGHT
         )
         inflation_text.next_to(inflation_formula, DOWN, buff=0.3)
         
-        self.play(Write(inflation_formula), Write(inflation_text), run_time=1.5)
+        self.play(Write(inflation_formula), Write(inflation_text), run_time=6)
         
         # Caption
         caption = Text(
-            "New regulations = New game → Less trust in historical performance",
+            "New regulations = New game -> Less trust in historical performance",
             font_size=18,
             color=ELO_GOLD
         )
         caption.to_edge(DOWN, buff=0.4)
         
-        self.play(Write(caption), run_time=1)
+        self.play(Write(caption), run_time=4)
         
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.wait(8)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene10_6_ThurstoneMosteller(Scene):
@@ -387,7 +390,7 @@ class Scene10_6_ThurstoneMosteller(Scene):
         
         header = Text("Thurstone-Mosteller Model", font_size=44, color=ELO_BLUE)
         header.to_edge(UP, buff=0.5)
-        self.play(Write(header), run_time=1)
+        self.play(Write(header), run_time=1.5)
         
         # Core assumption
         assumption = MathTex(
@@ -403,7 +406,7 @@ class Scene10_6_ThurstoneMosteller(Scene):
         )
         assumption_text.next_to(assumption, DOWN, buff=0.2)
         
-        self.play(Write(assumption), FadeIn(assumption_text), run_time=1.5)
+        self.play(Write(assumption), FadeIn(assumption_text), run_time=6)
         
         # Comparison
         comparison = MathTex(
@@ -412,22 +415,22 @@ class Scene10_6_ThurstoneMosteller(Scene):
         )
         comparison.move_to(DOWN * 0.5)
         
-        self.play(Write(comparison), run_time=1)
+        self.play(Write(comparison), run_time=4)
         
         # Benefit
         benefit = VGroup(
             Text("Why useful?", font_size=22, color=ELO_GOLD),
             Text("• Enables Expectation Propagation", font_size=18, color=TEXT_GRAY),
             Text("• Fast approximate inference", font_size=18, color=TEXT_GRAY),
-            Text("• Gaussian messages → Easy to combine", font_size=18, color=TEXT_GRAY)
+            Text("• Gaussian messages -> Easy to combine", font_size=18, color=TEXT_GRAY)
         )
         benefit.arrange(DOWN, aligned_edge=LEFT, buff=0.15)
         benefit.move_to(DOWN * 2)
         
-        self.play(FadeIn(benefit), run_time=1)
+        self.play(FadeIn(benefit), run_time=4)
         
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.wait(8)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene10_1a_ExplainHierarchical(Scene):
@@ -438,7 +441,6 @@ class Scene10_1a_ExplainHierarchical(Scene):
 
         header = Text("Decomposing Performance", font_size=44, color=ELO_BLUE)
         header.to_edge(UP, buff=0.5)
-        self.play(Write(header), run_time=1)
 
         # Formula
         formula = MathTex(
@@ -451,7 +453,7 @@ class Scene10_1a_ExplainHierarchical(Scene):
         formula[6].set_color(ELO_GREEN)     # gamma
         formula[8].set_color(ELO_PURPLE)    # epsilon
         formula.move_to(UP * 1.5)
-        self.play(Write(formula), run_time=1.5)
+        self.play(Write(formula), run_time=6)
 
         # Show each component with icon/description
         components = [
@@ -475,12 +477,12 @@ class Scene10_1a_ExplainHierarchical(Scene):
         comp_group.move_to(DOWN * 0.3)
 
         for comp in comp_group:
-            self.play(FadeIn(comp), run_time=0.6)
+            self.play(FadeIn(comp), run_time=2.4)
 
-        self.wait(0.5)
+        self.wait(2)
 
         # Worked example
-        self.play(FadeOut(comp_group), run_time=0.3)
+        self.play(FadeOut(comp_group), run_time=1.2)
 
         example = VGroup(
             Text("Example: Hamilton at Silverstone 2020", font_size=22, color=ELO_GOLD),
@@ -494,20 +496,20 @@ class Scene10_1a_ExplainHierarchical(Scene):
         example.move_to(DOWN * 0.8)
 
         for line in example:
-            self.play(FadeIn(line), run_time=0.4)
+            self.play(FadeIn(line), run_time=1.6)
         
         box = SurroundingRectangle(example[-1], color=ELO_GREEN, buff=0.1)
-        self.play(Create(box), run_time=0.5)
+        self.play(Create(box), run_time=2)
 
         takeaway = Text(
             "Separating these lets us credit driver skill vs car advantage",
             font_size=18, color=ELO_GOLD
         )
         takeaway.to_edge(DOWN, buff=0.3)
-        self.play(Write(takeaway), run_time=1)
+        self.play(Write(takeaway), run_time=4)
 
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.wait(8)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene10_4a_ExplainAutoregressive(Scene):
@@ -518,7 +520,6 @@ class Scene10_4a_ExplainAutoregressive(Scene):
 
         header = Text("How Car Strength Drifts Over Time", font_size=44, color=ELO_BLUE)
         header.to_edge(UP, buff=0.5)
-        self.play(Write(header), run_time=1)
 
         formula = MathTex(
             r"\beta_j^{(t)}", r"\sim", r"\mathcal{N}", r"(",
@@ -529,16 +530,16 @@ class Scene10_4a_ExplainAutoregressive(Scene):
         formula[4].set_color(ELO_BLUE)
         formula[6].set_color(ELO_RED)
         formula.move_to(UP * 1.3)
-        self.play(Write(formula), run_time=1.5)
+        self.play(Write(formula), run_time=6)
 
         # Translation
         transl = VGroup(
             Text("In words:", font_size=20, color=ELO_GOLD),
-            Text("Next season's car ≈ this season's car + random drift", font_size=18, color=TEXT_GRAY),
+            Text("Next season's car ~ this season's car + random drift", font_size=18, color=TEXT_GRAY),
         )
         transl.arrange(DOWN, buff=0.1)
         transl.move_to(UP * 0.3)
-        self.play(FadeIn(transl), run_time=0.5)
+        self.play(FadeIn(transl), run_time=2)
 
         # σ_β explanation
         sigma_explain = VGroup(
@@ -547,16 +548,16 @@ class Scene10_4a_ExplainAutoregressive(Scene):
         )
         sigma_explain.arrange(RIGHT, buff=0.3)
         sigma_explain.move_to(DOWN * 0.5)
-        self.play(FadeIn(sigma_explain), run_time=0.5)
+        self.play(FadeIn(sigma_explain), run_time=2)
 
         # Two examples
         examples = VGroup(
             VGroup(
-                Text("Small σ²_β: gradual evolution", font_size=16, color=ELO_GREEN),
+                Text("Small sigma^2_b: gradual evolution", font_size=16, color=ELO_GREEN),
                 Text("e.g., Mercedes 2014–2020", font_size=14, color=TEXT_GRAY)
             ),
             VGroup(
-                Text("Large σ²_β: sudden shifts", font_size=16, color=ELO_RED),
+                Text("Large sigma^2_b: sudden shifts", font_size=16, color=ELO_RED),
                 Text("e.g., regulation changes", font_size=14, color=TEXT_GRAY)
             ),
         )
@@ -564,14 +565,14 @@ class Scene10_4a_ExplainAutoregressive(Scene):
             ex.arrange(DOWN, buff=0.06)
         examples.arrange(RIGHT, buff=2)
         examples.move_to(DOWN * 1.3)
-        self.play(FadeIn(examples), run_time=0.8)
+        self.play(FadeIn(examples), run_time=3.2)
 
         # Random walk animation
-        self.play(*[FadeOut(m) for m in [transl, sigma_explain, examples, formula]], run_time=0.3)
+        self.play(*[FadeOut(m) for m in [transl, sigma_explain, examples, formula]], run_time=1.2)
 
         rw_title = Text("Random Walk: Car Strength Over Seasons", font_size=22, color=ELO_GOLD)
         rw_title.next_to(header, DOWN, buff=0.3)
-        self.play(FadeIn(rw_title), run_time=0.3)
+        self.play(FadeIn(rw_title), run_time=1.2)
 
         axes = Axes(
             x_range=[2014, 2024, 2], y_range=[60, 100, 10],
@@ -585,14 +586,14 @@ class Scene10_4a_ExplainAutoregressive(Scene):
         y_label = Text("Car Strength β", font_size=12, color=TEXT_GRAY)
         y_label.next_to(axes.y_axis, LEFT, buff=0.1)
 
-        self.play(Create(axes), FadeIn(x_label), FadeIn(y_label), run_time=0.5)
+        self.play(Create(axes), FadeIn(x_label), FadeIn(y_label), run_time=2)
 
         # Small drift (Mercedes-like)
         merc_ratings = [92, 93, 91, 90, 88, 89, 87, 86, 78, 85]
         merc_line = VMobject(color=ELO_GREEN)
         merc_pts = [axes.c2p(2014 + i, r) for i, r in enumerate(merc_ratings)]
         merc_line.set_points_smoothly(merc_pts)
-        merc_label = Text("Mercedes (small σ²)", font_size=12, color=ELO_GREEN)
+        merc_label = Text("Mercedes (small sigma^2)", font_size=12, color=ELO_GREEN)
         merc_label.move_to(axes.c2p(2023, 87))
 
         # Large drift (regulation-affected team)
@@ -600,14 +601,14 @@ class Scene10_4a_ExplainAutoregressive(Scene):
         reg_line = VMobject(color=ELO_RED)
         reg_pts = [axes.c2p(2014 + i, r) for i, r in enumerate(reg_ratings)]
         reg_line.set_points_smoothly(reg_pts)
-        reg_label = Text("Red Bull (large σ²)", font_size=12, color=ELO_RED)
+        reg_label = Text("Red Bull (large sigma^2)", font_size=12, color=ELO_RED)
         reg_label.move_to(axes.c2p(2023, 93))
 
-        self.play(Create(merc_line), FadeIn(merc_label), run_time=1.5)
-        self.play(Create(reg_line), FadeIn(reg_label), run_time=1.5)
+        self.play(Create(merc_line), FadeIn(merc_label), run_time=6)
+        self.play(Create(reg_line), FadeIn(reg_label), run_time=6)
 
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.wait(8)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene10_6a_ExplainThurstone(Scene):
@@ -618,7 +619,6 @@ class Scene10_6a_ExplainThurstone(Scene):
 
         header = Text("The Gaussian Shortcut", font_size=44, color=ELO_BLUE)
         header.to_edge(UP, buff=0.5)
-        self.play(Write(header), run_time=1)
 
         # Formula
         formula = MathTex(
@@ -626,7 +626,7 @@ class Scene10_6a_ExplainThurstone(Scene):
             font_size=40
         )
         formula.move_to(UP * 1.3)
-        self.play(Write(formula), run_time=1.5)
+        self.play(Write(formula), run_time=6)
 
         # Step-by-step derivation
         steps = VGroup(
@@ -641,28 +641,28 @@ class Scene10_6a_ExplainThurstone(Scene):
         steps.move_to(DOWN * 0.5)
 
         for i in range(0, len(steps), 2):
-            self.play(FadeIn(steps[i]), FadeIn(steps[i+1]), run_time=0.8)
-            self.wait(0.3)
+            self.play(FadeIn(steps[i]), FadeIn(steps[i+1]), run_time=3.2)
+            self.wait(1.2)
 
         # Why useful?
-        self.play(*[FadeOut(m) for m in [steps, formula]], run_time=0.3)
+        self.play(*[FadeOut(m) for m in [steps, formula]], run_time=1.2)
 
         why = VGroup(
             Text("Why Use This Approximation?", font_size=24, color=ELO_GOLD),
             Text("• Gaussian messages are computationally cheap", font_size=16, color=TEXT_GRAY),
             Text("• Products of Gaussians remain Gaussian", font_size=16, color=TEXT_GRAY),
-            Text("• Φ (probit) ≈ σ (sigmoid) — nearly identical curves!", font_size=16, color=ELO_GREEN),
+            Text("• Phi (probit) ~ sigmoid — nearly identical curves!", font_size=16, color=ELO_GREEN),
         )
         why.arrange(DOWN, buff=0.15, aligned_edge=LEFT)
         why.move_to(ORIGIN)
-        self.play(FadeIn(why), run_time=1)
+        self.play(FadeIn(why), run_time=4)
 
         takeaway = Text(
             "The probit approximation makes Bayesian updates tractable",
             font_size=18, color=ELO_GOLD
         )
         takeaway.to_edge(DOWN, buff=0.3)
-        self.play(Write(takeaway), run_time=1)
+        self.play(Write(takeaway), run_time=4)
 
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.wait(8)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)

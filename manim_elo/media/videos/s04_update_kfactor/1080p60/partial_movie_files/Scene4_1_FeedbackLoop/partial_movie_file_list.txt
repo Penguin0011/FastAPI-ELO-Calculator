@@ -1,0 +1,13 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s04_update_kfactor/1080p60/partial_movie_files/Scene4_1_FeedbackLoop/3833965276_2754045705_223132457.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s04_update_kfactor/1080p60/partial_movie_files/Scene4_1_FeedbackLoop/104335764_3056532229_2020244841.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s04_update_kfactor/1080p60/partial_movie_files/Scene4_1_FeedbackLoop/104335764_34869341_1830005613.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s04_update_kfactor/1080p60/partial_movie_files/Scene4_1_FeedbackLoop/104335764_1963568997_3673074027.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s04_update_kfactor/1080p60/partial_movie_files/Scene4_1_FeedbackLoop/104335764_4141227368_683476200.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s04_update_kfactor/1080p60/partial_movie_files/Scene4_1_FeedbackLoop/104335764_3035186955_1124690393.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s04_update_kfactor/1080p60/partial_movie_files/Scene4_1_FeedbackLoop/104335764_636592364_3559385494.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s04_update_kfactor/1080p60/partial_movie_files/Scene4_1_FeedbackLoop/104335764_1284038031_615962364.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s04_update_kfactor/1080p60/partial_movie_files/Scene4_1_FeedbackLoop/104335764_1290391209_817463301.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s04_update_kfactor/1080p60/partial_movie_files/Scene4_1_FeedbackLoop/104335764_2937494345_1581778547.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s04_update_kfactor/1080p60/partial_movie_files/Scene4_1_FeedbackLoop/104335764_4277570474_1259297599.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s04_update_kfactor/1080p60/partial_movie_files/Scene4_1_FeedbackLoop/104335764_570884847_2701408729.mp4'

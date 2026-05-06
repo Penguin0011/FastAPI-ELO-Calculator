@@ -2,10 +2,11 @@
 # 6 Scenes introducing probabilistic thinking
 
 from manim import *
-import numpy as np
 import sys
-sys.path.append('..')
+import os
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '../..'))
 from utils.colors import *
+import numpy as np
 
 
 class Scene7_1_PointVsDistribution(Scene):
@@ -16,7 +17,7 @@ class Scene7_1_PointVsDistribution(Scene):
 
         header = Text("A New Way of Thinking", font_size=44, color=ELO_BLUE)
         header.to_edge(UP, buff=0.6)
-        self.play(Write(header), run_time=1)
+        self.play(Write(header), run_time=1.5)
 
         # Point estimate (left)
         point_title = Text("Classical Elo", font_size=24, color=TEXT_GRAY)
@@ -35,7 +36,7 @@ class Scene7_1_PointVsDistribution(Scene):
             Write(point_value),
             Create(point_line),
             FadeIn(point_dot),
-            run_time=1.5
+            run_time=6
         )
 
         # Arrow
@@ -43,7 +44,7 @@ class Scene7_1_PointVsDistribution(Scene):
         arrow.move_to(ORIGIN)
         arrow_label = Text("Evolve", font_size=16, color=TEXT_GRAY)
         arrow_label.next_to(arrow, UP, buff=0.1)
-        self.play(Create(arrow), FadeIn(arrow_label), run_time=0.5)
+        self.play(Create(arrow), FadeIn(arrow_label), run_time=2)
 
         # Distribution (right)
         dist_title = Text("Bayesian", font_size=24, color=ELO_GREEN)
@@ -75,7 +76,7 @@ class Scene7_1_PointVsDistribution(Scene):
             Create(axes),
             Create(curve),
             FadeIn(area),
-            run_time=1.5
+            run_time=6
         )
 
         # Caption
@@ -85,9 +86,9 @@ class Scene7_1_PointVsDistribution(Scene):
             color=ELO_GOLD
         )
         caption.to_edge(DOWN, buff=0.5)
-        self.play(FadeIn(caption, shift=UP * 0.3), run_time=1.5)
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.play(FadeIn(caption, shift=UP * 0.3), run_time=6)
+        self.wait(35)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene7_2_BayesTheorem(Scene):
@@ -98,43 +99,38 @@ class Scene7_2_BayesTheorem(Scene):
 
         header = Text("Bayes' Theorem", font_size=48, color=ELO_BLUE)
         header.to_edge(UP, buff=0.5)
-        self.play(Write(header), run_time=1)
+        self.play(Write(header), run_time=1.5)
 
         # The formula
         formula = MathTex(
-            r"P(\theta|D)", r"=", r"\frac{P(D|\theta)", r"\cdot", r"P(\theta)}", r"{P(D)}",
+            r"P(\theta|D)", r"=",
+            r"\frac{P(D|\theta) \cdot P(\theta)}{P(D)}",
             font_size=44
         )
         formula.move_to(UP * 1)
 
         # Color code parts
         formula[0].set_color(ELO_GREEN)   # Posterior
-        formula[2].set_color(ELO_GOLD)    # Likelihood
-        formula[4].set_color(ELO_BLUE)    # Prior
+        formula[2].set_color(ELO_GOLD)    # Likelihood/whole fraction
 
-        self.play(Write(formula), run_time=2)
+        self.play(Write(formula), run_time=8)
 
         # Brace labels (use Brace for clean annotation)
         brace_post = Brace(formula[0], UP, color=ELO_GREEN)
-        brace_post_lbl = brace_post.get_text("Posterior", font_size=18)
+        brace_post_lbl = brace_post.get_text("Posterior")
         brace_post_lbl.set_color(ELO_GREEN)
 
         brace_like = Brace(formula[2], DOWN, color=ELO_GOLD)
-        brace_like_lbl = brace_like.get_text("Likelihood", font_size=18)
+        brace_like_lbl = brace_like.get_text("Likelihood x Prior / Evidence")
         brace_like_lbl.set_color(ELO_GOLD)
-
-        brace_prior = Brace(formula[4], DOWN, color=ELO_BLUE)
-        brace_prior_lbl = brace_prior.get_text("Prior", font_size=18)
-        brace_prior_lbl.set_color(ELO_BLUE)
 
         self.play(
             LaggedStart(
                 AnimationGroup(GrowFromCenter(brace_post), FadeIn(brace_post_lbl)),
                 AnimationGroup(GrowFromCenter(brace_like), FadeIn(brace_like_lbl)),
-                AnimationGroup(GrowFromCenter(brace_prior), FadeIn(brace_prior_lbl)),
                 lag_ratio=0.2
             ),
-            run_time=1.5
+            run_time=6
         )
 
         # Verbal explanation row
@@ -147,7 +143,7 @@ class Scene7_2_BayesTheorem(Scene):
         )
         verbal.arrange(RIGHT, buff=0.3)
         verbal.move_to(DOWN * 1.5)
-        self.play(FadeIn(verbal, shift=UP * 0.2), run_time=1.5)
+        self.play(FadeIn(verbal, shift=UP * 0.2), run_time=6)
 
         # Key insight
         insight_box = RoundedRectangle(
@@ -161,9 +157,9 @@ class Scene7_2_BayesTheorem(Scene):
             font_size=22, color=TEXT_LIGHT
         )
         insight.move_to(insight_box)
-        self.play(FadeIn(insight_box), FadeIn(insight, shift=UP * 0.2), run_time=1)
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.play(FadeIn(insight_box), FadeIn(insight, shift=UP * 0.2), run_time=4)
+        self.wait(35)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene7_3_RankingContext(Scene):
@@ -174,7 +170,7 @@ class Scene7_3_RankingContext(Scene):
 
         header = Text("Bayes in Ranking", font_size=44, color=ELO_BLUE)
         header.to_edge(UP, buff=0.6)
-        self.play(Write(header), run_time=1)
+        self.play(Write(header), run_time=1.5)
 
         # Three components in a row
         prior = VGroup(
@@ -207,11 +203,11 @@ class Scene7_3_RankingContext(Scene):
         arrow2 = Arrow(likelihood.get_right() + RIGHT * 0.1,
                        posterior.get_left() + LEFT * 0.1, color=TEXT_GRAY)
 
-        self.play(FadeIn(prior, shift=RIGHT * 0.2), run_time=0.8)
-        self.play(Create(arrow1), run_time=0.3)
-        self.play(FadeIn(likelihood, shift=DOWN * 0.2), run_time=0.8)
-        self.play(Create(arrow2), run_time=0.3)
-        self.play(FadeIn(posterior, shift=LEFT * 0.2), run_time=0.8)
+        self.play(FadeIn(prior, shift=RIGHT * 0.2), run_time=3.2)
+        self.play(Create(arrow1), run_time=1.2)
+        self.play(FadeIn(likelihood, shift=DOWN * 0.2), run_time=3.2)
+        self.play(Create(arrow2), run_time=1.2)
+        self.play(FadeIn(posterior, shift=LEFT * 0.2), run_time=3.2)
 
         # Example box at bottom
         ex_box = RoundedRectangle(
@@ -229,9 +225,9 @@ class Scene7_3_RankingContext(Scene):
         example.arrange(DOWN, aligned_edge=LEFT, buff=0.12)
         example.move_to(ex_box)
 
-        self.play(FadeIn(ex_box), FadeIn(example, shift=UP * 0.2), run_time=1.5)
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.play(FadeIn(ex_box), FadeIn(example, shift=UP * 0.2), run_time=6)
+        self.wait(35)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene7_4_GaussianGhost(Scene):
@@ -247,7 +243,7 @@ class Scene7_4_GaussianGhost(Scene):
 
         header = Text("The Updating Ghost", font_size=44, color=ELO_BLUE)
         header.to_edge(UP, buff=0.5)
-        self.play(Write(header), run_time=1)
+        self.play(Write(header), run_time=1.5)
 
         # Axes
         axes = Axes(
@@ -263,7 +259,7 @@ class Scene7_4_GaussianGhost(Scene):
         x_label = Text("Skill Rating", font_size=18, color=TEXT_GRAY)
         x_label.next_to(axes.x_axis, DOWN, buff=0.3)
 
-        self.play(Create(axes), FadeIn(x_label), run_time=1)
+        self.play(Create(axes), FadeIn(x_label), run_time=4)
 
         # Prior: wide, uncertain (new player)
         mean1, std1 = 1900, 150
@@ -277,9 +273,10 @@ class Scene7_4_GaussianGhost(Scene):
         # Prior label: positioned clearly above the curve peak, shifted left to avoid overlap
         prior_label = Text("Prior (uncertain)", font_size=16, color=ELO_BLUE)
         prior_label.move_to(axes.c2p(1700, 0.0035) + UP * 0.3)
+        prior_label_bg = BackgroundRectangle(prior_label, fill_opacity=0.80, buff=0.06)
 
-        self.play(Create(prior_curve), FadeIn(prior_area), FadeIn(prior_label), run_time=1.5)
-        self.wait(1)
+        self.play(Create(prior_curve), FadeIn(prior_area), FadeIn(prior_label_bg), FadeIn(prior_label), run_time=6)
+        self.wait(20)
 
         # After win: shift right, narrower (more certain)
         mean2, std2 = 2000, 100
@@ -294,20 +291,21 @@ class Scene7_4_GaussianGhost(Scene):
         # Use axes.c2p(2100, 0.005) + UP*0.3 to clear the bell curve peak
         posterior_label = Text("After win (more certain!)", font_size=16, color=ELO_GREEN)
         posterior_label.move_to(axes.c2p(2200, 0.005) + UP * 0.3)
+        posterior_label_bg = BackgroundRectangle(posterior_label, fill_opacity=0.80, buff=0.06)
 
         # Win event label (no emoji)
         win_label = Text("Player wins!", font_size=20, color=ELO_GOLD, weight=BOLD)
         win_label.to_edge(RIGHT, buff=0.8)
         win_label.shift(UP * 1.5)
-        self.play(FadeIn(win_label, shift=DOWN * 0.2), run_time=0.5)
+        self.play(FadeIn(win_label, shift=DOWN * 0.2), run_time=2)
 
         # Transform prior to posterior
         self.play(
             Transform(prior_curve, posterior_curve),
             Transform(prior_area, posterior_area),
-            FadeOut(prior_label),
-            FadeIn(posterior_label),
-            run_time=2
+            FadeOut(prior_label_bg), FadeOut(prior_label),
+            FadeIn(posterior_label_bg), FadeIn(posterior_label),
+            run_time=8
         )
 
         # Key observations (no emoji - use text)
@@ -319,10 +317,10 @@ class Scene7_4_GaussianGhost(Scene):
         observations.to_edge(DOWN, buff=0.4)
         self.play(
             LaggedStart(*[FadeIn(o, shift=UP * 0.2) for o in observations], lag_ratio=0.3),
-            run_time=1
+            run_time=4
         )
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.wait(35)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene7_5_ScorpionAnalogy(Scene):
@@ -333,7 +331,7 @@ class Scene7_5_ScorpionAnalogy(Scene):
 
         header = Text("The Search Analogy", font_size=44, color=ELO_BLUE)
         header.to_edge(UP, buff=0.5)
-        self.play(Write(header), run_time=1)
+        self.play(Write(header), run_time=1.5)
 
         # Story setup
         story = Text(
@@ -341,7 +339,7 @@ class Scene7_5_ScorpionAnalogy(Scene):
             font_size=22, color=TEXT_GRAY
         )
         story.move_to(UP * 1.8)
-        self.play(FadeIn(story, shift=DOWN * 0.2), run_time=1)
+        self.play(FadeIn(story, shift=DOWN * 0.2), run_time=4)
 
         # Grid of ocean squares
         grid_size = 4
@@ -367,7 +365,7 @@ class Scene7_5_ScorpionAnalogy(Scene):
                 grid.add(VGroup(cell, prob_text))
 
         grid.move_to(LEFT * 2.5)
-        self.play(FadeIn(grid, shift=RIGHT * 0.2), run_time=1)
+        self.play(FadeIn(grid, shift=RIGHT * 0.2), run_time=4)
 
         # Search explanation (right)
         explain = VGroup(
@@ -380,26 +378,26 @@ class Scene7_5_ScorpionAnalogy(Scene):
         explain.move_to(RIGHT * 3 + UP * 0.3)
         self.play(
             LaggedStart(*[FadeIn(e, shift=LEFT * 0.2) for e in explain], lag_ratio=0.15),
-            run_time=1.5
+            run_time=6
         )
 
         # Simulate searching a square
         search_text = Text("Search square A...", font_size=18, color=ELO_GOLD)
         search_text.move_to(RIGHT * 3 + DOWN * 1.5)
-        self.play(FadeIn(search_text, shift=UP * 0.2), run_time=0.5)
+        self.play(FadeIn(search_text, shift=UP * 0.2), run_time=2)
 
         # Highlight searched cell
-        self.play(grid[0][0].animate.set_fill(ELO_RED, opacity=0.3), run_time=0.5)
+        self.play(grid[0][0].animate.set_fill(ELO_RED, opacity=0.3), run_time=2)
 
         # Redistribute belief
         result = Text("Nothing found -> redistribute belief", font_size=16, color=TEXT_LIGHT)
         result.move_to(RIGHT * 3 + DOWN * 2.2)
-        self.play(FadeIn(result, shift=UP * 0.2), run_time=0.8)
+        self.play(FadeIn(result, shift=UP * 0.2), run_time=3.2)
 
         # Increase opacity of other cells
         self.play(
             *[grid[i][0].animate.set_fill(ELO_GREEN, opacity=0.3) for i in range(1, len(grid))],
-            run_time=0.8
+            run_time=3.2
         )
 
         # Connection to rating
@@ -414,9 +412,9 @@ class Scene7_5_ScorpionAnalogy(Scene):
             font_size=19, color=ELO_GOLD
         )
         connection.move_to(connection_box)
-        self.play(FadeIn(connection_box), FadeIn(connection, shift=UP * 0.2), run_time=1.5)
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.play(FadeIn(connection_box), FadeIn(connection, shift=UP * 0.2), run_time=6)
+        self.wait(35)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene7_6_TrueSkill(Scene):
@@ -427,17 +425,17 @@ class Scene7_6_TrueSkill(Scene):
 
         header = Text("Microsoft TrueSkill", font_size=44, color=ELO_BLUE)
         header.to_edge(UP, buff=0.5)
-        self.play(Write(header), run_time=1)
+        self.play(Write(header), run_time=1.5)
 
         # Year / context
         subtitle = Text("2006  |  Xbox Live Matchmaking", font_size=20, color=TEXT_GRAY)
         subtitle.next_to(header, DOWN, buff=0.2)
-        self.play(FadeIn(subtitle, shift=DOWN * 0.2), run_time=0.5)
+        self.play(FadeIn(subtitle, shift=DOWN * 0.2), run_time=2)
 
         # Key innovation title
         innovation = Text("Two numbers per player:", font_size=24, color=ELO_GOLD)
         innovation.move_to(UP * 1)
-        self.play(FadeIn(innovation, shift=UP * 0.2), run_time=0.8)
+        self.play(FadeIn(innovation, shift=UP * 0.2), run_time=3.2)
 
         # mu and sigma boxes
         mu_box = RoundedRectangle(
@@ -472,11 +470,11 @@ class Scene7_6_TrueSkill(Scene):
 
         self.play(
             FadeIn(mu_box), FadeIn(mu_content, shift=RIGHT * 0.2),
-            run_time=0.8
+            run_time=3.2
         )
         self.play(
             FadeIn(sigma_box), FadeIn(sigma_content, shift=LEFT * 0.2),
-            run_time=0.8
+            run_time=3.2
         )
 
         # Display rating formula
@@ -490,7 +488,7 @@ class Scene7_6_TrueSkill(Scene):
         rating_label = Text("Conservative Display Rating", font_size=18, color=TEXT_GRAY)
         rating_label.next_to(rating_formula, DOWN, buff=0.2)
 
-        self.play(Write(rating_formula), Create(fbox), FadeIn(rating_label), run_time=1)
+        self.play(Write(rating_formula), Create(fbox), FadeIn(rating_label), run_time=4)
 
         # Explanation
         explanation = VGroup(
@@ -501,10 +499,10 @@ class Scene7_6_TrueSkill(Scene):
         explanation.to_edge(DOWN, buff=0.4)
         self.play(
             LaggedStart(*[FadeIn(e, shift=UP * 0.2) for e in explanation], lag_ratio=0.3),
-            run_time=1
+            run_time=4
         )
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.wait(35)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene7_2a_ExplainBayesTheorem(Scene):
@@ -515,23 +513,22 @@ class Scene7_2a_ExplainBayesTheorem(Scene):
 
         header = Text("Bayes' Theorem with Numbers", font_size=44, color=ELO_BLUE)
         header.to_edge(UP, buff=0.5)
-        self.play(Write(header), run_time=1)
 
         # The formula with color coding
         formula = MathTex(
-            r"P(\theta|D)", r"=", r"\frac{P(D|\theta)", r"\cdot", r"P(\theta)}", r"{P(D)}",
+            r"P(\theta|D)", r"=",
+            r"\frac{P(D|\theta) \cdot P(\theta)}{P(D)}",
             font_size=40
         )
         formula[0].set_color(ELO_GREEN)
         formula[2].set_color(ELO_GOLD)
-        formula[4].set_color(ELO_BLUE)
         formula.move_to(UP * 1.5)
-        self.play(Write(formula), run_time=1.5)
+        self.play(Write(formula), run_time=6)
 
         # Set up the example
         question = Text("Question: Is this rookie ELITE?", font_size=24, color=ELO_GOLD)
         question.move_to(UP * 0.5)
-        self.play(FadeIn(question, shift=DOWN * 0.2), run_time=0.5)
+        self.play(FadeIn(question, shift=DOWN * 0.2), run_time=2)
 
         # Step-by-step calculation (left column)
         steps = VGroup(
@@ -558,8 +555,8 @@ class Scene7_2a_ExplainBayesTheorem(Scene):
         steps.move_to(LEFT * 3 + DOWN * 1)
 
         for step in steps:
-            self.play(FadeIn(step, shift=RIGHT * 0.2), run_time=0.8)
-            self.wait(0.3)
+            self.play(FadeIn(step, shift=RIGHT * 0.2), run_time=3.2)
+            self.wait(1.2)
 
         # Calculation (right column)
         calc = VGroup(
@@ -572,19 +569,19 @@ class Scene7_2a_ExplainBayesTheorem(Scene):
         calc.move_to(RIGHT * 3 + DOWN * 0.5)
 
         for line in calc:
-            self.play(FadeIn(line, shift=DOWN * 0.2), run_time=0.6)
-            self.wait(0.2)
+            self.play(FadeIn(line, shift=DOWN * 0.2), run_time=2.4)
+            self.wait(0.8)
 
         result_box = SurroundingRectangle(calc[-1], color=ELO_GREEN, buff=0.1, corner_radius=0.08)
-        self.play(Create(result_box), run_time=0.5)
-        self.play(Indicate(calc[-1], color=ELO_GREEN, scale_factor=1.1), run_time=0.5)
+        self.play(Create(result_box), run_time=2)
+        self.play(Indicate(calc[-1], color=ELO_GREEN, scale_factor=1.1), run_time=2)
 
         # Probability bar update
-        self.play(*[FadeOut(m) for m in [formula, question, steps, calc, result_box]], run_time=0.3)
+        self.play(*[FadeOut(m) for m in [formula, question, steps, calc, result_box]], run_time=1.2)
 
         bar_title = Text("Belief Update: 10% -> 53%", font_size=28, color=ELO_GOLD)
         bar_title.move_to(UP * 1.5)
-        self.play(FadeIn(bar_title, shift=DOWN * 0.2), run_time=0.3)
+        self.play(FadeIn(bar_title, shift=DOWN * 0.2), run_time=1.2)
 
         bar_bg = Rectangle(width=8, height=0.8, stroke_color=TEXT_GRAY, fill_opacity=0)
         bar_bg.move_to(DOWN * 0.5)
@@ -598,7 +595,7 @@ class Scene7_2a_ExplainBayesTheorem(Scene):
         prior_label = Text("Prior: 10%", font_size=16, color=ELO_BLUE)
         prior_label.next_to(bar_bg, UP, buff=0.2)
 
-        self.play(Create(bar_bg), FadeIn(prior_bar), FadeIn(prior_label), run_time=0.5)
+        self.play(Create(bar_bg), FadeIn(prior_bar), FadeIn(prior_label), run_time=2)
 
         # Animate growth to posterior
         posterior_bar = Rectangle(
@@ -613,7 +610,7 @@ class Scene7_2a_ExplainBayesTheorem(Scene):
         self.play(
             Transform(prior_bar, posterior_bar),
             Transform(prior_label, posterior_label),
-            run_time=1.5
+            run_time=6
         )
 
         insight = Text(
@@ -621,9 +618,9 @@ class Scene7_2a_ExplainBayesTheorem(Scene):
             font_size=18, color=ELO_GOLD
         )
         insight.to_edge(DOWN, buff=0.4)
-        self.play(FadeIn(insight, shift=UP * 0.3), run_time=1)
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.play(FadeIn(insight, shift=UP * 0.3), run_time=4)
+        self.wait(35)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene7_6a_ExplainTrueSkill(Scene):
@@ -639,7 +636,6 @@ class Scene7_6a_ExplainTrueSkill(Scene):
 
         header = Text("TrueSkill's Conservative Rating", font_size=44, color=ELO_BLUE)
         header.to_edge(UP, buff=0.5)
-        self.play(Write(header), run_time=1)
 
         # The formula
         formula = MathTex(
@@ -651,7 +647,7 @@ class Scene7_6a_ExplainTrueSkill(Scene):
         formula[4].set_color(ELO_PURPLE)
         formula[5].set_color(ELO_PURPLE)
         formula.move_to(UP * 1.5)
-        self.play(Write(formula), run_time=1.5)
+        self.play(Write(formula), run_time=6)
 
         # What each part means (3 columns, well spaced)
         parts = VGroup(
@@ -678,17 +674,17 @@ class Scene7_6a_ExplainTrueSkill(Scene):
 
         self.play(
             LaggedStart(*[FadeIn(p, shift=UP * 0.2) for p in parts], lag_ratio=0.2),
-            run_time=1
+            run_time=4
         )
-        self.wait(1)
+        self.wait(20)
 
         # Transition to two-player examples
-        self.play(FadeOut(parts), run_time=0.3)
+        self.play(FadeOut(parts), run_time=1.2)
 
         # ex_title at DOWN*0.2 (title)
         ex_title = Text("Two Players - Same mu, Different sigma", font_size=22, color=ELO_GOLD)
         ex_title.move_to(DOWN * 0.2)
-        self.play(FadeIn(ex_title, shift=DOWN * 0.2), run_time=0.3)
+        self.play(FadeIn(ex_title, shift=DOWN * 0.2), run_time=1.2)
 
         # New player examples start at DOWN*1.1 to avoid overlapping ex_title
         # New player box
@@ -725,16 +721,16 @@ class Scene7_6a_ExplainTrueSkill(Scene):
 
         self.play(
             FadeIn(new_box), FadeIn(new_player, shift=RIGHT * 0.2),
-            run_time=0.8
+            run_time=3.2
         )
         self.play(
             FadeIn(vet_box), FadeIn(veteran, shift=LEFT * 0.2),
-            run_time=0.8
+            run_time=3.2
         )
 
         # Indicate the R values
-        self.play(Indicate(new_player[-1], color=ELO_RED, scale_factor=1.1), run_time=0.5)
-        self.play(Indicate(veteran[-1], color=ELO_GREEN, scale_factor=1.1), run_time=0.5)
+        self.play(Indicate(new_player[-1], color=ELO_RED, scale_factor=1.1), run_time=2)
+        self.play(Indicate(veteran[-1], color=ELO_GREEN, scale_factor=1.1), run_time=2)
 
         # Takeaway (bottom edge - safe distance from boxes above)
         takeaway_box = RoundedRectangle(
@@ -742,12 +738,12 @@ class Scene7_6a_ExplainTrueSkill(Scene):
             fill_color=ELO_GOLD, fill_opacity=0.12,
             stroke_color=ELO_GOLD, stroke_width=1.5
         )
-        takeaway_box.to_edge(DOWN, buff=0.3)
+        takeaway_box.to_edge(DOWN, buff=0.6)
         takeaway = Text(
             "You must PROVE your skill (reduce sigma) before your rating rises",
             font_size=19, color=ELO_GOLD
         )
         takeaway.move_to(takeaway_box)
-        self.play(FadeIn(takeaway_box), FadeIn(takeaway, shift=UP * 0.2), run_time=1)
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.play(FadeIn(takeaway_box), FadeIn(takeaway, shift=UP * 0.2), run_time=4)
+        self.wait(35)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)

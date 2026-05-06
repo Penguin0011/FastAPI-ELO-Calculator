@@ -1,0 +1,12 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s05_facemash/1080p60/partial_movie_files/Scene5_3_HollywoodScandal/3833965276_3320341116_223132457.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s05_facemash/1080p60/partial_movie_files/Scene5_3_HollywoodScandal/104335764_3098109490_789855858.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s05_facemash/1080p60/partial_movie_files/Scene5_3_HollywoodScandal/104335764_3700067521_791946625.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s05_facemash/1080p60/partial_movie_files/Scene5_3_HollywoodScandal/104335764_4006379968_4277271121.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s05_facemash/1080p60/partial_movie_files/Scene5_3_HollywoodScandal/104335764_4208808870_1828175881.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s05_facemash/1080p60/partial_movie_files/Scene5_3_HollywoodScandal/104335764_1484886629_3201717312.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s05_facemash/1080p60/partial_movie_files/Scene5_3_HollywoodScandal/104335764_748331587_457886021.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s05_facemash/1080p60/partial_movie_files/Scene5_3_HollywoodScandal/104335764_2711313391_153727059.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s05_facemash/1080p60/partial_movie_files/Scene5_3_HollywoodScandal/104335764_4291038611_1233771133.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s05_facemash/1080p60/partial_movie_files/Scene5_3_HollywoodScandal/104335764_2352605377_3260620760.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s05_facemash/1080p60/partial_movie_files/Scene5_3_HollywoodScandal/104335764_1207448916_1193269427.mp4'

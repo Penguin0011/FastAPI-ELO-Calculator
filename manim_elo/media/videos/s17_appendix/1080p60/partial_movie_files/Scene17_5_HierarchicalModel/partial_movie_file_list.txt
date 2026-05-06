@@ -1,0 +1,7 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s17_appendix/1080p60/partial_movie_files/Scene17_5_HierarchicalModel/3833965276_2522058622_223132457.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s17_appendix/1080p60/partial_movie_files/Scene17_5_HierarchicalModel/104335764_3214432310_3182155929.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s17_appendix/1080p60/partial_movie_files/Scene17_5_HierarchicalModel/104335764_2012789242_109181001.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s17_appendix/1080p60/partial_movie_files/Scene17_5_HierarchicalModel/104335764_1822039840_2873412700.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s17_appendix/1080p60/partial_movie_files/Scene17_5_HierarchicalModel/104335764_2872842549_752350781.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s17_appendix/1080p60/partial_movie_files/Scene17_5_HierarchicalModel/104335764_3504858136_828903188.mp4'

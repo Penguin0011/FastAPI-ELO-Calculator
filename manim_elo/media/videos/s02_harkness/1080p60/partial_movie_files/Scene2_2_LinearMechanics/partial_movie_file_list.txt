@@ -1,0 +1,11 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s02_harkness/1080p60/partial_movie_files/Scene2_2_LinearMechanics/3833965276_2812385140_223132457.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s02_harkness/1080p60/partial_movie_files/Scene2_2_LinearMechanics/104335764_1831207710_1010605322.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s02_harkness/1080p60/partial_movie_files/Scene2_2_LinearMechanics/104335764_737175146_2453719711.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s02_harkness/1080p60/partial_movie_files/Scene2_2_LinearMechanics/104335764_168209249_1972992345.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s02_harkness/1080p60/partial_movie_files/Scene2_2_LinearMechanics/104335764_3491109605_2643388878.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s02_harkness/1080p60/partial_movie_files/Scene2_2_LinearMechanics/104335764_1995677746_280996300.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s02_harkness/1080p60/partial_movie_files/Scene2_2_LinearMechanics/104335764_3414731458_1851420761.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s02_harkness/1080p60/partial_movie_files/Scene2_2_LinearMechanics/104335764_2648208258_1034066665.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s02_harkness/1080p60/partial_movie_files/Scene2_2_LinearMechanics/104335764_1584273432_2954500491.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s02_harkness/1080p60/partial_movie_files/Scene2_2_LinearMechanics/104335764_4152278210_1152379149.mp4'

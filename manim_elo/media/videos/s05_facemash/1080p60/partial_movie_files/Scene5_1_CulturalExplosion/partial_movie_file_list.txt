@@ -1,0 +1,9 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s05_facemash/1080p60/partial_movie_files/Scene5_1_CulturalExplosion/3833965276_2442055946_223132457.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s05_facemash/1080p60/partial_movie_files/Scene5_1_CulturalExplosion/104335764_1113928076_2186326918.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s05_facemash/1080p60/partial_movie_files/Scene5_1_CulturalExplosion/104335764_2838248189_4119461564.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s05_facemash/1080p60/partial_movie_files/Scene5_1_CulturalExplosion/104335764_499109305_1004829844.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s05_facemash/1080p60/partial_movie_files/Scene5_1_CulturalExplosion/104335764_256278992_3025687020.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s05_facemash/1080p60/partial_movie_files/Scene5_1_CulturalExplosion/104335764_2165721344_1578758273.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s05_facemash/1080p60/partial_movie_files/Scene5_1_CulturalExplosion/104335764_2352605377_1398852142.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s05_facemash/1080p60/partial_movie_files/Scene5_1_CulturalExplosion/104335764_480169411_2658435171.mp4'

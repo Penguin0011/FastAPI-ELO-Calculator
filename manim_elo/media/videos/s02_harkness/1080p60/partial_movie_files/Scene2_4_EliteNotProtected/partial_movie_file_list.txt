@@ -1,0 +1,13 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s02_harkness/1080p60/partial_movie_files/Scene2_4_EliteNotProtected/3833965276_1174010806_223132457.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s02_harkness/1080p60/partial_movie_files/Scene2_4_EliteNotProtected/104335764_3588993614_2671211070.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s02_harkness/1080p60/partial_movie_files/Scene2_4_EliteNotProtected/104335764_873370708_3055025539.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s02_harkness/1080p60/partial_movie_files/Scene2_4_EliteNotProtected/104335764_239615619_2645338653.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s02_harkness/1080p60/partial_movie_files/Scene2_4_EliteNotProtected/104335764_247900741_984818931.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s02_harkness/1080p60/partial_movie_files/Scene2_4_EliteNotProtected/104335764_622629623_207159533.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s02_harkness/1080p60/partial_movie_files/Scene2_4_EliteNotProtected/104335764_273260935_1196537559.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s02_harkness/1080p60/partial_movie_files/Scene2_4_EliteNotProtected/104335764_2190055267_1650589542.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s02_harkness/1080p60/partial_movie_files/Scene2_4_EliteNotProtected/104335764_761835459_2789016763.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s02_harkness/1080p60/partial_movie_files/Scene2_4_EliteNotProtected/104335764_4114818131_4284164541.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s02_harkness/1080p60/partial_movie_files/Scene2_4_EliteNotProtected/104335764_1584273432_4291601169.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s02_harkness/1080p60/partial_movie_files/Scene2_4_EliteNotProtected/104335764_1956815926_438206991.mp4'

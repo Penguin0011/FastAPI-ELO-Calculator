@@ -1,9 +1,0 @@
-# This file is used internally by FFMPEG.
-file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_04_f1_paradox/480p15/partial_movie_files/RealWorldExamples/1584795214_1476571628_223132457.mp4'
-file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_04_f1_paradox/480p15/partial_movie_files/RealWorldExamples/4072820271_1881416398_496283580.mp4'
-file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_04_f1_paradox/480p15/partial_movie_files/RealWorldExamples/4072820271_3825778037_2077389402.mp4'
-file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_04_f1_paradox/480p15/partial_movie_files/RealWorldExamples/4072820271_1162017105_3947004171.mp4'
-file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_04_f1_paradox/480p15/partial_movie_files/RealWorldExamples/4072820271_2872842549_4056155287.mp4'
-file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_04_f1_paradox/480p15/partial_movie_files/RealWorldExamples/4072820271_500230972_917587312.mp4'
-file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_04_f1_paradox/480p15/partial_movie_files/RealWorldExamples/4072820271_4277570474_2455400145.mp4'
-file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_04_f1_paradox/480p15/partial_movie_files/RealWorldExamples/4072820271_1849662787_145683266.mp4'

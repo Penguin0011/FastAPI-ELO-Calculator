@@ -1,0 +1,8 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s03_elo_physics/1080p60/partial_movie_files/Scene3_5_LogisticTransition/3833965276_80050953_223132457.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s03_elo_physics/1080p60/partial_movie_files/Scene3_5_LogisticTransition/104335764_427084958_955988039.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s03_elo_physics/1080p60/partial_movie_files/Scene3_5_LogisticTransition/104335764_78957648_813532011.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s03_elo_physics/1080p60/partial_movie_files/Scene3_5_LogisticTransition/104335764_632852288_4206133784.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s03_elo_physics/1080p60/partial_movie_files/Scene3_5_LogisticTransition/104335764_1007289218_2973070501.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s03_elo_physics/1080p60/partial_movie_files/Scene3_5_LogisticTransition/104335764_3972074170_3461780652.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s03_elo_physics/1080p60/partial_movie_files/Scene3_5_LogisticTransition/104335764_605062624_387097561.mp4'

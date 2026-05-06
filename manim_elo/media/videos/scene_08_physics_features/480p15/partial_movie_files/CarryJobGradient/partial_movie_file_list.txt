@@ -1,7 +1,0 @@
-# This file is used internally by FFMPEG.
-file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_08_physics_features/480p15/partial_movie_files/CarryJobGradient/1584795214_578165769_223132457.mp4'
-file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_08_physics_features/480p15/partial_movie_files/CarryJobGradient/4072820271_576025524_2919986491.mp4'
-file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_08_physics_features/480p15/partial_movie_files/CarryJobGradient/4072820271_914172191_2025667371.mp4'
-file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_08_physics_features/480p15/partial_movie_files/CarryJobGradient/4072820271_2886225359_1525150778.mp4'
-file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_08_physics_features/480p15/partial_movie_files/CarryJobGradient/4072820271_4277570474_944857435.mp4'
-file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/scene_08_physics_features/480p15/partial_movie_files/CarryJobGradient/4072820271_2749640193_168482087.mp4'

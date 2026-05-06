@@ -1,0 +1,7 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s15_historical/1080p60/partial_movie_files/Scene15_1_RidgePlot/3833965276_968427923_223132457.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s15_historical/1080p60/partial_movie_files/Scene15_1_RidgePlot/104335764_2728514443_4176403212.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s15_historical/1080p60/partial_movie_files/Scene15_1_RidgePlot/104335764_2563405691_1563865312.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s15_historical/1080p60/partial_movie_files/Scene15_1_RidgePlot/104335764_2628304601_3573284838.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s15_historical/1080p60/partial_movie_files/Scene15_1_RidgePlot/104335764_1050081891_3731646563.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s15_historical/1080p60/partial_movie_files/Scene15_1_RidgePlot/104335764_2332387480_1166472142.mp4'

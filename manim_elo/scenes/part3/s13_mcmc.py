@@ -2,10 +2,11 @@
 # 4 Scenes covering computational inference
 
 from manim import *
-import numpy as np
 import sys
-sys.path.append('..')
+import os
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '../..'))
 from utils.colors import *
+import numpy as np
 
 
 class Scene13_1_IntractablePosterior(Scene):
@@ -16,7 +17,7 @@ class Scene13_1_IntractablePosterior(Scene):
         
         header = Text("The Computational Challenge", font_size=44, color=ELO_BLUE)
         header.to_edge(UP, buff=0.5)
-        self.play(Write(header), run_time=1)
+        self.play(Write(header), run_time=1.5)
         
         # Joint posterior
         formula = MathTex(
@@ -25,19 +26,19 @@ class Scene13_1_IntractablePosterior(Scene):
         )
         formula.move_to(UP * 1)
         
-        self.play(Write(formula), run_time=1.5)
+        self.play(Write(formula), run_time=6)
         
         # Problem
         problem = VGroup(
             Text("Problem:", font_size=24, color=ELO_RED),
-            Text("• 20 drivers × 10 constructors × 20 tracks = 400+ parameters", font_size=18, color=TEXT_GRAY),
+            Text("• 20 drivers x 10 constructors x 20 tracks = 400+ parameters", font_size=18, color=TEXT_GRAY),
             Text("• No closed-form solution", font_size=18, color=TEXT_GRAY),
             Text("• Integration is intractable", font_size=18, color=TEXT_GRAY)
         )
         problem.arrange(DOWN, aligned_edge=LEFT, buff=0.15)
         problem.move_to(ORIGIN)
         
-        self.play(FadeIn(problem), run_time=1)
+        self.play(FadeIn(problem), run_time=4)
         
         # Solution teaser
         solution = VGroup(
@@ -50,10 +51,10 @@ class Scene13_1_IntractablePosterior(Scene):
         
         solution_box = SurroundingRectangle(solution, color=ELO_GREEN, buff=0.15)
         
-        self.play(FadeIn(solution), Create(solution_box), run_time=1)
+        self.play(FadeIn(solution), Create(solution_box), run_time=4)
         
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.wait(8)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene13_2_GibbsSampler(Scene):
@@ -64,12 +65,12 @@ class Scene13_2_GibbsSampler(Scene):
         
         header = Text("Gibbs Sampler", font_size=44, color=ELO_BLUE)
         header.to_edge(UP, buff=0.5)
-        self.play(Write(header), run_time=1)
+        self.play(Write(header), run_time=1.5)
         
         # Algorithm steps
         steps = VGroup(
             Text("Algorithm:", font_size=24, color=ELO_GOLD),
-            Text("1. Initialize all parameters (α₀, β₀, γ₀)", font_size=18, color=TEXT_GRAY),
+            Text("1. Initialize all parameters (α, β, γ)", font_size=18, color=TEXT_GRAY),
             Text("2. For each iteration:", font_size=18, color=TEXT_GRAY),
             Text("   • Sample α | β, γ, D", font_size=16, color=ELO_BLUE),
             Text("   • Sample β | α, γ, D", font_size=16, color=ELO_GOLD),
@@ -79,7 +80,7 @@ class Scene13_2_GibbsSampler(Scene):
         steps.arrange(DOWN, aligned_edge=LEFT, buff=0.2)
         steps.move_to(LEFT * 2)
         
-        self.play(FadeIn(steps), run_time=1.5)
+        self.play(FadeIn(steps), run_time=6)
         
         # Visual: cycling through conditionals
         params = VGroup(
@@ -102,27 +103,27 @@ class Scene13_2_GibbsSampler(Scene):
         for p, l in zip(params, labels):
             l.move_to(p)
         
-        self.play(FadeIn(params), FadeIn(labels), run_time=0.8)
+        self.play(FadeIn(params), FadeIn(labels), run_time=3.2)
         
         # Highlight cycling
         highlight = SurroundingRectangle(params[0], color=WHITE, buff=0.05)
         
-        self.play(Create(highlight), run_time=0.3)
+        self.play(Create(highlight), run_time=1.2)
         self.play(
             highlight.animate.move_to(params[1]),
-            run_time=0.5
+            run_time=2
         )
         self.play(
             highlight.animate.move_to(params[2]),
-            run_time=0.5
+            run_time=2
         )
         self.play(
             highlight.animate.move_to(params[0]),
-            run_time=0.5
+            run_time=2
         )
         
-        self.wait(1)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.wait(4)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene13_3_TracePlots(Scene):
@@ -133,7 +134,7 @@ class Scene13_3_TracePlots(Scene):
         
         header = Text("Trace Plots", font_size=44, color=ELO_BLUE)
         header.to_edge(UP, buff=0.5)
-        self.play(Write(header), run_time=1)
+        self.play(Write(header), run_time=1.5)
         
         # Good trace (left)
         axes_good = Axes(
@@ -160,8 +161,8 @@ class Scene13_3_TracePlots(Scene):
             axes_good.c2p(i, s) for i, s in enumerate(good_samples)
         ])
         
-        self.play(Create(axes_good), FadeIn(good_label), run_time=0.5)
-        self.play(Create(good_trace), run_time=1.5)
+        self.play(Create(axes_good), FadeIn(good_label), run_time=2)
+        self.play(Create(good_trace), run_time=6)
         
         # Bad trace (right)
         axes_bad = Axes(
@@ -187,8 +188,8 @@ class Scene13_3_TracePlots(Scene):
             axes_bad.c2p(i, s) for i, s in enumerate(bad_samples)
         ])
         
-        self.play(Create(axes_bad), FadeIn(bad_label), run_time=0.5)
-        self.play(Create(bad_trace), run_time=1.5)
+        self.play(Create(axes_bad), FadeIn(bad_label), run_time=2)
+        self.play(Create(bad_trace), run_time=6)
         
         # Descriptions
         good_desc = Text('"Hairy caterpillar"', font_size=14, color=ELO_GREEN)
@@ -197,10 +198,10 @@ class Scene13_3_TracePlots(Scene):
         bad_desc = Text('"Wandering snake"', font_size=14, color=ELO_RED)
         bad_desc.next_to(axes_bad, DOWN, buff=0.2)
         
-        self.play(FadeIn(good_desc), FadeIn(bad_desc), run_time=0.5)
+        self.play(FadeIn(good_desc), FadeIn(bad_desc), run_time=2)
         
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.wait(8)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene13_4_GelmanRubin(Scene):
@@ -211,7 +212,7 @@ class Scene13_4_GelmanRubin(Scene):
         
         header = Text("Gelman-Rubin Diagnostic", font_size=44, color=ELO_BLUE)
         header.to_edge(UP, buff=0.5)
-        self.play(Write(header), run_time=1)
+        self.play(Write(header), run_time=1.5)
         
         # Formula
         formula = MathTex(
@@ -220,7 +221,7 @@ class Scene13_4_GelmanRubin(Scene):
         )
         formula.move_to(UP * 1)
         
-        self.play(Write(formula), run_time=1)
+        self.play(Write(formula), run_time=4)
         
         # Explanation
         explain = VGroup(
@@ -232,7 +233,7 @@ class Scene13_4_GelmanRubin(Scene):
         explain.arrange_in_grid(rows=2, cols=2, buff=(0.5, 0.2))
         explain.move_to(DOWN * 0.3)
         
-        self.play(FadeIn(explain), run_time=0.8)
+        self.play(FadeIn(explain), run_time=3.2)
         
         # Convergence condition
         condition = VGroup(
@@ -244,20 +245,20 @@ class Scene13_4_GelmanRubin(Scene):
         
         condition_box = SurroundingRectangle(condition, color=ELO_GREEN, buff=0.15)
         
-        self.play(Write(condition), Create(condition_box), run_time=1)
+        self.play(Write(condition), Create(condition_box), run_time=4)
         
         # Intuition
         intuition = Text(
-            "If chains from different starts agree → converged!",
+            "If chains from different starts agree -> converged!",
             font_size=18,
             color=TEXT_LIGHT
         )
         intuition.to_edge(DOWN, buff=0.3)
         
-        self.play(Write(intuition), run_time=1)
+        self.play(Write(intuition), run_time=4)
         
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.wait(8)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene13_2a_ExplainGibbs(Scene):
@@ -268,7 +269,6 @@ class Scene13_2a_ExplainGibbs(Scene):
 
         header = Text("Gibbs Sampling: One Variable at a Time", font_size=44, color=ELO_BLUE)
         header.to_edge(UP, buff=0.5)
-        self.play(Write(header), run_time=1)
 
         # The problem
         problem = VGroup(
@@ -277,16 +277,16 @@ class Scene13_2a_ExplainGibbs(Scene):
         )
         problem.arrange(DOWN, buff=0.1)
         problem.move_to(UP * 1)
-        self.play(FadeIn(problem), run_time=0.8)
-        self.wait(0.5)
+        self.play(FadeIn(problem), run_time=3.2)
+        self.wait(2)
 
         # Solution: cycle through variables
-        self.play(FadeOut(problem), run_time=0.3)
+        self.play(FadeOut(problem), run_time=1.2)
 
         solution = Text("Solution: Sample one variable at a time, holding others fixed",
                         font_size=18, color=ELO_GREEN)
         solution.move_to(UP * 1.2)
-        self.play(FadeIn(solution), run_time=0.5)
+        self.play(FadeIn(solution), run_time=2)
 
         # Three variable boxes
         alpha_box = VGroup(
@@ -317,7 +317,7 @@ class Scene13_2a_ExplainGibbs(Scene):
         boxes.arrange(RIGHT, buff=0.5)
         boxes.move_to(DOWN * 0.3)
 
-        self.play(FadeIn(boxes), run_time=1)
+        self.play(FadeIn(boxes), run_time=4)
 
         # Steps: cycle through highlighting
         step_labels = [
@@ -349,24 +349,24 @@ class Scene13_2a_ExplainGibbs(Scene):
                 anims = [FadeIn(step_grp), Create(highlight_rects[i])]
                 if prev_step:
                     anims.extend([FadeOut(prev_step), FadeOut(prev_rect)])
-                self.play(*anims, run_time=0.5)
-                self.wait(0.3)
+                self.play(*anims, run_time=2)
+                self.wait(1.2)
 
                 prev_step = step_grp
                 prev_rect = highlight_rects[i]
                 highlight_rects[i] = SurroundingRectangle(boxes[i], color=step_labels[i][1], buff=0.1)
 
-        self.play(FadeOut(prev_step), FadeOut(prev_rect), run_time=0.3)
+        self.play(FadeOut(prev_step), FadeOut(prev_rect), run_time=1.2)
 
         repeat = Text(
-            "Repeat 10,000× → histogram of samples ≈ the posterior distribution!",
+            "Repeat 10,000x -> histogram of samples ~ the posterior distribution!",
             font_size=18, color=ELO_GOLD
         )
         repeat.to_edge(DOWN, buff=0.3)
-        self.play(Write(repeat), run_time=1)
+        self.play(Write(repeat), run_time=4)
 
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.wait(8)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene13_4a_ExplainGelmanRubin(Scene):
@@ -375,9 +375,8 @@ class Scene13_4a_ExplainGelmanRubin(Scene):
     def construct(self):
         self.camera.background_color = DARK_BG
 
-        header = Text("R̂: Are the Chains Agreeing?", font_size=44, color=ELO_BLUE)
+        header = Text("R-hat: Are the Chains Agreeing?", font_size=44, color=ELO_BLUE)
         header.to_edge(UP, buff=0.5)
-        self.play(Write(header), run_time=1)
 
         # Formula
         formula = MathTex(
@@ -385,7 +384,7 @@ class Scene13_4a_ExplainGelmanRubin(Scene):
             font_size=48
         )
         formula.move_to(UP * 1.3)
-        self.play(Write(formula), run_time=1.5)
+        self.play(Write(formula), run_time=6)
 
         # Definitions
         defs = VGroup(
@@ -402,18 +401,18 @@ class Scene13_4a_ExplainGelmanRubin(Scene):
             d.arrange(RIGHT, buff=0.2)
         defs.arrange(DOWN, buff=0.2, aligned_edge=LEFT)
         defs.move_to(DOWN * 0.2)
-        self.play(FadeIn(defs), run_time=0.8)
-        self.wait(0.5)
+        self.play(FadeIn(defs), run_time=3.2)
+        self.wait(2)
 
         # Two scenarios
-        self.play(FadeOut(defs), run_time=0.3)
+        self.play(FadeOut(defs), run_time=1.2)
 
         # Converged
         good = VGroup(
             Text("Chains AGREE (converged):", font_size=20, color=ELO_GREEN),
-            Text("Between-chain variance ≈ 0", font_size=16, color=TEXT_GRAY),
+            Text("Between-chain variance ~ 0", font_size=16, color=TEXT_GRAY),
             MathTex(r"\hat{V} \approx W \implies \hat{R} \approx 1.0", font_size=24, color=ELO_GREEN),
-            Text("✓ Safe to use results!", font_size=14, color=ELO_GREEN),
+            Text("[OK] Safe to use results!", font_size=14, color=ELO_GREEN),
         )
         good.arrange(DOWN, buff=0.1)
         good.move_to(LEFT * 3 + DOWN * 0.3)
@@ -423,12 +422,12 @@ class Scene13_4a_ExplainGelmanRubin(Scene):
             Text("Chains DISAGREE:", font_size=20, color=ELO_RED),
             Text("Between-chain variance >> 0", font_size=16, color=TEXT_GRAY),
             MathTex(r"\hat{V} \gg W \implies \hat{R} \gg 1", font_size=24, color=ELO_RED),
-            Text("✗ NOT converged — run longer!", font_size=14, color=ELO_RED),
+            Text("[NO] NOT converged — run longer!", font_size=14, color=ELO_RED),
         )
         bad.arrange(DOWN, buff=0.1)
         bad.move_to(RIGHT * 3 + DOWN * 0.3)
 
-        self.play(FadeIn(good), FadeIn(bad), run_time=1)
+        self.play(FadeIn(good), FadeIn(bad), run_time=4)
 
         # Rule of thumb
         rule = VGroup(
@@ -438,7 +437,7 @@ class Scene13_4a_ExplainGelmanRubin(Scene):
         rule.arrange(DOWN, buff=0.1)
         rule.to_edge(DOWN, buff=0.3)
         rule_box = SurroundingRectangle(rule, color=ELO_GOLD, buff=0.15)
-        self.play(FadeIn(rule), Create(rule_box), run_time=0.8)
+        self.play(FadeIn(rule), Create(rule_box), run_time=3.2)
 
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.wait(8)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)

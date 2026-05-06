@@ -1,0 +1,11 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s14_volatility/1080p60/partial_movie_files/Scene14_3a_ExplainEntropy/3833965276_865800993_223132457.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s14_volatility/1080p60/partial_movie_files/Scene14_3a_ExplainEntropy/104335764_1001508808_884596961.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s14_volatility/1080p60/partial_movie_files/Scene14_3a_ExplainEntropy/104335764_816073434_3975614761.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s14_volatility/1080p60/partial_movie_files/Scene14_3a_ExplainEntropy/104335764_2558621665_2262398733.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s14_volatility/1080p60/partial_movie_files/Scene14_3a_ExplainEntropy/104335764_2416085061_3024413324.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s14_volatility/1080p60/partial_movie_files/Scene14_3a_ExplainEntropy/104335764_1977287430_857502433.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s14_volatility/1080p60/partial_movie_files/Scene14_3a_ExplainEntropy/104335764_1000047257_1114109666.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s14_volatility/1080p60/partial_movie_files/Scene14_3a_ExplainEntropy/104335764_2498416364_1011035058.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s14_volatility/1080p60/partial_movie_files/Scene14_3a_ExplainEntropy/104335764_3278807600_2782132245.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s14_volatility/1080p60/partial_movie_files/Scene14_3a_ExplainEntropy/104335764_3202674517_4062371562.mp4'

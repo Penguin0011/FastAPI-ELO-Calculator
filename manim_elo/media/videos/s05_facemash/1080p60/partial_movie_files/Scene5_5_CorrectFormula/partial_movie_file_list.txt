@@ -1,0 +1,10 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s05_facemash/1080p60/partial_movie_files/Scene5_5_CorrectFormula/3833965276_1799328080_223132457.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s05_facemash/1080p60/partial_movie_files/Scene5_5_CorrectFormula/104335764_1985911588_2784055605.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s05_facemash/1080p60/partial_movie_files/Scene5_5_CorrectFormula/104335764_1553020575_2816228907.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s05_facemash/1080p60/partial_movie_files/Scene5_5_CorrectFormula/104335764_856428505_1326836453.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s05_facemash/1080p60/partial_movie_files/Scene5_5_CorrectFormula/104335764_2680868727_692255804.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s05_facemash/1080p60/partial_movie_files/Scene5_5_CorrectFormula/104335764_368798821_1637805897.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s05_facemash/1080p60/partial_movie_files/Scene5_5_CorrectFormula/104335764_3859291295_3540554743.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s05_facemash/1080p60/partial_movie_files/Scene5_5_CorrectFormula/104335764_2352605377_2131874770.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s05_facemash/1080p60/partial_movie_files/Scene5_5_CorrectFormula/104335764_3755548489_3112253606.mp4'

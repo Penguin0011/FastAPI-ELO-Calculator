@@ -1,0 +1,10 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s07_bayesian_intro/1080p60/partial_movie_files/Scene7_6_TrueSkill/3833965276_3426787561_223132457.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s07_bayesian_intro/1080p60/partial_movie_files/Scene7_6_TrueSkill/104335764_664121426_1179312082.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s07_bayesian_intro/1080p60/partial_movie_files/Scene7_6_TrueSkill/104335764_4220540817_2184791857.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s07_bayesian_intro/1080p60/partial_movie_files/Scene7_6_TrueSkill/104335764_3914172153_203984867.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s07_bayesian_intro/1080p60/partial_movie_files/Scene7_6_TrueSkill/104335764_3732608661_2220945790.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s07_bayesian_intro/1080p60/partial_movie_files/Scene7_6_TrueSkill/104335764_2622145377_134632657.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s07_bayesian_intro/1080p60/partial_movie_files/Scene7_6_TrueSkill/104335764_4156304550_1500535767.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s07_bayesian_intro/1080p60/partial_movie_files/Scene7_6_TrueSkill/104335764_3972074170_1386753059.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s07_bayesian_intro/1080p60/partial_movie_files/Scene7_6_TrueSkill/104335764_2809301473_1207849114.mp4'

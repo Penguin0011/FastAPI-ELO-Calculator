@@ -1,0 +1,10 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s08_bradley_terry/1080p60/partial_movie_files/Scene8_3_Intransitivity/3833965276_3696561892_223132457.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s08_bradley_terry/1080p60/partial_movie_files/Scene8_3_Intransitivity/104335764_1210138759_1273629750.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s08_bradley_terry/1080p60/partial_movie_files/Scene8_3_Intransitivity/104335764_2542241938_932525006.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s08_bradley_terry/1080p60/partial_movie_files/Scene8_3_Intransitivity/104335764_1500026888_1330223266.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s08_bradley_terry/1080p60/partial_movie_files/Scene8_3_Intransitivity/104335764_3731786664_374502923.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s08_bradley_terry/1080p60/partial_movie_files/Scene8_3_Intransitivity/104335764_3134763280_4114677325.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s08_bradley_terry/1080p60/partial_movie_files/Scene8_3_Intransitivity/104335764_877272513_2472175883.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s08_bradley_terry/1080p60/partial_movie_files/Scene8_3_Intransitivity/104335764_3278807600_54180662.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s08_bradley_terry/1080p60/partial_movie_files/Scene8_3_Intransitivity/104335764_3263204231_655289677.mp4'

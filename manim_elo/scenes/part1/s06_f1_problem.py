@@ -2,10 +2,11 @@
 # 6 Scenes covering why Elo fails for F1
 
 from manim import *
-import numpy as np
 import sys
-sys.path.append('..')
+import os
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '../..'))
 from utils.colors import *
+import numpy as np
 
 
 class Scene6_1_StructuralIncompatibility(Scene):
@@ -16,7 +17,7 @@ class Scene6_1_StructuralIncompatibility(Scene):
 
         header = Text("The F1 Problem", font_size=48, color=ELO_BLUE)
         header.to_edge(UP, buff=0.6)
-        self.play(Write(header), run_time=1)
+        self.play(Write(header), run_time=1.5)
 
         # Chess: 2 players (left)
         chess_label = Text("Chess", font_size=28, color=ELO_BLUE)
@@ -36,13 +37,13 @@ class Scene6_1_StructuralIncompatibility(Scene):
             Create(chess_board),
             FadeIn(p1), FadeIn(p2),
             FadeIn(vs_text, shift=UP * 0.2),
-            run_time=1
+            run_time=4
         )
 
         # Separation arrow
         arrow = Arrow(LEFT * 1.5, RIGHT * 1.5, color=TEXT_GRAY)
         arrow.move_to(DOWN * 0.5)
-        self.play(Create(arrow), run_time=0.5)
+        self.play(Create(arrow), run_time=2)
 
         # F1: 20 drivers (right)
         f1_label = Text("Formula 1", font_size=28, color=ELO_RED)
@@ -70,7 +71,7 @@ class Scene6_1_StructuralIncompatibility(Scene):
             Create(f1_grid),
             LaggedStart(*[FadeIn(d, scale=0.3) for d in drivers], lag_ratio=0.03),
             FadeIn(all_text, shift=UP * 0.2),
-            run_time=1.5
+            run_time=6
         )
 
         # Problem statement
@@ -80,9 +81,9 @@ class Scene6_1_StructuralIncompatibility(Scene):
             color=ELO_GOLD
         )
         problem.to_edge(DOWN, buff=0.5)
-        self.play(FadeIn(problem, shift=UP * 0.3), run_time=1.5)
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.play(FadeIn(problem, shift=UP * 0.3), run_time=6)
+        self.wait(28)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene6_2_PairwiseExplosion(Scene):
@@ -97,16 +98,16 @@ class Scene6_2_PairwiseExplosion(Scene):
 
         header = Text("The Combinatorial Explosion", font_size=44, color=ELO_BLUE)
         header.to_edge(UP, buff=0.6)
-        self.play(Write(header), run_time=1)
+        self.play(Write(header), run_time=1.5)
 
         # Formula - positioned at top-right, not overlapping circle
         formula = MathTex(
             r"\binom{20}{2} = \frac{20 \times 19}{2} = 190",
             font_size=36
         )
-        formula.move_to(RIGHT * 4.5 + UP * 1.2)
+        formula.move_to(RIGHT * 3.5 + UP * 1.2)
         formula_box = SurroundingRectangle(formula, color=ELO_BLUE, buff=0.15, corner_radius=0.1)
-        self.play(Write(formula), Create(formula_box), run_time=1.5)
+        self.play(Write(formula), Create(formula_box), run_time=6)
 
         # Visual: 6 drivers in a circle (clean representation)
         n_drivers = 6
@@ -130,7 +131,7 @@ class Scene6_2_PairwiseExplosion(Scene):
 
         self.play(
             LaggedStart(*[FadeIn(d, scale=0.5) for d in drivers], lag_ratio=0.1),
-            run_time=1
+            run_time=4
         )
 
         # Build connections one by one with LaggedStart (not all at once)
@@ -144,19 +145,19 @@ class Scene6_2_PairwiseExplosion(Scene):
 
         self.play(
             LaggedStart(*[Create(l) for l in lines], lag_ratio=0.08),
-            run_time=2.5
+            run_time=10
         )
 
         # Count label: 6 drivers -> C(6,2) = 15 pairings shown
         count_label = Text("6 drivers = 15 pairings shown", font_size=18, color=TEXT_GRAY)
-        count_label.move_to(RIGHT * 4.5 + DOWN * 0.2)
+        count_label.move_to(RIGHT * 3.5 + DOWN * 0.2)
 
         actual_label = Text("20 drivers = 190 pairings!", font_size=22, color=ELO_GOLD, weight=BOLD)
-        actual_label.move_to(RIGHT * 4.5 + DOWN * 1.0)
+        actual_label.move_to(RIGHT * 3.5 + DOWN * 1.0)
         actual_box = SurroundingRectangle(actual_label, color=ELO_GOLD, buff=0.1)
 
-        self.play(FadeIn(count_label, shift=UP * 0.2), run_time=0.6)
-        self.play(FadeIn(actual_label, shift=UP * 0.2), Create(actual_box), run_time=0.8)
+        self.play(FadeIn(count_label, shift=UP * 0.2), run_time=2.4)
+        self.play(FadeIn(actual_label, shift=UP * 0.2), Create(actual_box), run_time=3.2)
 
         # Caption
         caption = Text(
@@ -165,9 +166,9 @@ class Scene6_2_PairwiseExplosion(Scene):
             color=TEXT_LIGHT
         )
         caption.to_edge(DOWN, buff=0.4)
-        self.play(FadeIn(caption, shift=UP * 0.3), run_time=1.5)
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.play(FadeIn(caption, shift=UP * 0.3), run_time=6)
+        self.wait(28)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene6_3_DNFAnomaly(Scene):
@@ -182,7 +183,7 @@ class Scene6_3_DNFAnomaly(Scene):
 
         header = Text("The DNF Tragedy", font_size=48, color=ELO_RED)
         header.to_edge(UP, buff=0.6)
-        self.play(Write(header), run_time=1)
+        self.play(Write(header), run_time=1.5)
 
         # Scenario (left)
         scenario = VGroup(
@@ -196,7 +197,7 @@ class Scene6_3_DNFAnomaly(Scene):
 
         self.play(
             LaggedStart(*[FadeIn(s, shift=RIGHT * 0.2) for s in scenario], lag_ratio=0.2),
-            run_time=1.2
+            run_time=4.8
         )
 
         # Timeline visualization (right)
@@ -216,7 +217,7 @@ class Scene6_3_DNFAnomaly(Scene):
             Create(timeline),
             FadeIn(start_dot), FadeIn(start_label),
             FadeIn(dnf_dot), FadeIn(dnf_label),
-            run_time=1
+            run_time=4
         )
 
         # Elo misinterpretation - dramatic (left)
@@ -226,8 +227,8 @@ class Scene6_3_DNFAnomaly(Scene):
         lost_to_all = Text('"Lost to everyone"', font_size=22, color=ELO_RED, slant=ITALIC)
         lost_to_all.next_to(elo_title, DOWN, buff=0.1)
 
-        self.play(FadeIn(elo_title, shift=UP * 0.2), run_time=0.5)
-        self.play(FadeIn(lost_to_all, shift=UP * 0.2), run_time=0.5)
+        self.play(FadeIn(elo_title, shift=UP * 0.2), run_time=2)
+        self.play(FadeIn(lost_to_all, shift=UP * 0.2), run_time=2)
 
         # Dramatic "19 losses" counter
         losses_box = RoundedRectangle(
@@ -240,10 +241,10 @@ class Scene6_3_DNFAnomaly(Scene):
         losses_label = Text("= 19 LOSSES", font_size=36, color=ELO_RED, weight=BOLD)
         losses_label.move_to(losses_box)
 
-        self.play(FadeIn(losses_box), run_time=0.3)
-        self.play(Write(losses_label), run_time=0.5)
-        self.play(Indicate(losses_label, color=ELO_RED, scale_factor=1.2), run_time=0.5)
-        self.play(Indicate(losses_label, color=WARNING, scale_factor=1.1), run_time=0.4)
+        self.play(FadeIn(losses_box), run_time=1.2)
+        self.play(Write(losses_label), run_time=2)
+        self.play(Indicate(losses_label, color=ELO_RED, scale_factor=1.2), run_time=2)
+        self.play(Indicate(losses_label, color=WARNING, scale_factor=1.1), run_time=1.6)
 
         # Rating plummet visualization
         bar_baseline = DOWN * 1.8
@@ -270,11 +271,11 @@ class Scene6_3_DNFAnomaly(Scene):
         drop_label = Text("-150!", font_size=22, color=ELO_RED, weight=BOLD)
         drop_label.next_to(drop_arrow, UP, buff=0.1)
 
-        self.play(FadeIn(rating_before), FadeIn(label_before), run_time=0.5)
+        self.play(FadeIn(rating_before), FadeIn(label_before), run_time=2)
         self.play(
             FadeIn(rating_after), FadeIn(label_after),
             Create(drop_arrow), FadeIn(drop_label),
-            run_time=1
+            run_time=4
         )
 
         # Caption
@@ -283,9 +284,9 @@ class Scene6_3_DNFAnomaly(Scene):
             font_size=24, color=ELO_GOLD
         )
         caption.to_edge(DOWN, buff=0.3)
-        self.play(FadeIn(caption, shift=UP * 0.3), run_time=1)
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.play(FadeIn(caption, shift=UP * 0.3), run_time=4)
+        self.wait(28)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene6_4_CarVsDriver(Scene):
@@ -296,7 +297,7 @@ class Scene6_4_CarVsDriver(Scene):
 
         header = Text("The Entanglement Problem", font_size=44, color=ELO_BLUE)
         header.to_edge(UP, buff=0.6)
-        self.play(Write(header), run_time=1)
+        self.play(Write(header), run_time=1.5)
 
         # What Elo sees (left)
         elo_box = RoundedRectangle(
@@ -320,13 +321,13 @@ class Scene6_4_CarVsDriver(Scene):
         self.play(
             FadeIn(elo_box), FadeIn(elo_title),
             FadeIn(elo_inner), FadeIn(elo_inner_label),
-            run_time=1
+            run_time=4
         )
 
         # Reality (right) - stacked components
         reality_title = Text("Reality:", font_size=20, color=ELO_GOLD)
         reality_title.move_to(RIGHT * 2 + UP * 2.1)
-        self.play(FadeIn(reality_title, shift=LEFT * 0.2), run_time=0.5)
+        self.play(FadeIn(reality_title, shift=LEFT * 0.2), run_time=2)
 
         car = Rectangle(width=2.2, height=0.9,
                         fill_color=ELO_GOLD, fill_opacity=0.7,
@@ -344,12 +345,12 @@ class Scene6_4_CarVsDriver(Scene):
         stacked.arrange(UP, buff=0)
         stacked.move_to(RIGHT * 2 + UP * 0.5)
 
-        self.play(FadeIn(car), FadeIn(car_label), run_time=0.5)
-        self.play(FadeIn(driver), FadeIn(driver_label), run_time=0.5)
+        self.play(FadeIn(car), FadeIn(car_label), run_time=2)
+        self.play(FadeIn(driver), FadeIn(driver_label), run_time=2)
 
         plus = MathTex("+", font_size=36, color=TEXT_WHITE)
         plus.move_to(car.get_top())
-        self.play(Write(plus), run_time=0.3)
+        self.play(Write(plus), run_time=1.2)
 
         # Equals observed result
         equals = MathTex("=", font_size=36, color=TEXT_WHITE)
@@ -363,7 +364,7 @@ class Scene6_4_CarVsDriver(Scene):
         observed.next_to(equals, DOWN, buff=0.15)
         observed_label.move_to(observed)
 
-        self.play(Write(equals), FadeIn(observed), FadeIn(observed_label), run_time=0.8)
+        self.play(Write(equals), FadeIn(observed), FadeIn(observed_label), run_time=3.2)
 
         # Problem statement
         problem_box = RoundedRectangle(
@@ -377,9 +378,9 @@ class Scene6_4_CarVsDriver(Scene):
             font_size=22, color=ELO_RED
         )
         problem.move_to(problem_box)
-        self.play(FadeIn(problem_box), FadeIn(problem, shift=UP * 0.2), run_time=1.5)
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.play(FadeIn(problem_box), FadeIn(problem, shift=UP * 0.2), run_time=6)
+        self.wait(28)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene6_5_RussellExample(Scene):
@@ -390,11 +391,11 @@ class Scene6_5_RussellExample(Scene):
 
         header = Text("The George Russell Effect", font_size=44, color=ELO_BLUE)
         header.to_edge(UP, buff=0.6)
-        self.play(Write(header), run_time=1)
+        self.play(Write(header), run_time=1.5)
 
         # Split screen
         divider = Line(UP * 2, DOWN * 2, color=TEXT_GRAY)
-        self.play(Create(divider), run_time=0.3)
+        self.play(Create(divider), run_time=1.2)
 
         # Left: Williams
         williams = VGroup(
@@ -406,14 +407,14 @@ class Scene6_5_RussellExample(Scene):
         )
         williams.arrange(DOWN, buff=0.2)
         williams.move_to(LEFT * 3.5 + DOWN * 0.3)
-        self.play(FadeIn(williams, shift=RIGHT * 0.3), run_time=1)
+        self.play(FadeIn(williams, shift=RIGHT * 0.3), run_time=4)
 
         # Arrow
         arrow = Arrow(LEFT * 1, RIGHT * 1, color=ELO_GOLD)
         arrow.move_to(DOWN * 0.3)
         arrow_label = Text("Same driver!", font_size=18, color=ELO_GOLD, weight=BOLD)
         arrow_label.next_to(arrow, UP, buff=0.1)
-        self.play(Create(arrow), FadeIn(arrow_label), run_time=0.8)
+        self.play(Create(arrow), FadeIn(arrow_label), run_time=3.2)
 
         # Right: Mercedes
         mercedes = VGroup(
@@ -425,7 +426,7 @@ class Scene6_5_RussellExample(Scene):
         )
         mercedes.arrange(DOWN, buff=0.2)
         mercedes.move_to(RIGHT * 3.5 + DOWN * 0.3)
-        self.play(FadeIn(mercedes, shift=LEFT * 0.3), run_time=1)
+        self.play(FadeIn(mercedes, shift=LEFT * 0.3), run_time=4)
 
         # Question
         question = VGroup(
@@ -436,9 +437,9 @@ class Scene6_5_RussellExample(Scene):
         question.move_to(DOWN * 2.5)
         self.play(
             LaggedStart(*[FadeIn(q, shift=UP * 0.2) for q in question], lag_ratio=0.3),
-            run_time=1
+            run_time=4
         )
-        self.wait(1)
+        self.wait(15)
 
         # Answer
         answer_box = RoundedRectangle(
@@ -452,85 +453,197 @@ class Scene6_5_RussellExample(Scene):
             font_size=24, color=ELO_RED, weight=BOLD
         )
         answer.move_to(answer_box)
-        self.play(FadeIn(answer_box), Write(answer, run_time=1))
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+        self.play(FadeIn(answer_box), Write(answer, run_time=4))
+        self.wait(28)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)
 
 
 class Scene6_6_AdvancedSolutionsPreview(Scene):
-    """Scene 6.6: Advanced Solutions Preview."""
+    """Scene 6.6: The Massey Method — AWS F1 Insights regression-based solution.
+    Covers Script Section 5.3: teammate link, network effect, and driver rankings."""
 
     def construct(self):
         self.camera.background_color = DARK_BG
 
-        header = Text("We Need Better Models", font_size=44, color=ELO_BLUE)
-        header.to_edge(UP, buff=0.6)
-        self.play(Write(header), run_time=1)
-
-        # Problems summary (left)
-        problems_title = Text("Elo Fails At:", font_size=22, color=ELO_RED)
-        problems_title.move_to(LEFT * 3.5 + UP * 1.2)
-
-        problems = VGroup(
-            Text("Binary comparisons only", font_size=22, color=ELO_RED),
-            Text("DNF handling", font_size=22, color=ELO_RED),
-            Text("Car vs driver entanglement", font_size=22, color=ELO_RED)
-        )
-        problems.arrange(DOWN, aligned_edge=LEFT, buff=0.2)
-        problems.next_to(problems_title, DOWN, buff=0.15)
-
-        self.play(FadeIn(problems_title, shift=DOWN * 0.2), run_time=0.5)
-        self.play(
-            LaggedStart(*[FadeIn(p, shift=RIGHT * 0.2) for p in problems], lag_ratio=0.2),
-            run_time=1
-        )
-
-        # Arrow
-        arrow = Arrow(LEFT * 1, RIGHT * 1, color=ELO_GREEN, stroke_width=3)
-        arrow.move_to(UP * 0.5)
-        self.play(Create(arrow), run_time=0.5)
-
-        # Solutions (right)
-        solutions_title = Text("Better Approaches:", font_size=22, color=ELO_GREEN)
-        solutions_title.move_to(RIGHT * 3.5 + UP * 1.2)
-
-        solutions = VGroup(
-            Text("Rank-ordered models", font_size=22, color=ELO_GREEN),
-            Text("Survival analysis", font_size=22, color=ELO_GREEN),
-            Text("Hierarchical decomposition", font_size=22, color=ELO_GREEN)
-        )
-        solutions.arrange(DOWN, aligned_edge=LEFT, buff=0.2)
-        solutions.next_to(solutions_title, DOWN, buff=0.15)
-
-        self.play(FadeIn(solutions_title, shift=DOWN * 0.2), run_time=0.5)
-        self.play(
-            LaggedStart(*[FadeIn(s, shift=LEFT * 0.2) for s in solutions], lag_ratio=0.2),
-            run_time=1
-        )
-
-        # Key insight box
-        insight_box = RoundedRectangle(
-            width=8, height=1.6, corner_radius=0.15,
-            fill_color=ELO_GOLD, fill_opacity=0.12,
-            stroke_color=ELO_GOLD, stroke_width=2
-        )
-        insight_box.move_to(DOWN * 1.8)
-
-        insight = VGroup(
-            Text("Key Insight:", font_size=22, color=ELO_GOLD, weight=BOLD),
-            Text("Move from point estimates to probability distributions", font_size=19, color=TEXT_LIGHT)
-        )
-        insight.arrange(DOWN, buff=0.1)
-        insight.move_to(insight_box)
-
-        self.play(FadeIn(insight_box), FadeIn(insight, shift=UP * 0.2), run_time=1.5)
-
-        # Caption
-        caption = Text(
-            "Enter: Bayesian Statistics",
-            font_size=28, color=ELO_BLUE, weight=BOLD
-        )
-        caption.to_edge(DOWN, buff=0.4)
-        self.play(FadeIn(caption, shift=UP * 0.3), run_time=1)
+        header = Text("The Massey Method", font_size=44, color=ELO_BLUE, weight=BOLD)
+        header.to_edge(UP, buff=0.5)
+        sub = Text("AWS F1 Insights: Fastest Driver Project  (1983-Present)", font_size=18, color=ELO_GOLD)
+        sub.next_to(header, DOWN, buff=0.2)
+        self.play(Write(header), run_time=4)
+        self.play(FadeIn(sub, shift=UP * 0.2), run_time=2)
         self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=1)
+
+        # --- Core formula ---
+        formula_intro = Text("Lap time as a linear sum of independent variables:", font_size=19, color=TEXT_GRAY)
+        formula_intro.move_to(UP * 1.4)
+
+        formula = MathTex(
+            r"\text{Time}_{ij}",
+            r"=",
+            r"\beta_{\text{driver},i}",
+            r"+",
+            r"\beta_{\text{car},j}",
+            r"+",
+            r"\varepsilon_{ij}",
+            font_size=36
+        )
+        formula[2].set_color(ELO_BLUE)
+        formula[4].set_color(ELO_GOLD)
+        formula[6].set_color(ELO_PURPLE)
+        formula.move_to(UP * 0.5)
+
+        legends = VGroup(
+            VGroup(
+                MathTex(r"\beta_{\text{driver},i}", font_size=20, color=ELO_BLUE),
+                Text("  driver skill coefficient", font_size=17, color=TEXT_GRAY)
+            ).arrange(RIGHT, buff=0.08),
+            VGroup(
+                MathTex(r"\beta_{\text{car},j}", font_size=20, color=ELO_GOLD),
+                Text("  car performance coefficient", font_size=17, color=TEXT_GRAY)
+            ).arrange(RIGHT, buff=0.08),
+            VGroup(
+                MathTex(r"\varepsilon_{ij}", font_size=20, color=ELO_PURPLE),
+                Text("  random noise (weather, incidents)", font_size=17, color=TEXT_GRAY)
+            ).arrange(RIGHT, buff=0.08),
+        )
+        legends.arrange(DOWN, aligned_edge=LEFT, buff=0.18)
+        legends.move_to(DOWN * 1.0)
+
+        self.play(FadeIn(formula_intro, shift=DOWN * 0.15), run_time=2)
+        self.play(Write(formula), run_time=5)
+        self.play(
+            LaggedStart(*[FadeIn(l, shift=RIGHT * 0.12) for l in legends], lag_ratio=0.3),
+            run_time=4
+        )
+        self.wait(15)
+        self.play(*[FadeOut(mob) for mob in [formula_intro, formula, legends]], run_time=2)
+
+        # --- Teammate link ---
+        tm_header = Text("The Teammate Link", font_size=30, color=ELO_GREEN, weight=BOLD)
+        tm_header.move_to(UP * 2.5)
+
+        tm_eq = MathTex(
+            r"\Delta\text{Time}",
+            r"=",
+            r"\beta_{\text{driver},A}",
+            r"-",
+            r"\beta_{\text{driver},B}",
+            r"\quad\text{(car cancels — same team)}",
+            font_size=26
+        )
+        tm_eq[2].set_color(ELO_BLUE)
+        tm_eq[4].set_color(ELO_RED)
+        tm_eq[5].set_color(TEXT_GRAY)
+        tm_eq.move_to(UP * 1.4)
+
+        tm_example = Text(
+            "Hamilton 0.2s faster than Bottas in same Mercedes  ->  driver gap = 0.2s",
+            font_size=17, color=TEXT_LIGHT
+        )
+        tm_example.move_to(UP * 0.5)
+        tm_bg = SurroundingRectangle(
+            tm_example, fill_color=DARKER_BG, fill_opacity=0.85,
+            stroke_color=ELO_GREEN, stroke_width=1.5, buff=0.1
+        )
+
+        tm_note = Text(
+            "Teammates share the same car coefficient -> any difference is pure driver skill",
+            font_size=16, color=TEXT_GRAY, slant=ITALIC
+        )
+        tm_note.move_to(DOWN * 0.3)
+
+        self.play(Write(tm_header), run_time=2)
+        self.play(Write(tm_eq), run_time=5)
+        self.play(FadeIn(tm_bg), FadeIn(tm_example, shift=UP * 0.12), run_time=3)
+        self.play(FadeIn(tm_note, shift=UP * 0.12), run_time=2)
+        self.wait(15)
+        self.play(*[FadeOut(mob) for mob in [tm_header, tm_eq, tm_bg, tm_example, tm_note]], run_time=2)
+
+        # --- Network effect ---
+        net_header = Text("The Network Effect", font_size=30, color=ELO_GOLD, weight=BOLD)
+        net_header.move_to(UP * 2.5)
+
+        chain = VGroup(
+            Text("Schumacher", font_size=20, color=ELO_RED, weight=BOLD),
+            Text("->", font_size=18, color=TEXT_GRAY),
+            Text("Herbert", font_size=20, color=TEXT_LIGHT),
+            Text("->", font_size=18, color=TEXT_GRAY),
+            Text("Hakkinen", font_size=20, color=ELO_BLUE, weight=BOLD),
+        )
+        chain.arrange(RIGHT, buff=0.35)
+        chain.move_to(UP * 1.3)
+
+        chain_note = Text(
+            "Chaining teammate links across seasons lets us rank\ndrivers who NEVER raced each other — stripping away the car",
+            font_size=18, color=TEXT_LIGHT
+        )
+        chain_note.move_to(UP * 0.1)
+        chain_bg = SurroundingRectangle(
+            chain_note, fill_color=DARKER_BG, fill_opacity=0.85,
+            stroke_color=ELO_GOLD, stroke_width=1.5, buff=0.12
+        )
+
+        self.play(Write(net_header), run_time=2)
+        self.play(LaggedStart(*[FadeIn(c, shift=RIGHT * 0.2) for c in chain], lag_ratio=0.2), run_time=4)
+        self.play(FadeIn(chain_bg), FadeIn(chain_note, shift=UP * 0.12), run_time=3)
+        self.wait(15)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=2)
+
+        # --- Results bar chart ---
+        result_header = Text("Stripping Away the Car: All-Time Rankings", font_size=32, color=ELO_GOLD, weight=BOLD)
+        result_header.to_edge(UP, buff=0.5)
+        self.play(Write(result_header), run_time=3)
+
+        drivers_data = [
+            ("Ayrton Senna", 9.6, ELO_BLUE),
+            ("Michael Schumacher", 9.5, ELO_RED),
+            ("Lewis Hamilton", 9.3, ELO_GOLD),
+            ("Max Verstappen", 9.1, ELO_GREEN),
+            ("Alain Prost", 8.9, ELO_PURPLE),
+        ]
+        max_w = 5.0
+
+        bar_group = VGroup()
+        for name, score, color in drivers_data:
+            bar = Rectangle(
+                width=score / 9.6 * max_w, height=0.42,
+                fill_color=color, fill_opacity=0.85, stroke_width=0
+            )
+            lbl = Text(name, font_size=16, color=TEXT_LIGHT)
+            lbl.next_to(bar, RIGHT, buff=0.12)
+            bar_group.add(VGroup(bar, lbl))
+
+        bar_group.arrange(DOWN, aligned_edge=LEFT, buff=0.22)
+        bar_group.to_edge(LEFT, buff=0.8)
+        bar_group.shift(DOWN * 0.3)
+
+        self.play(
+            LaggedStart(*[GrowFromEdge(row[0], LEFT) for row in bar_group], lag_ratio=0.15),
+            LaggedStart(*[FadeIn(row[1]) for row in bar_group], lag_ratio=0.15),
+            run_time=5
+        )
+
+        top_note = Text(
+            "Senna and Schumacher rise to the top — regardless of era or car",
+            font_size=18, color=ELO_GOLD, slant=ITALIC
+        )
+        top_note.move_to(DOWN * 2.4)
+        self.play(FadeIn(top_note, shift=UP * 0.2), run_time=3)
+        self.wait(15)
+
+        # Fade bars to make room for the bridge/CTA
+        self.play(FadeOut(bar_group), FadeOut(result_header), FadeOut(top_note), run_time=2)
+
+        bridge = Text(
+            "But these are still point estimates — can we also quantify uncertainty?",
+            font_size=20, color=TEXT_GRAY, slant=ITALIC
+        )
+        bridge.move_to(UP * 0.5)
+        self.play(FadeIn(bridge, shift=UP * 0.2), run_time=3)
+        self.wait(12)
+
+        bayesian_cta = Text("Enter: Bayesian Statistics", font_size=34, color=ELO_BLUE, weight=BOLD)
+        bayesian_cta.move_to(DOWN * 0.5)
+        self.play(Write(bayesian_cta, run_time=4))
+        self.wait(28)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=4)

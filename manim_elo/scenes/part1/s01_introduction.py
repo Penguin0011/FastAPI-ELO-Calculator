@@ -3,7 +3,8 @@
 
 from manim import *
 import sys
-sys.path.append('..')
+import os
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '../..'))
 from utils.colors import *
 
 
@@ -38,42 +39,42 @@ class Scene1_1_TitleHook(Scene):
         ])
 
         # Animate title
-        self.play(Write(title, run_time=1.5, rate_func=smooth))
-        self.wait(0.3)
+        self.play(Write(title, run_time=6, rate_func=smooth))
+        self.wait(1.2)
 
         for domain, dot in zip(domains, dots):
             self.play(
                 FadeIn(domain, shift=UP * 0.2),
                 FadeIn(dot),
-                run_time=0.5
+                run_time=2
             )
 
-        self.wait(0.8)
+        self.wait(3.2)
 
-        # The central question
-        question_box = Rectangle(
-            width=8, height=1.1,
-            fill_color=DARKER_BG, fill_opacity=0.8,
-            stroke_color=ELO_GOLD, stroke_width=2
-        )
-        question_box.move_to(DOWN * 2.2)
-
+        # The central question — create text first so box auto-sizes to fit
         question = Text(
             "How do we objectively compare skill?",
             font_size=36,
             color=ELO_GOLD
         )
-        question.move_to(question_box)
+        question.move_to(DOWN * 2.2)
+
+        question_box = SurroundingRectangle(
+            question,
+            fill_color=DARKER_BG, fill_opacity=0.8,
+            stroke_color=ELO_GOLD, stroke_width=2,
+            corner_radius=0.15, buff=0.25
+        )
 
         self.play(
             FadeIn(question_box),
-            Write(question, run_time=1.2),
+            Write(question, run_time=4.8),
         )
-        self.wait(2)
+        self.wait(8)
 
         self.play(
             *[FadeOut(mob, shift=UP * 0.3) for mob in self.mobjects],
-            run_time=0.8
+            run_time=3.2
         )
 
 
@@ -86,7 +87,7 @@ class Scene1_2_LatentVariable(Scene):
         # Header
         header = Text("The Core Problem", font_size=48, color=ELO_BLUE)
         header.to_edge(UP, buff=0.7)
-        self.play(Write(header), run_time=1)
+        self.play(Write(header), run_time=1.5)
 
         # Skill orb in center with glow
         glow = Circle(radius=1.4, color=ELO_GOLD, fill_opacity=0.15, stroke_width=0)
@@ -101,7 +102,7 @@ class Scene1_2_LatentVariable(Scene):
             FadeIn(glow, scale=0.5),
             GrowFromCenter(skill_orb),
             FadeIn(skill_label),
-            run_time=1.2
+            run_time=4.8
         )
 
         # "skill is hidden" label
@@ -113,7 +114,7 @@ class Scene1_2_LatentVariable(Scene):
             color=TEXT_GRAY, buff=0.1, stroke_width=2
         )
 
-        self.play(FadeIn(hidden_label), Create(hidden_arrow), run_time=0.8)
+        self.play(FadeIn(hidden_label), Create(hidden_arrow), run_time=3.2)
 
         # Performance observations orbiting
         obs_data = [
@@ -140,7 +141,7 @@ class Scene1_2_LatentVariable(Scene):
 
         self.play(
             LaggedStart(*[FadeIn(obs, scale=0.5) for obs in observations], lag_ratio=0.1),
-            run_time=1.5
+            run_time=6
         )
 
         # Caption
@@ -151,10 +152,10 @@ class Scene1_2_LatentVariable(Scene):
         )
         caption.to_edge(DOWN, buff=0.7)
 
-        self.play(FadeIn(caption, shift=UP * 0.3), run_time=1)
-        self.wait(2)
+        self.play(FadeIn(caption, shift=UP * 0.3), run_time=4)
+        self.wait(8)
 
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=0.8)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=3.2)
 
 
 class Scene1_3_EvolutionTimeline(Scene):
@@ -166,13 +167,13 @@ class Scene1_3_EvolutionTimeline(Scene):
         # Header
         header = Text("The Evolution of Ranking", font_size=48, color=ELO_BLUE)
         header.to_edge(UP, buff=0.7)
-        self.play(Write(header), run_time=1)
+        self.play(Write(header), run_time=1.5)
 
         # Timeline
         timeline = Line(LEFT * 5.5, RIGHT * 5.5, color=TEXT_GRAY, stroke_width=2)
         timeline.shift(DOWN * 0.2)
 
-        self.play(Create(timeline), run_time=0.8)
+        self.play(Create(timeline), run_time=3.2)
 
         # Era data
         eras = [
@@ -201,9 +202,9 @@ class Scene1_3_EvolutionTimeline(Scene):
                 FadeIn(year_t, shift=DOWN * 0.2),
                 FadeIn(name_t, shift=UP * 0.2),
                 FadeIn(desc_t, shift=UP * 0.2),
-                run_time=0.9
+                run_time=3.6
             )
-            self.wait(0.4)
+            self.wait(1.6)
 
         # Downward labels for limitations
         limitations = [
@@ -215,7 +216,7 @@ class Scene1_3_EvolutionTimeline(Scene):
         for text, x in limitations:
             lim = Text(text, font_size=14, color=TEXT_GRAY, slant=ITALIC)
             lim.move_to([x, -1.6, 0])
-            self.play(FadeIn(lim, shift=DOWN * 0.2), run_time=0.4)
+            self.play(FadeIn(lim, shift=DOWN * 0.2), run_time=1.6)
 
         # Innovation arrows between eras
         for x_start, x_end, label in [(-3.5, -0.5, "First standardization"),
@@ -227,7 +228,7 @@ class Scene1_3_EvolutionTimeline(Scene):
             )
             ann = Text(label, font_size=13, color=TEXT_GRAY)
             ann.move_to([(x_start + x_end) / 2, 0.25, 0])
-            self.play(Create(arrow), FadeIn(ann), run_time=0.6)
+            self.play(Create(arrow), FadeIn(ann), run_time=2.4)
 
-        self.wait(2)
-        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=0.8)
+        self.wait(8)
+        self.play(*[FadeOut(mob) for mob in self.mobjects], run_time=3.2)
