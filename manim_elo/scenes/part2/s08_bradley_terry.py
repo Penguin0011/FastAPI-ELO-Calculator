@@ -126,7 +126,7 @@ class Scene8_2_LogDomain(Scene):
         connection = VGroup(
             Text("This IS the Elo formula!", font_size=24, color=ELO_GOLD),
             MathTex(r"10^x = e^{x \ln 10}", font_size=24, color=TEXT_GRAY),
-            Text("Just a change of base", font_size=18, color=TEXT_GRAY)
+            Text("Just a change of base", font_size=20, color=TEXT_GRAY)
         )
         connection.arrange(DOWN, buff=0.2)
         connection.move_to(DOWN * 2)
@@ -363,7 +363,7 @@ class Scene8_1a_ExplainBTL(Scene):
         self.play(FadeIn(step1), run_time=1.2)
 
         v_explain = VGroup(
-            Text("v = hidden 'strength' number", font_size=18, color=TEXT_GRAY),
+            Text("v = hidden 'strength' number", font_size=20, color=TEXT_GRAY),
             Text("Always positive (like a weight)", font_size=16, color=TEXT_GRAY),
             Text("Higher v = stronger competitor", font_size=16, color=ELO_GREEN)
         )
@@ -398,7 +398,7 @@ class Scene8_1a_ExplainBTL(Scene):
 
         symmetry = VGroup(
             MathTex(r"P(i > j) + P(j > i) = 1", font_size=36, color=ELO_GREEN),
-            Text("Probabilities always sum to 100% — guaranteed!", font_size=18, color=TEXT_GRAY),
+            Text("Probabilities always sum to 100% — guaranteed!", font_size=20, color=TEXT_GRAY),
         )
         symmetry.arrange(DOWN, buff=0.2)
         symmetry.move_to(DOWN * 0.5)
@@ -554,7 +554,7 @@ class Scene8_4a_ExplainHodge(Scene):
         # Gradient component
         grad = VGroup(
             MathTex(r"(r_i - r_j)", font_size=32, color=ELO_BLUE),
-            Text("= Gradient (Global Ranking)", font_size=18, color=TEXT_GRAY),
+            Text("= Gradient (Global Ranking)", font_size=20, color=TEXT_GRAY),
             Text("Consistent with a total ordering", font_size=14, color=TEXT_GRAY),
             Text("If A > B and B > C, then A > C", font_size=14, color=ELO_GREEN)
         )
@@ -564,7 +564,7 @@ class Scene8_4a_ExplainHodge(Scene):
         # Curl component
         curl = VGroup(
             MathTex(r"\varepsilon_{ij}", font_size=32, color=ELO_RED),
-            Text("= Curl (Matchup-Specific)", font_size=18, color=TEXT_GRAY),
+            Text("= Curl (Matchup-Specific)", font_size=20, color=TEXT_GRAY),
             Text("NOT consistent with a ranking", font_size=14, color=TEXT_GRAY),
             Text("A > B, B > C, but C > A!", font_size=14, color=ELO_RED)
         )

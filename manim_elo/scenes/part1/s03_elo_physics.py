@@ -21,8 +21,8 @@ class Scene3_1_EloBackground(Scene):
         physicist = VGroup(
             Text("Physicist", font_size=34, color=ELO_GOLD, weight=BOLD),
             Text("Marquette University", font_size=20, color=TEXT_GRAY),
-            Text("Measurement theory", font_size=18, color=TEXT_GRAY),
-            Text("Signal vs. noise", font_size=18, color=TEXT_GRAY),
+            Text("Measurement theory", font_size=20, color=TEXT_GRAY),
+            Text("Signal vs. noise", font_size=20, color=TEXT_GRAY),
         )
         physicist.arrange(DOWN, buff=0.18, aligned_edge=LEFT)
         physicist.move_to(LEFT * 3.5 + UP * 0.3)
@@ -30,8 +30,8 @@ class Scene3_1_EloBackground(Scene):
         chess = VGroup(
             Text("Chess Master", font_size=34, color=ELO_BLUE, weight=BOLD),
             Text("Competed vs. legends", font_size=20, color=TEXT_GRAY),
-            Text("Bobby Fischer", font_size=18, color=TEXT_GRAY),
-            Text("Reuben Fine", font_size=18, color=TEXT_GRAY),
+            Text("Bobby Fischer", font_size=20, color=TEXT_GRAY),
+            Text("Reuben Fine", font_size=20, color=TEXT_GRAY),
         )
         chess.arrange(DOWN, buff=0.18, aligned_edge=LEFT)
         chess.move_to(RIGHT * 2.5 + UP * 0.3)
@@ -412,7 +412,7 @@ class Scene3_6_LogisticFormula(MovingCameraScene):
         brace_num_lbl.set_color(ELO_GREEN)
 
         brace_400 = Brace(formula[0][9:12], DOWN, color=ELO_GOLD)
-        brace_400_lbl = brace_400.get_text("400 pts difference -> ~91% vs ~9% win odds")
+        brace_400_lbl = brace_400.get_text("400 pts diff $\\approx$ 91\\% win odds")
         brace_400_lbl.set_color(ELO_GOLD)
 
         self.play(
@@ -426,9 +426,9 @@ class Scene3_6_LogisticFormula(MovingCameraScene):
 
         # Properties table
         properties = VGroup(
-            Text("Guarantees:  0 < E_A < 1  (always valid probability)", font_size=19, color=ELO_GREEN),
-            Text("Symmetry:  E_A + E_B = 1  (zero-sum)", font_size=19, color=ELO_BLUE),
-            Text("At equal ratings:  E_A = 0.5  (50% each)", font_size=19, color=TEXT_GRAY),
+            Text("Guarantees:  0 < E_A < 1  (always valid probability)", font_size=20, color=ELO_GREEN),
+            Text("Symmetry:  E_A + E_B = 1  (zero-sum)", font_size=20, color=ELO_BLUE),
+            Text("At equal ratings:  E_A = 0.5  (50% each)", font_size=20, color=TEXT_GRAY),
         )
         properties.arrange(DOWN, aligned_edge=LEFT, buff=0.2)
         properties.move_to(DOWN * 2.3)
@@ -464,7 +464,7 @@ class Scene3_7_SigmoidVisualization(MovingCameraScene):
         x_label = Text("Rating Difference  (R_A - R_B)", font_size=16, color=TEXT_GRAY)
         x_label.next_to(axes.x_axis, DOWN, buff=0.3)
         y_label = Text("Win Probability", font_size=16, color=TEXT_GRAY)
-        y_label.next_to(axes.y_axis, LEFT, buff=0.3)
+        y_label.next_to(axes, LEFT, buff=0.3)
         y_label.rotate(90 * DEGREES)
 
         self.play(Create(axes), FadeIn(x_label), FadeIn(y_label), run_time=3.6)
@@ -516,7 +516,7 @@ class Scene3_7_SigmoidVisualization(MovingCameraScene):
 
         cap_text = Text(
             "Always between 0 and 1 - impossible outcomes get near-zero (not zero)",
-            font_size=18, color=TEXT_LIGHT
+            font_size=20, color=TEXT_LIGHT
         )
         cap_text.to_edge(DOWN, buff=0.5)
         self.play(FadeIn(cap_text, shift=UP * 0.3), run_time=4)

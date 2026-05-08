@@ -1,8 +1,8 @@
 # This file is used internally by FFMPEG.
 file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s03_elo_physics/1080p60/partial_movie_files/Scene3_1_EloBackground/3833965276_3856353496_223132457.mp4'
 file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s03_elo_physics/1080p60/partial_movie_files/Scene3_1_EloBackground/104335764_1193378972_3234351571.mp4'
-file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s03_elo_physics/1080p60/partial_movie_files/Scene3_1_EloBackground/104335764_3857128399_2610129971.mp4'
-file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s03_elo_physics/1080p60/partial_movie_files/Scene3_1_EloBackground/104335764_3511607038_4086465101.mp4'
-file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s03_elo_physics/1080p60/partial_movie_files/Scene3_1_EloBackground/104335764_3576005026_2183000055.mp4'
-file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s03_elo_physics/1080p60/partial_movie_files/Scene3_1_EloBackground/104335764_3972074170_3620023370.mp4'
-file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s03_elo_physics/1080p60/partial_movie_files/Scene3_1_EloBackground/104335764_89570170_1396600440.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s03_elo_physics/1080p60/partial_movie_files/Scene3_1_EloBackground/104335764_2072108594_2610129971.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s03_elo_physics/1080p60/partial_movie_files/Scene3_1_EloBackground/104335764_159687097_2688015261.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s03_elo_physics/1080p60/partial_movie_files/Scene3_1_EloBackground/104335764_3576005026_3467554302.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s03_elo_physics/1080p60/partial_movie_files/Scene3_1_EloBackground/104335764_3972074170_4030958684.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s03_elo_physics/1080p60/partial_movie_files/Scene3_1_EloBackground/104335764_2495618784_1396600440.mp4'

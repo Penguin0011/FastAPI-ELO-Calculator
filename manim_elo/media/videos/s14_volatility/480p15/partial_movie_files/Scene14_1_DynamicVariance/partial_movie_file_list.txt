@@ -1,0 +1,9 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s14_volatility/480p15/partial_movie_files/Scene14_1_DynamicVariance/3087832721_1109281750_223132457.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s14_volatility/480p15/partial_movie_files/Scene14_1_DynamicVariance/3350879045_3121907878_3319467722.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s14_volatility/480p15/partial_movie_files/Scene14_1_DynamicVariance/3350879045_4173063621_1252767347.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s14_volatility/480p15/partial_movie_files/Scene14_1_DynamicVariance/3350879045_2039990833_2721265354.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s14_volatility/480p15/partial_movie_files/Scene14_1_DynamicVariance/3350879045_16254207_2389354179.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s14_volatility/480p15/partial_movie_files/Scene14_1_DynamicVariance/3350879045_876252474_3611090822.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s14_volatility/480p15/partial_movie_files/Scene14_1_DynamicVariance/3350879045_3278807600_375407909.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s14_volatility/480p15/partial_movie_files/Scene14_1_DynamicVariance/3350879045_3732289758_2093962494.mp4'

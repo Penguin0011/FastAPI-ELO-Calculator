@@ -1,0 +1,10 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s09_plackett_luce/480p15/partial_movie_files/Scene9_2_SequentialSurvival/3087832721_684768578_223132457.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s09_plackett_luce/480p15/partial_movie_files/Scene9_2_SequentialSurvival/3350879045_2792772374_1549704281.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s09_plackett_luce/480p15/partial_movie_files/Scene9_2_SequentialSurvival/3350879045_3813881093_3634280959.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s09_plackett_luce/480p15/partial_movie_files/Scene9_2_SequentialSurvival/3350879045_1837029891_48934962.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s09_plackett_luce/480p15/partial_movie_files/Scene9_2_SequentialSurvival/3350879045_852850492_2190173129.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s09_plackett_luce/480p15/partial_movie_files/Scene9_2_SequentialSurvival/3350879045_3483545198_61156302.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s09_plackett_luce/480p15/partial_movie_files/Scene9_2_SequentialSurvival/3350879045_4083159313_1120625037.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s09_plackett_luce/480p15/partial_movie_files/Scene9_2_SequentialSurvival/3350879045_3725668193_2840055502.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s09_plackett_luce/480p15/partial_movie_files/Scene9_2_SequentialSurvival/3350879045_524767982_3788141549.mp4'

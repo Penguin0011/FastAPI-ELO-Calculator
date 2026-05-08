@@ -1,0 +1,7 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s17_appendix/480p15/partial_movie_files/Scene17_7_Bayes/3087832721_3433424113_223132457.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s17_appendix/480p15/partial_movie_files/Scene17_7_Bayes/3350879045_1859528763_666497447.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s17_appendix/480p15/partial_movie_files/Scene17_7_Bayes/3350879045_50604144_2694905556.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s17_appendix/480p15/partial_movie_files/Scene17_7_Bayes/3350879045_3173609801_4231549798.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s17_appendix/480p15/partial_movie_files/Scene17_7_Bayes/3350879045_2872842549_34337183.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s17_appendix/480p15/partial_movie_files/Scene17_7_Bayes/3350879045_3531036996_1635738578.mp4'

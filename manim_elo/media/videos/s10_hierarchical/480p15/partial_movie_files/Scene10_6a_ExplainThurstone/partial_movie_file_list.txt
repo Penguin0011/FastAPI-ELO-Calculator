@@ -1,0 +1,13 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s10_hierarchical/480p15/partial_movie_files/Scene10_6a_ExplainThurstone/3087832721_3351360210_223132457.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s10_hierarchical/480p15/partial_movie_files/Scene10_6a_ExplainThurstone/3350879045_608901966_2541673821.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s10_hierarchical/480p15/partial_movie_files/Scene10_6a_ExplainThurstone/3350879045_816073434_2695048686.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s10_hierarchical/480p15/partial_movie_files/Scene10_6a_ExplainThurstone/3350879045_1333727865_2791159337.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s10_hierarchical/480p15/partial_movie_files/Scene10_6a_ExplainThurstone/3350879045_816073434_3507406625.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s10_hierarchical/480p15/partial_movie_files/Scene10_6a_ExplainThurstone/3350879045_2087444632_3919449180.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s10_hierarchical/480p15/partial_movie_files/Scene10_6a_ExplainThurstone/3350879045_816073434_3766009466.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s10_hierarchical/480p15/partial_movie_files/Scene10_6a_ExplainThurstone/3350879045_2516689900_135805562.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s10_hierarchical/480p15/partial_movie_files/Scene10_6a_ExplainThurstone/3350879045_1391729620_3282659717.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s10_hierarchical/480p15/partial_movie_files/Scene10_6a_ExplainThurstone/3350879045_3189882975_3161174520.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s10_hierarchical/480p15/partial_movie_files/Scene10_6a_ExplainThurstone/3350879045_3278807600_4288012909.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s10_hierarchical/480p15/partial_movie_files/Scene10_6a_ExplainThurstone/3350879045_3396050837_1074837179.mp4'

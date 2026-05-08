@@ -70,7 +70,7 @@ class Scene10_1_LatentDecomposition(Scene):
             current_y += h
         
         equals = Text("=", font_size=32)
-        equals.move_to(LEFT * 0.5 + DOWN * 1.5)
+        equals.move_to(LEFT * 2.3 + DOWN * 1.5)
 
         result_bar = Rectangle(
             width=2.5, height=3.6,
@@ -297,7 +297,7 @@ class Scene10_4_ConstructorEvolution(Scene):
         # Strong autocorrelation note
         note = Text(
             "Strong autocorrelation: Good team likely stays good",
-            font_size=18,
+            font_size=20,
             color=ELO_GOLD
         )
         note.to_edge(DOWN, buff=0.5)
@@ -371,7 +371,7 @@ class Scene10_5_RuleChangeInflation(Scene):
         # Caption
         caption = Text(
             "New regulations = New game -> Less trust in historical performance",
-            font_size=18,
+            font_size=20,
             color=ELO_GOLD
         )
         caption.to_edge(DOWN, buff=0.4)
@@ -420,9 +420,9 @@ class Scene10_6_ThurstoneMosteller(Scene):
         # Benefit
         benefit = VGroup(
             Text("Why useful?", font_size=22, color=ELO_GOLD),
-            Text("• Enables Expectation Propagation", font_size=18, color=TEXT_GRAY),
-            Text("• Fast approximate inference", font_size=18, color=TEXT_GRAY),
-            Text("• Gaussian messages -> Easy to combine", font_size=18, color=TEXT_GRAY)
+            Text("• Enables Expectation Propagation", font_size=20, color=TEXT_GRAY),
+            Text("• Fast approximate inference", font_size=20, color=TEXT_GRAY),
+            Text("• Gaussian messages -> Easy to combine", font_size=20, color=TEXT_GRAY)
         )
         benefit.arrange(DOWN, aligned_edge=LEFT, buff=0.15)
         benefit.move_to(DOWN * 2)
@@ -467,7 +467,7 @@ class Scene10_1a_ExplainHierarchical(Scene):
         for math_str, title, desc, color, icon in components:
             row = VGroup(
                 MathTex(math_str, font_size=28, color=color),
-                Text(f"  {title}", font_size=18, color=color),
+                Text(f"  {title}", font_size=20, color=color),
                 Text(desc, font_size=14, color=TEXT_GRAY)
             )
             row.arrange(RIGHT, buff=0.3)
@@ -503,7 +503,7 @@ class Scene10_1a_ExplainHierarchical(Scene):
 
         takeaway = Text(
             "Separating these lets us credit driver skill vs car advantage",
-            font_size=18, color=ELO_GOLD
+            font_size=20, color=ELO_GOLD
         )
         takeaway.to_edge(DOWN, buff=0.3)
         self.play(Write(takeaway), run_time=4)
@@ -535,7 +535,7 @@ class Scene10_4a_ExplainAutoregressive(Scene):
         # Translation
         transl = VGroup(
             Text("In words:", font_size=20, color=ELO_GOLD),
-            Text("Next season's car ~ this season's car + random drift", font_size=18, color=TEXT_GRAY),
+            Text("Next season's car ~ this season's car + random drift", font_size=20, color=TEXT_GRAY),
         )
         transl.arrange(DOWN, buff=0.1)
         transl.move_to(UP * 0.3)
@@ -659,7 +659,7 @@ class Scene10_6a_ExplainThurstone(Scene):
 
         takeaway = Text(
             "The probit approximation makes Bayesian updates tractable",
-            font_size=18, color=ELO_GOLD
+            font_size=20, color=ELO_GOLD
         )
         takeaway.to_edge(DOWN, buff=0.3)
         self.play(Write(takeaway), run_time=4)

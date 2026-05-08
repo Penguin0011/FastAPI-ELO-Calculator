@@ -1,0 +1,11 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s04_update_kfactor/480p15/partial_movie_files/Scene4_2_UpdateEquation/3381340783_1413116034_223132457.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s04_update_kfactor/480p15/partial_movie_files/Scene4_2_UpdateEquation/1920720139_422732544_2561180776.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s04_update_kfactor/480p15/partial_movie_files/Scene4_2_UpdateEquation/1920720139_72140533_1068762744.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s04_update_kfactor/480p15/partial_movie_files/Scene4_2_UpdateEquation/1664819554_1853630267_2980573092.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s04_update_kfactor/480p15/partial_movie_files/Scene4_2_UpdateEquation/834353614_2783112575_3258575292.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s04_update_kfactor/480p15/partial_movie_files/Scene4_2_UpdateEquation/2537656126_2539858911_3995189301.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s04_update_kfactor/480p15/partial_movie_files/Scene4_2_UpdateEquation/3317798802_2081409471_2311837890.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s04_update_kfactor/480p15/partial_movie_files/Scene4_2_UpdateEquation/3317798802_3575005723_262497493.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s04_update_kfactor/480p15/partial_movie_files/Scene4_2_UpdateEquation/3317798802_3879069619_1720080989.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s04_update_kfactor/480p15/partial_movie_files/Scene4_2_UpdateEquation/3317798802_60909686_645553928.mp4'

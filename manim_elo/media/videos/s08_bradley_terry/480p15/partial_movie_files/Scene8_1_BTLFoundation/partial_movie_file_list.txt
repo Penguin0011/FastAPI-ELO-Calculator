@@ -1,0 +1,9 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s08_bradley_terry/480p15/partial_movie_files/Scene8_1_BTLFoundation/3087832721_3254652790_223132457.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s08_bradley_terry/480p15/partial_movie_files/Scene8_1_BTLFoundation/3350879045_2902487694_2259888275.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s08_bradley_terry/480p15/partial_movie_files/Scene8_1_BTLFoundation/3350879045_569446040_2363614977.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s08_bradley_terry/480p15/partial_movie_files/Scene8_1_BTLFoundation/3350879045_4098213619_1408725447.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s08_bradley_terry/480p15/partial_movie_files/Scene8_1_BTLFoundation/3350879045_261135644_1121447543.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s08_bradley_terry/480p15/partial_movie_files/Scene8_1_BTLFoundation/3350879045_4058325748_3022061128.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s08_bradley_terry/480p15/partial_movie_files/Scene8_1_BTLFoundation/3350879045_3278807600_2831532518.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s08_bradley_terry/480p15/partial_movie_files/Scene8_1_BTLFoundation/3350879045_3768717567_1698263642.mp4'

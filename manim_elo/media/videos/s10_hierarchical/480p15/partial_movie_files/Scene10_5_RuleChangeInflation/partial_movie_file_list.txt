@@ -1,0 +1,12 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s10_hierarchical/480p15/partial_movie_files/Scene10_5_RuleChangeInflation/3087832721_468779185_223132457.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s10_hierarchical/480p15/partial_movie_files/Scene10_5_RuleChangeInflation/3350879045_946726617_3188483396.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s10_hierarchical/480p15/partial_movie_files/Scene10_5_RuleChangeInflation/3350879045_555995769_3697233556.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s10_hierarchical/480p15/partial_movie_files/Scene10_5_RuleChangeInflation/3350879045_992302916_1582705830.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s10_hierarchical/480p15/partial_movie_files/Scene10_5_RuleChangeInflation/3350879045_3925579639_2134888908.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s10_hierarchical/480p15/partial_movie_files/Scene10_5_RuleChangeInflation/3350879045_2492386748_2984653580.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s10_hierarchical/480p15/partial_movie_files/Scene10_5_RuleChangeInflation/3350879045_1120061716_876947358.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s10_hierarchical/480p15/partial_movie_files/Scene10_5_RuleChangeInflation/3350879045_2526445036_3422983414.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s10_hierarchical/480p15/partial_movie_files/Scene10_5_RuleChangeInflation/3350879045_830356845_1646339187.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s10_hierarchical/480p15/partial_movie_files/Scene10_5_RuleChangeInflation/3350879045_3278807600_482321584.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s10_hierarchical/480p15/partial_movie_files/Scene10_5_RuleChangeInflation/3350879045_3391270199_1065639352.mp4'

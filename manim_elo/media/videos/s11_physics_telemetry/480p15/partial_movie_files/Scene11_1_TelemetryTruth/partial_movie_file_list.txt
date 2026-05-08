@@ -1,0 +1,11 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s11_physics_telemetry/480p15/partial_movie_files/Scene11_1_TelemetryTruth/3087832721_2448084332_223132457.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s11_physics_telemetry/480p15/partial_movie_files/Scene11_1_TelemetryTruth/3350879045_690788706_1280583810.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s11_physics_telemetry/480p15/partial_movie_files/Scene11_1_TelemetryTruth/3350879045_1309032382_2537287448.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s11_physics_telemetry/480p15/partial_movie_files/Scene11_1_TelemetryTruth/3350879045_3050714312_890758462.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s11_physics_telemetry/480p15/partial_movie_files/Scene11_1_TelemetryTruth/3350879045_3346983093_1237690071.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s11_physics_telemetry/480p15/partial_movie_files/Scene11_1_TelemetryTruth/3350879045_360969560_1110309113.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s11_physics_telemetry/480p15/partial_movie_files/Scene11_1_TelemetryTruth/3350879045_4064730186_3037497168.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s11_physics_telemetry/480p15/partial_movie_files/Scene11_1_TelemetryTruth/3350879045_1031131048_2825594389.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s11_physics_telemetry/480p15/partial_movie_files/Scene11_1_TelemetryTruth/3350879045_2924455773_3067671262.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s11_physics_telemetry/480p15/partial_movie_files/Scene11_1_TelemetryTruth/3350879045_3141720046_2577413375.mp4'

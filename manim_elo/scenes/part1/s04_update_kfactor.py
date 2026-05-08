@@ -121,8 +121,8 @@ class Scene4_2_UpdateEquation(MovingCameraScene):
         labels_data = [
             (formula[2], "Old Rating", ELO_BLUE, DOWN),
             (formula[4], "Sensitivity", ELO_GOLD, UP),
-            (formula[6], "Actual\nScore", ELO_GREEN, DOWN),
-            (formula[8], "Expected\nScore", ELO_RED, DOWN),
+            (formula[6], "Actual", ELO_GREEN, DOWN),
+            (formula[8], "Expected", ELO_RED, UP),
         ]
 
         braces = VGroup()
@@ -304,10 +304,10 @@ class Scene4_5_KFactorSpectrum(Scene):
         header.to_edge(UP, buff=0.7)
         self.play(Write(header), run_time=1.5)
 
-        # Gradient spectrum bar
+        # Gradient spectrum bar — 8 units wide so side labels stay on-screen
         n_segs = 20
         gradient = VGroup()
-        bar_width = 10.0
+        bar_width = 8.0
         for i in range(n_segs):
             t = i / (n_segs - 1)
             seg = Rectangle(
@@ -315,7 +315,7 @@ class Scene4_5_KFactorSpectrum(Scene):
                 fill_color=manim_interpolate_color(ManimColor(ELO_RED), ManimColor(ELO_BLUE), t),
                 fill_opacity=0.85, stroke_width=0
             )
-            seg.move_to(LEFT * 5 + RIGHT * (bar_width / n_segs) * (i + 0.5) + UP * 0.8)
+            seg.move_to(LEFT * 4 + RIGHT * (bar_width / n_segs) * (i + 0.5) + UP * 0.8)
             gradient.add(seg)
 
         bar_outline = Rectangle(width=bar_width, height=0.9,
@@ -402,7 +402,7 @@ class Scene4_2a_ExplainUpdateEquation(Scene):
             box = SurroundingRectangle(target, color=color, buff=0.08, stroke_width=2)
 
             math_label = MathTex(math_str, font_size=26, color=color)
-            desc_label = Text(desc_str, font_size=17, color=TEXT_GRAY)
+            desc_label = Text(desc_str, font_size=20, color=TEXT_GRAY)
             grp = VGroup(math_label, desc_label)
             grp.arrange(DOWN, buff=0.18)
             grp.move_to(DOWN * 0.5)
@@ -422,9 +422,9 @@ class Scene4_2a_ExplainUpdateEquation(Scene):
         surprise_title.move_to(DOWN * 0.1)
 
         cases = VGroup(
-            Text("Win vs. underdog  (E=0.2):  +0.8  (big boost!)", font_size=17, color=ELO_GREEN),
-            Text("Win as expected   (E=0.9):  +0.1  (small gain)", font_size=17, color=TEXT_GRAY),
-            Text("Lose as underdog  (E=0.9):  -0.9  (big drop!)", font_size=17, color=ELO_RED),
+            Text("Win vs. underdog  (E=0.2):  +0.8  (big boost!)", font_size=20, color=ELO_GREEN),
+            Text("Win as expected   (E=0.9):  +0.1  (small gain)", font_size=20, color=TEXT_GRAY),
+            Text("Lose as underdog  (E=0.9):  -0.9  (big drop!)", font_size=20, color=ELO_RED),
         )
         cases.arrange(DOWN, aligned_edge=LEFT, buff=0.18)
         cases.next_to(surprise_title, DOWN, buff=0.3)
@@ -450,7 +450,7 @@ class Scene4_5a_ExplainKFactor(MovingCameraScene):
             x_length=9, y_length=3.5, tips=False,
             axis_config={"include_numbers": True, "font_size": 11}
         )
-        axes.move_to(DOWN * 0.5)
+        axes.move_to(UP * 0.5)
 
         x_label = Text("Game #", font_size=14, color=TEXT_GRAY)
         x_label.next_to(axes.x_axis, DOWN, buff=0.2)
@@ -494,15 +494,15 @@ class Scene4_5a_ExplainKFactor(MovingCameraScene):
         table_title.to_edge(DOWN, buff=1.2)
 
         rows = VGroup(
-            VGroup(Text("K = 40", font_size=16, color=ELO_RED),
-                   Text("Rookie", font_size=16, color=TEXT_GRAY),
-                   Text("Fast convergence, volatile", font_size=16, color=TEXT_GRAY)),
-            VGroup(Text("K = 20", font_size=16, color=ELO_GOLD),
-                   Text("Established", font_size=16, color=TEXT_GRAY),
-                   Text("Balanced updates", font_size=16, color=TEXT_GRAY)),
-            VGroup(Text("K = 10", font_size=16, color=ELO_BLUE),
-                   Text("Veteran", font_size=16, color=TEXT_GRAY),
-                   Text("Very stable", font_size=16, color=TEXT_GRAY)),
+            VGroup(Text("K = 40", font_size=18, color=ELO_RED),
+                   Text("Rookie", font_size=18, color=TEXT_GRAY),
+                   Text("Fast convergence, volatile", font_size=18, color=TEXT_GRAY)),
+            VGroup(Text("K = 20", font_size=18, color=ELO_GOLD),
+                   Text("Established", font_size=18, color=TEXT_GRAY),
+                   Text("Balanced updates", font_size=18, color=TEXT_GRAY)),
+            VGroup(Text("K = 10", font_size=18, color=ELO_BLUE),
+                   Text("Veteran", font_size=18, color=TEXT_GRAY),
+                   Text("Very stable", font_size=18, color=TEXT_GRAY)),
         )
         for row in rows:
             row.arrange(RIGHT, buff=1.2)

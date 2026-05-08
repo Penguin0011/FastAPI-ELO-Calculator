@@ -1,0 +1,8 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s13_mcmc/480p15/partial_movie_files/Scene13_4_GelmanRubin/3087832721_2294614474_223132457.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s13_mcmc/480p15/partial_movie_files/Scene13_4_GelmanRubin/3350879045_4170899970_3019128734.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s13_mcmc/480p15/partial_movie_files/Scene13_4_GelmanRubin/3350879045_3797478862_3974242293.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s13_mcmc/480p15/partial_movie_files/Scene13_4_GelmanRubin/3350879045_43028188_2162371836.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s13_mcmc/480p15/partial_movie_files/Scene13_4_GelmanRubin/3350879045_969463350_1733085125.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s13_mcmc/480p15/partial_movie_files/Scene13_4_GelmanRubin/3350879045_3278807600_3946126847.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s13_mcmc/480p15/partial_movie_files/Scene13_4_GelmanRubin/3350879045_2856865641_3422903067.mp4'

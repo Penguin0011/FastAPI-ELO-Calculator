@@ -1,0 +1,11 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s04_update_kfactor/1080p60/partial_movie_files/Scene4_5a_ExplainKFactor/2588080351_2497111467_223132457.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s04_update_kfactor/1080p60/partial_movie_files/Scene4_5a_ExplainKFactor/3957643777_843671853_1451207995.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s04_update_kfactor/1080p60/partial_movie_files/Scene4_5a_ExplainKFactor/3957643777_3084827956_1292423682.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s04_update_kfactor/1080p60/partial_movie_files/Scene4_5a_ExplainKFactor/3957643777_839364340_2401243091.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s04_update_kfactor/1080p60/partial_movie_files/Scene4_5a_ExplainKFactor/810072555_2527285004_2869183837.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s04_update_kfactor/1080p60/partial_movie_files/Scene4_5a_ExplainKFactor/1235559981_386353275_2987149469.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s04_update_kfactor/1080p60/partial_movie_files/Scene4_5a_ExplainKFactor/1575149921_2539858911_2539640438.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s04_update_kfactor/1080p60/partial_movie_files/Scene4_5a_ExplainKFactor/604995239_3282380694_2539640438.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s04_update_kfactor/1080p60/partial_movie_files/Scene4_5a_ExplainKFactor/604995239_3879069619_3791473465.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s04_update_kfactor/1080p60/partial_movie_files/Scene4_5a_ExplainKFactor/604995239_280286160_3778153299.mp4'

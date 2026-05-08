@@ -1,0 +1,10 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s08_bradley_terry/480p15/partial_movie_files/Scene8_4_HodgeDecomposition/3087832721_889032444_223132457.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s08_bradley_terry/480p15/partial_movie_files/Scene8_4_HodgeDecomposition/3350879045_4114066205_4095703354.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s08_bradley_terry/480p15/partial_movie_files/Scene8_4_HodgeDecomposition/3350879045_2992331842_10449500.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s08_bradley_terry/480p15/partial_movie_files/Scene8_4_HodgeDecomposition/3350879045_2048110125_1957887605.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s08_bradley_terry/480p15/partial_movie_files/Scene8_4_HodgeDecomposition/3350879045_3944579233_1149847371.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s08_bradley_terry/480p15/partial_movie_files/Scene8_4_HodgeDecomposition/3350879045_1118262735_2543426686.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s08_bradley_terry/480p15/partial_movie_files/Scene8_4_HodgeDecomposition/3350879045_3254363579_2695250718.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s08_bradley_terry/480p15/partial_movie_files/Scene8_4_HodgeDecomposition/3350879045_3278807600_3862057263.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s08_bradley_terry/480p15/partial_movie_files/Scene8_4_HodgeDecomposition/3350879045_4201206309_1390162024.mp4'

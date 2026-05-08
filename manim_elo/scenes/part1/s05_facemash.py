@@ -35,7 +35,7 @@ class Scene5_1_CulturalExplosion(Scene):
         self.play(FadeIn(tagline, shift=DOWN * 0.3), run_time=4)
 
         # Award recognition (no emoji)
-        awards = Text("3 Academy Awards", font_size=24, color=ELO_GOLD)
+        awards = Text("3 Academy Awards", font_size=28, color=ELO_GOLD)
         awards.move_to(DOWN * 1.5)
         self.play(FadeIn(awards, shift=UP * 0.2), run_time=3.2)
 
@@ -257,7 +257,7 @@ class Scene5_4_CatastrophicError(Scene):
         # Example setup
         example = Text(
             "Example: Photo A rated 1800, Photo B rated 1400",
-            font_size=22, color=TEXT_GRAY
+            font_size=26, color=TEXT_GRAY
         )
         example.move_to(UP * 1.8)
         self.play(FadeIn(example, shift=DOWN * 0.2), run_time=3.2)
@@ -284,7 +284,7 @@ class Scene5_4_CatastrophicError(Scene):
 
         # Dramatic result with flash
         result = Text("NEGATIVE PROBABILITY: -11%", font_size=36, color=ELO_RED)
-        result.move_to(DOWN * 2)
+        result.move_to(DOWN * 2.5)
         result_box = SurroundingRectangle(result, color=ELO_RED, buff=0.2, stroke_width=3)
 
         self.play(Write(result), Create(result_box), run_time=4)
@@ -299,7 +299,7 @@ class Scene5_4_CatastrophicError(Scene):
             fill_color=ELO_RED, fill_opacity=0.25,
             stroke_color=ELO_RED, stroke_width=2
         )
-        crash_box.move_to(DOWN * 3)
+        crash_box.move_to(DOWN * 3.4)
         crash = Text("SYSTEM CRASH", font_size=32, color=ELO_RED, weight=BOLD)
         crash.move_to(crash_box)
 
@@ -456,7 +456,7 @@ class Scene5_3a_ExplainFacemashError(Scene):
         axes.move_to(DOWN * 0.5)
 
         x_label = Text("Rating gap (R_B - R_A)", font_size=14, color=TEXT_GRAY)
-        x_label.next_to(axes.x_axis, DOWN, buff=0.2)
+        x_label.next_to(axes, DOWN, buff=0.15)
         x_label_bg = RoundedRectangle(
             width=x_label.width + 0.2, height=x_label.height + 0.16,
             corner_radius=0.12, fill_color=BLACK, fill_opacity=0.65, stroke_width=0
@@ -464,7 +464,8 @@ class Scene5_3a_ExplainFacemashError(Scene):
         x_label_bg.move_to(x_label)
 
         y_label = Text("Denominator value", font_size=14, color=TEXT_GRAY)
-        y_label.next_to(axes.y_axis, LEFT, buff=0.2)
+        y_label.next_to(axes, LEFT, buff=0.15)
+        y_label.rotate(90 * DEGREES)
         y_label_bg = RoundedRectangle(
             width=y_label.width + 0.2, height=y_label.height + 0.16,
             corner_radius=0.12, fill_color=BLACK, fill_opacity=0.65, stroke_width=0
@@ -539,7 +540,7 @@ class Scene5_3a_ExplainFacemashError(Scene):
 
         # Two-column layout: left = Multiply (Wrong), right = Exponent (Correct)
         mult_items = VGroup(
-            Text("Multiply (Wrong):", font_size=17, color=ELO_RED, weight=BOLD),
+            Text("Multiply (Wrong):", font_size=20, color=ELO_RED, weight=BOLD),
             Text("Gap > 40 pts: denominator < 0", font_size=14, color=TEXT_GRAY),
             MathTex(r"E_A = \frac{1}{\text{neg}} \Rightarrow \text{neg prob!}", font_size=22, color=ELO_RED),
             Text("Invalid — CRASHES", font_size=14, color=ELO_RED),
@@ -553,7 +554,7 @@ class Scene5_3a_ExplainFacemashError(Scene):
         )
 
         exp_items = VGroup(
-            Text("Exponent (Correct):", font_size=17, color=ELO_GREEN, weight=BOLD),
+            Text("Exponent (Correct):", font_size=20, color=ELO_GREEN, weight=BOLD),
             Text("Denominator always > 1", font_size=14, color=TEXT_GRAY),
             MathTex(r"E_A = \frac{1}{1+10^x} \in (0,1)", font_size=22, color=ELO_GREEN),
             Text("Always a valid probability!", font_size=14, color=ELO_GREEN),
@@ -577,7 +578,7 @@ class Scene5_3a_ExplainFacemashError(Scene):
 
         takeaway = Text(
             "Exponentiation guarantees valid probabilities for ANY rating gap",
-            font_size=17, color=ELO_GOLD
+            font_size=20, color=ELO_GOLD
         )
         takeaway.to_edge(DOWN, buff=0.4)
         self.play(FadeIn(takeaway, shift=UP * 0.3), run_time=4)

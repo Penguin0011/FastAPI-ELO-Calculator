@@ -1,0 +1,9 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s02_harkness/480p15/partial_movie_files/Scene2_1_NeedForRanking/3087832721_2121435232_223132457.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s02_harkness/480p15/partial_movie_files/Scene2_1_NeedForRanking/3350879045_1695582711_2438669002.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s02_harkness/480p15/partial_movie_files/Scene2_1_NeedForRanking/3350879045_1936748928_1184842890.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s02_harkness/480p15/partial_movie_files/Scene2_1_NeedForRanking/3350879045_1284250904_1023197951.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s02_harkness/480p15/partial_movie_files/Scene2_1_NeedForRanking/3350879045_1379408646_3297458687.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s02_harkness/480p15/partial_movie_files/Scene2_1_NeedForRanking/3350879045_3452199692_2434805710.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s02_harkness/480p15/partial_movie_files/Scene2_1_NeedForRanking/3350879045_1584273432_300254805.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s02_harkness/480p15/partial_movie_files/Scene2_1_NeedForRanking/3350879045_2983452382_2085170307.mp4'

@@ -333,17 +333,19 @@ class Scene6_4_CarVsDriver(Scene):
                         fill_color=ELO_GOLD, fill_opacity=0.7,
                         stroke_color=ELO_GOLD)
         car_label = Text("Car Performance", font_size=14, color=TEXT_WHITE, weight=BOLD)
-        car_label.move_to(car)
 
         driver = Rectangle(width=2.2, height=0.9,
                            fill_color=ELO_BLUE, fill_opacity=0.7,
                            stroke_color=ELO_BLUE)
         driver_label = Text("Driver Skill", font_size=14, color=TEXT_WHITE, weight=BOLD)
-        driver_label.move_to(driver)
 
         stacked = VGroup(car, driver)
         stacked.arrange(UP, buff=0)
         stacked.move_to(RIGHT * 2 + UP * 0.5)
+
+        # Position labels after arrangement so they land inside their rectangles
+        car_label.move_to(car)
+        driver_label.move_to(driver)
 
         self.play(FadeIn(car), FadeIn(car_label), run_time=2)
         self.play(FadeIn(driver), FadeIn(driver_label), run_time=2)
@@ -434,7 +436,7 @@ class Scene6_5_RussellExample(Scene):
             Text("600 rating points better?", font_size=24, color=ELO_GOLD)
         )
         question.arrange(DOWN, buff=0.1)
-        question.move_to(DOWN * 2.5)
+        question.move_to(DOWN * 2.2)
         self.play(
             LaggedStart(*[FadeIn(q, shift=UP * 0.2) for q in question], lag_ratio=0.3),
             run_time=4
@@ -495,15 +497,15 @@ class Scene6_6_AdvancedSolutionsPreview(Scene):
         legends = VGroup(
             VGroup(
                 MathTex(r"\beta_{\text{driver},i}", font_size=20, color=ELO_BLUE),
-                Text("  driver skill coefficient", font_size=17, color=TEXT_GRAY)
+                Text("  driver skill coefficient", font_size=20, color=TEXT_GRAY)
             ).arrange(RIGHT, buff=0.08),
             VGroup(
                 MathTex(r"\beta_{\text{car},j}", font_size=20, color=ELO_GOLD),
-                Text("  car performance coefficient", font_size=17, color=TEXT_GRAY)
+                Text("  car performance coefficient", font_size=20, color=TEXT_GRAY)
             ).arrange(RIGHT, buff=0.08),
             VGroup(
                 MathTex(r"\varepsilon_{ij}", font_size=20, color=ELO_PURPLE),
-                Text("  random noise (weather, incidents)", font_size=17, color=TEXT_GRAY)
+                Text("  random noise (weather, incidents)", font_size=20, color=TEXT_GRAY)
             ).arrange(RIGHT, buff=0.08),
         )
         legends.arrange(DOWN, aligned_edge=LEFT, buff=0.18)
@@ -516,7 +518,7 @@ class Scene6_6_AdvancedSolutionsPreview(Scene):
             run_time=4
         )
         self.wait(15)
-        self.play(*[FadeOut(mob) for mob in [formula_intro, formula, legends]], run_time=2)
+        self.play(*[FadeOut(mob) for mob in [formula_intro, formula, legends, header, sub]], run_time=2)
 
         # --- Teammate link ---
         tm_header = Text("The Teammate Link", font_size=30, color=ELO_GREEN, weight=BOLD)
@@ -538,7 +540,7 @@ class Scene6_6_AdvancedSolutionsPreview(Scene):
 
         tm_example = Text(
             "Hamilton 0.2s faster than Bottas in same Mercedes  ->  driver gap = 0.2s",
-            font_size=17, color=TEXT_LIGHT
+            font_size=20, color=TEXT_LIGHT
         )
         tm_example.move_to(UP * 0.5)
         tm_bg = SurroundingRectangle(
@@ -548,7 +550,7 @@ class Scene6_6_AdvancedSolutionsPreview(Scene):
 
         tm_note = Text(
             "Teammates share the same car coefficient -> any difference is pure driver skill",
-            font_size=16, color=TEXT_GRAY, slant=ITALIC
+            font_size=18, color=TEXT_GRAY, slant=ITALIC
         )
         tm_note.move_to(DOWN * 0.3)
 

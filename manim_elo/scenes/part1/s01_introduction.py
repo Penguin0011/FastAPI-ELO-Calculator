@@ -194,7 +194,7 @@ class Scene1_3_EvolutionTimeline(Scene):
             name_t = Text(era["name"], font_size=30, color=era["color"], weight=BOLD)
             name_t.next_to(dot, UP, buff=0.5)
 
-            desc_t = Text(era["desc"], font_size=17, color=TEXT_GRAY)
+            desc_t = Text(era["desc"], font_size=20, color=TEXT_GRAY)
             desc_t.next_to(name_t, UP, buff=0.15)
 
             self.play(

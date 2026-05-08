@@ -1,0 +1,6 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s17_appendix/480p15/partial_movie_files/Scene17_4_BradleyTerry/3087832721_2449035578_223132457.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s17_appendix/480p15/partial_movie_files/Scene17_4_BradleyTerry/3350879045_1412100014_627435855.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s17_appendix/480p15/partial_movie_files/Scene17_4_BradleyTerry/3350879045_2686172341_1261318510.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s17_appendix/480p15/partial_movie_files/Scene17_4_BradleyTerry/3350879045_2872842549_1899453684.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s17_appendix/480p15/partial_movie_files/Scene17_4_BradleyTerry/3350879045_3047429324_4012598387.mp4'

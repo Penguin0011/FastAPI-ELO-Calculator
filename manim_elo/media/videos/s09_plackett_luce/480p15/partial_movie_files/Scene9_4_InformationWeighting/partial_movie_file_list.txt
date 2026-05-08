@@ -1,0 +1,9 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s09_plackett_luce/480p15/partial_movie_files/Scene9_4_InformationWeighting/3087832721_4052556112_223132457.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s09_plackett_luce/480p15/partial_movie_files/Scene9_4_InformationWeighting/3350879045_3342047541_3299909875.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s09_plackett_luce/480p15/partial_movie_files/Scene9_4_InformationWeighting/3350879045_2964827248_3189990479.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s09_plackett_luce/480p15/partial_movie_files/Scene9_4_InformationWeighting/3350879045_3578442591_1789486505.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s09_plackett_luce/480p15/partial_movie_files/Scene9_4_InformationWeighting/3350879045_3426968713_1267473611.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s09_plackett_luce/480p15/partial_movie_files/Scene9_4_InformationWeighting/3350879045_3471484433_1331660655.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s09_plackett_luce/480p15/partial_movie_files/Scene9_4_InformationWeighting/3350879045_3725668193_805279845.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s09_plackett_luce/480p15/partial_movie_files/Scene9_4_InformationWeighting/3350879045_3538372000_6144743.mp4'

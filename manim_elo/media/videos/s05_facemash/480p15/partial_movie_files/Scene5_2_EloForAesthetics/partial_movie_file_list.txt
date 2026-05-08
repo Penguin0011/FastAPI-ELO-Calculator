@@ -1,0 +1,11 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s05_facemash/480p15/partial_movie_files/Scene5_2_EloForAesthetics/3087832721_1605293646_223132457.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s05_facemash/480p15/partial_movie_files/Scene5_2_EloForAesthetics/3350879045_1066239449_1788387035.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s05_facemash/480p15/partial_movie_files/Scene5_2_EloForAesthetics/3350879045_1820111838_275441627.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s05_facemash/480p15/partial_movie_files/Scene5_2_EloForAesthetics/3350879045_3895873765_4032356488.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s05_facemash/480p15/partial_movie_files/Scene5_2_EloForAesthetics/3350879045_3986486298_1415524366.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s05_facemash/480p15/partial_movie_files/Scene5_2_EloForAesthetics/3350879045_3447290341_1719623513.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s05_facemash/480p15/partial_movie_files/Scene5_2_EloForAesthetics/3350879045_1773221072_1931911064.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s05_facemash/480p15/partial_movie_files/Scene5_2_EloForAesthetics/3350879045_2783378045_158706207.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s05_facemash/480p15/partial_movie_files/Scene5_2_EloForAesthetics/3350879045_2352605377_844164301.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s05_facemash/480p15/partial_movie_files/Scene5_2_EloForAesthetics/3350879045_994236253_3438041306.mp4'

@@ -1,0 +1,13 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s04_update_kfactor/480p15/partial_movie_files/Scene4_3_OutperformanceExample/3087832721_3280582377_223132457.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s04_update_kfactor/480p15/partial_movie_files/Scene4_3_OutperformanceExample/3350879045_1479053931_634907997.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s04_update_kfactor/480p15/partial_movie_files/Scene4_3_OutperformanceExample/3350879045_2350563819_2961801000.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s04_update_kfactor/480p15/partial_movie_files/Scene4_3_OutperformanceExample/3350879045_2448222901_899746600.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s04_update_kfactor/480p15/partial_movie_files/Scene4_3_OutperformanceExample/3350879045_1094105924_3239643038.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s04_update_kfactor/480p15/partial_movie_files/Scene4_3_OutperformanceExample/3350879045_3725274357_2703102950.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s04_update_kfactor/480p15/partial_movie_files/Scene4_3_OutperformanceExample/3350879045_4223034971_1792074984.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s04_update_kfactor/480p15/partial_movie_files/Scene4_3_OutperformanceExample/3350879045_2944800199_948088325.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s04_update_kfactor/480p15/partial_movie_files/Scene4_3_OutperformanceExample/3350879045_227361092_1569351769.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s04_update_kfactor/480p15/partial_movie_files/Scene4_3_OutperformanceExample/3350879045_1739716964_1252828661.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s04_update_kfactor/480p15/partial_movie_files/Scene4_3_OutperformanceExample/3350879045_4277570474_937209990.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s04_update_kfactor/480p15/partial_movie_files/Scene4_3_OutperformanceExample/3350879045_2354006589_3746113250.mp4'

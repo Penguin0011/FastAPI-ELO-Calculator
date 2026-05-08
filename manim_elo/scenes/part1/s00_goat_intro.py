@@ -105,18 +105,18 @@ class Scene0_1_BasketballDebate(MovingCameraScene):
             lbj_stats[0].copy(),  # "4x NBA Champion"
         )
         zoom_bg = Rectangle(
-            width=8.5, height=1.5,
+            width=8.5, height=1.3,
             fill_color=DARKER_BG, fill_opacity=0.92,
             stroke_color=ELO_GOLD, stroke_width=2
         )
-        zoom_bg.move_to(DOWN * 2.8)
+        zoom_bg.move_to(DOWN * 2.9)
 
         zoom_mj = Text("MJ: 6 rings", font_size=26, color=ELO_RED, weight=BOLD)
-        zoom_mj.move_to(DOWN * 2.65 + LEFT * 2.2)
+        zoom_mj.move_to(DOWN * 2.75 + LEFT * 2.2)
         zoom_vs = Text("vs", font_size=22, color=TEXT_GRAY)
-        zoom_vs.move_to(DOWN * 2.65)
+        zoom_vs.move_to(DOWN * 2.75)
         zoom_lbj = Text("LeBron: 4 rings", font_size=26, color=ELO_BLUE, weight=BOLD)
-        zoom_lbj.move_to(DOWN * 2.65 + RIGHT * 2.4)
+        zoom_lbj.move_to(DOWN * 2.75 + RIGHT * 2.4)
         zoom_note = Text("But 6 attempts vs 10 attempts...", font_size=18, color=ELO_GOLD, slant=ITALIC)
         zoom_note.move_to(DOWN * 3.25)
 
@@ -232,26 +232,26 @@ class Scene0_2_SoccerDebate(MovingCameraScene):
 
         # Zoom into the Ballon d'Or stat as the key flashpoint
         zoom_bg = Rectangle(
-            width=9.5, height=1.6,
+            width=9.5, height=1.3,
             fill_color=DARKER_BG, fill_opacity=0.92,
             stroke_color=ELO_GOLD, stroke_width=2
         )
-        zoom_bg.move_to(DOWN * 2.8)
+        zoom_bg.move_to(DOWN * 2.95)
         zoom_messi = Text("Messi: 8 Ballon d'Or", font_size=24, color=ELO_BLUE, weight=BOLD)
-        zoom_messi.move_to(DOWN * 2.6 + LEFT * 2.5)
+        zoom_messi.move_to(DOWN * 2.8 + LEFT * 2.5)
         zoom_vs2 = Text("vs", font_size=22, color=TEXT_GRAY)
-        zoom_vs2.move_to(DOWN * 2.6)
+        zoom_vs2.move_to(DOWN * 2.8)
         zoom_cr7 = Text("Ronaldo: 5 Ballon d'Or", font_size=24, color=ELO_RED, weight=BOLD)
-        zoom_cr7.move_to(DOWN * 2.6 + RIGHT * 2.5)
+        zoom_cr7.move_to(DOWN * 2.8 + RIGHT * 2.5)
         zoom_note = Text("But Ronaldo won more UCL titles...", font_size=18, color=ELO_GOLD, slant=ITALIC)
-        zoom_note.move_to(DOWN * 3.25)
+        zoom_note.move_to(DOWN * 3.35)
 
         self.play(FadeIn(zoom_bg), run_time=1.2)
         self.play(Write(zoom_messi), Write(zoom_vs2), Write(zoom_cr7), run_time=3.2)
 
         # Zoom in on that debate box
         self.play(
-            self.camera.frame.animate.scale(0.70).move_to(DOWN * 2.8),
+            self.camera.frame.animate.scale(0.70).move_to(DOWN * 2.95),
             run_time=4
         )
         self.play(FadeIn(zoom_note, shift=UP * 0.2), run_time=2.8)
@@ -302,7 +302,7 @@ class Scene0_3_MoreDebates(MovingCameraScene):
             row.arrange(RIGHT, buff=0.4)
             debate_rows.add(row)
 
-        debate_rows.arrange(DOWN, aligned_edge=LEFT, buff=0.45)
+        debate_rows.arrange(DOWN, aligned_edge=LEFT, buff=0.55)
         debate_rows.move_to(LEFT * 1.5 + DOWN * 0.3)
 
         self.play(
@@ -318,7 +318,7 @@ class Scene0_3_MoreDebates(MovingCameraScene):
         )
         chess_note = Text(
             "Fischer dominated the 70s — Kasparov dominated the 80s-90s",
-            font_size=17, color=ELO_GOLD, slant=ITALIC
+            font_size=20, color=ELO_GOLD, slant=ITALIC
         )
         chess_note.next_to(chess_row, DOWN, buff=0.25)
         chess_note_bg = SurroundingRectangle(

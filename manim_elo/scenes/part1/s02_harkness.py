@@ -150,7 +150,7 @@ class Scene2_2_LinearMechanics(Scene):
         x_label = Text("Rating diff from opponents", font_size=16, color=TEXT_GRAY)
         x_label.next_to(axes.x_axis, DOWN, buff=0.25)
         y_label = Text("Score %", font_size=14, color=TEXT_GRAY)
-        y_label.next_to(axes.y_axis, LEFT, buff=0.15)
+        y_label.next_to(axes, LEFT, buff=0.1)
         y_label.rotate(90 * DEGREES)
 
         linear_line = axes.plot(lambda x: 50 + x * 0.1, x_range=[-500, 500], color=ELO_GOLD)
@@ -411,12 +411,12 @@ class Scene2_5_NeedForProbability(MovingCameraScene):
             axis_config={"include_numbers": True, "font_size": 14},
             tips=False
         )
-        axes.shift(DOWN * 0.5)
+        axes.shift(UP * 0.2)
 
         x_label = Text("Rating Difference (A - B)", font_size=16, color=TEXT_GRAY)
         x_label.next_to(axes.x_axis, DOWN, buff=0.3)
         y_label = Text("Win %", font_size=16, color=TEXT_GRAY)
-        y_label.next_to(axes.y_axis, LEFT, buff=0.3)
+        y_label.next_to(axes, LEFT, buff=0.3)
         y_label.rotate(90 * DEGREES)
 
         self.play(Create(axes), FadeIn(x_label), FadeIn(y_label), run_time=3.6)

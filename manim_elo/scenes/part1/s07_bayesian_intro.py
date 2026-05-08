@@ -219,8 +219,8 @@ class Scene7_3_RankingContext(Scene):
 
         example = VGroup(
             Text("Example:", font_size=20, color=TEXT_LIGHT, weight=BOLD),
-            Text("Prior: Player rated ~2000 (uncertain)  |  Beats a 2200: supports HIGHER skill", font_size=17, color=TEXT_GRAY),
-            Text("Posterior: Belief shifts up, uncertainty shrinks", font_size=17, color=ELO_GREEN)
+            Text("Prior: Player rated ~2000 (uncertain)  |  Beats a 2200: supports HIGHER skill", font_size=20, color=TEXT_GRAY),
+            Text("Posterior: Belief shifts up, uncertainty shrinks", font_size=20, color=ELO_GREEN)
         )
         example.arrange(DOWN, aligned_edge=LEFT, buff=0.12)
         example.move_to(ex_box)
@@ -254,7 +254,7 @@ class Scene7_4_GaussianGhost(Scene):
             tips=False,
             axis_config={"include_numbers": True, "font_size": 14}
         )
-        axes.shift(DOWN * 0.5)
+        axes.shift(DOWN * 0.2)
 
         x_label = Text("Skill Rating", font_size=18, color=TEXT_GRAY)
         x_label.next_to(axes.x_axis, DOWN, buff=0.3)
@@ -653,17 +653,17 @@ class Scene7_6a_ExplainTrueSkill(Scene):
         parts = VGroup(
             VGroup(
                 MathTex(r"\mu", font_size=36, color=ELO_BLUE),
-                Text("Best estimate of skill", font_size=17, color=TEXT_GRAY),
+                Text("Best estimate of skill", font_size=20, color=TEXT_GRAY),
                 Text("(center of bell curve)", font_size=13, color=TEXT_GRAY)
             ),
             VGroup(
                 MathTex(r"\sigma", font_size=36, color=ELO_PURPLE),
-                Text("How uncertain we are", font_size=17, color=TEXT_GRAY),
+                Text("How uncertain we are", font_size=20, color=TEXT_GRAY),
                 Text("(width of bell curve)", font_size=13, color=TEXT_GRAY)
             ),
             VGroup(
                 MathTex(r"3\sigma", font_size=36, color=ELO_PURPLE),
-                Text("Safety margin", font_size=17, color=TEXT_GRAY),
+                Text("Safety margin", font_size=20, color=TEXT_GRAY),
                 Text("(99.7% confident above R)", font_size=13, color=ELO_GREEN)
             ),
         )
@@ -738,7 +738,7 @@ class Scene7_6a_ExplainTrueSkill(Scene):
             fill_color=ELO_GOLD, fill_opacity=0.12,
             stroke_color=ELO_GOLD, stroke_width=1.5
         )
-        takeaway_box.to_edge(DOWN, buff=0.6)
+        takeaway_box.to_edge(DOWN, buff=0.2)
         takeaway = Text(
             "You must PROVE your skill (reduce sigma) before your rating rises",
             font_size=19, color=ELO_GOLD

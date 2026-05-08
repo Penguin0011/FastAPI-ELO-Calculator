@@ -1,0 +1,10 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s01_introduction/480p15/partial_movie_files/Scene1_1_TitleHook/3087832721_2067359544_223132457.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s01_introduction/480p15/partial_movie_files/Scene1_1_TitleHook/3350879045_816073434_119919323.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s01_introduction/480p15/partial_movie_files/Scene1_1_TitleHook/3350879045_778290761_1510852184.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s01_introduction/480p15/partial_movie_files/Scene1_1_TitleHook/3350879045_3772098347_1340198658.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s01_introduction/480p15/partial_movie_files/Scene1_1_TitleHook/3350879045_3060594482_1721807355.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s01_introduction/480p15/partial_movie_files/Scene1_1_TitleHook/3350879045_4231467593_1339787334.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s01_introduction/480p15/partial_movie_files/Scene1_1_TitleHook/3350879045_3102243544_3062004906.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s01_introduction/480p15/partial_movie_files/Scene1_1_TitleHook/3350879045_3278807600_1940102158.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s01_introduction/480p15/partial_movie_files/Scene1_1_TitleHook/3350879045_3278687985_685783879.mp4'

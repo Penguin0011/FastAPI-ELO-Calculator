@@ -1,0 +1,10 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s09_plackett_luce/480p15/partial_movie_files/Scene9_1_BeyondPairwise/3087832721_3644652129_223132457.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s09_plackett_luce/480p15/partial_movie_files/Scene9_1_BeyondPairwise/3350879045_2249766609_2009260833.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s09_plackett_luce/480p15/partial_movie_files/Scene9_1_BeyondPairwise/3350879045_3567681857_1135293758.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s09_plackett_luce/480p15/partial_movie_files/Scene9_1_BeyondPairwise/3350879045_1892159628_877046043.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s09_plackett_luce/480p15/partial_movie_files/Scene9_1_BeyondPairwise/3350879045_902076697_1872436240.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s09_plackett_luce/480p15/partial_movie_files/Scene9_1_BeyondPairwise/3350879045_1662757250_3044283628.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s09_plackett_luce/480p15/partial_movie_files/Scene9_1_BeyondPairwise/3350879045_339263272_1808157410.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s09_plackett_luce/480p15/partial_movie_files/Scene9_1_BeyondPairwise/3350879045_3725668193_1073347222.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s09_plackett_luce/480p15/partial_movie_files/Scene9_1_BeyondPairwise/3350879045_3026447827_3704671885.mp4'

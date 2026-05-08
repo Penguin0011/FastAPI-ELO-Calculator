@@ -39,10 +39,10 @@ class Scene16_1_SystemFlowchart(Scene):
         
         # Components below
         components = VGroup(
-            Text("• Plackett-Luce ranking", font_size=16, color=TEXT_GRAY),
-            Text("• Hierarchical α + β decomposition", font_size=16, color=TEXT_GRAY),
-            Text("• MCMC inference", font_size=16, color=TEXT_GRAY),
-            Text("• Glicko-2 uncertainty", font_size=16, color=TEXT_GRAY)
+            Text("• Plackett-Luce ranking", font_size=20, color=TEXT_GRAY),
+            Text("• Hierarchical α + β decomposition", font_size=20, color=TEXT_GRAY),
+            Text("• MCMC inference", font_size=20, color=TEXT_GRAY),
+            Text("• Glicko-2 uncertainty", font_size=20, color=TEXT_GRAY)
         )
         components.arrange(DOWN, aligned_edge=LEFT, buff=0.15)
         components.move_to(DOWN * 1.5)

@@ -79,7 +79,7 @@ class Scene15_1_RidgePlot(Scene):
         # Caption
         caption = Text(
             "Narrow curve = High certainty | Wide curve = Uncertain",
-            font_size=18,
+            font_size=20,
             color=ELO_GOLD
         )
         caption.to_edge(DOWN, buff=0.2)
@@ -181,7 +181,7 @@ class Scene15_3_HHITimeline(MovingCameraScene):
         # Subtitle
         subtitle = Text(
             "Herfindahl-Hirschman Index (HHI) of race wins",
-            font_size=18,
+            font_size=20,
             color=TEXT_GRAY
         )
         subtitle.next_to(header, DOWN, buff=0.2)
@@ -272,7 +272,7 @@ class Scene15_3_HHITimeline(MovingCameraScene):
         # Caption — visible at full scale
         caption = Text(
             "Dominant eras create spikes; rule changes restore competition",
-            font_size=18,
+            font_size=20,
             color=TEXT_LIGHT
         )
         caption.to_edge(DOWN, buff=0.3)
@@ -306,7 +306,8 @@ class Scene15_4_EraAdjusted(Scene):
         x_label.next_to(axes.x_axis, DOWN, buff=0.2)
         
         y_label = Text("Era-Adjusted Rating", font_size=12, color=TEXT_GRAY)
-        y_label.next_to(axes.y_axis, LEFT, buff=0.15)
+        y_label.next_to(axes, LEFT, buff=0.25)
+        y_label.rotate(90 * DEGREES)
         
         self.play(Create(axes), FadeIn(x_label), FadeIn(y_label), run_time=3.2)
         
@@ -358,7 +359,7 @@ class Scene15_4_EraAdjusted(Scene):
         # Caption
         caption = Text(
             "Width = Uncertainty | More races -> More certainty",
-            font_size=18,
+            font_size=20,
             color=TEXT_LIGHT
         )
         caption.to_edge(DOWN, buff=0.3)
@@ -411,7 +412,7 @@ class Scene15_5_PeakComparison(Scene):
             bot_cap = Line([x-0.15, height - 1.5 - err/100, 0], [x+0.15, height - 1.5 - err/100, 0], color=ELO_RED)
             
             # Label
-            label = Text(name, font_size=14, color=TEXT_GRAY)
+            label = Text(name, font_size=16, color=TEXT_GRAY)
             label.move_to([x, -2.2, 0])
             
             # Peak value
@@ -425,7 +426,7 @@ class Scene15_5_PeakComparison(Scene):
         # Insight
         insight = Text(
             "Peaks similar, but confidence varies based on data availability",
-            font_size=18,
+            font_size=20,
             color=ELO_GOLD
         )
         insight.to_edge(DOWN, buff=0.4)

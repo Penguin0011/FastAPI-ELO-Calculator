@@ -1,0 +1,9 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s10_hierarchical/480p15/partial_movie_files/Scene10_4_ConstructorEvolution/3087832721_1304851121_223132457.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s10_hierarchical/480p15/partial_movie_files/Scene10_4_ConstructorEvolution/3350879045_3675675707_1017472765.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s10_hierarchical/480p15/partial_movie_files/Scene10_4_ConstructorEvolution/3350879045_3576576514_2957558975.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s10_hierarchical/480p15/partial_movie_files/Scene10_4_ConstructorEvolution/3350879045_3011496971_1625372855.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s10_hierarchical/480p15/partial_movie_files/Scene10_4_ConstructorEvolution/3350879045_2206425655_3578120877.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s10_hierarchical/480p15/partial_movie_files/Scene10_4_ConstructorEvolution/3350879045_738200540_2381819559.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s10_hierarchical/480p15/partial_movie_files/Scene10_4_ConstructorEvolution/3350879045_3278807600_625749095.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s10_hierarchical/480p15/partial_movie_files/Scene10_4_ConstructorEvolution/3350879045_3665110433_3920276078.mp4'

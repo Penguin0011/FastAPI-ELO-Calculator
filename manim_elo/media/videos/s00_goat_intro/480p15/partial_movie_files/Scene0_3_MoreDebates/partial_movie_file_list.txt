@@ -1,0 +1,12 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s00_goat_intro/480p15/partial_movie_files/Scene0_3_MoreDebates/3381340783_601596032_223132457.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s00_goat_intro/480p15/partial_movie_files/Scene0_3_MoreDebates/1920720139_825298618_4234030212.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s00_goat_intro/480p15/partial_movie_files/Scene0_3_MoreDebates/1920720139_3218342468_4064383669.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s00_goat_intro/480p15/partial_movie_files/Scene0_3_MoreDebates/1920720139_417172758_1758927948.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s00_goat_intro/480p15/partial_movie_files/Scene0_3_MoreDebates/1799091017_2527285004_451885571.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s00_goat_intro/480p15/partial_movie_files/Scene0_3_MoreDebates/2417687279_2989746451_451885571.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s00_goat_intro/480p15/partial_movie_files/Scene0_3_MoreDebates/2417687279_2230675760_1941508798.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s00_goat_intro/480p15/partial_movie_files/Scene0_3_MoreDebates/1054907956_1853630267_2652258953.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s00_goat_intro/480p15/partial_movie_files/Scene0_3_MoreDebates/3317798802_3934995523_3092144077.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s00_goat_intro/480p15/partial_movie_files/Scene0_3_MoreDebates/3317798802_3879069619_3419376501.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s00_goat_intro/480p15/partial_movie_files/Scene0_3_MoreDebates/3317798802_2707595965_1349316001.mp4'

@@ -116,7 +116,7 @@ class Scene9_2_SequentialSurvival(Scene):
         # Step 1: P1
         step1 = VGroup(
             Text("P1:", font_size=20, color=ELO_GOLD),
-            Text("Fastest among ALL 20", font_size=18, color=TEXT_GRAY),
+            Text("Fastest among ALL 20", font_size=20, color=TEXT_GRAY),
             MathTex(r"P(\text{Ver wins}) = \frac{v_{Ver}}{\sum_{all} v_i}", font_size=24)
         )
         step1.arrange(RIGHT, buff=0.3)
@@ -136,7 +136,7 @@ class Scene9_2_SequentialSurvival(Scene):
         # Step 2: P2
         step2 = VGroup(
             Text("P2:", font_size=20, color=ELO_GOLD),
-            Text("Fastest among remaining 19", font_size=18, color=TEXT_GRAY),
+            Text("Fastest among remaining 19", font_size=20, color=TEXT_GRAY),
             MathTex(r"P(\text{Ham is P2}) = \frac{v_{Ham}}{\sum_{rest} v_i}", font_size=24)
         )
         step2.arrange(RIGHT, buff=0.3)
@@ -154,10 +154,10 @@ class Scene9_2_SequentialSurvival(Scene):
         
         # Continue cascade
         cascade = VGroup(
-            Text("P3: Fastest among 18...", font_size=18, color=TEXT_GRAY),
-            Text("P4: Fastest among 17...", font_size=18, color=TEXT_GRAY),
+            Text("P3: Fastest among 18...", font_size=20, color=TEXT_GRAY),
+            Text("P4: Fastest among 17...", font_size=20, color=TEXT_GRAY),
             Text("...", font_size=24, color=TEXT_GRAY),
-            Text("P20: Last one remaining", font_size=18, color=TEXT_GRAY)
+            Text("P20: Last one remaining", font_size=20, color=TEXT_GRAY)
         )
         cascade.arrange(DOWN, buff=0.2)
         cascade.move_to(DOWN * 2 + LEFT * 2)
@@ -194,11 +194,11 @@ class Scene9_3_LikelihoodFormula(Scene):
         # Break down components
         components = VGroup(
             MathTex(r"\pi", font_size=32, color=ELO_BLUE),
-            Text("= Race finishing order", font_size=18, color=TEXT_GRAY),
+            Text("= Race finishing order", font_size=20, color=TEXT_GRAY),
             MathTex(r"s_i", font_size=32, color=ELO_GREEN),
-            Text("= Latent skill of driver i", font_size=18, color=TEXT_GRAY),
+            Text("= Latent skill of driver i", font_size=20, color=TEXT_GRAY),
             MathTex(r"\exp(s_i)", font_size=32, color=ELO_GOLD),
-            Text("= 'Strength' parameter", font_size=18, color=TEXT_GRAY)
+            Text("= 'Strength' parameter", font_size=20, color=TEXT_GRAY)
         )
         components.arrange_in_grid(rows=3, cols=2, buff=(0.5, 0.3))
         components.move_to(DOWN * 1.5)
@@ -428,7 +428,7 @@ class Scene9_5a_ExplainInfoWeighting(Scene):
         self.play(FadeIn(step1), run_time=1.2)
 
         p1_explain = VGroup(
-            Text("Being the BEST of 20 is very informative", font_size=18, color=TEXT_GRAY),
+            Text("Being the BEST of 20 is very informative", font_size=20, color=TEXT_GRAY),
             MathTex(r"\text{Pool size} = 20 \text{ drivers}", font_size=24, color=ELO_GREEN)
         )
         p1_explain.arrange(DOWN, buff=0.15)
@@ -442,7 +442,7 @@ class Scene9_5a_ExplainInfoWeighting(Scene):
         self.play(FadeOut(step1), FadeIn(step2), run_time=1.2)
 
         p10_explain = VGroup(
-            Text("Being best of 11 is less selective", font_size=18, color=TEXT_GRAY),
+            Text("Being best of 11 is less selective", font_size=20, color=TEXT_GRAY),
             MathTex(r"\text{Pool size} = 11 \text{ drivers}", font_size=24, color=ELO_RED)
         )
         p10_explain.arrange(DOWN, buff=0.15)
@@ -491,13 +491,13 @@ class Scene9_5a_ExplainInfoWeighting(Scene):
         self.play(FadeIn(p1_label), FadeIn(p5_label), FadeIn(p10_label), FadeIn(p20_label), run_time=2)
 
         y_label = Text("Information (more ->)", font_size=14, color=TEXT_GRAY)
-        y_label.next_to(bars, LEFT, buff=0.3)
+        y_label.to_edge(LEFT, buff=0.2)
         self.play(FadeIn(y_label), run_time=1.2)
 
         # Takeaway
         takeaway = Text(
             "Podium battles tell us the most about true skill; backmarker results are noisy",
-            font_size=18, color=ELO_GOLD
+            font_size=20, color=ELO_GOLD
         )
         takeaway.to_edge(DOWN, buff=0.3)
         self.play(Write(takeaway), run_time=4)

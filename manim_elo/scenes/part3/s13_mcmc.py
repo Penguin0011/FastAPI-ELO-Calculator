@@ -31,9 +31,9 @@ class Scene13_1_IntractablePosterior(Scene):
         # Problem
         problem = VGroup(
             Text("Problem:", font_size=24, color=ELO_RED),
-            Text("• 20 drivers x 10 constructors x 20 tracks = 400+ parameters", font_size=18, color=TEXT_GRAY),
-            Text("• No closed-form solution", font_size=18, color=TEXT_GRAY),
-            Text("• Integration is intractable", font_size=18, color=TEXT_GRAY)
+            Text("• 20 drivers x 10 constructors x 20 tracks = 400+ parameters", font_size=20, color=TEXT_GRAY),
+            Text("• No closed-form solution", font_size=20, color=TEXT_GRAY),
+            Text("• Integration is intractable", font_size=20, color=TEXT_GRAY)
         )
         problem.arrange(DOWN, aligned_edge=LEFT, buff=0.15)
         problem.move_to(ORIGIN)
@@ -44,7 +44,7 @@ class Scene13_1_IntractablePosterior(Scene):
         solution = VGroup(
             Text("Solution:", font_size=24, color=ELO_GREEN),
             Text("Markov Chain Monte Carlo (MCMC)", font_size=20, color=ELO_GREEN),
-            Text("Sample from the posterior distribution!", font_size=18, color=TEXT_GRAY)
+            Text("Sample from the posterior distribution!", font_size=20, color=TEXT_GRAY)
         )
         solution.arrange(DOWN, buff=0.1)
         solution.move_to(DOWN * 2)
@@ -70,12 +70,12 @@ class Scene13_2_GibbsSampler(Scene):
         # Algorithm steps
         steps = VGroup(
             Text("Algorithm:", font_size=24, color=ELO_GOLD),
-            Text("1. Initialize all parameters (α, β, γ)", font_size=18, color=TEXT_GRAY),
-            Text("2. For each iteration:", font_size=18, color=TEXT_GRAY),
-            Text("   • Sample α | β, γ, D", font_size=16, color=ELO_BLUE),
-            Text("   • Sample β | α, γ, D", font_size=16, color=ELO_GOLD),
-            Text("   • Sample γ | α, β, D", font_size=16, color=ELO_GREEN),
-            Text("3. Repeat until convergence", font_size=18, color=TEXT_GRAY)
+            Text("1. Initialize all parameters (α, β, γ)", font_size=20, color=TEXT_GRAY),
+            Text("2. For each iteration:", font_size=20, color=TEXT_GRAY),
+            Text("   • Sample α | β, γ, D", font_size=18, color=ELO_BLUE),
+            Text("   • Sample β | α, γ, D", font_size=18, color=ELO_GOLD),
+            Text("   • Sample γ | α, β, D", font_size=18, color=ELO_GREEN),
+            Text("3. Repeat until convergence", font_size=20, color=TEXT_GRAY)
         )
         steps.arrange(DOWN, aligned_edge=LEFT, buff=0.2)
         steps.move_to(LEFT * 2)
@@ -250,7 +250,7 @@ class Scene13_4_GelmanRubin(Scene):
         # Intuition
         intuition = Text(
             "If chains from different starts agree -> converged!",
-            font_size=18,
+            font_size=20,
             color=TEXT_LIGHT
         )
         intuition.to_edge(DOWN, buff=0.3)
@@ -273,7 +273,7 @@ class Scene13_2a_ExplainGibbs(Scene):
         # The problem
         problem = VGroup(
             Text("We need the joint posterior of α, β, γ", font_size=22, color=ELO_GOLD),
-            Text("...but we can't sample all 3 at once!", font_size=18, color=ELO_RED),
+            Text("...but we can't sample all 3 at once!", font_size=20, color=ELO_RED),
         )
         problem.arrange(DOWN, buff=0.1)
         problem.move_to(UP * 1)
@@ -284,7 +284,7 @@ class Scene13_2a_ExplainGibbs(Scene):
         self.play(FadeOut(problem), run_time=1.2)
 
         solution = Text("Solution: Sample one variable at a time, holding others fixed",
-                        font_size=18, color=ELO_GREEN)
+                        font_size=20, color=ELO_GREEN)
         solution.move_to(UP * 1.2)
         self.play(FadeIn(solution), run_time=2)
 
@@ -360,7 +360,7 @@ class Scene13_2a_ExplainGibbs(Scene):
 
         repeat = Text(
             "Repeat 10,000x -> histogram of samples ~ the posterior distribution!",
-            font_size=18, color=ELO_GOLD
+            font_size=20, color=ELO_GOLD
         )
         repeat.to_edge(DOWN, buff=0.3)
         self.play(Write(repeat), run_time=4)

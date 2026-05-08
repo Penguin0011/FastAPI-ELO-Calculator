@@ -1,0 +1,117 @@
+﻿
+============================================================
+  RENDERING 104 SCENES (quality=h, parts_only=True)
+  Output: C:\Users\iyerm\Documents\GitHub\FastAPI-ELO-Calculator\manim_elo\media/videos/
+============================================================
+
+  [1/104] part1/s00_goat_intro::Scene0_1_BasketballDebate ... OK
+  [2/104] part1/s00_goat_intro::Scene0_2_SoccerDebate ... OK
+  [3/104] part1/s00_goat_intro::Scene0_3_MoreDebates ... OK
+  [4/104] part1/s00_goat_intro::Scene0_4_TheQuestion ... OK
+  [5/104] part1/s00_goat_intro::Scene0_5_VideoTitle ... OK
+  [6/104] part1/s01_introduction::Scene1_1_TitleHook ... OK
+  [7/104] part1/s01_introduction::Scene1_2_LatentVariable ... OK
+  [8/104] part1/s01_introduction::Scene1_3_EvolutionTimeline ... OK
+  [9/104] part1/s02_harkness::Scene2_1_NeedForRanking ... OK
+  [10/104] part1/s02_harkness::Scene2_2_LinearMechanics ... OK
+  [11/104] part1/s02_harkness::Scene2_4_EliteNotProtected ... OK
+  [12/104] part1/s03_elo_physics::Scene3_1_EloBackground ... OK
+  [13/104] part1/s03_elo_physics::Scene3_2_PerformanceRandom ... OK
+  [14/104] part1/s03_elo_physics::Scene3_4_DifferenceOfNormals ... OK
+  [15/104] part1/s03_elo_physics::Scene3_5_LogisticTransition ... OK
+  [16/104] part1/s04_update_kfactor::Scene4_1_FeedbackLoop ... OK
+  [17/104] part1/s04_update_kfactor::Scene4_3_OutperformanceExample ... OK
+  [18/104] part1/s04_update_kfactor::Scene4_4_UnderperformanceExample ... OK
+  [19/104] part1/s04_update_kfactor::Scene4_5_KFactorSpectrum ... OK
+  [20/104] part1/s04_update_kfactor::Scene4_2a_ExplainUpdateEquation ... OK
+  [21/104] part1/s05_facemash::Scene5_1_CulturalExplosion ... OK
+  [22/104] part1/s05_facemash::Scene5_2_EloForAesthetics ... OK
+  [23/104] part1/s05_facemash::Scene5_3_HollywoodScandal ... OK
+  [24/104] part1/s05_facemash::Scene5_4_CatastrophicError ... OK
+  [25/104] part1/s05_facemash::Scene5_5_CorrectFormula ... OK
+  [26/104] part1/s05_facemash::Scene5_3a_ExplainFacemashError ... OK
+  [27/104] part1/s06_f1_problem::Scene6_1_StructuralIncompatibility ... OK
+  [28/104] part1/s06_f1_problem::Scene6_2_PairwiseExplosion ... OK
+  [29/104] part1/s06_f1_problem::Scene6_3_DNFAnomaly ... OK
+  [30/104] part1/s06_f1_problem::Scene6_4_CarVsDriver ... OK
+  [31/104] part1/s06_f1_problem::Scene6_5_RussellExample ... OK
+  [32/104] part1/s06_f1_problem::Scene6_6_AdvancedSolutionsPreview ... OK
+  [33/104] part1/s07_bayesian_intro::Scene7_1_PointVsDistribution ... OK
+  [34/104] part1/s07_bayesian_intro::Scene7_2_BayesTheorem ... OK
+  [35/104] part1/s07_bayesian_intro::Scene7_3_RankingContext ... OK
+  [36/104] part1/s07_bayesian_intro::Scene7_4_GaussianGhost ... OK
+  [37/104] part1/s07_bayesian_intro::Scene7_5_ScorpionAnalogy ... OK
+  [38/104] part1/s07_bayesian_intro::Scene7_6_TrueSkill ... OK
+  [39/104] part1/s07_bayesian_intro::Scene7_2a_ExplainBayesTheorem ... OK
+  [40/104] part1/s07_bayesian_intro::Scene7_6a_ExplainTrueSkill ... OK
+  [41/104] part2/s08_bradley_terry::Scene8_1_BTLFoundation ... OK
+  [42/104] part2/s08_bradley_terry::Scene8_2_LogDomain ... OK
+  [43/104] part2/s08_bradley_terry::Scene8_3_Intransitivity ... OK
+  [44/104] part2/s08_bradley_terry::Scene8_4_HodgeDecomposition ... OK
+  [45/104] part2/s08_bradley_terry::Scene8_1a_ExplainBTL ... OK
+  [46/104] part2/s08_bradley_terry::Scene8_2a_ExplainLogSigmoid ... OK
+  [47/104] part2/s08_bradley_terry::Scene8_4a_ExplainHodge ... OK
+  [48/104] part2/s09_plackett_luce::Scene9_1_BeyondPairwise ... OK
+  [49/104] part2/s09_plackett_luce::Scene9_2_SequentialSurvival ... OK
+  [50/104] part2/s09_plackett_luce::Scene9_3_LikelihoodFormula ... OK
+  [51/104] part2/s09_plackett_luce::Scene9_4_InformationWeighting ... OK
+  [52/104] part2/s09_plackett_luce::Scene9_4a_ExplainPLLikelihood ... OK
+  [53/104] part2/s09_plackett_luce::Scene9_5a_ExplainInfoWeighting ... OK
+  [54/104] part2/s10_hierarchical::Scene10_1_LatentDecomposition ... OK
+  [55/104] part2/s10_hierarchical::Scene10_2_IdentifiabilityProblem ... OK
+  [56/104] part2/s10_hierarchical::Scene10_3_DriverPriors ... OK
+  [57/104] part2/s10_hierarchical::Scene10_4_ConstructorEvolution ... OK
+  [58/104] part2/s10_hierarchical::Scene10_5_RuleChangeInflation ... OK
+  [59/104] part2/s10_hierarchical::Scene10_6_ThurstoneMosteller ... OK
+  [60/104] part2/s10_hierarchical::Scene10_1a_ExplainHierarchical ... OK
+  [61/104] part2/s10_hierarchical::Scene10_4a_ExplainAutoregressive ... OK
+  [62/104] part2/s10_hierarchical::Scene10_6a_ExplainThurstone ... OK
+  [63/104] part2/s11_physics_telemetry::Scene11_1_TelemetryTruth ... OK
+  [64/104] part2/s11_physics_telemetry::Scene11_2_KalmanFilter ... OK
+  [65/104] part2/s11_physics_telemetry::Scene11_3_KalmanEquations ... OK
+  [66/104] part2/s11_physics_telemetry::Scene11_4_BrakingAggression ... OK
+  [67/104] part2/s11_physics_telemetry::Scene11_5_FrictionCircle ... OK
+  [68/104] part2/s11_physics_telemetry::Scene11_3a_ExplainKalmanCycle ... OK
+  [69/104] part2/s11_physics_telemetry::Scene11_5a_ExplainFrictionCircle ... OK
+  [70/104] part2/s12_survival::Scene12_1_DNFAsCensoring ... OK
+  [71/104] part2/s12_survival::Scene12_2_HazardFunction ... OK
+  [72/104] part2/s12_survival::Scene12_3_CoxProportional ... OK
+  [73/104] part2/s12_survival::Scene12_4_KaplanMeier ... OK
+  [74/104] part2/s12_survival::Scene12_5_IPCWWeighting ... OK
+  [75/104] part2/s12_survival::Scene12_2a_ExplainHazard ... OK
+  [76/104] part2/s12_survival::Scene12_3a_ExplainCoxPH ... OK
+  [77/104] part2/s12_survival::Scene12_5a_ExplainIPCW ... OK
+  [78/104] part3/s13_mcmc::Scene13_1_IntractablePosterior ... OK
+  [79/104] part3/s13_mcmc::Scene13_2_GibbsSampler ... OK
+  [80/104] part3/s13_mcmc::Scene13_3_TracePlots ... OK
+  [81/104] part3/s13_mcmc::Scene13_4_GelmanRubin ... OK
+  [82/104] part3/s13_mcmc::Scene13_2a_ExplainGibbs ... OK
+  [83/104] part3/s13_mcmc::Scene13_4a_ExplainGelmanRubin ... OK
+  [84/104] part3/s14_volatility::Scene14_1_DynamicVariance ... OK
+  [85/104] part3/s14_volatility::Scene14_2_VolatilityParameter ... OK
+  [86/104] part3/s14_volatility::Scene14_3_ShannonEntropy ... OK
+  [87/104] part3/s14_volatility::Scene14_4_EntropyWeighting ... OK
+  [88/104] part3/s14_volatility::Scene14_3a_ExplainEntropy ... OK
+  [89/104] part3/s14_volatility::Scene14_4a_ExplainEntropyWeight ... OK
+  [90/104] part3/s15_historical::Scene15_1_RidgePlot ... OK
+  [91/104] part3/s15_historical::Scene15_2_OverlapProbability ... OK
+  [92/104] part3/s15_historical::Scene15_3_HHITimeline ... OK
+  [93/104] part3/s15_historical::Scene15_4_EraAdjusted ... OK
+  [94/104] part3/s15_historical::Scene15_5_PeakComparison ... OK
+  [95/104] part3/s16_conclusion::Scene16_1_SystemFlowchart ... OK
+  [96/104] part3/s16_conclusion::Scene16_2_KeyInsights ... OK
+  [97/104] part3/s16_conclusion::Scene16_3_ClosingStatement ... OK
+  [98/104] part3/s17_appendix::Scene17_1_EloExpectation ... OK
+  [99/104] part3/s17_appendix::Scene17_2_EloUpdate ... OK
+  [100/104] part3/s17_appendix::Scene17_3_PlackettLuce ... OK
+  [101/104] part3/s17_appendix::Scene17_4_BradleyTerry ... OK
+  [102/104] part3/s17_appendix::Scene17_5_HierarchicalModel ... OK
+  [103/104] part3/s17_appendix::Scene17_6_TrueSkill ... OK
+  [104/104] part3/s17_appendix::Scene17_7_Bayes ... OK
+
+============================================================
+  DONE in 1088s
+  Success: 104/104
+  Failed:  0/104
+============================================================
+

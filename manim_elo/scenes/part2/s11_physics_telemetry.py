@@ -22,7 +22,7 @@ class Scene11_1_TelemetryTruth(Scene):
         # Scenario
         scenario = VGroup(
             Text("Race Result: P10", font_size=24, color=ELO_RED),
-            Text("Reason: Terrible pit strategy", font_size=18, color=TEXT_GRAY)
+            Text("Reason: Terrible pit strategy", font_size=20, color=TEXT_GRAY)
         )
         scenario.arrange(DOWN, buff=0.15)
         scenario.move_to(LEFT * 3.5 + UP * 1)
@@ -38,7 +38,7 @@ class Scene11_1_TelemetryTruth(Scene):
         # Telemetry shows
         telemetry = VGroup(
             Text("Telemetry shows: P3 pace!", font_size=24, color=ELO_GREEN),
-            Text("Lap times, sector speeds, tire deg", font_size=18, color=TEXT_GRAY)
+            Text("Lap times, sector speeds, tire deg", font_size=20, color=TEXT_GRAY)
         )
         telemetry.arrange(DOWN, buff=0.15)
         telemetry.move_to(RIGHT * 3.5 + UP * 1)
@@ -90,10 +90,10 @@ class Scene11_1_TelemetryTruth(Scene):
         # Caption
         caption = Text(
             "Use telemetry to recover TRUE skill hidden by external factors",
-            font_size=18,
+            font_size=20,
             color=ELO_GOLD
         )
-        caption.to_edge(DOWN, buff=0.6)
+        caption.to_edge(DOWN, buff=1.2)
         
         self.play(Write(caption), run_time=4)
         
@@ -170,7 +170,7 @@ class Scene11_2_KalmanFilter(Scene):
         # Caption
         caption = Text(
             "Optimal fusion of noisy measurements -> Clean estimates",
-            font_size=18,
+            font_size=20,
             color=ELO_GOLD
         )
         caption.to_edge(DOWN, buff=0.4)
@@ -322,7 +322,7 @@ class Scene11_4_BrakingAggression(Scene):
         # Interpretation
         interpretation = Text(
             "High decel + Low jerk variance = Skill (not recklessness)",
-            font_size=18,
+            font_size=20,
             color=ELO_GREEN
         )
         interpretation.to_edge(DOWN, buff=0.3)
@@ -352,7 +352,7 @@ class Scene11_5_FrictionCircle(Scene):
 
         formula_text = Text(
             "Total tire force limited by friction",
-            font_size=18,
+            font_size=20,
             color=TEXT_GRAY
         )
         formula_text.next_to(formula, DOWN, buff=0.2)
@@ -409,7 +409,7 @@ class Scene11_5_FrictionCircle(Scene):
         # Annotation
         skill_note = Text(
             "Elite drivers operate at edge of circle",
-            font_size=18,
+            font_size=20,
             color=ELO_GREEN
         )
         skill_note.to_edge(DOWN, buff=0.3)
@@ -499,7 +499,7 @@ class Scene11_3a_ExplainKalmanCycle(Scene):
         # F1 takeaway
         takeaway = Text(
             "In F1: Kalman filters smooth noisy GPS/telemetry into clean performance data",
-            font_size=18, color=ELO_GOLD
+            font_size=20, color=ELO_GOLD
         )
         takeaway.to_edge(DOWN, buff=0.3)
         self.play(Write(takeaway), run_time=4)

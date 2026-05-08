@@ -9,5 +9,5 @@ file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/medi
 file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s08_bradley_terry/1080p60/partial_movie_files/Scene8_2a_ExplainLogSigmoid/104335764_4113992584_1674862357.mp4'
 file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s08_bradley_terry/1080p60/partial_movie_files/Scene8_2a_ExplainLogSigmoid/104335764_3213219031_2921665824.mp4'
 file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s08_bradley_terry/1080p60/partial_movie_files/Scene8_2a_ExplainLogSigmoid/104335764_2234511796_74385447.mp4'
-file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s08_bradley_terry/1080p60/partial_movie_files/Scene8_2a_ExplainLogSigmoid/104335764_3278807600_2351383965.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s08_bradley_terry/1080p60/partial_movie_files/Scene8_2a_ExplainLogSigmoid/104335764_3278807600_3254605790.mp4'
 file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s08_bradley_terry/1080p60/partial_movie_files/Scene8_2a_ExplainLogSigmoid/104335764_1004683932_3162909877.mp4'

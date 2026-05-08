@@ -22,8 +22,8 @@ class Scene12_1_DNFAsCensoring(Scene):
         # Standard Elo view
         standard = VGroup(
             Text("Standard Elo:", font_size=24, color=ELO_RED),
-            Text("DNF = Lost to everyone", font_size=18, color=TEXT_GRAY),
-            Text("-> Massive rating drop", font_size=18, color=ELO_RED)
+            Text("DNF = Lost to everyone", font_size=20, color=TEXT_GRAY),
+            Text("-> Massive rating drop", font_size=20, color=ELO_RED)
         )
         standard.arrange(DOWN, buff=0.15)
         standard.move_to(LEFT * 3.5 + UP * 0.5)
@@ -39,8 +39,8 @@ class Scene12_1_DNFAsCensoring(Scene):
         # Survival view
         survival = VGroup(
             Text("Survival View:", font_size=24, color=ELO_GREEN),
-            Text("DNF = Observation interrupted", font_size=18, color=TEXT_GRAY),
-            Text("-> Right-censored data", font_size=18, color=ELO_GREEN)
+            Text("DNF = Observation interrupted", font_size=20, color=TEXT_GRAY),
+            Text("-> Right-censored data", font_size=20, color=ELO_GREEN)
         )
         survival.arrange(DOWN, buff=0.15)
         survival.move_to(RIGHT * 3.5 + UP * 0.5)
@@ -51,7 +51,7 @@ class Scene12_1_DNFAsCensoring(Scene):
         # Key insight
         insight = VGroup(
             Text("Key Insight:", font_size=22, color=ELO_GOLD),
-            Text("Information LOSS, not skill loss", font_size=18, color=TEXT_LIGHT),
+            Text("Information LOSS, not skill loss", font_size=20, color=TEXT_LIGHT),
             Text("The race just stopped giving us data", font_size=16, color=TEXT_GRAY)
         )
         insight.arrange(DOWN, buff=0.1)
@@ -167,9 +167,9 @@ class Scene12_3_CoxProportional(Scene):
         # Breakdown
         breakdown = VGroup(
             MathTex(r"h_0(t)", font_size=28, color=ELO_BLUE),
-            Text("= Baseline hazard", font_size=18, color=TEXT_GRAY),
+            Text("= Baseline hazard", font_size=20, color=TEXT_GRAY),
             MathTex(r"\exp(\beta^T X)", font_size=28, color=ELO_GOLD),
-            Text("= Covariate effect", font_size=18, color=TEXT_GRAY)
+            Text("= Covariate effect", font_size=20, color=TEXT_GRAY)
         )
         breakdown.arrange_in_grid(rows=2, cols=2, buff=(0.5, 0.3))
         breakdown.move_to(ORIGIN)
@@ -268,7 +268,7 @@ class Scene12_4_KaplanMeier(Scene):
         # Caption
         caption = Text(
             "Each step down = observed DNF event",
-            font_size=18,
+            font_size=20,
             color=ELO_GOLD
         )
         caption.to_edge(DOWN, buff=0.4)
@@ -298,7 +298,7 @@ class Scene12_5_IPCWWeighting(Scene):
         
         formula_text = Text(
             "Weight inversely by probability of being censored",
-            font_size=18,
+            font_size=20,
             color=TEXT_GRAY
         )
         formula_text.next_to(formula, DOWN, buff=0.2)
@@ -308,7 +308,7 @@ class Scene12_5_IPCWWeighting(Scene):
         # Example
         example = VGroup(
             Text("Example:", font_size=22, color=ELO_GOLD),
-            Text("Driver leads for 50 of 58 laps -> then DNF", font_size=18, color=TEXT_GRAY)
+            Text("Driver leads for 50 of 58 laps -> then DNF", font_size=20, color=TEXT_GRAY)
         )
         example.arrange(DOWN, buff=0.1)
         example.move_to(DOWN * 0.4)
@@ -345,8 +345,8 @@ class Scene12_5_IPCWWeighting(Scene):
         # Contribution statement
         contribution = VGroup(
             Text("50 laps of P1 -> contributes evidence!", font_size=20, color=ELO_GREEN),
-            Text("Not 'lost to everyone'", font_size=18, color=TEXT_GRAY),
-            Text("Weighted by survival probability", font_size=18, color=TEXT_GRAY)
+            Text("Not 'lost to everyone'", font_size=20, color=TEXT_GRAY),
+            Text("Weighted by survival probability", font_size=20, color=TEXT_GRAY)
         )
         contribution.arrange(DOWN, buff=0.15)
         contribution.move_to(DOWN * 2.8)
@@ -377,8 +377,8 @@ class Scene12_2a_ExplainHazard(Scene):
         # Translation
         translation = VGroup(
             Text("In plain English:", font_size=22, color=ELO_GOLD),
-            Text("\"If you've survived to lap t, what's your", font_size=18, color=TEXT_GRAY),
-            Text("instantaneous risk of DNF RIGHT NOW?\"", font_size=18, color=TEXT_GRAY),
+            Text("\"If you've survived to lap t, what's your", font_size=20, color=TEXT_GRAY),
+            Text("instantaneous risk of DNF RIGHT NOW?\"", font_size=20, color=TEXT_GRAY),
         )
         translation.arrange(DOWN, buff=0.1)
         translation.move_to(UP * 0.1)
@@ -485,10 +485,10 @@ class Scene12_3a_ExplainCoxPH(Scene):
         self.play(FadeIn(ex_title), run_time=1.2)
 
         ex = VGroup(
-            Text("Covariate: X1 = engine age (in races)", font_size=18, color=TEXT_GRAY),
+            Text("Covariate: X1 = engine age (in races)", font_size=20, color=TEXT_GRAY),
             MathTex(r"\beta_1 = 0.5", font_size=24, color=TEXT_WHITE),
             MathTex(r"\exp(0.5) = 1.65", font_size=28, color=ELO_RED),
-            Text("-> 65% higher DNF risk with an older engine!", font_size=18, color=ELO_RED),
+            Text("-> 65% higher DNF risk with an older engine!", font_size=20, color=ELO_RED),
         )
         ex.arrange(DOWN, buff=0.2)
         ex.move_to(DOWN * 0.8)
@@ -581,7 +581,7 @@ class Scene12_5a_ExplainIPCW(Scene):
 
         takeaway = Text(
             "IPCW ensures partial race info isn't thrown away — it's weighted fairly",
-            font_size=18, color=ELO_GOLD
+            font_size=20, color=ELO_GOLD
         )
         takeaway.to_edge(DOWN, buff=0.3)
         self.play(Write(takeaway), run_time=4)

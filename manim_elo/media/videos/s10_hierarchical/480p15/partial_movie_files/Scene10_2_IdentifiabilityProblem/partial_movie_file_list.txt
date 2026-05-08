@@ -1,0 +1,8 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s10_hierarchical/480p15/partial_movie_files/Scene10_2_IdentifiabilityProblem/3087832721_2934160538_223132457.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s10_hierarchical/480p15/partial_movie_files/Scene10_2_IdentifiabilityProblem/3350879045_2338660539_3431153565.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s10_hierarchical/480p15/partial_movie_files/Scene10_2_IdentifiabilityProblem/3350879045_844999636_3966931209.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s10_hierarchical/480p15/partial_movie_files/Scene10_2_IdentifiabilityProblem/3350879045_2423791049_2099468339.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s10_hierarchical/480p15/partial_movie_files/Scene10_2_IdentifiabilityProblem/3350879045_2505778470_3224586667.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s10_hierarchical/480p15/partial_movie_files/Scene10_2_IdentifiabilityProblem/3350879045_3278807600_1545030323.mp4'
+file 'file:C:/Users/iyerm/Documents/GitHub/FastAPI-ELO-Calculator/manim_elo/media/videos/s10_hierarchical/480p15/partial_movie_files/Scene10_2_IdentifiabilityProblem/3350879045_1607442650_2164019276.mp4'

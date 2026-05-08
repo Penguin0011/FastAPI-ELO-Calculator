@@ -22,7 +22,7 @@ class Scene14_1_DynamicVariance(Scene):
         # Core concept
         concept = VGroup(
             Text("Rating Deviation (RD) is ALIVE", font_size=24, color=ELO_GOLD),
-            Text("Not static like in Elo", font_size=18, color=TEXT_GRAY)
+            Text("Not static like in Elo", font_size=20, color=TEXT_GRAY)
         )
         concept.arrange(DOWN, buff=0.1)
         concept.move_to(UP * 1.2)
@@ -118,9 +118,9 @@ class Scene14_2_VolatilityParameter(Scene):
         # Volatility explanation
         explanation = VGroup(
             Text("Volatility responds to SURPRISE:", font_size=22, color=ELO_GOLD),
-            Text("• Unexpected win/loss -> sigma rises", font_size=18, color=TEXT_GRAY),
-            Text("• Expected results -> sigma stable", font_size=18, color=TEXT_GRAY),
-            Text("• Acts like adaptive K-factor", font_size=18, color=ELO_GREEN)
+            Text("• Unexpected win/loss -> sigma rises", font_size=20, color=TEXT_GRAY),
+            Text("• Expected results -> sigma stable", font_size=20, color=TEXT_GRAY),
+            Text("• Acts like adaptive K-factor", font_size=20, color=ELO_GREEN)
         )
         explanation.arrange(DOWN, aligned_edge=LEFT, buff=0.15)
         explanation.move_to(DOWN * 1.5)
@@ -190,7 +190,7 @@ class Scene14_3_ShannonEntropy(Scene):
         # Caption
         caption = Text(
             "High entropy = less informative about true skill",
-            font_size=18,
+            font_size=20,
             color=ELO_GOLD
         )
         caption.to_edge(DOWN, buff=0.4)
@@ -232,8 +232,8 @@ class Scene14_4_EntropyWeighting(Scene):
         
         # Interpretation
         interpretation = VGroup(
-            Text("• Low entropy (H small) -> e^(-H) ~ 1 -> Full weight", font_size=18, color=ELO_GREEN),
-            Text("• High entropy (H large) -> e^(-H) -> 0 -> Reduced weight", font_size=18, color=ELO_RED)
+            Text("• Low entropy (H small) -> e^(-H) ~ 1 -> Full weight", font_size=20, color=ELO_GREEN),
+            Text("• High entropy (H large) -> e^(-H) -> 0 -> Reduced weight", font_size=20, color=ELO_RED)
         )
         interpretation.arrange(DOWN, buff=0.2)
         interpretation.move_to(DOWN * 0.8)
@@ -243,8 +243,8 @@ class Scene14_4_EntropyWeighting(Scene):
         # Example
         example = VGroup(
             Text("Example:", font_size=20, color=ELO_GOLD),
-            Text("Rain race with 5 retirements -> H = 2.5 -> w = 0.08", font_size=16, color=TEXT_GRAY),
-            Text("Dry race, expected order -> H = 0.3 -> w = 0.74", font_size=16, color=TEXT_GRAY)
+            Text("Rain race with 5 retirements -> H = 2.5 -> w = 0.08", font_size=18, color=TEXT_GRAY),
+            Text("Dry race, expected order -> H = 0.3 -> w = 0.74", font_size=18, color=TEXT_GRAY)
         )
         example.arrange(DOWN, buff=0.1)
         example.move_to(DOWN * 2.2)
@@ -254,7 +254,7 @@ class Scene14_4_EntropyWeighting(Scene):
         # Caption
         caption = Text(
             '"Don\'t overfit to lottery results"',
-            font_size=18,
+            font_size=20,
             color=TEXT_LIGHT
         )
         caption.to_edge(DOWN, buff=0.3)

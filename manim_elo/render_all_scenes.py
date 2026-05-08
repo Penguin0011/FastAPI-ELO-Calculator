@@ -72,16 +72,20 @@ ALL_SCENES = [
     ]),
     ("part1/s02_harkness", [
         "Scene2_1_NeedForRanking", "Scene2_2_LinearMechanics",
-        "Scene2_4_EliteNotProtected",
+        "Scene2_3_LosingWinnerParadox", "Scene2_4_EliteNotProtected",
+        "Scene2_5_NeedForProbability",
     ]),
     ("part1/s03_elo_physics", [
         "Scene3_1_EloBackground", "Scene3_2_PerformanceRandom",
-        "Scene3_4_DifferenceOfNormals", "Scene3_5_LogisticTransition",
+        "Scene3_3_NormalDistribution", "Scene3_4_DifferenceOfNormals",
+        "Scene3_5_LogisticTransition", "Scene3_6_LogisticFormula",
+        "Scene3_7_SigmoidVisualization",
     ]),
     ("part1/s04_update_kfactor", [
-        "Scene4_1_FeedbackLoop", "Scene4_3_OutperformanceExample",
+        "Scene4_1_FeedbackLoop", "Scene4_2_UpdateEquation",
+        "Scene4_3_OutperformanceExample",
         "Scene4_4_UnderperformanceExample", "Scene4_5_KFactorSpectrum",
-        "Scene4_2a_ExplainUpdateEquation",
+        "Scene4_5a_ExplainKFactor", "Scene4_2a_ExplainUpdateEquation",
     ]),
     ("part1/s05_facemash", [
         "Scene5_1_CulturalExplosion", "Scene5_2_EloForAesthetics",

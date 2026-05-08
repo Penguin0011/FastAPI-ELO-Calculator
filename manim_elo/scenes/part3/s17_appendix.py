@@ -55,9 +55,9 @@ class Scene17_2_EloUpdate(Scene):
         self.play(Create(box), run_time=2)
         
         legend = VGroup(
-            Text("K = adjustment factor (16-32)", font_size=18, color=TEXT_GRAY),
-            Text("S = actual score (1/0.5/0)", font_size=18, color=TEXT_GRAY),
-            Text("E = expected score", font_size=18, color=TEXT_GRAY)
+            Text("K = adjustment factor (16-32)", font_size=20, color=TEXT_GRAY),
+            Text("S = actual score (1/0.5/0)", font_size=20, color=TEXT_GRAY),
+            Text("E = expected score", font_size=20, color=TEXT_GRAY)
         )
         legend.arrange(DOWN, buff=0.1)
         legend.move_to(DOWN * 2)
@@ -178,8 +178,8 @@ class Scene17_6_TrueSkill(Scene):
         self.play(Create(box), run_time=2)
         
         legend = VGroup(
-            Text("μ = Mean skill estimate", font_size=18, color=TEXT_GRAY),
-            Text("σ = Uncertainty (std dev)", font_size=18, color=TEXT_GRAY)
+            Text("μ = Mean skill estimate", font_size=20, color=TEXT_GRAY),
+            Text("σ = Uncertainty (std dev)", font_size=20, color=TEXT_GRAY)
         )
         legend.arrange(DOWN, buff=0.1)
         legend.move_to(DOWN * 2)
